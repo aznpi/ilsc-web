@@ -1,0 +1,60 @@
+{% set queryparam = "" %}
+{% set catVar = "Test Center" %}
+{% set catVar = catVar|urlencode %}
+{% set quoteCat = 'General' %}
+
+
+{% set queryparam = queryparam ~ "&testimonial_category_title__in=" + catVar %}
+{% set queryparam = queryparam ~ "&quote_category__in=" + quoteCat %}
+{% set table = hubdb_table_rows(2639334,queryparam) %}
+
+{% if  table.total > 0 %}
+  <section class="section-testimonials section bg-white-canvas">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="testimonials-slide">
+
+            {% for row in table %}
+
+             <div>
+
+              <div class="row slide-content">
+                  <div class="col-md-6">
+                    <div class="box-orange"></div>
+                    <div class="image-container">
+                      <img src="{{ row.image.url }}" loading="lazy">
+                      {% if  module.cta_group.hide_show_cta == "show" %}
+                        {% if row.video_url %}
+                          <a href="#ilscModal" data-toggle="modal" class="video-btn" src="{{ row.video_url }}"><i class="far fa-play-circle on-image"></i></a>
+                        {% endif %}
+                      {% endif %}
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <h5>{{ row.quote_type.name }}</h5>
+                    <div class="quote-container">
+                      <h3>
+                        "{{ row.quote }}"
+                      </h3>
+                      <h5>{{ row.first_name }} {{row.last_name }}, {{ row.country }}</h5>
+                      {% if  module.cta_group.hide_show_cta == "show" %}
+                        {% if row.video_url %}
+                          <div class="btn-video-container">
+                            <div><i class="far fa-play-circle"></i></div><div><a href="#ilscModal" data-toggle="modal" class="video-btn" src="{{ row.video_url }}">{{ module.cta_group.cta_text }}</a></div>
+                          </div>
+                        {% endif %}
+                      {% endif %}
+                    </div>
+
+                  </div>
+                </div>
+             </div> 
+            {% endfor %}
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif %}

@@ -1,0 +1,229 @@
+[ {
+  "id" : "dbb1a6b0-b9f3-3b38-ec63-86adbd230e37",
+  "name" : "content_container",
+  "label" : "Content Container",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h1>Connect with the world</h1>\n<h2>Your journey to learning english starts here</h2>"
+}, {
+  "id" : "0ec0bf14-13f2-cfef-7932-c72cadacd44b",
+  "name" : "bg_video_url",
+  "label" : "BG Video URL",
+  "inline_help_text" : "If left blank, the hero will be the image.",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE" ],
+  "type" : "url",
+  "display_width" : null,
+  "default" : {
+    "type" : "EXTERNAL",
+    "href" : "https://tinyurl.com/y5x5jmnf",
+    "content_id" : null
+  }
+}, {
+  "id" : "6bbaec87-b19d-84cd-1c08-24f1d9bd345f",
+  "name" : "hero_image",
+  "label" : "Hero Image",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "e57f5bac-b9b3-2d85-5137-81e593c57a26",
+    "name" : "hero_image",
+    "label" : "Hero Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/hero_language_school_landing.jpg",
+      "alt" : "Hero Language School",
+      "width" : 2880,
+      "height" : 1440,
+      "max_width" : 2880,
+      "max_height" : 1440
+    }
+  }, {
+    "id" : "de517dc4-b6fb-5075-3be8-0eaae064ffad",
+    "name" : "hide_show_hero_photo_description",
+    "label" : "Hide/Show Hero Photo Description",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "hide"
+  }, {
+    "id" : "fe95bcb6-acab-3e9d-840a-9cdb987e992b",
+    "name" : "mobile_hero_image",
+    "label" : "Mobile Hero Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/hero_home_mobile_2.jpg",
+      "alt" : "hero_home_mobile_2",
+      "width" : 1166,
+      "height" : 1440,
+      "max_width" : 1166,
+      "max_height" : 1440
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "hero_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/hero_language_school_landing.jpg",
+      "alt" : "Hero Language School",
+      "width" : 2880,
+      "height" : 1440,
+      "max_width" : 2880,
+      "max_height" : 1440
+    },
+    "hide_show_hero_photo_description" : "hide",
+    "mobile_hero_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/hero_home_mobile_2.jpg",
+      "alt" : "hero_home_mobile_2",
+      "width" : 1166,
+      "height" : 1440,
+      "max_width" : 1166,
+      "max_height" : 1440
+    }
+  }
+}, {
+  "id" : "c0366309-db85-5640-fcd2-2f488f2b6940",
+  "name" : "cta_group",
+  "label" : "CTA Group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "11ba0d18-7941-9be8-cb8b-54dbd1870fda",
+    "name" : "hide_show_cta",
+    "label" : "Hide/Show CTA",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : "NOT_EMPTY",
+      "access" : null
+    },
+    "display" : "select",
+    "choices" : [ [ "hide", "Hide CTA" ], [ "show", "Show CTA" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "show"
+  }, {
+    "id" : "a3b35cb8-6b59-a160-595a-bd9115b577a3",
+    "name" : "cta_link_url",
+    "label" : "CTA Link Url",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "11ba0d18-7941-9be8-cb8b-54dbd1870fda",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "show",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.youtube.com/embed/PEFdzUTmG10",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "48b8cc8f-2191-f010-54f4-6955403d3425",
+    "name" : "cta_link_url_text",
+    "label" : "CTA Link URL Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "11ba0d18-7941-9be8-cb8b-54dbd1870fda",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "show",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "WATCH OUR VIDEO"
+  }, {
+    "id" : "7dffbd80-a16c-b3e0-e323-50367d0aa665",
+    "name" : "cta_font_awesome_icon",
+    "label" : "CTA Font Awesome Icon",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "11ba0d18-7941-9be8-cb8b-54dbd1870fda",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "show",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "display" : "select",
+    "choices" : [ [ "far fa-play-circle", "Play Video Icon" ], [ "far fa-file-pdf", "PDF Icon" ], [ "far fa-arrow-right", "Page Icon" ], [ "fas fa-blog", "Blog Icon" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "far fa-play-circle"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "hide_show_cta" : "show",
+    "cta_link_url" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.youtube.com/embed/PEFdzUTmG10",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "cta_link_url_text" : "WATCH OUR VIDEO",
+    "cta_font_awesome_icon" : "far fa-play-circle"
+  }
+} ]

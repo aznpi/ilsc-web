@@ -1,0 +1,9 @@
+.a-link-container{
+  margin-top:0;
+}
+.section-1-columns-6-6 .box-container img.top-img{
+  height:230px;
+}
+.section-1-columns-6-6 .col-md-6 .box-container{
+  max-height:none !important;
+}

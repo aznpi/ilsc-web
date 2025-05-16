@@ -1,0 +1,157 @@
+[ {
+  "id" : "a75414a2-005d-2978-60a6-5668399ce2d4",
+  "name" : "campus_title_text",
+  "label" : "Campus Title Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "VANCOUVER"
+}, {
+  "id" : "6d24fde5-2957-ab9d-5865-604d1ef3a6b4",
+  "name" : "main_content_rich_text",
+  "label" : "Main Content Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h3>Fees valid for registrations received between Nov 1, 2020 and Jul 31, 2021, for start dates after Dec 31, 2020.</h3>\n<h3><em>All fees are in Canadian Dollars (CAD)</em></h3>\n<p>The availability of programs is subject to student enrolment. Registration and materials fees apply to all core and specialty programs unless specified otherwise. Registration fee based on study start dates.</p>"
+}, {
+  "id" : "90acafe6-f6ac-a803-26f1-f1ff820b431c",
+  "name" : "image_field",
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "exact",
+    "src" : "https://www.ilsc.com/hubfs/icon_green_check.png",
+    "alt" : "icon_green_check",
+    "loading" : "lazy",
+    "width" : 102,
+    "height" : 102,
+    "max_width" : 102,
+    "max_height" : 102
+  }
+}, {
+  "id" : "db7f3ab4-b3a1-3dd7-f36f-bf40a312c3aa",
+  "name" : "disclaimer_1_rich_text",
+  "label" : "Disclaimer 1 Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<p><strong>Programs with this symbol require that you take our Pre Registration Online Language Assessment.</strong></p>"
+}, {
+  "id" : "a9a8f4ba-3b49-fedb-c470-539aef012f58",
+  "name" : "image_2",
+  "label" : "Image 2",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "exact",
+    "src" : "https://www.ilsc.com/hubfs/icon_warning.png",
+    "alt" : "icon_warning",
+    "loading" : "lazy",
+    "width" : 94,
+    "height" : 84,
+    "max_width" : 94,
+    "max_height" : 84
+  }
+}, {
+  "id" : "b306c4b1-9f25-9e46-9b39-3f5da9e655da",
+  "name" : "disclaimer_2_rich_text",
+  "label" : "Disclaimer 2 Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<p>Due to COVID, many programs are currently being delivered online. Students are expected to have a computer or tablet that enables them to connect to the Internet in order to participate in class, review material and submit assessments.</p>"
+}, {
+  "id" : "b4ab8c28-852f-e8a7-6129-55fb691b80bf",
+  "name" : "enforce_of_boxes_in_a_row_choice",
+  "label" : "Enforce # of Nav Boxes in a Row Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "row-cols-1", "1" ], [ "row-cols-2", "2" ], [ "row-cols-3", "3" ], [ "row-cols-4", "4" ], [ "row-cols-5", "5" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "a5a7473c-03f7-5f9c-81ea-b2fe635856fa",
+  "name" : "nav_field_group",
+  "label" : "Nav Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 99,
+    "sorting_label_field" : "31b216de-6b61-5eac-437a-daaa3874a6d3",
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "31b216de-6b61-5eac-437a-daaa3874a6d3",
+    "name" : "nav_title_text",
+    "label" : "Nav Title Text",
+    "inline_help_text" : "Programs Title will need to match the Anchor name of the module.",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Full-time program"
+  }, {
+    "id" : "94f0face-0669-46a3-0970-3820f6532ce3",
+    "name" : "anchor_name",
+    "label" : "Anchor Name",
+    "inline_help_text" : "Programs Title will need to match the Anchor name of the module.",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Full-time program"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "nav_title_text" : "Full-time program",
+    "nav_title_text_copy" : "Full-time program"
+  }, {
+    "nav_title_text" : "Full-time program",
+    "nav_title_text_copy" : "Full-time program"
+  }, {
+    "nav_title_text" : "Full-time program",
+    "nav_title_text_copy" : "Full-time program"
+  } ]
+}, {
+  "id" : "04b91ed5-dbeb-598e-1922-1cc54318f310",
+  "name" : "bottom_rich_text",
+  "label" : "Bottom Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null
+} ]

@@ -1,0 +1,21 @@
+.section-newsletter form{
+  margin-top: -30px;
+}
+.section-newsletter .col-md-8{
+  position:relative;
+}
+.section-form.bg-grey{
+  background-color:#F5F8FA;
+}
+.section-form.section-newsletter{
+  padding:50px 0;
+}
+.section-form.section-newsletter form{
+  position:relative;
+}
+@media only screen and (min-width: 1200px){
+    .section-form.section-newsletter form .hs-submit {
+      bottom:90px;
+      right:30px;
+  }
+}

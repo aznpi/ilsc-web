@@ -1,0 +1,31 @@
+[ {
+  "id" : "d6010dea-2095-f192-7420-dee5190be5f3",
+  "name" : "title_rich_text",
+  "label" : "Title Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2 class=\"bold\">Discover the perfect <span style=\"color: #ff8b35;\">ELS City</span></h2>"
+}, {
+  "id" : "1c3cd338-eda4-60aa-28e1-d07931c74ddf",
+  "name" : "description_rich_text",
+  "label" : "Description Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<p>Learn English in the USA at one of our <span class=\"bold\">13 amazing destinations.</span></p>"
+}, {
+  "id" : "4a98c7e8-6813-52e2-9d2f-aa024445926c",
+  "name" : "cta_button_text",
+  "label" : "CTA Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "FIND OUT MORE"
+} ]

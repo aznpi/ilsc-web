@@ -1,0 +1,721 @@
+[ {
+  "id" : "fbac01e0-921d-1e1b-6405-66437f200efb",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Destinations you will love</h2>\n<h5>BROWSE BY COUNTRY</h5>"
+}, {
+  "id" : "64d33e71-2530-0aaf-30a2-d10c81ad3259",
+  "name" : "canada",
+  "label" : "Canada",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "94648444-65ca-45db-50c5-ac64883c3968",
+    "name" : "bg_image",
+    "label" : "BG Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/bg_canada.jpg",
+      "alt" : "bg_canada",
+      "width" : 687,
+      "height" : 338,
+      "max_width" : 687,
+      "max_height" : 338
+    }
+  }, {
+    "id" : "55c3c1d1-374b-4e55-3fe3-cccec386f3a0",
+    "name" : "icon",
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "94648444-65ca-45db-50c5-ac64883c3968",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : "NOT_EMPTY",
+      "access" : null
+    },
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_canada_leaf.png",
+      "alt" : "icon_canada_leaf",
+      "width" : 130,
+      "height" : 130,
+      "max_width" : 130,
+      "max_height" : 130
+    }
+  }, {
+    "id" : "a7c3702e-63c6-ac34-7f12-27c63dba038e",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "94648444-65ca-45db-50c5-ac64883c3968",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : "NOT_EMPTY",
+      "access" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "CANADA"
+  }, {
+    "id" : "f411573b-0b54-aeea-a6e3-7bf74695e4a1",
+    "name" : "url_field",
+    "label" : "URL",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "94648444-65ca-45db-50c5-ac64883c3968",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : null,
+      "access" : null
+    },
+    "supported_types" : [ "CONTENT", "EXTERNAL" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 31715488593
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "bg_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/bg_canada.jpg",
+      "alt" : "bg_canada",
+      "width" : 687,
+      "height" : 338,
+      "max_width" : 687,
+      "max_height" : 338
+    },
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_canada_leaf.png",
+      "alt" : "icon_canada_leaf",
+      "width" : 130,
+      "height" : 130,
+      "max_width" : 130,
+      "max_height" : 130
+    },
+    "title" : "CANADA",
+    "url_field" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 31715488593
+    }
+  }
+}, {
+  "id" : "d3fcfba7-f21d-e3b0-3505-d3b63b25ccda",
+  "name" : "australia",
+  "label" : "Australia",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "708acc8f-03ba-f4fd-f5f8-78ff86ac5302",
+    "name" : "bg_image",
+    "label" : "BG Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/bg_australia.jpg",
+      "alt" : "bg_australia",
+      "width" : 688,
+      "height" : 337,
+      "max_width" : 688,
+      "max_height" : 337
+    }
+  }, {
+    "id" : "48c71ae5-5f8c-677c-bca0-abef10cd874a",
+    "name" : "url_field",
+    "label" : "URL",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "708acc8f-03ba-f4fd-f5f8-78ff86ac5302",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : null,
+      "access" : null
+    },
+    "supported_types" : [ "CONTENT", "EXTERNAL" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 31667128414
+    }
+  }, {
+    "id" : "4b5cf2e7-4733-c676-afa9-8c7866f13f5c",
+    "name" : "icon",
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "708acc8f-03ba-f4fd-f5f8-78ff86ac5302",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : null,
+      "access" : null
+    },
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_australia_kangaroo.png",
+      "alt" : "icon_australia_kangaroo",
+      "width" : 138,
+      "height" : 130,
+      "max_width" : 138,
+      "max_height" : 130
+    }
+  }, {
+    "id" : "9637f21b-f453-c179-4045-797e272035ca",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "708acc8f-03ba-f4fd-f5f8-78ff86ac5302",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : null,
+      "access" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "AUSTRALIA"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "bg_image" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/bg_australia.jpg",
+      "alt" : "bg_australia",
+      "width" : 688,
+      "height" : 337,
+      "max_width" : 688,
+      "max_height" : 337
+    },
+    "url_field" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 31667128414
+    },
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_australia_kangaroo.png",
+      "alt" : "icon_australia_kangaroo",
+      "width" : 138,
+      "height" : 130,
+      "max_width" : 138,
+      "max_height" : 130
+    },
+    "title" : "AUSTRALIA"
+  }
+}, {
+  "id" : "a2d1b19c-e610-8047-2170-16cda6a9e28c",
+  "name" : "india",
+  "label" : "India",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "a908d42a-3ae7-ba04-611e-082b75f7f2a7",
+    "name" : "bg_image",
+    "label" : "BG Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/bg_india.jpg",
+      "alt" : "bg_india",
+      "width" : 685,
+      "height" : 337,
+      "max_width" : 685,
+      "max_height" : 337
+    }
+  }, {
+    "id" : "448c38f2-2317-1ef0-a3f2-566974b29b2a",
+    "name" : "url_field",
+    "label" : "URL",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "a908d42a-3ae7-ba04-611e-082b75f7f2a7",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : null,
+      "access" : null
+    },
+    "supported_types" : [ "CONTENT", "EXTERNAL" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 31714524656
+    }
+  }, {
+    "id" : "b265f86f-c0b6-f4e1-1b2e-acf811721ff5",
+    "name" : "icon",
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "a908d42a-3ae7-ba04-611e-082b75f7f2a7",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : null,
+      "access" : null
+    },
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_india_taj.png",
+      "alt" : "icon_india_taj",
+      "width" : 130,
+      "height" : 130,
+      "max_width" : 130,
+      "max_height" : 130
+    }
+  }, {
+    "id" : "44c6e183-d11d-e744-8943-91824bfbd1c0",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "a908d42a-3ae7-ba04-611e-082b75f7f2a7",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : null,
+      "access" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "INDIA"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "bg_image" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/bg_india.jpg",
+      "alt" : "bg_india",
+      "width" : 685,
+      "height" : 337,
+      "max_width" : 685,
+      "max_height" : 337
+    },
+    "url_field" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 31714524656
+    },
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_india_taj.png",
+      "alt" : "icon_india_taj",
+      "width" : 130,
+      "height" : 130,
+      "max_width" : 130,
+      "max_height" : 130
+    },
+    "title" : "INDIA"
+  }
+}, {
+  "id" : "694bf5f2-ba3a-dc8a-d099-a69c4517244b",
+  "name" : "title_city",
+  "label" : "Title City",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h5>BROWSE BY CITY</h5>"
+}, {
+  "id" : "6b701cbc-01b8-3fcd-4008-ebfdcf62d6e6",
+  "name" : "city_copy",
+  "label" : "City copy",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 12,
+    "sorting_label_field" : "f27e63a5-5fc5-5e84-36d5-6fc2a6cebda0",
+    "default" : 8
+  },
+  "children" : [ {
+    "id" : "cddcaf62-d5d5-e772-ad97-83d11bafbf18",
+    "name" : "bg_city",
+    "label" : "BG City",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/bg_vancouver.jpg",
+      "alt" : "bg_vancouver",
+      "width" : 510,
+      "height" : 478,
+      "max_width" : 510,
+      "max_height" : 478
+    }
+  }, {
+    "id" : "f27e63a5-5fc5-5e84-36d5-6fc2a6cebda0",
+    "name" : "title_city",
+    "label" : "Title City",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Vancouver"
+  }, {
+    "id" : "b0687ca1-821f-050c-b85e-159f86ebd44b",
+    "name" : "link_City",
+    "label" : "Link City",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "CONTENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 32926210447
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "24135268-e992-3080-d2be-b4f43f5f5a28",
+    "name" : "icon",
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_canada_leaf.png",
+      "alt" : "icon_canada_leaf",
+      "width" : 130,
+      "height" : 130,
+      "max_width" : 130,
+      "max_height" : 130
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "bg_city" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/bg_vancouver.jpg",
+      "alt" : "bg_vancouver",
+      "width" : 510,
+      "height" : 478,
+      "max_width" : 510,
+      "max_height" : 478
+    },
+    "title_city" : "Vancouver",
+    "link_City" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 32926210447
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_canada_leaf.png",
+      "alt" : "icon_canada_leaf",
+      "width" : 130,
+      "height" : 130,
+      "max_width" : 130,
+      "max_height" : 130
+    }
+  }, {
+    "bg_city" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/bg_vancouver.jpg",
+      "alt" : "bg_vancouver",
+      "width" : 510,
+      "height" : 478,
+      "max_width" : 510,
+      "max_height" : 478
+    },
+    "title_city" : "Vancouver",
+    "link_City" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 32926210447
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_canada_leaf.png",
+      "alt" : "icon_canada_leaf",
+      "width" : 130,
+      "height" : 130,
+      "max_width" : 130,
+      "max_height" : 130
+    }
+  }, {
+    "bg_city" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/bg_vancouver.jpg",
+      "alt" : "bg_vancouver",
+      "width" : 510,
+      "height" : 478,
+      "max_width" : 510,
+      "max_height" : 478
+    },
+    "title_city" : "Vancouver",
+    "link_City" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 32926210447
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_canada_leaf.png",
+      "alt" : "icon_canada_leaf",
+      "width" : 130,
+      "height" : 130,
+      "max_width" : 130,
+      "max_height" : 130
+    }
+  }, {
+    "bg_city" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/bg_vancouver.jpg",
+      "alt" : "bg_vancouver",
+      "width" : 510,
+      "height" : 478,
+      "max_width" : 510,
+      "max_height" : 478
+    },
+    "title_city" : "Vancouver",
+    "link_City" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 32926210447
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_canada_leaf.png",
+      "alt" : "icon_canada_leaf",
+      "width" : 130,
+      "height" : 130,
+      "max_width" : 130,
+      "max_height" : 130
+    }
+  }, {
+    "bg_city" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/bg_vancouver.jpg",
+      "alt" : "bg_vancouver",
+      "width" : 510,
+      "height" : 478,
+      "max_width" : 510,
+      "max_height" : 478
+    },
+    "title_city" : "Vancouver",
+    "link_City" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 32926210447
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_canada_leaf.png",
+      "alt" : "icon_canada_leaf",
+      "width" : 130,
+      "height" : 130,
+      "max_width" : 130,
+      "max_height" : 130
+    }
+  }, {
+    "bg_city" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/bg_vancouver.jpg",
+      "alt" : "bg_vancouver",
+      "width" : 510,
+      "height" : 478,
+      "max_width" : 510,
+      "max_height" : 478
+    },
+    "title_city" : "Vancouver",
+    "link_City" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 32926210447
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_canada_leaf.png",
+      "alt" : "icon_canada_leaf",
+      "width" : 130,
+      "height" : 130,
+      "max_width" : 130,
+      "max_height" : 130
+    }
+  }, {
+    "bg_city" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/bg_vancouver.jpg",
+      "alt" : "bg_vancouver",
+      "width" : 510,
+      "height" : 478,
+      "max_width" : 510,
+      "max_height" : 478
+    },
+    "title_city" : "Vancouver",
+    "link_City" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 32926210447
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_canada_leaf.png",
+      "alt" : "icon_canada_leaf",
+      "width" : 130,
+      "height" : 130,
+      "max_width" : 130,
+      "max_height" : 130
+    }
+  }, {
+    "bg_city" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/bg_vancouver.jpg",
+      "alt" : "bg_vancouver",
+      "width" : 510,
+      "height" : 478,
+      "max_width" : 510,
+      "max_height" : 478
+    },
+    "title_city" : "Vancouver",
+    "link_City" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 32926210447
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_canada_leaf.png",
+      "alt" : "icon_canada_leaf",
+      "width" : 130,
+      "height" : 130,
+      "max_width" : 130,
+      "max_height" : 130
+    }
+  } ]
+} ]

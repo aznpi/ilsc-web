@@ -1,0 +1,145 @@
+<section class="section section-6-6 section-faq {% if module.bg_color.color == '#FFFFFF' %}bg-white-canvas{% endif %}" id="content" style="background-color:rgba({{module.bg_color.color|convert_rgb }}, {{module.bg_color.opacity/100 }})">
+	<div class="container">
+    <div class="row title">
+      <div class="col-md-12">
+        {% inline_rich_text field="title_accordion_rich_text" value="{{ module.title_accordion_rich_text }}" %}
+      </div>
+    </div>
+		<div class="row">
+			<div class="col-md-6 bg-image-container" {% if module.enable_bg_choice == 'enable' %}style="background-image:url({{ module.bg_image_field.src }});"{% endif%}>
+        {% if module.enable_description_text_choice == 'enable' %}
+          {% inline_rich_text field="description_rich_text" value="{{ module.description_rich_text }}" %}
+        {% endif %}
+			</div>
+			<div class="col-md-6 column-accordion">
+        <div class="accordion left" id="accordionFaq-{{ module.accordion_id }}">
+              
+            {% if  module.show_only_5 == "enable" %}
+              {% for item in module.faq_items%}
+                   {% if loop.index < 6 %}
+                    <div class="card">
+                      <div class="card-header" id="heading-{{loop.index}}-{{ module.accordion_id }}">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-{{loop.index}}-{{ module.accordion_id }}" {% if loop.index == 1 %} aria-expanded="true" {% else %} aria-expanded="false" {% endif %} aria-controls="collapse-{{loop.index}}-{{ module.accordion_id }}">
+                            {{ item.question_text }}
+                          </button>
+                        </h2>
+                      </div>
+
+                      <div id="collapse-{{loop.index}}-{{ module.accordion_id }}" {% if loop.index == 1 %} class="collapse show" {% else %} class="collapse" {% endif %} aria-labelledby="heading-{{loop.index}}-{{ module.accordion_id }}" data-parent="#accordionFaq-{{ module.accordion_id }}">
+                        <div class="card-body">
+                         {% inline_rich_text field="answer_text" value="{{ item.answer_text }}" %}
+                        </div>
+                      </div>
+                    </div>
+                  {% endif %} 
+                {% endfor %}
+
+                {% if module.faq_items|length > 5 %}
+                  <div class="show-more-faq-container" style="display:none;">
+                    {% for item in module.faq_items %}
+                        {% if loop.index > 5 %}
+            
+                          <div class="card">
+                            <div class="card-header" id="heading-{{loop.index}}-{{ module.accordion_id }}">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-{{loop.index}}-{{ module.accordion_id }}" aria-expanded="false" aria-controls="collapse-{{loop.index}}-{{ module.accordion_id }}">
+                                  {{ item.question_text }}
+                                </button>
+                              </h2>
+                            </div>
+
+                            <div id="collapse-{{loop.index}}-{{ module.accordion_id }}" class="collapse" aria-labelledby="heading-{{loop.index}}-{{ module.accordion_id }}" data-parent="#accordionFaq-{{ module.accordion_id }}">
+                              <div class="card-body">
+                               {% inline_rich_text field="answer_text" value="{{ item.answer_text }}" %}
+                              </div>
+                            </div>
+                          </div>
+                        {% endif %}
+                    
+                     {% endfor %}
+                  </div>
+                  {% endif %}
+              
+              {% else%}
+                {% for item in module.faq_items%}
+                     
+                      <div class="card">
+                        <div class="card-header" id="heading-{{loop.index}}-{{ module.accordion_id }}">
+                          <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-{{loop.index}}-{{ module.accordion_id }}" {% if loop.index == 1 %} aria-expanded="true" {% else %} aria-expanded="false" {% endif %} aria-controls="collapse-{{loop.index}}-{{ module.accordion_id }}">
+                              {{ item.question_text }}
+                            </button>
+                          </h2>
+                        </div>
+
+                        <div id="collapse-{{loop.index}}-{{ module.accordion_id }}" {% if loop.index == 1 %} class="collapse show" {% else %} class="collapse" {% endif %} aria-labelledby="heading-{{loop.index}}-{{ module.accordion_id }}" data-parent="#accordionFaq-{{ module.accordion_id }}">
+                          <div class="card-body">
+                           {% inline_rich_text field="answer_text" value="{{ item.answer_text }}" %}
+                          </div>
+                        </div>
+                      </div>
+                  {% endfor %}
+              {% endif %}
+						</div>
+            {% if  module.show_only_5 == "enable" %}
+              {% if  module.faq_items|length > 5 %}
+                <div class="row">
+                  <div class="col-md-12 center">
+                    <button class="btn btn-black-outline show-more-faq">{{ module.button_show_more_text }}</button>
+                  </div>
+                </div>
+              {% endif %}
+          {% endif %}
+          {% inline_rich_text field="accordion_footnote_rich_text" value="{{ module.accordion_footnote_rich_text }}" %}
+			</div>
+		</div>
+    {% if module.cta_field_group.hide_show_cta == "show" %}
+      <div class="row">
+        <div class="col-md-6">
+            <div class="btn-container">
+              {% set href = module.cta_field_group.link_field.url.href %}
+                {% if module.cta_field_group.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+                  {% set href = "mailto:" + href %}
+                {% endif %}
+                {% set rel = [] %}
+                {% if module.cta_field_group.link_field.no_follow %}
+                  {% do rel.append("nofollow") %}
+                {% endif %}
+                {% if module.cta_field_group.link_field.open_in_new_tab %}
+                  {% do rel.append("noopener") %}
+                {% endif %}
+                <a href="{{ href }}"
+                  {% if module.cta_field_group.link_field.open_in_new_tab %}target="_blank"{% endif %}
+                  {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                  class="btn btn-blue" rel="noopener">
+                  {{ module.cta_field_group.text_field }}
+                </a>
+           </div>
+        </div>
+        <div class="col-md-6">
+
+        </div>
+      </div>
+    {% endif %}
+	</div>
+</section>
+<script>
+$(document).ready(function(){
+		
+		$('.btn.show-more-faq').click(function(){
+			
+			if($(this).hasClass('show-more')){
+				$(this).removeClass('show-more');
+				$(this).html('{{ module.button_show_more_text }}');
+			}else{
+				$(this).addClass('show-more');
+				$(this).html('{{ module.button_show_less_text }}');
+			}
+			
+			$('.show-more-faq-container').slideToggle( "slow", function() {
+			  
+			 });
+		})
+	});
+</script>

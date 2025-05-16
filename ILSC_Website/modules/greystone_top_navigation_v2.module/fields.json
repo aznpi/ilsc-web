@@ -1,0 +1,934 @@
+[ {
+  "id" : "64e82d9b-1d34-392a-f228-9163f5464361",
+  "name" : "logo_image",
+  "label" : "Logo Image",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto_custom_max",
+    "src" : "https://www.ilsc.com/hubfs/template-resources/images/internal/logos/logo_Greystone_College-Color-Logo-Horizontal.svg",
+    "alt" : "logo_Greystone_College-Color-Logo-Horizontal",
+    "loading" : "lazy",
+    "width" : 400,
+    "height" : 400,
+    "max_width" : 170,
+    "max_height" : 170
+  }
+}, {
+  "picker" : "image",
+  "id" : "22c58dc5-fe3e-e07d-d5d7-df0f0e7dfed3",
+  "name" : "alternate_logo_svg_file",
+  "label" : "Alternate Logo SVG File",
+  "required" : false,
+  "locked" : true,
+  "type" : "file",
+  "display_width" : null,
+  "default" : "https://www.ilsc.com/hubfs/GC_Horizontal_Logo_CMYK_FR.svg"
+}, {
+  "id" : "aa983c90-6518-a641-c62d-0992e6a1bfc2",
+  "name" : "alternate_logo_alt",
+  "label" : "Alternate logo ALT",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Greystone College"
+}, {
+  "id" : "6ff11926-0741-8f0c-b743-6d13d310fe5a",
+  "name" : "keyword_to_use_alternate_logo",
+  "label" : "Keyword to use Alternate Logo",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "montréal"
+}, {
+  "id" : "840fe672-c227-3c1c-8637-ee42725d3248",
+  "name" : "language_code_to_use_alternate_logo",
+  "label" : "Language Code to use Alternate Logo",
+  "inline_help_text" : "Language Code to use alternate Logo",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "fr"
+}, {
+  "id" : "8f84b4c3-eb75-3fc9-1877-3de1f876006e",
+  "name" : "logo_link",
+  "label" : "Logo Link",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 34818334855
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "42104af9-36ab-0d96-55ab-cd95cdca53d8",
+  "name" : "nav_titles",
+  "label" : "Nav Titles",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "c4bfabda-d5ae-67cc-972d-2e3e4f052e16",
+    "name" : "link_group_1",
+    "label" : "Link Group 1",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "15a1e2de-364e-2766-3e52-f7563614ab67",
+      "name" : "nav_title",
+      "label" : "Nav Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Contact Us"
+    }, {
+      "id" : "33414834-d8d4-07cb-a9a3-d0445d3c856d",
+      "name" : "enable_disable_dropdown_menu_choice",
+      "label" : "Enable/Disable Dropdown menu Choice",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "enable", "Enable" ], [ "disable", "Disable" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "enable"
+    }, {
+      "id" : "9ac60030-b3b8-9162-097d-82d8eaa530f8",
+      "name" : "top_tier_link",
+      "label" : "Top Tier Link",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "33414834-d8d4-07cb-a9a3-d0445d3c856d",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "disable",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 42502005168
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "1c3d34d6-439d-cb53-65aa-b8a29ae41998",
+      "name" : "link_group",
+      "label" : "Link group",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "max" : 10,
+        "sorting_label_field" : "d8b27588-9fe2-a537-1ea3-f63bf5247c4f",
+        "default" : 2
+      },
+      "visibility" : {
+        "controlling_field" : "33414834-d8d4-07cb-a9a3-d0445d3c856d",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "enable",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "children" : [ {
+        "id" : "d8b27588-9fe2-a537-1ea3-f63bf5247c4f",
+        "name" : "link_text",
+        "label" : "Link Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Canada"
+      }, {
+        "id" : "7a9c6bff-efb9-15d1-8d79-712356a5cdc3",
+        "name" : "link_url",
+        "label" : "Link URL",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+        "type" : "url",
+        "display_width" : null,
+        "default" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : [ {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }, {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "nav_title" : "Contact Us",
+      "enable_disable_dropdown_menu_choice" : "enable",
+      "top_tier_link" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 42502005168
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_group" : [ {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }, {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ]
+    }
+  }, {
+    "id" : "35210861-de2d-a866-8650-83fcc219b5a1",
+    "name" : "link_group_2",
+    "label" : "Link Group 2",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "0eac830a-1cf8-b892-0c62-8688668880f9",
+      "name" : "nav_title",
+      "label" : "Nav Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Student Login"
+    }, {
+      "id" : "46047443-30ad-c41d-22f2-d9fea54e2783",
+      "name" : "enable_disable_dropdown_menu_choice",
+      "label" : "Enable/Disable Dropdown menu Choice",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "enable", "Enable" ], [ "disable", "Disable" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "enable"
+    }, {
+      "id" : "75a3fbd8-d91a-32f3-a376-e3626f35e233",
+      "name" : "top_tier_link",
+      "label" : "Top Tier Link",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "46047443-30ad-c41d-22f2-d9fea54e2783",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "disable",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 42502005168
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "958b6887-031f-684b-af6e-de4f030c6141",
+      "name" : "link_group",
+      "label" : "Link group",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "max" : 10,
+        "sorting_label_field" : "d8b27588-9fe2-a537-1ea3-f63bf5247c4f",
+        "default" : 2
+      },
+      "visibility" : {
+        "controlling_field" : "46047443-30ad-c41d-22f2-d9fea54e2783",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "enable",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "children" : [ {
+        "id" : "af7288ae-94b2-c72b-c70f-0e5f5535e5e8",
+        "name" : "link_text",
+        "label" : "Link Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Canada"
+      }, {
+        "id" : "28f9cfd4-aefa-8894-d05e-5bce6c12f357",
+        "name" : "link_url",
+        "label" : "Link URL",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+        "type" : "url",
+        "display_width" : null,
+        "default" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : [ {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }, {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "nav_title" : "Student Login",
+      "enable_disable_dropdown_menu_choice" : "enable",
+      "top_tier_link" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 42502005168
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_group" : [ {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }, {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ]
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "link_group_1" : {
+      "nav_title" : "Contact Us",
+      "enable_disable_dropdown_menu_choice" : "enable",
+      "top_tier_link" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 42502005168
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_group" : [ {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }, {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ]
+    },
+    "link_group_2" : {
+      "nav_title" : "Student Login",
+      "enable_disable_dropdown_menu_choice" : "enable",
+      "top_tier_link" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 42502005168
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_group" : [ {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }, {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ]
+    }
+  }
+}, {
+  "id" : "4c44f97c-d73e-2775-f4b4-be9c9f44b7cb",
+  "name" : "search_menu",
+  "label" : "Search Menu",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "06101793-8eb1-8776-2133-67e839d82ec2",
+    "name" : "title_search",
+    "label" : "Title Search",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>SEARCH</h4>"
+  }, {
+    "id" : "b0499547-b48e-19ce-b2e2-ebb466b9dd6d",
+    "name" : "text_search_placeholder",
+    "label" : "Text Search Placeholder",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "TYPE TO SEARCH"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "title_search" : "<h4>SEARCH</h4>",
+    "text_search_placeholder" : "TYPE TO SEARCH"
+  }
+}, {
+  "id" : "b809dafb-952a-7e01-7028-8ae79902758b",
+  "name" : "title_language",
+  "label" : "Title Language",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h4>Languages</h4>"
+}, {
+  "id" : "45c1078a-2edb-b98e-7348-76150d595f0a",
+  "name" : "login_menu",
+  "label" : "Login Menu",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "9667c84f-229e-744a-d25f-04e7ecf75b0a",
+    "name" : "nav_login_text",
+    "label" : "Nav Login Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Login"
+  }, {
+    "id" : "9bf590b9-d84c-fdee-963b-1fa9b626ae8b",
+    "name" : "partners_login_menu",
+    "label" : "Partners Login Menu",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "a15ecdd2-c843-855e-73f1-2c9d8a8fa072",
+      "name" : "title_partners_login",
+      "label" : "Title Partners Login",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<h4>PARTNERS LOGIN</h4>"
+    }, {
+      "id" : "77972322-d0f7-bcf0-d95d-522476baa6bd",
+      "name" : "text_1",
+      "label" : "Text 1",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "New to ILSC. Create an account to get started today."
+    }, {
+      "id" : "fa76dce8-edd8-055b-2de9-03c6227b1d76",
+      "name" : "text_2",
+      "label" : "Text 2",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Have an account? Sign in now."
+    }, {
+      "id" : "f0ea116a-aedd-14a5-8b68-9120e1774fe6",
+      "name" : "button_partners_login",
+      "label" : "Button Partners Login",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "0cf3a287-ca61-068e-5460-85bc2d5a3d99",
+        "name" : "partners_login_url",
+        "label" : "Partners Login Url",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+        "show_advanced_rel_options" : false,
+        "type" : "link",
+        "display_width" : null,
+        "default" : {
+          "url" : {
+            "type" : "EXTERNAL",
+            "href" : "https://agent.ilsc.com/public/becomeanagent",
+            "content_id" : null
+          },
+          "open_in_new_tab" : true,
+          "no_follow" : false
+        }
+      }, {
+        "id" : "6d286edb-2e08-7f42-5983-fa6f7e97d86d",
+        "name" : "button_text_partners_login",
+        "label" : "Button Text Partners Login",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Create My Account"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : {
+        "partners_login_url" : {
+          "url" : {
+            "type" : "EXTERNAL",
+            "href" : "https://agent.ilsc.com/public/becomeanagent",
+            "content_id" : null
+          },
+          "open_in_new_tab" : true,
+          "no_follow" : false
+        },
+        "button_text_partners_login" : "Create My Account"
+      }
+    }, {
+      "id" : "b43084f1-6f64-6516-c8ab-421e73bd3f06",
+      "name" : "button_partners_create_account",
+      "label" : "Button Partners Create Account",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "7aae317a-e027-b4ff-0856-bfb9235ab861",
+        "name" : "partners_login_url",
+        "label" : "Partners Login Url",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+        "show_advanced_rel_options" : false,
+        "type" : "link",
+        "display_width" : null,
+        "default" : {
+          "url" : {
+            "type" : "EXTERNAL",
+            "href" : "https://agent.ilsc.com/login",
+            "content_id" : null
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }, {
+        "id" : "ce55c5fd-3923-31e3-cd10-c00a69df5865",
+        "name" : "button_text_partners_login",
+        "label" : "Button Text Partners Login",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Partners Login"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : {
+        "partners_login_url" : {
+          "url" : {
+            "type" : "EXTERNAL",
+            "href" : "https://agent.ilsc.com/login",
+            "content_id" : null
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "button_text_partners_login" : "Partners Login"
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "title_partners_login" : "<h4>PARTNERS LOGIN</h4>",
+      "text_1" : "New to ILSC. Create an account to get started today.",
+      "text_2" : "Have an account? Sign in now.",
+      "button_partners_login" : {
+        "partners_login_url" : {
+          "url" : {
+            "type" : "EXTERNAL",
+            "href" : "https://agent.ilsc.com/public/becomeanagent",
+            "content_id" : null
+          },
+          "open_in_new_tab" : true,
+          "no_follow" : false
+        },
+        "button_text_partners_login" : "Create My Account"
+      },
+      "button_partners_create_account" : {
+        "partners_login_url" : {
+          "url" : {
+            "type" : "EXTERNAL",
+            "href" : "https://agent.ilsc.com/login",
+            "content_id" : null
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "button_text_partners_login" : "Partners Login"
+      }
+    }
+  }, {
+    "id" : "1624f568-ab08-80a9-62a6-d02a3613ab37",
+    "name" : "student_login_menu",
+    "label" : "Student Login Menu",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "d13729c7-c716-379c-082f-c1e03d5b2ee1",
+      "name" : "title_student_login",
+      "label" : "Title Student Login",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<h4>STUDENT LOGIN</h4>"
+    }, {
+      "id" : "8c9e884d-f135-f610-b33c-851d21edea8d",
+      "name" : "text_1",
+      "label" : "Text 1",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Have an account? Sign in now."
+    }, {
+      "id" : "d7037463-653f-63b7-4430-ce025b7100c8",
+      "name" : "button_student_login",
+      "label" : "Button Student Login",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "max" : 2,
+        "sorting_label_field" : "6e9dbef7-65a0-2744-60cd-91e07ca77319",
+        "default" : 1
+      },
+      "children" : [ {
+        "id" : "28b39246-665b-305c-8658-38bc9a7cb5eb",
+        "name" : "student_login_url",
+        "label" : "Student Login Url",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+        "show_advanced_rel_options" : false,
+        "type" : "link",
+        "display_width" : null,
+        "default" : {
+          "url" : {
+            "type" : "EXTERNAL",
+            "href" : "https://learn.greystonecollege.com/",
+            "content_id" : null
+          },
+          "open_in_new_tab" : true,
+          "no_follow" : false
+        }
+      }, {
+        "id" : "6e9dbef7-65a0-2744-60cd-91e07ca77319",
+        "name" : "button_text_student_login",
+        "label" : "Button Text Student Login",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Greystone College Canada"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : [ {
+        "student_login_url" : {
+          "url" : {
+            "type" : "EXTERNAL",
+            "href" : "https://learn.greystonecollege.com/",
+            "content_id" : null
+          },
+          "open_in_new_tab" : true,
+          "no_follow" : false
+        },
+        "button_text_student_login" : "Greystone College Canada"
+      } ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "title_student_login" : "<h4>STUDENT LOGIN</h4>",
+      "text_1" : "Have an account? Sign in now.",
+      "button_student_login" : [ {
+        "student_login_url" : {
+          "url" : {
+            "type" : "EXTERNAL",
+            "href" : "https://learn.greystonecollege.com/",
+            "content_id" : null
+          },
+          "open_in_new_tab" : true,
+          "no_follow" : false
+        },
+        "button_text_student_login" : "Greystone College Canada"
+      } ]
+    }
+  }, {
+    "id" : "22846cfc-004e-e62c-064d-70459a6cfeb3",
+    "name" : "e_brochure_link",
+    "label" : "E-Brochure Link",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "9cd8eb80-1b2c-5f3a-cfc4-c1e5120774dc",
+      "name" : "link_text",
+      "label" : "Link Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Digital Brochure"
+    }, {
+      "id" : "3e72f70b-438d-226a-c808-cabcf38f6128",
+      "name" : "url_link_text",
+      "label" : "Url Link Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "https://www.ilsc.com/digital-brochure"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "link_text" : "Digital Brochure",
+      "url_link_text" : "https://www.ilsc.com/digital-brochure"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "nav_login_text" : "Login",
+    "partners_login_menu" : {
+      "title_partners_login" : "<h4>PARTNERS LOGIN</h4>",
+      "text_1" : "New to ILSC. Create an account to get started today.",
+      "text_2" : "Have an account? Sign in now.",
+      "button_partners_login" : {
+        "partners_login_url" : {
+          "url" : {
+            "type" : "EXTERNAL",
+            "href" : "https://agent.ilsc.com/public/becomeanagent",
+            "content_id" : null
+          },
+          "open_in_new_tab" : true,
+          "no_follow" : false
+        },
+        "button_text_partners_login" : "Create My Account"
+      },
+      "button_partners_create_account" : {
+        "partners_login_url" : {
+          "url" : {
+            "type" : "EXTERNAL",
+            "href" : "https://agent.ilsc.com/login",
+            "content_id" : null
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "button_text_partners_login" : "Partners Login"
+      }
+    },
+    "student_login_menu" : {
+      "title_student_login" : "<h4>STUDENT LOGIN</h4>",
+      "text_1" : "Have an account? Sign in now.",
+      "button_student_login" : [ {
+        "student_login_url" : {
+          "url" : {
+            "type" : "EXTERNAL",
+            "href" : "https://learn.greystonecollege.com/",
+            "content_id" : null
+          },
+          "open_in_new_tab" : true,
+          "no_follow" : false
+        },
+        "button_text_student_login" : "Greystone College Canada"
+      } ]
+    },
+    "e_brochure_link" : {
+      "link_text" : "Digital Brochure",
+      "url_link_text" : "https://www.ilsc.com/digital-brochure"
+    }
+  }
+} ]

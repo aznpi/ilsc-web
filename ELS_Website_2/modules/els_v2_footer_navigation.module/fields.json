@@ -1,0 +1,297 @@
+[ {
+  "id" : "a5c361fc-fd18-df53-e441-dbd4aba1b70d",
+  "name" : "logo_image",
+  "label" : "Logo Image",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.ilsc.com/hubfs/Landing%20Pages/ELS-ILSC-Vancouver-Integration/els-logo.svg",
+    "alt" : "els-logo",
+    "loading" : "lazy",
+    "width" : 378,
+    "height" : 353,
+    "max_width" : 378,
+    "max_height" : 353
+  }
+}, {
+  "id" : "3c9d7096-b68b-4101-0ca6-5039e64917ce",
+  "name" : "sub_text",
+  "label" : "Sub Text",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Our focus is on your success and we can guide you there."
+}, {
+  "id" : "bcecc05e-8b52-59b3-02a8-b74bfd8ddb0a",
+  "name" : "social_media",
+  "label" : "Social Media",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 5,
+    "sorting_label_field" : "97c87ef4-c66c-3825-82b6-c570767eb2a0",
+    "default" : 0
+  },
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : null,
+    "controlling_value_regex" : null,
+    "property" : null,
+    "operator" : "NOT_EMPTY",
+    "access" : null
+  },
+  "children" : [ {
+    "id" : "97c87ef4-c66c-3825-82b6-c570767eb2a0",
+    "name" : "social_media_choice",
+    "label" : "Social Media Choice",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "fb", "Facebook" ], [ "ig", "Instagram" ], [ "in", "Linkedin" ], [ "yt", "Youtube" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null
+  }, {
+    "id" : "a926f120-a21b-6626-c14e-8021694c014c",
+    "name" : "link_field",
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "04cdc7a5-f2c1-bf55-fa02-f940f51b6d6b",
+    "name" : "social_icon_svg",
+    "label" : "Social Icon SVG",
+    "required" : false,
+    "locked" : false,
+    "supported_source_types" : [ "html" ],
+    "supported_oembed_types" : [ "photo", "video", "link", "rich" ],
+    "resizable" : false,
+    "show_preview" : false,
+    "supported_media_bridge_providers" : [ ],
+    "type" : "embed",
+    "display_width" : null,
+    "default" : {
+      "source_type" : "html",
+      "embed_html" : "<svg height=\"100%\" style=\"fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;\" version=\"1.1\" viewBox=\"0 0 512 512\" width=\"100%\" xml:space=\"preserve\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:serif=\"http://www.serif.com/\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z\"/></svg>"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ ]
+}, {
+  "id" : "548849be-e9c9-f9c0-e468-f3a3b172c0cd",
+  "name" : "main_footer_nav_field_group",
+  "label" : "Main Footer Nav Field group",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "c9a5bdaf-b6bd-159f-a310-74a2b97ad66e",
+    "name" : "column_field_group",
+    "label" : "Column Field group",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 0,
+      "max" : 7,
+      "sorting_label_field" : "6fb0d560-fc6e-f8d3-7349-e88c98411768",
+      "default" : null
+    },
+    "children" : [ {
+      "id" : "6fb0d560-fc6e-f8d3-7349-e88c98411768",
+      "name" : "title_text_field",
+      "label" : "Title Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null
+    }, {
+      "id" : "8e35d759-7a65-330f-5081-7377a352bb15",
+      "name" : "link_field_group",
+      "label" : "Link Field group",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 0,
+        "max" : 10,
+        "sorting_label_field" : "2029fbe8-d882-120b-3912-04a22ced0cdf",
+        "default" : null
+      },
+      "children" : [ {
+        "id" : "99f510e4-dc8e-cc07-a830-bccfeb6f7f5c",
+        "name" : "link_field_1",
+        "label" : "Link",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+        "show_advanced_rel_options" : false,
+        "type" : "link",
+        "display_width" : null,
+        "default" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }, {
+        "id" : "2029fbe8-d882-120b-3912-04a22ced0cdf",
+        "name" : "text_link",
+        "label" : "Text Link",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : [ ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "column_field_group" : [ ]
+  }
+}, {
+  "id" : "196a5a57-d317-21ad-5594-709afe612401",
+  "name" : "sub_footer_nav_field_group",
+  "label" : "Sub Footer Nav Field group",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "c6ee455d-dfe6-90d8-651b-8cbc24081ea9",
+    "name" : "column_field_group",
+    "label" : "Column Field group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "6e5e482e-9168-2b77-f070-9827c8d43791",
+      "name" : "link_field_group",
+      "label" : "Link Field group",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 0,
+        "max" : 10,
+        "sorting_label_field" : "2029fbe8-d882-120b-3912-04a22ced0cdf",
+        "default" : null
+      },
+      "children" : [ {
+        "id" : "d659d65c-6159-3019-1852-4d28df10c5ff",
+        "name" : "link_field_1",
+        "label" : "Link",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+        "show_advanced_rel_options" : false,
+        "type" : "link",
+        "display_width" : null,
+        "default" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }, {
+        "id" : "2b40d8f8-ef79-f256-b320-652f9807ddc0",
+        "name" : "text_link",
+        "label" : "Text Link",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : [ ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "link_field_group" : [ ]
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "column_field_group" : {
+      "link_field_group" : [ ]
+    }
+  }
+}, {
+  "id" : "f93fbcf6-c39a-5f61-fbfd-57ad98cd7b8b",
+  "name" : "copyright_text",
+  "label" : "Copyright Text",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "&copy; Copyright 2024 ELS Educational Services, Inc., a Berlitz company"
+} ]

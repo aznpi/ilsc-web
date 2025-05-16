@@ -1,0 +1,44 @@
+[ {
+  "id" : "ec8ade86-57e7-dd52-7d8e-77519ab46f43",
+  "name" : "padding_choice",
+  "label" : "Padding Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "padding-none", "None" ], [ "padding-bottom-none", "No Bottom Padding" ], [ "padding-top-none", "No Top Padding" ], [ "padding-top", "Top Padding" ], [ "padding-bottom", "Bottom Padding" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "f05334d1-982c-4cd3-0dc0-fb71102a604e",
+  "name" : "tabs_field_group",
+  "label" : "Tabs Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 20,
+    "sorting_label_field" : "bc5cedbc-611c-77e8-9470-8f9253694688",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "bc5cedbc-611c-77e8-9470-8f9253694688",
+    "name" : "tab_title_text",
+    "label" : "Tab Title Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ ]
+} ]

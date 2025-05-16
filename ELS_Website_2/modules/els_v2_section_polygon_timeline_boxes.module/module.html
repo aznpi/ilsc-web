@@ -1,0 +1,41 @@
+<section class="{{ module.bg_angle_choice }} section-normal {{ module.padding_choice }} {{ module.margin_choice }} polygon-absolute section-timeline-box">
+  <div class="{% if module.bg_angle_choice == 'section-diagonal' %}diagonal-box{% elif module.bg_angle_choice == 'section-polygon'%}polygon-box{% endif %} {{ module.bg_color_choice }} underlap-partial-overlay"></div>
+  <div class="bg-timeline" style="background-image:url('{{ module.timeline_image.src }}');top:{{ module.timeline_position }}%;">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+      </div>
+    </div>
+    <div class="row simple-boxes">
+      {% for item in module.box_field_group %}
+      <div class="col-md-{{ module.number_of_column_choice }}">
+        <div class="box-container">
+          {% if item.icon_image.src %}
+          {% set sizeAttrs = 'width="{{ item.icon_image.width }}" height="{{ item.icon_image.height }}"' %}
+          {% if item.icon_image.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ item.icon_image.width }}" height="{{ item.icon_image.height }}" style="max-width: 100%; height: auto;"' %}
+          {% elif item.icon_image.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ item.icon_image.max_width }}" height="{{ item.icon_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = item.icon_image.loading != 'disabled' ? 'loading="{{ item.icon_image.loading }}"' : '' %}
+          <div class="icon-container"><img src="{{ item.icon_image.src }}" alt="{{ item.icon_image.alt }}" class="img-fluid"></div>
+          {% endif %}
+
+          <div class="step-title-container">
+            {{ item.step_text }}
+          </div>
+          <div class="description-container">
+            <div class="description">
+              {% inline_rich_text field="description_rich_text" value="{{ item.description_rich_text }}" %}
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+
+</section>

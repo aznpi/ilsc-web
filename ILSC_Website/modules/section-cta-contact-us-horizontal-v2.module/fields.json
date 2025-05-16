@@ -1,0 +1,232 @@
+[ {
+  "id" : "7bb23fee-3355-a97e-f643-531fc197d11f",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Ready to make the next step?</h2>"
+}, {
+  "id" : "2a8d9c54-bce6-4844-2316-e3691a4fcfe8",
+  "name" : "bg_color",
+  "label" : "BG Color",
+  "required" : false,
+  "locked" : true,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#ff8b35",
+    "opacity" : 100
+  }
+}, {
+  "id" : "293585b2-5ad7-6d86-1a4e-908af7037e17",
+  "name" : "font_color",
+  "label" : "Font Color",
+  "required" : false,
+  "locked" : true,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#fff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "45e133c3-3855-9e89-b736-7a1772d86002",
+  "name" : "button_1",
+  "label" : "Button 1",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "d336f792-6f2a-9685-2514-183289e6f1a5",
+    "name" : "button_url",
+    "label" : "Button URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 35557010349
+    }
+  }, {
+    "id" : "aab22832-bec6-835b-b829-b9cc461e598c",
+    "name" : "button_text",
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "CONTACT US"
+  }, {
+    "id" : "1715d663-0b30-c036-84c2-67633adf4022",
+    "name" : "button_bg_choice",
+    "label" : "Button BG Choice",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "btn-outline-primary btn-white-outline", "Transparent" ], [ "btn-primary btn-white", "Solid" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "btn-outline-primary btn-white-outline"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "button_url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 35557010349
+    },
+    "button_text" : "CONTACT US",
+    "button_bg_choice" : "btn-outline-primary btn-white-outline"
+  }
+}, {
+  "id" : "e062da26-7053-e00e-52ac-600da9ff72c6",
+  "name" : "button_2",
+  "label" : "Button 2",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "6cc3c316-8261-a2e0-b931-57ad6c64ce21",
+    "name" : "button_url",
+    "label" : "Button URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 35601038414
+    }
+  }, {
+    "id" : "b98eb386-4ac0-5820-6b29-56ac0628ad22",
+    "name" : "button_text",
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "APPLY NOW"
+  }, {
+    "id" : "0b4e61d4-bea1-2902-57c2-77a6c092a3a2",
+    "name" : "button_bg_choice",
+    "label" : "Button BG Choice",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "btn-outline-primary btn-white-outline", "Transparent" ], [ "btn-primary btn-white", "Solid" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "btn-primary btn-white"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "button_url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 35601038414
+    },
+    "button_text" : "APPLY NOW",
+    "button_bg_choice" : "btn-primary btn-white"
+  }
+}, {
+  "id" : "4f50b97f-5071-4bcb-c300-baa986bea63d",
+  "name" : "button_3",
+  "label" : "Button 3",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "074eff94-34d1-38fc-f100-b3b576b2263d",
+    "name" : "hide_show",
+    "label" : "Hide/Show",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "Hide", "Hide" ], [ "Show", "Show" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "Hide"
+  }, {
+    "id" : "25a831c3-7139-e759-222d-cc7b73edabad",
+    "name" : "button_url",
+    "label" : "Button URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 35601038414
+    }
+  }, {
+    "id" : "8b73479d-7094-b832-ade6-71af99d07925",
+    "name" : "button_text",
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "APPLY NOW"
+  }, {
+    "id" : "1a043619-1c4b-a053-61f2-82d87f49bd72",
+    "name" : "button_bg_choice",
+    "label" : "Button BG Choice",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "btn-outline-primary btn-white-outline", "Transparent" ], [ "btn-primary btn-white", "Solid" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "btn-primary btn-white"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "hide_show" : "Hide",
+    "button_url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 35601038414
+    },
+    "button_text" : "APPLY NOW",
+    "button_bg_choice" : "btn-primary btn-white"
+  }
+} ]

@@ -1,0 +1,27 @@
+<section class="section banner bg-white-canvas">
+	<div class="container">
+		<div class="row">
+      	<div class="col-md-12 blue-box-slide">
+          {% for item in module.box_slide %}
+            <div> 
+                <div class="row bg-blue">
+                    <div class="col-md-7">
+                      {% inline_rich_text field="main_text" value="{{ item.main_text }}" %}
+                      {% if item.cta_group.hide_show_cta == "show" %}
+                        <div class="a-link-container">
+                          <a href="{{ item.cta_group.link_url.url.href }}">{{ item.cta_group.link_url_text }}</a>
+                        </div>
+                      {% endif %}
+                    </div>
+                    <div class="col-md-5">
+                      {% if item.image_field.src %}
+                        <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}">
+                      {% endif %}
+                    </div>
+                  </div>
+             </div>
+          {% endfor %}
+      </div> 
+		</div>
+	</div>
+</section>

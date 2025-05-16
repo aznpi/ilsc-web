@@ -1,0 +1,177 @@
+[ {
+  "id" : "04878ce2-e4c2-ac94-9e90-1be3946a157a",
+  "name" : "tabs",
+  "label" : "Tabs",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "a3abb5ab-efaa-3803-a373-8089c8920b26",
+    "name" : "tab_1",
+    "label" : "Tab 1",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "2d04de45-f279-53cd-553b-f9677e468918",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Our Company"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "title" : "Our Company"
+    }
+  }, {
+    "id" : "f86f0737-de58-9089-68f1-e334cfa8ca1d",
+    "name" : "tab_2",
+    "label" : "Tab 2",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "c589762c-7e48-a26a-e8d3-eb7c9f3f1dbd",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Our History"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "title" : "Our History"
+    }
+  }, {
+    "id" : "894edd25-be0a-60c0-d666-66e6033797af",
+    "name" : "tab_3",
+    "label" : "Tab 3",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "1c654d3f-a2c2-ffe0-993b-4929c099bc8e",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "#ILSCGives"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "title" : "#ILSCGives"
+    }
+  }, {
+    "id" : "9854a8fb-13aa-0977-27f4-8d32522da9ec",
+    "name" : "tab_4",
+    "label" : "Tab 4",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "0ed04621-2d89-f8ec-3cc6-14726f7b7d8c",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Awards"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "title" : "Awards"
+    }
+  }, {
+    "id" : "cc0ee82a-b819-ad73-cafe-229af075da52",
+    "name" : "tab_5",
+    "label" : "Tab 5",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "02e6c2b6-66af-b4dd-1b5b-566ea3d00823",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Our Team"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "title" : "Our Team"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "tab_1" : {
+      "title" : "Our Company"
+    },
+    "tab_2" : {
+      "title" : "Our History"
+    },
+    "tab_3" : {
+      "title" : "#ILSCGives"
+    },
+    "tab_4" : {
+      "title" : "Awards"
+    },
+    "tab_5" : {
+      "title" : "Our Team"
+    }
+  }
+}, {
+  "id" : "9074160a-8aef-8a72-f546-b49b61ec7a27",
+  "name" : "mobile_tab_text",
+  "label" : "Mobile Tab Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Features:"
+} ]

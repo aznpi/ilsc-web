@@ -1,0 +1,38 @@
+<section class="section-normal section-start-date-nav {{ module.padding_choice }}" id="content">
+  <div class="container">
+   {% if module.main_content_rich_text %}
+      <div class="row">
+        <div class="col-md-12">
+          {% inline_rich_text field="main_content_rich_text" value="{{ module.main_content_rich_text }}" %}
+        </div>
+      </div>
+    {% endif %}
+     {% if module.disclaimer_1_rich_text %}
+      <div class="row">
+        <div class="col-md-12">
+          {% inline_rich_text field="disclaimer_1_rich_text" value="{{ module.disclaimer_1_rich_text }}" %}
+        </div>
+      </div>
+    {% endif %}
+    
+    <div class="row box-nav anchor-container">
+      {% for item in module.nav_field_group %}
+      {% set anchorName = item.anchor_name|replace(' ','')|upper%}
+      <div class="col-md-3">
+        <div class="box-container" data-target="{{ anchorName }}" style="background: linear-gradient(174deg,rgba(230,231,232,1), rgba(230,231,232,1) 76.7%,rgba({{item.color_field.color|convert_rgb}},1) 78.3%, rgba({{item.color_field.color|convert_rgb}},1) 100%);">
+          {% inline_rich_text field="nav_title_rich_text" value="{{ item.nav_title_rich_text }}" %}
+        </div>
+      </div>
+      {% endfor %}
+      
+    </div>
+    {% if module.disclaimer_1_rich_text %}
+      <div class="row">
+        <div class="col-md-12">
+          {% inline_rich_text field="disclaimer_1_rich_text" value="{{ module.disclaimer_1_rich_text }}" %}
+        </div>
+      </div>
+    {% endif %}
+    
+  </div>
+</section>

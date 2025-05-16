@@ -1,0 +1,48 @@
+<section class="section {% if module.bg_color.color == '#FFFFFF' %} bg-white-canvas {% endif %}" id="content" style="background-color:rgba({{ module.bg_color.color|convert_rgb }}, {{ module.bg_color.opacity/100 }});" id="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				{% inline_rich_text field="column_1_group.main_text" value="{{ module.column_1_group.main_text }}" %}
+        
+        {% if module.column_1_group.cta_group.hide_show_cta == "show"%}
+          <div class="btn-video-container">
+            <div>
+              <i class="{{ module.column_1_group.cta_group.cta_font_awesome_icon }}"></i>
+            </div>
+            <div>
+              {% if module.column_1_group.cta_group.cta_font_awesome_icon == "far fa-play-circle" %}
+                <a href="#ilscModal" data-toggle="modal" class="video-btn" src="{{ module.column_1_group.cta_group.link_url.url.href }}">
+                  {% else %}
+                
+                  <a href="{{ module.column_1_group.cta_group.link_url.url.href }}"  	{% if module.column_1_group.cta_group.link_url.open_in_new_tab %}target="_blank"{% endif %}>
+              {% endif %}
+                  {{ module.column_1_group.cta_group.link_url_text }}
+              </a>
+            </div>
+          </div>
+        {% endif %}
+			</div>
+			<div class="col-md-6">
+				{% inline_rich_text field="column_2_group.main_text" value="{{ module.column_2_group.main_text }}" %}
+        
+        {% if module.column_2_group.cta_group.hide_show_cta == "show"%}
+          <div class="btn-video-container">
+            <div>
+              <i class="{{ module.column_2_group.cta_group.cta_font_awesome_icon }}"></i>
+            </div>
+            <div>
+              {% if module.column_2_group.cta_group.cta_font_awesome_icon == "far fa-play-circle" %}
+                <a href="#ilscModal" data-toggle="modal" class="video-btn" src="{{ module.column_2_group.cta_group.link_url.url.href }}">
+                  {% else %}
+                
+                  <a href="{{ module.column_2_group.cta_group.link_url.url.href }}"  	{% if module.column_2_group.cta_group.link_url.open_in_new_tab %}target="_blank"{% endif %}>
+              {% endif %}
+                  {{ module.column_2_group.cta_group.link_url_text }}
+              </a>
+            </div>
+          </div>
+        {% endif %}
+			</div>
+		</div>
+	</div>
+</section>

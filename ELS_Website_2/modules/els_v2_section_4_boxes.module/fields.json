@@ -1,0 +1,122 @@
+[ {
+  "id" : "fc080ce4-ba60-610a-8764-e1fa7e5d62fd",
+  "name" : "margin_choice",
+  "label" : "Margin Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "margin-top-extra", "Margin Top Extra" ], [ "margin-bottom-extra", "Margin Bottom Extra" ], [ "margin-none", "Margin None" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "9b33eb8c-785d-15aa-38fa-b26a81b067b2",
+  "name" : "box_color_overlay_replacement_choice",
+  "label" : "Box Color Overlay Replacement Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "section-red-boxes", "Red" ], [ "margin-none", "None" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "d6010dea-2095-f192-7420-dee5190be5f3",
+  "name" : "title_rich_text",
+  "label" : "Title Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2 class=\"bold\">Discover the perfect <span style=\"color: #ff8b35;\">ELS City</span></h2>"
+}, {
+  "id" : "1c3cd338-eda4-60aa-28e1-d07931c74ddf",
+  "name" : "description_rich_text",
+  "label" : "Description Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<p>Learn English in the USA at one of our <span class=\"bold\">13 amazing destinations.</span></p>"
+}, {
+  "id" : "1ea8c602-21e5-250b-f53e-0a073c3b47cc",
+  "name" : "bg_size_choice",
+  "label" : "BG Image Size Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "cover", "Cover" ], [ "contain", "Contain" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "cover"
+}, {
+  "id" : "0bd71ed5-e4a2-9c69-a3f2-a52f792100ec",
+  "name" : "box_field_group",
+  "label" : "Box Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 50,
+    "sorting_label_field" : "50e37de4-6ffa-8fdc-c7a4-330997aee274",
+    "default" : 0
+  },
+  "children" : [ {
+    "id" : "7583b8b9-4842-8dca-5dcf-e7cd562766cf",
+    "name" : "link_field",
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "ec9c80e7-0ef0-56c3-6e01-eff38fb02c34",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "50e37de4-6ffa-8fdc-c7a4-330997aee274",
+    "name" : "title_rich_text",
+    "label" : "Title Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ ]
+} ]

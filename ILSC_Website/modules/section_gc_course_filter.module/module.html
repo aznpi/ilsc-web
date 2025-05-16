@@ -1,0 +1,262 @@
+{% set yearStr = local_dt|format_date('yyyy') %}
+{% set nextYearStr = yearStr|int + 1 %}
+{% set currentDate = yearStr+'-01-01T00:00:00+0000' %}
+{% set currentDate = currentDate|strtotime("yyyy-MM-dd'T'HH:mm:ssZ") %}
+{% set currentUnix = currentDate|unixtimestamp %}
+{% set nextDate = nextYearStr+'-12-31T23:59:59+0000' %}
+{% set nextDate = nextDate|strtotime("yyyy-MM-dd'T'HH:mm:ssZ") %}
+{% set nextUnix = nextDate|unixtimestamp %}
+
+{% set queryparamCourses = "" %}
+{% set queryparamCourses = queryparamCourses ~ "&course_code__neq=''&enable__eq=true"  %}
+{% set courses = hubdb_table_rows(5241355,queryparamCourses) %}
+{% set coursesArray = [] %}
+
+{% set queryparamDates = "" %}
+{% set queryparamDates = queryparamDates ~ "&start_dates__gt="+currentUnix %}
+{% set startDates = hubdb_table_rows(17665643,queryparamDates) %}
+{% set datesArray = [] %}
+
+{% set queryparamArea = "" %}
+{% set queryparamArea = queryparamArea ~ "&country_campus__in="+module.country_choice %}
+{% set queryparamArea = queryparamArea ~ "&enable_courses__eq=true&enable__eq=true&orderBy=program_area_name"%}
+{% set programArea = hubdb_table_rows(5333072,queryparamArea) %}
+
+{% for course in courses %}
+
+  {% set programsArray = [] %}
+  {% set countryArray = [] %}
+  {% set campusArray = [] %}
+  {% set areaArray = [] %}
+  {% set languageArray = [] %}
+  
+  {% for campusItem in course.campus %}
+    
+    {% do campusArray.append(campusItem.name) %}
+
+  {% endfor %}
+  
+  {% for programItem in course.programs %}
+    {% do programsArray.append(programItem.program_code)%}
+    
+    {% for countryItem in programItem.country %}
+      {% do countryArray.append(countryItem) %}
+    {% endfor %}
+    {% for areaItem in programItem.program_areas %}
+      {% do areaArray.append(areaItem.program_area_name)%}
+    {% endfor %}
+    
+  {% endfor %}
+
+  {% for languageItem in course.ilsc_level %}
+     {% do languageArray.append(languageItem.level_name)%}
+  {% endfor %}
+
+  {% do coursesArray.append({
+    course_code:course.course_code,
+    course_name: course.course_name,
+    course_programs: programsArray|join('|'),
+    course_short_description: course.short_description,
+    course_ilsc_level: languageArray|join(','),
+    course_campus: campusArray|sort(False,False)|unique|join('|'),
+    course_country: countryArray|unique|join('|'),
+    course_area:areaArray|unique|join('|'),
+    course_image: course.thumbnail_image
+  })%}
+
+{% endfor %}
+
+{% for date in startDates %}
+  {% set courseArray = [] %}
+  {% set campusArray = [] %}
+  {% for courseItem in date.course %}
+    {% do courseArray.append(courseItem.course_code) %}
+  {% endfor %}
+  {% for campusItem in date.campus %}
+    {% do campusArray.append(campusItem.name) %}
+  {% endfor %}
+  {% do datesArray.append({
+        course_code: courseArray|join('|'),
+        start_date: date.start_dates,
+        start_year: date.start_dates|format_date('yyyy'),
+        campus: campusArray|join(','),
+        session: date.session_schedule.name
+      }) %}
+{% endfor %}
+
+<section class="section section-course-filter" style="background-color:rgba({{module.header_bg_color.color|convert_rgb }}, {{module.header_bg_color.opacity/100 }});overflow:visible;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 center">
+        {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+      </div>
+    </div>
+    <div class="row row-search">
+      <div class="col-md-12 search-filter center">
+        <div class="btn-group dropdown">
+          <button type="button" class="btn btn-white dropdown-toggle dropdown-campus" data-toggle="dropdown" data-target-campus="All">
+            Choose Campus
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item dropdown-campus" data-target-campus="All">All Campuses</a>
+            {% for item in module.campus_choice %}
+               <a class="dropdown-item dropdown-campus" data-target-campus="{{item|replace(' ','-')}}">{{item}}</a>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="btn-group dropdown">
+          <button type="button" class="btn btn-white dropdown-toggle dropdown-area" data-toggle="dropdown" data-target="All">
+            Choose Program Area
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item dropdown-area" data-target="All">All Program Areas</a>
+            {% for area in programArea %}
+              <a class="dropdown-item dropdown-area" data-target="{{area.program_area_name|replace(' ','-')}}">{{area.program_area_name}}</a>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="btn-container">
+          <a class="btn btn-dark-blue btn-search">SEARCH</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section-course-filter filter-container" id="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="search-count-row">
+          <h5>
+            <span class="search-count-target">All</span> Micro-Credentials <span class="search-campus"></span> (<span class="search-count"></span>)
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div id="course-row" class="row row-courses">
+      {% for course in coursesArray|sort(False,False,"course_name")%}
+        {% if course.course_country is string_containing module.country_choice %}
+          {% set datesArr = [] %}
+          {% for date in datesArray %}
+            {% if date.course_code is string_containing course.course_code %}
+              {% do datesArr.append(date.start_date) %}
+            {% endif %}
+          {% endfor %}
+            <div class="col-md-4 course-box show" data-target="All" data-dates="{{datesArr|join('|')}}" data-target-campus="All" data-area="All|{{course.course_area|replace(' ','-')}}" data-campus="All|{{course.course_campus|replace(' ','-')}}">
+              <div class="course-container">
+                <div class="tag-container"></div>
+                <div class="image-container">
+                  <img src="{{course.course_image.url}}" alt="{{course.course_image.altText}}" class="img-fluid">
+                </div>
+                <div class="header">
+                  <div class="title">
+                    <h5>
+                      {{course.course_name}}
+                    </h5>
+                  </div>
+                </div>
+                <div class="course-nav">
+                  <ul class="nav nav-tabs" id="pills-{{course.course_code|lower}}-tab" role="tabList">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-{{course.course_code}}-availability-tab" data-toggle="tab" href="#pills-{{course.course_code}}-availability" type="button" role="tab" aria-controls="pills-{{course.course_code}}-availability" aria-selected="true">Availability</button>
+                    </li>
+                   <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-{{course.course_code}}-dates-tab" data-toggle="tab" href="#pills-{{course.course_code}}-dates" type="button" role="tab" aria-controls="pills-{{course.course_code}}-dates" aria-selected="false">Start Dates</button>
+                    </li>
+                   <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-{{course.course_code}}-overview-tab" data-toggle="tab" href="#pills-{{course.course_code}}-overview" type="button" role="tab" aria-controls="pills-{{course.course_code}}-overview" aria-selected="false">Overview</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="pills-{{course.course_code}}-tabContent">
+                    <div class="tab-pane fade show active" id="pills-{{course.course_code}}-availability" role="tabpanel" aria-labelledby="pills-{{course.course_code}}-availability-tab">
+                      <div class="campus-group">
+                        <h6>
+                        Campus Available
+                        </h6>
+                        <p>
+                          {{course.course_campus|replace('|',', ')}}
+                        </p>  
+                      </div>
+                       {% if course.course_ilsc_level != '' %}
+                        <div class="campus-group">
+                          <h6>
+                            English Requirement
+                          </h6>
+                          <p>
+                            {{course.course_ilsc_level|replace(',',', ')}}
+                          </p>
+                        </div>
+                      {% endif %}
+                     
+                    </div>
+                    <div class="tab-pane fade" id="pills-{{course.course_code}}-dates" role="tabpanel" aria-labelledby="pills-{{course.course_code}}-dates-tab">
+                      <h6>
+                        Start Dates
+                      </h6>
+                      {% for group in datesArray|sort(False,False,'start_date')|groupby('campus') %}
+                        <div class="campus-group">
+                           {% set campusArray = [] %}
+                           {% for campusGroup in group.list %}
+                            {% if campusGroup.course_code is string_containing course.course_code %}
+                              {% do campusArray.append(campusGroup.campus) %}
+                            {% endif %}
+                           {% endfor %}
+                           {% if campusArray|length >0 %}
+                              <h6>{% for campusItem in campusArray|unique %}{{campusItem}}{% endfor %}</h6>
+                            
+                              {% for sessionGroup in group.list|groupby('session') %}
+                                {% set datesItemArray = [] %}
+                                  {% for dates in sessionGroup.list %}
+                                    {% if dates.course_code is string_containing course.course_code %}
+                                      {% do datesItemArray.append({
+                                      date_item: dates.start_date,
+                                      year_item: dates.start_date|format_date('yyyy')
+                                      }) %}
+                                    {% endif %}
+                                  {% endfor %}
+
+                                  {% if datesItemArray|length > 0 %}
+                                    <div class='title'>{{sessionGroup.grouper}}</div>
+                                    <div class="dates">
+                                      {% for dateGroup in datesItemArray|groupby('year_item') %}
+                                        {{dateGroup.grouper}} : 
+                                         {% for date in dateGroup.list %}
+                                          {{date.date_item|format_date('MMM dd')}}{% if !loop.last %},{% endif %}
+                                         {% endfor %}<br>
+                                      {% endfor %}                
+                                    </div>
+                                  {% endif %}
+                                  {% else %}
+
+                              {% endfor %}
+                          {% endif %}  
+                        </div>
+                          
+                      {% endfor%}
+                    </div>
+                    
+                    
+                    <div class="tab-pane fade" id="pills-{{course.course_code}}-overview" role="tabpanel" aria-labelledby="pills-{{course.course_code}}-overview-tab">
+                      <p>
+                        {{course.course_short_description}}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="row show-more-row hide show-row">
+      <div class="col-md-12 center">
+        <a class="btn btn-blue" data-target="show-more">SHOW MORE</a>
+      </div>
+    </div>
+    <div class="row show-less-row hide show-row">
+      <div class="col-md-12 center">
+        <a class="btn btn-blue" data-target="show-less">SHOW LESS</a>
+      </div>
+    </div>
+  </div>
+</section>

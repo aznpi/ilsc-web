@@ -1,0 +1,105 @@
+[ {
+  "id" : "e17b73fa-e373-4cd4-f9c9-41aa4ae9ced9",
+  "name" : "padding_choice",
+  "label" : "Padding Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "padding-none", "No Padding" ], [ "padding-top", "Padding Top" ], [ "padding-bottom", "Padding Bottom" ], [ "padding-top-none", "No Padding Top " ], [ "padding-bottom-none", "No Padding Bottom" ], [ "padding-top-extra", "Extra Top Padding" ], [ "padding-bottom-extra", "Extra Bottom Padding" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "bcb80179-76b2-937d-5361-061519dab722",
+  "name" : "title_rich_text",
+  "label" : "Title Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Explore the <span class=\"bold\" style=\"color: #ff8b35;\">ELS Chicago Campus</span></h2>\n<h3>Important <span class=\"bold\">Campus Info</span></h3>\n<h4 class=\"right\">Kathleen Hylen<br><span class=\"bold\"><span style=\"color: #ff8b35;\">ELS Chicago</span> Center Director</span></h4>"
+}, {
+  "id" : "bf24836c-41a6-57e7-7aad-ed945ee780b6",
+  "name" : "photo_image",
+  "label" : "Photo Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.ilsc.com/hubfs/ELS/Website%20v2/template-resources/images/background/img_girl_laptop.png",
+    "alt" : "img_girl_laptop",
+    "loading" : "lazy",
+    "width" : 278,
+    "height" : 278,
+    "max_width" : 278,
+    "max_height" : 278
+  }
+}, {
+  "id" : "39505a0e-02de-99c2-eb72-46504e1d952f",
+  "name" : "box_description_rich_text",
+  "label" : "Box Description Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<p>Kathleen Hylen has been the ELS Chicago Center Director since ????. And some other sort of biography info goes here, TBD and to be requested/submitted by the CDs. Kathleen is delighted to support students on their amazing English learning journeys at ELS Chicago, and beyond.</p>"
+}, {
+  "id" : "f7d4c4aa-02f7-b121-1d6a-6ac6f1b48063",
+  "name" : "stat_field_group",
+  "label" : "Stat Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 6,
+    "sorting_label_field" : "4fa6c690-5d24-630c-b020-75febc27c385",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "4fa6c690-5d24-630c-b020-75febc27c385",
+    "name" : "number_text",
+    "label" : "Number Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null
+  }, {
+    "id" : "be1c34d3-641c-cfdb-1434-632a0e18e371",
+    "name" : "sub_title_text",
+    "label" : "Sub Title Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null
+  }, {
+    "id" : "ef234747-2338-59df-047f-fb13284a2d08",
+    "name" : "sub_description_text",
+    "label" : "Sub Description Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ ]
+} ]

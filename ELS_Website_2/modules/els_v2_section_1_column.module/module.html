@@ -1,0 +1,22 @@
+{% if module.anchor_id %}
+  <a class="anchor-link" name="{{ module.anchor_id|replace(' ','-')|replace("'","-")|replace(',','-')}}"></a>
+{% endif %}
+<section class="section-1-column section-normal {{ module.padding_choice }} {{ module.margin_choice }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {% inline_rich_text field="column_field_group.title_rich_text" value="{{ module.column_field_group.title_rich_text }}" %}
+      </div>
+    </div>
+    {% if module.column_field_group.description_rich_text %}
+      <div class="row">
+        <div class="col-md-12">
+          <div class="description">
+           {% inline_rich_text field="column_field_group.description_rich_text" value="{{ module.column_field_group.description_rich_text }}" %}
+          </div>
+
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</section>

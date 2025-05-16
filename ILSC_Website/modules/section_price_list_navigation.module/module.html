@@ -1,0 +1,18 @@
+<section class="section bg-white-canvas price-list-nav" id="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 center">
+        <div class="price-list-drop">
+          <select onChange="window.location.href=this.value;">
+            <option>Choose Your Study Location</option>
+            {% for item in module.campus %}
+              {% inline_text field="campus_name" value="{{ item.campus_name }}" %}
+              {% set href = item.link_field.url.href %}
+              <option value="{{ href }}">{% inline_text field="campus_name" value="{{ item.campus_name }}" %}</option>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

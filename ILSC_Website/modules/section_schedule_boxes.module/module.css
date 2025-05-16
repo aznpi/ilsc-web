@@ -1,0 +1,91 @@
+
+.section-schedule.price-list-grid .program-box-container{
+  margin-bottom:50px
+}
+.section-schedule.price-list-grid .price-list-drop{
+  margin-top:50px;
+  margin-bottom:50px;
+}
+.section-schedule.price-list-grid .program-box-container .description-container .sub-description{
+  background-color:#F9F9F9;
+  font-size:initial;
+  padding:10px;
+}
+.section-schedule.price-list-grid .program-box-container .content-container >div{
+  
+}
+
+.section-schedule.price-list-grid .program-box-container .description-container .description{
+  background-color:#F4F4F4;
+  padding:15px 30px; 
+  font-size:1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.section-schedule.price-list-grid .program-box-container .description-container .description p,.price-list-grid .program-box-container .price-table .time-block p{
+  margin:0;
+}
+.section-schedule.price-list-grid .program-box-container .price-table{
+  height:444px;
+  position:relative;
+}
+.section-schedule.price-list-grid .program-box-container .price-table .time-block{
+  padding:15px 30px;
+  position:absolute;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.section-schedule.price-list-grid .program-box-container .price-table .time-block.early_am{
+  top:0;
+}
+.section-schedule.price-list-grid .program-box-container .price-table .time-block.late_am{
+  top:111px;
+}
+.section-schedule.price-list-grid .program-box-container .price-table .time-block.early_pm{
+  top:222px;
+}
+.section-schedule.price-list-grid .program-box-container .price-table .time-block.late_pm{
+  top:333px;
+}
+.section-schedule.price-list-grid .program-box-container .price-table .time-block.middle_pm{
+  top:278px;
+}
+.section-schedule.price-list-grid .program-box-container .price-table .time-block.all_am{
+  top:111px;
+  height:222px;
+}
+.section-schedule.price-list-grid .program-box-container .price-table .time-block.all_pm{
+  top:222px;
+  height:222px;
+}
+.section-schedule.price-list-grid .program-box-container .price-table .time-block.evening{
+  bottom:0;
+}
+.section-schedule.price-list-grid .program-box-container .price-table{
+  background-image: linear-gradient(117deg, #9c9c9c 25%, #f7f7f7 25%, #f7f7f7 50%, #9c9c9c 50%, #9c9c9c 75%, #f7f7f7 75%, #f7f7f7 100%);
+  background-size: 4.00px 7.85px;
+}
+
+.section-schedule.price-list-grid .program-box-container .price-table .time-block .multi-block{
+  text-align:center;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+.section-schedule.price-list-grid .program-box-container .price-table .time-block .multi-block .item-block{
+  padding: 0 10px;
+  flex: 0 1 auto;
+}
+
+.section-schedule.price-list-grid .program-box-container .price-table .time-block .multi-block  .divider {
+  width: 1px;
+  margin: 6px 0;
+  background: #CCC;
+  height: 68px;
+}
+.section-schedule.price-list-grid .footnote{
+    padding: 0 10px;
+ }

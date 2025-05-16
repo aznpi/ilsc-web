@@ -1,0 +1,39 @@
+.section{
+  position:relative;
+  overflow:hidden;
+}
+.section-5-7.no-pad .row >div{
+  padding-left:0;
+  padding-right:0;
+}
+.section-5-7.no-pad .row >div h5{
+  margin:10px 0 10px;
+}
+.section-5-7.no-pad .row >div p{
+  margin-top:0;
+  font-size:16px;
+}
+.section-5-7.no-pad .row >div .far{
+  font-weight:600;
+}
+.section-5-7.no-pad .row >div .cta-container{
+  padding:20px 0 0 60px;
+}
+.section-5-7.no-pad .row .col-md-7{
+  padding:40px 75px;
+}
+@media (max-width: 480px){
+  .section-5-7.no-pad .row{
+    flex-direction:column-reverse;
+  }
+  .section-5-7.no-pad .row >div{
+    padding-top:0;
+    padding-bottom:0;
+  }
+  .section-5-7.no-pad .row >div .cta-container{
+    padding:20px 0;
+  }
+  .section-5-7.no-pad .row .col-md-7{
+    padding:40px 20px;
+  }
+}

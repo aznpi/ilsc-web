@@ -1,0 +1,57 @@
+{% if module.anchor_id %}
+<a class="anchor-link" name="{{ module.anchor_id|replace(' ','-')|replace("'","-")|replace(',','-')}}"></a>
+{% endif %}
+<section class="section-normal {{ module.padding_choice }} {{ module.margin_choice }} section-staircase">
+  <div class="container">
+    {% if module.title_rich_text %}
+      <div class="row row-title">
+        <div class="col-md-12">
+          {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+        </div>
+      </div>
+    {% endif %}
+    {% if module.sub_title_rich_text %}
+      <div class="row">
+        <div class="col-md-12">
+          {% inline_rich_text field="sub_title_rich_text" value="{{ module.sub_title_rich_text }}" %}
+        </div>
+      </div>
+    {% endif %}
+  
+    {% for item in module.row_field_group %}
+    
+      {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+      {% if item.image_field.size_type == 'auto' %}
+      {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+      {% elif item.image_field.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ item.image_field.max_width }}" height="{{ item.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' : '' %}
+        <div class="row row-staircase">
+          <div class="{% if loop.index0 is even %}col-md-7{% else %}col-md-5 col-icon{% endif %}">
+            {% if loop.index0 is even %}
+            <div class="description">
+              {% inline_rich_text field="richtext_field" value="{{ item.richtext_field }}" %}
+            </div>
+            {% else %}
+              <div class="icon-container grey-container">
+              <img src="{{ item.image_field.src }}" class="img-fluid">
+            </div>
+            {% endif %}
+          </div>
+          <div class="{% if loop.index0 is odd %}col-md-7{% else %}col-md-5 col-icon{% endif %}">
+            {% if loop.index0 is odd %}
+            <div class="description right">
+              {% inline_rich_text field="richtext_field" value="{{ item.richtext_field }}" %}
+            </div>
+            {% else %}
+              <div class="icon-container grey-container">
+              <img src="{{ item.image_field.src }}" class="img-fluid">
+            </div>
+            {% endif %}
+          </div>
+        </div>
+    {% endfor %}
+    
+  </div>
+</section>

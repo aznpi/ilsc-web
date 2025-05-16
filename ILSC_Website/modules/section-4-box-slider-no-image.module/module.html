@@ -1,0 +1,41 @@
+<section class="section box-slide-no-image {% if module.enable_parallax_boolean %}parallax section-simple{% else %}{% if module.bg_color.color == '#FFFFFF' %}bg-white-canvas{% endif %}{% endif %}" {% if module.enable_parallax_boolean %}style="background-image:url({{ module.bg_image.src }});"{% else %}style="background-color:{{ module.bg_color.color }};{% endif %}">
+  {% if module.enable_parallax_boolean %}
+    <div class="overlay" style="background-color: rgba({{ module.bg_color.color|convert_rgb }}, {{ module.bg_color.opacity/100 }});">
+    </div>
+  {% endif %}
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				{% inline_rich_text field="title" value="{{ module.title }}" %}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="slider-wrapper">
+					<div class="box-slide-4 homestay-slide box-shadow {% if module.enable_disable_hover_choice == 'enable' %}mix{% endif %}">
+					{% for item in module.box_slide %}
+						 <div>
+						 	<div class="box-container school-details drop-shadow {{ module.hover_bg_color }}">
+						 		
+						 		<div class="a-link-small">
+						 			{% inline_rich_text field="box_title" value="{{ item.box_title }}" %}
+						 		</div>
+                {% if module.enable_disable_hover_choice == 'enable' %}
+                  <div class="short-description-container">    
+                   <div class="short-description">    
+
+                      {{ item.short_description }}
+
+                   </div>
+                 </div>
+                {% endif %}
+						 	</div>
+               
+						 </div>
+        {% endfor %}   	 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

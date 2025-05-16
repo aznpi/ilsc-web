@@ -1,0 +1,21 @@
+[ {
+  "id" : "1bc5a56f-29ab-14a3-1977-40a4fc8939bf",
+  "name" : "text_field",
+  "label" : "Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null
+}, {
+  "id" : "c95d945c-ff5a-1c93-4535-6226260bad2c",
+  "name" : "content_text",
+  "label" : "Content text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h1>Accreditations and Affiliate Organizations</h1>\n<p><span>ILSC schools are accredited by those bodies designated to oversee schools in our industry in the various provincial, state, and national jurisdictions that we operate in. We believe accreditation is important to our students and clients. At ILSC we have set, and maintain, our own standards for high quality program delivery and excellent service; however, our accreditation by internationally recognized industry organizations and government bodies gives you, our clients, third party assurance of those high standards and helps protect your rights. ILSC is accredited by, or affiliated with the following organizations:</span></p>"
+} ]

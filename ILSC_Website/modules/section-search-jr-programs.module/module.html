@@ -1,0 +1,143 @@
+{% set categoryQuery = [] %}
+
+{% for item in module.program_category_choice %}
+	{% do categoryQuery.append(item) %}
+{% endfor %}
+
+{% set categoryStrQuery = categoryQuery|join(',') %}
+
+{% set queryparam = "" %}
+
+{% set queryparam = queryparam ~ "&category__in="+categoryStrQuery|urlencode  %}
+
+{% set queryparam = queryparam ~ "&is_parent=true&enable__eq=true&orderBy=-program_name"  %}
+
+{% set program = hubdb_table_rows(5266066,queryparam) %}
+
+<section id="content" class="filter-program-container section bg-white-canvas">
+	
+	<div class="container">
+    <div class="row">
+			<div class="col-md-12">
+				{% inline_rich_text field="title" value="{{ module.title }}" %}
+			</div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        {{ module.sub_title }}
+      </div>
+    </div> 
+		  
+		  
+			<div class="content-container mix-boxes">
+				
+					<div class="row">
+						<div class="col-md-12 input">
+							<div class="dropdown campus-dropdown">
+							  <button class="btn btn-black-outline dropdown-toggle select-filter" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    {{ module.campus_field_group.title_text }}
+							  </button>
+							  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							  	<a class="dropdown-item" href="#" data-search="data-campus-location" data-type="Cities" value="all">All</a>           
+                  {% for item in module.campus_field_group.campus %}
+                    <a class="dropdown-item" href="#" value="{{item}}" data-type="Cities" data-search="data-campus-location">{{item}}</a>    
+                  {% endfor %}
+							  </div>
+							</div>
+							
+						</div>	
+					</div>
+          <div class="row">
+            <div class="col-md-12">
+              
+              <ul class="icon-legend">
+                {% for item in module.filter_icon_field_group.icon_field_group %}
+                  
+                  {% if item.image_field.src %}
+                    {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+                    {% if item.image_field.size_type == 'auto' %}
+                      {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+                    {% elif item.image_field.size_type == 'auto_custom_max' %}
+                      {% set sizeAttrs = 'width="{{ item.image_field.max_width }}" height="{{ item.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                     {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' : '' %}
+                  <li class="icon-item"><img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}">&nbsp;&nbsp;&nbsp;<span class="bold">{{ item.filter_name }}</span></li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </div>  
+          </div>
+            
+            
+					<div class="row program-box-slide box-slide">
+						
+            {% for item in program %}
+                  
+                  {% set campusArr = [] %}
+                  {% for campusName in item.campus %} 
+                    {% do campusArr.append(campusName.name) %}
+                  {% endfor%}
+            
+                  {% set campusArrStr = campusArr|join(',') %}
+            
+                  {% set countryArr = [] %}
+                  {% for countryName in item.country %} 
+                    {% do countryArr.append(countryName.name) %}
+                  {% endfor%}
+            
+                  {% set countryArrStr = countryArr|join(',') %}
+      
+                  {% set campusStudyArr = [] %}
+                  {% for campusStudy in item.study_campus_type %} 
+                    {% do campusStudyArr.append(campusStudy.name) %}
+                  {% endfor%}
+                  
+                  {% set campusStudyArrStr = campusStudyArr|join(',') %}
+      
+                  {% set programsArr = [] %}
+                  {% for programs in item.program_type %} 
+                    {% do programsArr.append(programs.name) %}
+                  {% endfor%}
+                  
+                   {% set programsArrStr = programsArr|join(',') %}
+                  
+            
+            
+                  {% if item.image_thumbnail.url %}
+                     <div class="col-md-4 program-box-container mix" data-program-category="{{item.category.name}}" data-campus-location="{{campusArrStr}}" data-country="{{countryArrStr}}" data-study-campus="{{campusStudyArrStr}}" data-programs="{{programsArrStr}}">
+                      <div class="box-container drop-shadow">
+
+                          <img src="{{ item.image_thumbnail.url }}" alt="{{ item.program_name }}" loading="lazy">
+
+                        <div class="box-content a-link-container a-link-small">
+                          <h4>{% if item.new_program %}<span style="color:{{ module.new_text_color.color }};">NEW!</span>&nbsp;{% endif %}{{ item.program_name }}</h4>
+                          <div class="icon-container">
+                            <ul class="icon-legend">
+                               {% for icon in module.filter_icon_field_group.icon_field_group %}
+                              
+                                
+                                {% if countryArrStr is string_containing icon.filter_name || campusStudyArrStr is string_containing icon.filter_name || programsArrStr is string_containing icon.filter_name || item.season_schedule.name == icon.filter_name %}
+                                 
+                                <li class="icon-result"><img src="{{ icon.image_field.src }}" alt="{{ icon.image_field.alt }}"></li>
+                                {% endif %}
+
+                              {% endfor %}
+                            </ul>
+                          </div>
+                          {{item.description}}
+                        <a href="{% if item.page_link is not containing 'http'%}{% if content.language.languageTag && content.language.languageTag !='en' %}/{{ content.language.languageTag }}{% endif %}{% endif %}{{ item.page_link }}" class="a-link" {% if item.page_link is containing 'http'%}target="_blank"{% endif%}>{{ module.link_text }}</a>
+                        </div>
+                      </div>
+                     </div>
+                  {% endif %}
+            
+          {% endfor %}
+					</div>
+
+			</div>
+		
+		  
+		
+		
+	</div>
+</section>

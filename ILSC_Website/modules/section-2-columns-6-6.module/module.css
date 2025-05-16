@@ -1,0 +1,9 @@
+.section{
+  position:relative;
+  overflow:hidden;
+}
+@media (max-width: 480px){
+  .section-6-6 .row{
+    flex-direction:column-reverse;
+  }
+}

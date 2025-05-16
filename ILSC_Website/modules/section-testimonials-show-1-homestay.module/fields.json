@@ -1,0 +1,10 @@
+[ {
+  "id" : "d6faf8fc-05f1-8119-2897-c113a1191d07",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h4>WHAT OUR HOMESTAY FAMILIES ARE SAYING</h4>"
+} ]

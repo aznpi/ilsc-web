@@ -1,0 +1,12 @@
+{
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE" ],
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 33072808695,
+  "css_assets" : [ {
+    "autoload" : true,
+    "path" : "../../template-resources/stylesheets/internal/production/mix_filter.css",
+    "name" : "mix_filter.css"
+  } ],
+  "is_available_for_new_content" : true
+}

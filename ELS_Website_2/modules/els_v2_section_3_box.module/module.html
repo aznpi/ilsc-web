@@ -1,0 +1,30 @@
+ <section class="section-3-column-box {{ module.bg_shape_choice }} section-normal {% if module.bg_shape_size == 'polygon-small'%}polygon-absolute{% endif %} {{ module.bg_shape_rotate }} {{ module.bg_shape_size }} {{ module.margin_choice }}">
+   <div class="{% if module.bg_shape_choice == 'section-polygon' %}polygon-box{% elif module.bg_shape_choice == 'section-diagonal' %}diagonal-box{% endif %} {{ module.bg_color_choice }}"></div>
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+         {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+       </div>
+     </div>
+     <div class="row simple-boxes">
+       
+       {% for item in module.boxes_field_group %}
+         <div class="col-md-4">
+           <div class="box-container">
+             {% if item.icon_image.src %}
+               <div class="icon-container">
+                 <img src="{{ item.icon_image.src }}" class="img-fluid">
+               </div>
+             {% endif %}
+             <div class="description-container">
+               <div class="description">
+                 {% inline_rich_text field="description_rich_text" value="{{ item.description_rich_text }}" %}
+               </div>
+             </div>
+           </div>
+         </div>
+       {% endfor %}
+       
+     </div>
+   </div>
+</section>

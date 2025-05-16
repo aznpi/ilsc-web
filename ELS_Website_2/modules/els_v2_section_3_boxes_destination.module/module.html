@@ -1,0 +1,44 @@
+{% set queryparam = '' %}
+{% set queryparam = queryparam ~ "&country__eq=USA&schools__in=ELS"  %}
+{% set queryparam = queryparam ~ "&enable__eq=true&orderBy=name"  %}
+
+{% set campuses = hubdb_table_rows(5266068,queryparam) %}
+{% set langCode = content.language == 'en' ? '' : '/'+content.language
+%}
+
+  <section class="section-normal section-3-column-boxes section-destination">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+            <div class="description">
+              {% inline_rich_text field="description_rich_text" value="{{ module.description_rich_text }}" %}
+            </div>
+          </div>
+        </div>   
+        <div class="row images-box-container">
+          {% for campus in campuses %}
+            <div class="col-md-4" onclick="location.href='{{langCode}}{{campus.url_path}}';">
+                <div class="box-container">
+                    <div class="image-container" style="background-image: url('{{campus.image.url}}');">
+                        <div class="bottom-container">
+                            <div class="title-container">
+                            {{campus.name|upper}}, {{campus.state_province|upper}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logo-container">
+                        <img src="{{campus.logo_image.url}}" class="img-fluid">
+                    </div>
+                    <div class="btn-container center">
+                        <a href="{{langCode}}{{campus.url_path}}" class="btn btn-orange">{{ module.cta_button_text }}</a>
+                    </div>
+                </div>
+            </div>
+          {% endfor %}
+          
+          
+        </div>
+      </div>
+    </section>
+

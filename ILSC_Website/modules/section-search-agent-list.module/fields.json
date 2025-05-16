@@ -1,0 +1,19 @@
+[ {
+  "id" : "fe1a6365-58b5-f55a-4d02-61b97a177130",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "FINDING AN AGENT IN YOUR COUNTRY"
+}, {
+  "id" : "aa25d52d-b5ce-227a-bf6d-b460beea96f3",
+  "name" : "sub_title",
+  "label" : "Sub Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "Select your country to view agent details."
+} ]

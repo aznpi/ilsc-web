@@ -1,0 +1,190 @@
+[ {
+  "id" : "e90d055b-ec43-4244-8d8d-8d3b8959859e",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Your Questions Answered</h2>\n<p>Everything you need to know about homestay program. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+}, {
+  "id" : "d0d7ef2a-9aa2-de46-b675-9bff6a97d891",
+  "name" : "learn_more_text",
+  "label" : "Learn More Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "LEARN MORE"
+}, {
+  "id" : "d49b96dc-c8b4-e88d-bcd3-a4afc7d2e7ef",
+  "name" : "news_items",
+  "label" : "News items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 99,
+    "sorting_label_field" : "677c0227-becb-9f8c-c244-21567ac47486",
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "677c0227-becb-9f8c-c244-21567ac47486",
+    "name" : "news_title_text",
+    "label" : "News Title Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Headline"
+  }, {
+    "id" : "746ea8e1-47c1-02d7-316e-d63abbe4769a",
+    "name" : "news_description_text",
+    "label" : "News Description Text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<p>Blah BlahBlahBlahBlah BlahBlahBlah BlahBlah BlahBlahBlahBlahBlah BlahBlahBlah BlahBlahBlahBlah</p>"
+  }, {
+    "id" : "334cebd6-9263-fdf6-81fe-1d974700c16b",
+    "name" : "link_url",
+    "label" : "Link URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 35463701603
+    }
+  }, {
+    "id" : "c834c2c4-e264-4683-f35e-2a0231bcfd6e",
+    "name" : "news_image",
+    "label" : "News Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/Website/Destinations/Vancouver/Welcome-Vancouver.jpg",
+      "alt" : "Welcome-Vancouver",
+      "width" : 600,
+      "height" : 400,
+      "max_width" : 600,
+      "max_height" : 400
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "news_title_text" : "Headline",
+    "news_description_text" : "<p>Blah BlahBlahBlahBlah BlahBlahBlah BlahBlah BlahBlahBlahBlahBlah BlahBlahBlah BlahBlahBlahBlah</p>",
+    "link_url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 35463701603
+    },
+    "news_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/Website/Destinations/Vancouver/Welcome-Vancouver.jpg",
+      "alt" : "Welcome-Vancouver",
+      "width" : 600,
+      "height" : 400,
+      "max_width" : 600,
+      "max_height" : 400
+    }
+  }, {
+    "news_title_text" : "Headline",
+    "news_description_text" : "<p>Blah BlahBlahBlahBlah BlahBlahBlah BlahBlah BlahBlahBlahBlahBlah BlahBlahBlah BlahBlahBlahBlah</p>",
+    "link_url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 35463701603
+    },
+    "news_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/Website/Destinations/Vancouver/Welcome-Vancouver.jpg",
+      "alt" : "Welcome-Vancouver",
+      "width" : 600,
+      "height" : 400,
+      "max_width" : 600,
+      "max_height" : 400
+    }
+  }, {
+    "news_title_text" : "Headline",
+    "news_description_text" : "<p>Blah BlahBlahBlahBlah BlahBlahBlah BlahBlah BlahBlahBlahBlahBlah BlahBlahBlah BlahBlahBlahBlah</p>",
+    "link_url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 35463701603
+    },
+    "news_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/Website/Destinations/Vancouver/Welcome-Vancouver.jpg",
+      "alt" : "Welcome-Vancouver",
+      "width" : 600,
+      "height" : 400,
+      "max_width" : 600,
+      "max_height" : 400
+    }
+  }, {
+    "news_title_text" : "Headline",
+    "news_description_text" : "<p>Blah BlahBlahBlahBlah BlahBlahBlah BlahBlah BlahBlahBlahBlahBlah BlahBlahBlah BlahBlahBlahBlah</p>",
+    "link_url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 35463701603
+    },
+    "news_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/Website/Destinations/Vancouver/Welcome-Vancouver.jpg",
+      "alt" : "Welcome-Vancouver",
+      "width" : 600,
+      "height" : 400,
+      "max_width" : 600,
+      "max_height" : 400
+    }
+  }, {
+    "news_title_text" : "Headline",
+    "news_description_text" : "<p>Blah BlahBlahBlahBlah BlahBlahBlah BlahBlah BlahBlahBlahBlahBlah BlahBlahBlah BlahBlahBlahBlah</p>",
+    "link_url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 35463701603
+    },
+    "news_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/Website/Destinations/Vancouver/Welcome-Vancouver.jpg",
+      "alt" : "Welcome-Vancouver",
+      "width" : 600,
+      "height" : 400,
+      "max_width" : 600,
+      "max_height" : 400
+    }
+  } ]
+}, {
+  "id" : "4ea9d775-f864-b4cd-225b-b9451cd8e519",
+  "name" : "blog_field",
+  "label" : "Blog",
+  "required" : false,
+  "locked" : false,
+  "type" : "blog",
+  "display_width" : null,
+  "default" : 30018388535
+} ]

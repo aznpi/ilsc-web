@@ -1,0 +1,50 @@
+<section class="section-normal section-2-column-image-slider">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 right">
+            {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+           <div class="bg-polygon">
+              <div class="image-slider polygon-image-overlay">
+                
+                {% for item in module.image_slides %}
+                  {% if item.src %}
+                    {% set sizeAttrs = 'width="{{ item.width }}" height="{{ item.height }}"' %}
+                    {% if item.size_type == 'auto' %}
+                      {% set sizeAttrs = 'width="{{ item.width }}" height="{{ item.height }}" style="max-width: 100%; height: auto;"' %}
+                    {% elif item.size_type == 'auto_custom_max' %}
+                      {% set sizeAttrs = 'width="{{ item.max_width }}" height="{{ item.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                     {% set loadingAttr = item.loading != 'disabled' ? 'loading="{{ item.loading }}"' : '' %}
+                    <div>
+                      <img src="{{ item.src }}" alt="{{ item.alt }}" class="img-fluid">
+                    </div>
+                    {% endif %}
+                  {% endfor %}
+                
+              </div>
+            </div> 
+          </div>
+          <div class="col-md-5">
+            {% inline_rich_text field="right_column_rich_text" value="{{ module.right_column_rich_text }}" %}
+            
+            {% if module.enable_cta %}
+              <div class="btn-container center" style="margin:100px 0;">
+                {% set href = module.cta_field_group.link_field.url.href %}
+                {% if module.cta_field_group.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+                  {% set href = "mailto:" + href %}
+                {% endif %}
+
+                <a href="{{ href }}" class="btn btn-orange"
+                   {% if module.cta_field_group.link_field.open_in_new_tab %}target="_blank"{% endif %}
+	                {% if module.cta_field_group.link_field.rel %}rel="{{ module.cta_field_group.link_field.rel }}"{% endif %}
+	              >{{ module.cta_field_group.btn_text }}</a>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </section>

@@ -1,0 +1,88 @@
+[ {
+  "id" : "5a3af11b-185e-d652-3ab3-bb3a04d0dd53",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Why Choose ILSC University Pathway</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis iaculis magna pellentesque blandit id.</p>"
+}, {
+  "id" : "5efdaa86-cf69-1c53-1507-a5525571b7e1",
+  "name" : "box",
+  "label" : "Box",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 4,
+    "sorting_label_field" : "8822fba5-5cf9-4764-8771-da853b3fc814",
+    "default" : 2
+  },
+  "children" : [ {
+    "id" : "8822fba5-5cf9-4764-8771-da853b3fc814",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_pathway_excellence.jpg",
+      "alt" : "img_pathway_excellence",
+      "width" : 543,
+      "height" : 554,
+      "max_width" : 543,
+      "max_height" : 554
+    }
+  }, {
+    "id" : "908d08de-e1b0-ce84-941a-c06cbd3064ef",
+    "name" : "text_content",
+    "label" : "Text Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h5>Academic Excellence Assurance</h5>"
+  }, {
+    "id" : "e0b848ae-b5e0-f513-e0a4-140bb999684b",
+    "name" : "short_description",
+    "label" : "Short Description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h2>Academic Excellence Assurance</h2>\n<h5>ILSC IS COMMITTED TO ASSURING YOUR SUCCESS BY OFFERING:</h5>\n<ul class=\"arrows\">\n<li>Progress monitoring</li>\n<li>Free online practice resources</li>\n<li>Customized learning plans for each student</li>\n<li>Academic skills building</li>\n<li>Guidance for choosing a partner school</li>\n<li>Free university admissions service</li>\n<li>Information sessions and tours</li>\n</ul>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_pathway_excellence.jpg",
+      "alt" : "img_pathway_excellence",
+      "width" : 543,
+      "height" : 554,
+      "max_width" : 543,
+      "max_height" : 554
+    },
+    "text_content" : "<h5>Academic Excellence Assurance</h5>",
+    "short_description" : "<h2>Academic Excellence Assurance</h2>\n<h5>ILSC IS COMMITTED TO ASSURING YOUR SUCCESS BY OFFERING:</h5>\n<ul class=\"arrows\">\n<li>Progress monitoring</li>\n<li>Free online practice resources</li>\n<li>Customized learning plans for each student</li>\n<li>Academic skills building</li>\n<li>Guidance for choosing a partner school</li>\n<li>Free university admissions service</li>\n<li>Information sessions and tours</li>\n</ul>"
+  }, {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_pathway_excellence.jpg",
+      "alt" : "img_pathway_excellence",
+      "width" : 543,
+      "height" : 554,
+      "max_width" : 543,
+      "max_height" : 554
+    },
+    "text_content" : "<h5>Academic Excellence Assurance</h5>",
+    "short_description" : "<h2>Academic Excellence Assurance</h2>\n<h5>ILSC IS COMMITTED TO ASSURING YOUR SUCCESS BY OFFERING:</h5>\n<ul class=\"arrows\">\n<li>Progress monitoring</li>\n<li>Free online practice resources</li>\n<li>Customized learning plans for each student</li>\n<li>Academic skills building</li>\n<li>Guidance for choosing a partner school</li>\n<li>Free university admissions service</li>\n<li>Information sessions and tours</li>\n</ul>"
+  } ]
+} ]

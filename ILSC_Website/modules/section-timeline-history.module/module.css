@@ -1,0 +1,21 @@
+.section-history.timeline-container .timeline-split .timeline-info, .section-history.timeline-container .timeline-centered .timeline-info{
+  padding-right:30px !important;
+}
+.section-history.timeline-container .timeline-centered .timeline-info {
+    width: 30% !important;
+}
+@media (max-width: 480px){
+  .section-history.timeline-container .timeline-centered .timeline-info {
+      width: 100% !important;
+  }
+}
+@media (min-width: 992px){
+.section-history.timeline-container .timeline-centered>.timeline-item:nth-child(odd) .timeline-info {
+    margin-left: 130px;
+}
+}
+@media (min-width: 992px){
+.section-history.timeline-container .timeline-centered>.timeline-item:nth-child(even) .timeline-info {
+    margin-right: 130px;
+}
+}

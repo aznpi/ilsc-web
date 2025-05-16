@@ -1,0 +1,163 @@
+[ {
+  "id" : "e17b73fa-e373-4cd4-f9c9-41aa4ae9ced9",
+  "name" : "padding_choice",
+  "label" : "Padding Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "padding-none", "No Padding" ], [ "padding-top", "Padding Top" ], [ "padding-bottom", "Padding Bottom" ], [ "padding-top-none", "No Padding Top " ], [ "padding-bottom-none", "No Padding Bottom" ], [ "padding-top-extra", "Extra Top Padding" ], [ "padding-bottom-extra", "Extra Bottom Padding" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "504057e4-6a3b-e55c-5b48-008b39135f68",
+  "name" : "margin_choice",
+  "label" : "Margin Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "", "None" ], [ "margin-top-extra", "Extra Top Margin" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "eb92e16b-4a59-f31d-fc4d-1c3e1b7b445e",
+  "name" : "bg_color_choice",
+  "label" : "BG Color Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "grey-linear-box", "Grey Linear" ], [ "blue-linear-box", "Blue Linear" ], [ "orange-radial-box", "Orange Radial" ], [ "orange-linear-box", "Orange Linear" ], [ "light-grey-linear", "Ligh Grey Linear" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "grey-linear-box"
+}, {
+  "id" : "acfbb91b-f029-5aa5-24dd-5be4b8a0b953",
+  "name" : "font_color_choice",
+  "label" : "Font Color Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "text-white", "White" ], [ "text-dark", "Dark" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "text-white"
+}, {
+  "id" : "f021f62e-8d8e-b1de-6092-4cf182549ecc",
+  "name" : "bg_angle_choice",
+  "label" : "BG Angle Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "section-polygon", "Polygon" ], [ "section-diagonal", "Diagonal" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "section-diagonal"
+}, {
+  "id" : "c71644af-1a80-ccdd-0ba8-c798f2185cd0",
+  "name" : "flip_bg_angle",
+  "label" : "Flip BG angle",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "display_width" : null,
+  "default" : false
+}, {
+  "id" : "bcb80179-76b2-937d-5361-061519dab722",
+  "name" : "title_rich_text",
+  "label" : "Title Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2><span class=\"bold\" style=\"font-size: 100px;\">6</span> Reasons to <span class=\"bold\">Learn English in the USA</span></h2>"
+}, {
+  "id" : "6dc9667f-af28-c60b-59b9-71ea669eca0c",
+  "name" : "bottom_rich_text",
+  "label" : "Bottom Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : ""
+}, {
+  "id" : "55c85333-0219-9e40-0bd1-d3c95798e0cb",
+  "name" : "number_of_column_choice",
+  "label" : "Number of Column Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "6", "2" ], [ "4", "3" ], [ "3", "4" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "3"
+}, {
+  "id" : "71d8975a-e92c-f25f-6ac9-01322d323081",
+  "name" : "icon_field_group",
+  "label" : "Icon Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 20,
+    "sorting_label_field" : "1681c620-c139-7f25-0976-51b589e6783e",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "1681c620-c139-7f25-0976-51b589e6783e",
+    "name" : "icon_image",
+    "label" : "Icon Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "087b01ab-95b0-20b1-051b-4afdd3dc45f9",
+    "name" : "title_rich_text",
+    "label" : "Title Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null
+  }, {
+    "id" : "2b8e991a-796f-80ac-cf9c-cc3c72aeaa6a",
+    "name" : "sub_title_rich_tex",
+    "label" : "Sub Title Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ ]
+} ]

@@ -1,0 +1,170 @@
+[ {
+  "id" : "c95d945c-ff5a-1c93-4535-6226260bad2c",
+  "name" : "content_text",
+  "label" : "Content text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2 style=\"line-height: 1;\"><span style=\"font-size: 40px;\">Thank you to our Career Fair Sponsors</span></h2>\n<p>Our connection with local business partners is what makes our events so successful! <br>Thank you so much to our amazing Career Fair event sponsors.</p>"
+}, {
+  "id" : "4d2df590-fd71-7d90-bc52-c585fb206e73",
+  "name" : "title_bg_color",
+  "label" : "Title BG Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#425b76",
+    "opacity" : 100
+  }
+}, {
+  "id" : "b3f8b747-a32e-481a-47d4-e3e120d64450",
+  "name" : "tier_sponsor_field_group",
+  "label" : "Tier Sponsor Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 99,
+    "sorting_label_field" : "49b8d023-b414-e68a-fb2c-0d4c1ae78901",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "49b8d023-b414-e68a-fb2c-0d4c1ae78901",
+    "name" : "tier_title_text",
+    "label" : "Tier Title Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "PLATINUM SPONSORS"
+  }, {
+    "id" : "d0a44173-7580-70de-ff67-8333543ed626",
+    "name" : "numer_of_stars_choice",
+    "label" : "Numer of Stars Choice",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "1", "1" ], [ "2", "2" ], [ "3", "3" ], [ "4", "4" ], [ "5", "5" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "1"
+  }, {
+    "id" : "dc86b9d3-7971-444b-d5b6-052aa2f20e00",
+    "name" : "sponsor_field_group",
+    "label" : "Sponsor Field group",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 99,
+      "sorting_label_field" : "2435c63f-791d-b7cf-7e38-4de65c29c66b",
+      "default" : null
+    },
+    "children" : [ {
+      "id" : "2435c63f-791d-b7cf-7e38-4de65c29c66b",
+      "name" : "sponsor_image",
+      "label" : "Sponsor Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "size_type" : "exact",
+        "src" : "https://www.ilsc.com/hubfs/Website/Greystone%20College/Work%20Section/Career-Fair-Sponsors/Encubate-logo=300x200.jpg",
+        "alt" : "Encubate-logo=300x200",
+        "loading" : "lazy",
+        "width" : 150,
+        "height" : 100,
+        "max_width" : 150,
+        "max_height" : 100
+      }
+    }, {
+      "id" : "889e4332-a959-2709-cad9-fe5c14d7cbd0",
+      "name" : "sponsor_link",
+      "label" : "Sponsor Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ {
+      "sponsor_image" : {
+        "size_type" : "exact",
+        "src" : "https://www.ilsc.com/hubfs/Website/Greystone%20College/Work%20Section/Career-Fair-Sponsors/Encubate-logo=300x200.jpg",
+        "alt" : "Encubate-logo=300x200",
+        "loading" : "lazy",
+        "width" : 150,
+        "height" : 100,
+        "max_width" : 150,
+        "max_height" : 100
+      },
+      "sponsor_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "tier_title_text" : "PLATINUM SPONSORS",
+    "numer_of_stars_choice" : "1",
+    "sponsor_field_group" : [ {
+      "sponsor_image" : {
+        "size_type" : "exact",
+        "src" : "https://www.ilsc.com/hubfs/Website/Greystone%20College/Work%20Section/Career-Fair-Sponsors/Encubate-logo=300x200.jpg",
+        "alt" : "Encubate-logo=300x200",
+        "loading" : "lazy",
+        "width" : 150,
+        "height" : 100,
+        "max_width" : 150,
+        "max_height" : 100
+      },
+      "sponsor_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  } ]
+} ]

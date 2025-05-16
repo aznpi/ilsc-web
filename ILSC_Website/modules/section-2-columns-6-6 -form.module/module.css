@@ -1,0 +1,12 @@
+.section{
+  position:relative;
+  overflow:hidden;
+}
+.section-6-6 .section-form.hs-form{
+  padding:0;
+  margin-bottom:0;
+}
+
+.section-6-6 .section-form.hs-form .hs-form-field{
+  width:100%;
+}

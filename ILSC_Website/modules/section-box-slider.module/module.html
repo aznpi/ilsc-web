@@ -1,0 +1,48 @@
+<section class="section bg-white-canvas section-box-slider">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				{% inline_rich_text field="title" value="{{ module.title }}" %}
+			</div>
+		</div>
+		<div class="row slick-row">
+			<div class="col-md-12">
+        <div class="slider-wrapper">
+          <div class="box-slide box-shadow">
+            
+               {% for item in module.box_slide %}
+                  {% set href = item.link_url.url.href %}
+                  {% if item.link_url.url.type is equalto "EMAIL_ADDRESS" %}
+                    {% set href = "mailto:" + href %}
+                  {% endif %}
+                  {% if item.box_image.src %}
+                     <div>
+                      <div class="box-container drop-shadow">
+
+                          <img src="{{ item.box_image.src }}" alt="{{ item.box_image.alt }}" loading="lazy">
+
+                        <div class="box-content a-link-container a-link-small">
+                        {% inline_rich_text field="box_slide_1.box_title" value="{{ item.box_title }}" %}
+                        <a {% if item.link_url.url.type is equalto "CALL_TO_ACTION"  %}
+                              href="{{ href }}" {# The href here is not escaped as it is not editable and functions as a JavaScript call to the associated CTA #}
+                            {% else %}
+                              href="{{ href|escape_url }}"
+                            {% endif %}
+                            {% if item.link_url.open_in_new_tab %}
+                              target="_blank"
+                            {% endif %}
+                            {% if item.link_url.rel %}
+                              rel="{{ item.link_url.rel|escape_attr }}"
+                            {% endif %} class="a-link">{{ module.link_text }}</a>
+                        </div>
+                      </div>
+                     </div>
+                  {% endif %}
+              {% endfor %}    
+            
+          </div>
+        </div>
+			</div>
+		</div>
+	</div>
+</section>

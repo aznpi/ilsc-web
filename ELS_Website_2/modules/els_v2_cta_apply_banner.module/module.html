@@ -1,0 +1,16 @@
+<section class="section-normal section-cta-banner section-bg-container">
+  <div class="container">
+    <div class="container-left-bg" style="background-color: {{ module.bg_color.color }};"></div>  
+    <div class="row">
+      <div class="col-md-12">
+        <div class="description-container center" style="background-color: {{ module.bg_color.color }};">
+          <h2 class="bold {{ module.font_color_choice }}">{{ module.title_text }}</h2>
+          <div class="btn-container">
+            <a href="{{ module.link_field.url.href }}" class="btn {{ module.button_color_choice }}" {% if module.link_field.open_in_new_tab %}target="_blank"{% endif %} {% if module.link_field.rel %}rel="{{ module.link_field.rel }}"{% endif %}>{{ module.button_text }}</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

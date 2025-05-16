@@ -1,0 +1,9 @@
+.section-table .dropup.dropdown-orange .dropdown-menu{
+  height:250px;
+  overflow-y:scroll;
+}
+.section-table .dropup.dropdown-orange .dropdown-menu a{
+  white-space:normal;
+}
+
+

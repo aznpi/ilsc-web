@@ -1,0 +1,14 @@
+<section class="section-2-columns-3-9 section bg-grey">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+        {% if module.image_field.src %}
+          <img class="lazy" data-src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}">
+        {% endif %}
+			</div>
+			<div class="col-md-9">
+				{% inline_rich_text field="main_text" value="{{ module.main_text }}" %}
+			</div>
+		</div>
+	</div>
+</section>

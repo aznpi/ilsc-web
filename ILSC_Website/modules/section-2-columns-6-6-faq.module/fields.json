@@ -1,0 +1,104 @@
+[ {
+  "id" : "289e5281-ef9d-a7b2-12d3-139626f9eac6",
+  "name" : "accordion_id",
+  "label" : "Accordion ID",
+  "inline_help_text" : "If you have multiple accordions on the same page, please choose a unique letter to distinguish each accordions.",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "A", "A" ], [ "B", "B" ], [ "C", "C" ], [ "D", "D" ], [ "E", "E" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "A"
+}, {
+  "id" : "2908e075-7670-c3e7-9dbf-dd0c53aeb314",
+  "name" : "module_bg_color",
+  "label" : "Module BG Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : null,
+    "opacity" : null
+  }
+}, {
+  "id" : "b752680b-9aa6-1e6b-f627-6d37644d802e",
+  "name" : "main_text",
+  "label" : "Main Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>A vibrant, world-class cosmopolitan city.</h2>\n<p>Learn English in Sydney, Australia’s oldest, largest and most diverse city, with a population of over four million people. This vibrant, cosmopolitan city is a popular tourist destination with a huge range of sightseeing options, including iconic architecture, more than 70 stunning beaches, incredible granite cliffs, and the beautiful Sydney Harbour that surrounds the city.</p>"
+}, {
+  "id" : "f61b2245-4f8d-42cd-f9c6-8d10faf301a7",
+  "name" : "bg_color",
+  "label" : "Accordion BG Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : null,
+    "opacity" : null
+  }
+}, {
+  "id" : "3028d96a-1abe-20cc-6b7d-a0623d6ab28d",
+  "name" : "faq_items",
+  "label" : "FAQ items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 5,
+    "sorting_label_field" : "69b85af9-d6b3-a54c-5eeb-5c578ec7ab34",
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "69b85af9-d6b3-a54c-5eeb-5c578ec7ab34",
+    "name" : "question_text",
+    "label" : "Question Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Question"
+  }, {
+    "id" : "7ad0c808-2354-52f8-8118-6b129043cc85",
+    "name" : "answer_text",
+    "label" : "Answer text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<p>Answer</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "question_text" : "Question",
+    "answer_text" : "<p>Answer</p>"
+  }, {
+    "question_text" : "Question",
+    "answer_text" : "<p>Answer</p>"
+  }, {
+    "question_text" : "Question",
+    "answer_text" : "<p>Answer</p>"
+  }, {
+    "question_text" : "Question",
+    "answer_text" : "<p>Answer</p>"
+  }, {
+    "question_text" : "Question",
+    "answer_text" : "<p>Answer</p>"
+  } ]
+} ]

@@ -1,0 +1,111 @@
+<div class="section section-faq section-faq-full bg-white-canvas" id="content">
+  <div class="container">
+    <div class="row mobile-tab-nav">
+      <div class="col-md-12">
+        <select name="forma">
+          {% for item in module.tabs_field_group %}
+            <option value="#tab-{{loop.index}}">{{ item.tab_title_text }}</option>
+           {% endfor %}
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 side-menu">
+        <ul class="nav nav-tabs tabs-left" role="tablist">
+          {% for item in module.tabs_field_group %}
+            <li role="presentation"><a href="#tab-{{loop.index}}" aria-controls="home" role="tab" data-toggle="tab" {% if loop.index == 1 %}class="tab-toggle active"{% else %}class="tab-toggle"{% endif %}>{{ item.tab_title_text }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="col-md-8 content-container">
+        <div class="tab-content">
+          {% for item in module.tabs_field_group %}
+            {% set num = loop.index %}
+            <div role="tabpanel" class="tab-pane {% if loop.index == 1 %}active{% endif %}" id="tab-{{loop.index}}">
+              <div class="row">
+                <div class="col-md-12">
+                  {{item.top_title_rich_text}}
+                </div>
+              </div>
+             {% if item.enable_dsiable_accordion_choice == 'enable' %}
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="accordion left" id="accordionFaq-{{loop.index}}">
+                    {% for item2 in item.accordion_field_group %}
+                        <div class="card">
+                          <div class="card-header" id="heading-{{num}}-{{loop.index}}">
+                            <div class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-{{num}}-{{loop.index}}" {% if loop.index == 1 %} {% if module.default_first_tab_open_boolean %} aria-expanded="true"{% else %} aria-expanded="false"{% endif %} {% else %} aria-expanded="false" {% endif %} aria-controls="collapse-{{num}}-{{loop.index}}">
+                                <div class="row">      
+                                <div class="col-md-12">
+                                  <h4>
+                                    {{ item2.title_text }}
+                                  </h4>
+                                </div>
+                                </div>
+                              </button>
+                            </div>
+                          </div>
+
+                          <div id="collapse-{{num}}-{{loop.index}}" {% if loop.index == 1 %}{% if module.default_first_tab_open_boolean %} class="collapse show" {% else %} class="collapse" {% endif %}{% else %} class="collapse" {% endif %} aria-labelledby="heading-{{num}}-{{loop.index}}" data-parent="#accordionFaq-{{num}}">
+                            <div class="card-body">
+                             <div>
+                               {% inline_rich_text field="content_rich_text" value="{{ item2.content_rich_text }}" %}
+                             </div>
+
+                            </div>
+
+                          </div>
+                      </div>
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>          
+              {% endif %}
+              <div class="row">
+                <div class="col-md-12">
+                  {{item.bottom_title_rich_text}}
+                </div>
+              </div>
+              {% if item.enable_dsiable_accordion_2_choice == 'enable' %}
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="accordion left" id="accordionFaq-2-{{loop.index}}">
+                    {% for item3 in item.accordion_2_field_group %}
+                        <div class="card">
+                          <div class="card-header" id="heading-2-{{num}}-{{loop.index}}">
+                            <div class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-2-{{num}}-{{loop.index}}" {% if loop.index == 1 %}{% if module.default_first_tab_open_boolean %} aria-expanded="true" {% else %} aria-expanded="false" {% endif %}{% else %} aria-expanded="false" {% endif %} aria-controls="collapse-2-{{num}}-{{loop.index}}">
+                                <div class="row">      
+                                <div class="col-md-12">
+                                  <h4>
+                                    {{ item3.title_text }}
+                                  </h4>
+                                </div>
+                                </div>
+                              </button>
+                            </div>
+                          </div>
+
+                          <div id="collapse-2-{{num}}-{{loop.index}}" {% if loop.index == 1 %}{% if module.default_first_tab_open_boolean %} class="collapse show" {% else %} class="collapse" {% endif %}{% else %} class="collapse" {% endif %} aria-labelledby="heading-2-{{num}}-{{loop.index}}" data-parent="#accordionFaq-2-{{num}}">
+                            <div class="card-body">
+                             <div>
+                               {% inline_rich_text field="content_rich_text" value="{{ item3.content_rich_text }}" %}
+                             </div>
+
+                            </div>
+
+                          </div>
+                      </div>
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>          
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

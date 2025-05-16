@@ -1,0 +1,27 @@
+.section-team img{
+  width:80% !important;
+}
+.section-team h5{
+  margin-bottom:0 !important;
+}
+.section-team p{
+  margin-top:10px !important;
+}
+.section-team .team-tab.show{
+  display:flex !important;
+}
+.section-team  .section-form .dropdown{
+  margin:0 auto;
+  width:400px;
+}
+.section-team  .section-form .btn{
+  margin-bottom: 10%;
+  text-align:center;
+
+}
+.section-team .fade:not(.show) .col-md-3{
+  display:none;
+}
+.section-team.no-pad{
+  padding-bottom: 50px !important;
+}

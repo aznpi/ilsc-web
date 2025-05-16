@@ -1,0 +1,47 @@
+{% set queryparam = "" %}
+{% if module.program_type %}
+  {% set queryparam = queryparam ~ "&program_type__in="+module.program_type|urlencode  %}
+{% endif %}
+{% if module.campus_type %}
+  {% set queryparam = queryparam ~ "&campus__in="+module.campus_type|urlencode  %}
+{% endif %}
+
+{% set queryparam = queryparam ~ "&is_parent__eq=true&enable__eq=true"  %}
+
+{% set program = hubdb_table_rows(5266066,queryparam) %}
+
+<section class="section bg-white-canvas">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				{% inline_rich_text field="title" value="{{ module.title }}" %}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+        <div class="slider-wrapper">
+          <div class="program-box-slide box-slide box-shadow">
+            
+               {% for item in program %}
+                  {% if item.image_thumbnail.url %}
+                     <div>
+                      <div class="box-container drop-shadow">
+
+                          <img src="{{ item.image_thumbnail.url }}" alt="{{ item.program_name }}" loading="lazy">
+
+                        <div class="box-content a-link-container a-link-small">
+                          <h4>{{ item.program_name }}</h4>
+                          {{item.description}}
+                        <a href="{% if item.page_link is not containing 'http'%}{% if content.language.languageTag && content.language.languageTag !='en' %}/{{ content.language.languageTag }}{% endif %}{% endif %}{{ item.page_link }}" class="a-link" {% if item.page_link is containing 'http'%}target="_blank"{% endif%}>{{ module.link_text }}</a>
+                        </div>
+                      </div>
+                     </div>
+                  {% endif %}
+              {% endfor %}    
+            
+          </div>
+        </div>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,267 @@
+{
+  "bg_color.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bg_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bg_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bg_color.label" : {
+    "message" : "Color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bg_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "content_container.default" : {
+    "message" : "<h1>Connect with the world</h1>\n<h2>Your journey to learning english starts here</h2>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "content_container.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "content_container.label" : {
+    "message" : "Content Container",
+    "description" : null,
+    "placeholders" : null
+  },
+  "content_container_2.default" : {
+    "message" : "<h1>Connect with the world</h1>\n<h2>Your journey to learning english starts here</h2>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "content_container_2.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "content_container_2.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "content_container_2.label" : {
+    "message" : "Content Container copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "content_container_2.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_font_awesome_icon.choices.value 1" : {
+    "message" : "Label 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cta_font_awesome_icon.choices.value 2" : {
+    "message" : "Label 2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "field_group.cta_font_awesome_icon.choices.fa-file-pdf" : {
+    "message" : "PDF Icon",
+    "description" : null,
+    "placeholders" : null
+  },
+  "field_group.cta_font_awesome_icon.choices.fa-play-circle" : {
+    "message" : "Play Video Icon",
+    "description" : null,
+    "placeholders" : null
+  },
+  "hero_image.bg_video_url.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "hero_image.bg_video_url.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "hero_image.bg_video_url.label" : {
+    "message" : "URL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "hero_image.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "hero_image.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "hero_image.hero_image.default.alt" : {
+    "message" : "Hero Language School",
+    "description" : null,
+    "placeholders" : null
+  },
+  "hero_image.hero_image.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "hero_image.hero_image.label" : {
+    "message" : "Hero Image",
+    "description" : null,
+    "placeholders" : null
+  },
+  "hero_image.hide_show_bg_video.choices.value 1" : {
+    "message" : "Label 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "hero_image.hide_show_bg_video.choices.value 2" : {
+    "message" : "Label 2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "hero_image.hide_show_bg_video.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "hero_image.hide_show_bg_video.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "hero_image.hide_show_bg_video.label" : {
+    "message" : "Choice",
+    "description" : null,
+    "placeholders" : null
+  },
+  "hero_image.hide_show_bg_video.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "hero_image.hide_show_hero_photo_description.choices.hide" : {
+    "message" : "Hide",
+    "description" : null,
+    "placeholders" : null
+  },
+  "hero_image.hide_show_hero_photo_description.choices.show" : {
+    "message" : "Show",
+    "description" : null,
+    "placeholders" : null
+  },
+  "hero_image.hide_show_hero_photo_description.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "hero_image.hide_show_hero_photo_description.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "hero_image.hide_show_hero_photo_description.label" : {
+    "message" : "Hide/Show Hero Photo Description",
+    "description" : null,
+    "placeholders" : null
+  },
+  "hero_image.hide_show_hero_photo_description.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "hero_image.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "hero_image.mobile_hero_image.default.alt" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "hero_image.mobile_hero_image.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "hero_image.mobile_hero_image.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "hero_image.mobile_hero_image.label" : {
+    "message" : "Image",
+    "description" : null,
+    "placeholders" : null
+  },
+  "hero_image.mobile_hero_image.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "hero_image.name" : {
+    "message" : "section-hero-with-video",
+    "description" : null,
+    "placeholders" : null
+  },
+  "hide_show_hero_photo_description.choices.value 1" : {
+    "message" : "Label 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "hide_show_hero_photo_description.choices.value 2" : {
+    "message" : "Label 2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "section-hero-with-search",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_placeholder_text.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_placeholder_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_placeholder_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_placeholder_text.label" : {
+    "message" : "Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_placeholder_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_placeholder_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  }
+}

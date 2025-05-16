@@ -1,0 +1,137 @@
+[ {
+  "id" : "f3786c28-080d-c130-bfc5-90d636ec1df0",
+  "name" : "bg_color",
+  "label" : "BG Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "a7611b15-0f15-fe11-8784-8c44676f3c44",
+  "name" : "title_text",
+  "label" : "Title text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h1 style=\"text-align: center;\"><span>Why choose ILSC Programs</span></h1>"
+}, {
+  "id" : "4628db5d-10e4-1b15-89de-21993525fccc",
+  "name" : "subtitle_text",
+  "label" : "Subtitle text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h3 style=\"text-align: center; line-height: 1.5;\"><span>Our students will live the experience of a lifetime and return home with lasting memories and improved language skills. Exciting excursions and fun extracurricular activities an integral part of the language learning process.</span></h3>"
+}, {
+  "id" : "8b5714e8-1c1e-e6d6-cb7a-509cedd0ee67",
+  "name" : "image_box_group",
+  "label" : "Image Box group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 4,
+    "sorting_label_field" : "e55472b3-e679-bda8-8d6e-9d5275240ea7",
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "8a2f2043-c967-4701-389c-d3b73661728a",
+    "name" : "title_text",
+    "label" : "Title Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null
+  }, {
+    "id" : "e55472b3-e679-bda8-8d6e-9d5275240ea7",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.ilsc.com/hubfs/Ellipse%2016.png",
+      "alt" : "Ellipse 16",
+      "loading" : "lazy",
+      "width" : 125,
+      "height" : 125,
+      "max_width" : 125,
+      "max_height" : 125
+    }
+  }, {
+    "id" : "78f219f2-6f72-e645-d6e7-7cca52f55ee4",
+    "name" : "bg_image",
+    "label" : "BG Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.ilsc.com/hubfs/Ellipse%2016.png",
+      "alt" : "Ellipse 16",
+      "loading" : "lazy",
+      "width" : 125,
+      "height" : 125,
+      "max_width" : 125,
+      "max_height" : 125
+    }
+  }, {
+    "id" : "bd3a8b3b-1aef-aca3-946b-a3dad3802f9a",
+    "name" : "bg_position_choice",
+    "label" : "BG Position Choice",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "top-right", "Top Right" ], [ "bottom-right", "Bottom Right" ], [ "top-left", "Top Left" ], [ "bottom-left", "Bottom left" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://www.ilsc.com/hubfs/Ellipse%2016.png",
+      "alt" : "Ellipse 16",
+      "loading" : "lazy",
+      "width" : 125,
+      "height" : 125,
+      "max_width" : 125,
+      "max_height" : 125
+    },
+    "bg_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.ilsc.com/hubfs/Ellipse%2016.png",
+      "alt" : "Ellipse 16",
+      "loading" : "lazy",
+      "width" : 125,
+      "height" : 125,
+      "max_width" : 125,
+      "max_height" : 125
+    }
+  } ]
+} ]

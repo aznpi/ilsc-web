@@ -1,0 +1,30 @@
+<section class="section-normal section-polygon {{ module.padding_choice }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+      </div>
+    </div>
+  </div>
+  <div class="bg-wrap container polygon-short-wrap">
+    <div class="photo-container" style="background-image: url('{{ module.photo_image.src }}');"></div>
+
+    <div class="container container-polygon-short polygon-blue text-white">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-10">
+          {% inline_rich_text field="box_description_rich_text" value="{{ module.box_description_rich_text }}" %}
+          <ul class="stat-list center">
+            {% for item in module.stat_field_group %}
+            <li>
+              <div class="title">{{ item.number_text }}</div>
+              <div class="sub-title">{{ item.sub_title_text }}</div>
+              <div class="sub-description">{{ item.sub_description_text }}</div>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

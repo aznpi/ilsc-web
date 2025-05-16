@@ -1,0 +1,145 @@
+[ {
+  "id" : "3aa348e6-d6e6-53cb-79f0-107c154d4096",
+  "name" : "anchor_id",
+  "label" : "Anchor ID",
+  "inline_help_text" : "Enter anchor ID when using an anchor nav. Do not use special characters or spaces.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null
+}, {
+  "id" : "14f3935a-e827-a422-8fe0-4751e9d8a22e",
+  "name" : "title_rich_text",
+  "label" : "Title Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2 class=\"center\"><span class=\"bold\"><span style=\"color: #ff8b35;\">ELS Chicago |</span> Dominican University Campus Facilities</span></h2>"
+}, {
+  "id" : "eefe5869-b561-5756-ac14-11cf229a8484",
+  "name" : "icon_column_choice",
+  "label" : "Icon Column Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "50", "2" ], [ "33.33", "3" ], [ "25", "4" ], [ "20", "5" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "20"
+}, {
+  "id" : "2c299911-c647-a2dd-91ae-c6a421b51454",
+  "name" : "icons_field_group",
+  "label" : "Icons Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 20,
+    "sorting_label_field" : "b1a5cfab-8dbb-aadf-1ebd-45477a0241da",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "1f244543-8719-998a-72c6-c0124466bec7",
+    "name" : "icon_image",
+    "label" : "Icon Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "b1a5cfab-8dbb-aadf-1ebd-45477a0241da",
+    "name" : "sub_title_text",
+    "label" : "Sub Title Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ ]
+}, {
+  "id" : "69003aea-db6a-9b48-4895-68074b2ac14c",
+  "name" : "enable_slider_boolean",
+  "label" : "Enable Slider Boolean",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "display_width" : null,
+  "default" : true
+}, {
+  "id" : "a5f0c436-966f-578a-0575-c3e2d23f45b0",
+  "name" : "slider_field_group",
+  "label" : "Slider Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 20,
+    "sorting_label_field" : "a5205775-08c1-93ab-e71e-596d0577ddbb",
+    "default" : null
+  },
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "enable_slider_boolean",
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "children" : [ {
+    "id" : "a5205775-08c1-93ab-e71e-596d0577ddbb",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "0562f327-d0b2-6fd2-680f-cdf5f157b041",
+    "name" : "description_rich_text",
+    "label" : "Description Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ ]
+} ]

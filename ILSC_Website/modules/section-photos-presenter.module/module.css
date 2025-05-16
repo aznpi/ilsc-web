@@ -1,0 +1,64 @@
+.section-team{
+  padding-top:0 !important;
+}
+.section-team .team-tab{
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+}
+.section-team .member-container{
+  cursor:pointer;
+  margin-bottom:30px;
+}
+.section-team .team-modal .modal-body{
+  background:#FFF;
+  padding:0;
+}
+.section-team .team-modal .image-container{
+  width:100%;
+}
+
+.section-team .team-modal .close{
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  z-index: 99;
+}
+.section-team .image-container img.headshot{
+  border-radius:50%;
+}
+.section-team .team-modal .description-container{
+  padding: 0 3rem 2rem;
+}
+.section-team h5{
+  margin-bottom:0 !important;
+}
+.section-team p{
+  margin-top:10px !important;
+}
+.section-team .team-tab.show{
+  display:flex !important;
+}
+.section-team  .section-form .dropdown{
+  margin:0 auto;
+  width:400px;
+}
+@media (max-width: 600px) {
+  .section-team  .section-form .dropdown{
+    width:100%;
+  }
+}
+.section-team  .section-form .btn{
+  margin-bottom: 20%;
+  text-align:center;
+
+}
+.section-team .fade:not(.show) .col-md-3{
+  display:none;
+}
+.section-team.no-pad{
+  padding-bottom: 50px !important;
+}
+.section-team .team-tab .image-container{
+  border-radius:50%;
+}

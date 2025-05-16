@@ -1,0 +1,20 @@
+[ {
+  "id" : "6b482207-6884-3ee2-f3e6-6f50606e1249",
+  "name" : "blog_field",
+  "label" : "Blog",
+  "required" : false,
+  "locked" : false,
+  "type" : "blog",
+  "display_width" : null,
+  "default" : 30018388535
+}, {
+  "id" : "117ede75-702e-7663-3280-0560b618f950",
+  "name" : "tag_field",
+  "label" : "Tag",
+  "required" : false,
+  "locked" : false,
+  "tag_value" : "NAME",
+  "type" : "tag",
+  "display_width" : null,
+  "default" : "coronavirus"
+} ]

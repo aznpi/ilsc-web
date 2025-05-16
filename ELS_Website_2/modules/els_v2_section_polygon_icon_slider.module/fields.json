@@ -1,0 +1,147 @@
+[ {
+  "id" : "e17b73fa-e373-4cd4-f9c9-41aa4ae9ced9",
+  "name" : "padding_choice",
+  "label" : "Padding Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "padding-none", "No Padding" ], [ "padding-top", "Padding Top" ], [ "padding-bottom", "Padding Bottom" ], [ "padding-top-none", "No Padding Top " ], [ "padding-bottom-none", "No Padding Bottom" ], [ "padding-top-extra", "Extra Top Padding" ], [ "padding-bottom-extra", "Extra Bottom Padding" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "86241785-0177-ea7f-b00b-da7f18faef24",
+  "name" : "margin_choice",
+  "label" : "Margin Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "margin-top-extra", "Extra Top Margin" ], [ "margin-bottom-extra", "Extra Bottom Margin" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "8a0d51fa-027a-ddf0-8d59-fd7519cc1b13",
+  "name" : "bg_angle_choice",
+  "label" : "BG Angle Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "section-diagonal", "Diagonal" ], [ "section-polygon", "Polygon" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "3331ee96-f101-edfc-96d7-44c8eecfea77",
+  "name" : "bg_angle_color_choice",
+  "label" : "BG Angle Color Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "grey-linear-box", "Grey Linear" ], [ "light-grey-linear-box", "Light Grey Linear" ], [ "orange-linear-box", "Orange Linear" ], [ "blue-linear-box", "Blue Linear" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "46f602d1-2dc1-0a94-8894-33f15f703f59",
+  "name" : "description_rich_text",
+  "label" : "Description Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<div>\n<div>\n<p>ELS offers a number of exciting English language center locations to learn and improve your English. Immerse yourself in an English-speaking environment to build your skills fast and effectively. Choose from modern, state-of-the-art technology English language centers across the United States.</p>\n</div>\n</div>"
+}, {
+  "id" : "842c5f76-00be-8155-eee0-da870941948a",
+  "name" : "image_field_1",
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "60dc2ff3-216b-5ea2-fd11-e20fe19ee9e8",
+  "name" : "bg_image",
+  "label" : "BG Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.ilsc.com/hubfs/ELS/Website%20v2/template-resources/images/background/bg_shape_red_angles.png",
+    "alt" : "bg_shape_red_angles",
+    "loading" : "lazy",
+    "width" : 663,
+    "height" : 512,
+    "max_width" : 663,
+    "max_height" : 512
+  }
+}, {
+  "id" : "a9386e5f-c548-cabb-a0e2-2310d95cf762",
+  "name" : "icon_field_group",
+  "label" : "Icons Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 7,
+    "sorting_label_field" : "eaad16cf-cdc3-8720-2d1c-6743b4f1a1ec",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "127ac847-14ae-9a16-bd01-c4f5a44d0385",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "eaad16cf-cdc3-8720-2d1c-6743b4f1a1ec",
+    "name" : "title_text",
+    "label" : "Title Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ ]
+} ]

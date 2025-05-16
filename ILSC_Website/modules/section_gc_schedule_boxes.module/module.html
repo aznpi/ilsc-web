@@ -1,0 +1,58 @@
+<section class="section section-schedule price-list-nav {% if module.background_color.color == '#FFFFFF' %}bg-white-canvas{% endif %} price-list-grid" id="content" style="background-color:rgba({{module.background_color.color|convert_rgb }}, {{module.background_color.opacity/100 }})">
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}      
+      </div> 
+    </div>
+    
+    <div class="row slick-row-campus">
+      <div class="col-md-12 slider-wrapper">
+        <div class="box-slide">
+              <div class="row schedule-box">             
+                {% for item in module.schedule_field_group %}
+                 
+                    <div class="col-md-4">
+                      <div class="program-box-container">
+                        <div class="title center">
+                          <h3>
+                            {{item.category_choice}}
+                          </h3>
+                        </div>
+                        <div class="content-container">
+
+                          <div class="description-container">
+                            
+                            <div class="description time-block">
+                              {% inline_rich_text field="schedule_description_rich_text" value="{{ item.schedule_description_rich_text }}" %}
+                            </div>
+                            <div class="sub-description center">
+                                {% inline_rich_text field="sub_description_text" value="{{ item.sub_description_text }}" %}
+                            </div>
+                            <div class="description main-description">
+                              {% inline_rich_text field="schedule_description_bottom_rich_text" value="{{ item.schedule_description_bottom_rich_text }}" %}
+                            </div>
+                          </div>
+
+                            
+                      </div>
+                      
+                    </div>
+                  </div>              
+       
+                {% endfor %}
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="footnote">
+                    {% inline_rich_text field="footnote_rich_text" value="{{ module.footnote_rich_text }}" %}
+                  </div>
+                </div>
+              </div>
+           
+        </div>
+      </div>
+    </div>    
+  </div>
+</section>

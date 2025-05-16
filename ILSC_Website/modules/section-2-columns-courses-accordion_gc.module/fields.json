@@ -1,0 +1,91 @@
+[ {
+  "id" : "9f20668c-4c4d-5f61-f370-463fac173a6b",
+  "name" : "accordion_assignment_choice",
+  "label" : "Accordion Assignment Choice",
+  "inline_help_text" : "If you have multiple accordions, assign unique letters to each module.",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "A", "A" ], [ "B", "B" ], [ "C", "C" ], [ "D", "D" ], [ "E", "E" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "A"
+}, {
+  "id" : "70a25498-cdca-ca44-25ea-030dab64d845",
+  "name" : "program_code",
+  "label" : "Parent Program Code",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null
+}, {
+  "id" : "3afaf60e-b51a-47f7-8962-da73f075fc3e",
+  "name" : "bg_color",
+  "label" : "BG Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#F5F8FA",
+    "opacity" : 100
+  }
+}, {
+  "id" : "45c27bd1-a522-caf8-0114-1e82be125a7d",
+  "name" : "title_accordion_rich_text",
+  "label" : "Title Accordion Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Program Courses</h2>"
+}, {
+  "id" : "4e1e190b-e343-2268-71c0-e39623fa797f",
+  "name" : "bg_image_field",
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "src" : "https://www.ilsc.com/hubfs/bg_black_white_laptop.jpg",
+    "alt" : "bg_black_white_laptop",
+    "width" : 449,
+    "height" : 750,
+    "max_width" : 449,
+    "max_height" : 750
+  }
+}, {
+  "id" : "4b3b05bf-f115-86f7-82c5-ac28f3c63e85",
+  "name" : "button_show_more_text",
+  "label" : "Button Show More text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Show More"
+}, {
+  "id" : "44c4adb4-7c89-7c2d-ff19-da5aca69ef90",
+  "name" : "button_show_less_text",
+  "label" : "Button Show Less text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Show Less"
+} ]

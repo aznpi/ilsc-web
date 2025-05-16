@@ -1,0 +1,43 @@
+<section class="section section-box-overlap bg-white-canvas" id="content">
+	<div class="container">
+		<div class="row cta-row">
+			<div class="col-md-6">
+				<h2>{{ module.title }}</h2>
+			</div>
+			<div class="col-md-6">
+				<div class="hero-video-container btn-video-container">
+					<div><i class="far fa-play-circle"></i></div><div><a href="#ilscModal" data-toggle="modal" class="video-btn" src="{{ module.video_link_url.href }}">{{ module.video_text }}</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="box-slide">
+          
+          {% for item in module.box %}
+             <div>
+              <div class="box-container" {% if item.new_window_choice == "yes" %} onclick="window.open('{{ item.page_link_url.href }}','_blank');" {% else %} onclick="location.href='{{ item.page_link_url.href }}';" {% endif %}>
+              <div class="title-container">
+              {% inline_rich_text field="title" value="{{ item.title }}" %}
+              </div>
+              {% if item.image_field.src %}
+                <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}">
+              {% endif %}
+              <div class="short-description-container">
+                  <div class="short-description">			 			
+                    {% inline_rich_text field="short_description" value="{{ item.short_description }}" %}
+                    
+                  </div>
+                  
+                </div>
+                <i class="fas fa-plus-circle"></i>
+              </div>
+             </div> 
+					 {% endfor %}
+				 
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+

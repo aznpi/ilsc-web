@@ -1,0 +1,16 @@
+.section-testimonials .testimonial-slide-1 .quote-container .quote-author .author-img{
+    border-radius: initial !important;
+    width: 200px !important;
+}
+
+.section-testimonials.bg-blue .slick-dots li.slick-active button:before {
+    color: #ff8b35 !important;
+}
+
+.section-testimonials .testimonial-slide-1 .quote-container h2 {
+    font-size: 1.75rem;
+    line-height: 36px;
+}
+.section-testimonials .testimonial-slide-1 .quote-container .quote-author .author-img{
+  width:initial !important;
+}

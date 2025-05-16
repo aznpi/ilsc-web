@@ -1,0 +1,18 @@
+.section.section-cta{
+   padding:50px 0;
+}
+.section.section-cta h2{
+  font-weight:400;
+}
+.section-cta .content-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.section-cta .btn-container{
+  margin: 15px auto 0 !important;
+}
+.section-cta .btn-container a{
+  display:inline-block;
+  width:195px !important;
+}

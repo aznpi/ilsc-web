@@ -1,0 +1,130 @@
+[ {
+  "id" : "e90d055b-ec43-4244-8d8d-8d3b8959859e",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Your Questions Answered</h2>\n<p>Everything you need to know about homestay program. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+}, {
+  "id" : "d49b96dc-c8b4-e88d-bcd3-a4afc7d2e7ef",
+  "name" : "faq_items",
+  "label" : "FAQ items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 30,
+    "sorting_label_field" : "677c0227-becb-9f8c-c244-21567ac47486",
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "677c0227-becb-9f8c-c244-21567ac47486",
+    "name" : "question_text",
+    "label" : "Question Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Question"
+  }, {
+    "id" : "746ea8e1-47c1-02d7-316e-d63abbe4769a",
+    "name" : "answer_text",
+    "label" : "Answer Text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<p>Answer</p>"
+  }, {
+    "id" : "65165666-447f-ec6c-f600-eadd523f0dfa",
+    "name" : "logo_image",
+    "label" : "Logo Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/logo_alto.png",
+      "alt" : "logo_alto",
+      "width" : 170,
+      "height" : 63,
+      "max_width" : 170,
+      "max_height" : 63
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "question_text" : "Question",
+    "answer_text" : "<p>Answer</p>",
+    "logo_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/logo_alto.png",
+      "alt" : "logo_alto",
+      "width" : 170,
+      "height" : 63,
+      "max_width" : 170,
+      "max_height" : 63
+    }
+  }, {
+    "question_text" : "Question",
+    "answer_text" : "<p>Answer</p>",
+    "logo_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/logo_alto.png",
+      "alt" : "logo_alto",
+      "width" : 170,
+      "height" : 63,
+      "max_width" : 170,
+      "max_height" : 63
+    }
+  }, {
+    "question_text" : "Question",
+    "answer_text" : "<p>Answer</p>",
+    "logo_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/logo_alto.png",
+      "alt" : "logo_alto",
+      "width" : 170,
+      "height" : 63,
+      "max_width" : 170,
+      "max_height" : 63
+    }
+  }, {
+    "question_text" : "Question",
+    "answer_text" : "<p>Answer</p>",
+    "logo_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/logo_alto.png",
+      "alt" : "logo_alto",
+      "width" : 170,
+      "height" : 63,
+      "max_width" : 170,
+      "max_height" : 63
+    }
+  }, {
+    "question_text" : "Question",
+    "answer_text" : "<p>Answer</p>",
+    "logo_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/logo_alto.png",
+      "alt" : "logo_alto",
+      "width" : 170,
+      "height" : 63,
+      "max_width" : 170,
+      "max_height" : 63
+    }
+  } ]
+} ]

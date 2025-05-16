@@ -1,0 +1,44 @@
+[ {
+  "id" : "6221002c-15da-ae17-63d4-5c51ecd2639e",
+  "name" : "box_field_group",
+  "label" : "Box Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 12,
+    "sorting_label_field" : "a2ab9605-5146-607f-1535-23b89f92d679",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "a2ab9605-5146-607f-1535-23b89f92d679",
+    "name" : "target_text",
+    "label" : "Target Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null
+  }, {
+    "id" : "be62604a-0550-8a9c-9193-21b009d7a091",
+    "name" : "bg_color",
+    "label" : "BG Color",
+    "required" : false,
+    "locked" : false,
+    "show_opacity" : true,
+    "type" : "color",
+    "display_width" : null,
+    "default" : {
+      "color" : "#865e9c",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ ]
+} ]

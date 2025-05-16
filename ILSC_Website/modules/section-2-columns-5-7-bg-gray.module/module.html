@@ -1,0 +1,26 @@
+<section class="section-2-columns-5-7 section bg-grey">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				{% inline_rich_text field="main_text" value="{{ module.main_text }}" %}
+        {% if module.cta_group.hide_show_cta == "show" %}
+          <div class="cta-btn">
+            <div><a href="{{ module.cta_group.link_url.url.href }}" data-toggle="modal" class="btn btn-outline-primary btn-black-outline">{{ module.cta_group.link_url_text }}</a></div>
+          </div>
+        {% endif %}
+			</div>
+			<div class="col-md-7">        
+				{% if module.image_field.src %}
+          	{% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
+            {% if module.image_field.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif module.image_field.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ module.image_field.max_width }}" height="{{ module.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+             {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+          <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+			</div>
+		</div>
+	</div>
+</section>

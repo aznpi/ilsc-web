@@ -1,0 +1,256 @@
+[ {
+  "id" : "52f8b652-a2d1-1392-502a-3069322bcc75",
+  "name" : "program_area_code",
+  "label" : "Program Area Code",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null
+}, {
+  "id" : "e5690cff-42ee-bee8-ee76-2f8770bb5949",
+  "name" : "country_program_choice",
+  "label" : "Country Program Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "Australia", "Australia" ], [ "Canada", "Canada" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "212e20be-7161-067d-0c25-076a2b651ff1",
+  "name" : "bc_color",
+  "label" : "BG Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "4e1e190b-e343-2268-71c0-e39623fa797f",
+  "name" : "image_field",
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_welcome_sydney.jpg",
+    "alt" : "img_welcome_sydney",
+    "width" : 1110,
+    "height" : 740,
+    "max_width" : 300,
+    "max_height" : 200,
+    "size_type" : "auto_custom_max"
+  }
+}, {
+  "id" : "d347b098-beb0-cf78-8616-b423e28a4afc",
+  "name" : "co_op_practicum_title_text",
+  "label" : "CO-OP/Practicum Title Text",
+  "help_text" : "Option to change the CO-OP title to Practicum or any other title.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "CO-OP"
+}, {
+  "id" : "fda5596c-16b3-2e2e-1cd7-4a7407833472",
+  "name" : "campus_footnote_rich_text_copy",
+  "label" : "Campus FootNote Rich text copy",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : ""
+}, {
+  "id" : "27d1e383-d3e2-2e26-106a-619d7e34b56c",
+  "name" : "schedule_footnote_rich_text",
+  "label" : "Schedule FootNote Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<p style=\"font-size: 14px;\"><strong><em>*Schedules will be adjusted in December to accommodate public holidays. Contact us for more information.</em></strong></p>"
+}, {
+  "id" : "b4a81ef2-89c2-5af6-6280-c33ee4d4feaa",
+  "name" : "language_level_rich_text",
+  "label" : "Language Level Footnote Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : ""
+}, {
+  "id" : "5170a678-f92f-c02f-050c-49089d16cfaa",
+  "name" : "start_date_rich_text",
+  "label" : "Start Date Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<p>2021 - DAYTIME PROGRAM*: Jan 4, Feb 1, Mar 1, Mar 29, Apr 26, May 25, Jun 21, Jul 19, Aug 16, Sep 13, Oct 12, Nov 8, Dec 6</p>\n<p>2021 - EVENING PROGRAM: Feb 15, Apr 12, Jun 7, Aug 2, Sep 27, Nov 22<br><strong><span style=\"font-size: 14px;\"><em>*In Toronto only, the daytime program schedule is paused for 2021. Daytime programs will resume in Toronto for 2022 start dates. </em></span></strong></p>"
+}, {
+  "id" : "a3d9c8a5-c934-5fbd-3574-65b4bd6c8a8c",
+  "name" : "credit_transfer_eligibility_rich_text",
+  "label" : "Credit Transfer Eligibility Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null
+}, {
+  "id" : "eda2e35d-c5b0-643b-ffc0-374bb573c6ba",
+  "name" : "cta_group",
+  "label" : "CTA group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "926d06cd-8520-a0f9-3ef6-66ff5fcc06e6",
+    "name" : "hide_show_cta",
+    "label" : "Hide/Show CTA",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "show"
+  }, {
+    "id" : "9d3d9280-d582-a7eb-45ee-e346d5c0bd35",
+    "name" : "cta_link_field_group",
+    "label" : "CTA Link Field group",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 3,
+      "sorting_label_field" : "939bd810-abe2-1aca-43e4-a424fac65c40",
+      "default" : 1
+    },
+    "visibility" : {
+      "controlling_field" : "926d06cd-8520-a0f9-3ef6-66ff5fcc06e6",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "show",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "children" : [ {
+      "id" : "3a97a8bd-80d1-0987-a531-00e31f18707a",
+      "name" : "link_url",
+      "label" : "Link Url",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "926d06cd-8520-a0f9-3ef6-66ff5fcc06e6",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "show",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "supported_types" : [ "EXTERNAL" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.youtube.com/embed/CMHRYfA1gLM",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "939bd810-abe2-1aca-43e4-a424fac65c40",
+      "name" : "link_url_text",
+      "label" : "Link Url Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "926d06cd-8520-a0f9-3ef6-66ff5fcc06e6",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "show",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "WATCH OUR VIDEO"
+    }, {
+      "id" : "3e002362-968d-0847-e60e-fc59992c103d",
+      "name" : "icon_choice",
+      "label" : "Icon Choice",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "none", "None" ], [ "far fa-play-circle", "Video" ], [ "far fa-file-pdf", "PDF" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "none"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ {
+      "link_url" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.youtube.com/embed/CMHRYfA1gLM",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_url_text" : "WATCH OUR VIDEO",
+      "icon_choice" : "none"
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "hide_show_cta" : "show",
+    "cta_link_field_group" : [ {
+      "link_url" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.youtube.com/embed/CMHRYfA1gLM",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_url_text" : "WATCH OUR VIDEO",
+      "icon_choice" : "none"
+    } ]
+  }
+} ]

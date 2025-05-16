@@ -1,0 +1,269 @@
+{% set languageCode = content.language.languageTag %}
+{% set lang = languageCode ?  languageCode : 'EN' %}
+
+{% set queryparam = "" %}
+{% set queryparam = queryparam ~ "&parent_program_code__eq=" +module.program_area_code|urlencode %}
+{% set queryparam = queryparam ~ "&country__in=" +module.country_program_choice|urlencode  %}
+{% set queryparam = queryparam ~ "&enable_disable__eq=Enable"  %}
+{% set program = hubdb_table_rows(4690691,queryparam) %}
+
+{% set schoolName = "Greystone College" %}
+{% set queryparam2 = "" %}
+{% set queryparam2 = queryparam2 ~ "&school__in=" +schoolName|urlencode %}
+{% set queryparam2 = queryparam2 ~ "&gs_area_code__in=" +module.program_area_code|urlencode %}
+{% set queryparam2 = queryparam2 ~ "&enable__eq=true"  %}
+{% set pdfListEN = hubdb_table_rows(7509279,queryparam2 ~ "&language__eq=EN")%}
+{% set pdfListLAN = hubdb_table_rows(7509279,queryparam2 ~ "&language__eq=" +lang|upper)%}
+
+{% set pdfList =  pdfListLAN|length > 0 ? pdfListLAN : pdfListEN %}
+
+{% set campusArray = [] %}
+{% set languageArray = [] %}
+{% set coopArray = [] %}
+
+{% for row in program %}
+  {% for item in row.campus %}
+    {% do campusArray.append(item.name) %}
+  {% endfor %}
+  {% for item in row.ilsc_level %}
+    {% do languageArray.append(item.level_name) %}
+  {% endfor %}
+
+   {% do coopArray.append(row.is_co_op) %}
+
+{% endfor %}
+
+<section class="section section-6-6-module {% if module.bc_color.color == '#FFFFFF' %} bg-white-canvas {% endif %}" id="content" style="background-color:rgba({{ module.bc_color.color|convert_rgb }}, {{ module.bc_color.opacity/100 }});">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 image-container">
+        {% if module.image_field.src %}
+          {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
+          {% if module.image_field.size_type == 'auto' %}
+            {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+          {% elif module.image_field.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ module.image_field.max_width }}" height="{{ module.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+           {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+          <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+        
+        
+        {% for pdf in pdfList %}
+          <div class="btn-video-container">
+            <div>
+              <i class="far fa-file-pdf"></i>
+            </div>
+            <div>
+                <a href="{{ pdf.pdf_file }}" target="_blank">
+                  {{ pdf.button_text }}
+                </a>
+              </div>
+          </div>
+        {% endfor %}
+        
+        
+				{% if module.cta_group.hide_show_cta == "show"%}
+           {% for item in module.cta_group.cta_link_field_group %}
+            {% set href = item.link_url.url.href %}
+                         
+            <div class="btn-video-container">
+              {% if item.icon_choice != 'none' %}
+                <div>
+                    <i class="{{item.icon_choice}}"></i>
+                </div>
+              {% endif %}
+              <div>
+                <a {% if item.icon_choice == 'far fa-play-circle' %} href="#ilscModal" data-toggle="modal" class="video-btn" src="{{ href }}" {% else %} href="{{ href }}" {% endif %} {% if item.link_url.open_in_new_tab %}target="_blank"{% endif %}>
+                  {{ item.link_url_text }}
+                </a>
+              </div>
+            </div>
+
+          {% endfor %}
+         {% endif %}
+			</div>
+			<div class="col-md-6">
+				<h5 style="font-size: 18px;">CAMPUS AVAILABLE</h5>
+        <p>
+          {% for item in campusArray|unique %}
+            {{ item }}{% if !loop.last %},{% endif %}
+          {% endfor %}
+        </p>
+        {% inline_rich_text field="campus_footnote_rich_text_copy" value="{{ module.campus_footnote_rich_text_copy }}" %}
+        <h5 style="font-size: 18px;">PROGRAM LENGTH</h5>
+      
+         {% set scheduleWeekdayArray = [] %}
+         {% set scheduleWeekendArray = [] %}
+         {% set scheduleMorningArray = [] %}
+         {% set scheduleDaytimeArray = [] %}
+         {% set scheduleEveningArray = [] %}
+         {% set scheduleAfternoonArray = [] %}
+         {% set scheduleHybridArray = [] %}
+         {% set scheduleHybridEveningArray = [] %}
+          {% set scheduleHybridMorningArray = [] %}
+        
+          {% for row in program %}      
+            {% if row.schedule|trim == 'Weekday' && !row.is_co_op %}
+               {% do scheduleWeekdayArray.append(row.program_length_weeks) %}
+            {% endif %}          
+            {% if row.schedule|trim == 'Weekend' && !row.is_co_op %}
+             {% do scheduleWeekendArray.append(row.program_length_weeks) %}
+            {% endif %}
+            {% if row.schedule|trim == 'Morning' && !row.is_co_op %}
+             {% do scheduleMorningArray.append(row.program_length_weeks) %}
+            {% endif %}
+            {% if row.schedule|trim == 'Daytime' && !row.is_co_op %}
+             {% do scheduleDaytimeArray.append(row.program_length_weeks) %}
+            {% endif %}
+            {% if row.schedule|trim == 'Evening' && !row.is_co_op %}
+              {% do scheduleEveningArray.append(row.program_length_weeks) %}
+            {% endif %}
+            {% if row.schedule|trim == 'Afternoon' && !row.is_co_op %}
+              {% do scheduleAfternoonArray.append(row.program_length_weeks) %}
+            {% endif %}
+            {% if row.schedule|trim == 'Hybrid' && !row.is_co_op %}
+              {% do scheduleHybridArray.append(row.program_length_weeks) %}
+            {% endif %}
+            {% if row.schedule|trim == 'Hybrid Evening' && !row.is_co_op %}
+              {% do scheduleHybridEveningArray.append(row.program_length_weeks) %}
+            {% endif %}
+          {% if row.schedule|trim == 'Hybrid Morning' && !row.is_co_op %}
+              {% do scheduleHybridMorningArray.append(row.program_length_weeks) %}
+            {% endif %}
+            
+          {% endfor %}
+        {% if scheduleWeekdayArray|length > 0 || scheduleWeekendArray|length > 0 || scheduleMorningArray|length > 0 || scheduleDaytimeArray|length > 0 || scheduleEveningArray|length > 0 || scheduleAfternoonArray|length > 0 || scheduleHybridArray|length > 0 || scheduleHybridEveningArray|length > 0 || scheduleHybridMorningArray|length > 0%}
+          <span class="bold">ACADEMIC</span>
+        {% endif %}
+         {% if scheduleWeekdayArray|length > 0 || scheduleWeekendArray|length > 0 || scheduleMorningArray|length > 0 ||scheduleDaytimeArray|length > 0 || scheduleEveningArray|length > 0 || scheduleAfternoonArray|length > 0 || scheduleHybridArray|length > 0 || scheduleHybridEveningArray|length > 0 || scheduleHybridMorningArray|length > 0%}
+          <p>
+            {% if scheduleWeekdayArray|length > 0 %}
+              Weekday {% for row in scheduleWeekdayArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+            {% endif %}
+             {% if scheduleWeekendArray|length > 0 %}
+              Weekend {% for row in scheduleWeekendArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+            {% endif %}
+            {% if scheduleMorningArray|length > 0 %}
+                Morning {% for row in scheduleMorningArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+              {% endif %}
+             {% if scheduleDaytimeArray|length > 0 %}
+                Daytime {% for row in scheduleDaytimeArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+              {% endif %}
+              {% if scheduleAfternoonArray|length > 0 %}
+               Afternoon {% for row in scheduleEveningArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+              {% endif %}
+             {% if scheduleEveningArray|length > 0 %}
+                Evening {% for row in scheduleEveningArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+              {% endif %}
+            
+            {% if scheduleHybridArray|length > 0 %}
+               Hybrid {% for row in scheduleEveningArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+              {% endif %}
+            {% if scheduleHybridMorningArray|length > 0 %}
+               Hybrid Morning{% for row in scheduleEveningArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+              {% endif %}
+            {% if scheduleHybridEveningArray|length > 0 %}
+               Hybrid Evening{% for row in scheduleEveningArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+              {% endif %}
+            
+           
+           </p>
+          {% endif %}
+                  
+           {% set scheduleWeekdayArray = [] %}
+           {% set scheduleWeekendArray = [] %}
+          {% set scheduleMorningArray = [] %}
+           {% set scheduleDaytimeArray = [] %}
+           {% set scheduleEveningArray = [] %}
+            {% set scheduleAfternoonArray = [] %}
+          {% set scheduleHybridArray = [] %}
+          {% set scheduleHybridEveningArray = [] %}
+          {% set scheduleHybridMorningArray = [] %}
+        
+           {% for row in program %}      
+            {% if row.schedule|trim == 'Weekday' && row.is_co_op %}
+               {% do scheduleWeekdayArray.append(row.program_length_weeks) %}
+            {% endif %}          
+            {% if row.schedule|trim == 'Weekend' && row.is_co_op %}
+             {% do scheduleWeekendArray.append(row.program_length_weeks) %}
+            {% endif %}
+            {% if row.schedule|trim == 'Morning' && row.is_co_op %}
+             {% do scheduleMorningArray.append(row.program_length_weeks) %}
+            {% endif %}
+            {% if row.schedule|trim == 'Daytime' && row.is_co_op %}
+             {% do scheduleDaytimeArray.append(row.program_length_weeks) %}
+            {% endif %}
+            {% if row.schedule|trim == 'Evening' && row.is_co_op %}
+              {% do scheduleEveningArray.append(row.program_length_weeks) %}
+            {% endif %}
+            {% if row.schedule|trim == 'Afternoon' && row.is_co_op %}
+              {% do scheduleAfternoonArray.append(row.program_length_weeks) %}
+            {% endif %}
+            {% if row.schedule|trim == 'Hybrid' && row.is_co_op %}
+              {% do scheduleHybridArray.append(row.program_length_weeks) %}
+            {% endif %}
+          {% if row.schedule|trim == 'Hybrid Evening' && row.is_co_op %}
+              {% do scheduleHybridEveningArray.append(row.program_length_weeks) %}
+            {% endif %}
+          {% if row.schedule|trim == 'Hybrid Morning' && row.is_co_op %}
+              {% do scheduleHybridMorningArray.append(row.program_length_weeks) %}
+            {% endif %}
+          {% endfor %}
+          {% if scheduleWeekdayArray|length > 0 || scheduleWeekendArray|length > 0 || scheduleMorningArray|length > 0 || scheduleDaytimeArray|length > 0 || scheduleEveningArray|length > 0 || scheduleAfternoonArray|length > 0 || scheduleHybridArray|length > 0 || scheduleHybridEveningArray|length > 0%}
+            <span class="bold">{{ module.co_op_practicum_title_text }}</span>
+          {% endif %}
+        {% if scheduleWeekdayArray|length > 0 || scheduleWeekendArray|length > 0 || scheduleMorningArray|length > 0 || scheduleDaytimeArray|length > 0 || scheduleEveningArray|length > 0 || scheduleAfternoonArray|length > 0 || scheduleHybridArray|length > 0 || scheduleHybridEveningArray|length > 0%}
+            <p>
+               {% if scheduleWeekdayArray|length > 0 %}
+                Weekday {% for row in scheduleWeekdayArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+              {% endif %}
+               {% if scheduleWeekendArray|length > 0 %}
+                Weekend {% for row in scheduleWeekendArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+              {% endif %}
+              {% if scheduleMorningArray|length > 0 %}
+                  Morning {% for row in scheduleMorningArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+                {% endif %}
+               {% if scheduleDaytimeArray|length > 0 %}
+                  Daytime {% for row in scheduleDaytimeArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+                {% endif %}
+              {% if scheduleAfternoonArray|length > 0 %}
+                  Afternoon {% for row in scheduleAfternoonArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+                {% endif %}
+               {% if scheduleEveningArray|length > 0 %}
+                  Evening {% for row in scheduleEveningArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+                {% endif %}
+              
+              {% if scheduleHybridArray|length > 0 %}
+                  Hybrid {% for row in scheduleHybridArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+                {% endif %}
+              {% if scheduleHybridMorningArray|length > 0 %}
+                  Hybrid Morning {% for row in scheduleHybridMorningArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+                {% endif %}
+              {% if scheduleHybridEveningArray|length > 0 %}
+                  Hybrid Evening {% for row in scheduleHybridEveningArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+                {% endif %}
+              
+             
+            </p>
+        {% endif %}
+         {% inline_rich_text field="schedule_footnote_rich_text" value="{{ module.schedule_footnote_rich_text }}" %}
+			  <h5 style="font-size: 18px;">LANGUAGE LEVEL REQUIREMENT</h5>
+        <p>
+          {% for item in languageArray|unique %}
+            {{ item }}{% if !loop.last %},{% endif %}
+          {% endfor %}
+        </p>
+        {% inline_rich_text field="language_level_rich_text" value="{{ module.language_level_rich_text }}" %}
+        {% if  module.start_date_rich_text %}
+          <h5 style="font-size: 18px;">START DATES</h5>
+        {% endif %}
+        {% inline_rich_text field="start_date_rich_text" value="{{ module.start_date_rich_text }}" %}
+        {% if  module.credit_transfer_eligibility_rich_text %}
+          <h5 style="font-size: 18px;">CREDIT TRANSFER ELEGIBILITY</h5>
+        {% endif %}
+        {% inline_rich_text field="credit_transfer_eligibility_rich_text" value="{{ module.credit_transfer_eligibility_rich_text }}" %}
+      </div>
+		</div>
+	</div>
+</section>

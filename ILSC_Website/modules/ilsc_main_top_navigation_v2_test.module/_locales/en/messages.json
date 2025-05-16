@@ -1,0 +1,4462 @@
+{
+  "academic_test_preparation.default.link_1_group.link_title" : {
+    "message" : "English",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation.default.link_1_group.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation.default.link_1_group.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation.default.link_1_group.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation.default.link_1_group.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation.default.link_2_group.link_title" : {
+    "message" : "French",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation.default.link_2_group.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation.default.link_2_group.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation.default.link_2_group.link_url.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation.default.link_2_group.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation.default.link_2_group.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation.default.link_3_group.link_title" : {
+    "message" : "Hindi",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation.default.link_3_group.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation.default.link_3_group.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation.default.link_3_group.link_url.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation.default.link_3_group.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation.default.link_3_group.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation.default.link_4_group.link_title" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation.default.link_4_group.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation.default.link_4_group.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation.default.link_4_group.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation.default.link_4_group.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation.default.link_5_group.link_title" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation.default.link_5_group.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation.default.link_5_group.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation.default.link_5_group.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation.default.link_5_group.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation.default.title_column_1" : {
+    "message" : "<h4>ACADEMIC AND TEST PREPARATION</h4>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.default.links.0.link_title" : {
+    "message" : "IELTS",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.default.links.0.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.default.links.0.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.default.links.0.link_url.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.default.links.0.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.default.links.0.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.default.links.1.link_title" : {
+    "message" : "IELTS",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.default.links.1.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.default.links.1.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.default.links.1.link_url.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.default.links.1.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.default.links.1.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.default.links.2.link_title" : {
+    "message" : "IELTS",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.default.links.2.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.default.links.2.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.default.links.2.link_url.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.default.links.2.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.default.links.2.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.default.title_column_1" : {
+    "message" : "<h4>ACADEMIC AND TEST PREPARATION</h4>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.link_1_group.default.link_title" : {
+    "message" : "IELTS",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.link_1_group.default.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.link_1_group.default.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.link_1_group.default.link_url.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.link_1_group.default.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.link_1_group.default.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.link_1_group.link_url.default.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.link_1_group.link_url.default.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.link_1_group.link_url.default.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.link_1_group.link_url.default.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.link_1_group.link_url.default.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.links.default.link_title" : {
+    "message" : "IELTS",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.links.default.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.links.default.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.links.default.link_url.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.links.default.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.links.default.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "academic_test_preparation_menu.name" : {
+    "message" : "main_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.default.links.0.link_title" : {
+    "message" : "30 Plus",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.default.links.0.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.default.links.0.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.default.links.0.link_url.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.default.links.0.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.default.links.0.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.default.links.1.link_title" : {
+    "message" : "30 Plus",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.default.links.1.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.default.links.1.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.default.links.1.link_url.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.default.links.1.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.default.links.1.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.default.links.2.link_title" : {
+    "message" : "30 Plus",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.default.links.2.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.default.links.2.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.default.links.2.link_url.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.default.links.2.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.default.links.2.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.default.title_column_1" : {
+    "message" : "<h4>ADULT AND JUNIOR PROGRAMS</h4>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.link_1_group.default.link_title" : {
+    "message" : "30 Plus",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.link_1_group.default.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.link_1_group.default.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.link_1_group.default.link_url.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.link_1_group.default.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.link_1_group.default.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.link_3_group.link_url.default.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.link_3_group.link_url.default.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.link_3_group.link_url.default.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.link_3_group.link_url.default.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.link_4_group.link_url.default.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.link_4_group.link_url.default.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.link_4_group.link_url.default.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.link_4_group.link_url.default.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.links.default.link_title" : {
+    "message" : "30 Plus",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.links.default.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.links.default.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.links.default.link_url.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.links.default.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.links.default.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.name" : {
+    "message" : "main_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "alumni_login_menu.default.button_alumni_login.alumni_login_url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "alumni_login_menu.default.button_alumni_login.alumni_login_url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "alumni_login_menu.default.button_alumni_login.alumni_login_url.type" : {
+    "message" : "EXTERNAL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "alumni_login_menu.default.button_alumni_login.button_text_alumni_login" : {
+    "message" : "Alumni Login",
+    "description" : null,
+    "placeholders" : null
+  },
+  "alumni_login_menu.default.text_1" : {
+    "message" : "Have an account? Sign in now.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "alumni_login_menu.default.title_alumni_login" : {
+    "message" : "<h4>ALUMNI LOGIN</h4>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "alumni_login_menu.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "contact_us_url.default.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "contact_us_url.default.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "contact_us_url.default.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.default.links.0.link_title" : {
+    "message" : "About Pathway Programs",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.default.links.0.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.default.links.0.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.default.links.0.link_url.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.default.links.0.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.default.links.0.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.default.links.1.link_title" : {
+    "message" : "About Pathway Programs",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.default.links.1.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.default.links.1.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.default.links.1.link_url.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.default.links.1.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.default.links.1.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.default.links.2.link_title" : {
+    "message" : "About Pathway Programs",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.default.links.2.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.default.links.2.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.default.links.2.link_url.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.default.links.2.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.default.links.2.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.default.title_column_1" : {
+    "message" : "<h4>GREYSTONE COLLEGE AND UNIVERSITY PATHWAY</h4>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.link_1_group.default.link_title" : {
+    "message" : "About Pathway Programs",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.link_1_group.default.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.link_1_group.default.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.link_1_group.default.link_url.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.link_1_group.default.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.link_1_group.default.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.links.default.link_title" : {
+    "message" : "About Pathway Programs",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.links.default.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.links.default.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.links.default.link_url.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.links.default.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.links.default.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.name" : {
+    "message" : "main_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu_copy.default.link_1_group.link_title" : {
+    "message" : "About Pathway Programs",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu_copy.default.link_1_group.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu_copy.default.link_1_group.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu_copy.default.link_1_group.link_url.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu_copy.default.link_1_group.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu_copy.default.link_1_group.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu_copy.default.link_2_group.link_title" : {
+    "message" : "Partner Institutions",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu_copy.default.link_2_group.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu_copy.default.link_2_group.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu_copy.default.link_2_group.link_url.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu_copy.default.link_2_group.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu_copy.default.link_2_group.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu_copy.default.link_3_group.link_title" : {
+    "message" : "Greystone College",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu_copy.default.link_3_group.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu_copy.default.link_3_group.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu_copy.default.link_3_group.link_url.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu_copy.default.link_3_group.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu_copy.default.link_3_group.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu_copy.default.link_4_group.link_title" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu_copy.default.link_4_group.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu_copy.default.link_4_group.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu_copy.default.link_4_group.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu_copy.default.link_4_group.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu_copy.default.link_5_group.link_title" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu_copy.default.link_5_group.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu_copy.default.link_5_group.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu_copy.default.link_5_group.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu_copy.default.link_5_group.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu_copy.default.title_column_1" : {
+    "message" : "<h4>GREYSTONE COLLEGE AND UNIVERSITY PATHWAY</h4>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.alumni_login_url.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.alumni_login_url.default.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.alumni_login_url.default.href" : {
+    "message" : "https://mygreystonecollege.com/",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.alumni_login_url.default.type" : {
+    "message" : "EXTERNAL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.alumni_login_url.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.alumni_login_url.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.alumni_login_url.label" : {
+    "message" : "GC Login URL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.alumni_login_url.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.button_text_alumni_login.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.button_text_alumni_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.button_text_alumni_login.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.button_text_alumni_login.label" : {
+    "message" : "Button Text GC Login",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.button_text_alumni_login.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.button_text_alumni_login.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.default.alumni_login_url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.default.alumni_login_url.href" : {
+    "message" : "https://mygreystonecollege.com/",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.default.alumni_login_url.type" : {
+    "message" : "EXTERNAL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.default.button_text_alumni_login" : {
+    "message" : "Greystone College Login",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.label" : {
+    "message" : "Button GC Login",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.label" : {
+    "message" : "Greystone Login Menu",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.text_1.default" : {
+    "message" : "Have an account? Sign in now.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.text_1.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.text_1.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.text_1.label" : {
+    "message" : "text 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.text_1.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.text_1.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.title_alumni_login.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.title_alumni_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.title_alumni_login.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.title_alumni_login.label" : {
+    "message" : "Title GC Login",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.title_alumni_login.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "header_bg_color.default.color" : {
+    "message" : "#ffffff",
+    "description" : null,
+    "placeholders" : null
+  },
+  "header_bg_color.default.opacity" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "home_link.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "home_link.default.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "home_link.default.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "home_link.default.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "home_link.default.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "home_link.default.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "home_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "home_link.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "home_link.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "home_link.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_australia_links.default.link_page_homestay_australia.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_australia_links.default.link_page_homestay_australia.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_australia_links.default.link_page_homestay_australia.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_australia_links.default.link_page_homestay_australia.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_australia_links.default.link_page_homestay_australia.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_australia_links.default.link_title_homestay_australia" : {
+    "message" : "Homestay Australia",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_canada_links.default.link_page_homestay_canada.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_canada_links.default.link_page_homestay_canada.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_canada_links.default.link_page_homestay_canada.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_canada_links.default.link_page_homestay_canada.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_canada_links.default.link_page_homestay_canada.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_canada_links.default.link_title_homestay_canada" : {
+    "message" : "Homestay Canada",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_links.default.link_page_homestay.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_links.default.link_page_homestay.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_links.default.link_page_homestay.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_links.default.link_page_homestay.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_links.default.link_page_homestay.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_links.default.link_title" : {
+    "message" : "Homestay Canada",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_links_1.default.link_page_homestay.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_links_1.default.link_page_homestay.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_links_1.default.link_page_homestay.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_links_1.default.link_page_homestay.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_links_1.default.link_page_homestay.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_links_1.default.link_title" : {
+    "message" : "Homestay Canada",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.name" : {
+    "message" : "main_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "homestay_menu.url_field.default.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.url_field.default.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.url_field.default.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "icon_junior_programs.default.src" : {
+    "message" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_learn_english-1.png",
+    "description" : null,
+    "placeholders" : null
+  },
+  "icon_learn_french_copy.default.src" : {
+    "message" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_university.png",
+    "description" : null,
+    "placeholders" : null
+  },
+  "icon_test_centre.default.src" : {
+    "message" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_test_pencil.png",
+    "description" : null,
+    "placeholders" : null
+  },
+  "icon_university_pathway_copy.default.src" : {
+    "message" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_learn_english-1.png",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_homestay.default.size_type" : {
+    "message" : "auto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_homestay.default.src" : {
+    "message" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_homestay_photo.jpg",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_residence.default.size_type" : {
+    "message" : "auto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_residence.default.src" : {
+    "message" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_photo.jpg",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.australia_partners_links.default.link_page_australia_partners.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.australia_partners_links.default.link_page_australia_partners.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.australia_partners_links.default.link_page_australia_partners.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.australia_partners_links.default.link_page_australia_partners.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.australia_partners_links.default.link_page_australia_partners.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.australia_partners_links.default.link_title_australia_partners" : {
+    "message" : "Australia Partners",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.canada_partners_links.default.link_page_canada_partners.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.canada_partners_links.default.link_page_canada_partners.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.canada_partners_links.default.link_page_canada_partners.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.canada_partners_links.default.link_page_canada_partners.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.canada_partners_links.default.link_page_canada_partners.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.canada_partners_links.default.link_title_canada_partners" : {
+    "message" : "Canada Partners",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "junior_programs_menu.usa_partners_links.default.link_page_usa_partners.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.usa_partners_links.default.link_page_usa_partners.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.usa_partners_links.default.link_page_usa_partners.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.usa_partners_links.default.link_page_usa_partners.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.usa_partners_links.default.link_page_usa_partners.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.usa_partners_links.default.link_title_usa_partners" : {
+    "message" : "USA Partners",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.link_1_group.link_title" : {
+    "message" : "General English",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.link_1_group.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.link_1_group.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.link_1_group.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.link_1_group.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.link_2_group.link_title" : {
+    "message" : "General English",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.link_2_group.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.link_2_group.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.link_2_group.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.link_2_group.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.link_3_group.link_title" : {
+    "message" : "General English",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.link_3_group.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.link_3_group.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.link_3_group.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.link_3_group.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.link_4_group.link_title" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.link_4_group.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.link_4_group.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.link_4_group.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.link_4_group.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.link_5_group.link_title" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.link_5_group.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.link_5_group.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.link_5_group.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.link_5_group.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.links.0.link_title" : {
+    "message" : "English",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.links.0.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.links.0.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.links.0.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.links.0.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.links.1.link_title" : {
+    "message" : "English",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.links.1.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.links.1.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.links.1.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.links.1.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.links.2.link_title" : {
+    "message" : "English",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.links.2.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.links.2.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.links.2.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.links.2.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.default.title_column_1" : {
+    "message" : "<h4>LANGUAGE PROGRAMS</h4>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.general_english_links.default.link_page_general_english.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.general_english_links.default.link_page_general_english.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.general_english_links.default.link_page_general_english.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.general_english_links.default.link_page_general_english.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.general_english_links.default.link_title_general_english" : {
+    "message" : "General English",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.link_1.default.link_page_general_english.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.link_1.default.link_page_general_english.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.link_1.default.link_page_general_english.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.link_1.default.link_page_general_english.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.link_1.default.link_title_general_english" : {
+    "message" : "General English",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.link_1_group.default.link_title" : {
+    "message" : "English",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.link_1_group.default.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.link_1_group.default.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.link_1_group.default.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.link_1_group.default.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.link_2_group.link_url.default.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.link_2_group.link_url.default.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.link_2_group.link_url.default.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.link_2_group.link_url.default.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.link_2_group.link_url.default.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.link_3_group.link_url.default.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.link_3_group.link_url.default.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.link_3_group.link_url.default.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.link_3_group.link_url.default.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.link_3_group.link_url.default.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.links.default.link_title" : {
+    "message" : "English",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.links.default.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.links.default.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.links.default.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.links.default.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.name" : {
+    "message" : "main_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "language_programs_menu_copy.default.link_1_group.link_title" : {
+    "message" : "English",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu_copy.default.link_1_group.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu_copy.default.link_1_group.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu_copy.default.link_1_group.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu_copy.default.link_1_group.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu_copy.default.link_2_group.link_title" : {
+    "message" : "French",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu_copy.default.link_2_group.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu_copy.default.link_2_group.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu_copy.default.link_2_group.link_url.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu_copy.default.link_2_group.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu_copy.default.link_2_group.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu_copy.default.link_3_group.link_title" : {
+    "message" : "Hindi",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu_copy.default.link_3_group.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu_copy.default.link_3_group.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu_copy.default.link_3_group.link_url.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu_copy.default.link_3_group.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu_copy.default.link_3_group.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu_copy.default.link_4_group.link_title" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu_copy.default.link_4_group.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu_copy.default.link_4_group.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu_copy.default.link_4_group.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu_copy.default.link_4_group.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu_copy.default.link_5_group.link_title" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu_copy.default.link_5_group.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu_copy.default.link_5_group.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu_copy.default.link_5_group.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu_copy.default.link_5_group.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu_copy.default.title_column_1" : {
+    "message" : "<h4>Language Programs</h4>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.default.beyond_links.link_page_30_beyond.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.default.beyond_links.link_page_30_beyond.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.default.beyond_links.link_page_30_beyond.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.default.beyond_links.link_page_30_beyond.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.default.beyond_links.link_page_30_beyond.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.default.beyond_links.link_title_30_beyond" : {
+    "message" : "30 & Beyond",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.default.business_english_links.link_page_business_english.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.default.business_english_links.link_page_business_english.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.default.business_english_links.link_page_business_english.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.default.business_english_links.link_page_business_english.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.default.business_english_links.link_page_business_english.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.default.business_english_links.link_title_business_english" : {
+    "message" : "Business English",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.default.general_english_links.link_page_general_english.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.default.general_english_links.link_page_general_english.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.default.general_english_links.link_page_general_english.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.default.general_english_links.link_page_general_english.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.default.general_english_links.link_title_general_english" : {
+    "message" : "General English",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.default.icon_learn_english.alt" : {
+    "message" : "Learn English",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.default.icon_learn_english.size_type" : {
+    "message" : "auto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.default.icon_learn_english.src" : {
+    "message" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_learn_english.png",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.default.title_learn_english" : {
+    "message" : "<h4>Learn English</h4>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.default.volunteer_links.link_page_volunteer.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.default.volunteer_links.link_page_volunteer.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.default.volunteer_links.link_page_volunteer.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.default.volunteer_links.link_page_volunteer.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.default.volunteer_links.link_page_volunteer.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.default.volunteer_links.link_title_volunteer" : {
+    "message" : "Volunteer",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.general_english_links.link_page_general_english.default.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.general_english_links.link_page_general_english.default.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.general_english_links.link_page_general_english.default.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.general_english_links.link_page_general_english.default.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "learn_french_menu.business_english_links.default.link_page_business_english.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.business_english_links.default.link_page_business_english.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.business_english_links.default.link_page_business_english.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.business_english_links.default.link_page_business_english.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.business_english_links.default.link_page_business_english.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.business_english_links.default.link_title_business_english" : {
+    "message" : "Business English",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.general_english_links.default.link_page_general_english.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.general_english_links.default.link_page_general_english.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.general_english_links.default.link_page_general_english.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.general_english_links.default.link_page_general_english.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.general_english_links.default.link_page_general_english.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.general_english_links.default.link_title_general_english" : {
+    "message" : "General English",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.default.link_field.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.default.link_field.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.default.link_field.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.default.link_field.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.default.link_field.url.type" : {
+    "message" : "EXTERNAL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.link_field.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.link_field.default.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.link_field.default.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.link_field.default.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.link_field.default.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.link_field.default.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.link_field.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.link_field.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.link_field.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.link_field.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.link_text.default" : {
+    "message" : "ABOUT US",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.link_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.link_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.link_text.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.link_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.link_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.name" : {
+    "message" : "ilsc_main_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "left_menu_field_group.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_field.default.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_field.default.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_field.default.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_field.default.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_field.default.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "logo_alt.default" : {
+    "message" : "ILSC Language Schools and Greystone College",
+    "description" : null,
+    "placeholders" : null
+  },
+  "logo_alt.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "logo_alt.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "logo_alt.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "logo_alt.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "logo_svg_file.default" : {
+    "message" : "https://www.ilsc.com/hubfs/logo_Education%20Group-Color-Logo-Horizontal.svg",
+    "description" : null,
+    "placeholders" : null
+  },
+  "logo_svg_file.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "logo_svg_file.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "logo_svg_file.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "logo_svg_file.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.cta_text.default" : {
+    "message" : "CONTACT US",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.cta_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.cta_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.cta_text.label" : {
+    "message" : "CTA Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.cta_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.cta_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.cta_url.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.cta_url.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.cta_url.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.cta_url.label" : {
+    "message" : "CTA URL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.cta_url.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.default.cta_text" : {
+    "message" : "CONTACT US",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.default.cta_url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.default.cta_url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.default.cta_url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.icon_choice.choices.value 1" : {
+    "message" : "Label 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.icon_choice.choices.value 2" : {
+    "message" : "Label 2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.icon_choice.default" : {
+    "message" : "icon-ilsc",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.icon_choice.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.icon_choice.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.icon_choice.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.icon_choice.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.name" : {
+    "message" : "ilsc_main_top_navigation_v2",
+    "description" : "",
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_title_text.default" : {
+    "message" : "CONTACT US",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_title_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_title_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_title_text.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_title_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_title_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.name" : {
+    "message" : "ilsc_main_top_navigation_v2",
+    "description" : "",
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.label" : {
+    "message" : "CTA 1 group copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.cta_text.default" : {
+    "message" : "CONTACT US",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.cta_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.cta_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.cta_text.label" : {
+    "message" : "CTA Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.cta_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.cta_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.cta_url.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.cta_url.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.cta_url.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.cta_url.label" : {
+    "message" : "CTA URL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.cta_url.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.default.cta_text" : {
+    "message" : "CONTACT US",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.default.cta_url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.default.cta_url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.default.cta_url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.icon_choice.choices.icon-gc" : {
+    "message" : "Greystone College",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.icon_choice.choices.icon-ilsc" : {
+    "message" : "Language Schools",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.icon_choice.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.icon_choice.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.icon_choice.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.icon_choice.label" : {
+    "message" : "Icon Choice",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.icon_choice.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_title_text.default" : {
+    "message" : "CONTACT US",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_title_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_title_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_title_text.label" : {
+    "message" : "Link Title Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_title_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_title_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.cta_text.default" : {
+    "message" : "Call us: 1-855-560-0700",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.cta_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.cta_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.cta_text.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.cta_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.cta_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.label" : {
+    "message" : "CTA Quote group copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.show_link.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.show_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.show_link.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.show_link.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.show_link.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.cta_text.default" : {
+    "message" : "GET A QUOTE",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.cta_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.cta_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.cta_text.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.cta_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.cta_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.cta_url.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.cta_url.default.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.cta_url.default.href" : {
+    "message" : "#quote-modal",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.cta_url.default.type" : {
+    "message" : "EXTERNAL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.cta_url.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.cta_url.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.cta_url.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.cta_url.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.label" : {
+    "message" : "CTA 2 group copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.name" : {
+    "message" : "ilsc_main_top_navigation_v2",
+    "description" : "",
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.show_link.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.show_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.show_link.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.show_link.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.show_link.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.name" : {
+    "message" : "ilsc_main_top_navigation_v2",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "ilsc_main_top_navigation_v2_test",
+    "description" : "",
+    "placeholders" : null
+  },
+  "nav_login_text.default" : {
+    "message" : "Login",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_login_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_login_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_login_text.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_login_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_login_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_titles.name" : {
+    "message" : "main_top_navigation_v2",
+    "description" : "",
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.button_text_partners_login.default" : {
+    "message" : "Create My Account",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.button_text_partners_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.button_text_partners_login.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.button_text_partners_login.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.button_text_partners_login.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.label" : {
+    "message" : "Button Partners Login copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.partners_login_url.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.partners_login_url.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.partners_login_url.label" : {
+    "message" : "Create Account URL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.button_text_partners_login.default" : {
+    "message" : "Partners Login",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.button_text_partners_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.button_text_partners_login.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.button_text_partners_login.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.button_text_partners_login.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.partners_login_url.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.partners_login_url.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.partners_login_url.label" : {
+    "message" : "Partners Login URL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.label" : {
+    "message" : "Residences Menu copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "partners_login_menu.text_1.default" : {
+    "message" : "New to ILSC. Create an account to get started today.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.text_1.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.text_1.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.text_1.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.text_1.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.text_2.default" : {
+    "message" : "Have an account? Sign in now.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.text_2.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.text_2.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.text_2.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.text_2.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.title_partners_login.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.title_partners_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.title_partners_login.label" : {
+    "message" : "Title Partners Login",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.name" : {
+    "message" : "main_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "residences_menu.residences_australia_links.default.link_page_residences_australia.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_australia_links.default.link_page_residences_australia.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_australia_links.default.link_page_residences_australia.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_australia_links.default.link_page_residences_australia.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_australia_links.default.link_page_residences_australia.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_australia_links.default.link_title_residences_australia" : {
+    "message" : "Residences Australia",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_canada_links.default.link_page_residences_canada.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_canada_links.default.link_page_residences_canada.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_canada_links.default.link_page_residences_canada.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_canada_links.default.link_page_residences_canada.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_canada_links.default.link_title_residences_canada" : {
+    "message" : "Residences Canada",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_canada_links.link_page_residences_canada.default.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_canada_links.link_page_residences_canada.default.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_canada_links.link_page_residences_canada.default.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_canada_links.link_page_residences_canada.default.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_links.default.link_page.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_links.default.link_page.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_links.default.link_page.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_links.default.link_page.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_links.default.link_page_residences_australia.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_links.default.link_page_residences_australia.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_links.default.link_page_residences_australia.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_links.default.link_page_residences_australia.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_links.default.link_page_residences_australia.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_links.default.link_title" : {
+    "message" : "Residences Canada",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_links.default.link_title_residences_australia" : {
+    "message" : "Residences Australia",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_links_1.default.link_page.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_links_1.default.link_page.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_links_1.default.link_page.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_links_1.default.link_page.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_links_1.default.link_page_residences_australia.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_links_1.default.link_page_residences_australia.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_links_1.default.link_page_residences_australia.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_links_1.default.link_page_residences_australia.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_links_1.default.link_page_residences_australia.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_links_1.default.link_title" : {
+    "message" : "Residences Canada",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_links_1.default.link_title_residences_australia" : {
+    "message" : "Residences Australia",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "search_menu.text_search_placeholder.default" : {
+    "message" : "TYPE TO SEARCH",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.text_search_placeholder.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.text_search_placeholder.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.text_search_placeholder.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.text_search_placeholder.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.title_search.default" : {
+    "message" : "<h4>SEARCH</h4>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.title_search.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.title_search.label" : {
+    "message" : "Title Search",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.default.links.0.link_title" : {
+    "message" : "Test your language level",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.default.links.0.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.default.links.0.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.default.links.0.link_url.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.default.links.0.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.default.links.0.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.default.links.1.link_title" : {
+    "message" : "Test your language level",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.default.links.1.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.default.links.1.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.default.links.1.link_url.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.default.links.1.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.default.links.1.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.default.links.2.link_title" : {
+    "message" : "Test your language level",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.default.links.2.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.default.links.2.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.default.links.2.link_url.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.default.links.2.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.default.links.2.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.default.title_column_1" : {
+    "message" : "<h4>SERVICES</h4>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.link_1_group.default.link_title" : {
+    "message" : "Test your language level",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.link_1_group.default.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.link_1_group.default.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.link_1_group.default.link_url.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.link_1_group.default.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.link_1_group.default.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.links.default.link_title" : {
+    "message" : "Test your language level",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.links.default.link_url.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.links.default.link_url.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.links.default.link_url.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.links.default.link_url.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.links.default.link_url.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.name" : {
+    "message" : "main_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.button_text_student_login.default" : {
+    "message" : "MyILSC Login",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.button_text_student_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.button_text_student_login.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.button_text_student_login.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.button_text_student_login.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.label" : {
+    "message" : "Button Partners Create Account copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.student_login_url.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.student_login_url.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.student_login_url.label" : {
+    "message" : "Student Login URL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.label" : {
+    "message" : "Partners Login Menu copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "student_login_menu.text_1.default" : {
+    "message" : "Have an account? Sign in now.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.text_1.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.text_1.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.text_1.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.text_1.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.title_student_login.default" : {
+    "message" : "<h4>STUDENT LOGIN</h4>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.title_student_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.title_student_login.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia.default.icon_australia.alt" : {
+    "message" : "icon_australia_kangaroo",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia.default.icon_australia.size_type" : {
+    "message" : "auto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia.default.icon_australia.src" : {
+    "message" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_australia_kangaroo.png",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia.default.title_study_australia" : {
+    "message" : "Study in Australia",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.adelaide_links.default.link_page_adelaid.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.adelaide_links.default.link_page_adelaid.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.adelaide_links.default.link_page_adelaid.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.adelaide_links.default.link_page_adelaid.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.adelaide_links.default.link_page_adelaid.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.adelaide_links.default.link_title_adelaide" : {
+    "message" : "ILSC Adelaide",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.brisbane_links.default.link_page_brisbane.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.brisbane_links.default.link_page_brisbane.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.brisbane_links.default.link_page_brisbane.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.brisbane_links.default.link_page_brisbane.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.brisbane_links.default.link_page_brisbane.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.brisbane_links.default.link_title_brisbane" : {
+    "message" : "ILSC Brisbane",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.links.default.link_page.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.links.default.link_page.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.links.default.link_page.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.links.default.link_page.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.links.default.link_title" : {
+    "message" : "ILSC Sydney",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.links_1.default.link_page.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.links_1.default.link_page.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.links_1.default.link_page.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.links_1.default.link_page.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.links_1.default.link_title" : {
+    "message" : "ILSC Sydney",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.melbourne_links.default.link_page_melbourne.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.melbourne_links.default.link_page_melbourne.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.melbourne_links.default.link_page_melbourne.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.melbourne_links.default.link_page_melbourne.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.melbourne_links.default.link_page_melbourne.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.melbourne_links.default.link_title_Melbourne" : {
+    "message" : "ILSC Melbourne",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.name" : {
+    "message" : "main_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "study_in_australia_menu.sydney_links.default.link_page_sydney.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.sydney_links.default.link_page_sydney.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.sydney_links.default.link_page_sydney.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.sydney_links.default.link_page_sydney.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.sydney_links.default.link_title_sydney" : {
+    "message" : "ILSC Sydney",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.sydney_links.link_page_sydney.default.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.sydney_links.link_page_sydney.default.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.sydney_links.link_page_sydney.default.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.sydney_links.link_page_sydney.default.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.field_group.default.link_page_toronto.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.field_group.default.link_page_toronto.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.field_group.default.link_page_toronto.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.field_group.default.link_page_toronto.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.field_group.default.link_page_toronto.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.field_group.default.link_page_vancouver.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.field_group.default.link_page_vancouver.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.field_group.default.link_page_vancouver.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.field_group.default.link_page_vancouver.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.field_group.default.link_page_vancouver.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.field_group.default.link_title_vancouver" : {
+    "message" : "ILSC Vancouver",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.field_group.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "study_in_canada_menu.links.default.link_page.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.links.default.link_page.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.links.default.link_page.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.links.default.link_page.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.links.default.link_page.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.links.default.link_title" : {
+    "message" : "ILSC Vancouver",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.links_1.default.link_page.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.links_1.default.link_page.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.links_1.default.link_page.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.links_1.default.link_page.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.links_1.default.link_page.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.links_1.default.link_title" : {
+    "message" : "ILSC Vancouver",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.montreal_links.default.link_page.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.montreal_links.default.link_page.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.montreal_links.default.link_page.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.montreal_links.default.link_page.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.montreal_links.default.link_page.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.montreal_links.default.link_title" : {
+    "message" : "ILSC Montreal",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.name" : {
+    "message" : "main_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "study_in_canada_menu.toronto_links.default.link_page.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.toronto_links.default.link_page.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.toronto_links.default.link_page.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.toronto_links.default.link_page.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.toronto_links.default.link_page.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.toronto_links.default.link_title" : {
+    "message" : "ILSC Toronto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.vancouver_links.default.link_page.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.vancouver_links.default.link_page.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.vancouver_links.default.link_page.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.vancouver_links.default.link_page.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.vancouver_links.default.link_page.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.vancouver_links.default.link_title" : {
+    "message" : "ILSC Vancouver",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.links.default.link_page.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.links.default.link_page.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.links.default.link_page.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.links.default.link_page.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.links.default.link_page.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.links.default.link_title" : {
+    "message" : "ILSC New Delhi",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.links_1.default.link_page.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.links_1.default.link_page.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.links_1.default.link_page.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.links_1.default.link_page.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.links_1.default.link_page.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.links_1.default.link_title" : {
+    "message" : "ILSC New Delhi",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.links_2.default.link_page.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.links_2.default.link_page.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.links_2.default.link_page.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.links_2.default.link_page.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.links_2.default.link_page.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.links_2.default.link_title" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.links_3.default.link_page.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.links_3.default.link_page.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.links_3.default.link_page.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.links_3.default.link_page.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.links_3.default.link_page.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.links_3.default.link_title" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.name" : {
+    "message" : "main_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "study_india_menu.new_delhi_links.default.link_page_new_delhi.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.new_delhi_links.default.link_page_new_delhi.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.new_delhi_links.default.link_page_new_delhi.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.new_delhi_links.default.link_page_new_delhi.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.new_delhi_links.default.link_page_new_delhi.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.new_delhi_links.default.link_title_new_delhi" : {
+    "message" : "ILSC New Delhi",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.australia_partners_links.default.link_page_australia_partners.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.australia_partners_links.default.link_page_australia_partners.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.australia_partners_links.default.link_page_australia_partners.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.australia_partners_links.default.link_page_australia_partners.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.australia_partners_links.default.link_page_australia_partners.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.australia_partners_links.default.link_title_australia_partners" : {
+    "message" : "Australia Partners",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.canada_partners_links.default.link_page_canada_partners.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.canada_partners_links.default.link_page_canada_partners.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.canada_partners_links.default.link_page_canada_partners.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.canada_partners_links.default.link_page_canada_partners.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.canada_partners_links.default.link_page_canada_partners.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.canada_partners_links.default.link_title_canada_partners" : {
+    "message" : "Canada Partners",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "test_centre_menu.usa_partners_links.default.link_page_usa_partners.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.usa_partners_links.default.link_page_usa_partners.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.usa_partners_links.default.link_page_usa_partners.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.usa_partners_links.default.link_page_usa_partners.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.usa_partners_links.default.link_page_usa_partners.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.usa_partners_links.default.link_title_usa_partners" : {
+    "message" : "USA Partners",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title_language.default" : {
+    "message" : "<h4>Languages</h4>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title_language.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title_language.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.general_french_links.default.link_page_general_french.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.general_french_links.default.link_page_general_french.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.general_french_links.default.link_page_general_french.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.general_french_links.default.link_page_general_french.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.general_french_links.default.link_page_general_french.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.general_french_links.default.link_title_general_french" : {
+    "message" : "General French",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  }
+}

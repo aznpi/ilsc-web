@@ -1,0 +1,12 @@
+{% require_css position='header' %}
+  <style>
+    {% for item in module.category_field_group %}
+    .els-blog .tag-container.icon-{{item.tag_field}} .tag{
+      background-color: {{item.bg_color.color}} !important;
+    }
+    .els-blog .tag-container.icon-{{item.tag_field}}:before{
+      background-image:url({{ item.image_field.src|escape_url }}) !important;
+    }
+    {% endfor%}
+  </style>
+{% end_require_css %}

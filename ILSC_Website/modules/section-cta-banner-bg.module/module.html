@@ -1,0 +1,36 @@
+<section class="section section-cta-banner small-pad" id="content" {% if module.disable_enable_bg_color_choice == 'enable' %} style="background-color:rgba({{module.bg_color.color|convert_rgb }}, {{module.bg_color.opacity/100 }})
+" {% endif %}>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+        
+        <div class="cta-container">
+          {% if module.cta_group.hide_show_cta == "show"%}        
+            {% for item in module.cta_group.link_field_group %}
+              {% set href = item.link_url.url.href %}
+              <div class="btn-video-container">
+                  <div>
+                    <i class="{{ item.cta_font_awesome_icon }}"></i>
+                  </div>
+                  <div>
+                    {% if item.cta_font_awesome_icon == "far fa-play-circle" %}
+                      <a href="#ilscModal" data-toggle="modal" class="video-btn" src="{{ module.cta_group.link_url.url.href }}">
+                        {% else %}
+
+                        <a href="{{ href }}" {% if item.link_url.open_in_new_tab %}target="_blank"{% endif %}>
+                    {% endif %}
+                        {{ item.link_url_text }}
+                    </a>
+                  </div>
+                </div>
+             {% endfor %}  
+        
+        {% endif %}
+        </div>
+        
+        
+			</div>
+			
+		</div>
+	</div>
+</section>

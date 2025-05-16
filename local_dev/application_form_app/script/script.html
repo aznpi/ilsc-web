@@ -1,0 +1,106 @@
+<label>
+    Are you applying for your visa outside or inside Australia?<sup>*</sup>
+</label>
+<div class="form-check">
+    <input class="form-check-input" value="Outside" type="radio" name="additional_visa_apply" id="visa-question-yes" required>
+    <label class="form-check-label" for="visa-question-yes">Outside</label>
+</div>
+<div class="form-check">
+    <input class="form-check-input" value="Inside" type="radio" name="additional_visa_apply" id="visa-question-no" required>
+    <label class="form-check-label" for="visa-question-no">Inside</label>
+</div>
+
+<div class="form-group australia-visa-container study-hide" style="margin-left:20px;">
+    <div class="form-group current-visa-container">
+        <label>
+            What kind of visa you are currently holding?<sup>*</sup>
+        </label>
+        <div class="form-check">
+            <input class="form-check-input" value="Visitor Visa" type="radio" name="additional_australia_visa" id="australia-visa-visitor" disabled required>
+            <label class="form-check-label" for="australia-visa-visitor">Visitor Visa</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" value="Student Visa 500" type="radio" name="additional_australia_visa" id="australia-visa-student-500" disabled required>
+            <label class="form-check-label" for="australia-visa-student-500">Student Visa 500</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" value="Student Visa Dependant" type="radio" name="additional_australia_visa" id="australia-visa-student-dependant" disabled required>
+            <label class="form-check-label" for="australia-visa-student-dependant">Student Visa Dependant</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" value="Working Holiday" type="radio" name="additional_australia_visa" id="australia-visa-working-holiday" disabled required>
+            <label class="form-check-label" for="australia-visa-working-holiday">Working Holiday</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" value="Temporary Work Activity Visa (408 - COVID)" type="radio" name="additional_australia_visa" id="australia-visa-temp" disabled required>
+            <label class="form-check-label" for="australia-visa-temp">Temporary Work Activity Visa (408 - COVID)</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" value="Other type of Visa" type="radio" name="additional_australia_visa" id="australia-visa-other" disabled required>
+            <label class="form-check-label" for="australia-visa-other">Other type of Visa</label>
+        </div>
+        <div class="form-group study-hide australia-visa-other-specified-container">
+            <label for="australia-visa-other-specify">Student Visa Other Specify<sup>*</sup></label><input type="text" name="additional_australia_visa_specify" id="australia-visa-other-specify" required disabled><div class="valid-feedback"></div>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label for="visa-letter-file">Upload a copy of your current visa letter (jpeg,png,pdf) <sup>*</sup></label>
+        <input type="file" name="additional_australia_visa_letter_file_upload" id="visa-letter-file" accept="jpeg,jpg,pdf,png" data-bind="australia_current_visa_letter" disabled required>
+        <input type="hidden" name="additional_australia_visa_letter_file_upload" value="" readonly disabled>
+        <div class="valid-feedback"></div>
+    </div>
+    <div class="form-group">
+        <label>
+            Are you currently studying at ILSC or Greystone College?<sup>*</sup>
+        </label>
+        <div class="form-check">
+            <input class="form-check-input" value="No" type="radio" name="additional_australia_current_study" id="australia-current-study-no" disabled required>
+            <label class="form-check-label" for="australia-current-study-no">No</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" value="Yes" type="radio" name="additional_australia_current_study" id="australia-current-study-yes" disabled required>
+            <label class="form-check-label" for="australia-current-study-yes">Yes</label>
+        </div>
+        <div class="form-group study-hide australia-student-id-container">
+            <label for="australia-student-id">Please provide us your current studying campus and student ID number<sup>*</sup></label><input type="text" name="additional_australia_student_id" id="australia-student-id" required disabled><div class="valid-feedback"></div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="visa-previous-file">Upload all the visa copies you have previously since arriving in Australia (jpeg,png,pdf) <sup>*</sup></label>
+        <input type="file" name="additional_australia_visa_previous_file_upload" id="visa-previous-file" accept="jpeg,jpg,pdf,png" data-bind="visa_copy" disabled required>
+        <input type="hidden" name="additional_australia_visa_previous_file_upload" value="" readonly disabled>
+        <div class="valid-feedback"></div>
+    </div>
+    <label>
+        Are you going to study with another education provider in Australia after you finish your course at ILSC/Greystone College?<sup>*</sup>
+    </label>
+    <div class="form-check">
+        <input class="form-check-input" value="No" type="radio" name="additional_study_other" id="study-other-no" required>
+        <label class="form-check-label" for="study-other-no">No</label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" value="Yes" type="radio" name="additional_study_other" id="study-other-yes" required>
+        <label class="form-check-label" for="study-other-yes">Yes</label>
+    </div>
+    <div class="form-group study-other-australia-container study-hide" style="margin-left:20px;">
+        <div class="form-group">
+            <label for="study-other-provider">Write the name of the Education Provider<sup>*</sup></label><input type="text" name="australia_study_other_provider" id="study-other-provider" required disabled><div class="valid-feedback"></div>
+        </div>
+        <div class="form-group">
+            <label for="loa-file">Upload LoA (Leave of absence) (jpeg,png,pdf) <sup>*</sup></label>
+            <input type="file" name="additional_australia_loa_file_upload" id="loa-file" accept="jpeg,jpg,pdf,png" data-bind="loa" disabled required>
+            <input type="hidden" name="additional_australia_loa_file_upload" value="" readonly disabled>
+            <div class="valid-feedback"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="coe-file">Upload CoE (Confirmation of Enrollment) (jpeg,png,pdf) <sup>*</sup></label>
+            <input type="file" name="additional_australia_coe_file_upload" id="coe-file" accept="jpeg,jpg,pdf,png" data-bind="coe" disabled required>
+            <input type="hidden" name="additional_australia_coe_file_upload" value="" readonly disabled>
+            <div class="valid-feedback"></div>
+        </div>
+
+    </div>
+    
+</div>

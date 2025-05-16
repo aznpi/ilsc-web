@@ -1,0 +1,39 @@
+.cta-flyout ul li a.bold{
+  font-weight:700 !important;
+}
+
+
+@media (max-width: 480px) {
+  .cta-flyout{
+    padding:0 !important;
+  }
+  .footer-container .cta-flyout .container>.row div:first-child{
+    text-align:center;
+  }
+  .cta-flyout ul.cta-button{
+    margin-top:20px;
+  }
+  .cta-flyout ul.cta-button li{
+    padding: 0 3px !important;
+  }
+  .footer-container  .cta-flyout ul li a{
+    letter-spacing: 0;
+    line-height: 1;
+    font-size: .7rem;
+    height:30px;
+    display: flex;
+    align-items: center;
+    
+  }
+  .footer-container .cta-flyout .container>.row div:first-child{
+    padding-bottom:0;
+  }
+  .footer-container .cta-flyout .container>.row div:last-child{
+    padding-top:10px;
+  }
+}
+@media screen and (max-width: 812px){ 
+  .footer-container .cta-flyout{
+    display:none;
+  }
+}

@@ -1,0 +1,16 @@
+.section{
+  position:relative;
+  overflow:hidden;
+}
+.section.section-6-6-module h5{
+  margin:0;
+}
+.section.section-6-6-module p{
+  margin-bottom:1rem;
+  margin-top: 10px;
+}
+@media only screen and (min-width: 992px) {
+  .section-6-6-module .image-container{
+    padding:0 70px 0 0;
+  }
+}

@@ -1,0 +1,8 @@
+.section-progress{
+  margin-bottom: 100px;
+}
+@media (max-width: 1199.7px) {
+  .section-progress  .step-text{
+    display:none;
+  }
+}

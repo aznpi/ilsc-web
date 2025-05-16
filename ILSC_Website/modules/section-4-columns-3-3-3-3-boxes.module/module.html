@@ -1,0 +1,29 @@
+<section class="section-4-columns-3-3-3-3 box-overlay section bg-white-canvas">
+	<div class="container center">
+		<div class="row">
+			<div class="col-md-12 center">
+			{% inline_rich_text field="title" value="{{ module.title }}" %}
+      </div>
+		</div>
+		<div class="row box-4-container">   
+      {% for item in module.box %}
+        <div class="col-md-3 center">
+          <div class="box-container box-shadow">
+            {% if item.image_field.src %}
+              <img class="lazy" data-src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}">
+            {% endif %}
+            <div class="box-content center">
+              {% inline_rich_text field="text_content" value="{{ item.text_content }}" %}      
+            </div>
+            <div class="short-description-container">
+              <div class="short-description center">			 			
+                {% inline_rich_text field="short_description" value="{{ item.short_description }}" %}
+              </div>
+
+            </div>	
+          </div>
+        </div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

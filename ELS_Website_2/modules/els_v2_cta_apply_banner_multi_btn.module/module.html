@@ -1,0 +1,27 @@
+<section class="section-normal section-cta-banner section-bg-container section-cta-multi-btn">
+  <div class="container">
+    <div class="container-left-bg" style="background-color: {{ module.bg_color.color }};"></div>  
+    <div class="row">
+      <div class="col-md-12">
+        <div class="description-container center" style="background-color: {{ module.bg_color.color }};">
+          <h2 class="bold {{ module.font_color_choice }}">{{ module.title_text }}</h2>
+          <div class="btn-container">
+            {% for item in module.btn_field_group %}
+            {% set href = item.link_field.url.href %}
+            {% if item.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+            {% endif %}
+            <a href="{{ href }}" class="btn {{ item.button_color_choice }}"
+               {% if item.link_field.open_in_new_tab %}target="_blank"{% endif %}
+               {% if item.link_field.rel %}rel="{{ item.link_field.rel }}"{% endif %}
+               >
+              {{ item.button_text }}
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

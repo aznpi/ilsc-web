@@ -1,0 +1,69 @@
+.section-schedule .campus-target-row{
+  font-size:27px;
+  font-weight:700;
+}
+.section-schedule .campus-target-row .campus-target{
+  cursor:pointer;
+}
+.section-schedule .campus-target-row .campus-target.active{
+  color:#81b1cc;
+}
+
+.section-schedule.price-list-grid .program-box-container .title h3{
+  font-size:27px;
+}
+.section-schedule.price-list-grid .program-box-container{
+  margin-bottom:50px;
+  box-shadow: 0px 5px 4px -2px #626262;
+}
+.section-schedule.price-list-grid .price-list-drop{
+  margin-top:50px;
+  margin-bottom:50px;
+}
+.section-schedule.price-list-grid .program-box-container .description-container .sub-description{
+  background-color:#F4F4F4;
+  padding:50px 0;
+}
+.section-schedule.price-list-grid .program-box-container .content-container >div{
+  
+}
+
+.section-schedule.price-list-grid .program-box-container .description-container .time-block{
+  background-color:#F9F9F9;
+  padding:50px 20px; 
+  font-size:1em;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.section-schedule.price-list-grid .program-box-container p{
+  font-size:20px;
+}
+.section-schedule.price-list-grid .program-box-container .description-container .time-block .item-block:not(:first-child){
+  padding-top:30px;
+}
+.section-schedule.price-list-grid .program-box-container .description-container .time-block .item-block:not(:last-child){
+  padding-bottom:30px;
+  border-bottom:3px solid #CCC;
+  width:100%;
+}
+.section-schedule.price-list-grid .program-box-container .description-container .time-block .item-block ul{
+  list-style-type:none;
+  padding-left:0;
+}
+.section-schedule.price-list-grid .program-box-container .description-container .description.time-block{
+  padding:30px 0;
+}
+.section-schedule.price-list-grid .program-box-container .description-container .description p{
+  margin: 0;
+}
+.section-schedule.price-list-grid .program-box-container .description-container .description .item-block p{
+  padding:10px 0;
+}
+.section-schedule.price-list-grid .program-box-container .description-container strong{
+  font-weight:700;
+}
+.section-schedule.price-list-grid .box-slider .slick-slide{
+  padding:0 20px;
+}

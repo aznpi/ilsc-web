@@ -1,0 +1,22 @@
+[ {
+  "id" : "6b353411-d51f-eb61-30e2-47420350e5c9",
+  "name" : "bg_color",
+  "label" : "BG Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 0
+  }
+}, {
+  "id" : "a140eea6-45ff-05f1-3b5d-86d15fce4e86",
+  "name" : "title_rich_text",
+  "label" : "Title Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>TITLE</h2>"
+} ]

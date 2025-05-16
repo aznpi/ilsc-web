@@ -1,0 +1,551 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/ILSC_Website/template-resources/stylesheets/external/slick/slick-theme.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/ILSC_Website/template-resources/stylesheets/external/slick/slick.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/ILSC_Website/template-resources/stylesheets/internal/production/main.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/ILSC_Website/template-resources/stylesheets/internal/production/landing_page.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/ILSC_Website/template-resources/stylesheets/internal/production/top_navigation_language_schools.css"
+  } ],
+  "attachedJs" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/ILSC_Website/template-resources/javascript/internal/top_navigation_language_schools.js"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/ILSC_Website/template-resources/javascript/external/slick/slick-min.js"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/ILSC_Website/template-resources/javascript/internal/video-modal.js"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/ILSC_Website/template-resources/javascript/internal/main_function.js"
+  } ],
+  "customHead" : "<style>\n  #about-tabs #pills-tabContent.tab-content .tab-pane {\n    display: none;\n}\n  #about-tabs #pills-tabContent.tab-content .tab-pane.active {\n    display: block;\n}\n  #about-tabs #pills-tabContent .section{\n    overflow:visible;\n  }\n</style>",
+  "customFooter" : "<script>\n  $(document).ready(function(){\n    $(\".slider\").not('.slick-initialized').slick();\n    \n    $(\"#about-tabs .nav-pills li.nav-item a.nav-link\").click(function() {\n      var idTarget = $(this).attr('href');\n      \n      $(\"#about-tabs .tab-content .tab-pane\").each(function(){\n        if(!$(this).is(idTarget)){\n          $(this).removeClass('active').removeClass('show');\n        }\n      })\n    });\n    \n  })\n</script>\n<script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.min.js\" integrity=\"sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=\" crossorigin=\"anonymous\"></script>",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1616611280590219",
+        "label" : "ilsc_main_top_navigation_v2",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/ILSC_Website/modules/ilsc_main_top_navigation_v2",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "ilsc_main_top_navigation_v2",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_159242468447317",
+        "label" : "Flexible column",
+        "type" : "widget_container",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ {
+          "x" : 0,
+          "w" : 12,
+          "name" : "module_159285649897838",
+          "label" : "section-hero-with-video",
+          "type" : "custom_widget",
+          "params" : {
+            "css_class" : "",
+            "css_id" : "",
+            "css_id_str" : "",
+            "css_style" : "",
+            "overrideable" : true,
+            "path" : "/ILSC_Website/modules/section-hero-with-video",
+            "per_widget_wrapper_html" : "",
+            "schema_version" : 2,
+            "widget_name" : "section-hero-with-video",
+            "wrapping_html" : ""
+          },
+          "rows" : [ ],
+          "rowMetaData" : [ ],
+          "cells" : [ ],
+          "cssId" : "",
+          "cssClass" : "",
+          "cssStyle" : "",
+          "styles" : null,
+          "widgets" : [ ]
+        } ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1599239858171647",
+        "label" : "Module group",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "about-tabs",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : "<div id=\"content\" class=\"tab-navigation-landing section\">\n  <div class=\"divider\"></div>\n  <div>{{ html }}</div>\n</div>"
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_15992421264311000",
+            "label" : "Module group",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_15992435933101392",
+                "label" : "tabs-list-about-us",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "overrideable" : true,
+                  "path" : "/ILSC_Website/modules/tabs-list-about-us",
+                  "per_widget_wrapper_html" : "",
+                  "schema_version" : 2,
+                  "widget_name" : "tabs-list-about-us",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_15992454809261756",
+                "label" : "Module group",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "overrideable" : false,
+                  "per_widget_wrapper_html" : "",
+                  "wrapping_html" : "<div id=\"pills-tabContent\" class=\"tab-content\">\n  {{ html }}\n</div>\n"
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1599239483003379",
+                    "label" : "Tab 1",
+                    "type" : "widget_container",
+                    "params" : {
+                      "css_class" : "about-tab-1",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "overrideable" : false,
+                      "per_widget_wrapper_html" : "",
+                      "wrapping_html" : " <div class=\"tab-pane fade show active\" id=\"about-tab-1\" role=\"tabpanel\" aria-labelledby=\"about-tab-1\">\n   <div>{{ html }}</div>\n</div>"
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "about-tab-1",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ {
+                      "x" : 0,
+                      "w" : 12,
+                      "name" : "module_1599240614153774",
+                      "label" : "section-2-columns-6-6",
+                      "type" : "custom_widget",
+                      "params" : {
+                        "css_class" : "",
+                        "css_id" : "",
+                        "css_id_str" : "",
+                        "css_style" : "",
+                        "overrideable" : true,
+                        "path" : "/ILSC_Website/modules/section-2-columns-6-6",
+                        "per_widget_wrapper_html" : "",
+                        "schema_version" : 2,
+                        "widget_name" : "section-2-columns-6-6",
+                        "wrapping_html" : ""
+                      },
+                      "rows" : [ ],
+                      "rowMetaData" : [ ],
+                      "cells" : [ ],
+                      "cssId" : "",
+                      "cssClass" : "",
+                      "cssStyle" : "",
+                      "styles" : null,
+                      "widgets" : [ ]
+                    } ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1599239591746395",
+                    "label" : "Tab 2",
+                    "type" : "widget_container",
+                    "params" : {
+                      "css_class" : "about-tab-2 orange",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "overrideable" : false,
+                      "per_widget_wrapper_html" : "",
+                      "wrapping_html" : " <div class=\"tab-pane fade\" id=\"about-tab-2\" role=\"tabpanel\" aria-labelledby=\"about-tab-2\">\n   <div>{{ html }}</div>\n</div>"
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "about-tab-2 orange",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ {
+                      "x" : 0,
+                      "w" : 12,
+                      "name" : "module_1599240963996776",
+                      "label" : "section-2-columns-6-6",
+                      "type" : "custom_widget",
+                      "params" : {
+                        "css_class" : "",
+                        "css_id" : "",
+                        "css_id_str" : "",
+                        "css_style" : "",
+                        "overrideable" : true,
+                        "path" : "/ILSC_Website/modules/section-2-columns-6-6",
+                        "per_widget_wrapper_html" : "",
+                        "schema_version" : 2,
+                        "widget_name" : "section-2-columns-6-6",
+                        "wrapping_html" : ""
+                      },
+                      "rows" : [ ],
+                      "rowMetaData" : [ ],
+                      "cells" : [ ],
+                      "cssId" : "",
+                      "cssClass" : "",
+                      "cssStyle" : "",
+                      "styles" : null,
+                      "widgets" : [ ]
+                    } ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1599239595616397",
+                    "label" : "Tab 3",
+                    "type" : "widget_container",
+                    "params" : {
+                      "css_class" : "about-tab-3",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "overrideable" : false,
+                      "per_widget_wrapper_html" : "",
+                      "wrapping_html" : " <div class=\"tab-pane fade\" id=\"about-tab-3\" role=\"tabpanel\" aria-labelledby=\"about-tab-3\">\n   <div>{{ html }}</div>\n</div>"
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "about-tab-3",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ {
+                      "x" : 0,
+                      "w" : 12,
+                      "name" : "module_1599240969395778",
+                      "label" : "section-2-columns-6-6",
+                      "type" : "custom_widget",
+                      "params" : {
+                        "css_class" : "",
+                        "css_id" : "",
+                        "css_id_str" : "",
+                        "css_style" : "",
+                        "overrideable" : true,
+                        "path" : "/ILSC_Website/modules/section-2-columns-6-6",
+                        "per_widget_wrapper_html" : "",
+                        "schema_version" : 2,
+                        "widget_name" : "section-2-columns-6-6",
+                        "wrapping_html" : ""
+                      },
+                      "rows" : [ ],
+                      "rowMetaData" : [ ],
+                      "cells" : [ ],
+                      "cssId" : "",
+                      "cssClass" : "",
+                      "cssStyle" : "",
+                      "styles" : null,
+                      "widgets" : [ ]
+                    } ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1599239599564399",
+                    "label" : "Tab 4",
+                    "type" : "widget_container",
+                    "params" : {
+                      "css_class" : "about-tab-4",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "overrideable" : false,
+                      "per_widget_wrapper_html" : "",
+                      "wrapping_html" : " <div class=\"tab-pane fade\" id=\"about-tab-4\" role=\"tabpanel\" aria-labelledby=\"about-tab-4\">\n   <div>{{ html }}</div>\n</div>"
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "about-tab-4",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ {
+                      "x" : 0,
+                      "w" : 12,
+                      "name" : "module_1599240979115780",
+                      "label" : "section-2-columns-6-6",
+                      "type" : "custom_widget",
+                      "params" : {
+                        "css_class" : "",
+                        "css_id" : "",
+                        "css_id_str" : "",
+                        "css_style" : "",
+                        "overrideable" : true,
+                        "path" : "/ILSC_Website/modules/section-2-columns-6-6",
+                        "per_widget_wrapper_html" : "",
+                        "schema_version" : 2,
+                        "widget_name" : "section-2-columns-6-6",
+                        "wrapping_html" : ""
+                      },
+                      "rows" : [ ],
+                      "rowMetaData" : [ ],
+                      "cells" : [ ],
+                      "cssId" : "",
+                      "cssClass" : "",
+                      "cssStyle" : "",
+                      "styles" : null,
+                      "widgets" : [ ]
+                    } ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1599239614211401",
+                    "label" : "Tab 5",
+                    "type" : "widget_container",
+                    "params" : {
+                      "css_class" : "about-tab-5",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "overrideable" : false,
+                      "per_widget_wrapper_html" : "",
+                      "wrapping_html" : " <div class=\"tab-pane fade\" id=\"about-tab-5\" role=\"tabpanel\" aria-labelledby=\"about-tab-5\">\n   <div>{{ html }}</div>\n</div>"
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "about-tab-5",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ {
+                      "x" : 0,
+                      "w" : 12,
+                      "name" : "module_1599240983749782",
+                      "label" : "section-2-columns-6-6",
+                      "type" : "custom_widget",
+                      "params" : {
+                        "css_class" : "",
+                        "css_id" : "",
+                        "css_id_str" : "",
+                        "css_style" : "",
+                        "overrideable" : true,
+                        "path" : "/ILSC_Website/modules/section-2-columns-6-6",
+                        "per_widget_wrapper_html" : "",
+                        "schema_version" : 2,
+                        "widget_name" : "section-2-columns-6-6",
+                        "wrapping_html" : ""
+                      },
+                      "rows" : [ ],
+                      "rowMetaData" : [ ],
+                      "cells" : [ ],
+                      "cssId" : "",
+                      "cssClass" : "",
+                      "cssStyle" : "",
+                      "styles" : null,
+                      "widgets" : [ ]
+                    } ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "about-tabs",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1646426663775540",
+        "label" : "Footer ILSC Module group",
+        "type" : "global_group",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "path" : "/ILSC_Website/templates/Footer ILSC Module group.template.json",
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

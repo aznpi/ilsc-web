@@ -1,0 +1,184 @@
+[ {
+  "id" : "790bd711-b8a0-dd9d-c38e-bbeb59b0c1ec",
+  "name" : "application_title",
+  "label" : "Application Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "ILSC / Greystone College Application"
+}, {
+  "id" : "42a782cf-0fc8-9e36-ae58-3c23c1925311",
+  "name" : "application_enable_field_group",
+  "label" : "Application Enable Field group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "c99821eb-96f4-ae8c-ddfb-b5eaaf68b2d9",
+    "name" : "student_box",
+    "label" : "Student Box",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : true
+  }, {
+    "id" : "a593d041-7041-e25f-7dbb-a2c0f0357b58",
+    "name" : "agent_box",
+    "label" : "Agent Box",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : true
+  }, {
+    "id" : "bcfb5a52-8b4c-9514-e9f9-9c6a3624fd12",
+    "name" : "walk_in_box",
+    "label" : "Walk-in Box",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : true
+  }, {
+    "id" : "675cd740-8d88-34cd-590d-062f7184037d",
+    "name" : "direct_sales_box",
+    "label" : "Direct-Sales Box",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : true
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "student_box" : true,
+    "agent_box" : true,
+    "walk_in_box" : true,
+    "direct_sales_box" : true
+  }
+}, {
+  "id" : "376d72ae-07d0-31fa-900b-a1e578c8ce25",
+  "name" : "online_combo_option_rich_text",
+  "label" : "Online Combo Option Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null
+}, {
+  "id" : "09a2f734-7e82-28f1-b4bd-2baef29abe48",
+  "name" : "completed_rich_text",
+  "label" : "Completed Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h3>A summary of your application has been sent to the email address you provided.<br>Someone from our registration team will be in touch with you soon to finalize your application.</h3>"
+}, {
+  "id" : "8937d0aa-2e96-fa3d-89d9-b182ea046e15",
+  "name" : "payment_image_field_group",
+  "label" : "Payment Image Field group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "c515098a-9c93-5ae0-fd4c-a3cbf6907ab4",
+    "name" : "payment_processor_image_field_group",
+    "label" : "Payment Processor Image Field group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "01beb449-90f8-1780-4412-0ff3665eafa1",
+      "name" : "image_field",
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    }
+  }, {
+    "id" : "6daa27d7-52ff-df41-9dd4-bde2c757e009",
+    "name" : "credit_card_image_field_group",
+    "label" : "Credit Card Image Field group",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 0,
+      "max" : 5,
+      "sorting_label_field" : "10899b01-4a9e-f338-6767-a3a521fa224b",
+      "default" : null
+    },
+    "children" : [ {
+      "id" : "10899b01-4a9e-f338-6767-a3a521fa224b",
+      "name" : "image_field_1",
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "payment_processor_image_field_group" : {
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    },
+    "credit_card_image_field_group" : [ ]
+  }
+} ]

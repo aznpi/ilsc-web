@@ -1,0 +1,25 @@
+[ {
+  "id" : "106d0f06-4b88-dac5-1a3b-6fb5d3f444b7",
+  "name" : "title_rich_text",
+  "label" : "Title Rich text",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>REQUEST MORE INFORMATION <span class=\"bold\">|</span> <span class=\"bold\" style=\"color: #ff8b35;\">CONNECT WITH AN ADVISOR</span></h2>"
+}, {
+  "id" : "c7affb3a-9c67-82d4-1448-238ead7724fe",
+  "name" : "form_field",
+  "label" : "Form",
+  "required" : false,
+  "locked" : true,
+  "type" : "form",
+  "display_width" : null,
+  "default" : {
+    "form_id" : "8ae473ec-edfc-4651-a3f9-40001853026b",
+    "response_type" : "inline",
+    "message" : "Thanks for submitting the form.",
+    "gotowebinar_webinar_key" : null,
+    "form_type" : "HUBSPOT"
+  }
+} ]

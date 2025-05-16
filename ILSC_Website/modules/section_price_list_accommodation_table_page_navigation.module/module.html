@@ -1,0 +1,34 @@
+<section class="section bg-white-canvas price-table-nav page-nav" id="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 center">
+        <ul>
+          <li><h5>{% inline_text field="pagination_text" value="{{ module.pagination_text }}" %}</h5></li>
+          {% for item in module.price_list %}
+            {% set href = item.link_field.url.href %}
+            {% if item.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+            {% endif %}
+            {% set rel = [] %}
+            {% if item.link_field.no_follow %}
+              {% do rel.append("nofollow") %}
+            {% endif %}
+            {% if item.link_field.open_in_new_tab %}
+              {% do rel.append("noopener") %}
+            {% endif %}
+              {% if request.path is not containing item.url_tag_text %}
+                <li>
+                    <a href="{{ href }}"
+                      {% if item.link_field.open_in_new_tab %}target="_blank"{% endif %}
+                      {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                      >
+                     {% inline_text field="page_name" value="{{ item.page_name }}" %}
+                    </a>
+                  </li>
+              {% endif %}  
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

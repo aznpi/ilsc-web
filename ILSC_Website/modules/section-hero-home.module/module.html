@@ -1,0 +1,41 @@
+<section id="home-section" class="section-hero">
+	<div class="hero-image">
+    {% if module.hero_video_url.href %}
+		  <video id="heroVideoBg" autoplay loop muted>
+		    <source type="video/mp4" src="{{ module.hero_video_url.href }}">
+		    <source type="video/webm" src="{{ module.hero_video_url.href }}">
+		  </video>
+    {% else %}
+      {% if module.hero_image.src %}
+        {% set sizeAttrs = 'width="{{ module.hero_image.width }}" height="{{ module.hero_image.height }}"' %}
+        {% if module.hero_image.size_type == 'auto' %}
+          {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif module.hero_image.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.hero_image.max_width }}px; max-height: {{ module.hero_image.max_height }}px"' %}
+        {% endif %}
+        {% set loadingAttr = module.hero_image.loading != 'disabled' ? 'loading="{{ module.hero_image.loading }}"' : '' %}
+        <img src="{{ module.hero_image.src }}" alt="{{ module.hero_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="hero-image">
+      {% endif %}	
+    {% endif %}	
+	</div>
+	<div class="content-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 hs-search-keyword">
+					{% inline_rich_text field="hero_text" value="{{ module.hero_text }}" %}		
+				</div>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<style>
+  @media (max-width: 600px) {
+    .section-hero .hero-image{
+      background:url({{ module.mobile_hero_image.src }}) no-repeat;
+      background-size:cover;
+      min-height: 600px;
+    }
+  }
+</style>

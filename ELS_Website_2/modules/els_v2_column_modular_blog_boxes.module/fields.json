@@ -1,0 +1,31 @@
+[ {
+  "id" : "aad545fd-b205-a0e8-1e0d-cf96ac3fb6c3",
+  "name" : "title_rich_text",
+  "label" : "Title Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2 style=\"text-align: center;\" data-key=\"cards__heading\">ELS Press: News &amp; Updates</h2>"
+}, {
+  "id" : "d4de6993-3979-016b-e3e8-2d86f21b419b",
+  "name" : "highlight_color",
+  "label" : "Highlight Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#f58220",
+    "opacity" : 100
+  }
+}, {
+  "id" : "05569509-7218-669e-fdf3-6570cee5537c",
+  "name" : "blog_field",
+  "label" : "Blog",
+  "required" : false,
+  "locked" : false,
+  "type" : "blog",
+  "display_width" : null,
+  "default" : 108939559201
+} ]

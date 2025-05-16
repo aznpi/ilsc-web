@@ -1,0 +1,54 @@
+<section class="section section-ilsc-choose bg-white-canvas">
+	<div class="container">
+    <img class="blob blob-1" src="{{ module.image_blob_1.src }}" alt="{{ module.image_blob_1.alt }}" />
+    <img class="blob blob-2" src="{{ module.image_blob_2.src }}" alt="{{ module.image_blob_2.alt }}" />
+		<div class="row">
+			<div class="col-md-4">
+		    {% inline_rich_text field="title_text" value="{{ module.title_text }}" %}
+        <a href="{{ module.cta_group.link_url.href }}" class="btn btn-outline-primary btn-black-outline">{{ module.cta_group.link_text }}</a>
+			</div>
+      <div class="col-md-8">
+		    <div class="row">
+           <div class="col-md-6">
+           {% for item in module.info_container_1_group %}
+              
+                <div class="info-container">     
+                  <div class="icon">
+                    {% if item.icon.src %}
+                      <img src="{{ item.icon.src }}" alt="{{ item.icon.alt }}"/>
+                    {% endif %}
+                  </div>
+                  <h5>
+                    {{ item.title_text }}
+                  </h5>
+                  <p>
+                    {{ item.description_text }}
+                  </p>
+                </div>
+              
+            {% endfor %}
+           </div>
+          <div class="col-md-6">
+           {% for item in module.info_container_2_group %}
+              
+                <div class="info-container">     
+                  <div class="icon">
+                    {% if item.icon.src %}
+                      <img src="{{ item.icon.src }}" alt="{{ item.icon.alt }}"/>
+                    {% endif %}
+                  </div>
+                  <h5>
+                    {{ item.title_text }}
+                  </h5>
+                  <p>
+                    {{ item.description_text }}
+                  </p>
+                </div>
+              
+            {% endfor %}
+           </div>
+        </div>
+			</div>
+		</div>
+	</div>
+</section>

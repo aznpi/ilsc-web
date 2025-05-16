@@ -1,0 +1,189 @@
+[ {
+  "id" : "5ba9bbc7-e465-b498-a4b0-107ddf29fcb9",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Follow us on Instagram</h2>"
+}, {
+  "id" : "ad9583a0-efe9-df14-3acb-3f3f33357d05",
+  "name" : "insta",
+  "label" : "Insta",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 20,
+    "sorting_label_field" : "43bb99da-6089-9a99-d730-1876ba93f0ce",
+    "default" : 7
+  },
+  "children" : [ {
+    "id" : "43bb99da-6089-9a99-d730-1876ba93f0ce",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : true,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/insta_1.png",
+      "alt" : "insta_1",
+      "width" : 291,
+      "height" : 291,
+      "max_width" : 291,
+      "max_height" : 291
+    }
+  }, {
+    "id" : "ef60136b-7e1c-2c7d-0a29-7c2c52a1b1c8",
+    "name" : "choice_field",
+    "label" : "Choice",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "photo", "Photo" ], [ "video", "Video" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "photo"
+  }, {
+    "id" : "5530b402-d935-ba75-b338-93fedb84542d",
+    "name" : "link_url",
+    "label" : "Link URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/insta_1.png",
+      "alt" : "insta_1",
+      "width" : 291,
+      "height" : 291,
+      "max_width" : 291,
+      "max_height" : 291
+    },
+    "choice_field" : "photo",
+    "link_url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/insta_1.png",
+      "alt" : "insta_1",
+      "width" : 291,
+      "height" : 291,
+      "max_width" : 291,
+      "max_height" : 291
+    },
+    "choice_field" : "photo",
+    "link_url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/insta_1.png",
+      "alt" : "insta_1",
+      "width" : 291,
+      "height" : 291,
+      "max_width" : 291,
+      "max_height" : 291
+    },
+    "choice_field" : "photo",
+    "link_url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/insta_1.png",
+      "alt" : "insta_1",
+      "width" : 291,
+      "height" : 291,
+      "max_width" : 291,
+      "max_height" : 291
+    },
+    "choice_field" : "photo",
+    "link_url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/insta_1.png",
+      "alt" : "insta_1",
+      "width" : 291,
+      "height" : 291,
+      "max_width" : 291,
+      "max_height" : 291
+    },
+    "choice_field" : "photo",
+    "link_url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/insta_1.png",
+      "alt" : "insta_1",
+      "width" : 291,
+      "height" : 291,
+      "max_width" : 291,
+      "max_height" : 291
+    },
+    "choice_field" : "photo",
+    "link_url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/insta_1.png",
+      "alt" : "insta_1",
+      "width" : 291,
+      "height" : 291,
+      "max_width" : 291,
+      "max_height" : 291
+    },
+    "choice_field" : "photo",
+    "link_url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  } ]
+} ]

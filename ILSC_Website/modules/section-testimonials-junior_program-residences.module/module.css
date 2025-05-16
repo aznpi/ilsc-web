@@ -1,0 +1,28 @@
+.teal .section-testimonials .box-orange,.orange .section-testimonials .box-orange,.yellow .section-testimonials .box-orange,.green .section-testimonials .box-orange{
+  display:none;
+}
+
+.teal .section-testimonials{
+  background-color: #FFF;
+}
+.teal .section-testimonials.section .testimonials-slide .slide-content>div>h5{
+  color:#82CFCB !important;
+}
+.orange .section-testimonials{
+  background-color: #FFF;
+}
+.orange .section-testimonials.section .testimonials-slide .slide-content>div>h5{
+  color:#FF8B35 !important;
+}
+.yellow .section-testimonials{
+  background-color: #FFF;
+}
+.yellow .section-testimonials.section .testimonials-slide .slide-content>div>h5{
+  color:#FFCB31 !important;
+}
+.green .section-testimonials{
+  background-color: #FFF;
+}
+.green .section-testimonials.section .testimonials-slide .slide-content>div>h5{
+  color:#91B830 !important;
+}

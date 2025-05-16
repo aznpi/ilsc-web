@@ -1,0 +1,71 @@
+[ {
+  "id" : "6fa60554-fc7c-7093-90d9-de599e48194b",
+  "name" : "anchor_id",
+  "label" : "Title",
+  "inline_help_text" : "Enter title according the anchor nav.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null
+}, {
+  "id" : "a248f5fa-1726-019d-255d-fdee10712cec",
+  "name" : "title_description",
+  "label" : "Title Description",
+  "inline_help_text" : "Enter title according the anchor nav.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Prices are listed per week."
+}, {
+  "id" : "bd5ae826-067c-acaf-bcca-7740f4de467c",
+  "name" : "column_choice",
+  "label" : "Column Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "4", "3" ], [ "3", "4" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "3"
+}, {
+  "id" : "e2b80383-c938-afab-8a69-e1e98d20da5f",
+  "name" : "bg_color",
+  "label" : "BG Color",
+  "required" : false,
+  "locked" : false,
+  "show_opacity" : true,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#865e9c",
+    "opacity" : 100
+  }
+}, {
+  "id" : "811b1eb7-a653-478d-8b1c-947a0d118f50",
+  "name" : "enable_next_year_price_boolean",
+  "label" : "Enable Next Year Price Boolean",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "display_width" : null,
+  "default" : true
+}, {
+  "id" : "b975b01b-0816-ca60-6512-0d137b4ca579",
+  "name" : "bottom_rich_text",
+  "label" : "Bottom Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null
+} ]

@@ -1,0 +1,219 @@
+[ {
+  "id" : "2453c549-46a2-2d36-e712-0e4e91ac720b",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Things to do in Sydney</h2>\n<h5>EXPLORE THE BEST OF SYDNEY</h5>"
+}, {
+  "id" : "cb853be3-37b3-685e-51cd-92d9fdfe1af4",
+  "name" : "bg_color",
+  "label" : "BG Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "d380f7e4-862f-bc1c-f6ee-2b9489ccea69",
+  "name" : "enable_disable_box_link_choice",
+  "label" : "Enable/Disable Box Link Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "enable", "Enable" ], [ "disable", "Disable" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "disable"
+}, {
+  "id" : "44cc1901-88e5-3dbb-55ba-bf7798304802",
+  "name" : "box_group",
+  "label" : "Box Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 25,
+    "sorting_label_field" : "b9150d94-9fe1-e924-f70c-21d6791a13cd",
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "b9150d94-9fe1-e924-f70c-21d6791a13cd",
+    "name" : "image",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_opera_house.jpg",
+      "alt" : "Opera House",
+      "width" : 514,
+      "height" : 806,
+      "max_width" : 514,
+      "max_height" : 806
+    }
+  }, {
+    "id" : "cc49a508-5884-cdd9-e971-e61f9a50a0ce",
+    "name" : "short_description",
+    "label" : "Short Description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>"
+  }, {
+    "id" : "4ac4d0cd-7b25-1fa2-b97b-3ae815e394d6",
+    "name" : "link_field",
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "d380f7e4-862f-bc1c-f6ee-2b9489ccea69",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "enable",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 34818334855
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_opera_house.jpg",
+      "alt" : "Opera House",
+      "width" : 514,
+      "height" : 806,
+      "max_width" : 514,
+      "max_height" : 806
+    },
+    "short_description" : "<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>",
+    "link_field" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 34818334855
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_opera_house.jpg",
+      "alt" : "Opera House",
+      "width" : 514,
+      "height" : 806,
+      "max_width" : 514,
+      "max_height" : 806
+    },
+    "short_description" : "<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>",
+    "link_field" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 34818334855
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_opera_house.jpg",
+      "alt" : "Opera House",
+      "width" : 514,
+      "height" : 806,
+      "max_width" : 514,
+      "max_height" : 806
+    },
+    "short_description" : "<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>",
+    "link_field" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 34818334855
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_opera_house.jpg",
+      "alt" : "Opera House",
+      "width" : 514,
+      "height" : 806,
+      "max_width" : 514,
+      "max_height" : 806
+    },
+    "short_description" : "<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>",
+    "link_field" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 34818334855
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+}, {
+  "id" : "7d5f92c3-d010-f178-1bb6-f056050275fb",
+  "name" : "choice_field",
+  "label" : "Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "center", "Center Text" ], [ "left", "Left Text" ], [ "right", "Right Text" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "left"
+}, {
+  "id" : "0a322bff-cce6-910f-5c32-b8f280750a37",
+  "name" : "hover_effect_choice",
+  "label" : "Hover Effect Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "on", "On" ], [ "off", "Off" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "on"
+} ]

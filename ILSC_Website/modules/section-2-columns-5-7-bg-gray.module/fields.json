@@ -1,0 +1,98 @@
+[ {
+  "id" : "b752680b-9aa6-1e6b-f627-6d37644d802e",
+  "name" : "main_text",
+  "label" : "Main Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Your journey in English will be personal to you, but we will be there to help you every step of the way.</h2>\n<p>Progress and fluency comes through constant exposure to the language. Through using your new knowledge - all day, every day. In class, with your friends, out in the city. It will be an amazing adventure.</p>"
+}, {
+  "id" : "4e1e190b-e343-2268-71c0-e39623fa797f",
+  "name" : "image_field",
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : true,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_language_collage.jpg",
+    "alt" : "img_language_collage",
+    "width" : 1244,
+    "height" : 1156,
+    "max_width" : 1244,
+    "max_height" : 1156
+  }
+}, {
+  "id" : "4dc4b761-90e9-545c-84d8-1a35b0171301",
+  "name" : "cta_group",
+  "label" : "CTA group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "25bd772b-f27e-2ebf-441b-695fd89198b0",
+    "name" : "hide_show_cta",
+    "label" : "Hide/Show CTA",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null
+  }, {
+    "id" : "3a97a8bd-80d1-0987-a531-00e31f18707a",
+    "name" : "link_url",
+    "label" : "Link Url",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.youtube.com/embed/CMHRYfA1gLM",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "939bd810-abe2-1aca-43e4-a424fac65c40",
+    "name" : "link_url_text",
+    "label" : "Link Url Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "WATCH OUR VIDEO"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "link_url" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.youtube.com/embed/CMHRYfA1gLM",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "link_url_text" : "WATCH OUR VIDEO"
+  }
+} ]

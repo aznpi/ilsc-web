@@ -1,0 +1,127 @@
+[ {
+  "id" : "212e20be-7161-067d-0c25-076a2b651ff1",
+  "name" : "bc_color",
+  "label" : "BG Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "b752680b-9aa6-1e6b-f627-6d37644d802e",
+  "name" : "main_text",
+  "label" : "Main Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>A vibrant, world-class cosmopolitan city.</h2>\n<p>Learn English in Sydney, Australia’s oldest, largest and most diverse city, with a population of over four million people. This vibrant, cosmopolitan city is a popular tourist destination with a huge range of sightseeing options, including iconic architecture, more than 70 stunning beaches, incredible granite cliffs, and the beautiful Sydney Harbour that surrounds the city.</p>"
+}, {
+  "id" : "eda2e35d-c5b0-643b-ffc0-374bb573c6ba",
+  "name" : "cta_group",
+  "label" : "CTA group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "926d06cd-8520-a0f9-3ef6-66ff5fcc06e6",
+    "name" : "hide_show_cta",
+    "label" : "Hide/Show CTA",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "show"
+  }, {
+    "id" : "3a97a8bd-80d1-0987-a531-00e31f18707a",
+    "name" : "link_url",
+    "label" : "Link Url",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "926d06cd-8520-a0f9-3ef6-66ff5fcc06e6",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "show",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "supported_types" : [ "EXTERNAL" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.youtube.com/embed/CMHRYfA1gLM",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "939bd810-abe2-1aca-43e4-a424fac65c40",
+    "name" : "link_url_text",
+    "label" : "Link Url Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "926d06cd-8520-a0f9-3ef6-66ff5fcc06e6",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "show",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "WATCH OUR VIDEO"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "hide_show_cta" : "show",
+    "link_url" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.youtube.com/embed/CMHRYfA1gLM",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "link_url_text" : "WATCH OUR VIDEO"
+  }
+}, {
+  "id" : "4e1e190b-e343-2268-71c0-e39623fa797f",
+  "name" : "image_field",
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_welcome_sydney.jpg",
+    "alt" : "img_welcome_sydney",
+    "width" : 1110,
+    "height" : 740,
+    "max_width" : 1110,
+    "max_height" : 740
+  }
+} ]

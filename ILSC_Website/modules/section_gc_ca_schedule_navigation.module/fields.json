@@ -1,0 +1,84 @@
+[ {
+  "id" : "322f2869-94de-8b18-f7f0-2bfe667d00ec",
+  "name" : "campus",
+  "label" : "Campus Field group",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 99,
+    "sorting_label_field" : "29cde942-334e-895f-3acf-2e6eae090370",
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "29cde942-334e-895f-3acf-2e6eae090370",
+    "name" : "campus_name",
+    "label" : "Campus Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Vancouver"
+  }, {
+    "id" : "7d5a0425-2875-3884-a94e-58d9a9f7efb3",
+    "name" : "link_field",
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "campus_name" : "Vancouver",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "campus_name" : "Vancouver",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "campus_name" : "Vancouver",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+} ]

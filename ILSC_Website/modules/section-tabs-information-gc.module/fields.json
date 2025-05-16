@@ -1,0 +1,164 @@
+[ {
+  "id" : "e7424cae-6d3a-d04c-4932-dfcad9eb4502",
+  "name" : "title_text",
+  "label" : "Title text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Study Schedules</h2>\n<p><span class=\"bold\" style=\"color: #ff8b35;\">CORE:</span> Core courses provide a strong foundation in the subject area. <span class=\"bold\" style=\"color: #199dc3;\">SKILLS:</span> Skills electives focus in-depth on specific skills. 1 lesson = 50 minutes.</p>"
+}, {
+  "id" : "04878ce2-e4c2-ac94-9e90-1be3946a157a",
+  "name" : "tabs",
+  "label" : "Tabs",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "a3abb5ab-efaa-3803-a373-8089c8920b26",
+    "name" : "tab",
+    "label" : "Tab",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 5,
+      "sorting_label_field" : "2d04de45-f279-53cd-553b-f9677e468918",
+      "default" : 3
+    },
+    "children" : [ {
+      "id" : "2d04de45-f279-53cd-553b-f9677e468918",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "OFF CAMPUS WORK"
+    }, {
+      "id" : "60fcecbf-ed03-7202-144a-8e6b3e7d147b",
+      "name" : "image_field",
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_barrista.jpg",
+        "alt" : "img_barrista",
+        "loading" : "lazy",
+        "width" : 475,
+        "height" : 306,
+        "max_width" : 475,
+        "max_height" : 306
+      }
+    }, {
+      "id" : "2cb8bc8d-42b8-9dc0-075a-5293bd789fd1",
+      "name" : "description",
+      "label" : "Description",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<p><span>Work off-campus up to 20 hours per week while you study (applies throughout academic studies and co-op or practicum placement terms). During scheduled program breaks, students can work full-time. <br><br>Work rights are typically included with your Canadian Study Permit for programs of 6 months or longer; however, they are not guaranteed and depend on the decisions of immigration officials. <br><br>Learn more about Off Campus work rights.</span></p>"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ {
+      "title" : "OFF CAMPUS WORK",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_barrista.jpg",
+        "alt" : "img_barrista",
+        "loading" : "lazy",
+        "width" : 475,
+        "height" : 306,
+        "max_width" : 475,
+        "max_height" : 306
+      },
+      "description" : "<p><span>Work off-campus up to 20 hours per week while you study (applies throughout academic studies and co-op or practicum placement terms). During scheduled program breaks, students can work full-time. <br><br>Work rights are typically included with your Canadian Study Permit for programs of 6 months or longer; however, they are not guaranteed and depend on the decisions of immigration officials. <br><br>Learn more about Off Campus work rights.</span></p>"
+    }, {
+      "title" : "OFF CAMPUS WORK",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_barrista.jpg",
+        "alt" : "img_barrista",
+        "loading" : "lazy",
+        "width" : 475,
+        "height" : 306,
+        "max_width" : 475,
+        "max_height" : 306
+      },
+      "description" : "<p><span>Work off-campus up to 20 hours per week while you study (applies throughout academic studies and co-op or practicum placement terms). During scheduled program breaks, students can work full-time. <br><br>Work rights are typically included with your Canadian Study Permit for programs of 6 months or longer; however, they are not guaranteed and depend on the decisions of immigration officials. <br><br>Learn more about Off Campus work rights.</span></p>"
+    }, {
+      "title" : "OFF CAMPUS WORK",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_barrista.jpg",
+        "alt" : "img_barrista",
+        "loading" : "lazy",
+        "width" : 475,
+        "height" : 306,
+        "max_width" : 475,
+        "max_height" : 306
+      },
+      "description" : "<p><span>Work off-campus up to 20 hours per week while you study (applies throughout academic studies and co-op or practicum placement terms). During scheduled program breaks, students can work full-time. <br><br>Work rights are typically included with your Canadian Study Permit for programs of 6 months or longer; however, they are not guaranteed and depend on the decisions of immigration officials. <br><br>Learn more about Off Campus work rights.</span></p>"
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "tab" : [ {
+      "title" : "OFF CAMPUS WORK",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_barrista.jpg",
+        "alt" : "img_barrista",
+        "loading" : "lazy",
+        "width" : 475,
+        "height" : 306,
+        "max_width" : 475,
+        "max_height" : 306
+      },
+      "description" : "<p><span>Work off-campus up to 20 hours per week while you study (applies throughout academic studies and co-op or practicum placement terms). During scheduled program breaks, students can work full-time. <br><br>Work rights are typically included with your Canadian Study Permit for programs of 6 months or longer; however, they are not guaranteed and depend on the decisions of immigration officials. <br><br>Learn more about Off Campus work rights.</span></p>"
+    }, {
+      "title" : "OFF CAMPUS WORK",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_barrista.jpg",
+        "alt" : "img_barrista",
+        "loading" : "lazy",
+        "width" : 475,
+        "height" : 306,
+        "max_width" : 475,
+        "max_height" : 306
+      },
+      "description" : "<p><span>Work off-campus up to 20 hours per week while you study (applies throughout academic studies and co-op or practicum placement terms). During scheduled program breaks, students can work full-time. <br><br>Work rights are typically included with your Canadian Study Permit for programs of 6 months or longer; however, they are not guaranteed and depend on the decisions of immigration officials. <br><br>Learn more about Off Campus work rights.</span></p>"
+    }, {
+      "title" : "OFF CAMPUS WORK",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_barrista.jpg",
+        "alt" : "img_barrista",
+        "loading" : "lazy",
+        "width" : 475,
+        "height" : 306,
+        "max_width" : 475,
+        "max_height" : 306
+      },
+      "description" : "<p><span>Work off-campus up to 20 hours per week while you study (applies throughout academic studies and co-op or practicum placement terms). During scheduled program breaks, students can work full-time. <br><br>Work rights are typically included with your Canadian Study Permit for programs of 6 months or longer; however, they are not guaranteed and depend on the decisions of immigration officials. <br><br>Learn more about Off Campus work rights.</span></p>"
+    } ]
+  }
+} ]

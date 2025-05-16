@@ -1,0 +1,1088 @@
+[ {
+  "id" : "64e82d9b-1d34-392a-f228-9163f5464361",
+  "name" : "logo_image",
+  "label" : "Logo Image",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto_custom_max",
+    "src" : "https://www.ilsc.com/hubfs/template-resources/images/internal/logos/logo_Greystone_College-Color-Logo-Horizontal.svg",
+    "alt" : "logo_Greystone_College-Color-Logo-Horizontal",
+    "loading" : "lazy",
+    "width" : 400,
+    "height" : 400,
+    "max_width" : 170,
+    "max_height" : 170
+  }
+}, {
+  "picker" : "image",
+  "id" : "22c58dc5-fe3e-e07d-d5d7-df0f0e7dfed3",
+  "name" : "alternate_logo_svg_file",
+  "label" : "Alternate Logo SVG File",
+  "required" : false,
+  "locked" : true,
+  "type" : "file",
+  "display_width" : null,
+  "default" : "https://www.ilsc.com/hubfs/GC_Horizontal_Logo_CMYK_FR.svg"
+}, {
+  "id" : "aa983c90-6518-a641-c62d-0992e6a1bfc2",
+  "name" : "alternate_logo_alt",
+  "label" : "Alternate logo ALT",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Greystone College"
+}, {
+  "id" : "6ff11926-0741-8f0c-b743-6d13d310fe5a",
+  "name" : "keyword_to_use_alternate_logo",
+  "label" : "Keyword to use Alternate Logo",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "montréal"
+}, {
+  "id" : "840fe672-c227-3c1c-8637-ee42725d3248",
+  "name" : "language_code_to_use_alternate_logo",
+  "label" : "Language Code to use Alternate Logo",
+  "inline_help_text" : "Language Code to use alternate Logo",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "fr"
+}, {
+  "id" : "8f84b4c3-eb75-3fc9-1877-3de1f876006e",
+  "name" : "logo_link",
+  "label" : "Logo Link",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 34818334855
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "42104af9-36ab-0d96-55ab-cd95cdca53d8",
+  "name" : "nav_titles",
+  "label" : "Nav Titles",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "c4bfabda-d5ae-67cc-972d-2e3e4f052e16",
+    "name" : "link_group_1",
+    "label" : "Link Group 1",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "15a1e2de-364e-2766-3e52-f7563614ab67",
+      "name" : "nav_title",
+      "label" : "Nav Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Contact Us"
+    }, {
+      "id" : "33414834-d8d4-07cb-a9a3-d0445d3c856d",
+      "name" : "enable_disable_dropdown_menu_choice",
+      "label" : "Enable/Disable Dropdown menu Choice",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "enable", "Enable" ], [ "disable", "Disable" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "enable"
+    }, {
+      "id" : "9ac60030-b3b8-9162-097d-82d8eaa530f8",
+      "name" : "top_tier_link",
+      "label" : "Top Tier Link",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "33414834-d8d4-07cb-a9a3-d0445d3c856d",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "disable",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 42502005168
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "1c3d34d6-439d-cb53-65aa-b8a29ae41998",
+      "name" : "link_group",
+      "label" : "Link group",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "max" : 10,
+        "sorting_label_field" : "d8b27588-9fe2-a537-1ea3-f63bf5247c4f",
+        "default" : 2
+      },
+      "visibility" : {
+        "controlling_field" : "33414834-d8d4-07cb-a9a3-d0445d3c856d",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "enable",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "children" : [ {
+        "id" : "d8b27588-9fe2-a537-1ea3-f63bf5247c4f",
+        "name" : "link_text",
+        "label" : "Link Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Canada"
+      }, {
+        "id" : "7a9c6bff-efb9-15d1-8d79-712356a5cdc3",
+        "name" : "link_url",
+        "label" : "Link URL",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+        "type" : "url",
+        "display_width" : null,
+        "default" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : [ {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }, {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "nav_title" : "Contact Us",
+      "enable_disable_dropdown_menu_choice" : "enable",
+      "top_tier_link" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 42502005168
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_group" : [ {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }, {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ]
+    }
+  }, {
+    "id" : "35210861-de2d-a866-8650-83fcc219b5a1",
+    "name" : "link_group_2",
+    "label" : "Link Group 2",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "0eac830a-1cf8-b892-0c62-8688668880f9",
+      "name" : "nav_title",
+      "label" : "Nav Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Student Login"
+    }, {
+      "id" : "46047443-30ad-c41d-22f2-d9fea54e2783",
+      "name" : "enable_disable_dropdown_menu_choice",
+      "label" : "Enable/Disable Dropdown menu Choice",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "enable", "Enable" ], [ "disable", "Disable" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "enable"
+    }, {
+      "id" : "75a3fbd8-d91a-32f3-a376-e3626f35e233",
+      "name" : "top_tier_link",
+      "label" : "Top Tier Link",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "46047443-30ad-c41d-22f2-d9fea54e2783",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "disable",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 42502005168
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "958b6887-031f-684b-af6e-de4f030c6141",
+      "name" : "link_group",
+      "label" : "Link group",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "max" : 10,
+        "sorting_label_field" : "d8b27588-9fe2-a537-1ea3-f63bf5247c4f",
+        "default" : 2
+      },
+      "visibility" : {
+        "controlling_field" : "46047443-30ad-c41d-22f2-d9fea54e2783",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "enable",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "children" : [ {
+        "id" : "af7288ae-94b2-c72b-c70f-0e5f5535e5e8",
+        "name" : "link_text",
+        "label" : "Link Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Canada"
+      }, {
+        "id" : "28f9cfd4-aefa-8894-d05e-5bce6c12f357",
+        "name" : "link_url",
+        "label" : "Link URL",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+        "type" : "url",
+        "display_width" : null,
+        "default" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : [ {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }, {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "nav_title" : "Student Login",
+      "enable_disable_dropdown_menu_choice" : "enable",
+      "top_tier_link" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 42502005168
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_group" : [ {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }, {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ]
+    }
+  }, {
+    "id" : "b11943c7-4f75-aa11-d37b-4d37f187c0a8",
+    "name" : "link_group_3",
+    "label" : "Link Group 3",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "37f42452-5e20-2eed-14d1-3e95364d0724",
+      "name" : "nav_title",
+      "label" : "Nav Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Contact Us"
+    }, {
+      "id" : "c29454cf-a838-f03b-a5aa-78cef2d526a5",
+      "name" : "enable_disable_dropdown_menu_choice",
+      "label" : "Enable/Disable Dropdown menu Choice",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "enable", "Enable" ], [ "disable", "Disable" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "enable"
+    }, {
+      "id" : "dba98f41-edac-0b1f-bf65-5f7b51bedf7d",
+      "name" : "top_tier_link",
+      "label" : "Top Tier Link",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "c29454cf-a838-f03b-a5aa-78cef2d526a5",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "disable",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 42502005168
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "2236e2ba-e567-3974-09f7-4a7c1706c97e",
+      "name" : "link_group",
+      "label" : "Link group",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "max" : 10,
+        "sorting_label_field" : "d8b27588-9fe2-a537-1ea3-f63bf5247c4f",
+        "default" : 2
+      },
+      "visibility" : {
+        "controlling_field" : "c29454cf-a838-f03b-a5aa-78cef2d526a5",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "enable",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "children" : [ {
+        "id" : "7a315170-e9d0-40af-94e3-c606c325e855",
+        "name" : "link_text",
+        "label" : "Link Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Canada"
+      }, {
+        "id" : "af92d055-3b7a-5b01-4b58-f5376652215f",
+        "name" : "link_url",
+        "label" : "Link URL",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+        "type" : "url",
+        "display_width" : null,
+        "default" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : [ {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }, {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "nav_title" : "Contact Us",
+      "enable_disable_dropdown_menu_choice" : "enable",
+      "top_tier_link" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 42502005168
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_group" : [ {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }, {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ]
+    }
+  }, {
+    "id" : "6c09eb9a-df5c-9c25-560a-3573d837f83d",
+    "name" : "link_group_4",
+    "label" : "Link Group 4",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "23c9e01f-f8c3-b1f2-2660-3206764e1a14",
+      "name" : "nav_title",
+      "label" : "Nav Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Contact Us"
+    }, {
+      "id" : "9e084c33-77b5-7e6c-9197-bebe967d79f8",
+      "name" : "enable_disable_dropdown_menu_choice",
+      "label" : "Enable/Disable Dropdown menu Choice",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "enable", "Enable" ], [ "disable", "Disable" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "enable"
+    }, {
+      "id" : "338098e9-d7bc-0518-f4fb-fd9c6ce47d1e",
+      "name" : "top_tier_link",
+      "label" : "Top Tier Link",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "9e084c33-77b5-7e6c-9197-bebe967d79f8",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "disable",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 42502005168
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "b8ab5e8f-73a5-a110-5a4c-da3e2b9869fc",
+      "name" : "link_group",
+      "label" : "Link group",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "max" : 10,
+        "sorting_label_field" : "d8b27588-9fe2-a537-1ea3-f63bf5247c4f",
+        "default" : 2
+      },
+      "visibility" : {
+        "controlling_field" : "9e084c33-77b5-7e6c-9197-bebe967d79f8",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "enable",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "children" : [ {
+        "id" : "ab48056f-5b7e-6adb-a2b9-2854b0a609d7",
+        "name" : "link_text",
+        "label" : "Link Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Canada"
+      }, {
+        "id" : "49b24781-e99d-5a8b-d78b-4606b5c08716",
+        "name" : "link_url",
+        "label" : "Link URL",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+        "type" : "url",
+        "display_width" : null,
+        "default" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : [ {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }, {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "nav_title" : "Contact Us",
+      "enable_disable_dropdown_menu_choice" : "enable",
+      "top_tier_link" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 42502005168
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_group" : [ {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }, {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ]
+    }
+  }, {
+    "id" : "874b4b70-eafc-dfc5-28f0-37167ddc714d",
+    "name" : "link_group_5",
+    "label" : "Link Group 5",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "27657fb8-7939-28ce-a030-e1a87d085301",
+      "name" : "nav_title",
+      "label" : "Nav Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Contact Us"
+    }, {
+      "id" : "2c9a22b6-4464-fbe0-26ef-b8bb2dd3e655",
+      "name" : "enable_disable_dropdown_menu_choice",
+      "label" : "Enable/Disable Dropdown menu Choice",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "enable", "Enable" ], [ "disable", "Disable" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "enable"
+    }, {
+      "id" : "d99a5d42-016d-bf43-feb1-144c17bea51d",
+      "name" : "top_tier_link",
+      "label" : "Top Tier Link",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "2c9a22b6-4464-fbe0-26ef-b8bb2dd3e655",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "disable",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 42502005168
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "b83fec35-8cce-0778-e772-6671bd89d89b",
+      "name" : "link_group",
+      "label" : "Link group",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "max" : 10,
+        "sorting_label_field" : "d8b27588-9fe2-a537-1ea3-f63bf5247c4f",
+        "default" : 2
+      },
+      "visibility" : {
+        "controlling_field" : "2c9a22b6-4464-fbe0-26ef-b8bb2dd3e655",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "enable",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "children" : [ {
+        "id" : "70874de9-116c-c5a0-6235-90a1287ec312",
+        "name" : "link_text",
+        "label" : "Link Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Canada"
+      }, {
+        "id" : "30badf13-46d6-8f28-81d1-e7bbda48c2de",
+        "name" : "link_url",
+        "label" : "Link URL",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+        "type" : "url",
+        "display_width" : null,
+        "default" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : [ {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }, {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "nav_title" : "Contact Us",
+      "enable_disable_dropdown_menu_choice" : "enable",
+      "top_tier_link" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 42502005168
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_group" : [ {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }, {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ]
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "link_group_1" : {
+      "nav_title" : "Contact Us",
+      "enable_disable_dropdown_menu_choice" : "enable",
+      "top_tier_link" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 42502005168
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_group" : [ {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }, {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ]
+    },
+    "link_group_2" : {
+      "nav_title" : "Student Login",
+      "enable_disable_dropdown_menu_choice" : "enable",
+      "top_tier_link" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 42502005168
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_group" : [ {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }, {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ]
+    },
+    "link_group_3" : {
+      "nav_title" : "Contact Us",
+      "enable_disable_dropdown_menu_choice" : "enable",
+      "top_tier_link" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 42502005168
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_group" : [ {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }, {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ]
+    },
+    "link_group_4" : {
+      "nav_title" : "Contact Us",
+      "enable_disable_dropdown_menu_choice" : "enable",
+      "top_tier_link" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 42502005168
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_group" : [ {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }, {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ]
+    },
+    "link_group_5" : {
+      "nav_title" : "Contact Us",
+      "enable_disable_dropdown_menu_choice" : "enable",
+      "top_tier_link" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 42502005168
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_group" : [ {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }, {
+        "link_text" : "Canada",
+        "link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ]
+    }
+  }
+}, {
+  "id" : "4c44f97c-d73e-2775-f4b4-be9c9f44b7cb",
+  "name" : "search_menu",
+  "label" : "Search Menu",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "06101793-8eb1-8776-2133-67e839d82ec2",
+    "name" : "title_search",
+    "label" : "Title Search",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>SEARCH</h4>"
+  }, {
+    "id" : "b0499547-b48e-19ce-b2e2-ebb466b9dd6d",
+    "name" : "text_search_placeholder",
+    "label" : "Text Search Placeholder",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "TYPE TO SEARCH"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "title_search" : "<h4>SEARCH</h4>",
+    "text_search_placeholder" : "TYPE TO SEARCH"
+  }
+}, {
+  "id" : "b809dafb-952a-7e01-7028-8ae79902758b",
+  "name" : "title_language",
+  "label" : "Title Language",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h4>Languages</h4>"
+} ]

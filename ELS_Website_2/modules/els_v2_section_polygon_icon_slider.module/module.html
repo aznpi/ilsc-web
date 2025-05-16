@@ -1,0 +1,41 @@
+<section class="section-normal {{ module.bg_angle_choice }} section-icon-list polygon-absolute {{ module.padding_choice }} {{ module.margin_choice }}">
+  <div class="{% if  module.bg_angle_choice == 'section-polygon'%}polygon-box{% elif module.bg_angle_choice == 'section-diagonal'%}diagonal-box{% endif %} {{ module.bg_angle_color_choice }}"></div>
+  <div class="container"> 
+    <div class="row">
+      <div class="col-md-6 text-white">
+        <div class="description">
+          {% inline_rich_text field="description_rich_text" value="{{ module.description_rich_text }}" %}
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="image-container bg-angle angle-right" style="background-image: url('{{ module.bg_image.src }}');">
+          {% if module.image_field_1.src %}
+            {% set sizeAttrs = 'width="{{ module.image_field_1.width }}" height="{{ module.image_field_1.height }}"' %}
+            {% if module.image_field_1.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ module.image_field_1.width }}" height="{{ module.image_field_1.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif module.image_field_1.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ module.image_field_1.max_width }}" height="{{ module.image_field_1.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+             {% set loadingAttr = module.image_field_1.loading != 'disabled' ? 'loading="{{ module.image_field_1.loading }}"' : '' %}
+            <img src="{{ module.image_field_1.src }}" width="570px" class="img-fluid" alt="{{ module.image_field_1.alt }}">
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="icon-list center text-white">
+       
+          {% for item in module.icon_field_group %}
+            <li>
+              <div class="icon-container"><img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" class="img-fluid"></div>
+
+              <div class="sub-title">{% inline_text field="title_text" value="{{ item.title_text }}" %}</div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</section>

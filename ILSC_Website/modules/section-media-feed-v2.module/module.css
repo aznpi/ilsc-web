@@ -1,0 +1,15 @@
+.section.media-feed {
+  padding-top:50px !important;
+}
+.media-feed .row-media-feed{ 
+    width:100%;
+}
+@media (max-width: 600px) {
+  .media-feed .row-media-feed{
+    margin:0;
+    width:100%;
+  }
+  .media-feed .row-media-feed .col-md-12{
+    padding:0;
+  }
+}

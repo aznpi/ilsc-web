@@ -1,0 +1,36 @@
+{% set queryparam = '' %}
+{% set category = 'English Programs,Youth Programs'%}
+{% set queryparam = queryparam ~ "&programs_available__in="+module.program_choice|urlencode  %}
+{% set queryparam = queryparam ~ "&category__in="+category|urlencode  %}
+{% set queryparam = queryparam ~ "&enable__eq=true"  %}
+{% set priceArray = [] %}
+{% set programs = hubdb_table_rows(6973607,queryparam) %}
+
+{% for price in programs %}
+
+{% do priceArray.append(price.price_current) %}
+
+{% endfor %}
+
+<section class="section-normal section-cta-banner section-bg-container section-price-banner">
+  <div class="container">
+    <div class="container-right-bg" style="background-color: {{ module.bg_color.color }};"></div>  
+    <div class="row row-price" style="background-color: {{ module.bg_color.color }};">
+      <div class="col-md-9">
+        <div class="description-container">
+          <h2 class="bold {{ module.font_color_choice }}">The {{ module.program_choice }} {{ module.description_text }} 
+          </h2>
+          {% if module.richtext_field %}
+            {% inline_rich_text field="richtext_field" value="{{ module.richtext_field }}" %}
+          {% endif %}
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="description-container price-description">
+          <h2 class="bold {{ module.price_font_color_choice }}">{{priceArray|unique|sort|first|format_currency("en-US")}} USD <br>per Week!</h2>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

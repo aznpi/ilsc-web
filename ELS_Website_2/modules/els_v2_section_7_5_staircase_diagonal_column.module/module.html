@@ -1,0 +1,92 @@
+{% if module.anchor_id %}
+<a class="anchor-link" name="{{ module.anchor_id|replace(' ','-')|replace("'","-")|replace(',','-')}}"></a>
+{% endif %}
+<section class="section-normal section-diagonal section-staircase {{ module.padding_choice }} {{ module.margin_choice }}">
+  <div class="diagonal-box diagonal-up" style="background-color: {{ module.bg_color.color }};">
+  </div>
+  <div class="container">
+    <div class="row row-title">
+      <div class="col-md-12">
+        {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+      </div>
+    </div>
+
+    {% for item in module.row_field_group %}
+
+    {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+    {% if item.image_field.size_type == 'auto' %}
+    {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+    {% elif item.image_field.size_type == 'auto_custom_max' %}
+    {% set sizeAttrs = 'width="{{ item.image_field.max_width }}" height="{{ item.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+    {% endif %}
+    {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' : '' %}
+    <div class="row row-staircase">
+      <div class="{% if loop.index0 is even %}col-md-7{% else %}col-md-5 col-icon{% endif %}">
+        {% if loop.index0 is even %}
+        <div class="description">
+          {% inline_rich_text field="richtext_field" value="{{ item.richtext_field }}" %}
+        </div>
+        {% else %}
+        <div class="icon-container white-container">
+          <img src="{{ item.image_field.src }}" class="img-fluid">
+        </div>
+        {% endif %}
+      </div>
+      <div class="{% if loop.index0 is odd %}col-md-7{% else %}col-md-5 col-icon{% endif %}">
+        {% if loop.index0 is odd %}
+        <div class="description">
+          {% inline_rich_text field="richtext_field" value="{{ item.richtext_field }}" %}
+        </div>
+        {% else %}
+        <div class="icon-container white-container">
+          <img src="{{ item.image_field.src }}" class="img-fluid">
+        </div>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% if module.enable_dropdown_boolean %}
+    <div class="target-diagonal-container" style="background-color: {{ module.dropdown_field_group.bg_color.color }}; top:70px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 center">
+
+            <div class="description">
+              {% inline_rich_text field="dropdown_field_group.title_rich_text" value="{{ module.dropdown_field_group.title_rich_text }}" %}
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 center">
+            <div class="dropdown-container">
+              <div class="dropup dropdown-orange">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  {{ module.dropdown_field_group.dropdown_title_text }}
+                </button>
+                <ul class="dropdown-menu">
+                  {% for item in module.dropdown_field_group.link_field_group %}
+                  <li>
+                    {% set href = item.link_field.url.href %}
+                    {% if item.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+                    {% set href = "mailto:" + href %}
+                    {% endif %}
+                    <a href="{{ href }}" class="dropdown-item"
+                       {% if item.link_field.open_in_new_tab %}target="_blank"{% endif %}
+                       {% if item.link_field.rel %}rel="{{ item.link_field.rel }}"{% endif %}
+                       >
+                      {{ item.link_text }}
+                    </a>
+
+                  </li>
+                  {% endfor %}
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+</section>

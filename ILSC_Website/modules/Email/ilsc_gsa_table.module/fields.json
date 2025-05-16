@@ -1,0 +1,64 @@
+[ {
+  "id" : "abfaa6a2-1bc4-1121-b9a3-10dc16fddae1",
+  "name" : "style",
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : { }
+}, {
+  "id" : "10e9e405-16a7-de52-99c6-2687a8aab897",
+  "name" : "title_rich_text",
+  "label" : "Title Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : ""
+}, {
+  "id" : "dbb8ac4d-364c-901b-fc12-a28ef2da61db",
+  "name" : "student_details_field_group",
+  "label" : "Student Details Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 50,
+    "sorting_label_field" : "917e89db-063f-b489-301f-f8bdf51858e0",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "917e89db-063f-b489-301f-f8bdf51858e0",
+    "name" : "label_text",
+    "label" : "Label Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null
+  }, {
+    "id" : "137efc46-159a-4e81-3356-b89bc5e406bc",
+    "name" : "crmobject_field",
+    "label" : "CRM object",
+    "required" : false,
+    "locked" : false,
+    "object_type" : "contact",
+    "properties_to_fetch" : [ ],
+    "display_properties" : [ ],
+    "type" : "crmobject",
+    "display_width" : null
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ ]
+} ]

@@ -1,0 +1,86 @@
+/*
+
+ILSC Mix Filter
+Author: Tat Chow
+Date: May 19, 2020
+
+*/
+/*
+    Table of Contents
+
+   
+    Box Filter
+    
+    
+*/
+/* Box Filter */
+/* line 28, ../../../sass/internal/mix_filter.scss */
+.mix-boxes .mix .content-container {
+  min-height: 470px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+/* line 34, ../../../sass/internal/mix_filter.scss */
+.mix-boxes .mix .content-container .description {
+  padding: 0 30px 30px;
+}
+/* line 37, ../../../sass/internal/mix_filter.scss */
+.mix-boxes .mix .content-container .description h5 {
+  color: #FF8B35;
+  margin-bottom: 0;
+}
+/* line 41, ../../../sass/internal/mix_filter.scss */
+.mix-boxes .mix .content-container .description p {
+  font-weight: 500;
+  margin-top: 1rem;
+}
+/* line 45, ../../../sass/internal/mix_filter.scss */
+.mix-boxes .mix .content-container .description h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+/* line 50, ../../../sass/internal/mix_filter.scss */
+.mix-boxes .mix .content-container a {
+  text-decoration: none;
+}
+/* line 57, ../../../sass/internal/mix_filter.scss */
+.mix-boxes .input .select-filter {
+  display: inherit;
+  width: 400px;
+  margin: 0 auto 50px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 27px;
+  letter-spacing: 2px;
+}
+@media (max-width: 600px) {
+  /* line 57, ../../../sass/internal/mix_filter.scss */
+  .mix-boxes .input .select-filter {
+    width: 100%;
+  }
+}
+/* line 69, ../../../sass/internal/mix_filter.scss */
+.mix-boxes .input .select-filter:after {
+  color: #111;
+  content: '\f107';
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  right: 30px;
+  background: transparent;
+  border: 0;
+}
+/* line 80, ../../../sass/internal/mix_filter.scss */
+.mix-boxes .input .dropdown-menu {
+  width: 400px;
+}
+.mix-boxes .input-drop .dropdown-menu .dropdown-item{
+    font-size: 1.125rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}

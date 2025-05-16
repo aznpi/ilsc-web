@@ -1,0 +1,11 @@
+.section-overlay{
+  padding:0;
+}
+.section-overlay .bg-image{
+    padding: 100px 50px;
+  }
+@media only screen and (min-width: 992px) {
+  .section-overlay .bg-image{
+    padding: 100px 200px;
+  }
+}

@@ -1,0 +1,55 @@
+[ {
+  "id" : "9fefb890-a3d8-c07f-dd83-c51e9b21bf92",
+  "name" : "country_choice",
+  "label" : "Country Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "Canada", "Canada" ], [ "Australia", "Australia" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "Canada"
+}, {
+  "id" : "7ffe3a07-f0f3-522b-a39a-d47a41a91f10",
+  "name" : "campus_choice",
+  "label" : "Campus Choice",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 3,
+    "sorting_label_field" : null,
+    "default" : 0
+  },
+  "display" : "select",
+  "choices" : [ [ "Montreal", "Montreal" ], [ "Toronto", "Toronto" ], [ "Vancouver", "Vancouver" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "81c2ad24-dacd-388e-1c7d-406314cf3f0e",
+  "name" : "title_rich_text",
+  "label" : "Title Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Explore our Micro-Credentials Courses</h2>"
+}, {
+  "id" : "84d44435-c153-e2bd-66c6-19127ad22846",
+  "name" : "header_bg_color",
+  "label" : "Header BG Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#81b1CC",
+    "opacity" : 100
+  }
+} ]

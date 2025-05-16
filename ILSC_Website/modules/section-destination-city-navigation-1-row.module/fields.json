@@ -1,0 +1,455 @@
+[ {
+  "id" : "fbac01e0-921d-1e1b-6405-66437f200efb",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Our Destinations in Australia</h2>\n<h5>CHOOSE YOUR CAMPUS DESTINATION IN AUSTRALIA</h5>"
+}, {
+  "id" : "d3fcfba7-f21d-e3b0-3505-d3b63b25ccda",
+  "name" : "city",
+  "label" : "City",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "000ca62c-f3b1-d230-bb88-332a425762a0",
+    "name" : "city",
+    "label" : "City",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "97d319a0-698d-3f85-f7f3-30d65939c041",
+      "name" : "bg_city_1",
+      "label" : "BG City 1",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/bg_adelaide.jpg",
+        "alt" : "bg_adelaide",
+        "width" : 512,
+        "height" : 481,
+        "max_width" : 512,
+        "max_height" : 481
+      }
+    }, {
+      "id" : "7f257e7c-6c35-e1c1-f3ce-908a97ef9a9d",
+      "name" : "title_city_1",
+      "label" : "Title City 1",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "ADELAIDE"
+    }, {
+      "id" : "c82192c5-4f93-b150-2cd0-caa497e8552a",
+      "name" : "link_city_1",
+      "label" : "Link City 1",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "CONTENT", "EXTERNAL" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "400b9681-2119-8f27-d15b-9f42a9311068",
+      "name" : "bg_city_2",
+      "label" : "BG City 2",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/bg_brisbane.jpg",
+        "alt" : "bg_brisbane",
+        "width" : 510,
+        "height" : 478,
+        "max_width" : 510,
+        "max_height" : 478
+      }
+    }, {
+      "id" : "105db8dd-81b8-0175-2cd9-a593cfc50290",
+      "name" : "title_city_2",
+      "label" : "Title City 2",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "MELBOURNE"
+    }, {
+      "id" : "c62a46a5-239f-837c-11f2-0a9f47294130",
+      "name" : "link_city_2",
+      "label" : "Link City 2",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "CONTENT", "EXTERNAL" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 31293877311
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "fff4d550-82fb-8283-b139-5767612833d0",
+      "name" : "bg_city_3",
+      "label" : "BG City 3",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/bg_melbourne-1.jpg",
+        "alt" : "bg_melbourne-1",
+        "width" : 512,
+        "height" : 478,
+        "max_width" : 512,
+        "max_height" : 478
+      }
+    }, {
+      "id" : "b3615a89-8a29-51d8-de32-6bd338fcac14",
+      "name" : "link_city_3",
+      "label" : "Link City 3",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "CONTENT", "EXTERNAL" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 31293877311
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "dd3f7862-6636-d941-59db-44f959c608c2",
+      "name" : "title_city_3",
+      "label" : "Title City 3",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "BRISBANE"
+    }, {
+      "id" : "b9f46763-44f3-2eab-8a3d-5d3386d680fe",
+      "name" : "bg_city_4",
+      "label" : "BG City 4",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/bg_sydney.jpg",
+        "alt" : "bg_sydney",
+        "width" : 510,
+        "height" : 478,
+        "max_width" : 510,
+        "max_height" : 478
+      }
+    }, {
+      "id" : "42f1f8ab-731c-e20e-1382-e96a76d70b25",
+      "name" : "title_city_4",
+      "label" : "Title City 4",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "SYDNEY"
+    }, {
+      "id" : "7dc55616-1db6-fc01-854c-df42dd46bf48",
+      "name" : "link_city_4",
+      "label" : "Link City 4",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "CONTENT", "EXTERNAL" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 31200643170
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "dba339ca-6f4a-bd00-c9d9-0a3c585b9dbe",
+      "name" : "bg_city_5",
+      "label" : "BG City 5",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "src" : ""
+      }
+    }, {
+      "id" : "8bca1691-697d-ea16-3a7a-42d1159d3ecb",
+      "name" : "title_city_5",
+      "label" : "Title City 5",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "SYDNEY"
+    }, {
+      "id" : "02e8f1a7-634a-e48c-8984-1dd373b5bcde",
+      "name" : "link_city_5",
+      "label" : "Link City 5",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "CONTENT", "EXTERNAL" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 31200643170
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "bg_city_1" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/bg_adelaide.jpg",
+        "alt" : "bg_adelaide",
+        "width" : 512,
+        "height" : 481,
+        "max_width" : 512,
+        "max_height" : 481
+      },
+      "title_city_1" : "ADELAIDE",
+      "link_city_1" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "bg_city_2" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/bg_brisbane.jpg",
+        "alt" : "bg_brisbane",
+        "width" : 510,
+        "height" : 478,
+        "max_width" : 510,
+        "max_height" : 478
+      },
+      "title_city_2" : "MELBOURNE",
+      "link_city_2" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 31293877311
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "bg_city_3" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/bg_melbourne-1.jpg",
+        "alt" : "bg_melbourne-1",
+        "width" : 512,
+        "height" : 478,
+        "max_width" : 512,
+        "max_height" : 478
+      },
+      "link_city_3" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 31293877311
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "title_city_3" : "BRISBANE",
+      "bg_city_4" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/bg_sydney.jpg",
+        "alt" : "bg_sydney",
+        "width" : 510,
+        "height" : 478,
+        "max_width" : 510,
+        "max_height" : 478
+      },
+      "title_city_4" : "SYDNEY",
+      "link_city_4" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 31200643170
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "bg_city_5" : {
+        "src" : ""
+      },
+      "title_city_5" : "SYDNEY",
+      "link_city_5" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 31200643170
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "city" : {
+      "bg_city_1" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/bg_adelaide.jpg",
+        "alt" : "bg_adelaide",
+        "width" : 512,
+        "height" : 481,
+        "max_width" : 512,
+        "max_height" : 481
+      },
+      "title_city_1" : "ADELAIDE",
+      "link_city_1" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "bg_city_2" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/bg_brisbane.jpg",
+        "alt" : "bg_brisbane",
+        "width" : 510,
+        "height" : 478,
+        "max_width" : 510,
+        "max_height" : 478
+      },
+      "title_city_2" : "MELBOURNE",
+      "link_city_2" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 31293877311
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "bg_city_3" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/bg_melbourne-1.jpg",
+        "alt" : "bg_melbourne-1",
+        "width" : 512,
+        "height" : 478,
+        "max_width" : 512,
+        "max_height" : 478
+      },
+      "link_city_3" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 31293877311
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "title_city_3" : "BRISBANE",
+      "bg_city_4" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/bg_sydney.jpg",
+        "alt" : "bg_sydney",
+        "width" : 510,
+        "height" : 478,
+        "max_width" : 510,
+        "max_height" : 478
+      },
+      "title_city_4" : "SYDNEY",
+      "link_city_4" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 31200643170
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "bg_city_5" : {
+        "src" : ""
+      },
+      "title_city_5" : "SYDNEY",
+      "link_city_5" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 31200643170
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }
+} ]

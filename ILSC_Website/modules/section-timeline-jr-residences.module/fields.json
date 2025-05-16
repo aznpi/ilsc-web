@@ -1,0 +1,319 @@
+[ {
+  "id" : "830dbedf-39a3-3ee2-55aa-1f7843d465e1",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Campus Residence Sample Schedule</h2>\n<p>Each day is packed with a variety of fun activities and opportunities for practicing and improving language skills</p>"
+}, {
+  "id" : "a1a33ea1-0007-577d-9696-483c86465e35",
+  "name" : "time_tile_1",
+  "label" : "Time Tile 1",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "c87b45ff-c161-3511-a942-f759687a9d11",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_sunday.jpg",
+      "alt" : "img_residence_sunday",
+      "width" : 830,
+      "height" : 669,
+      "max_width" : 830,
+      "max_height" : 669
+    }
+  }, {
+    "id" : "73f00c85-18b2-5cf0-dcc8-8f7ef26ae674",
+    "name" : "content",
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h3 class=\"timeline-title left\">Sunday</h3>\n<h5>ARRIVAL &amp; ORIENTATION</h5>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum, morbi sed nibh est neque sit venenatis magna sit. Viverra orci ut at dictum.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_sunday.jpg",
+      "alt" : "img_residence_sunday",
+      "width" : 830,
+      "height" : 669,
+      "max_width" : 830,
+      "max_height" : 669
+    },
+    "content" : "<h3 class=\"timeline-title left\">Sunday</h3>\n<h5>ARRIVAL &amp; ORIENTATION</h5>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum, morbi sed nibh est neque sit venenatis magna sit. Viverra orci ut at dictum.</p>"
+  }
+}, {
+  "id" : "c3efeaf9-e482-adb5-7ccb-6531e0a4ca85",
+  "name" : "time_tile_2",
+  "label" : "Time Tile 2",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "6c2a8b00-a316-5b34-a4ab-bdcebbabdb01",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_morning.jpg",
+      "alt" : "img_residence_morning",
+      "width" : 911,
+      "height" : 809,
+      "max_width" : 911,
+      "max_height" : 809
+    }
+  }, {
+    "id" : "a9c4df2b-9403-d5a5-acc5-60a465130d03",
+    "name" : "content",
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h3 class=\"timeline-title right\">Weekday Morning</h3>\n<h5>STUDY ENGLISH</h5>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum, morbi sed nibh est neque sit venenatis magna sit. Viverra orci ut at dictum.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_morning.jpg",
+      "alt" : "img_residence_morning",
+      "width" : 911,
+      "height" : 809,
+      "max_width" : 911,
+      "max_height" : 809
+    },
+    "content" : "<h3 class=\"timeline-title right\">Weekday Morning</h3>\n<h5>STUDY ENGLISH</h5>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum, morbi sed nibh est neque sit venenatis magna sit. Viverra orci ut at dictum.</p>"
+  }
+}, {
+  "id" : "c1138a8d-7968-1104-32c2-7a16bb506957",
+  "name" : "time_tile_3",
+  "label" : "Time Tile 3",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "cb361086-3163-660d-3285-b243988434e9",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_afternoon.jpg",
+      "alt" : "img_residence_afternoon",
+      "width" : 948,
+      "height" : 779,
+      "max_width" : 948,
+      "max_height" : 779
+    }
+  }, {
+    "id" : "6d3e731d-0491-23b2-f6c3-627eb6e3187b",
+    "name" : "content",
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h3 class=\"timeline-title left\">Weekday Afternoon</h3>\n<h5>AFTERNOON EXCURSIONS</h5>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum, morbi sed nibh est neque sit venenatis magna sit. Viverra orci ut at dictum.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_afternoon.jpg",
+      "alt" : "img_residence_afternoon",
+      "width" : 948,
+      "height" : 779,
+      "max_width" : 948,
+      "max_height" : 779
+    },
+    "content" : "<h3 class=\"timeline-title left\">Weekday Afternoon</h3>\n<h5>AFTERNOON EXCURSIONS</h5>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum, morbi sed nibh est neque sit venenatis magna sit. Viverra orci ut at dictum.</p>"
+  }
+}, {
+  "id" : "1aba4113-2053-4696-5309-d175689d36a7",
+  "name" : "time_tile_4",
+  "label" : "Time Tile 4",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "b15d87d0-f765-96cb-7098-341346bce556",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_evening.jpg",
+      "alt" : "img_residence_evening",
+      "width" : 907,
+      "height" : 744,
+      "max_width" : 907,
+      "max_height" : 744
+    }
+  }, {
+    "id" : "7b6488a2-6936-044a-4ddd-094c49c6653b",
+    "name" : "content",
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h3 class=\"timeline-title right\">Weekday Evening</h3>\n<h5>EVENING ACTIVITY</h5>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum, morbi sed nibh est neque sit venenatis magna sit. Viverra orci ut at dictum.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_evening.jpg",
+      "alt" : "img_residence_evening",
+      "width" : 907,
+      "height" : 744,
+      "max_width" : 907,
+      "max_height" : 744
+    },
+    "content" : "<h3 class=\"timeline-title right\">Weekday Evening</h3>\n<h5>EVENING ACTIVITY</h5>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum, morbi sed nibh est neque sit venenatis magna sit. Viverra orci ut at dictum.</p>"
+  }
+}, {
+  "id" : "77feace1-6967-e74b-f0e9-42a925d1ff1c",
+  "name" : "time_tile_5",
+  "label" : "Time Tile 5",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "b75615e6-3bcd-0ea2-2cc2-bfa758753b7c",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_saturday.jpg",
+      "alt" : "img_residence_saturday",
+      "width" : 862,
+      "height" : 750,
+      "max_width" : 862,
+      "max_height" : 750
+    }
+  }, {
+    "id" : "dbe2b0f4-f224-93f4-9e25-cc3a8d1678f2",
+    "name" : "content",
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h3 class=\"timeline-title left\">Saturday</h3>\n<h5>FULL DAY EXCURSION</h5>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum, morbi sed nibh est neque sit venenatis magna sit. Viverra orci ut at dictum.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_saturday.jpg",
+      "alt" : "img_residence_saturday",
+      "width" : 862,
+      "height" : 750,
+      "max_width" : 862,
+      "max_height" : 750
+    },
+    "content" : "<h3 class=\"timeline-title left\">Saturday</h3>\n<h5>FULL DAY EXCURSION</h5>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum, morbi sed nibh est neque sit venenatis magna sit. Viverra orci ut at dictum.</p>"
+  }
+}, {
+  "picker" : "file",
+  "id" : "09d4caa4-3ea3-3cb0-e723-dc23c05cc887",
+  "name" : "icon_home",
+  "label" : "Icon Home",
+  "required" : false,
+  "locked" : false,
+  "type" : "file",
+  "display_width" : null,
+  "default" : "https://f.hubspotusercontent10.net/hubfs/5020112/template-resources/images/internal/icons/icon_home.svg"
+}, {
+  "picker" : "file",
+  "id" : "34017248-3d9b-31cc-4356-e43d6041e3d6",
+  "name" : "icon_book",
+  "label" : "Icon Book",
+  "required" : false,
+  "locked" : false,
+  "type" : "file",
+  "display_width" : null,
+  "default" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_explore.svg"
+}, {
+  "picker" : "file",
+  "id" : "a5782401-7f73-b0f1-a0ae-c1deb8737692",
+  "name" : "icon_camera",
+  "label" : "Icon Camera",
+  "required" : false,
+  "locked" : false,
+  "type" : "file",
+  "display_width" : null,
+  "default" : "https://f.hubspotusercontent10.net/hubfs/5020112/template-resources/images/internal/icons/icon_camera_1.svg"
+}, {
+  "id" : "938b5819-8842-4dcc-93c0-9b14e8680772",
+  "name" : "color_theme",
+  "label" : "Color Theme",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "teal", "Teal" ], [ "orange", "Orange" ], [ "yellow", "Yellow" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "orange"
+} ]

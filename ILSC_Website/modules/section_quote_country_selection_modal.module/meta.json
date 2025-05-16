@@ -1,0 +1,16 @@
+{
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE" ],
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 67765891338,
+  "js_assets" : [ {
+    "autoload" : true,
+    "path" : "../../template-resources/javascript/internal/cookie-set.js",
+    "name" : "cookie-set.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../template-resources/javascript/internal/quote-tool/quote_country_selector.js",
+    "name" : "quote_country_selector.js"
+  } ],
+  "is_available_for_new_content" : true
+}

@@ -1,0 +1,1392 @@
+{
+  "academic_test_preparation_menu.name" : {
+    "message" : "main_top_navigation",
+    "description" : null,
+    "placeholders" : null
+  },
+  "adult_and_junior_programs_menu.name" : {
+    "message" : "main_top_navigation",
+    "description" : null,
+    "placeholders" : null
+  },
+  "alumni_login_menu.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_college_and_university_pathway_menu.name" : {
+    "message" : "main_top_navigation",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.alumni_login_url.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.alumni_login_url.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.alumni_login_url.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.alumni_login_url.label" : {
+    "message" : "Student Login URL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.alumni_login_url.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.button_text_alumni_login.default" : {
+    "message" : "MyILSC Login",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.button_text_alumni_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.button_text_alumni_login.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.button_text_alumni_login.label" : {
+    "message" : "Button Text Student Login",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.button_text_alumni_login.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.button_text_alumni_login.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.label" : {
+    "message" : "Button Student Login copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.button_alumni_login.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.label" : {
+    "message" : "Student Login Menu copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.text_1.default" : {
+    "message" : "Have an account? Sign in now.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.text_1.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.text_1.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.text_1.label" : {
+    "message" : "text 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.text_1.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.text_1.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.title_alumni_login.default" : {
+    "message" : "<h4>STUDENT LOGIN</h4>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.title_alumni_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.title_alumni_login.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.title_alumni_login.label" : {
+    "message" : "Title Student Login",
+    "description" : null,
+    "placeholders" : null
+  },
+  "greystone_login_menu.title_alumni_login.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "home_link.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "home_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "home_link.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "home_link.label" : {
+    "message" : "Link",
+    "description" : null,
+    "placeholders" : null
+  },
+  "home_link.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.name" : {
+    "message" : "main_top_navigation",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : null,
+    "placeholders" : null
+  },
+  "language_programs_menu.name" : {
+    "message" : "main_top_navigation",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.link_field.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.link_field.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.link_field.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.link_field.label" : {
+    "message" : "Link",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.link_field.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.link_text.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.link_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.link_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.link_text.label" : {
+    "message" : "Link Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.link_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.link_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.link_field_group.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.name" : {
+    "message" : "ilsc_main_top_navigation",
+    "description" : null,
+    "placeholders" : null
+  },
+  "left_menu_field_group.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "logo_alt.default" : {
+    "message" : "Login",
+    "description" : null,
+    "placeholders" : null
+  },
+  "logo_alt.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "logo_alt.label" : {
+    "message" : "Nav Title - Login copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "logo_alt.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "logo_alt.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "logo_svg_file.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "logo_svg_file.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "logo_svg_file.label" : {
+    "message" : "File",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.cta_text.default" : {
+    "message" : "CONTACT US",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.cta_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.cta_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.cta_text.label" : {
+    "message" : "CTA Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.cta_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.cta_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.cta_url.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.cta_url.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.cta_url.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.cta_url.label" : {
+    "message" : "CTA URL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.cta_url.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.icon_choice.choices.value 1" : {
+    "message" : "Label 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.icon_choice.choices.value 2" : {
+    "message" : "Label 2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.icon_choice.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.icon_choice.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.icon_choice.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.icon_choice.label" : {
+    "message" : "Choice",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.icon_choice.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.name" : {
+    "message" : "ilsc_main_top_navigation_v2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_field_group.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_title_text.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_title_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_title_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_title_text.label" : {
+    "message" : "Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_title_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.link_title_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_1_group.name" : {
+    "message" : "ilsc_main_top_navigation_v2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.label" : {
+    "message" : "CTA 1 group copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.cta_text.default" : {
+    "message" : "CONTACT US",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.cta_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.cta_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.cta_text.label" : {
+    "message" : "CTA Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.cta_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.cta_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.cta_url.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.cta_url.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.cta_url.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.cta_url.label" : {
+    "message" : "CTA URL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.cta_url.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.icon_choice.choices.icon-gc" : {
+    "message" : "Greystone College",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.icon_choice.choices.icon-ilsc" : {
+    "message" : "Language Schools",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.icon_choice.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.icon_choice.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.icon_choice.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.icon_choice.label" : {
+    "message" : "Icon Choice copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.icon_choice.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.label" : {
+    "message" : "Link Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_field_group.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_title_text.default" : {
+    "message" : "CONTACT US",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_title_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_title_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_title_text.label" : {
+    "message" : "Link Title Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_title_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.link_title_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_2_group.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.cta_text.default" : {
+    "message" : "GET A QUOTE",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.cta_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.cta_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.cta_text.label" : {
+    "message" : "CTA Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.cta_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.cta_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.label" : {
+    "message" : "CTA Quote group copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.show_link.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.show_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.show_link.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.show_link.label" : {
+    "message" : "Show Link",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_phone_group.show_link.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.cta_text.default" : {
+    "message" : "CONTACT US",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.cta_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.cta_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.cta_text.label" : {
+    "message" : "CTA Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.cta_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.cta_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.cta_url.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.cta_url.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.cta_url.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.cta_url.label" : {
+    "message" : "CTA URL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.cta_url.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.label" : {
+    "message" : "CTA 2 group copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.name" : {
+    "message" : "ilsc_main_top_navigation_v2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.show_link.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.show_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.show_link.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.show_link.label" : {
+    "message" : "Boolean",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.cta_quote_group.show_link.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_cta.name" : {
+    "message" : "ilsc_main_top_navigation_v2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "ilsc_main_top_navigation",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_login_text.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_login_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_login_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_login_text.label" : {
+    "message" : "Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_login_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_login_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_titles.name" : {
+    "message" : "main_top_navigation_v2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.button_text_partners_login.default" : {
+    "message" : "Partners Login",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.button_text_partners_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.button_text_partners_login.label" : {
+    "message" : "Button Text Partners Login",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.button_text_partners_login.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.button_text_partners_login.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.label" : {
+    "message" : "Button Partners Login copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.partners_login_url.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.partners_login_url.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.partners_login_url.label" : {
+    "message" : "Partners Login URL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.button_text_partners_login.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.button_text_partners_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.button_text_partners_login.label" : {
+    "message" : "Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.button_text_partners_login.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.button_text_partners_login.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.partners_login_url.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.partners_login_url.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.partners_login_url.label" : {
+    "message" : "Partners Login URL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.label" : {
+    "message" : "Residences Menu copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.text_1.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.text_1.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.text_1.label" : {
+    "message" : "Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.text_1.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.text_1.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.text_2.default" : {
+    "message" : "New to ILSC. Create an account to get started today.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.text_2.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.text_2.label" : {
+    "message" : "text 1 copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.text_2.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.text_2.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.title_partners_login.default" : {
+    "message" : "<h4>RESIDENCES</h4>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.title_partners_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.title_partners_login.label" : {
+    "message" : "Title Residences",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.name" : {
+    "message" : "main_top_navigation",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.text_search_placeholder.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.text_search_placeholder.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.text_search_placeholder.label" : {
+    "message" : "Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.text_search_placeholder.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.text_search_placeholder.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.title_search.default" : {
+    "message" : "<h4>SEARCH</h4>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.title_search.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.title_search.label" : {
+    "message" : "Title Search",
+    "description" : null,
+    "placeholders" : null
+  },
+  "services_menu.name" : {
+    "message" : "main_top_navigation",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.button_text_student_login.default" : {
+    "message" : "Create My Account",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.button_text_student_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.button_text_student_login.label" : {
+    "message" : "Button Text Partners Create Account",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.button_text_student_login.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.button_text_student_login.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.label" : {
+    "message" : "Button Partners Create Account copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.student_login_url.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.student_login_url.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.student_login_url.label" : {
+    "message" : "Create Account URL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.label" : {
+    "message" : "Partners Login Menu copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.text_1.default" : {
+    "message" : "New to ILSC. Create an account to get started today.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.text_1.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.text_1.label" : {
+    "message" : "text 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.text_1.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.text_1.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.title_student_login.default" : {
+    "message" : "<h4>PARTNERS LOGIN</h4>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.title_student_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.title_student_login.label" : {
+    "message" : "Title Residences",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.name" : {
+    "message" : "main_top_navigation",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.field_group.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.name" : {
+    "message" : "main_top_navigation",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.name" : {
+    "message" : "main_top_navigation",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title_language.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title_language.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title_language.label" : {
+    "message" : "Rich text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : null,
+    "placeholders" : null
+  }
+}

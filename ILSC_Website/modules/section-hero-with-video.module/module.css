@@ -1,0 +1,16 @@
+@media (min-width: 600px) {
+  .section-hero .content-container.cta-right{
+    bottom: 20px;
+  }
+  .section-hero .content-container.cta-right .btn-video-container{
+    bottom: 30px;
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-hero img.hero-image{
+    display:none;
+  }
+}

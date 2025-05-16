@@ -1,0 +1,34 @@
+<section class="section-cta center section {% if module.background_color.color == '#FFFFFF' %}bg-white-canvas{% endif %}" id="content" style="background-color:rgba({{module.bg_color.color|convert_rgb }}, {{module.bg_color.opacity/100 }})">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7 content-container">        
+				{% inline_rich_text field="title" value="{{ module.title }}" %}
+      </div>
+      <div class="col-md-5">
+        <div class="btn-container">
+					  {% set href = module.button_1.button_url.href %}
+            {% if module.button_1.button_url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+            {% endif %}
+						<a href="{{ href }}" class="btn {{ module.button_1.button_bg_choice }}" {% if module.button_1.button_url.type is equalto "EXTERNAL" %} target="_blank" {% endif %}>{% inline_text field="button_1.button_text" value="{{ module.button_1.button_text }}" %}</a>
+					
+				    {% set href = module.button_2.button_url.href %}
+            {% if module.button_2.button_url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+            {% endif %}
+						<a href="{{ href }}" class="btn {{ module.button_2.button_bg_choice }}" {% if module.button_2.button_url.type is equalto "EXTERNAL" %} target="_blank" {% endif %}>{% inline_text field="button_2.button_text" value="{{ module.button_2.button_text }}" %}</a>
+          
+          {% if module.button_3.hide_show == "show" %}
+            {% set href = module.button_3.button_url.href %}
+            {% if module.button_3.button_url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+            {% endif %}
+            <a href="{{ href }}" class="btn {{ module.button_3.button_bg_choice }}" {% if module.button_3.button_url.type is equalto "EXTERNAL" %} target="_blank" {% endif %}>{% inline_text field="button_3.button_text" value="{{ module.button_3.button_text }}" %}</a>
+					{% endif %}	
+				</div>		
+			</div>
+		</div>
+	</div>
+</section>
+
+

@@ -1,0 +1,84 @@
+{% set teamVar = 0 %} 
+<section class="section section-team bg-white-canvas">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 center section-form">
+       <div class="dropdown">
+						  <button class="btn btn-gray-outline dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">    
+                {% for item in module.team_group %} 
+                  {% if teamVar == 0 %}
+                    {{ item.team_name }}
+                    {% set teamVar = teamVar + 1 %}
+                  {% endif %}
+                {% endfor %}
+						  </button>
+						 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">  
+               {% for item in module.team_group %}        
+                {% set teamId = item.team_name|trim|replace(' ','')|replace('&','') %}
+                  <a class="dropdown-item" href="#{{teamId}}">{{ item.team_name }}</a>               
+               {% endfor %}
+						  </div>
+					</div>
+      </div>
+    </div>   
+    
+{% for item in module.team_group %}
+    {% set teamId = item.team_name|trim|replace(' ','')|replace('&','') %}
+    
+    <div id="{{ teamId }}" class="row team-tab fade {% if teamVar == 0 %} active show {% endif %}">
+          {% for item2 in item.team_member %}
+            {% set modalId = item2.member_full_name|trim|replace(' ','')|replace('&','') %}    
+            <div class="col-md-3 center member-container" data-toggle="modal" data-target="#{{ modalId }}-{{ teamId }}">
+              <div class="image-container">
+                <img src="{{ item2.headshot_image.src }}" alt="{{ item2.headshot_image.alt }}" class="headshot"/>
+              </div>
+              <div class="description-container">
+                <h5>
+                  {{ item2.member_full_name }}
+                </h5>
+                <p>
+                  {{ item2.member_position }}
+                </p>
+              </div>
+            </div>
+              <!-- Modal -->
+              {% set sizeAttrs = 'width="{{ item2.popup_image.width }}" height="{{ item2.popup_image.height }}"' %}
+              {% if item2.popup_image.size_type == 'auto' %}
+                {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+              {% elif item2.popup_image.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item2.popup_image.max_width }}px; max-height: {{ item2.popup_image.max_height }}px"' %}
+              {% endif %}
+            <div class="modal fade team-modal" id="{{ modalId }}-{{ teamId }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+
+                  <div class="modal-body">
+                    <div class="image-container">
+                      <img src="{{ item2.popup_image.src }}" alt="{{ item2.popup_image.alt }}" >
+                    </div>
+                    <div class="description-container">
+                      <h5>
+                        {{ item2.member_full_name }}
+                      </h5>
+                      <p>
+                        {{ item2.member_position }}
+                      </p>
+                      {% inline_rich_text field="team_member_description" value="{{ item2.team_member_description }}" %}
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+      
+    </div>
+     {% set teamVar = teamVar + 1 %}
+{% endfor %}   
+    
+  </div>
+</section>

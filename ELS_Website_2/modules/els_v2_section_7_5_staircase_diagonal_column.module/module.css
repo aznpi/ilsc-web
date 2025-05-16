@@ -1,0 +1,13 @@
+.section-staircase .description.right p{
+  text-align:left;
+}
+
+.section-staircase .dropup.dropdown-orange .dropdown-menu{
+  height:250px;
+  overflow-y:scroll;
+}
+.section-staircase .dropup.dropdown-orange .dropdown-menu a{
+  white-space:normal;
+}
+
+

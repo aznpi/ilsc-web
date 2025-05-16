@@ -1,0 +1,39 @@
+<section class="section-normal section-testimonial {{ module.padding_choice }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+      </div>
+    </div>
+    <div class="row testimonial-row">
+      <div class="col-md-12">
+        <div class="bg-image" style="background-image: url({{ module.bg_image.src }});width: 787px;height:559px;"></div>
+        <div class="testimonial-container">
+          <div class="testimonial-slider">
+            
+            {% for item in module.testimonial_field_group %}
+              <div class="testimonial-slide">
+                <div class="col-md-4 image-container">
+                  {% if item.author_image.src %}
+                    <img src="{{item.author_image.src}}" class="img-fluid">
+                  {% endif %}
+                </div>
+                <div class="quote-container col-md-8">
+                  <blockquote>
+                    <div class="quote">
+                      {% inline_rich_text field="quote_rich_text" value="{{ item.quote_rich_text }}" %}
+                    </div>
+                    <div class="author">
+                      {% inline_rich_text field="author_details_rich_text" value="{{ item.author_details_rich_text }}" %}
+                    </div>
+                  </blockquote>
+                </div>
+              </div>
+            {% endfor %}
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

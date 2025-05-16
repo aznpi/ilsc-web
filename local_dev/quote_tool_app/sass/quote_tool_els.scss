@@ -1,0 +1,277 @@
+#section-footer{
+    z-index: -1;
+    position: relative;
+}
+.promo-container{
+    display:none;
+}
+.section-quote-country{
+    
+    .btn-container{
+        margin-bottom: 50px;
+        clear: both;
+        overflow: hidden;
+        display: flex;
+        justify-content: right;
+
+        button{
+            margin: 50px 0 20px;
+            width: 150px;
+            &.next{
+                float:right;
+            }
+            &.btn-orange{
+                border-color: #FFF;
+            }
+        }
+    }
+
+    .dob-selector-container{
+        .dob-select-container{
+            display:flex;
+            margin-top:50px;
+            justify-content: space-evenly;
+            align-items: center;
+
+            @media only screen and (max-width: 600px) {
+                display:block;
+            }
+
+            span{
+
+                @media only screen and (max-width: 600px) {
+                    display:block;
+                    margin-bottom:20px;
+                }
+               
+                label{
+                    display: block;
+                    text-align: center;
+                    margin-bottom:20px;
+                    font-size: 34px;
+                }
+                div{
+                    position:relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &:after{
+                        content:"\f078";
+                        font-family: 'Font Awesome 5 Free';
+                        color: #000;
+                        position: absolute; 
+                        right: -8px; 
+                        top: 27px;
+                        z-index: 1;
+                        font-size: 18px;
+                        font-weight: 600;
+                        width: 30px;
+                        height: 30px;  
+                        pointer-events: none;    
+                    }
+                    select{
+                        font-size: 34px;
+                        padding: 10px 25px;
+                        border-radius: 10px;
+                        text-align: center;
+                        margin-right:15px;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+                        line-height:1.5;
+                        
+                    }
+                }
+
+            }
+            &:last-child{
+                div{
+                    select{
+                        margin-right:0;
+
+                        @media only screen and (max-width: 600px) {
+                            width:100%;
+                        }
+                    }
+                }
+                
+            }
+            
+        }
+    }
+}
+
+.section-quote-steps{
+    min-height:800px;
+
+    .program-list-selection-container{
+        .radio-container{
+            .program-option{
+                label{
+                    display: block;
+                }
+                input[type=radio]+*:before{
+                    top:15%;
+                }
+                p{
+                    &.disclaimer{
+                        margin-bottom:0px;
+                    }
+                }
+            }
+        }
+    }
+
+    .accommodation-price-selection-container{
+        &.step-container{
+            .airport-select-container{
+                &.radio-container{
+                    .option-container{
+                        &.div-extend{
+                            display:inline-block;
+                            width:100%;
+
+                            .program-option{
+                                margin-bottom:10px;
+                                &:last-child{
+                                    margin-left:0px
+                                }
+                                &:first-child{
+                                    margin-right:0px
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }      
+        }
+    } 
+    .step-container{
+        &.program-container{
+            .program-title{
+                &.step-title{
+                    .p-class{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .radio-container{
+            .program-option{
+                label{
+                    padding:10px 30px;
+                    line-height: 1.2;
+                }
+            }
+        }
+    }
+
+    .footnote{
+        font-size:14px;
+        padding:10px 0 0;
+    }
+
+    .bold{
+        font-weight:700;
+    }
+
+    .dot-container{
+        right:160px;
+        top:90px;
+    }
+
+    #quote-price-container{
+        #quote-selection-container{
+            .quote-items,.promo-container{
+                line-height: 1.5;
+            }
+        }
+    }
+
+    .quote-step-slide{
+        min-height:900px;
+        
+        &.slick-slider{
+            .slick-list,.slick-track{
+                min-height:900px;
+                
+                .slick-slide{
+                    min-height:900px;
+                    
+                }
+            }
+        }
+    }
+    .dropdown{
+        .dropdown-select{
+            padding:30px;
+        }
+        .footnote{
+            display: block;
+        }
+    }
+
+
+    .slick-track{
+        .slick-slide{
+            &:first-child{
+                &:before{
+                    background-position: 650px 0;
+                }
+            }
+        }
+    }
+
+    .program-option{
+        cursor:pointer;
+        label{
+            cursor: pointer;
+        }
+        &.disabled{
+            background-color:#e7e7e7 !important;
+            user-select: none;
+        }
+    }
+    .campus-selection-container{
+        .dropdown{
+            li{
+                font-size:20px;
+            }
+        }
+    }
+
+    .select-container{
+        .selectBox{
+            &.show{
+                .dropdown-menu{
+                    transform: translate(-22px,0);
+                }
+            }
+            .dropdown-menu{
+                max-height:300px;
+                transform: translate(-22px,0);
+            }
+        }
+    }
+
+}
+
+button,input{
+    &.btn-orange{
+        background-color: #ff8b35;
+        border-color: #ff8b35;
+        color: #fff;
+
+        &:hover{
+            background-color: #fa7e1f;
+            border-color:  #fa7e1f;
+        }
+    }
+    &.btn-orange-outline{
+        background-color: #fff;
+        border-color: #ff8b35;
+        color: #ff8b35;
+    }
+}

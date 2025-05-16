@@ -1,0 +1,342 @@
+[ {
+  "id" : "5a3af11b-185e-d652-3ab3-bb3a04d0dd53",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Live with a Homestay Family</h2>\n<p>Are you looking for a home away from home? Be welcomed into one of ILSC’s Homestay families, and experience a supportive living environment.</p>"
+}, {
+  "id" : "64a124c8-64f1-8c8f-0a78-8263e574b5e8",
+  "name" : "box_1",
+  "label" : "Box 1",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "964b5a8a-8c47-86ea-61bd-587203d9dc47",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_banner.jpg",
+      "alt" : "img_residence_banner",
+      "width" : 1086,
+      "height" : 462,
+      "max_width" : 1086,
+      "max_height" : 462
+    }
+  }, {
+    "id" : "c5d43a60-a9e9-451c-d1ce-0aa9fb3e572c",
+    "name" : "text_content",
+    "label" : "Text Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>Live Independently</h4>\n<p>ILSC can connect you with a selection of economical shared accommodation options.<br><br>Choose our accommodations partner in Sydney:</p>"
+  }, {
+    "id" : "6c77f793-6a4a-5786-ff38-1b9f907085a7",
+    "name" : "dropdown_text",
+    "label" : "Dropdown Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Choose Location"
+  }, {
+    "id" : "5cce5b4d-3ca3-40fa-315e-7b2807a00397",
+    "name" : "location",
+    "label" : "Location Group",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 10,
+      "sorting_label_field" : "0965aacd-50eb-9c61-e98e-475ff78f5464",
+      "default" : 4
+    },
+    "children" : [ {
+      "id" : "6f9edf27-f252-a925-cad4-19ba6a2d21af",
+      "name" : "location_text",
+      "label" : "Location Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Seattle"
+    }, {
+      "id" : "cc52d656-4c0a-1ae1-9809-436f8f80412b",
+      "name" : "location_link",
+      "label" : "Location Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ {
+      "location_text" : "Seattle",
+      "location_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    }, {
+      "location_text" : "Seattle",
+      "location_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    }, {
+      "location_text" : "Seattle",
+      "location_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    }, {
+      "location_text" : "Seattle",
+      "location_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_banner.jpg",
+      "alt" : "img_residence_banner",
+      "width" : 1086,
+      "height" : 462,
+      "max_width" : 1086,
+      "max_height" : 462
+    },
+    "text_content" : "<h4>Live Independently</h4>\n<p>ILSC can connect you with a selection of economical shared accommodation options.<br><br>Choose our accommodations partner in Sydney:</p>",
+    "dropdown_text" : "Choose Location",
+    "location" : [ {
+      "location_text" : "Seattle",
+      "location_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    }, {
+      "location_text" : "Seattle",
+      "location_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    }, {
+      "location_text" : "Seattle",
+      "location_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    }, {
+      "location_text" : "Seattle",
+      "location_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    } ]
+  }
+}, {
+  "id" : "484148e7-d667-d001-008e-f7772cab3022",
+  "name" : "box_2",
+  "label" : "Box 2",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "da4cb6f7-1cd9-8ea5-85ff-fcf461519e4e",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_banner.jpg",
+      "alt" : "img_residence_banner",
+      "width" : 1086,
+      "height" : 462,
+      "max_width" : 1086,
+      "max_height" : 462
+    }
+  }, {
+    "id" : "92a6dd99-a120-7106-f805-0a7033573af0",
+    "name" : "text_content",
+    "label" : "Text Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>Live Independently</h4>\n<p>ILSC can connect you with a selection of economical shared accommodation options.<br><br>Choose our accommodations partner in Sydney:</p>"
+  }, {
+    "id" : "1bbea743-e046-7b46-fc7d-f384dab28f88",
+    "name" : "dropdown_text",
+    "label" : "Dropdown Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Choose Location"
+  }, {
+    "id" : "d12f3e41-5450-b7ea-9dc3-71634b407618",
+    "name" : "location",
+    "label" : "Location Group",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 10,
+      "sorting_label_field" : "0965aacd-50eb-9c61-e98e-475ff78f5464",
+      "default" : 4
+    },
+    "children" : [ {
+      "id" : "0965aacd-50eb-9c61-e98e-475ff78f5464",
+      "name" : "location_text",
+      "label" : "Location Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Seattle"
+    }, {
+      "id" : "d03b5aaf-ecd6-1bc0-5e02-49e52410996c",
+      "name" : "location_link",
+      "label" : "Location Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ {
+      "location_text" : "Seattle",
+      "location_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    }, {
+      "location_text" : "Seattle",
+      "location_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    }, {
+      "location_text" : "Seattle",
+      "location_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    }, {
+      "location_text" : "Seattle",
+      "location_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_banner.jpg",
+      "alt" : "img_residence_banner",
+      "width" : 1086,
+      "height" : 462,
+      "max_width" : 1086,
+      "max_height" : 462
+    },
+    "text_content" : "<h4>Live Independently</h4>\n<p>ILSC can connect you with a selection of economical shared accommodation options.<br><br>Choose our accommodations partner in Sydney:</p>",
+    "dropdown_text" : "Choose Location",
+    "location" : [ {
+      "location_text" : "Seattle",
+      "location_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    }, {
+      "location_text" : "Seattle",
+      "location_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    }, {
+      "location_text" : "Seattle",
+      "location_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    }, {
+      "location_text" : "Seattle",
+      "location_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    } ]
+  }
+} ]

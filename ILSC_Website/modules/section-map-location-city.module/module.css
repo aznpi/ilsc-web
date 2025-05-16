@@ -1,0 +1,13 @@
+.section-map h5{
+  display:inline-block;
+}
+#google-map{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  height:auto !important;
+}
+#google-map img{
+  margin:0 auto;
+}

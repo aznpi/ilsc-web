@@ -1,0 +1,1110 @@
+/* line 1, ../sass/applicant-form.scss */
+.form-check-input.is-invalid ~ .form-check-label, .was-validated .form-check-input:invalid ~ .form-check-label {
+  color: inherit !important;
+}
+
+/* line 4, ../sass/applicant-form.scss */
+.form-check-input.is-valid ~ .form-check-label, .was-validated .form-check-input:valid ~ .form-check-label {
+  color: inherit !important;
+}
+
+/* line 9, ../sass/applicant-form.scss */
+#application-summary-container.accordion {
+  --bs-accordion-color: #000;
+  --bs-accordion-bg: #fff;
+  --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+  --bs-accordion-border-color: var(--bs-border-color);
+  --bs-accordion-border-width: 1px;
+  --bs-accordion-border-radius: 0.375rem;
+  --bs-accordion-inner-border-radius: calc(0.375rem - 1px);
+  --bs-accordion-btn-padding-x: 1.25rem;
+  --bs-accordion-btn-padding-y: 1rem;
+  --bs-accordion-btn-color: var(--bs-body-color);
+  --bs-accordion-btn-bg: var(--bs-accordion-bg);
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='var%28--bs-body-color%29'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --bs-accordion-btn-icon-width: 1.25rem;
+  --bs-accordion-btn-icon-transform: rotate(-180deg);
+  --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --bs-accordion-btn-focus-border-color: #86b7fe;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  --bs-accordion-body-padding-x: 1.25rem;
+  --bs-accordion-body-padding-y: 1rem;
+  --bs-accordion-active-color: #0c63e4;
+  --bs-accordion-active-bg: #e7f1ff;
+}
+/* line 32, ../sass/applicant-form.scss */
+#application-summary-container.accordion .card {
+  border: 0;
+}
+/* line 35, ../sass/applicant-form.scss */
+#application-summary-container.accordion .card .study-box-container {
+  width: 100%;
+}
+/* line 38, ../sass/applicant-form.scss */
+#application-summary-container.accordion .card .study-box-container button.accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+  font-size: 1rem;
+  color: var(--bs-accordion-btn-color);
+  text-align: left;
+  background-color: var(--bs-accordion-btn-bg);
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: var(--bs-accordion-transition);
+}
+/* line 52, ../sass/applicant-form.scss */
+#application-summary-container.accordion .card .study-box-container button.accordion-button:after {
+  content: '';
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%22999999'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+  flex-shrink: 0;
+  width: var(--bs-accordion-btn-icon-width);
+  height: var(--bs-accordion-btn-icon-width);
+  margin-left: auto;
+  background-image: var(--bs-accordion-btn-icon);
+  background-repeat: no-repeat;
+  background-size: var(--bs-accordion-btn-icon-width);
+  transition: var(--bs-accordion-btn-icon-transition);
+}
+/* line 64, ../sass/applicant-form.scss */
+#application-summary-container.accordion .card .study-box-container button.accordion-button:focus {
+  border-color: inherit;
+  box-shadow: none;
+}
+/* line 68, ../sass/applicant-form.scss */
+#application-summary-container.accordion .card .study-box-container button.accordion-button:not(.collapsed) {
+  color: inherit;
+  background-color: inherit;
+  box-shadow: none;
+}
+/* line 72, ../sass/applicant-form.scss */
+#application-summary-container.accordion .card .study-box-container button.accordion-button:not(.collapsed):after {
+  transform: var(--bs-accordion-btn-icon-transform);
+}
+/* line 76, ../sass/applicant-form.scss */
+#application-summary-container.accordion .card .study-box-container button.accordion-button span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+  position: relative;
+  border-bottom: 1px solid #CCC;
+  font-size: 1.5rem;
+}
+/* line 85, ../sass/applicant-form.scss */
+#application-summary-container.accordion .card .study-box-container button.accordion-button span:after {
+  background: var(--bs-ilsc-color);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+/* line 92, ../sass/applicant-form.scss */
+#application-summary-container.accordion .card .study-box-container button.accordion-button span:after, #application-summary-container.accordion .card .study-box-container button.accordion-button span :before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  content: "";
+  -webkit-transition: all;
+  -o-transition: all;
+  transition: all;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+/* line 112, ../sass/applicant-form.scss */
+#application-summary-container.accordion .card .study-box-container button.accordion-button.collapsed span:after {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  background: #CCC;
+}
+
+/*Bootstrap override*/
+/* line 132, ../sass/applicant-form.scss */
+.form-control.is-valid, .was-validated .form-control:valid {
+  background-image: none !important;
+}
+
+/* line 137, ../sass/applicant-form.scss */
+table.application-summary-tbl {
+  width: 100%;
+}
+/* line 140, ../sass/applicant-form.scss */
+table.application-summary-tbl td {
+  width: 50%;
+  padding: 0 10px;
+}
+/* line 262, ../sass/applicant-form.scss */
+[dir=rtl] .section-application-form .slick-slide {
+  float: left;
+}
+/* line 147, ../sass/applicant-form.scss */
+.application-step-form-slide.slick-initialized {
+  visibility: visible;
+}
+/* line 150, ../sass/applicant-form.scss */
+.application-step-form-slide .slick-list {
+  overflow-y: visible;
+  overflow-x: hidden;
+}
+
+/* line 157, ../sass/applicant-form.scss */
+.slick-slide:not(.slick-active) .step-container {
+  opacity: 0;
+  display: none;
+  height: 0;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* line 172, ../sass/applicant-form.scss */
+.ui-datepicker {
+  width: 15em !important;
+  /*what ever width you want*/
+}
+
+/* line 175, ../sass/applicant-form.scss */
+.ui-state-default,
+.ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+  text-align: center;
+  color: #ff8b35;
+  border: 0 !important;
+}
+
+/* line 184, ../sass/applicant-form.scss */
+.ui-state-disabled .ui-state-default {
+  background: none !important;
+  color: #ff8b35 !important;
+  border: 0 !important;
+}
+
+/* line 189, ../sass/applicant-form.scss */
+.ui-datepicker th {
+  padding: 0.7em 0.3em;
+  text-align: center;
+  font-weight: 300;
+  border: 0;
+  font-size: 15px;
+}
+
+/* line 196, ../sass/applicant-form.scss */
+.ui-datepicker td a {
+  color: #FFF !important;
+  background: #ff8b35 !important;
+  border-radius: 5px;
+}
+
+/* line 201, ../sass/applicant-form.scss */
+.ui-widget-header {
+  color: #ff8b35 !important;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  background: #FFF !important;
+  border: 0 !important;
+}
+
+/* line 208, ../sass/applicant-form.scss */
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+  border-radius: 50%;
+  background-color: #ff8b35;
+  position: relative;
+}
+
+/* line 214, ../sass/applicant-form.scss */
+.ui-datepicker-prev span, .ui-datepicker-next span {
+  background-image: none !important;
+  position: relative;
+  z-index: 0;
+}
+
+/* line 220, ../sass/applicant-form.scss */
+.ui-datepicker-prev:before, .ui-datepicker-next:before {
+  color: #f8f9fa;
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  top: 3px;
+  bottom: 0;
+  left: 13px;
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  z-index: 1;
+}
+
+/* line 235, ../sass/applicant-form.scss */
+.ui-datepicker-prev:before {
+  content: '\f104';
+}
+
+/* line 239, ../sass/applicant-form.scss */
+.ui-datepicker-next:before {
+  content: '\f105';
+}
+
+/* line 243, ../sass/applicant-form.scss */
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus {
+  border: 0 !important;
+  font-weight: normal !important;
+  color: #CCC !important;
+}
+
+/* line 256, ../sass/applicant-form.scss */
+.section-form.hs-form .container {
+  padding: 0 !important;
+}
+
+/* line 260, ../sass/applicant-form.scss */
+section {
+  --bs-ilsc-color: #ff8b35;
+  --bs-gc-color: #81B1CC;
+}
+/* line 264, ../sass/applicant-form.scss */
+section.section-application-form {
+  min-height: 850px;
+  position: relative;
+}
+/* line 268, ../sass/applicant-form.scss */
+section.section-application-form .footnote {
+  font-size: 16px;
+}
+/* line 269, ../sass/applicant-form.scss */
+section.section-application-form a.btn-orange {
+  border-color: var(--bs-ilsc-color);
+}
+/* line 272, ../sass/applicant-form.scss */
+section.section-application-form a.btn-orange:hover {
+  border-color: var(--bs-ilsc-color) !important;
+}
+@media (max-width: 480px) {
+  /* line 279, ../sass/applicant-form.scss */
+  section.section-application-form.section-form.hs-form {
+    margin-top: 100px;
+  }
+}
+/* line 283, ../sass/applicant-form.scss */
+section.section-application-form.section-form.hs-form .container {
+  position: relative;
+  padding: 0 200px 50px 0 !important;
+}
+@media (max-width: 996.97px) {
+  /* line 283, ../sass/applicant-form.scss */
+  section.section-application-form.section-form.hs-form .container {
+    padding: 20px !important;
+  }
+}
+/* line 292, ../sass/applicant-form.scss */
+section.section-application-form .edit-form {
+  float: right;
+  font-size: 16px;
+  margin-right: 10px;
+  color: var(--bs-ilsc-color);
+  cursor: pointer;
+}
+/* line 299, ../sass/applicant-form.scss */
+section.section-application-form nav {
+  right: 0;
+  align-self: flex-start;
+  z-index: 99;
+  background: transparent;
+  float: right;
+}
+/* line 306, ../sass/applicant-form.scss */
+section.section-application-form nav.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+/* line 311, ../sass/applicant-form.scss */
+section.section-application-form nav.bottom {
+  top: auto;
+  bottom: 0;
+  position: absolute;
+}
+@media (max-width: 996.97px) {
+  /* line 317, ../sass/applicant-form.scss */
+  section.section-application-form nav.fixed-side-menu {
+    display: none;
+  }
+}
+/* line 324, ../sass/applicant-form.scss */
+section.section-application-form nav .fixed-side-menu-list {
+  list-style: none;
+  font-size: 0;
+}
+/* line 328, ../sass/applicant-form.scss */
+section.section-application-form nav .fixed-side-menu-list > li {
+  margin-bottom: 5px;
+  border-left: 2px solid #CCC;
+  font-size: 16px;
+  padding: 24px 10px;
+  transition: all .5s;
+  overflow: hidden;
+}
+/* line 336, ../sass/applicant-form.scss */
+section.section-application-form nav .fixed-side-menu-list > li.active {
+  border-left: 2px solid var(--bs-ilsc-color);
+}
+/* line 339, ../sass/applicant-form.scss */
+section.section-application-form nav .fixed-side-menu-list > li.active a {
+  color: #111;
+  cursor: pointer;
+  scale: 105%;
+}
+/* line 344, ../sass/applicant-form.scss */
+section.section-application-form nav .fixed-side-menu-list > li.active a:after {
+  animation: slideInFromLeft .3s ease-out 0s 1;
+  border-top: 1px solid var(--bs-ilsc-color);
+  bottom: -15px;
+  content: "";
+  height: 0.5em;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+/* line 357, ../sass/applicant-form.scss */
+section.section-application-form nav .fixed-side-menu-list > li.complete {
+  border-left: 2px solid var(--bs-gc-color);
+}
+/* line 360, ../sass/applicant-form.scss */
+section.section-application-form nav .fixed-side-menu-list > li.complete a {
+  color: var(--bs-ilsc-color);
+  cursor: pointer;
+}
+/* line 364, ../sass/applicant-form.scss */
+section.section-application-form nav .fixed-side-menu-list > li.complete a:hover {
+  color: var(--bs-ilsc-color);
+}
+/* line 366, ../sass/applicant-form.scss */
+section.section-application-form nav .fixed-side-menu-list > li.complete a:hover:before {
+  border-top: 1px solid #111;
+}
+/* line 370, ../sass/applicant-form.scss */
+section.section-application-form nav .fixed-side-menu-list > li.complete a:hover:after {
+  border-top: 1px solid #111;
+}
+/* line 378, ../sass/applicant-form.scss */
+section.section-application-form nav .fixed-side-menu-list > li ul {
+  font-size: 16px;
+  margin: 10px 0 0 10px;
+}
+/* line 382, ../sass/applicant-form.scss */
+section.section-application-form nav .fixed-side-menu-list > li ul li {
+  color: #CCC;
+  transition: all .5s;
+}
+/* line 385, ../sass/applicant-form.scss */
+section.section-application-form nav .fixed-side-menu-list > li ul li.complete {
+  color: #00b560;
+}
+/* line 390, ../sass/applicant-form.scss */
+section.section-application-form nav .fixed-side-menu-list > li a {
+  line-height: 12px;
+  display: block;
+  text-decoration: none;
+  transition: all 0.8s ease;
+  color: #CCC;
+  cursor: default;
+  position: relative;
+  width: fit-content;
+  transition: scale .3s;
+}
+/* line 402, ../sass/applicant-form.scss */
+section.section-application-form nav .fixed-side-menu-list > li a:before {
+  border-top: 1px solid #FFF;
+  bottom: -15px;
+  content: "";
+  height: 0.5em;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+/* line 416, ../sass/applicant-form.scss */
+section.section-application-form .form-control, section.section-application-form .form-check-input {
+  height: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+/* line 422, ../sass/applicant-form.scss */
+section.section-application-form .form-check-input {
+  float: left;
+  margin-top: 0.25em;
+  vertical-align: top;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+/* line 433, ../sass/applicant-form.scss */
+section.section-application-form .form-check-input:checked[type=radio] {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+}
+/* line 437, ../sass/applicant-form.scss */
+section.section-application-form .form-check-input[type=radio] {
+  border-radius: 50% !important;
+}
+/* line 440, ../sass/applicant-form.scss */
+section.section-application-form .hbspt-form, section.section-application-form #additional-hs-file-form, section.section-application-form #contract-hs-file-form, section.section-application-form #program-hs-file-form {
+  display: none;
+}
+/* line 443, ../sass/applicant-form.scss */
+section.section-application-form input::placeholder {
+  opacity: .5 !important;
+  color: #414141 !important;
+}
+/* line 447, ../sass/applicant-form.scss */
+section.section-application-form h3, section.section-application-form h1 {
+  padding-bottom: 10px;
+  position: relative;
+  width: fit-content;
+}
+/* line 454, ../sass/applicant-form.scss */
+section.section-application-form h3:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 0.5em;
+  border-top: 2px solid var(--bs-ilsc-color);
+  z-index: 1;
+}
+/* line 466, ../sass/applicant-form.scss */
+section.section-application-form h1 {
+  font-size: 2rem;
+}
+/* line 469, ../sass/applicant-form.scss */
+section.section-application-form h1:before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 0.5em;
+  border-top: 2px solid #CCC;
+  z-index: -1;
+}
+/* line 479, ../sass/applicant-form.scss */
+section.section-application-form h1:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 0.5em;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  border-top: 2px solid var(--bs-ilsc-color);
+  z-index: 1;
+}
+/* line 491, ../sass/applicant-form.scss */
+section.section-application-form h4 {
+  font-size: 1.625rem;
+}
+/* line 496, ../sass/applicant-form.scss */
+section.section-application-form.hs-form form input:checked {
+  background-color: var(--bs-gc-color) !important;
+}
+/* line 503, ../sass/applicant-form.scss */
+section.section-application-form ol.alpha {
+  counter-reset: list;
+}
+/* line 506, ../sass/applicant-form.scss */
+section.section-application-form ol.alpha > li {
+  list-style: none;
+}
+/* line 508, ../sass/applicant-form.scss */
+section.section-application-form ol.alpha > li:before {
+  content: counter(list,upper-alpha) ") ";
+  counter-increment: list;
+  color: inherit;
+  font-weight: 600;
+  margin-right: 10px;
+}
+/* line 519, ../sass/applicant-form.scss */
+section.section-application-form .loading {
+  width: 2rem;
+  height: 2rem;
+  border: 5px solid #f3f3f3;
+  border-top: 6px solid #9c41f2;
+  border-radius: 100%;
+  margin: auto;
+  visibility: hidden;
+  animation: spin 1s infinite linear;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* line 539, ../sass/applicant-form.scss */
+section.section-application-form form#accommodation-form .study-box-container {
+  position: relative;
+}
+/* line 544, ../sass/applicant-form.scss */
+section.section-application-form form.form-hide {
+  display: none;
+}
+/* line 547, ../sass/applicant-form.scss */
+section.section-application-form form input:not([type=radio]):not([type=checkbox]), section.section-application-form form select, section.section-application-form form textarea {
+  width: 90% !important;
+}
+/* line 550, ../sass/applicant-form.scss */
+section.section-application-form form .form-group {
+  margin-bottom: 15px;
+}
+/* line 554, ../sass/applicant-form.scss */
+section.section-application-form form input.error, section.section-application-form form select.error, section.section-application-form form textarea.error {
+  box-shadow: 0px 0px 10px -1px rgba(240, 12, 12, 0.7);
+  -webkit-box-shadow: 0px 0px 10px -1px rgba(240, 12, 12, 0.7);
+  -moz-box-shadow: 0px 0px 10px -1px rgba(240, 12, 12, 0.7);
+}
+/* line 560, ../sass/applicant-form.scss */
+section.section-application-form form label {
+  margin-bottom: 10px;
+}
+/* line 563, ../sass/applicant-form.scss */
+section.section-application-form form label.error {
+  color: #d92424;
+  display: flex;
+  font-size: 1.125rem;
+}
+/* line 567, ../sass/applicant-form.scss */
+section.section-application-form form label.error#accommodation_option-error {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+/* line 574, ../sass/applicant-form.scss */
+section.section-application-form form legend {
+  padding-left: 15px;
+  font-size: 1.25rem;
+}
+/* line 578, ../sass/applicant-form.scss */
+section.section-application-form form .form-check-input[type=radio] {
+  border-radius: 15px;
+}
+/* line 581, ../sass/applicant-form.scss */
+section.section-application-form form .form-hide {
+  display: none;
+}
+/* line 585, ../sass/applicant-form.scss */
+section.section-application-form form .checkbox-container p {
+  font-size: 1rem;
+}
+/* line 588, ../sass/applicant-form.scss */
+section.section-application-form form .checkbox-container .checkbox-line {
+  display: flex;
+  align-items: center;
+}
+/* line 592, ../sass/applicant-form.scss */
+section.section-application-form form .checkbox-container .checkbox-line label {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+/* line 599, ../sass/applicant-form.scss */
+section.section-application-form .full-width {
+  width: auto !important;
+}
+/* line 604, ../sass/applicant-form.scss */
+section.section-application-form .step-container .step-breadcrumb-container {
+  margin-bottom: 50px;
+}
+@media (min-width: 996.97px) {
+  /* line 604, ../sass/applicant-form.scss */
+  section.section-application-form .step-container .step-breadcrumb-container {
+    display: none !important;
+  }
+}
+/* line 609, ../sass/applicant-form.scss */
+section.section-application-form .step-container .step-breadcrumb-container .step-title, section.section-application-form .step-container .step-breadcrumb-container .step-number {
+  margin-bottom: 10px;
+  text-align: left;
+  width: 60%;
+}
+/* line 614, ../sass/applicant-form.scss */
+section.section-application-form .step-container .step-breadcrumb-container .step-number {
+  display: flex;
+  border: 1px solid #003346;
+  border-radius: 10px;
+  height: 10px;
+  flex-direction: row-reverse;
+}
+/* line 620, ../sass/applicant-form.scss */
+section.section-application-form .step-container .step-breadcrumb-container .step-number > div {
+  width: 20%;
+}
+/* line 622, ../sass/applicant-form.scss */
+section.section-application-form .step-container .step-breadcrumb-container .step-number > div.active {
+  background: linear-gradient(to right, var(--bs-ilsc-color) 50%, transparent 0);
+  background-size: 200% 100%;
+  animation: makeItfadeIn .1s -.1s both;
+}
+/* line 627, ../sass/applicant-form.scss */
+section.section-application-form .step-container .step-breadcrumb-container .step-number > div.active ~ div {
+  background: linear-gradient(to right, var(--bs-ilsc-color) 50%, transparent 0);
+  background-size: 200% 100%;
+  animation: makeItfadeIn .1s -.1s both;
+}
+/* line 637, ../sass/applicant-form.scss */
+section.section-application-form .step-container .study-hide {
+  display: none !important;
+  margin-bottom: 0;
+}
+/* line 642, ../sass/applicant-form.scss */
+section.section-application-form .step-container .radio-container .option-selection-container {
+  display: flex;
+}
+/* line 646, ../sass/applicant-form.scss */
+section.section-application-form .step-container .radio-container .program-option {
+  padding: 10px 20px 10px 25px;
+  background: rgba(243, 243, 243, 0.9);
+}
+/* line 651, ../sass/applicant-form.scss */
+section.section-application-form .step-container .radio-container .option-select.program-option {
+  flex: 1;
+  padding: 0;
+  margin-bottom: 0;
+  height: 100%;
+}
+/* line 657, ../sass/applicant-form.scss */
+section.section-application-form .step-container .radio-container .option-select.program-option label {
+  display: inline-block;
+  font-size: 20px;
+  height: 100%;
+  padding: 15px 20px;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+/* line 671, ../sass/applicant-form.scss */
+section.section-application-form .step-container .radio-container .option-select.program-option input[type=radio] {
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+}
+/* line 676, ../sass/applicant-form.scss */
+section.section-application-form .step-container .radio-container .option-select.program-option input[type=radio]:checked + label {
+  background-color: var(--bs-ilsc-color);
+  color: #FFF;
+}
+/* line 682, ../sass/applicant-form.scss */
+section.section-application-form .step-container .radio-container .option-select.program-option:first-child {
+  margin-right: 10px;
+}
+/* line 685, ../sass/applicant-form.scss */
+section.section-application-form .step-container .radio-container .option-select.program-option:last-child {
+  margin-left: 10px;
+}
+/* line 691, ../sass/applicant-form.scss */
+section.section-application-form .step-container .study-program-alternate {
+  padding: 20px;
+  border: 2px solid #CCC;
+  border-radius: 5px;
+}
+/* line 698, ../sass/applicant-form.scss */
+section.section-application-form .step-container .study-information-form ul.applicant-status-boxes {
+  justify-content: space-evenly;
+}
+/* line 698, ../sass/applicant-form.scss */
+section.section-application-form .step-container .study-information-form input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+/* line 701, ../sass/applicant-form.scss */
+section.section-application-form .step-container .study-information-form input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+/* line 700, ../sass/applicant-form.scss */
+section.section-application-form .step-container .study-information-form ul.applicant-status-boxes > div {
+  display: flex;
+  border: 1px solid #CCC;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+/* line 709, ../sass/applicant-form.scss */
+section.section-application-form .step-container .study-information-form ul.applicant-status-boxes > div label {
+  padding-left: 0;
+}
+/* line 713, ../sass/applicant-form.scss */
+section.section-application-form .step-container .study-information-form ul.applicant-status-boxes > div h5 {
+  flex-basis: 100%;
+  height: 0;
+  margin-top: 10px;
+}
+/* line 719, ../sass/applicant-form.scss */
+section.section-application-form .step-container .study-information-form ul.applicant-status-boxes li {
+  width: initial;
+}
+/* line 721, ../sass/applicant-form.scss */
+section.section-application-form .step-container .study-information-form ul.applicant-status-boxes li .box-color {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  align-content: center;
+  display: grid;
+  font-size: 1.8rem;
+  background-color: #0082c2;
+}
+/* line 729, ../sass/applicant-form.scss */
+section.section-application-form .step-container .study-information-form ul.applicant-status-boxes li .box-color.selected {
+  color: #FFF;
+}
+/* line 738, ../sass/applicant-form.scss */
+section.section-application-form .step-container .input-container {
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+/* line 744, ../sass/applicant-form.scss */
+section.section-application-form .step-container .input-container.study-hide {
+  max-height: 0;
+  overflow: hidden;
+}
+/* line 750, ../sass/applicant-form.scss */
+section.section-application-form .step-container .step-title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+/* line 754, ../sass/applicant-form.scss */
+section.section-application-form .step-container .study-box-container {
+  border: 2px solid #cecece;
+  border-radius: 5px;
+  margin: 20px auto;
+  overflow: hidden;
+  padding: 20px;
+  width: 90%;
+}
+/* line 761, ../sass/applicant-form.scss */
+section.section-application-form .step-container .study-box-container.country-select-container {
+  overflow: visible;
+}
+/* line 764, ../sass/applicant-form.scss */
+section.section-application-form .step-container .study-box-container.disabled {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.5);
+}
+/* line 770, ../sass/applicant-form.scss */
+section.section-application-form .step-container .study-info-dependent-summary-container table {
+  width: 50%;
+  float: left;
+}
+/* line 775, ../sass/applicant-form.scss */
+section.section-application-form .step-container .dependents-container, section.section-application-form .step-container .additional-family-member-container {
+  display: flex;
+  flex-flow: wrap;
+}
+/* line 778, ../sass/applicant-form.scss */
+section.section-application-form .step-container .dependents-container .btn-container, section.section-application-form .step-container .additional-family-member-container .btn-container {
+  width: 180px;
+}
+/* line 781, ../sass/applicant-form.scss */
+section.section-application-form .step-container .dependents-container .d-class, section.section-application-form .step-container .dependents-container .f-class, section.section-application-form .step-container .additional-family-member-container .d-class, section.section-application-form .step-container .additional-family-member-container .f-class {
+  width: 50%;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  padding: 10px;
+}
+/* line 786, ../sass/applicant-form.scss */
+section.section-application-form .step-container .dependents-container .d-class .fa-minus-square, section.section-application-form .step-container .dependents-container .f-class .fa-minus-square, section.section-application-form .step-container .additional-family-member-container .d-class .fa-minus-square, section.section-application-form .step-container .additional-family-member-container .f-class .fa-minus-square {
+  float: right;
+  font-size: 1.2rem;
+  color: red;
+  cursor: pointer;
+}
+/* line 792, ../sass/applicant-form.scss */
+section.section-application-form .step-container .dependents-container .d-class h4, section.section-application-form .step-container .dependents-container .f-class h4, section.section-application-form .step-container .additional-family-member-container .d-class h4, section.section-application-form .step-container .additional-family-member-container .f-class h4 {
+  font-size: 1.5rem;
+}
+/* line 797, ../sass/applicant-form.scss */
+section.section-application-form .step-container .homestay-details {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 800, ../sass/applicant-form.scss */
+section.section-application-form .step-container .homestay-details .form-group {
+  width: 50%;
+}
+/* line 805, ../sass/applicant-form.scss */
+section.section-application-form .step-container .week-input input {
+  visibility: hidden;
+  position: absolute;
+}
+/* line 811, ../sass/applicant-form.scss */
+section.section-application-form .step-container .dropdown-container .caret {
+  float: right;
+  margin-top: 9px;
+  display: block;
+}
+/* line 816, ../sass/applicant-form.scss */
+section.section-application-form .step-container .dropdown-container .drop-select {
+  width: 100%;
+  border-radius: 5px;
+  background-color: rgba(243, 243, 243, 0.9);
+  padding: 25px 20px;
+  margin-top: 25px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  border: 0;
+}
+/* line 828, ../sass/applicant-form.scss */
+section.section-application-form .step-container .dropdown-container .dropdown-menu {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  text-align: center;
+  background-color: #f3f3f3;
+  border: 0;
+}
+/* line 837, ../sass/applicant-form.scss */
+section.section-application-form .step-container .dropdown-container .dropdown-menu li {
+  line-height: 1.5;
+  letter-spacing: 0.7px;
+  color: #666;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 7.5px 15px;
+  border-top: solid 1px #f3f3f3;
+}
+/* line 846, ../sass/applicant-form.scss */
+section.section-application-form .step-container .dropdown-container .dropdown-menu li:hover {
+  background-color: #ccc;
+}
+/* line 852, ../sass/applicant-form.scss */
+section.section-application-form .step-container .dropdown-container .dropdown {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+/* line 857, ../sass/applicant-form.scss */
+section.section-application-form .step-container .dropdown-container .dropdown.open ul {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.23);
+  border: solid 1px #666;
+  border-top: none;
+  height: 200px;
+  overflow-y: scroll;
+}
+/* line 865, ../sass/applicant-form.scss */
+section.section-application-form .step-container .dropdown-container .dropdown.open button#dLabel {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.23);
+  border: solid 1px #666;
+  border-bottom: none;
+}
+/* line 876, ../sass/applicant-form.scss */
+section.section-application-form .step-container .dropdown-container .dropdown i {
+  font-weight: 800;
+  position: absolute;
+  right: 30px;
+  top: 55%;
+}
+/* line 884, ../sass/applicant-form.scss */
+section.section-application-form .step-container .btn-container {
+  margin-bottom: 50px;
+  clear: both;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 891, ../sass/applicant-form.scss */
+section.section-application-form .step-container .btn-container.center {
+  display: block;
+}
+/* line 894, ../sass/applicant-form.scss */
+section.section-application-form .step-container .btn-container button {
+  margin: 50px 0 20px;
+  text-align: center;
+  width: 150px;
+}
+/* line 899, ../sass/applicant-form.scss */
+section.section-application-form .step-container .btn-container button.btn {
+  line-height: 1.3;
+  letter-spacing: initial;
+  padding: 15px 20px;
+  border-radius: 30px;
+}
+/* line 907, ../sass/applicant-form.scss */
+section.section-application-form .step-container .btn-container button.prev {
+  float: left;
+}
+/* line 910, ../sass/applicant-form.scss */
+section.section-application-form .step-container .btn-container button.next {
+  float: right;
+}
+/* line 913, ../sass/applicant-form.scss */
+section.section-application-form .step-container .btn-container button.next.disable {
+  background-color: #aeaeae;
+  color: #cecece;
+  cursor: default;
+}
+/* line 919, ../sass/applicant-form.scss */
+section.section-application-form .step-container .btn-container button.btn-orange {
+  border-color: #FFF;
+}
+/* line 922, ../sass/applicant-form.scss */
+section.section-application-form .step-container .btn-container button.btn-orange:hover {
+  border-color: #f93 !important;
+}
+/* line 925, ../sass/applicant-form.scss */
+section.section-application-form .step-container .btn-container button.btn-orange:focus {
+  border-color: #fe0101;
+}
+/* line 932, ../sass/applicant-form.scss */
+section.section-application-form .step-container ul.applicant-status-boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  position: relative;
+  width: 100%;
+}
+/* line 939, ../sass/applicant-form.scss */
+section.section-application-form .step-container ul.applicant-status-boxes li {
+  width: 33.33%;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0;
+}
+/* line 945, ../sass/applicant-form.scss */
+section.section-application-form .step-container ul.applicant-status-boxes li input {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+/* line 951, ../sass/applicant-form.scss */
+section.section-application-form .step-container ul.applicant-status-boxes li label {
+  text-align: center;
+  width: 100%;
+}
+/* line 954, ../sass/applicant-form.scss */
+section.section-application-form .step-container ul.applicant-status-boxes li label.error {
+  position: absolute;
+  top: -40px;
+  left: 180px;
+}
+/* line 960, ../sass/applicant-form.scss */
+section.section-application-form .step-container ul.applicant-status-boxes li label .box-color {
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all 0.5s ease;
+  background-position-x: center;
+}
+@media (max-width: 1199.97px) {
+  /* line 960, ../sass/applicant-form.scss */
+  section.section-application-form .step-container ul.applicant-status-boxes li label .box-color {
+    height: 150px;
+  }
+}
+/* line 977, ../sass/applicant-form.scss */
+section.section-application-form .step-container ul.applicant-status-boxes li label .box-color:before, section.section-application-form .step-container ul.applicant-status-boxes li label .box-color:after {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform-origin: center;
+  box-sizing: inherit;
+  content: "";
+  position: absolute;
+  border-radius: 10px;
+}
+/* line 991, ../sass/applicant-form.scss */
+section.section-application-form .step-container ul.applicant-status-boxes li label .box-color:before {
+  border-top: 3px solid orange;
+  border-bottom: 3px solid orange;
+  transform: scale3d(0, 1, 1);
+}
+/* line 997, ../sass/applicant-form.scss */
+section.section-application-form .step-container ul.applicant-status-boxes li label .box-color:after {
+  border-left: 3px solid orange;
+  border-right: 3px solid orange;
+  transform: scale3d(1, 0, 1);
+}
+/* line 1003, ../sass/applicant-form.scss */
+section.section-application-form .step-container ul.applicant-status-boxes li label .box-color.selected:before, section.section-application-form .step-container ul.applicant-status-boxes li label .box-color.selected:after {
+  transform: scale3d(1, 1, 1);
+  transition: transform 0.3s;
+}
+/* line 1008, ../sass/applicant-form.scss */
+section.section-application-form .step-container ul.applicant-status-boxes li label .box-color.selected {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+/* line 1015, ../sass/applicant-form.scss */
+section.section-application-form .step-container ul.applicant-status-boxes li label.box-selection .box-color {
+  background-color: coral;
+}
+/* line 1021, ../sass/applicant-form.scss */
+section.section-application-form .step-container ul.applicant-status-boxes li label#applicant-agent .box-color {
+  background-color: coral;
+  background-image: url(https://www.ilsc.com/hubfs/template-resources/images/internal/background/img_agent_application.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* line 1029, ../sass/applicant-form.scss */
+section.section-application-form .step-container ul.applicant-status-boxes li label#applicant-advisor .box-color {
+  background-color: #b0e947;
+  background-image: url(https://www.ilsc.com/hubfs/Website/Landing%20Pages/ILSC%20Online%20Ads%20-%20organized%20by%20Berlitz%20Team/img_student_with_advisor.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* line 1038, ../sass/applicant-form.scss */
+section.section-application-form .step-container ul.applicant-status-boxes li label#applicant-student .box-color {
+  background-color: #eeff50;
+  background-image: url(https://www.ilsc.com/hubfs/template-resources/images/internal/background/img_student_application.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}

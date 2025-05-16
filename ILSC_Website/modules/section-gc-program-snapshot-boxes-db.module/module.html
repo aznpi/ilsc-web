@@ -1,0 +1,579 @@
+{% set yearStr = local_dt|format_date('yyyy') %}
+{% set nextYearStr = yearStr|int + 2 %}
+{% set currentDate = yearStr+'-01-01T00:00:00+0000' %}
+{% set currentDate = currentDate|strtotime("yyyy-MM-dd'T'HH:mm:ssZ") %}
+{% set currentUnix = currentDate|unixtimestamp %}
+{% set nextDate = nextYearStr+'-12-31T23:59:59+0000' %}
+{% set nextDate = nextDate|strtotime("yyyy-MM-dd'T'HH:mm:ssZ") %}
+{% set nextUnix = nextDate|unixtimestamp %}
+{% set queryparam = "" %}
+{% set queryparam = queryparam ~ "&parent_program_code__eq=" +module.program_area_code|urlencode %}
+{% set queryparam = queryparam ~ "&country__in=" +module.country_program_choice|urlencode  %}
+{% set queryparam = queryparam ~ "&enable__eq=1"  %}
+{% set program = hubdb_table_rows(4690691,queryparam) %}
+
+{% set campusArray = [] %}
+{% set languageArray = [] %}
+{% set coopArray = [] %}
+{% set programArray = [] %}
+
+{% for row in program %}
+  
+  {% for item in row.new_campus %}
+    {% do campusArray.append(item.name) %}
+  {% endfor %}
+  
+  {% for item in row.ilsc_level %}
+    {% do languageArray.append({level:item.level_name,notes:item.level_notes}) %}
+  {% endfor %}
+
+   {% do programArray.append({code: row.program_code,schedule: row.schedule,creditTransfer: row.credit_transfer_notes})%}
+   {% do coopArray.append(row.is_co_op) %}
+
+{% endfor %}
+
+{% set campusArray = campusArray|unique %}
+
+
+{% set schedParam = "" %}
+{% if module.country_program_choice == 'Canada' %}
+  {% set dayScheduleArr = [] %}
+  {% set morningEnable = module.box_field_group.scheduled_breaks_field_group.day_time_field_group.morning_enable_boolean ? 'Morning' : ''  %}
+  {% set eveningEnable = module.box_field_group.scheduled_breaks_field_group.day_time_field_group.evening_boolean ? 'Evening' : '' %}
+
+  {% do dayScheduleArr.append(morningEnable) %}
+  {% do dayScheduleArr.append(eveningEnable) %}
+
+  {% if dayScheduleArr|length > 0 %}
+    {% set schedParam = schedParam ~ "&day_schedule__in="+dayScheduleArr|replace('[','')|replace(']','') %}
+  {% endif %}
+
+{% endif %}
+
+{% set schedParam = schedParam ~ "&school__in="+'Greystone College 18+'|urlencode %}
+{% set schedParam = schedParam ~ "&country__in=" +module.country_program_choice|urlencode %}
+{% set schedParam = schedParam ~ "&campus__in="+campusArray|replace('[','')|replace(']','') %}
+{% set schedParam = schedParam ~ "&enable__eq=1" %}
+{% set schedParam = schedParam ~ "&orderBy=start_date"  %}
+{% set schedBreaks = hubdb_table_rows(7909888,schedParam) %}
+
+{% set schedBreakArray = [] %}
+
+{% for schedItem in schedBreaks %}
+  {% set campusArr = [] %}
+  {% for campus in schedItem.campus %}
+    {% if campusArray is containing campus.name %}
+      {% do campusArr.append(campus.name) %}
+    {% endif %}
+  {% endfor %}
+  {% do schedBreakArray.append({season_name: schedItem.season_name["name"],day_schedule: schedItem.day_schedule["name"],start_date: schedItem.start_date, end_date: schedItem.end_date, campuses: campusArr|string})%}
+{% endfor %}
+
+<section class="section section-snapshot {% if module.bc_color.color == '#FFFFFF' %} bg-white-canvas {% endif %}" id="content" style="background-color:rgba({{ module.bc_color.color|convert_rgb }}, {{ module.bc_color.opacity/100 }});">
+	<div class="container">
+		<div class="row">
+      <!--campus box-->
+      {% if module.box_field_group.campus_field_group.enable %}
+        <div class="col-md-4 box-container">
+         <div class="icon-container">
+           {% if module.box_field_group.campus_field_group.icon_image.src %}
+            {% set sizeAttrs = 'width="{{ module.box_field_group.campus_field_group.icon_image.width }}" height="{{ module.box_field_group.campus_field_group.icon_image.height }}"' %}
+            {% if module.box_field_group.campus_field_group.icon_image.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ module.box_field_group.campus_field_group.icon_image.width }}" height="{{ module.box_field_group.campus_field_group.icon_image.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif module.box_field_group.campus_field_group.icon_image.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ module.box_field_group.campus_field_group.icon_image.max_width }}" height="{{ module.box_field_group.campus_field_group.icon_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+             {% set loadingAttr = module.box_field_group.campus_field_group.icon_image.loading != 'disabled' ? 'loading="{{ module.box_field_group.campus_field_group.icon_image.loading }}"' : '' %}
+            <img src="{{ module.box_field_group.campus_field_group.icon_image.src }}" alt="{{ module.box_field_group.campus_field_group.icon_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+          </div>
+          <div class="title-container">
+            <h4>
+              {{ module.box_field_group.campus_field_group.title_text }}
+            </h4>
+          </div>
+          <div class="description">
+            <ul>
+              {% for item in campusArray|unique|sort(False,False) %}
+                <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+            
+            {% inline_rich_text field="box_field_group.campus_field_group.additional_rich_text" value="{{ module.box_field_group.campus_field_group.additional_rich_text }}" %}
+            
+            {% if module.cta_group.hide_show_cta == "show"%}
+          
+             {% for item in module.cta_group.cta_link_field_group %}
+              {% set href = item.link_url.url.href %}
+
+              <div class="btn-video-container">
+                {% if item.icon_choice != 'none' %}
+                  <div>
+                      <i class="{{item.icon_choice}}"></i>
+                  </div>
+                {% endif %}
+                <div>
+                  <a {% if item.icon_choice == 'far fa-play-circle' %} href="#ilscModal" data-toggle="modal" class="video-btn" src="{{ href }}" {% else %} href="{{ href }}" {% endif %} {% if item.link_url.open_in_new_tab %}target="_blank"{% endif %}>
+                    {{ item.link_url_text }}
+                  </a>
+                </div>
+              </div>
+
+            {% endfor %}
+          {% endif %}
+            
+          </div>
+        </div>
+      {% endif %}
+      <!--Program Length box-->
+      {% if module.box_field_group.program_length_field_group.enable %}
+        <div class="col-md-4 box-container">
+          <div class="icon-container">
+            {% if module.box_field_group.program_length_field_group.icon_image.src %}
+              {% set sizeAttrs = 'width="{{ module.box_field_group.program_length_field_group.icon_image.width }}" height="{{ module.box_field_group.program_length_field_group.icon_image.height }}"' %}
+              {% if module.box_field_group.program_length_field_group.icon_image.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.box_field_group.program_length_field_group.icon_image.width }}" height="{{ module.box_field_group.program_length_field_group.icon_image.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif module.box_field_group.program_length_field_group.icon_image.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.box_field_group.program_length_field_group.icon_image.max_width }}" height="{{ module.box_field_group.program_length_field_group.icon_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+               {% set loadingAttr = module.box_field_group.program_length_field_group.icon_image.loading != 'disabled' ? 'loading="{{ module.box_field_group.program_length_field_group.icon_image.loading }}"' : '' %}
+              <img src="{{ module.box_field_group.program_length_field_group.icon_image.src }}" alt="{{ module.box_field_group.program_length_field_group.icon_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+          <div class="title-container">
+            <h4>{{ module.box_field_group.program_length_field_group.title_text }}</h4>
+          </div>
+          <div class="description">
+            {% set scheduleWeekdayArray = [] %}
+         {% set scheduleWeekendArray = [] %}
+         {% set scheduleMorningArray = [] %}
+         {% set scheduleDaytimeArray = [] %}
+         {% set scheduleEveningArray = [] %}
+         {% set scheduleAfternoonArray = [] %}
+         {% set scheduleHybridArray = [] %}
+         {% set scheduleHybridEveningArray = [] %}
+          {% set scheduleHybridMorningArray = [] %}
+        
+          {% for row in program %}      
+            {% if row.schedule|trim == 'Weekday' && !row.is_co_op %}
+               {% do scheduleWeekdayArray.append(row.program_length_weeks) %}
+            {% endif %}          
+            {% if row.schedule|trim == 'Weekend' && !row.is_co_op %}
+             {% do scheduleWeekendArray.append(row.program_length_weeks) %}
+            {% endif %}
+            {% if row.schedule|trim == 'Morning' && !row.is_co_op %}
+             {% do scheduleMorningArray.append(row.program_length_weeks) %}
+            {% endif %}
+            {% if row.schedule|trim == 'Daytime' && !row.is_co_op %}
+             {% do scheduleDaytimeArray.append(row.program_length_weeks) %}
+            {% endif %}
+            {% if row.schedule|trim == 'Evening' && !row.is_co_op %}
+              {% do scheduleEveningArray.append(row.program_length_weeks) %}
+            {% endif %}
+            {% if row.schedule|trim == 'Afternoon' && !row.is_co_op %}
+              {% do scheduleAfternoonArray.append(row.program_length_weeks) %}
+            {% endif %}
+            {% if row.schedule|trim == 'Hybrid' && !row.is_co_op %}
+              {% do scheduleHybridArray.append(row.program_length_weeks) %}
+            {% endif %}
+            {% if row.schedule|trim == 'Hybrid Evening' && !row.is_co_op %}
+              {% do scheduleHybridEveningArray.append(row.program_length_weeks) %}
+            {% endif %}
+          {% if row.schedule|trim == 'Hybrid Morning' && !row.is_co_op %}
+              {% do scheduleHybridMorningArray.append(row.program_length_weeks) %}
+            {% endif %}
+            
+          {% endfor %}
+        {% if scheduleWeekdayArray|length > 0 || scheduleWeekendArray|length > 0 || scheduleMorningArray|length > 0 || scheduleDaytimeArray|length > 0 || scheduleEveningArray|length > 0 || scheduleAfternoonArray|length > 0 || scheduleHybridArray|length > 0 || scheduleHybridEveningArray|length > 0 || scheduleHybridMorningArray|length > 0%}
+          <span class="bold">ACADEMIC</span>
+        {% endif %}
+         {% if scheduleWeekdayArray|length > 0 || scheduleWeekendArray|length > 0 || scheduleMorningArray|length > 0 ||scheduleDaytimeArray|length > 0 || scheduleEveningArray|length > 0 || scheduleAfternoonArray|length > 0 || scheduleHybridArray|length > 0 || scheduleHybridEveningArray|length > 0 || scheduleHybridMorningArray|length > 0%}
+          <p>
+            {% if scheduleWeekdayArray|length > 0 %}
+              Weekday {% for row in scheduleWeekdayArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+            {% endif %}
+             {% if scheduleWeekendArray|length > 0 %}
+              Weekend {% for row in scheduleWeekendArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+            {% endif %}
+            {% if scheduleMorningArray|length > 0 %}
+                Morning {% for row in scheduleMorningArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+              {% endif %}
+             {% if scheduleDaytimeArray|length > 0 %}
+                Daytime {% for row in scheduleDaytimeArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+              {% endif %}
+              {% if scheduleAfternoonArray|length > 0 %}
+               Afternoon {% for row in scheduleEveningArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+              {% endif %}
+             {% if scheduleEveningArray|length > 0 %}
+                Evening {% for row in scheduleEveningArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+              {% endif %}
+            
+            {% if scheduleHybridArray|length > 0 %}
+               Hybrid {% for row in scheduleEveningArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+              {% endif %}
+            {% if scheduleHybridMorningArray|length > 0 %}
+               Hybrid Morning{% for row in scheduleEveningArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+              {% endif %}
+            {% if scheduleHybridEveningArray|length > 0 %}
+               Hybrid Evening{% for row in scheduleEveningArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+              {% endif %}
+            
+           
+           </p>
+          {% endif %}
+                  
+           {% set scheduleWeekdayArray = [] %}
+           {% set scheduleWeekendArray = [] %}
+          {% set scheduleMorningArray = [] %}
+           {% set scheduleDaytimeArray = [] %}
+           {% set scheduleEveningArray = [] %}
+            {% set scheduleAfternoonArray = [] %}
+          {% set scheduleHybridArray = [] %}
+          {% set scheduleHybridEveningArray = [] %}
+          {% set scheduleHybridMorningArray = [] %}
+        
+           {% for row in program %}      
+            {% if row.schedule|trim == 'Weekday' && row.is_co_op %}
+               {% do scheduleWeekdayArray.append(row.program_length_weeks) %}
+            {% endif %}          
+            {% if row.schedule|trim == 'Weekend' && row.is_co_op %}
+             {% do scheduleWeekendArray.append(row.program_length_weeks) %}
+            {% endif %}
+            {% if row.schedule|trim == 'Morning' && row.is_co_op %}
+             {% do scheduleMorningArray.append(row.program_length_weeks) %}
+            {% endif %}
+            {% if row.schedule|trim == 'Daytime' && row.is_co_op %}
+             {% do scheduleDaytimeArray.append(row.program_length_weeks) %}
+            {% endif %}
+            {% if row.schedule|trim == 'Evening' && row.is_co_op %}
+              {% do scheduleEveningArray.append(row.program_length_weeks) %}
+            {% endif %}
+            {% if row.schedule|trim == 'Afternoon' && row.is_co_op %}
+              {% do scheduleAfternoonArray.append(row.program_length_weeks) %}
+            {% endif %}
+            {% if row.schedule|trim == 'Hybrid' && row.is_co_op %}
+              {% do scheduleHybridArray.append(row.program_length_weeks) %}
+            {% endif %}
+          {% if row.schedule|trim == 'Hybrid Evening' && row.is_co_op %}
+              {% do scheduleHybridEveningArray.append(row.program_length_weeks) %}
+            {% endif %}
+          {% if row.schedule|trim == 'Hybrid Morning' && row.is_co_op %}
+              {% do scheduleHybridMorningArray.append(row.program_length_weeks) %}
+            {% endif %}
+          {% endfor %}
+          {% if scheduleWeekdayArray|length > 0 || scheduleWeekendArray|length > 0 || scheduleMorningArray|length > 0 || scheduleDaytimeArray|length > 0 || scheduleEveningArray|length > 0 || scheduleAfternoonArray|length > 0 || scheduleHybridArray|length > 0 || scheduleHybridEveningArray|length > 0 || scheduleHybridMorningArray|length > 0 %}
+            <span class="bold">{{ module.box_field_group.program_length_field_group.co_op_practicum_title_text }}</span>
+          {% endif %}
+        {% if scheduleWeekdayArray|length > 0 || scheduleWeekendArray|length > 0 || scheduleMorningArray|length > 0 || scheduleDaytimeArray|length > 0 || scheduleEveningArray|length > 0 || scheduleAfternoonArray|length > 0 || scheduleHybridArray|length > 0 || scheduleHybridEveningArray|length > 0 || scheduleHybridMorningArray|length > 0 %}
+            <p>
+               {% if scheduleWeekdayArray|length > 0 %}
+                Weekday {% for row in scheduleWeekdayArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+              {% endif %}
+               {% if scheduleWeekendArray|length > 0 %}
+                Weekend {% for row in scheduleWeekendArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+              {% endif %}
+              {% if scheduleMorningArray|length > 0 %}
+                  Morning {% for row in scheduleMorningArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+                {% endif %}
+               {% if scheduleDaytimeArray|length > 0 %}
+                  Daytime {% for row in scheduleDaytimeArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+                {% endif %}
+              {% if scheduleAfternoonArray|length > 0 %}
+                  Afternoon {% for row in scheduleAfternoonArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+                {% endif %}
+               {% if scheduleEveningArray|length > 0 %}
+                  Evening {% for row in scheduleEveningArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+                {% endif %}
+              
+              {% if scheduleHybridArray|length > 0 %}
+                  Hybrid {% for row in scheduleHybridArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+                {% endif %}
+              {% if scheduleHybridMorningArray|length > 0 %}
+                  Hybrid Morning {% for row in scheduleHybridMorningArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+                {% endif %}
+              {% if scheduleHybridEveningArray|length > 0 %}
+                  Hybrid Evening {% for row in scheduleHybridEveningArray|unique|sort(false,false) %}{{ row }}{% if !loop.last %},{% endif %}{% endfor %} weeks<br>
+                {% endif %}
+              
+             
+            </p>
+        {% endif %}
+            
+            {% inline_rich_text field="box_field_group.program_length_field_group.additional_rich_text" value="{{ module.box_field_group.program_length_field_group.additional_rich_text }}" %}
+            
+          </div>
+        </div>
+      {% endif %}
+      <!-- start dates box -->
+      {% if module.box_field_group.start_date_field_group.enable %}
+        <div class="col-md-4 box-container start-date-box-container">
+          <div class="icon-container">
+            {% if module.box_field_group.start_date_field_group.icon_image.src %}
+              {% set sizeAttrs = 'width="{{ module.box_field_group.start_date_field_group.icon_image.width }}" height="{{ module.box_field_group.start_date_field_group.icon_image.height }}"' %}
+              {% if module.box_field_group.start_date_field_group.icon_image.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.box_field_group.start_date_field_group.icon_image.width }}" height="{{ module.box_field_group.start_date_field_group.icon_image.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif module.box_field_group.start_date_field_group.icon_image.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.box_field_group.start_date_field_group.icon_image.max_width }}" height="{{ module.box_field_group.start_date_field_group.icon_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+               {% set loadingAttr = module.box_field_group.start_date_field_group.icon_image.loading != 'disabled' ? 'loading="{{ module.box_field_group.start_date_field_group.icon_image.loading }}"' : '' %}
+              <img src="{{ module.box_field_group.start_date_field_group.icon_image.src }}" alt="{{ module.box_field_group.start_date_field_group.icon_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+          <div class="title-container">
+            <h4>{{ module.box_field_group.start_date_field_group.title_text }}</h4>
+          </div>
+          <div class="description">
+            <ul>
+              {% if module.country_program_choice != 'Australia' %}
+                {% for group in programArray|groupby('schedule') %}
+                  <li>
+                    <ul>
+                      <li class="bold" style="margin-bottom:10px;">{{group.grouper}}</li>
+                        {% set programCodes = [] %}
+                        {% for content in group.list %}
+                          {% do programCodes.append(content.code) %}
+                        {% endfor %}
+                        {% set sdParam = "" %}
+                        {% set sdParam = sdParam ~ "&program__in="+programCodes|replace('[','')|replace(']','')  %}
+                        {% set sdParam = sdParam ~ "&start_dates__gte="+currentUnix  %}
+                        {% set sdParam = sdParam ~ "&start_dates__lte="+nextUnix  %}
+                        {% set sdParam = sdParam ~ "&orderBy=start_dates"  %}
+                        {% set startDates = hubdb_table_rows(5315599,sdParam) %}
+                        {% set datesArray = [] %}
+
+                        {% for item in startDates %}
+                          {% for item2 in item.campus%}
+                            {% do datesArray.append({year:item.start_dates|format_date('yyyy'),date:item.start_dates|format_date('MMM dd'),campus:item2.name})%}
+                          {% endfor %}
+                        {% endfor %}
+
+
+                       <li style="padding-left:20px;margin-bottom:20px;">
+                         <ul>
+                             <li>
+                               <ul class="list-campuses"> 
+                                 {% for datesCampus in datesArray|groupby('campus') %}
+                                 <li style="margin:10px 0;"><span class="bold">{{datesCampus.grouper}}: </span></li>
+                                 <li class="list-start-dates">
+                                   <ul>
+                                     {% for datesGroup in datesCampus.list|groupby('year') %}                               
+                                     <li class="list-year">
+                                       <ul>
+                                         <li><span class="bold">{{datesGroup.grouper}}: </span>
+                                           {% for dateItem in datesGroup.list|unique %}
+                                           {{dateItem.date}}{% if !loop.last %}, {% endif %} 
+                                           {% endfor %}</li>
+
+                                       </ul>   
+                                     </li>
+
+                                     {% endfor %}
+                                   </ul>
+                                 </li>
+                                 {% endfor %} 
+                               </ul>
+                             </li>
+                             <li class="show-link-dates"><span>Show Dates</span></li>
+                           </ul>
+                        </li>
+                      </ul>
+                    </li>
+                {% endfor %}
+              {% else %}
+                {% set programCodes = [] %}
+                {% for content in programArray %}
+                  {% do programCodes.append(content.code) %}
+                {% endfor %}
+                {% set sdParam = "" %}
+                {% set sdParam = sdParam ~ "&program__in="+programCodes|replace('[','')|replace(']','')  %}
+                {% set sdParam = sdParam ~ "&start_dates__gte="+currentUnix  %}
+                {% set sdParam = sdParam ~ "&start_dates__lte="+nextUnix  %}
+                {% set sdParam = sdParam ~ "&orderBy=start_dates"  %}
+                {% set startDates = hubdb_table_rows(5315599,sdParam) %}
+                {% set datesArray = [] %}
+
+                {% for item in startDates %}
+                  
+                    {% do datesArray.append({year:item.start_dates|format_date('yyyy'),date:item.start_dates|format_date('MMM dd')})%}
+                  
+                {% endfor %}
+                           
+                <li style="padding-left:20px;margin-bottom:20px;">
+                  <ul>
+                    <li>
+                      <ul class="list-campuses"> 
+                           
+                        <li class="list-start-dates">
+                          <ul>
+                            {% for datesGroup in datesArray|unique|groupby('year') %}                               
+                            <li class="list-year">
+                              <ul>
+                                <li><span class="bold">{{datesGroup.grouper}}: </span>
+                                  {% for dateItem in datesGroup.list|unique %}
+                                  {{dateItem.date}}{% if !loop.last %}, {% endif %} 
+                                  {% endfor %}</li>
+
+                              </ul>   
+                            </li>
+
+                            {% endfor %}
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="show-link-dates"><span>Show Dates</span></li>
+                  </ul>
+              </li>
+              {% endif %}
+            </ul>
+            {% inline_rich_text field="box_field_group.start_date_field_group.additional_rich_text" value="{{ module.box_field_group.start_date_field_group.additional_rich_text }}" %}
+          </div>
+        </div>
+      {% endif %}
+      
+      <!--Schedule Breaks box-->
+      {% if module.box_field_group.scheduled_breaks_field_group.enable %}
+        <div class="col-md-4 box-container">
+          <div class="icon-container">
+            {% if module.box_field_group.scheduled_breaks_field_group.icon_image.src %}
+              {% set sizeAttrs = 'width="{{ module.box_field_group.scheduled_breaks_field_group.icon_image.width }}" height="{{ module.box_field_group.scheduled_breaks_field_group.icon_image.height }}"' %}
+              {% if module.box_field_group.scheduled_breaks_field_group.icon_image.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.box_field_group.scheduled_breaks_field_group.icon_image.width }}" height="{{ module.box_field_group.scheduled_breaks_field_group.icon_image.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif module.box_field_group.scheduled_breaks_field_group.icon_image.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.box_field_group.scheduled_breaks_field_group.icon_image.max_width }}" height="{{ module.box_field_group.scheduled_breaks_field_group.icon_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+               {% set loadingAttr = module.box_field_group.scheduled_breaks_field_group.icon_image.loading != 'disabled' ? 'loading="{{ module.box_field_group.scheduled_breaks_field_group.icon_image.loading }}"' : '' %}
+              <img src="{{ module.box_field_group.scheduled_breaks_field_group.icon_image.src }}" alt="{{ module.box_field_group.scheduled_breaks_field_group.icon_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+          <div class="title-container">
+            <h4>{{ module.box_field_group.scheduled_breaks_field_group.title_text }}</h4>
+          </div>
+          <div class="description">
+            
+            {% for schedGroup in schedBreakArray|groupby('season_name') %}
+              <ul>
+                {% if schedGroup.grouper != 'null' %}
+                  <li class="bold">{{schedGroup.grouper}} Breaks:</li>
+                {% endif %}
+                
+                <li>  
+                  <ul>
+                    {% for sched in schedGroup.list|groupby('day_schedule') %}
+                    
+                    {% if sched.grouper != 'null' %}
+                      <li class="bold italic">{{sched.grouper}}:</li>
+                    {% endif %}
+                      <li>
+                        <ul class="date-list">
+                          {% for date in sched.list|groupby('campuses') %}
+                            <li>{{date.grouper|replace('[','')|replace(']','')}}:</li>
+                            {% for item in date.list %}
+                              <li class="date-cell">
+                                {{item.start_date|format_date('MMM dd, yyyy')}} - {{item.end_date|format_date('MMM dd, yyyy')}}
+                              </li>
+                            {% endfor %}
+                          {% endfor %}
+                        </ul>
+                      </li>
+                      
+                    {% endfor %}
+                  </ul>
+                </li>
+                
+                
+              </ul>
+            {% endfor %}
+            
+           {% inline_rich_text field="box_field_group.scheduled_breaks_field_group.additional_rich_text" value="{{ module.box_field_group.scheduled_breaks_field_group.additional_rich_text }}" %}
+            
+          </div>
+        </div>
+      {% endif %}
+      <!--Language Level box-->
+      {% if module.box_field_group.language_level_field_group.enable %}
+        <div class="col-md-4 box-container">
+          <div class="icon-container">
+            {% if module.box_field_group.language_level_field_group.icon_image.src %}
+              {% set sizeAttrs = 'width="{{ module.box_field_group.language_level_field_group.icon_image.width }}" height="{{ module.box_field_group.language_level_field_group.icon_image.height }}"' %}
+              {% if module.box_field_group.language_level_field_group.icon_image.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.box_field_group.language_level_field_group.icon_image.width }}" height="{{ module.box_field_group.language_level_field_group.icon_image.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif module.box_field_group.language_level_field_group.icon_image.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.box_field_group.language_level_field_group.icon_image.max_width }}" height="{{ module.box_field_group.language_level_field_group.icon_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+               {% set loadingAttr = module.box_field_group.language_level_field_group.icon_image.loading != 'disabled' ? 'loading="{{ module.box_field_group.language_level_field_group.icon_image.loading }}"' : '' %}
+              <img src="{{ module.box_field_group.language_level_field_group.icon_image.src }}" alt="{{ module.box_field_group.language_level_field_group.icon_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+          <div class="title-container">
+            <h4>{{ module.box_field_group.language_level_field_group.title_text }}</h4>
+          </div>
+          <div class="description">
+            {% if module.box_field_group.language_level_field_group.show_levels %}
+              <ul>
+                {% for item in languageArray|unique %}
+                  {% set levelArr = item.level|split(':')%}
+                  <li>
+                    <p>
+                      {% for level in levelArr %}
+                        {% if levelArr|length > 1 %}
+                          {% if loop.first %}
+                            <strong>{{level}} :</strong>
+                         {% else %}
+                            {{level}}
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+                    </p>
+                      {{item.notes}}
+
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}         
+            {% if module.country_program_choice == 'Canada' %}
+              {% inline_rich_text field="box_field_group.language_level_field_group.transfer_canada_rich_text" value="{{ module.box_field_group.language_level_field_group.transfer_canada_rich_text }}" %}
+            {% endif %}
+            {% inline_rich_text field="box_field_group.language_level_field_group.additional_rich_text" value="{{ module.box_field_group.language_level_field_group.additional_rich_text }}" %}
+            
+          </div>
+        </div>
+      {% endif %}
+      <!--Credit Transfer box-->
+      {% if module.box_field_group.credit_transfer_field_group.enable %}
+        <div class="col-md-4 box-container">
+          <div class="icon-container">
+            {% if module.box_field_group.credit_transfer_field_group.icon_image.src %}
+              {% set sizeAttrs = 'width="{{ module.box_field_group.credit_transfer_field_group.icon_image.width }}" height="{{ module.box_field_group.credit_transfer_field_group.icon_image.height }}"' %}
+              {% if module.box_field_group.credit_transfer_field_group.icon_image.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.box_field_group.credit_transfer_field_group.icon_image.width }}" height="{{ module.box_field_group.credit_transfer_field_group.icon_image.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif module.box_field_group.credit_transfer_field_group.icon_image.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.box_field_group.credit_transfer_field_group.icon_image.max_width }}" height="{{ module.box_field_group.credit_transfer_field_group.icon_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+               {% set loadingAttr = module.box_field_group.credit_transfer_field_group.icon_image.loading != 'disabled' ? 'loading="{{ module.box_field_group.credit_transfer_field_group.icon_image.loading }}"' : '' %}
+              <img src="{{ module.box_field_group.credit_transfer_field_group.icon_image.src }}" alt="{{ module.box_field_group.credit_transfer_field_group.icon_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+          <div class="title-container">
+            <h4>{{ module.box_field_group.credit_transfer_field_group.title_text }}</h4>
+          </div>
+          <div class="description">
+            {% if module.box_field_group.credit_transfer_field_group.show_content %}
+              {% for credit in programArray|groupby('creditTransfer')%}
+                {% if credit.grouper != 'null' %}
+                  <p>
+                     {{credit.grouper}}
+                  </p>
+                {% endif %}
+              {% endfor%}
+            {% endif %}
+            
+            {% inline_rich_text field="box_field_group.credit_transfer_field_group.additional_rich_text" value="{{ module.box_field_group.credit_transfer_field_group.additional_rich_text }}" %}
+            
+          </div>
+        </div>
+      {% endif %}
+    </div>
+    
+  </div>
+</section>

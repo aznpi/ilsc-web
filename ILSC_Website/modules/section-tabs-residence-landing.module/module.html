@@ -1,0 +1,185 @@
+{% set queryparam = "" %}
+
+{% set string_to_compare = content.name %}
+
+{% if string_to_compare is string_containing "Canada" %}
+  {% set queryVar = 'Canada' %}
+{% elif string_to_compare is string_containing "Australia" %}
+  {% set queryVar = 'Australia' %}
+{% elif string_to_compare is string_containing "India" %}
+  {% set queryVar = 'India' %}
+{% endif %}
+
+{% set queryparamCa = queryparam ~ "&country__eq=Canada&location_type__eq=City"  %}
+{% set queryparamCaEnable = queryparam ~ "&country__eq=Canada&enable__eq=enable"  %}
+{% set queryparamAu = queryparam ~ "&country__eq=Australia&location_type__eq=City"  %}
+{% set queryparamAuEnable = queryparam ~ "&country__eq=Australia&enable__eq=enable"  %}
+{% set queryparamInd = queryparam ~ "&country__eq=India&location_type__eq=City"  %}
+{% set queryparamIndEnable = queryparam ~ "&country__eq=India&enable__eq=enable"  %}
+
+{% set tableCityCa = hubdb_table_rows(2639459,queryparamCa) %}
+{% set tableCa = hubdb_table_rows(2642568,queryparamCaEnable) %}
+
+{% set tableCityAu = hubdb_table_rows(2639459,queryparamAu) %}
+{% set tableAu = hubdb_table_rows(2642568,queryparamAuEnable) %}
+
+{% set tableCityInd = hubdb_table_rows(2639459,queryparamInd) %}
+{% set tableInd = hubdb_table_rows(2642568,queryparamIndEnable) %}
+
+<section id="content" class="tab-navigation-landing section bg-white-canvas">
+	
+	<div class="container">
+    
+		<div class="tab-content" id="pills-tabContent-res">
+		  <div class="tab-pane fade {% if queryVar == 'Canada' %} show active {% endif %}" id="pills-1-res" role="tabpanel" aria-labelledby="pills-1-res-tab">
+          <div class="content-container mix-boxes">
+				
+					<div class="row">
+						<div class="col-md-12 input">
+							<div class="dropdown">
+							  <button class="btn btn-black-outline dropdown-toggle select-filter" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    {{ module.button_text }}
+							  </button>
+							  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							  	<a class="dropdown-item" href="#" value="all">{{ module.see_all_text }}</a>
+                  {% for row in tableCityCa %}
+                    <a class="dropdown-item" href="#" value="city-{{row.name}}">{{row.name}}</a>    
+                  {% endfor %}
+							  </div>
+							</div>
+							
+						</div>	
+					</div>
+            
+            
+					<div class="row container-canada">
+						
+            {% for row in tableCa %}
+              <div class="mix col-md-4" data-type="city-{{row.city.name}}">
+                <div class="content-container">
+                  <div class="image-container">
+                    <img src="{{row.image_thumbnail.url}}" alt="{{row.name}}" />
+                  </div>
+                  <div class="description">
+                    <h5>
+                      {{row.city.name}}
+                    </h5>
+                    <h3>
+                      {{row.name}}
+                    </h3>
+                    <p>{{ module.price_text }}</p>
+                    <h3>{{row.base_fee}}</h3>
+                    <div class="a-link-container">
+                      <a href="{% if content.language.languageTag  != "en" %}/{{ content.language.languageTag  }}{% endif %}{{row.page_link}}">{{ module.link_text }}</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          {% endfor %}
+					</div>
+
+			</div>
+		  </div>
+		  <div class="tab-pane fade {% if queryVar == 'Australia' %} show active {% endif %}" id="pills-2-res" role="tabpanel" aria-labelledby="pills-2-res-tab">
+			<div class="content-container mix-boxes">
+				
+					<div class="row">
+						<div class="col-md-12 input">
+							<div class="dropdown">
+							  <button class="btn btn-black-outline dropdown-toggle select-filter" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    {{ module.button_text }}
+							  </button>
+							  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							  	<a class="dropdown-item" href="#" value="all">{{ module.see_all_text }}</a>
+                  {% for row in tableCityAu %}
+                    <a class="dropdown-item" href="#" value="city-{{row.name}}">{{row.name}}</a>    
+                  {% endfor %}
+							  </div>
+							</div>
+							
+						</div>	
+					</div>
+            
+            
+					<div class="row container-canada">
+						
+            {% for row in tableAu %}
+              <div class="mix col-md-4" data-type="city-{{row.city.name}}">
+                <div class="content-container">
+                  <div class="image-container">
+                    <img src="{{row.image_thumbnail.url}}" alt="{{row.name}}" />
+                  </div>
+                  <div class="description">
+                    <h5>
+                      {{row.city.name}}
+                    </h5>
+                    <h3>
+                      {{row.name}}
+                    </h3>
+                    <p>{{ module.price_text }}</p>
+                    <h3>{{row.base_fee}}</h3>
+                    <div class="a-link-container">
+                      <a href="{% if content.language.languageTag  != "en" %}/{{ content.language.languageTag  }}{% endif %}{{row.page_link}}">{{ module.link_text }}</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          {% endfor %}
+					</div>
+
+			</div>
+		</div>
+		  <div class="tab-pane fade {% if queryVar == 'India' %} show active {% endif %}" id="pills-3-res" role="tabpanel" aria-labelledby="pills-3-res-tab">
+				<div class="content-container mix-boxes">
+				
+					<div class="row">
+						<div class="col-md-12 input">
+							<div class="dropdown">
+							  <button class="btn btn-black-outline dropdown-toggle select-filter" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    {{ module.button_text }}
+							  </button>
+							  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							  	<a class="dropdown-item" href="#" value="all">{{ module.see_all_text }}</a>
+                  {% for row in tableCityInd %}
+                    <a class="dropdown-item" href="#" value="city-{{row.name}}">{{row.name}}</a>    
+                  {% endfor %}
+							  </div>
+							</div>
+							
+						</div>	
+					</div>
+            
+            
+					<div class="row container-canada">
+						
+            {% for row in tableInd %}
+              <div class="mix col-md-4" data-type="city-{{row.city.name}}">
+                <div class="content-container">
+                  <div class="image-container">
+                    <img src="{{row.image_thumbnail.url}}" alt="{{row.name}}" loading="lazy" />
+                  </div>
+                  <div class="description">
+                    <h5>
+                      {{row.city.name}}
+                    </h5>
+                    <h3>
+                      {{row.name}}
+                    </h3>
+                    <p>{{ module.price_text }}</p>
+                    <h3>{{row.base_fee}}</h3>
+                    <div class="a-link-container">
+                      <a href="{% if content.language.languageTag  != "en" %}/{{ content.language.languageTag  }}{% endif %}{{row.page_link}}">{{ module.link_text }}</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          {% endfor %}
+					</div>
+
+			</div>
+		</div>
+		
+		
+		</div>
+	</div>
+</section>

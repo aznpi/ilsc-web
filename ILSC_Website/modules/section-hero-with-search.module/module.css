@@ -1,0 +1,20 @@
+.section-hero.section-hero-search{
+  min-height:720px !important;
+}
+.section-hero.section-hero-search .hs-search-field__input{
+  width:70% !important;
+}
+.section-hero.section-hero-search .section-form{
+  position:relative;
+}
+.section-hero.section-hero-search .section-form button[aria-label="Search"]{
+    height: 40px;
+    width: 40px;
+    right: 17%;
+    top:16%;
+}
+@media (max-width: 600px) {
+  .section-hero img.hero-image{
+    display:none;
+  }
+}

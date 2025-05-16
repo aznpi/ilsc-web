@@ -1,0 +1,15 @@
+.section{
+  position:relative;
+  overflow:hidden;
+}
+.title-section h1{
+  margin-bottom:50px;
+}
+.title-section .school-details ul{
+  margin-top:0;
+}
+.title-section .content-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

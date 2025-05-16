@@ -1,0 +1,31 @@
+.section-search .hs-search-results{
+  margin-top:50px;
+}
+.hs-search-results__listing {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.hs-search-results__listing li {
+  margin-bottom: 20px;
+  padding: 0;
+}
+.hs-search-results__listing li a{
+  font-size:35px;
+  color:#f58220;
+}
+
+.hs-search-results__prev-page {
+  float: left;
+}
+.hs-search-results__next-page {
+  float: right;
+}
+p.hs-search-results__description{
+  font-size:18px;
+}
+p.hs-search-results__description .hs-search-highlight {
+  font-weight: bold;
+  font-size:25px;
+  color:#f58220;
+}

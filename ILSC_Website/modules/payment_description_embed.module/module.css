@@ -1,0 +1,43 @@
+.progress-bar-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 10vh;
+  padding: 0;
+  margin: 0;
+}
+
+.progress-bar-container .progress {
+  background: rgba(255,255,255,0.1);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 40px;
+  width: 200px;
+}
+
+.progress-bar-container .progress-value {
+  animation: load 5s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #F58426;
+  height: 30px;
+  width: 0;
+}
+
+@keyframes load {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+.countdown-container{
+  padding:30px 0;
+}
+#countdown-num{
+  text-align:center;
+  font-size:16px;
+  font-weight:700;
+}

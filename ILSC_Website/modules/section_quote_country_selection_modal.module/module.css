@@ -1,0 +1,396 @@
+.footer-container #quote-modal,
+.footer-container #quote-modal h5{
+  color:#111111 !important;
+}
+#quote-modal a.close-quote{
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+#quote-modal .disabled img{
+  filter: grayscale(1);
+}
+#quote-modal .quote-icon{
+  margin-bottom:40px;
+}
+#quote-modal .quote-icon img{
+  margin:0 auto;
+}
+#quote-modal .school-selector-container label:not(.disabled) img{
+  transition:.5s;
+}
+#quote-modal .school-selector-container label:not(.disabled) img:hover{
+  transform: scale(1.05);
+}
+#quote-modal .section-quote-country .container{
+  border-radius: 30px;
+  overflow: hidden;
+  position:relative;
+  width:100%;
+}
+
+#quote-modal .section-quote-country .container:before,
+#quote-modal .section-quote-country .container:after{
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    z-index:-1;
+}
+#quote-modal .section-quote-country .country-selection-container{
+  background-color:transparent;
+}
+#quote-modal .section-quote-country .country-selection-container .orange-corner{
+    right: 0;
+    top: 0;
+    background-image: url(https://www.ilsc.com/hubfs/template-resources/images/internal/background/bg_orange_corner.png);
+    width: 275px;
+    height: 269px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+#quote-modal .section-quote-country .container:after{
+    left: 20px;
+    top: 20px;
+    background-image: url(https://www.ilsc.com/hubfs/template-resources/images/internal/background/bg_orange_dots.png);
+    background-position: 0 0;
+    z-index:9999;
+    width: 50px;
+    height: 100px;
+}
+
+#quote-modal .section-quote-country{
+    position:relative;
+    margin:0;
+    width:100%;
+  }
+
+  #quote-modal .form-container{
+    margin:0 auto;
+    width:80%;
+
+  }
+#quote-modal .section-quote-country #quote-price-container .line-item{
+    display: flex;
+    justify-content: space-between;
+}
+#quote-modal .section-quote-country #quote-price-container .line-item div{
+    display: inline-block;
+}
+#quote-modal .section-quote-country .country-main{
+  margin:0 auto;
+  width:100%;  
+  height:350px;
+}
+@media(max-width:34em){
+  #quote-modal .section-quote-country .country-main{
+    min-width:150px;
+    width:auto;
+  }
+}
+#quote-modal .section-quote-country select#country-list {
+    display: none !important;
+}
+#quote-modal .section-quote-country .dropdown-select span{
+   font-size:25px;
+}
+@media only screen and (max-width: 600px) {
+  #quote-modal .section-quote-country .dropdown-select span{
+    font-size:16px;
+  }
+}
+#quote-modal .section-quote-country .dropdown-select {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#40FFFFFF', endColorstr='#00FFFFFF', GradientType=0);
+    background-color: #D2D2D2;
+    border-radius: 6px;
+    border: solid 1px #eee;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 40px;
+    outline: none;
+    padding: 10px 30px 10px 18px;
+    position: relative;
+    text-align: left !important;
+    transition: all 0.2s ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    width: auto;
+
+}
+
+#quote-modal .section-quote-country .dropdown-select:focus {
+    background-color: #fff;
+}
+
+#quote-modal .section-quote-country .dropdown-select:active,
+#quote-modal .section-quote-country .dropdown-select.open {
+    background-color: #fff !important;
+    border-color: #bbb;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05) inset;
+}
+
+#quote-modal .section-quote-country .dropdown-select:after {
+    content: '\f107';
+    font-family: "Font Awesome 5 Free";
+    transition: all 0.125s ease-in-out;
+    display: block;
+    margin-top: -2px;
+    pointer-events: none;
+    position: absolute;
+    right: 30px;
+    top: 25%;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#quote-modal .section-quote-country .dropdown-select.open:after {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+#quote-modal .section-quote-country .dropdown-select.open .list {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#quote-modal .section-quote-country .dropdown-select.open .option {
+    cursor: pointer;
+}
+
+#quote-modal .section-quote-country .dropdown-select.wide {
+    width: 100%;
+    text-align: center !important;
+}
+
+#quote-modal .section-quote-country .dropdown-select.wide .list {
+    left: 0 !important;
+    right: 0 !important;
+    height:280px;
+}
+
+#quote-modal .section-quote-country .dropdown-select .list {
+    box-sizing: border-box;
+    transition: all 0.15s cubic-bezier(0.25, 0, 0.25, 1.75), opacity 0.1s linear;
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.09);
+    background-color: #fff;
+    border-radius: 6px;
+    margin-top: 4px;
+    padding: 3px 0;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    max-height: 350px;
+    overflow: auto;
+    border: 1px solid #ddd;
+}
+
+#quote-modal .section-quote-country .dropdown-select .list:hover .option:not(:hover) {
+    background-color: transparent !important;
+}
+#quote-modal .section-quote-country .dropdown-select .dd-search{
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:0.5rem;
+}
+
+#quote-modal .section-quote-country .dropdown-select .dd-searchbox{
+  width:90%;
+  padding:0 10px;
+  border:1px solid #CCC;
+  border-color:#CCC;
+  border-radius:4px;
+  outline:none;
+}
+#quote-modal .section-quote-country .dropdown-select .dd-searchbox:focus{
+  border-color:#ff8b35;
+}
+
+#quote-modal .section-quote-country .dropdown-select .list ul {
+    padding: 0;
+}
+
+#quote-modal .section-quote-country .dropdown-select .option {
+    cursor: default;
+    font-weight: 350;
+    line-height: 40px;
+    outline: none;
+    padding-left: 18px;
+    padding-right: 29px;
+    text-align: left;
+    transition: all 0.2s;
+    list-style: none;
+}
+
+#quote-modal .section-quote-country .dropdown-select .option:hover,
+#quote-modal .section-quote-country .dropdown-select .option:focus {
+    background-color: #f6f6f6 !important;
+}
+
+#quote-modal .section-quote-country .dropdown-select .option.selected {
+    font-weight: 900;
+}
+
+#quote-modal .section-quote-country .dropdown-select .option.selected:focus {
+    background: #f6f6f6;
+}
+
+#quote-modal .section-quote-country .dropdown-select a {
+    color: #aaa;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+#quote-modal .section-quote-country .dropdown-select a:hover {
+    color: #666;
+}
+
+#quote-modal .school-select-label{
+    margin:0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    position:relative;
+}
+#quote-modal .school-select-label label{
+   padding:10px;
+}
+#quote-modal .section-quote-country .school-select-label [type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* IMAGE STYLES */
+#quote-modal .section-quote-country .school-select-label .disabled [type=radio] + img {
+  cursor: not-allowed;
+}
+#quote-modal .section-quote-country .school-select-label [type=radio] + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+#quote-modal .section-quote-country .school-select-label [type=radio]:checked + img {
+  outline: 2px solid #ff8b35;
+}
+#quote-modal .section-quote-country .loading{
+  color:#f58426;
+  font-size:50px;
+  display:none;
+  margin-top: 150px;
+}
+
+#quote-modal .modal-content {
+   position: relative;
+   background-color: transparent;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   border-radius: 0;
+   outline: 0;
+}
+
+#quote-modal.modal.fade .modal-dialog {
+   transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+   opacity: 0;
+   height:760px;
+   -webkit-transition: all .5s;
+   -moz-transition: all .5s;
+   transition: all .5s;
+}
+
+#quote-modal.modal.fade.show .modal-dialog {
+  transform: perspective(400px) scale3d(.95, .95, .95);
+  animation-timing-function: ease-in;
+  opacity: 1;
+  height:auto;
+  animation-name: bounceIn;
+  animation-duration: 450ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+#quote-modal .modal-body{
+  padding:0;
+}
+#quote-modal .form-container {
+  padding:50px 0;
+  height:760px;
+  visibility:hidden;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+}
+#quote-modal .form-container.open {
+  height:auto;
+  animation-name: bounceInForm;
+  animation-duration: 450ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  visibility:visible;
+}
+@keyframes bounceInForm{
+  0%{
+    opacity: 1;
+    transform: scale(0.3) translate3d(0,0,0);
+  }
+  50%{
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  80%{
+    opacity: 1;
+    transform: scale(0.89);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1) translate3d(0,0,0);
+  }
+}
+@keyframes bounceIn{
+  0%{
+    opacity: 0;
+    transform: scale(0.3) translate3d(0,0,0);
+  }
+  50%{
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  80%{
+    opacity: 1;
+    transform: scale(0.89);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1) translate3d(0,0,0);
+  }
+}
+@media only screen and (max-width: 600px) {
+  #quote-modal .section-quote-country .container,.section-quote-country .form-container{
+   width:100%;
+  }
+  #quote-modal .section-quote-country .dropdown-select:after{
+    right: 5px;
+  }
+  #quote-modal .school-select-label{
+    display:block;
+  }
+}

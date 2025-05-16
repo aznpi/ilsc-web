@@ -1,0 +1,170 @@
+[ {
+  "id" : "0271cc21-d261-968a-1dfa-6b7bd6f4537d",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2><span>The perfect course for you</span></h2>\n<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p>"
+}, {
+  "id" : "7c440199-87a9-0642-caf7-1807af1e6ef0",
+  "name" : "box_slide",
+  "label" : "Box Slide",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 15,
+    "sorting_label_field" : "c73d4811-202e-9df5-431c-96e27b8e85d5",
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "c73d4811-202e-9df5-431c-96e27b8e85d5",
+    "name" : "box_title",
+    "label" : "Box Title",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>Full Board</h4>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque sem massa malesuada mi.</p>\n<ul class=\"home-list\">\n<li><img src=\"https://f.hubspotusercontent10.net/hubfs/5020112/icon_coffee.png\" alt=\"icon_coffee\" width=\"40\" style=\"width: 40px;\"><span class=\"bold\">BREAKFAST</span></li>\n<li><img src=\"https://f.hubspotusercontent10.net/hubfs/5020112/icon_burger.png\" alt=\"icon_burger\" width=\"40\" style=\"width: 40px;\"><span class=\"bold\">LUNCH</span></li>\n<li><img src=\"https://f.hubspotusercontent10.net/hubfs/5020112/icon_plate.png\" alt=\"icon_plate\" width=\"40\" style=\"width: 40px;\"><span class=\"bold\">DINNER</span></li>\n</ul>"
+  }, {
+    "id" : "1bcb1902-de88-dcf3-7767-59af468a1ade",
+    "name" : "short_description",
+    "label" : "Short Description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<p><span>ILSC Level Requirement<br>Accept ILSC Certificate<br>*Additional entry requirements<br>*Additional note to lLorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "box_title" : "<h4>Full Board</h4>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque sem massa malesuada mi.</p>\n<ul class=\"home-list\">\n<li><img src=\"https://f.hubspotusercontent10.net/hubfs/5020112/icon_coffee.png\" alt=\"icon_coffee\" width=\"40\" style=\"width: 40px;\"><span class=\"bold\">BREAKFAST</span></li>\n<li><img src=\"https://f.hubspotusercontent10.net/hubfs/5020112/icon_burger.png\" alt=\"icon_burger\" width=\"40\" style=\"width: 40px;\"><span class=\"bold\">LUNCH</span></li>\n<li><img src=\"https://f.hubspotusercontent10.net/hubfs/5020112/icon_plate.png\" alt=\"icon_plate\" width=\"40\" style=\"width: 40px;\"><span class=\"bold\">DINNER</span></li>\n</ul>",
+    "short_description" : "<p><span>ILSC Level Requirement<br>Accept ILSC Certificate<br>*Additional entry requirements<br>*Additional note to lLorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p>"
+  }, {
+    "box_title" : "<h4>Full Board</h4>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque sem massa malesuada mi.</p>\n<ul class=\"home-list\">\n<li><img src=\"https://f.hubspotusercontent10.net/hubfs/5020112/icon_coffee.png\" alt=\"icon_coffee\" width=\"40\" style=\"width: 40px;\"><span class=\"bold\">BREAKFAST</span></li>\n<li><img src=\"https://f.hubspotusercontent10.net/hubfs/5020112/icon_burger.png\" alt=\"icon_burger\" width=\"40\" style=\"width: 40px;\"><span class=\"bold\">LUNCH</span></li>\n<li><img src=\"https://f.hubspotusercontent10.net/hubfs/5020112/icon_plate.png\" alt=\"icon_plate\" width=\"40\" style=\"width: 40px;\"><span class=\"bold\">DINNER</span></li>\n</ul>",
+    "short_description" : "<p><span>ILSC Level Requirement<br>Accept ILSC Certificate<br>*Additional entry requirements<br>*Additional note to lLorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p>"
+  }, {
+    "box_title" : "<h4>Full Board</h4>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque sem massa malesuada mi.</p>\n<ul class=\"home-list\">\n<li><img src=\"https://f.hubspotusercontent10.net/hubfs/5020112/icon_coffee.png\" alt=\"icon_coffee\" width=\"40\" style=\"width: 40px;\"><span class=\"bold\">BREAKFAST</span></li>\n<li><img src=\"https://f.hubspotusercontent10.net/hubfs/5020112/icon_burger.png\" alt=\"icon_burger\" width=\"40\" style=\"width: 40px;\"><span class=\"bold\">LUNCH</span></li>\n<li><img src=\"https://f.hubspotusercontent10.net/hubfs/5020112/icon_plate.png\" alt=\"icon_plate\" width=\"40\" style=\"width: 40px;\"><span class=\"bold\">DINNER</span></li>\n</ul>",
+    "short_description" : "<p><span>ILSC Level Requirement<br>Accept ILSC Certificate<br>*Additional entry requirements<br>*Additional note to lLorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p>"
+  }, {
+    "box_title" : "<h4>Full Board</h4>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque sem massa malesuada mi.</p>\n<ul class=\"home-list\">\n<li><img src=\"https://f.hubspotusercontent10.net/hubfs/5020112/icon_coffee.png\" alt=\"icon_coffee\" width=\"40\" style=\"width: 40px;\"><span class=\"bold\">BREAKFAST</span></li>\n<li><img src=\"https://f.hubspotusercontent10.net/hubfs/5020112/icon_burger.png\" alt=\"icon_burger\" width=\"40\" style=\"width: 40px;\"><span class=\"bold\">LUNCH</span></li>\n<li><img src=\"https://f.hubspotusercontent10.net/hubfs/5020112/icon_plate.png\" alt=\"icon_plate\" width=\"40\" style=\"width: 40px;\"><span class=\"bold\">DINNER</span></li>\n</ul>",
+    "short_description" : "<p><span>ILSC Level Requirement<br>Accept ILSC Certificate<br>*Additional entry requirements<br>*Additional note to lLorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p>"
+  } ]
+}, {
+  "id" : "03447abd-1e11-4e83-7700-a55e18c71617",
+  "name" : "hover_bg_color",
+  "label" : "Hover BG Color",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "hover-orange", "Orange" ], [ "hover-white", "White" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "hover-white"
+}, {
+  "id" : "edc5e127-639b-c019-2cfe-bbcb912b5f0e",
+  "name" : "bg_image_1",
+  "label" : "BG Image 1",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.ilsc.com/hubfs/img_oranage_blog.png",
+    "alt" : "img_oranage_blog",
+    "loading" : "lazy",
+    "width" : 1118,
+    "height" : 1095,
+    "max_width" : 1118,
+    "max_height" : 1095
+  }
+}, {
+  "id" : "a2061cac-3a0b-6fba-be94-b6fe399f8002",
+  "name" : "bg_image_2",
+  "label" : "BG Image 2",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.ilsc.com/hubfs/img_blue_blob.png",
+    "alt" : "img_blue_blob",
+    "loading" : "lazy",
+    "width" : 1033,
+    "height" : 915,
+    "max_width" : 1033,
+    "max_height" : 915
+  }
+}, {
+  "id" : "73437dd8-8909-2966-b0a4-7ff9fd279f99",
+  "name" : "cta_field_group",
+  "label" : "CTA Field group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "76358b51-5da9-66f8-8ced-1ab3d2f88321",
+    "name" : "link_field",
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 35106350505
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "c6400825-bf8a-9d87-07b4-b0a8ee259dc6",
+    "name" : "text_field",
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "DISCOVER WHAT MAKES US DIFFERENT"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "link_field" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 35106350505
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "text_field" : "DISCOVER WHAT MAKES US DIFFERENT"
+  }
+} ]

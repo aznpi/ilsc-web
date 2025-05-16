@@ -1,0 +1,52 @@
+[ {
+  "id" : "9fce2880-37b2-f0af-f1ae-9e3b55075f50",
+  "name" : "program_type",
+  "label" : "Program Type",
+  "help_text" : "Select program type to display available programs.",
+  "inline_help_text" : "*Optional",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "General English", "General English" ], [ "Academic English & Test Preparation", "Academic English & Test Preparation" ], [ "Creative & Cultural English", "Creative & Cultural English" ], [ "Business English", "Business English" ], [ "Junior Programs", "Junior Programs" ], [ "ILSC High School Program", "ILSC High School Program" ], [ "French", "French" ], [ "Teacher Training", "Teacher Training" ], [ "Hindi", "Hindi" ], [ "Online Programs", "Online Programs" ], [ "English", "English" ], [ "IELTS", "IELTS" ], [ "CELTA", "CELTA" ], [ "Cambridge", "Cambridge" ], [ "Online English", "Online English" ], [ "Online French", "Online French" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "8db759a4-642c-d530-d004-cf3e5de36446",
+  "name" : "campus_type",
+  "label" : "Campus Type",
+  "help_text" : "Select campus to display available programs.",
+  "inline_help_text" : "*Optional",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "Vancouver", "Vancouver" ], [ "Toronto", "Toronto" ], [ "Montréal", "Montréal" ], [ "Adelaide", "Adelaide" ], [ "Brisbane", "Brisbane" ], [ "Melbourne", "Melbourne" ], [ "Sydney", "Sydney" ], [ "Perth", "Perth" ], [ "New Delhi", "New Delhi" ], [ "Online", "Online" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "0271cc21-d261-968a-1dfa-6b7bd6f4537d",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2><span>The perfect course for you</span></h2>\n<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p>"
+}, {
+  "id" : "7cafc62b-012f-2243-2f83-30694f591beb",
+  "name" : "link_text",
+  "label" : "Link Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Read More"
+} ]

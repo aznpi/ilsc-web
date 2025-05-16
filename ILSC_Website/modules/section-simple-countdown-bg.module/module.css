@@ -1,0 +1,38 @@
+.section{
+  position:relative;
+  overflow:hidden;
+}
+.section-countdown.section-simple{
+  background-size:cover;
+}
+.section-countdown.section-simple .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.section-countdown #countdown-timer{
+  text-align:center;
+}
+.section-countdown #countdown-timer ul{
+  display:flex;
+  align-items:center;
+  justify-content:space-evenly;
+}
+.section-countdown #countdown-timer ul li .time-data{
+  font-size:6rem;
+}
+.section-countdown #countdown-timer ul li .time-title{
+  display:block;
+  font-size:2rem;
+}
+
+@media (max-width: 600px){
+ .section-countdown #countdown-timer ul li .time-data{
+  font-size:3rem;
+}
+.section-countdown #countdown-timer ul li .time-title{
+  font-size:1rem;
+}
+}

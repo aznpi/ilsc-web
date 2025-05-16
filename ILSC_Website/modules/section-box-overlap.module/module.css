@@ -1,0 +1,13 @@
+@media (max-width: 600px) {
+  
+  .section-hero.section-box-overlap .container{
+    margin-top:0 !important;
+  }
+  .section-hero.section-box-overlap .container h2{
+    color:#111111 !important;
+  }
+  .section-hero.section-box-overlap .hero-video-container.btn-video-container{
+    position: absolute;
+    top: -300px;
+  }
+}

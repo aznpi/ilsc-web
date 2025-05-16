@@ -1,0 +1,231 @@
+[ {
+  "id" : "7a013cea-e6af-0ce7-312e-639360c92b7f",
+  "name" : "title_rich_text",
+  "label" : "Title Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Study Schedules</h2>\n<p>Choose the study schedule that fits your English learning needs and goals. The more lessons you take each week, the faster your English skills will progress.</p>\n<p><span class=\"bold\" style=\"color: #ff8b35;\">CORE CLASSES:</span> Core classes provide a strong, comprehensive foundation in the subject area.</p>\n<p><span class=\"bold\" style=\"color: #199dc3;\">SKILLS CLASSES:</span> Skills classes build on your core learning and enhance linguistic skills through content focused on your particular interests, weak areas, or to help you achieve specific learning goals.</p>\n<p><span class=\"bold\">PROGRAM:</span> A program at ILSC is the study package you build that meets your interests and helps you achieve your goals. A program can also be a pre-packaged selection of classes created by ILSC.</p>\n<p>1 lesson = 50 minutes.</p>"
+}, {
+  "id" : "913f2748-b32a-a21c-5059-5ecdb9e3bb47",
+  "name" : "background_color",
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#F6F6F6",
+    "opacity" : 100
+  }
+}, {
+  "id" : "6fdd9d36-58b6-a5bd-7a97-6266bd63b209",
+  "name" : "campus_group",
+  "label" : "Campus group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 99,
+    "sorting_label_field" : "926af832-2e09-4468-7b19-6dd50f137d9b",
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "926af832-2e09-4468-7b19-6dd50f137d9b",
+    "name" : "campus_location",
+    "label" : "Campus Location",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "Vancouver", "Vancouver" ], [ "Toronto", "Toronto" ], [ "Montreal", "Montreal" ], [ "Adelaide", "Adelaide" ], [ "Brisbane", "Brisbane" ], [ "Melbourne", "Melbourne" ], [ "Perth", "Perth" ], [ "Sydney", "Sydney" ], [ "New Delhi", "New Delhi" ], [ "Online", "Online" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null
+  }, {
+    "id" : "e8a4afeb-21f8-ce7b-c354-7aa0a3e12c72",
+    "name" : "schedule_field_group",
+    "label" : "Schedule Field group",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 99,
+      "sorting_label_field" : "40fbaf9f-1f5e-5792-f5a3-3f5b989d1c24",
+      "default" : 1
+    },
+    "children" : [ {
+      "id" : "bd30e16d-6852-14e8-9e13-073c6f9e8445",
+      "name" : "image_field",
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : false,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    }, {
+      "id" : "40fbaf9f-1f5e-5792-f5a3-3f5b989d1c24",
+      "name" : "category_choice",
+      "label" : "Category Choice",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "Full Time", "Full Time" ], [ "Part Time", "Part Time" ], [ "High School", "High School" ], [ "Junior Camp", "Junior Camp" ], [ "Family Camp", "Family Camp" ], [ "Homestay", "Homestay" ], [ "Student Apartment", "Student Apartment" ], [ "Other Program Fees", "Other Program Fees" ], [ "Other Accommodation Fees", "Other Accommodation Fees" ], [ "Yoga Packages", "Yoga Packages" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null
+    }, {
+      "id" : "1ca6bb80-13f4-00c4-a423-cbb8231256eb",
+      "name" : "item_choice",
+      "label" : "Item Choice",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "Intensive", "Intensive" ], [ "Morning", "Morning" ], [ "Afternoon", "Afternoon" ], [ "Evening", "Evening" ], [ "Evening 1", "Evening 1" ], [ "Evening 2", "Evening 2" ], [ "AM", "AM" ], [ "PM", "PM" ], [ "Evening Mon-Wed", "Evening Mon-Wed" ], [ "Evening Thu-Fri", "Evening Thu-Fri" ], [ "Registration Fees", "Registration Fees" ], [ "Material Fees", "Material Fees" ], [ "Additional Fees", "Additional Fees" ], [ "Full-Time", "Full-Time" ], [ "Full-Time Online 1", "Full-Time Online 1" ], [ "Full-Time Online 2", "Full-Time Online 2" ], [ "Part-Time Online ", "Part-Time Online " ], [ "Individual Credits", "Individual Credits" ], [ "Fast Track to Higher Education", "Fast Track to Higher Education" ], [ "Foundation Year", "Foundation Year" ], [ "ILSC Campus Homestay", "ILSC Campus Homestay" ], [ "Unviersity of British Columbia (UBC) Residence", "Unviersity of British Columbia (UBC) Residence" ], [ "McGill University Downtown Campus Residence", "McGill University Downtown Campus Residence" ], [ "Homestay", "Homestay" ], [ "Homestay Summer", "Homestay Summer" ], [ "Homestay Winter", "Homestay Winter" ], [ "Residence: Lord Stanley Suites", "Residence: Lord Stanley Suites" ], [ "Residence Summer: Lord Stanley Suites", "Residence Summer: Lord Stanley Suites" ], [ "Residence Winter: Lord Stanley Suites", "Residence Winter: Lord Stanley Suites" ], [ "Full board", "Full board" ], [ "Half board", "Half board" ], [ "Roomstay", "Roomstay" ], [ "Single Apartment", "Single Apartment" ], [ "Shared Apartment", "Shared Apartment" ], [ "4 Weeks Package", "4 Weeks Package" ], [ "2 Weeks Package", "2 Weeks Package" ], [ "Intensive Online", "Intensive Online" ], [ "Semi-Intensive Online", "Semi-Intensive Online" ], [ "Core Online", "Core Online" ], [ "Elective Online", "Elective Online" ], [ "Evening 6 Hours", "Evening 6 Hours" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null
+    }, {
+      "id" : "f7e940a0-d893-e657-9900-e6a3b5f2814c",
+      "name" : "sub_description_text",
+      "label" : "Sub Description Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null
+    }, {
+      "id" : "6298115c-5b44-e63f-84db-d27a071fc92d",
+      "name" : "schedule_description_rich_text",
+      "label" : "Schedule Description Rich text",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null
+    }, {
+      "id" : "78295391-9842-aa6d-80e9-e834da62e831",
+      "name" : "time_block_field_group",
+      "label" : "Time Block Field group",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "max" : 99,
+        "sorting_label_field" : "dc249ed5-d4a9-49ae-c130-a43d72241921",
+        "default" : 1
+      },
+      "children" : [ {
+        "id" : "36d712cf-7df5-d278-8665-305187559404",
+        "name" : "time_block_rich_text",
+        "label" : "Time Block Rich text",
+        "required" : false,
+        "locked" : false,
+        "type" : "richtext",
+        "display_width" : null
+      }, {
+        "id" : "dc249ed5-d4a9-49ae-c130-a43d72241921",
+        "name" : "time_block_choice",
+        "label" : "Time Block Choice",
+        "required" : false,
+        "locked" : false,
+        "display" : "select",
+        "choices" : [ [ "early_am", "Early Morning" ], [ "late_am", "Late Morning" ], [ "all_am", "All Morning" ], [ "early_pm", "Early Afternoon" ], [ "late_pm", "Late Afternoon" ], [ "middle_pm", "Middle Afternoon" ], [ "all_pm", "All Afternoon" ], [ "evening", "Evening" ] ],
+        "multiple" : false,
+        "reordering_enabled" : true,
+        "preset" : null,
+        "type" : "choice",
+        "display_width" : null
+      }, {
+        "id" : "aa7aa0cc-9a91-43ee-1530-8941603297bf",
+        "name" : "bg_color",
+        "label" : "BG Color",
+        "required" : false,
+        "locked" : false,
+        "type" : "color",
+        "display_width" : null,
+        "default" : {
+          "color" : "#F4F4F4",
+          "opacity" : 100
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : [ {
+        "bg_color" : {
+          "color" : "#F4F4F4",
+          "opacity" : 100
+        }
+      } ]
+    }, {
+      "id" : "5865bc38-5d71-8b26-9b32-22fcf5b1500c",
+      "name" : "footnoe_rich_text",
+      "label" : "Footnote Rich text",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : ""
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ {
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      },
+      "time_block_field_group" : [ {
+        "bg_color" : {
+          "color" : "#F4F4F4",
+          "opacity" : 100
+        }
+      } ],
+      "footnoe_rich_text" : ""
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "schedule_field_group" : [ {
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      },
+      "time_block_field_group" : [ {
+        "bg_color" : {
+          "color" : "#F4F4F4",
+          "opacity" : 100
+        }
+      } ],
+      "footnoe_rich_text" : ""
+    } ]
+  } ]
+} ]

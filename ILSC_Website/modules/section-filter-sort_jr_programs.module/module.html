@@ -1,0 +1,226 @@
+{% set categoryQuery = [] %}
+
+{% if module.program_multi_choice_field_group.junior_camps_boolean %}
+	{% do categoryQuery.append('Junior Camps') %}
+{% endif %}
+{% if module.program_multi_choice_field_group.family_camps_boolean %}
+	{% do categoryQuery.append('Family Camps') %}
+{% endif %}
+{% if module.program_multi_choice_field_group.high_school_boolean %}
+	{% do categoryQuery.append('High School') %}
+{% endif %}
+{% if module.program_multi_choice_field_group.programs_boolean %}
+	{% do categoryQuery.append('Programs') %}
+{% endif %}
+
+{% set categoryStrQuery = categoryQuery|join(',') %}
+
+{% set queryparam = "" %}
+
+{% set queryparam = queryparam ~ "&category__in="+categoryStrQuery|urlencode  %}
+
+{% set queryparam = queryparam ~ "&is_parent=true&enable__eq=true&orderBy=-program_name"  %}
+
+{% set program = hubdb_table_rows(5266066,queryparam) %}
+
+{% set campusOptionFilterArr = [] %}
+
+{% if module.campus_multi_choice_field_group.vancouver_boolean %}
+	{% do campusOptionFilterArr.append('Vancouver') %}
+{% endif %}
+{% if module.campus_multi_choice_field_group.montreal_boolean %}
+	{% do campusOptionFilterArr.append('Montreal') %}
+{% endif %}
+{% if module.campus_multi_choice_field_group.toronto_boolean %}
+	{% do campusOptionFilterArr.append('Toronto') %}
+{% endif %}
+{% if module.campus_multi_choice_field_group.adelaide_boolean %}
+	{% do campusOptionFilterArr.append('Adelaide') %}
+{% endif %}
+{% if module.campus_multi_choice_field_group.brisbane_boolean %}
+	{% do campusOptionFilterArr.append('Brisbane') %}
+{% endif %}
+{% if module.campus_multi_choice_field_group.melbourne_boolean %}
+	{% do campusOptionFilterArr.append('Melobourne') %}
+{% endif %}
+{% if module.campus_multi_choice_field_group.Perth_boolean %}
+	{% do campusOptionFilterArr.append('Perth') %}
+{% endif %}
+{% if module.campus_multi_choice_field_group.sydney_boolean %}
+	{% do campusOptionFilterArr.append('Sydney') %}
+{% endif %}
+{% if module.campus_multi_choice_field_group.online_boolean %}
+	{% do campusOptionFilterArr.append('Online') %}
+{% endif %}
+
+{% set campusTypeArr = [] %}
+{% if module.study_campus_multi_choice_field_group.ilsc_campus_boolean %}
+	{% do campusTypeArr.append('ILSC Campuses')%}
+{% endif %}
+{% if module.study_campus_multi_choice_field_group.university_residences_boolean %}
+	{% do campusTypeArr.append('University Residences')%}
+{% endif %}
+
+{% set otherOptionsArr = [] %}
+
+{% if module.other_options_multi_choice_field_group.skills_plus_boolean %}
+	{% do otherOptionsArr.append('Skills Plus')%}
+{% endif %}
+{% if module.other_options_multi_choice_field_group.family_plus_boolean %}
+	{% do otherOptionsArr.append('Family Plus')%}
+{% endif %}
+
+
+
+<section class="section bg-white-canvas filter-program-container">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				{% inline_rich_text field="title" value="{{ module.title }}" %}
+			</div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        {{ module.sub_title }}
+      </div>
+    </div> 
+    <div class="row search-filter-container">
+      {% if  module.enable_program_filter %}
+        <div class="col">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              {% inline_rich_text field="program_multi_choice_field_group.title" value="{{ module.program_multi_choice_field_group.title }}" %}
+            </div>
+            <ul class="list-group category-filter-option-container">
+
+              {% for category in categoryQuery %}
+                <li class="list-group-item">
+                  <div class="checkbox">
+                    <input type="checkbox" name="program-search" value="{{category}}" data-filter-category="program-category" id="category-{{category|replace(' ','')}}">
+                    <label for="category-{{category|replace(' ','')}}">
+                       <div class="tick"></div>
+                    </label>
+                    <span>{{category}}</span>
+                  </div>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% if module.enable_other_options_filter %}   
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  {% inline_rich_text field="other_options_multi_choice_field_group.title_rich_text" value="{{ module.other_options_multi_choice_field_group.title_rich_text }}" %}
+                </div>
+                <ul class="list-group other-options-filter-option-container">
+                  {% for other in otherOptionsArr %}
+                    <li class="list-group-item">
+                      <div class="checkbox">
+                        <input type="checkbox" name="program-search" value="{{other}}" data-filter-category="programs" id="other-{{other|replace(' ','')}}">
+                        <label for="other-{{other|replace(' ','')}}">
+                            <div class="tick"></div>
+                        </label>
+                        <span>{{other}}</span>
+                      </div>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+          {% endif %}
+        </div>
+      {% endif %}
+      {% if module.enable_campus_filter %}
+        <div class="col">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              {% inline_rich_text field="campus_multi_choice_field_group.title_rich_text" value="{{ module.campus_multi_choice_field_group.title_rich_text }}" %}
+            </div>
+            <ul class="list-group campus-filter-option-container">
+              {% for campus in campusOptionFilterArr %}
+                <li class="list-group-item">
+                  <div class="checkbox">
+                    <input type="checkbox" name="program-search" value="{{campus}}" data-filter-category="campus-location" id="campus-{{campus|replace(' ','')}}">          
+                    <label for="campus-{{campus|replace(' ','')}}">
+                        <div class="tick"></div>
+                    </label>
+                    <span>{{campus}}</span>
+                  </div>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      {% endif %}
+      {% if module.enable_study_campus_type_filter %}
+        <div class="col">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              {% inline_rich_text field="study_campus_multi_choice_field_group.title_rich_text" value="{{ module.study_campus_multi_choice_field_group.title_rich_text }}" %}
+            </div>
+            <ul class="list-group campus-type-filter-option-container">
+              {% for campusType in campusTypeArr %}
+                <li class="list-group-item">
+                  <div class="checkbox">
+                    <input type="checkbox" name="program-search" value="{{campusType}}" data-filter-category="study-campus" id="campus-type-{{campusType|replace(' ','')}}">
+                    <label for="campus-type-{{campusType|replace(' ','')}}">
+                        <div class="tick"></div>
+                    </label>
+                    <span>{{campusType}}</span>
+                  </div>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      {% endif %}
+      
+      
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        
+        <p class="search-txt-container"><span>Search Results for:</span> <span class="result-text bold">All</span></p>
+        
+      </div>
+    </div>
+		<div class="row program-box-slide box-slide">
+			
+            
+               {% for item in program %}
+                  
+                  {% set campusArr = [] %}
+                  {% for campusName in item.campus %} 
+                    {% do campusArr.append(campusName.name) %}
+                  {% endfor%}
+      
+                  {% set campusStudyArr = [] %}
+                  {% for campusStudy in item.study_campus_type %} 
+                    {% do campusStudyArr.append(campusStudy.name) %}
+                  {% endfor%}
+      
+                  {% set programsArr = [] %}
+                  {% for programs in item.program_type %} 
+                    {% do programsArr.append(programs.name) %}
+                  {% endfor%}
+      
+                  {% if item.image_thumbnail.url %}
+                     <div class="col-md-4 program-box-container" data-program-category="{{item.category.name}}" data-campus-location="{{campusArr|join(',')}}" data-study-campus="{{campusStudyArr|join(',')}}" data-programs="{{programsArr|join(',')}}">
+                      <div class="box-container drop-shadow">
+
+                          <img src="{{ item.image_thumbnail.url }}" alt="{{ item.program_name }}" loading="lazy">
+
+                        <div class="box-content a-link-container a-link-small">
+                          <h4>{{ item.program_name }}</h4>
+                          {{item.description}}
+                        <a href="{% if item.page_link is not containing 'http'%}{% if content.language.languageTag && content.language.languageTag !='en' %}/{{ content.language.languageTag }}{% endif %}{% endif %}{{ item.page_link }}" class="a-link" {% if item.page_link is containing 'http'%}target="_blank"{% endif%}>{{ module.link_text }}</a>
+                        </div>
+                      </div>
+                     </div>
+                  {% endif %}
+              {% endfor %}    
+            
+      
+        </div>
+			</div>
+		
+</section>
+

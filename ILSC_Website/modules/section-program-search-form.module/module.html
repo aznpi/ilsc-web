@@ -1,0 +1,84 @@
+{% set queryparam = "" %}
+{% set queryparam = queryparam ~ "&country__eq=" ~ module.country_choice %}
+
+{% set tableCity = hubdb_table_rows(2639459,queryparam) %}
+
+{% set tablePrograms = hubdb_table_rows(2665098,'') %}
+{% set tableLanguage = hubdb_table_rows(2665088,'') %}
+{% set queryparam = "&course_country__contains=" ~ module.country_choice %}
+{% set tableCourses = hubdb_table_rows(2665087,queryparam) %}
+
+<section class="section section-form program-search bg-white-canvas">
+	<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {% inline_rich_text field="title" value="{{ module.title }}" %}
+      </div>
+    </div>
+    <form action="/{{ site_settings.content_search_results_page_path }}" id="program-search">
+      <input type="hidden" value="{{ module.country_choice }}" name="term" />
+      <input type="hidden" id="input-city" value="" name="term" />
+      <input type="hidden" id="input-program" value="" name="term" />
+      <input type="hidden" id="input-language-level" value="" name="term" />
+      <input type="hidden" id="input-courses" value="" name="term" />
+      
+      <div class="row row-1">
+        <div class="col-md-4">
+          <div class="dropdown">
+            <button class="btn btn-black-outline dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{ module.choose_city_text }}
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              {% for row in tableCity %}
+                <div class="dropdown-item" value-name="{{ row.name }}" option-name="city">{{ row.name }}</div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="dropdown">
+            <button class="btn btn-black-outline dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               {{ module.choose_area_study_text }}
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                {% for row in tablePrograms|sort(false,false,'program_name') %}
+                  <div class="dropdown-item" value-name="{{ row.program_name }}" option-name="program">{{ row.program_name }}</div>
+                {% endfor %}
+              </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="dropdown">
+            <button class="btn btn-black-outline dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               {{ module.choose_level_text }}
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                {% for row in tableLanguage|sort(false,false,'level_name') %}
+                  <div class="dropdown-item" value-name="{{ row.level_name }}" option-name="language-level">{{ row.level_name }}</div>
+                {% endfor %}
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-9">
+          <div class="dropdown">
+              <button class="btn btn-black-outline dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  {{ module.search_programs_courses_text }}
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  {% for row in tableCourses|sort(false,false,'course_name') %}
+                    <div class="dropdown-item" value-name="{{ row.course_name }}" option-name="courses">{{ row.course_name }}</div>
+                  {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+          <button type="submit" class="btn btn-primary btn-orange">SEARCH</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>

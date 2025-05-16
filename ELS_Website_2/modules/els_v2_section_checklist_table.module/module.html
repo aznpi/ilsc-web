@@ -1,0 +1,92 @@
+<section class="{{ module.bg_angle_choice }} section-normal {{ module.padding_choice }} {{ module.margin_choice }} section-table">
+  <div class="container table-container">
+    <div class="row">
+      {% for item in module.box_field_group %}
+      <div class="col-md-6" {% if loop.last %}style="z-index:21;"{% endif %}>
+        <div class="title-container">
+          <div class="title">
+            {% inline_rich_text field="title_rich_text" value="{{ item.title_rich_text }}" %}
+          </div>
+
+          {% if item.icon_image.src %}
+          <div class="icon-container">
+            {% set sizeAttrs = 'width="{{ item.icon_image.width }}" height="{{ item.icon_image.height }}"' %}
+            {% if item.icon_image.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ item.icon_image.width }}" height="{{ item.icon_image.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif item.icon_image.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ item.icon_image.max_width }}" height="{{ item.icon_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = item.icon_image.loading != 'disabled' ? 'loading="{{ item.icon_image.loading }}"' : '' %}
+            <img src="{{ item.icon_image.src }}" alt="{{ item.icon_image.alt }}" {{ loadingAttr }} class="img-fluid">
+          </div>
+          {% endif %}
+
+        </div>
+        <div class="description-container">
+          <div class="description">
+            {% inline_rich_text field="description_rich_text" value="{{ item.description_rich_text }}" %}
+          </div>
+        </div>
+      </div>
+      {% endfor%}
+    </div>
+  </div>
+  {% if module.enable_dropdown_boolean %}
+  <div class="target-diagonal-container" style="background-color: {{ module.dropdown_field_group.bg_color.color }};">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 center">
+          <div class="description text-white">
+            {% inline_rich_text field="dropdown_field_group.title_richtext_field" value="{{ module.dropdown_field_group.title_richtext_field }}" %}
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 center">
+
+          <div class="dropdown-container">
+            <div class="dropup dropdown-orange">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ module.dropdown_field_group.button_text }}
+              </button>
+              <ul class="dropdown-menu">
+
+                {% for item in module.dropdown_field_group.link %}
+                <li>
+                  {% set href = item.link_field.url.href %}
+                  {% if item.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+                  {% set href = "mailto:" + href %}
+                  {% endif %}
+                  <a href="{{ href }}" class="dropdown-item"
+                     {% if item.link_field.open_in_new_tab %}target="_blank"{% endif %}
+                     {% if item.link_field.rel %}rel="{{ item.link_field.rel }}"{% endif %}
+                     >
+                    {{ item.link_text }}
+                  </a>
+
+                </li>
+                {% endfor %}
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  {% if module.enable_plane_bg_boolean %}
+    {% if module.bg_plane_image.src %}
+    <div class="bg-plane-path">
+      {% set sizeAttrs = 'width="{{ module.bg_plane_image.width }}" height="{{ module.bg_plane_image.height }}"' %}
+      {% if module.bg_plane_image.size_type == 'auto' %}
+      {% set sizeAttrs = 'width="{{ module.bg_plane_image.width }}" height="{{ module.bg_plane_image.height }}" style="max-width: 100%; height: auto;"' %}
+      {% elif module.bg_plane_image.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ module.bg_plane_image.max_width }}" height="{{ module.bg_plane_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = module.bg_plane_image.loading != 'disabled' ? 'loading="{{ module.bg_plane_image.loading }}"' : '' %}
+      <img src="{{ module.bg_plane_image.src }}" alt="{{ module.bg_plane_image.alt }}" {{ loadingAttr }} class="img-fluid">
+    </div>
+    {% endif %}
+  {% endif %}
+</section>

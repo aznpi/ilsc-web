@@ -1,0 +1,14 @@
+<section class="section-normal {{ module.padding_choice }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="description">
+          {% inline_rich_text field="left_description_rich_text" value="{{ module.left_description_rich_text }}" %} 
+        </div>
+      </div>
+      <div class="col-md-9 description right">
+        {% inline_rich_text field="right_description_rich_text" value="{{ module.right_description_rich_text }}" %}
+      </div>
+    </div>
+  </div>
+</section>

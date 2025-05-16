@@ -1,0 +1,116 @@
+{% set anchorName = module.anchor_name_text|replace(' ','')|replace('&','')|replace(',','')|upper%}
+
+{% set queryparam = '' %}
+{% set queryparam = queryparam ~ "&campus_type_id__in="+module.campus_type_id|urlencode  %}
+{% set queryparam = queryparam ~ "&enable__eq=true"  %}
+
+{% set campuses = hubdb_table_rows(5266068,queryparam) %}
+{% set campusArray = [] %}
+
+{% for campus in campuses %}
+  {% do campusArray.append(campus.name)%}
+{% endfor %}
+
+<section id="{{anchorName}}" class="section-normal section-year section-calendar section-{{anchorName}}">
+ 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 center">
+        {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+        <div class="description center">
+          <h6>
+            {% for city in campusArray %}
+              {{city}}{% if !loop.last %},{% endif %}
+            {% endfor%}
+          </h6>
+        </div>
+      </div>
+    </div>
+    
+     {% if module.show_year_choice == 'enable' %}
+        <div class="row price-year">
+          <div class="col-md-12 center">
+            <ul>
+              {% for item in module.year_field_group %}
+                <li {% if !loop.last %}class="year-border"{% endif %}><a href="#" data-slide="{{loop.index}}" {% if loop.index == 1 %}class="active"{% endif %}>{{ item.year_text }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+    {% endif %}
+    <div class="row slick-row-{{anchorName}} row-slider">
+      <div class="col-md-12">
+        <div class="box-slide other-price-container">         
+          {% for item in module.year_field_group %}
+           <div>
+              <div class="row row-box">
+                
+                {% for item2 in item.month_box_field_group %}
+                  <div class="col-md-2 month-box-container">
+                    <div>
+                      <div class="month-title" style="background-color:{{ module.background_color.color }}">
+                        {% if item2.enable_month_choice == 'enable' %}
+                          {{item2.month_choice}}
+                          {% else %}
+                          {{item2.week_text}}
+                        {% endif %}
+                      </div> 
+                      <div class="date-title {% if item2.enable_month_choice == 'disable' %}week-text{% endif %}" {% if item2.enable_padding_choice == 'disable' %}style="padding:4px"{% endif %}>
+                        {{item2.date_text}}
+                      </div>
+                    </div>
+                  </div>
+                {% endfor %}
+                
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% if module.footer_rich_text %}
+      <div class="row">
+        <div class="col-md-12">
+          {% inline_rich_text field="footer_rich_text" value="{{ module.footer_rich_text }}" %}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+<script>
+
+$(document).ready(function(){
+  $('.slick-row-{{ anchorName }} .box-slide').slick({
+      dots: false,
+      slidesToScroll: 1,
+      slidesToShow: 1,
+      lazyLoad: 'ondemand',
+      speed : 600,
+      ease : 'Pow4.easeIn',
+      arrows : false,
+      fade: true,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+
+  });
+  
+  $('.section-{{anchorName}} .price-year ul li a[data-slide]').click(function(e) {
+     e.preventDefault();
+     var slideno = $(this).data('slide');
+     $('.section-{{anchorName}} .price-year ul li a[data-slide]').removeClass('active');
+     $(this).addClass('active');
+     $('.slick-row-{{ anchorName }} .box-slide').slick('slickGoTo', slideno - 1);
+  }); 
+    
+  
+})
+
+</script>

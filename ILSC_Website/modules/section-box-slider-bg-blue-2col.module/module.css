@@ -1,0 +1,13 @@
+.blue-box-slide .box-container .box-no-pad-image img{
+  min-height:481px;
+}
+
+.blue-box-slide .box-container .box-no-pad-image{
+  padding:0;
+}
+
+@media (max-width: 600px) {
+  .blue-box-slide .box-container .box-no-pad-image img{
+    display:none;
+  }
+}

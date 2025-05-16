@@ -1,0 +1,79 @@
+[ {
+  "id" : "8475bab1-f259-d03e-2850-bbcbf8ee2ed2",
+  "name" : "cta_group",
+  "label" : "CTA Group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "4db370a3-a600-cc6b-c28c-20205520acba",
+    "name" : "hide_show_cta",
+    "label" : "Hide/Show CTA",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "show"
+  }, {
+    "id" : "c89896a3-4f28-ef15-343c-6e0b3647a1fa",
+    "name" : "cta_text",
+    "label" : "CTA Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "4db370a3-a600-cc6b-c28c-20205520acba",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "show",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "WATCH OUR VIDEO"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "hide_show_cta" : "show",
+    "cta_text" : "WATCH OUR VIDEO"
+  }
+}, {
+  "id" : "9812a92a-32a7-45c3-e952-15ba240dc19e",
+  "name" : "page_target",
+  "label" : "Page Target",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "All Pages", "All Pages" ], [ "30 Plus", "30 Plus" ], [ "English Language", "English Language" ], [ "Destination", "Destination" ], [ "French Language", "French Language" ], [ "General", "General" ], [ "Hindi Language", "Hindi Language" ], [ "Homestay", "Homestay" ], [ "Homepage", "Homepage" ], [ "Greystone College", "Greystone College" ], [ "Junior Camp at ILSC", "Junior Camp at ILSC" ], [ "Junior Camp Residences", "Junior Camp Residences" ], [ "Residences", "Residences" ], [ "Test Center", "Test Center" ], [ "University Pathway", "University Pathway" ], [ "Trinity CertTESOL", "Trinity CertTESOL" ], [ "Daniel Lefort Memorial Scholarship", "Daniel Lefort Memorial Scholarship" ], [ "HELLO Online English", "HELLO Online English" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "General"
+}, {
+  "id" : "e3a9b865-dbe5-23e7-9d77-c12134498ac1",
+  "name" : "location",
+  "label" : "Location",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "All Locations", "All Locations" ], [ "Vancouver", "Vancouver" ], [ "Toronto", "Toronto" ], [ "Montréal", "Montréal" ], [ "Canada", "Canada" ], [ "Sydney", "Sydney" ], [ "Brisbane", "Brisbane" ], [ "Melbourne", "Melbourne" ], [ "Adelaide", "Adelaide" ], [ "Australia", "Australia" ], [ "New Delhi", "New Delhi" ], [ "India", "India" ], [ "Online", "Online" ], [ "UBC", "UBC" ], [ "McGill", "McGill" ], [ "U of T", "U of T" ], [ "General", "General" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "General"
+} ]

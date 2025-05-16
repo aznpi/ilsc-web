@@ -1,0 +1,326 @@
+
+
+<div id="quote-1" style="display:{{contact.quote_1_show}};{{contact.quote_1_outlook_show}}">   
+    <table width="100%" class="table-quote table-main table-{{contact.quote_1_show}}" style="display:{{contact.quote_1_show}};{{contact.quote_1_outlook_show}};">
+    <tr>
+      <th class="title center">Quote 1</th>
+    </tr>
+    <tr>
+      <td class="text-left bold">Program</td>
+    </tr>
+     <tr>
+      <td>{{contact.quote_program_school_selection}}</td>
+    </tr>
+    <tr>
+      <td class="text-left bold">Campus</td>
+    </tr>
+     <tr>
+      <td>{{contact.quote_1_campus_selection}}, {{contact.quote_1_campus_country_selection}}</td>
+    </tr>
+  </table>
+
+  <table width="100%" class="table-quote table-programs table-{{contact.quote_1_show}}" style="display:{{contact.quote_1_show}};">
+    <tr>
+      <th colspan="2" class="center title">{{contact.quote_school_selection}}</th>
+    </tr>
+     <tr>
+      <td class="text-left bold"><span>{{contact.quote_1_program_selection}} {{contact.quote_1_program_schedule_duration_selection}} Weeks</span><br/><span class="item-note">Start Date: {{contact.quote_1_start_date}}</span></td>
+       <td class="text-right">       
+         
+         
+           <span class="discount-txt strike" style="display:{{contact.quote_1_discount_show}};">
+              {{contact.quote_1_program_schedule_standard_price_selection}}
+           </span>
+
+         <span class="bold">
+         {{contact.quote_1_program_schedule_price_selection}}
+         </span></td>
+    </tr>
+    <tr>
+      <td class="title-name text-left">Registration Fee <br> <span class="item-note">{{ contact.quote_1_program_registration_description }}</span></td>
+      <td class="text-right bold">{{contact.quote_1_program_registration_fee}}</td>
+    </tr>
+    
+    <tr>
+      <td class="title-name text-left">Material Fee</td>
+      <td class="text-right bold">{{contact.quote_1_program_material_fee}}</td>
+    </tr>
+    <tr>
+      <td class="title-name text-left">Additional Fee <br> <span class="item-note">{{ contact.quote_1_additional_fee_description }}</span></td>
+      <td class="text-right bold">{{contact.quote_1_additional_fee}}</td>
+    </tr>
+   
+      <tr>
+        <td class="title-name text-left">Program Note</td>
+        <td class="text-left">{{contact.quote_1_program_note}}</td>
+      </tr>
+   
+  </table>
+  <table width="100%" class="table-quote table-programs table-{{contact.quote_1_show}}" style="display:{{contact.quote_1_accommodation_show}}">
+    <tr>
+      <th colspan="2" class="center title">Accommodations</th>
+    </tr>
+     <tr>
+       <td class="text-left bold"><span>{{contact.quote_1_accommodation_program}} {{contact.quote_1_accommodation_duration}} Weeks</span><br/><span class="item-note">Check-in Date: {{contact.quote_1_accommodation_check_in_date}}</span></td>
+       <td class="text-right">       
+         <span class="bold">
+         {{contact.quote_1_accommodation_total_price}}
+         </span>
+       </td>
+    </tr>
+    <tr>
+      <td class="title-name text-left">Airport Fee <br> {{ contact.quote_1_airport_transfer }}</td>
+      <td class="text-right bold">{{contact.quote_1_airport_transfer_fee}}</td>
+    </tr>
+    <tr>
+      <td class="title-name text-left">Accommodation Administration Fee</td>
+      <td class="text-right bold">{{ contact.quote_1_accommodation_placement_fee }}</td>
+    </tr>
+     <tr>
+      <td class="title-name text-left">Exit Cleaning Fee</td>
+      <td class="text-right bold">{{ contact.quote_1_accommodation_cleaning_fee }}</td>
+    </tr>
+  </table>
+  <table width="100%" class="table-quote table-totals table-{{contact.quote_1_show}}" style="display:{{contact.quote_1_show}};">
+      <tr style="display:{{contact.quote_1_promo_auto_show}};">
+        <td class="title-name text-left">{{contact.quote_1_promo_auto_name}}<br><span>{{contact.quote_1_promo_auto_description}}</span></td>
+        <td class="discount-txt text-right">({{ contact.quote_1_promo_auto_value }})</td>
+      </tr>
+    
+    <tr style="display:{{contact.quote_1_promo_code_show}};">
+        <td class="title-name text-left">{{contact.quote_1_promo_code}} - {{contact.quote_1_promo_code_name}}<br><span>{{contact.quote_1_promo_code_description}}</span></td>
+        <td class="discount-txt text-right">({{ contact.quote_1_promo_code_value }})</td>
+      </tr>
+      <tr style="display:{{contact.quote_1_discount_show}};">
+        <td class="title-name text-left">Discount Total</td>
+        <td class="discount-txt text-right">{{ contact.quote_1_program_total_price_discount }}</td>
+      </tr>
+      
+   
+      <tr>
+        <td class="bold text-left">TOTAL</td>
+        <td class="text-right bold">{{ contact.quote_1_total_price }}</td>
+      </tr>
+  </table>
+  <table class="no-bg table-{{contact.quote_1_show}}" width="100%" style="display:{{contact.quote_1_accommodation_show}}">
+    <tr>
+       <td class="item-note text-center"><p>{{ contact.quote_1_accommodation_note|safe }}</p></td>
+    </tr>
+  </table>
+</div>
+{# QUOTE 2 #}
+<div id="quote-2" style="display:{{contact.quote_2_show}};{{contact.quote_2_outlook_show}}">   
+  <table width="100%" class="table-quote table-main table-{{contact.quote_2_show}}" style="display:{{contact.quote_2_show}};{{contact.quote_2_outlook_show}}">
+    <tr>
+      <th class="title center">Quote 2</th>
+    </tr>
+    <tr>
+      <td class="text-left bold">Program</td>
+    </tr>
+     <tr>
+      <td>{{contact.quote_program_school_selection}}</td>
+    </tr>
+    <tr>
+      <td class="text-left bold">Campus</td>
+    </tr>
+     <tr>
+      <td class="text-left">{{contact.quote_2_campus_selection}}, {{contact.quote_2_campus_country_selection}}</td>
+    </tr>
+  </table>
+  <table width="100%" class="table-quote table-programs table-{{contact.quote_2_show}}" style="display:{{contact.quote_2_show}};">
+    <tr>
+      <th colspan="2" class="center title">{{contact.quote_school_selection}}</th>
+    </tr>
+     <tr>
+       <td class="text-left bold"><span>{{contact.quote_2_program_selection}} {{contact.quote_2_program_schedule_duration_selection}} Weeks</span><br/><span class="item-note">Start Date: {{contact.quote_2_start_date}}</span></td>
+       <td class="text-right">       
+          
+           <span class="discount-txt strike" style="display:{{contact.quote_2_discount_show}};">
+              {{contact.quote_2_program_schedule_standard_price_selection}}
+           </span>
+    
+         <span class="bold">
+         {{contact.quote_2_program_schedule_price_selection}}
+         </span></td>
+    </tr>
+    <tr>
+      <td class="title-name text-left">Registration Fee <br> <span class="item-note">{{contact.quote_2_program_registration_description }}</span></td>
+      <td class="text-right bold">{{contact.quote_2_program_registration_fee}}</td>
+    </tr>
+    <tr>
+      <td class="title-name text-left">Material Fee</td>
+      <td class="text-right bold">{{contact.quote_2_program_material_fee}}</td>
+    </tr>
+    <tr>
+      <td class="title-name text-left">Additional Fee <br> <span class="item-note">{{ contact.quote_2_additional_fee_description }}</span></td>
+      <td class="text-right bold">{{contact.quote_2_additional_fee}}</td>
+    </tr>
+    
+      <tr>
+        <td class="title-name text-left">Program Note</td>
+        <td class="text-left">{{contact.quote_2_program_note}}</td>
+      </tr>
+   
+  </table>
+  <table width="100%" class="table-quote table-programs table-{{contact.quote_2_show}}" style="display:{{contact.quote_2_accommodation_show}}">
+    <tr>
+      <th colspan="2" class="center title">Accommodations</th>
+    </tr>
+     <tr>
+       <td class="text-left bold"><span>{{contact.quote_2_accommodation_program}} {{contact.quote_2_accommodation_duration}} Weeks</span><br/><span class="item-note">Check-in Date:{{contact.quote_2_accommodation_check_in_date}}</span></td>
+       <td class="text-right">       
+         <span class="bold">
+         {{contact.quote_2_accommodation_total_price}}
+         </span>
+       </td>
+    </tr>
+    <tr>
+      <td class="title-name text-left">Airport Fee <br> {{ contact.quote_2_airport_transfer }}</td>
+      <td class="text-right bold">{{contact.quote_2_airport_transfer_fee}}</td>
+    </tr>
+    <tr>
+      <td class="title-name text-left">Accommodation Administration Fee</td>
+      <td class="text-right bold">{{ contact.quote_2_accommodation_placement_fee }}</td>
+    </tr>
+    <tr>
+      <td class="title-name text-left">Exit Cleaning Fee</td>
+      <td class="text-right bold">{{ contact.quote_2_accommodation_cleaning_fee }}</td>
+    </tr>
+  </table>
+  <table width="100%" class="table-quote table-totals table-{{contact.quote_2_show}}" style="display:{{contact.quote_2_show}};">
+   
+      <tr style="display:{{contact.quote_2_promo_auto_show}};">
+        <td class="title-name text-left">{{contact.quote_2_promo_auto_name}}<br><span>{{contact.quote_2_promo_auto_description}}</span></td>
+        <td class="discount-txt text-right">({{ contact.quote_2_promo_auto_value }})</td>
+      </tr>
+    
+    <tr style="display:{{contact.quote_2_promo_code_show}};">
+        <td class="title-name text-left">{{contact.quote_2_promo_code}} - {{contact.quote_2_promo_code_name}}<br><span>{{contact.quote_2_promo_code_description}}</span></td>
+        <td class="discount-txt text-right">({{ contact.quote_2_promo_code_value }})</td>
+      </tr>
+      <tr style="display:{{contact.quote_2_discount_show}};">
+        <td class="title-name text-left">Discount Total</td>
+        <td class="discount-txt text-right">{{ contact.quote_2_program_total_price_discount }}</td>
+      </tr>
+      
+   
+      <tr>
+        <td class="bold text-left">TOTAL</td>
+        <td class="text-right bold">{{ contact.quote_2_total_price }}</td>
+      </tr>
+  </table>
+  <table class="no-bg table-{{contact.quote_2_show}}" width="100%" style="display:{{contact.quote_2_accommodation_show}}">
+    <tr>
+       <td class="item-note text-center"><p>{{ contact.quote_2_accommodation_note|safe }}</p></td>
+    </tr>
+  </table>
+</div>
+{# Quote 3 #}
+<div id="quote-3" style="display:{{contact.quote_3_show}};{{contact.quote_3_outlook_show}}">   
+  <table width="100%" class="table-quote table-main table-{{contact.quote_3_show}}" style="display:{{contact.quote_3_show}};{{contact.quote_3_outlook_show}}">
+    <tr>
+      <th class="title center">Quote 3</th>
+    </tr>
+    <tr>
+      <td class="text-left bold">Program</td>
+    </tr>
+     <tr>
+     <td>{{contact.quote_program_school_selection}}</td>
+    </tr>
+    <tr>
+      <td class="text-left bold">Campus</td>
+    </tr>
+     <tr>
+      <td>{{contact.quote_3_campus_selection}}, {{contact.quote_3_campus_country_selection}}</td>
+    </tr>
+  </table>
+
+  <table width="100%" class="table-quote table-programs table-{{contact.quote_3_show}}" style="display:{{contact.quote_2_show}};">
+    <tr>
+      <th colspan="2" class="center title">{{contact.quote_school_selection}}</th>
+    </tr>
+     <tr>
+       <td class="text-left bold"><span>{{contact.quote_3_program_selection}} {{contact.quote_3_program_schedule_duration_selection}} Weeks</span><br/><span class="item-note">Start Date: {{contact.quote_3_start_date}}</span></td>
+       <td class="text-right">       
+          
+           <span class="discount-txt strike" style="display:{{contact.quote_1_discount_show}};">
+              {{contact.quote_3_program_schedule_standard_price_selection}}
+           </span>
+         
+         <span class="bold">
+         {{contact.quote_3_program_schedule_price_selection}}
+         </span></td>
+    </tr>
+    <tr>
+      <td class="title-name text-left">Registration Fee <br> <span class="item-note">{{contact.quote_3_program_registration_description }}</span></td>
+      <td class="text-right bold">{{contact.quote_3_program_registration_fee}}</td>
+    </tr>
+    <tr>
+      <td class="title-name text-left">Material Fee</td>
+      <td class="text-right bold">{{contact.quote_3_program_material_fee}}</td>
+    </tr>
+    <tr>
+      <td class="title-name text-left">Additional Fee <br> <span class="item-note">{{ contact.quote_3_additional_fee_description }}</span></td>
+      <td class="text-right bold">{{contact.quote_3_additional_fee}}</td>
+    </tr>
+    
+      <tr>
+        <td class="title-name text-left">Program Note</td>
+        <td class="text-left">{{contact.quote_3_program_note}}</td>
+      </tr>
+  
+  </table>
+  <table width="100%" class="table-quote table-programs table-{{contact.quote_3_show}}" style="display:{{contact.quote_3_accommodation_show}}">
+    <tr>
+      <th colspan="2" class="center title">Accommodations</th>
+    </tr>
+     <tr>
+       <td class="text-left bold"><span>{{contact.quote_3_accommodation_program}} {{contact.quote_3_accommodation_duration}} Weeks</span><br/><span class="item-note">Check-in Date:{{contact.quote_3_accommodation_check_in_date}}</span></td>
+       <td class="text-right">       
+         <span class="bold">
+         {{contact.quote_3_accommodation_total_price}}
+         </span>
+       </td>
+    </tr>
+    <tr>
+      <td class="title-name text-left">Airport Fee <br> {{ contact.quote_3_airport_transfer }}</td>
+      <td class="text-right bold">{{contact.quote_3_airport_transfer_fee}}</td>
+    </tr>
+    <tr>
+      <td class="title-name text-left">Accommodation Administration Fee</td>
+      <td class="text-right bold">{{ contact.quote_3_accommodation_placement_fee }}</td>
+    </tr>
+    <tr>
+      <td class="title-name text-left">Exit Cleaning Fee</td>
+      <td class="text-right bold">{{ contact.quote_3_accommodation_cleaning_fee }}</td>
+    </tr>
+  </table>
+  <table width="100%" class="table-quote table-totals table-{{contact.quote_3_show}}" style="display:{{contact.quote_2_show}};">
+    
+      <tr style="display:{{contact.quote_3_promo_auto_show}};">
+        <td class="title-name text-left">{{contact.quote_3_promo_auto_name}}<br><span>{{contact.quote_3_promo_auto_description}}</span></td>
+        <td class="discount-txt text-right">({{ contact.quote_3_promo_auto_value }})</td>
+      </tr>
+    
+    <tr style="display:{{contact.quote_3_promo_code_show}};">
+        <td class="title-name text-left">{{contact.quote_3_promo_code}} - {{contact.quote_3_promo_code_name}}<br><span>{{contact.quote_3_promo_code_description}}</span></td>
+        <td class="discount-txt text-right">({{ contact.quote_3_promo_code_value }})</td>
+      </tr>
+      <tr style="display:{{contact.quote_3_discount_show}};">
+        <td class="title-name text-left">Discount Total</td>
+        <td class="discount-txt text-right">{{ contact.quote_3_program_total_price_discount }}</td>
+      </tr>
+    
+
+   
+      <tr>
+        <td class="bold text-left">TOTAL</td>
+        <td class="bold text-right">{{ contact.quote_3_total_price }}</td>
+      </tr>
+  </table>
+  <table class="no-bg table-{{contact.quote_3_show}}" width="100%" style="display:{{contact.quote_3_accommodation_show}}">
+    <tr>
+       <td class="item-note text-center"><p>{{ contact.quote_3_accommodation_note|safe }}</p></td>
+    </tr>
+  </table>
+</div>

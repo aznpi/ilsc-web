@@ -1,0 +1,133 @@
+[ {
+  "id" : "bbcd60cc-0290-f89a-890e-97ca25e51361",
+  "name" : "title_rich_text",
+  "label" : "Title Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Title Here</h2>\n<h5>Description Here</h5>"
+}, {
+  "id" : "3e1c7651-3fc7-72be-fe35-39ab2e47074f",
+  "name" : "team_member",
+  "label" : "Team Member",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 99,
+    "sorting_label_field" : "3162c44d-a072-f6ba-3b78-b430b78d8b91",
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "ac2714a4-4779-5a32-ac15-5e167f7fc365",
+    "name" : "headshot_image",
+    "label" : "Headshot Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+      "alt" : "img_paul_schroeder",
+      "width" : 162,
+      "height" : 162,
+      "max_width" : 162,
+      "max_height" : 162
+    }
+  }, {
+    "id" : "3162c44d-a072-f6ba-3b78-b430b78d8b91",
+    "name" : "member_full_name",
+    "label" : "Member Full Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Paul Schroeder"
+  }, {
+    "id" : "203fea9f-c7b9-1af7-df5f-c4455ca34abc",
+    "name" : "member_position",
+    "label" : "Team Member Position",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Chief Executive Officer"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "headshot_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+      "alt" : "img_paul_schroeder",
+      "width" : 162,
+      "height" : 162,
+      "max_width" : 162,
+      "max_height" : 162
+    },
+    "member_full_name" : "Paul Schroeder",
+    "member_position" : "Chief Executive Officer"
+  }, {
+    "headshot_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+      "alt" : "img_paul_schroeder",
+      "width" : 162,
+      "height" : 162,
+      "max_width" : 162,
+      "max_height" : 162
+    },
+    "member_full_name" : "Paul Schroeder",
+    "member_position" : "Chief Executive Officer"
+  }, {
+    "headshot_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+      "alt" : "img_paul_schroeder",
+      "width" : 162,
+      "height" : 162,
+      "max_width" : 162,
+      "max_height" : 162
+    },
+    "member_full_name" : "Paul Schroeder",
+    "member_position" : "Chief Executive Officer"
+  }, {
+    "headshot_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+      "alt" : "img_paul_schroeder",
+      "width" : 162,
+      "height" : 162,
+      "max_width" : 162,
+      "max_height" : 162
+    },
+    "member_full_name" : "Paul Schroeder",
+    "member_position" : "Chief Executive Officer"
+  }, {
+    "headshot_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+      "alt" : "img_paul_schroeder",
+      "width" : 162,
+      "height" : 162,
+      "max_width" : 162,
+      "max_height" : 162
+    },
+    "member_full_name" : "Paul Schroeder",
+    "member_position" : "Chief Executive Officer"
+  } ]
+} ]

@@ -1,0 +1,22 @@
+[ {
+  "id" : "b752680b-9aa6-1e6b-f627-6d37644d802e",
+  "name" : "main_text",
+  "label" : "Main Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h5><span style=\"color: #ffffff;\">Webinars</span></h5>"
+}, {
+  "id" : "568cd25f-3cf3-1868-9b5e-0d1d4e6f415f",
+  "name" : "color_field",
+  "label" : "Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#92929A",
+    "opacity" : 100
+  }
+} ]

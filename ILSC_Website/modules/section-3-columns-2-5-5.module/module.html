@@ -1,0 +1,95 @@
+<section class="section bg-white-canvas" id="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2">
+        {% inline_rich_text field="main_text" value="{{ module.main_text }}" %}
+				{% if module.image_field.src %}
+          <img class="lazy" data-src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" loading="lazy">
+        {% endif %}
+			</div>  
+ 
+      <div class="col-md-5">
+				{% for item in module.link_category_column_1_group %}
+         <h5>
+           {{ item.category_title_text }}
+        </h5>
+        {% for item2 in item.link_set %}
+          {% if item2.link_group_name_text %}
+            <h6 class="category-title-link">
+              {{ item2.link_group_name_text }}
+            </h6>
+          {% endif %}
+            <div class="category-link">
+              <ul>
+                {% for item3 in item2.link_group %}
+              
+                  {% set href = item3.link_field.url.href %}
+                  {% if item3.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+                    {% set href = "mailto:" + href %}
+                  {% endif %}
+                  {% set rel = [] %}
+                  {% if module.link_field.no_follow %}
+                    {% do rel.append("nofollow") %}
+                  {% endif %}
+                  {% if module.link_field.open_in_new_tab %}
+                    {% do rel.append("noopener") %}
+                  {% endif %}
+                  <li>
+                    <a href="{{ href }}"
+                       {% if item3.link_field.open_in_new_tab %}target="_blank"{% endif %}
+                       {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                       >
+                      {{ item3.page_link_text }}
+                    </a>
+                </li>
+                {% endfor %}         
+              </ul>
+            </div>
+        {% endfor %}
+        {% endfor %}
+			</div>
+      <div class="col-md-5">
+ 
+				{% for item in module.link_category_column_2 %}
+            <h5>
+             {{ item.category_title_text }}
+          </h5>
+           {% for item2 in item.link_set %}
+              {% if item2.link_group_name_text %}
+                <h6 class="category-title-link">
+                  {{ item2.link_group_name_text }}
+                </h6>
+              {% endif %}
+                <div class="category-link">
+                  <ul>
+                    {% for item3 in item2.link_group %}
+                      
+                      {% set href = item3.link_field.url.href %}
+                      {% if item3.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+                        {% set href = "mailto:" + href %}
+                      {% endif %}
+                      {% set rel = [] %}
+                      {% if module.link_field.no_follow %}
+                        {% do rel.append("nofollow") %}
+                      {% endif %}
+                      {% if module.link_field.open_in_new_tab %}
+                        {% do rel.append("noopener") %}
+                      {% endif %}
+                      <li>
+                          <a href="{{ href }}"
+                            {% if item3.link_field.open_in_new_tab %}target="_blank"{% endif %}
+                            {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                            >
+                            {{ item3.page_link_text }}
+                          </a>
+                      </li>
+                    {% endfor %}
+               
+                </ul>
+              </div>
+            {% endfor %}
+        {% endfor %}
+			</div>
+		</div>
+	</div>
+</section>

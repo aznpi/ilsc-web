@@ -1,0 +1,304 @@
+[ {
+  "id" : "a808b0e3-e018-6398-d492-6b2ae653ccef",
+  "name" : "title_text",
+  "label" : "Title text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h3><span style=\"color: #ff8b35;\">Why Choose ILSC</span></h3>\n<h2><span style=\"color: #111111;\">Create an amazing International Learning Journey and achieve your dreams. ILSC is here to support you, every step of the way.</span></h2>"
+}, {
+  "id" : "a519fc1f-0945-2d47-d682-7dd77e0b4e7a",
+  "name" : "cta_group",
+  "label" : "CTA group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "9ab40130-42d7-1f97-3761-58248680c479",
+    "name" : "link_url",
+    "label" : "Link URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  }, {
+    "id" : "0081b65c-a462-0b87-7aa1-949cf9ecd54e",
+    "name" : "link_text",
+    "label" : "Link Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "DISCOVER WHAT MAKES US DIFFERENT"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "link_url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    },
+    "link_text" : "DISCOVER WHAT MAKES US DIFFERENT"
+  }
+}, {
+  "id" : "5103ee5e-b0c8-0ddb-9372-f23186b4afae",
+  "name" : "info_container_1_group",
+  "label" : "Info Container 1 group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 10,
+    "sorting_label_field" : "65a7bae4-a81b-634c-10c8-251761df8f79",
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "92030a49-ae14-b227-e634-b24901435c88",
+    "name" : "icon",
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_tablet.png",
+      "alt" : "icon_tablet",
+      "width" : 53,
+      "height" : 53,
+      "max_width" : 53,
+      "max_height" : 53
+    }
+  }, {
+    "id" : "65a7bae4-a81b-634c-10c8-251761df8f79",
+    "name" : "title_text",
+    "label" : "Title Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Choice & Flexibility "
+  }, {
+    "id" : "d1512cf1-44dd-1ee3-b1f8-0b03a3b05c07",
+    "name" : "description_text",
+    "label" : "Description Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Create an education journey that’s unique to you, with all the flexibility you need.  "
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_tablet.png",
+      "alt" : "icon_tablet",
+      "width" : 53,
+      "height" : 53,
+      "max_width" : 53,
+      "max_height" : 53
+    },
+    "title_text" : "Choice & Flexibility ",
+    "description_text" : "Create an education journey that’s unique to you, with all the flexibility you need.  "
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_tablet.png",
+      "alt" : "icon_tablet",
+      "width" : 53,
+      "height" : 53,
+      "max_width" : 53,
+      "max_height" : 53
+    },
+    "title_text" : "Choice & Flexibility ",
+    "description_text" : "Create an education journey that’s unique to you, with all the flexibility you need.  "
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_tablet.png",
+      "alt" : "icon_tablet",
+      "width" : 53,
+      "height" : 53,
+      "max_width" : 53,
+      "max_height" : 53
+    },
+    "title_text" : "Choice & Flexibility ",
+    "description_text" : "Create an education journey that’s unique to you, with all the flexibility you need.  "
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_tablet.png",
+      "alt" : "icon_tablet",
+      "width" : 53,
+      "height" : 53,
+      "max_width" : 53,
+      "max_height" : 53
+    },
+    "title_text" : "Choice & Flexibility ",
+    "description_text" : "Create an education journey that’s unique to you, with all the flexibility you need.  "
+  } ]
+}, {
+  "id" : "90b0ebfc-1a82-0eb2-d4f1-434cfef047b8",
+  "name" : "info_container_2_group",
+  "label" : "Info Container 2 group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 10,
+    "sorting_label_field" : "c2c2fa62-2589-4b6b-e094-7625c008eb20",
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "61aee75f-7d24-f3b6-bfc6-f5e2a2dd8412",
+    "name" : "icon",
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_tablet.png",
+      "alt" : "icon_tablet",
+      "width" : 53,
+      "height" : 53,
+      "max_width" : 53,
+      "max_height" : 53
+    }
+  }, {
+    "id" : "c2c2fa62-2589-4b6b-e094-7625c008eb20",
+    "name" : "title_text",
+    "label" : "Title Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Choice & Flexibility "
+  }, {
+    "id" : "431f27c4-3346-90fa-b352-b65582c62698",
+    "name" : "description_text",
+    "label" : "Description Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Create an education journey that’s unique to you, with all the flexibility you need.  "
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_tablet.png",
+      "alt" : "icon_tablet",
+      "width" : 53,
+      "height" : 53,
+      "max_width" : 53,
+      "max_height" : 53
+    },
+    "title_text" : "Choice & Flexibility ",
+    "description_text" : "Create an education journey that’s unique to you, with all the flexibility you need.  "
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_tablet.png",
+      "alt" : "icon_tablet",
+      "width" : 53,
+      "height" : 53,
+      "max_width" : 53,
+      "max_height" : 53
+    },
+    "title_text" : "Choice & Flexibility ",
+    "description_text" : "Create an education journey that’s unique to you, with all the flexibility you need.  "
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_tablet.png",
+      "alt" : "icon_tablet",
+      "width" : 53,
+      "height" : 53,
+      "max_width" : 53,
+      "max_height" : 53
+    },
+    "title_text" : "Choice & Flexibility ",
+    "description_text" : "Create an education journey that’s unique to you, with all the flexibility you need.  "
+  } ]
+}, {
+  "id" : "8f1cdb7f-4d3e-f324-a1e0-b9061f4c5532",
+  "name" : "image_blob_1",
+  "label" : "Image blob 1",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_blob_orange-1.png",
+    "alt" : "img_blob_orange-1",
+    "width" : 627,
+    "height" : 466,
+    "max_width" : 627,
+    "max_height" : 466
+  }
+}, {
+  "id" : "ff2d9a9b-e09e-5485-fdbb-6a6ec4b081b8",
+  "name" : "image_blob_2",
+  "label" : "Image blob 2",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_blob_blue.png",
+    "alt" : "img_blob_blue",
+    "width" : 562,
+    "height" : 580,
+    "max_width" : 562,
+    "max_height" : 580
+  }
+} ]

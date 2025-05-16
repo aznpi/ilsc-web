@@ -1,0 +1,14 @@
+.box-slide .box-container .a-link-container{
+  margin-top:0;
+}
+.section-hubdb .box-slide .box-container .image-container{
+  width:100%;
+  height:200px;
+}
+.section-hubdb .box-slide .box-container .box-content{
+  min-height:350px !important;
+}
+.section-hubdb .box-slide .box-container .box-content a{
+    position: absolute;
+    bottom: 40px;
+}

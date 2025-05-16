@@ -1,0 +1,164 @@
+[ {
+  "id" : "04878ce2-e4c2-ac94-9e90-1be3946a157a",
+  "name" : "tabs",
+  "label" : "Tabs",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "a3abb5ab-efaa-3803-a373-8089c8920b26",
+    "name" : "tab_1",
+    "label" : "Tab 1",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "2d04de45-f279-53cd-553b-f9677e468918",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Canada Residences"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "title" : "Canada Residences"
+    }
+  }, {
+    "id" : "f86f0737-de58-9089-68f1-e334cfa8ca1d",
+    "name" : "tab_2",
+    "label" : "Tab 2",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "c589762c-7e48-a26a-e8d3-eb7c9f3f1dbd",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Australia Residences"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "title" : "Australia Residences"
+    }
+  }, {
+    "id" : "894edd25-be0a-60c0-d666-66e6033797af",
+    "name" : "tab_3",
+    "label" : "Tab 3",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "1c654d3f-a2c2-ffe0-993b-4929c099bc8e",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "India Residences"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "title" : "India Residences"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "tab_1" : {
+      "title" : "Canada Residences"
+    },
+    "tab_2" : {
+      "title" : "Australia Residences"
+    },
+    "tab_3" : {
+      "title" : "India Residences"
+    }
+  }
+}, {
+  "id" : "5e6b678f-5bde-e78f-5037-02f45ea9f439",
+  "name" : "button_text",
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "CHOOSE YOUR CITY"
+}, {
+  "id" : "3337b3b3-1377-64e2-4946-62167cd013c5",
+  "name" : "price_text",
+  "label" : "Price Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null
+}, {
+  "id" : "4dbe3639-3441-a38c-ec4b-3376c34a1c3a",
+  "name" : "link_text",
+  "label" : "Link Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "SEE DETAILS"
+}, {
+  "id" : "8251c1c5-848b-8be5-5b20-61ec2fd374cf",
+  "name" : "see_all_text",
+  "label" : "See All Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "ALL"
+}, {
+  "id" : "d43591e7-3364-1976-3f04-e2f96fbf181c",
+  "name" : "mobile_tab_text",
+  "label" : "Mobile Tab Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Features:"
+} ]

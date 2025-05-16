@@ -1,0 +1,73 @@
+[ {
+  "id" : "bbb80669-3699-780e-788b-5891b00825f2",
+  "name" : "bg_color",
+  "label" : "BG Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : null,
+    "opacity" : null
+  }
+}, {
+  "id" : "9b0db21d-c5f2-8cc6-79d2-75f341283908",
+  "name" : "font_color_choice",
+  "label" : "Font Color Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "text-white", "White" ], [ "text-dark", "Dark" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "58571d16-8f02-09cf-29db-594cc0d78a40",
+  "name" : "price_font_color_choice",
+  "label" : "Price Font Color Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "text-white", "White" ], [ "text-dark", "Dark" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "25102d85-6b2e-90c1-6c1c-404920d212e9",
+  "name" : "program_choice",
+  "label" : "Program Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "American Explorer", "American Explorer" ], [ "Intensive English", "Intensive English" ], [ "Semi-Intensive English", "Semi-Intensive English" ], [ "Fun and Sun Camp Program", "Fun and Sun Camp Program" ], [ "Fun and Sun Camp Program Day Camp", "Fun and Sun Camp Program Day Camp" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "American Explorer"
+}, {
+  "id" : "2aee53de-3b99-f1b1-555e-e3d9670beeaa",
+  "name" : "description_text",
+  "label" : "Description Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Program Starts at Just "
+}, {
+  "id" : "25352f78-e941-0eaa-1f68-38c6f875dc6f",
+  "name" : "richtext_field",
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null
+} ]

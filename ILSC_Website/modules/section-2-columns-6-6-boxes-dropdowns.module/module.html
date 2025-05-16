@@ -1,0 +1,55 @@
+<section class="section-1-columns-6-6 section section-dropdown bg-white-canvas">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			{% inline_rich_text field="title" value="{{ module.title }}" %}
+      </div>
+		</div>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<div class="box-container">
+					{% if module.box_1.image_field.src %}
+            <img class="lazy" data-src="{{ module.box_1.image_field.src }}" alt="{{ module.box_1.image_field.alt }}">
+          {% endif %}
+					<div class="box-content">
+			 			{% inline_rich_text field="box_1.text_content" value="{{ module.box_1.text_content }}" %}
+			 			<div class="dropdown">
+						  <button class="btn btn-gray-outline dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    {{ module.box_1.dropdown_text }}
+						  </button>
+						  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                {% for item in module.box_1.location %}
+                  <a class="dropdown-item" href="{{ item.location_link.href }}">{{ item.location_text }}</a>
+                {% endfor %}
+                
+						  </div>
+						</div>
+			 		</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="box-container">        
+					{% if module.box_2.image_field.src %}
+            <img class="lazy" data-src="{{ module.box_2.image_field.src }}" alt="{{ module.box_2.image_field.alt }}">
+          {% endif %}
+					<div class="box-content">
+			 			{% inline_rich_text field="box_2.text_content" value="{{ module.box_2.text_content }}" %}
+			 			<div class="dropdown">
+						  <button class="btn btn-gray-outline dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    {{ module.box_2.dropdown_text }}
+						  </button>
+						    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  {% for item in module.box_2.location %}
+                    <a class="dropdown-item" href="{{ item.location_link.href }}">{{ item.location_text }}</a>
+                  {% endfor %}
+                
+                </div>
+                
+						  </div>
+						</div>
+			 		</div>
+				</div>
+			</div>
+		</div>
+</section>

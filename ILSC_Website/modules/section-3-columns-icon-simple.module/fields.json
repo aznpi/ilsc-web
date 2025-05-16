@@ -1,0 +1,106 @@
+[ {
+  "id" : "204fc46a-8045-eda2-7396-7b1d958c3291",
+  "name" : "box_1",
+  "label" : "Box 1",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "picker" : "file",
+    "id" : "d5c1431c-11b9-9f7b-b98b-2fae225f4a53",
+    "name" : "svg_file",
+    "label" : "SVG File",
+    "required" : false,
+    "locked" : false,
+    "type" : "file",
+    "display_width" : null,
+    "default" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_home_black.svg"
+  }, {
+    "id" : "e4bbcac4-775c-1cc2-4593-fbcd992a975b",
+    "name" : "content",
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h2>Live</h2>\n<p>Live the university campus life as you stay at a leading Canadian university residence. Our staff are available 24/7 to support you.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "svg_file" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_home_black.svg",
+    "content" : "<h2>Live</h2>\n<p>Live the university campus life as you stay at a leading Canadian university residence. Our staff are available 24/7 to support you.</p>"
+  }
+}, {
+  "id" : "5d33ed9a-afb4-119b-6c99-cf4aa0e95710",
+  "name" : "box_2",
+  "label" : "Box 2",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "picker" : "file",
+    "id" : "a617783a-d6d8-6c7c-42e7-c7f7ee877c42",
+    "name" : "svg_file",
+    "label" : "SVG File",
+    "required" : false,
+    "locked" : false,
+    "type" : "file",
+    "display_width" : null,
+    "default" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_explore_black.svg"
+  }, {
+    "id" : "fdc30858-c360-4882-fed5-3efc69ca3aba",
+    "name" : "content",
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h2>Learn</h2>\n<p>Learn and study English from passionate and engaging teachers while you make friends from around the globe. Our classes are well-rounded to develop writing, speaking and listening skills.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "svg_file" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_explore_black.svg",
+    "content" : "<h2>Learn</h2>\n<p>Learn and study English from passionate and engaging teachers while you make friends from around the globe. Our classes are well-rounded to develop writing, speaking and listening skills.</p>"
+  }
+}, {
+  "id" : "8e4b85c0-cf4c-783b-3f7e-a90b892b97fe",
+  "name" : "box_3",
+  "label" : "Box 3",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "picker" : "file",
+    "id" : "20f53ea8-36c6-2017-1627-ca870857570f",
+    "name" : "svg_file",
+    "label" : "SVG File",
+    "required" : false,
+    "locked" : false,
+    "type" : "file",
+    "display_width" : null,
+    "default" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_camera_black_1.svg"
+  }, {
+    "id" : "3559c176-7e09-6103-5a20-4d534078f6ab",
+    "name" : "content",
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h2>Explore</h2>\n<p>Explore the world through the eyes of a new culture! You’ll enjoy scheduled activities at the university campus, visits to popular attractions, free time, and opportunities topractice English with your friends.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "svg_file" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_camera_black_1.svg",
+    "content" : "<h2>Explore</h2>\n<p>Explore the world through the eyes of a new culture! You’ll enjoy scheduled activities at the university campus, visits to popular attractions, free time, and opportunities topractice English with your friends.</p>"
+  }
+} ]

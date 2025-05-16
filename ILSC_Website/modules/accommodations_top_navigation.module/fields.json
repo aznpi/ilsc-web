@@ -1,0 +1,1346 @@
+[ {
+  "id" : "3fb86191-fb26-7356-8b36-5ee9f61e23af",
+  "name" : "home_link",
+  "label" : "Home Link",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 31460906441
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "picker" : "file",
+  "id" : "f3a50182-f61f-ff42-7994-ba6641dd148b",
+  "name" : "logo_svg_file",
+  "label" : "Logo SVG File",
+  "required" : false,
+  "locked" : true,
+  "type" : "file",
+  "display_width" : null,
+  "default" : "https://f.hubspotusercontent10.net/hubfs/5020112/logo_ilsc_gs.svg"
+}, {
+  "id" : "dd8c6ae7-719a-4e7c-9740-e33b312b3049",
+  "name" : "logo_alt",
+  "label" : "Logo Alt",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "ILSC Language Schools and Greystone College"
+}, {
+  "id" : "42104af9-36ab-0d96-55ab-cd95cdca53d8",
+  "name" : "nav_titles",
+  "label" : "Nav Titles",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "deb15225-1e6f-f5f6-8e96-9db5c6e1d45d",
+    "name" : "link_group_1",
+    "label" : "Link Group 1",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "47090af8-4095-d01f-4410-78216a631c65",
+      "name" : "nav_title",
+      "label" : "Nav Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Language Schools"
+    }, {
+      "id" : "8dc14827-d4c0-5869-6e38-69e32d3e6f16",
+      "name" : "top_tier_link",
+      "label" : "Top Tier Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 42547182674
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "9cc3cc1e-012b-7005-b0df-a7bce1ab2692",
+      "name" : "enable_disable_dropdown_menu_choice",
+      "label" : "Enable/Disable Dropdown menu Choice",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "enable", "Enable" ], [ "disable", "Disable" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "disable"
+    }, {
+      "id" : "08cfca29-e7b2-156b-b708-f768fde99f1c",
+      "name" : "link_group",
+      "label" : "Link group",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "9cc3cc1e-012b-7005-b0df-a7bce1ab2692",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "enable",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "children" : [ {
+        "id" : "0ff3ba58-ee1f-022b-a5be-53fbe85b1e2c",
+        "name" : "link_url",
+        "label" : "Link URL",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+        "show_advanced_rel_options" : false,
+        "type" : "link",
+        "display_width" : null,
+        "default" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }, {
+        "id" : "4b5ca3d6-ac4f-60bf-17ac-45f8c98e576f",
+        "name" : "link_text",
+        "label" : "Link Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : {
+        "link_url" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "nav_title" : "Language Schools",
+      "top_tier_link" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 42547182674
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "enable_disable_dropdown_menu_choice" : "disable",
+      "link_group" : {
+        "link_url" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    }
+  }, {
+    "id" : "51d54fe7-c713-bb17-6e17-40b1551917ab",
+    "name" : "link_group_2",
+    "label" : "Link Group 2",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "716ab7ed-c936-5f06-f16e-bbc147b9333b",
+      "name" : "nav_title",
+      "label" : "Nav Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Greystone College"
+    }, {
+      "id" : "e4618757-20ff-2776-7250-710e3f6cbf68",
+      "name" : "top_tier_link",
+      "label" : "Top Tier Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 34818334855
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "8bc6ebd4-2f3d-fdd5-8f6b-c8a20e9e18be",
+      "name" : "enable_disable_dropdown_menu_choice",
+      "label" : "Enable/Disable Dropdown menu Choice",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "enable", "Enable" ], [ "disable", "Disable" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "disable"
+    }, {
+      "id" : "d480962c-7b52-3d8d-be89-9c721fef04a8",
+      "name" : "link_group",
+      "label" : "Link group",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "8bc6ebd4-2f3d-fdd5-8f6b-c8a20e9e18be",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "enable",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "children" : [ {
+        "id" : "8aeb377a-7081-eea1-5b3b-349301e75fed",
+        "name" : "link_url",
+        "label" : "Link URL",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+        "show_advanced_rel_options" : false,
+        "type" : "link",
+        "display_width" : null,
+        "default" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }, {
+        "id" : "412aaa38-c7ef-7f1a-af2a-2e6c2ea5807e",
+        "name" : "link_text",
+        "label" : "Link Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : {
+        "link_url" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "nav_title" : "Greystone College",
+      "top_tier_link" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 34818334855
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "enable_disable_dropdown_menu_choice" : "disable",
+      "link_group" : {
+        "link_url" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    }
+  }, {
+    "id" : "8a22fc30-8612-930c-4620-070fceb9a38f",
+    "name" : "nav_title_accommodations",
+    "label" : "Nav Title Accommodations",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Accommodations"
+  }, {
+    "id" : "70156122-1e82-44cb-04f1-e9fbfa13ba92",
+    "name" : "nav_title_login",
+    "label" : "Nav Title - Login",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Login"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "link_group_1" : {
+      "nav_title" : "Language Schools",
+      "top_tier_link" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 42547182674
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "enable_disable_dropdown_menu_choice" : "disable",
+      "link_group" : {
+        "link_url" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    },
+    "link_group_2" : {
+      "nav_title" : "Greystone College",
+      "top_tier_link" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 34818334855
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "enable_disable_dropdown_menu_choice" : "disable",
+      "link_group" : {
+        "link_url" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    },
+    "nav_title_accommodations" : "Accommodations",
+    "nav_title_login" : "Login"
+  }
+}, {
+  "id" : "b6390158-9025-7d4f-41bb-26e1f4e0817b",
+  "name" : "homestay_menu",
+  "label" : "HomeStay Menu",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "aa103692-c71b-3efa-a923-d6f3c1e75c52",
+    "name" : "image_homestay",
+    "label" : "Image HomeStay",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_homestay_photo.jpg",
+      "alt" : "HomeStay",
+      "width" : 436,
+      "height" : 282,
+      "max_width" : 436,
+      "max_height" : 282
+    }
+  }, {
+    "id" : "5443030a-6d6c-34be-c2e0-834f4b7cc84b",
+    "name" : "title_homestay",
+    "label" : "Title Homestay",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>HOMESTAY</h4>"
+  }, {
+    "id" : "0a70dda9-ef9d-6b78-f7dd-363ff8ca206a",
+    "name" : "message_homestay",
+    "label" : "Message Homestay",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h5>WANT TO BECOME A HOMESTAY FAMILY</h5>"
+  }, {
+    "id" : "520bebf5-bf2b-09e7-c504-64798b0abb94",
+    "name" : "homestay_links",
+    "label" : "HomeStay Links",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 8,
+      "sorting_label_field" : "768d604c-fa50-3fe0-6f59-ade78a39439e",
+      "default" : 2
+    },
+    "children" : [ {
+      "id" : "b42eb876-23cc-456b-1cfe-ebd6c42ce485",
+      "name" : "link_page",
+      "label" : "Link Page",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "CONTENT", "EXTERNAL" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "768d604c-fa50-3fe0-6f59-ade78a39439e",
+      "name" : "link_title",
+      "label" : "Link Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Homestay Canada"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ {
+      "link_page_homestay" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_title" : "Homestay Canada"
+    }, {
+      "link_page_homestay" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_title" : "Homestay Canada"
+    } ]
+  }, {
+    "id" : "f8c918c1-042c-a052-6a2b-89faf466609c",
+    "name" : "button_homestay",
+    "label" : "Button HomeStay",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "f019aea2-307a-9229-995c-bfb44185db1c",
+      "name" : "button_text_homestay",
+      "label" : "Button Text Homestay",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Become a Homestay"
+    }, {
+      "id" : "1ee6b5b6-9a44-9cb1-3379-c81757a0a2fe",
+      "name" : "button_url",
+      "label" : "Button URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "CONTENT" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "button_text_homestay" : "Become a Homestay",
+      "button_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "image_homestay" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_homestay_photo.jpg",
+      "alt" : "HomeStay",
+      "width" : 436,
+      "height" : 282,
+      "max_width" : 436,
+      "max_height" : 282
+    },
+    "title_homestay" : "<h4>HOMESTAY</h4>",
+    "message_homestay" : "<h5>WANT TO BECOME A HOMESTAY FAMILY</h5>",
+    "homestay_links" : [ {
+      "link_page_homestay" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_title" : "Homestay Canada"
+    }, {
+      "link_page_homestay" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_title" : "Homestay Canada"
+    } ],
+    "button_homestay" : {
+      "button_text_homestay" : "Become a Homestay",
+      "button_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    }
+  }
+}, {
+  "id" : "5eaa29e0-c60b-cc61-12fc-b722166a308b",
+  "name" : "residences_menu",
+  "label" : "Residences Menu",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "6918091f-6eee-fb85-8b63-31bc1a344b65",
+    "name" : "image_residence",
+    "label" : "Image Residence",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_photo.jpg",
+      "alt" : "Residence",
+      "width" : 436,
+      "height" : 290,
+      "max_width" : 436,
+      "max_height" : 290
+    }
+  }, {
+    "id" : "9c121bc5-1fff-a9a7-bd31-8f822e8028a1",
+    "name" : "title_residences",
+    "label" : "Title Residences",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>RESIDENCES</h4>"
+  }, {
+    "id" : "4ffcbe68-f483-3351-4cc6-d339397c4b58",
+    "name" : "message_policies",
+    "label" : "Message Policies",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h5>SEE BOOKING POLICIES FOR HOMESTAYS &amp; RESIDENCES</h5>"
+  }, {
+    "id" : "87ff2588-3528-0836-7142-36d1930b29fe",
+    "name" : "residences_links",
+    "label" : "Residences Links",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 8,
+      "sorting_label_field" : "d0d91b0b-c3cc-6928-4d1e-cbeba8adfd32",
+      "default" : 2
+    },
+    "children" : [ {
+      "id" : "37e9546d-5da2-d947-620d-307bac969e3a",
+      "name" : "link_page",
+      "label" : "Link Page",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "CONTENT", "EXTERNAL" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 32037039260
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "d0d91b0b-c3cc-6928-4d1e-cbeba8adfd32",
+      "name" : "link_title",
+      "label" : "Link Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Residences Canada"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ {
+      "link_page" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 32037039260
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_title" : "Residences Canada"
+    }, {
+      "link_page" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 32037039260
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_title" : "Residences Canada"
+    } ]
+  }, {
+    "id" : "1b223419-b8d3-594f-83fd-c0442a6942b5",
+    "name" : "button_policies",
+    "label" : "Button Policies",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "b777bfca-3804-8338-4c21-7953ba4988ce",
+      "name" : "button_text_policies",
+      "label" : "Button Text Policies",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Accommodation Booking Policy"
+    }, {
+      "id" : "f7596d83-11de-d030-01e3-32ae12ee3fdf",
+      "name" : "button_url",
+      "label" : "Button URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "CONTENT", "EXTERNAL" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 85402246418
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "button_text_policies" : "Accommodation Booking Policy",
+      "button_url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 85402246418
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "image_residence" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_photo.jpg",
+      "alt" : "Residence",
+      "width" : 436,
+      "height" : 290,
+      "max_width" : 436,
+      "max_height" : 290
+    },
+    "title_residences" : "<h4>RESIDENCES</h4>",
+    "message_policies" : "<h5>SEE BOOKING POLICIES FOR HOMESTAYS &amp; RESIDENCES</h5>",
+    "residences_links" : [ {
+      "link_page" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 32037039260
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_title" : "Residences Canada"
+    }, {
+      "link_page" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 32037039260
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_title" : "Residences Canada"
+    } ],
+    "button_policies" : {
+      "button_text_policies" : "Accommodation Booking Policy",
+      "button_url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 85402246418
+      }
+    }
+  }
+}, {
+  "id" : "4c4943f8-9888-f5d3-d5ff-38496ba5082b",
+  "name" : "partners_login_menu",
+  "label" : "Partners Login Menu",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "a3df90e0-ead5-b635-9a23-a2853d8a46d3",
+    "name" : "title_partners_login",
+    "label" : "Title Partners Login",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>PARTNERS LOGIN</h4>"
+  }, {
+    "id" : "d7ce44b2-5291-9b0e-49f9-5052ab3dd48a",
+    "name" : "text_1",
+    "label" : "text 1",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "New to ILSC. Create an account to get started today."
+  }, {
+    "id" : "6c04267b-d3f8-0ab6-857e-cca68da74030",
+    "name" : "text_2",
+    "label" : "text 2",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Have an account? Sign in now."
+  }, {
+    "id" : "f40cc537-b16c-bcad-d695-0d1b8a87bada",
+    "name" : "button_partners_login",
+    "label" : "Button Partners Login",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "0496f548-3daa-994c-356e-0c973ab242ac",
+      "name" : "partners_login_url",
+      "label" : "Partners Login URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      }
+    }, {
+      "id" : "e4461720-8472-a3d6-ab0a-764d0dbb97b8",
+      "name" : "button_text_partners_login",
+      "label" : "Button Text Partners Login",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Partners Login"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "partners_login_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text_partners_login" : "Partners Login"
+    }
+  }, {
+    "id" : "d1ff6514-223e-a2a6-7a9d-3cbadd39b8bd",
+    "name" : "button_partners_create_account",
+    "label" : "Button Partners Create Account",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "a6e8ec4b-46f3-769f-e691-cfe8592d8c8b",
+      "name" : "partners_login_url",
+      "label" : "Create Account URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      }
+    }, {
+      "id" : "58cca784-3dac-9a93-ae7f-df8a9039b5f6",
+      "name" : "button_text_partners_login",
+      "label" : "Button Text Partners Create Account",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Create My Account"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "partners_login_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text_partners_login" : "Create My Account"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "title_partners_login" : "<h4>PARTNERS LOGIN</h4>",
+    "text_1" : "New to ILSC. Create an account to get started today.",
+    "text_2" : "Have an account? Sign in now.",
+    "button_partners_login" : {
+      "partners_login_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text_partners_login" : "Partners Login"
+    },
+    "button_partners_create_account" : {
+      "partners_login_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text_partners_login" : "Create My Account"
+    }
+  }
+}, {
+  "id" : "fbae2e0e-371c-e4a6-4d9b-48548df41101",
+  "name" : "student_login_menu",
+  "label" : "Student Login Menu",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "f01df4fa-bc2c-200f-dc16-506abe9f489f",
+    "name" : "title_student_login",
+    "label" : "Title Student Login",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>STUDENT LOGIN</h4>"
+  }, {
+    "id" : "65f14b95-db50-da14-3bfc-99face552bb4",
+    "name" : "text_1",
+    "label" : "text 1",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Have an account? Sign in now."
+  }, {
+    "id" : "a89b9035-24a6-c154-729a-c060f4e5c502",
+    "name" : "button_student_login",
+    "label" : "Button Student Login",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "399d8afc-f1e5-0aa3-aaa3-57539a88e517",
+      "name" : "student_login_url",
+      "label" : "Student Login URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      }
+    }, {
+      "id" : "f5e2d66a-de0c-5610-0585-1afb3c9acef7",
+      "name" : "button_text_student_login",
+      "label" : "Button Text Student Login",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "MyILSC Login"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "student_login_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text_student_login" : "MyILSC Login"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "title_student_login" : "<h4>STUDENT LOGIN</h4>",
+    "text_1" : "Have an account? Sign in now.",
+    "button_student_login" : {
+      "student_login_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text_student_login" : "MyILSC Login"
+    }
+  }
+}, {
+  "id" : "3554945f-8da6-e49c-0b04-eaea98371ae0",
+  "name" : "alumni_login_menu",
+  "label" : "Greystone Login Menu",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "d0566bc7-9f41-46cd-b370-638803d1e489",
+    "name" : "title_alumni_login",
+    "label" : "Title GC Login",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>ALUMNI LOGIN</h4>"
+  }, {
+    "id" : "9caa1e84-d897-a3ed-08de-ee2649160411",
+    "name" : "text_1",
+    "label" : "text 1",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Have an account? Sign in now."
+  }, {
+    "id" : "b63c0574-9ef1-b41c-6d6f-d78e5661c282",
+    "name" : "button_alumni_login",
+    "label" : "Button GC Login",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "3b531552-b4da-c520-8aac-d4614c3946d5",
+      "name" : "alumni_login_url",
+      "label" : "GC Login URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "type" : "EXTERNAL",
+        "href" : "https://mygreystonecollege.com/",
+        "content_id" : null
+      }
+    }, {
+      "id" : "daaef419-d608-5f3b-8adc-0af11ffa7d22",
+      "name" : "button_text_alumni_login",
+      "label" : "Button Text GC Login",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Greystone College Login"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "alumni_login_url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://mygreystonecollege.com/",
+        "content_id" : null
+      },
+      "button_text_alumni_login" : "Greystone College Login"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "title_alumni_login" : "<h4>ALUMNI LOGIN</h4>",
+    "text_1" : "Have an account? Sign in now.",
+    "button_alumni_login" : {
+      "alumni_login_url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://mygreystonecollege.com/",
+        "content_id" : null
+      },
+      "button_text_alumni_login" : "Greystone College Login"
+    }
+  }
+}, {
+  "id" : "4c44f97c-d73e-2775-f4b4-be9c9f44b7cb",
+  "name" : "search_menu",
+  "label" : "Search Menu",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "06101793-8eb1-8776-2133-67e839d82ec2",
+    "name" : "title_search",
+    "label" : "Title Search",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>SEARCH</h4>"
+  }, {
+    "id" : "b0499547-b48e-19ce-b2e2-ebb466b9dd6d",
+    "name" : "text_search_placeholder",
+    "label" : "Text Search Placeholder",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "TYPE TO SEARCH"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "title_search" : "<h4>SEARCH</h4>",
+    "text_search_placeholder" : "TYPE TO SEARCH"
+  }
+}, {
+  "id" : "b809dafb-952a-7e01-7028-8ae79902758b",
+  "name" : "title_language",
+  "label" : "Title Language",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h4>Languages</h4>"
+}, {
+  "id" : "fbbde9d3-42ab-6aad-f7ba-8087e59000c6",
+  "name" : "mobile_cta",
+  "label" : "Mobile CTA",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "898ed808-0c35-58c6-1fc9-4a55b3323c58",
+    "name" : "cta_1_group",
+    "label" : "CTA 1 group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "53ffce41-121f-1ad9-8220-48b1b17feb7d",
+      "name" : "cta_url",
+      "label" : "CTA URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    }, {
+      "id" : "5faa9fd5-7515-3f43-084f-dcf70bdacac5",
+      "name" : "cta_text",
+      "label" : "CTA Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "CONTACT US"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "cta_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "cta_text" : "CONTACT US"
+    }
+  }, {
+    "id" : "7ef5f651-9a9b-f255-be9c-5610b3212464",
+    "name" : "cta_2_group",
+    "label" : "CTA 2 group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "0083833c-43db-68e6-a61c-348a552cd9d7",
+      "name" : "cta_url",
+      "label" : "CTA URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    }, {
+      "id" : "5867077c-4da4-9a89-b45c-80699488fb4f",
+      "name" : "cta_text",
+      "label" : "CTA Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "APPLY NOW"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "cta_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "cta_text" : "APPLY NOW"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "cta_1_group" : {
+      "cta_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "cta_text" : "CONTACT US"
+    },
+    "cta_2_group" : {
+      "cta_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "cta_text" : "APPLY NOW"
+    }
+  }
+} ]

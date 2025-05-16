@@ -1,0 +1,107 @@
+<section id="language-school-section" class="section-hero">
+	<div class="hero-image">
+    
+    {% if module.hero_image.hide_show_bg_video == "show" %}
+      <video id="heroVideoBg" autoplay loop muted>
+        <source type="video/mp4" src="{{ module.hero_image.bg_video_url.href }}">
+        <source type="video/webm" src="{{ module.hero_image.bg_video_url.href }}">
+      </video>
+    {% endif %}
+    {% if module.hero_image.bg_choice == "image" %}
+      {% if module.hero_image.hero_image.src %}
+        {% set sizeAttrs = 'width="{{ module.hero_image.hero_image.width }}" height="{{ module.hero_image.hero_image.height }}"' %}
+        {% if module.hero_image.hero_image.size_type == 'auto' %}
+          {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif module.hero_image.hero_image.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.hero_image.hero_image.max_width }}px; max-height: {{ module.hero_image.hero_image.max_height }}px"' %}
+        {% endif %}
+        {% set loadingAttr = module.hero_image.hero_image.loading != 'disabled' ? 'loading="{{ module.hero_image.hero_image.loading }}"' : '' %}
+        <img src="{{ module.hero_image.hero_image.src }}" alt="{{ module.hero_image.hero_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="hero-image">
+      {% endif %}
+     {% endif %}
+	</div>
+	<div class="content-container {% if module.cta_group.cta_alignment_choice == 'right' %}cta-right{% endif %} ">
+		<div class="container">
+        <div class="row">
+          <div class="col-md-12 hs-search-keyword">
+            {% inline_rich_text field="content_container" value="{{ module.content_container }}" %}
+            
+            {% if module.hero_image.hide_show_hero_photo_description == "show" %}
+              <div class="photo-description">
+                <h6>{{ module.hero_image.hero_image.alt }}</h6>
+              </div>
+            {% endif %}
+            
+            {% if module.cta_group.hide_show_cta == "show" %}
+              <div class="hero-video-container btn-video-container">
+                <div>
+                  <i class="{{ module.cta_group.cta_font_awesome_icon }}"></i>
+                </div>
+                <div>
+                  {% if module.cta_group.cta_font_awesome_icon == 'far fa-play-circle' %}
+                        <a href="#ilscModal" data-toggle="modal" class="video-btn" src="{{ module.cta_group.cta_link_url.url.href }}">
+                      {% else %}
+                         <a href="{{ module.cta_group.cta_link_url.url.href }}" class="video-btn" {% if module.cta_group.cta_link_url.open_in_new_tab %}target="_blank"{% endif %} {% if module.cta_group.cta_link_url.rel %}rel="{{ module.cta_group.cta_link_url.rel }}"{% endif %}>
+                  {% endif %}
+                    {{ module.cta_group.cta_link_url_text }}
+                  </a>
+                </div>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+			  <a class="arrow-wrap" href="#"></a> 
+		</div>
+	</div>
+</section>
+<!-- Modal -->
+<div class="hero-video modal fade" id="heroModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="no-translate">&times;</span>
+        </button>
+
+      <div class="modal-body">
+      	<div class="embed-responsive embed-responsive-16by9">
+		  <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+		</div> 
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<style>
+  
+  @media (max-width: 600px) {
+    .section-hero .hero-image{
+      background:url({{ module.hero_image.mobile_hero_image.src }}) no-repeat;
+      background-size:cover;
+      min-height: 600px;
+      background-color:{{ module.hero_image.bg_color.color }};
+    }
+  }
+  {% if module.hero_image.bg_choice  == "image" %}
+    .section-hero .hero-image{
+      position:relative;
+      z-index: -1;
+    }
+    .section-hero .hero-image:before{
+      background-color:rgba({{ module.hero_image.bg_image_overlay_color.color |convert_rgb }}, {{ module.hero_image.bg_image_overlay_color.opacity/100 }});
+      top:0;
+      left:0;
+      height:100%;
+      width:100%;
+      position:absolute;
+      content:"";
+      z-index:999;
+    }
+  {% endif %}
+  {% if module.hero_image.hide_show_bg_video == "color" %}
+    .section-hero .hero-image{
+      background-color: {{ module.hero_image.bg_color }};
+    }
+  {% endif %}
+</style>

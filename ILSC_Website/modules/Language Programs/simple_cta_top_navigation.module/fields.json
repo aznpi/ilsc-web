@@ -1,0 +1,77 @@
+[ {
+  "id" : "5853fa5a-f4b2-9a3b-d2b8-efe9167a04d9",
+  "name" : "home_link",
+  "label" : "Home Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 42547182674
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "picker" : "file",
+  "id" : "6e031765-0447-539d-5d65-aa455e20da3a",
+  "name" : "logo_svg_file",
+  "label" : "Logo SVG File",
+  "required" : false,
+  "locked" : false,
+  "type" : "file",
+  "display_width" : null,
+  "default" : "https://www.ilsc.com/hubfs/Language%20School-Color-Logo-Horizontal.svg"
+}, {
+  "id" : "d883a06f-6246-e3cb-443f-9e28469f0bf8",
+  "name" : "logo_alt",
+  "label" : "Logo Alt",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "ILSC Language Schools Logo"
+}, {
+  "id" : "a6bec0a5-6bbe-5848-7d0a-580d37df9b49",
+  "name" : "cta_1",
+  "label" : "CTA 1",
+  "required" : false,
+  "locked" : false,
+  "type" : "cta",
+  "display_width" : null,
+  "default" : "47c87914-dd6d-47ae-bbed-560bc8e9ea51"
+}, {
+  "id" : "467ca828-feda-ba52-8528-e716099e3c8e",
+  "name" : "cta_2",
+  "label" : "CTA 2",
+  "required" : false,
+  "locked" : false,
+  "type" : "cta",
+  "display_width" : null,
+  "default" : "384fc344-2844-4445-bfce-e4de8f3b35c4"
+}, {
+  "id" : "5dc9af6d-f31b-657f-0a98-0700ca4f335e",
+  "name" : "button_rich_text",
+  "label" : "Button Rich text",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "467ca828-feda-ba52-8528-e716099e3c8e",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : null,
+    "property" : null,
+    "operator" : "EMPTY",
+    "access" : null
+  },
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<a class=\"cta_button btn btn-primary btn-orange bold\" href=\"#section-form\">CONTACT US</a>"
+} ]

@@ -1,0 +1,104 @@
+{% set webinarStatus = "Register Now" %}
+{% set queryparamFeature = "&feature_enabled__eq=Enabled"  %}
+{% set queryparamUpcoming = "&enable_disable__eq=Enabled&feature_enabled__eq=Disabled&register_or_watch_now__eq=" + webinarStatus|urlencode %}
+
+
+{% set webinarFeature = hubdb_table_rows(4824754,queryparamFeature) %}
+{% set webinarUpcoming = hubdb_table_rows(4824754,queryparamUpcoming) %}
+
+<section class="section webinar-info {% if module.bg_color.color == '#FFFFFF' %} bg-white-canvas {% endif %}" id="content" style="background-color:rgba({{ module.bg_color.color|convert_rgb }}, {{ module.bg_color.opacity/100 }});" id="content">
+	<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+      </div>
+    </div>
+    {% for row in webinarFeature %}
+      <div class="row feature-container">
+        <div class="col-md-7">
+          
+            <div class="info-container">
+                <div class="webinar-header {% for item in row.category_code %}webinar-{{ item.color_code.name|lower|replace(' ','-') }}{% endfor %}">
+                  <h5>
+                    {{ row.sub_title|upper }}
+                  </h5>
+                </div>
+                <div class="content-container">
+                     <h4>{{ row.title }}</h4>
+                     <div class="schedule-text">{{ row.schedule_text }}</div>
+                     <h5 class="title-speaker">{% inline_text field="speakers_text" value="{{ module.speakers_text }}" %}</h5>
+                     <div>{{ row.speakers_text }}</div>
+                      
+                      {% if row.register_or_watch_now.name != 'No Button' %}
+                        {% set webinarLink = row.page_url %}
+                        {% set webinarLink2 = row.page_url_2 %}
+                  
+                        {% if row.register_or_watch_now.name == 'Register Now' %}
+                             {% set btnClass = "btn-orange" %}
+                          {% elif row.register_or_watch_now.name == 'Watch Now'%}
+                              {% set btnClass = "btn-black" %}
+                          {% else %}
+                              {% set btnClass = "btn-orange" %}
+                        {% endif %}
+                          
+                          <div class="btn-container">
+                            {% if webinarLink2 is defined %}<span class="bold">Session 1:</span>{% endif %} <a href="{{ webinarLink }}" target="_blank" class="btn {{ btnClass }} bold">{{ row.register_or_watch_now.name }}</a>
+                          </div>
+                          {% if webinarLink2 is defined %}
+                            <div class="btn-container">
+                              <span class="bold">Session 2:</span> <a href="{{ webinarLink2 }}" target="_blank" class="btn {{ btnClass }} bold">{{ row.register_or_watch_now.name }}</a>
+                            </div>
+                          {% endif %}
+                      {% endif %}
+                </div>
+
+              </div>
+        </div>
+         <div class="col-md-5" style="background:url({{ row.feature_image.url }}) no-repeat;background-size:cover;">
+          </div>
+      </div>
+    {% endfor %}
+		<div class="row upcoming-container">
+      {% for row in webinarUpcoming %}
+          <div class="col-md-6">
+            <div class="info-container">
+              <div class="image-container">
+                <img src="{{ row.top_image.url }}" alt="{{ row.title }}" />
+              </div>
+              <div class="webinar-header {% for item in row.category_code %}webinar-{{ item.color_code.name|lower|replace(' ','-') }}{% endfor %}">
+                <h5>
+                  {{ row.sub_title|upper }}
+                </h5>
+              </div>
+              <div class="content-container">
+                     <h4>{{ row.title }}</h4>
+                     <div class="schedule-text">{{ row.schedule_text }}</div>
+                     <h5 class="title-speaker">{% inline_text field="speakers_text" value="{{ module.speakers_text }}" %}</h5>
+                     <div>{{ row.speakers_text }}</div>
+                      
+                      {% if row.register_or_watch_now.name != 'No Button' %}
+                        {% set webinarLink = row.page_url %}
+                        {% set webinarLink2 = row.page_url_2 %}
+                        {% if row.register_or_watch_now.name == 'Register Now' %}
+                             {% set btnClass = "btn-orange" %}
+                          {% elif register_or_watch_now == 'Watch Now'%}
+                              {% set btnClass = "btn-black" %}
+                          {% else %}
+                              {% set btnClass = "btn-orange" %}
+                        {% endif %}
+                          <div class="btn-container">
+                            {% if webinarLink2 is defined %}<span class="bold">Session 1:</span>{% endif %} <a href="{{ webinarLink }}" target="_blank" class="btn {{ btnClass }} bold">{{ row.register_or_watch_now.name }}</a>
+                          </div>
+                          {% if webinarLink2 is defined %}
+                            <div class="btn-container">
+                              <span class="bold">Session 2:</span> <a href="{{ webinarLink2 }}" target="_blank" class="btn {{ btnClass }} bold">{{ row.register_or_watch_now.name }}</a>
+                            </div>
+                          {% endif %}
+                      {% endif %}
+                </div>    
+            </div>
+        </div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

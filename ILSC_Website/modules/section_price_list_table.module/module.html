@@ -1,0 +1,161 @@
+{% set queryparam = "" %}
+{% set queryparam = queryparam ~ "&enable=1" %}
+{% set queryparam = queryparam ~ "&country__eq=" + module.country_choice|urlencode %}
+{% set program = hubdb_table_rows(5285248,queryparam ~ "&orderBy=-price_current") %}
+{% set tableId = module.title_text|replace(' ','')|replace('/','')|replace('-','')|lower %}
+
+{% set weeksArray = [] %}
+
+  {% for item in module.row_field_group %}
+    {% for item2 in item.weeks_choice %}
+      {% for weeksInitial in program %}       
+        {% if weeksInitial.category.name == item.category_choice  && weeksInitial.item_name == item.item_choice && weeksInitial.weeks.name == item2 %}
+        {% do weeksArray.append(weeksInitial.weeks.name) %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  {% endfor %}
+
+<section class="section {% if module.background_color.color == '#FFFFFF' %}bg-white-canvas{% endif %} price-list-table" id="content" style="background-color:rgba({{module.background_color.color|convert_rgb }}, {{module.background_color.opacity/100 }})">
+  
+  <div class="container">
+    <h3>
+      {% inline_text field="title_text" value="{{ module.title_text }}" %}
+    </h3>
+    {% if module.sub_title_rich_text %}
+      <div>
+        {% inline_rich_text field="sub_title_rich_text" value="{{ module.sub_title_rich_text }}" %}
+      </div>
+    {% endif %}
+    <div class="price-table" style='overflow-x:visible;'>
+      <table id="" border="0">
+        <tr>
+          <th class="no-border-all"></th>
+          <th class="no-border-all"></th>
+          
+          {% for item in module.campus_choice %}
+            {% for td in range(0,weeksArray|unique|length) %}
+              {% if weeksArray|unique|length == 1 %}
+                <th class="header-location header-1"><span>{{ item }}</span></th>
+              {% else%}
+                {% if td == 0 %}
+                  <th class="header-location"><span>{{ item }}</span></th>
+                  {% else %}
+                  <th class="no-border"></th>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+           {% endfor %}
+        </tr>
+         <tr>
+          <th class="no-border-all"></th>
+          <th class="no-border-all"></th>
+           {% for item in module.campus_choice %}
+             {% for weeks in weeksArray|unique %}
+              <th class="bg-orange"><div>{{weeks|replace('Weeks','<span class="break">Weeks</span>')}}</div></th>
+             {% endfor %}
+           {% endfor %}
+        </tr>
+        {% for item in module.row_field_group %}
+            {% set descriptionArray = [] %}
+            {% for contentInitial in program %}
+              {% if contentInitial.category.name == item.category_choice  && contentInitial.item_name == item.item_choice %}
+                {% do descriptionArray.append(contentInitial.description) %}
+              {% endif %}
+            {% endfor %}
+          <tr>
+            <td><span class="bold">{{ item.category_choice|replace('Programs','') }}</span><br> <span>{{ item.item_choice }}</span></td>
+            <td class="description">{{descriptionArray[0]}}</td>
+            
+             {% for campus in module.campus_choice %}
+              {% for price in program %}
+               {% if price.category.name == item.category_choice && price.item_name == item.item_choice %}
+            
+                {% for campusLocation in price.campus_location %}
+                      {% if campusLocation.name == campus %}
+                        <td class="price">     
+                          {% if module.price_year_choice == 'price_current' %}
+                           {{price.price_current|format_currency("en-US")}}
+                          {% endif %}
+                           {% if module.price_year_choice == 'price_year_2' %}
+                           {{price.price_year_2|format_currency("en-US")}}
+                          {% endif %}  
+                          {% if module.price_year_choice == 'price_year_3' %}
+                           {{price.price_year_3|format_currency("en-US")}}
+                          {% endif %}  
+                        </td>
+                    {% endif %}
+                  {% endfor %}
+             {% endif %}
+            {% endfor %}
+           {% endfor %}
+            
+            
+          </tr>
+        {% endfor %}
+      </table>
+      <div class="btn-container">
+        <button class="btn btn-primary btn-orange bold" onclick="exportTable{{tableId}}();">
+        CLICK TO EXPORT
+        </button>
+      </div>
+      <div class="disclaimer float-right">
+        {% inline_rich_text field="footer_rich_text" value="{{ module.footer_rich_text }}" %}
+      </div>
+    </div>
+    
+  </div>
+  
+</section>
+
+<table id="{{ tableId }}" style="display:none;">
+  <tr>
+    <th>School</th>
+    <th>Program</th>
+    <th>Item</th>
+    <th>Description</th>
+    <th>Campus</th>
+    <th>Weeks</th>
+    <th>Price</th>
+  </tr>
+  {% for item in module.campus_choice %}
+     {% for item2 in module.row_field_group %}
+         {% for price in program %}
+               {% if price.category.name == item2.category_choice && price.item_name == item2.item_choice %}          
+                {% for campusLocation in price.campus_location %}
+                   {% if campusLocation.name == item %}
+                      <tr>
+                        <td>{{ module.school_choice }}</td>
+                        <td><span>{{ item2.category_choice|replace('Programs','') }}</span></td>
+                        <td><span>{{ item2.item_choice }}</span></td>
+                        <td>{{ price.description }}</td>
+                        <td>{{item}}</td>
+                        <td>{{price.weeks.name}}</td>
+                        <td>
+                          {% if module.price_year_choice == 'price_current' %}
+                           {{price.price_current|format_currency("en-US")}}
+                          {% endif %}
+                           {% if module.price_year_choice == 'price_year_2' %}
+                           {{price.price_year_2|format_currency("en-US")}}
+                          {% endif %}  
+                          {% if module.price_year_choice == 'price_year_3' %}
+                           {{price.price_year_3|format_currency("en-US")}}
+                          {% endif %}  
+                        </td>
+                      </tr>
+                   {% endif %}
+                {% endfor %}
+              {% endif %}
+          {% endfor %}
+     {% endfor %}
+  {% endfor %}
+</table>
+<script>
+
+  function exportTable{{tableId}}(){
+      $("#{{tableId}}").table2excel({
+        filename: "language_schools_pricelist_{{tableId}}.xls"
+    });
+  }
+
+</script>

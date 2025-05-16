@@ -1,0 +1,11 @@
+section.tab-navigation-landing.section-menu-nav.fixed{
+  background-color:#FFF;
+  width:100%;
+  z-index:99;
+  position:fixed;
+  top:100px;
+  padding:30px 0 0;
+}
+section.tab-navigation-landing.section-menu-nav.fixed ul.nav{
+  margin-bottom:15px !important;
+}

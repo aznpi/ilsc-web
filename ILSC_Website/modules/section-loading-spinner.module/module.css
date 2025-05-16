@@ -1,0 +1,8 @@
+.section-loader{
+  display:none;
+}
+
+.section-loader .loader-icon{
+  text-align:center;
+  margin:0 auto;
+}

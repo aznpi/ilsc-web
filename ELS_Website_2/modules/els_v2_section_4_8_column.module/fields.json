@@ -1,0 +1,87 @@
+[ {
+  "id" : "ab52d1a8-498d-a4b8-2a92-9ba5cb6de656",
+  "name" : "anchor_id",
+  "label" : "Anchor ID",
+  "inline_help_text" : "Enter anchor ID when using an anchor nav. Do not use special character or spaces.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null
+}, {
+  "id" : "e17b73fa-e373-4cd4-f9c9-41aa4ae9ced9",
+  "name" : "padding_choice",
+  "label" : "Padding Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "padding-none", "No Padding" ], [ "padding-top", "Padding Top" ], [ "padding-bottom", "Padding Bottom" ], [ "padding-top-none", "No Padding Top " ], [ "padding-bottom-none", "No Padding Bottom" ], [ "padding-top-extra", "Extra Top Padding" ], [ "padding-bottom-extra", "Extra Bottom Padding" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "96c6f107-8a80-6fb6-9a60-2baa52a60cd3",
+  "name" : "bg_color",
+  "label" : "BG Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : null,
+    "opacity" : null
+  }
+}, {
+  "id" : "a0de2f92-5634-23cb-9b8b-221e25bbdf77",
+  "name" : "title_rich_text",
+  "label" : "Title Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2 class=\"bold\">University Admissions <span style=\"color: #fff;\">Service</span></h2>"
+}, {
+  "id" : "d214ccc6-105d-d36f-067e-15bcf53bde98",
+  "name" : "description_rich_text",
+  "label" : "Description Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<p><span class=\"bold\">We have relationships with 600+ universities around the world.</span> You can apply for conditional admission before you have mastered English, and once you have graduated from ELS, you can enter the university of your choice.</p>"
+}, {
+  "id" : "f225bd6c-16f2-8435-db83-df2c3fcb0165",
+  "name" : "cta_button_text",
+  "label" : "CTA Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "FIND A UNIVERSITY"
+}, {
+  "id" : "af208f7b-94c2-4cf5-73f8-6da2cf5388da",
+  "name" : "cta_link",
+  "label" : "CTA Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+} ]

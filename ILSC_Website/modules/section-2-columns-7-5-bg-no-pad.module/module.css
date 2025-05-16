@@ -1,0 +1,22 @@
+.section{
+  position:relative;
+  overflow:hidden;
+}
+.section-7-5.no-pad .row .col-md-7.bg-image-container{
+  padding:70px 10px 70px 100px;
+}
+.section-7-5.no-pad .row .col-md-7.bg-image-container .school-details{
+  margin-left: 20px;
+}
+
+.section-7-5.no-pad .row >div{
+  padding-left:0;
+  padding-right:0;
+}
+.bg-image-container{
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+@media (max-width: 480px){
+ 
+}

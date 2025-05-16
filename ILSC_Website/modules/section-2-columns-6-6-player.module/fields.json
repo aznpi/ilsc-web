@@ -1,0 +1,167 @@
+[ {
+  "id" : "4e5f6681-660d-ca69-af24-4cd377debd8f",
+  "name" : "content_text",
+  "label" : "Content Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Find out what it's like to study with ILSC</h2>\n<p><span>Open yourself to a world of exciting possibilities and give yourself a chance to live a different kind of life – the kind you’ve always dreamed of.</span></p>"
+}, {
+  "id" : "40f40477-4367-3bd9-38f2-665df151caab",
+  "name" : "cta_button_group",
+  "label" : "CTA Button Group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "990772a7-943a-4fbd-6275-3f1fa18830d9",
+    "name" : "btn_text",
+    "label" : "Btn Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "ABOUT ILSC"
+  }, {
+    "id" : "6c832a0d-81cb-26d9-5c63-d2107b48501d",
+    "name" : "btn_link_url",
+    "label" : "Btn Link URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "type" : "EXTERNAL",
+      "href" : "https://www.youtube.com/embed/qvyHhnWyjHM",
+      "content_id" : null
+    }
+  }, {
+    "id" : "1e935fdf-a1ee-69a1-525c-268361ed86db",
+    "name" : "btn_type",
+    "label" : "Btn Type",
+    "required" : true,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "video", "Video" ], [ "webpage", "WebPage" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "video"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "btn_text" : "ABOUT ILSC",
+    "btn_link_url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://www.youtube.com/embed/qvyHhnWyjHM",
+      "content_id" : null
+    },
+    "btn_type" : "video"
+  }
+}, {
+  "id" : "a8cfe462-f895-ae48-8fb6-5174368ed5da",
+  "name" : "box_image",
+  "label" : "Box Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_about_us_girl.jpg",
+    "alt" : "img_about_us_girl",
+    "width" : 1086,
+    "height" : 634,
+    "max_width" : 1086,
+    "max_height" : 634
+  }
+}, {
+  "id" : "3eff1948-32c4-b49e-db97-ee616fd348d3",
+  "name" : "cta_image_video",
+  "label" : "CTA Image Video",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "57f491ad-7778-7ea2-e205-eead02aeca3f",
+    "name" : "video_link_url",
+    "label" : "Video Link URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  }, {
+    "id" : "64df41d8-e226-d2b4-e294-3415d5784bc5",
+    "name" : "enable_image_player",
+    "label" : "Enable Image Player",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "on", "On" ], [ "off", "Off" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "on"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "video_link_url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    },
+    "enable_image_player" : "on"
+  }
+}, {
+  "id" : "fe35a162-75ef-17e1-074a-06678def148d",
+  "name" : "background_image",
+  "label" : "Background Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null
+  }
+}, {
+  "id" : "71d9868c-9ad5-c05b-5c8e-dbf8bef6ca78",
+  "name" : "bg_color_overlay",
+  "label" : "Bg Color Overlay",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "rgba(255, 153, 51, 0.1)"
+} ]

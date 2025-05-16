@@ -1,0 +1,77 @@
+header.top-nav .header-cta-container .dropdown li{
+  background-size:25px 25px;
+  background-repeat:no-repeat;
+  padding-left:50px;
+  background-position: 10px 4px;
+}
+
+header.top-nav .header-cta-container .dropdown li.icon-ilsc{
+  background-image:url(https://www.ilsc.com/hubfs/Website/Logos/logo_ilsc_50x50.png);
+}
+header.top-nav .header-cta-container .dropdown li.icon-gc{
+  background-image:url(https://www.ilsc.com/hubfs/Website/Logos/logo_gc_50x50.png);
+}
+
+header.top-nav .header-cta-container .dropdown .dropdown-toggle {
+  display: inline-block !important;
+}
+header.top-nav .header-cta-container .dropdown .dropdown-item{
+    padding: .25rem 0rem .25rem 0;
+    width: 70%;
+}
+header.top-nav .header-cta-container .dropdown .dropdown-item li{
+   font-size:14px;
+}
+header.top-nav .header-cta-container .dropdown [data-toggle="dropdown"]:after{
+  margin-top:5px !important;
+  float:right;
+}
+header.top-nav .navbar .header-cta-container .dropdown {
+  position:relative !important;
+}
+header.top-nav .navbar .header-cta-container .dropdown .dropdown-menu {
+  border: 1px solid;
+  border-radius: 0;
+  display: unset;
+  padding: 0;
+  top: -75px;
+  transition: none;
+  visibility: hidden;
+  width: 100%;
+  box-shadow: none;
+  padding: .5rem 0;
+  left: -10px;
+  width: 105%;
+  min-height:unset;
+}
+
+header.top-nav .navbar .header-cta-container .dropdown .dropdown-menu >li{
+  font-size: 16px;
+}
+.language-selector a.language-link{
+  text-transform:uppercase;
+}
+header.top-nav .navbar .dropdown.language-selector .dropdown-menu ul li a{
+  padding-left: 1.5rem;
+}
+
+.top-nav .header-cta-container .dropdown .dropdown-item:focus,.cta-flyout .cta-button .dropdown .dropdown-item:hover{
+  background-color:transparent;
+}
+.top-nav .header-cta-container .dropdown ul.dropdown-menu li{
+  cursor:pointer;
+}
+.top-nav .header-cta-container .dropdown ul.dropdown-menu li:hover{
+  background-color: rgb(242,242,242);
+  background-color: linear-gradient(90deg, rgba(242,242,242,0.30996148459383754) 0%, rgba(222,222,222,0.23713235294117652) 35%, rgba(222,222,222,0.1923144257703081) 100%);
+}
+.top-nav .header-cta-container .dropdown.show .dropdown-toggle::after{
+    border-top: none;
+}
+.top-nav .header-cta-container .dropdown .dropdown-item{
+  display:inline-block;
+  padding: .25rem 1.5rem .25rem 0;
+}
+.top-nav .header-cta-container .school-details ul.arrows li:before{
+  margin-left:0;
+}

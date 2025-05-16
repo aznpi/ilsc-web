@@ -1,0 +1,164 @@
+<section class="tab-navigation-landing section bg-white-canvas" id="content">
+	<div class="divider"></div>
+	<div class="container">
+    <nav id="carousel-nav-container" class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">{{ module.mobile_tab_text }}</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav-Menu" aria-controls="navbarNav-Menu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+				<div class="navbar-collapse collapse" id="navbarNav-Menu" style="">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-1-tab" data-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-1" aria-selected="true">{% inline_text field="tabs.tab_1.title" value="{{ module.tabs.tab_1.title }}" %}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-2-tab" data-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-2" aria-selected="false">{% inline_text field="tabs.tab_2.title" value="{{ module.tabs.tab_2.title }}" %}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-3-tab" data-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-3" aria-selected="false">{% inline_text field="tabs.tab_3.title" value="{{ module.tabs.tab_3.title }}" %}</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" id="pills-4-tab" data-toggle="pill" href="#pills-4" role="tab" aria-controls="pills-4" aria-selected="false">{% inline_text field="tabs.tab_4.title" value="{{ module.tabs.tab_4.title }}" %}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-5-tab" data-toggle="pill" href="#pills-5" role="tab" aria-controls="pills-5" aria-selected="false">{% inline_text field="tabs.tab_5.title" value="{{ module.tabs.tab_5.title }}" %}</a>
+            </li>
+          </ul>
+      </div>
+    </nav>
+		<div class="tab-content" id="pills-tabContent">
+		  <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
+		  	<div class="content-container">
+				
+					<div class="row">
+						<div class="col-md-6">
+							{% inline_rich_text field="tabs.tab_1.text_content" value="{{ module.tabs.tab_1.text_content }}" %}
+              {% if module.tabs.tab_1.hide_show_cta == "show"%}
+                <div class="btn-video-container">
+                    <div><i class="{{ module.tabs.tab_1.cta_font_awesome_icon }}"></i></div><div><a href="#ilscModal" data-toggle="modal" class="video-btn" src="{{ module.tabs.tab_1.cta_url.href }}">{{ module.tabs.tab_1.cta_text }}</a></div>
+                </div>
+              {% endif %}
+              
+						</div>
+						<div class="col-md-6">
+							{% if module.tabs.tab_1.image_field.src %}
+                <img src="{{ module.tabs.tab_1.image_field.src }}" alt="{{ module.tabs.tab_1.image_field.alt }}" loading="lazy">
+              {% endif %}
+						</div>
+					</div>
+			</div>
+		  </div>
+		  <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
+			<div class="content-container">
+				
+					<div class="row">
+						<div class="col-md-6 school-details">
+							{% inline_rich_text field="tabs.tab_2.text_content" value="{{ module.tabs.tab_2.text_content }}" %}
+              {% if module.tabs.tab_2.hide_show_cta == "show"%}
+                <div class="btn-video-container">
+                  <div><i class="{{ module.tabs.tab_2.cta_font_awesome_icon }}"></i></div><div><a href="#ilscModal" data-toggle="modal" class="video-btn" src="{{ module.tabs.tab_2.cta_url.href }}">{{ module.tabs.tab_2.cta_text }}</a></div>
+                </div>
+              {% endif %}
+						</div>
+						<div class="col-md-6 image-container">
+							{% if module.tabs.tab_2.image_field.src %}
+                <img src="{{ module.tabs.tab_2.image_field.src }}" alt="{{ module.tabs.tab_2.image_field.alt }}" loading="lazy">
+              {% endif %}
+               
+						  <p>
+                {{ module.tabs.tab_2.image_field.alt }}
+              </p>
+            </div>
+					
+					</div>
+			</div>
+		</div>
+		  <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab">
+				<div class="content-container">
+				
+					<div class="row">
+						<div class="col-md-6">
+							{% inline_rich_text field="tabs.tab_3.text_content" value="{{ module.tabs.tab_3.text_content }}" %}
+              {% if module.tabs.tab_3.hide_show_cta == "show"%}
+                <div class="a-link-container">
+
+                    <div>
+                      {% if module.tabs.tab_3.cta_font_awesome_icon == "cross_icon" %}
+                        {% if module.tabs.tab_3.icon_link.src %}
+                          <img src="{{ module.tabs.tab_3.icon_link.src }}" alt="{{ module.tabs.tab_3.icon_link.alt }}" style="width: 30px; margin-right: 15px;" loading="lazy">
+                        {% endif %}
+                        {% else %}
+                          <i class="{{ module.tabs.tab_3.cta_font_awesome_icon }}"></i>
+                       {% endif %}
+
+                      <a href="#ilscModal" data-toggle="modal" src="{{ module.tabs.tab_3.link_url.href }}" class="video-btn">{{ module.tabs.tab_3.tab_link_text }}</a></div>
+                </div>
+              {% endif %}
+						</div>
+						<div class="col-md-6 image-container">
+							{% if module.tabs.tab_3.image_field.src %}
+                <img src="{{ module.tabs.tab_3.image_field.src }}" alt="{{ module.tabs.tab_3.image_field.alt }}" loading="lazy">
+              {% endif %}
+              
+						</div>
+					
+					</div>
+			</div>
+		</div>
+		<div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab">
+				<div class="content-container">
+				
+					<div class="row">
+						<div class="col-md-3 school-details">
+							{% inline_rich_text field="tabs.tab_4.text_content" value="{{ module.tabs.tab_4.text_content }}" %}
+						</div>
+						<div class="col-md-9">
+							<div class="facility-slide photo-slide">
+                {% for item in module.tabs.tab_4.image_field %}
+                  {% if item.src %}
+                    <div>
+                      <div>
+
+                          <img src="{{ item.src }}" alt="{{ item.alt }}" loading="lazy">
+
+                        <h4>{{ item.alt }}</h4>
+                      </div>
+                    </div>
+                  {% endif %}
+               {% endfor %}
+                
+							</div>
+						</div>
+					
+					</div>
+			</div>
+		</div>
+		<div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab">
+				<div class="content-container">
+				
+					<div class="row">
+						
+						<div class="col-md-12">
+							<div class="gallery-slide photo-slide photo-slide-tab">
+
+                {% for item in module.tabs.tab_5.image_field %}
+                  {% if item.src %}
+                    <div>
+                      <div>
+
+                          <img src="{{ item.src }}" alt="{{ item.alt }}" loading="lazy">
+
+                        <h4>{{ item.alt }}</h4>
+                      </div>
+                    </div>
+                   {% endif %}
+								{% endfor %}
+								
+								
+							</div>
+						</div>
+					
+					</div>
+			</div>
+		</div>
+		</div>
+	</div>
+</section>

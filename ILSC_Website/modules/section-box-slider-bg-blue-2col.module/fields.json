@@ -1,0 +1,107 @@
+[ {
+  "id" : "0271cc21-d261-968a-1dfa-6b7bd6f4537d",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2><span>5 Reasons to choose Australia</span></h2>\n<p><span>By choosing to study in Australia, you’ll join over 600,000 students from all over the world each year – as they seek to discover new friends and opportunities in this beautiful country.</span></p>"
+}, {
+  "id" : "7c440199-87a9-0642-caf7-1807af1e6ef0",
+  "name" : "box_slide",
+  "label" : "Box Slide",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 5,
+    "sorting_label_field" : "c73d4811-202e-9df5-431c-96e27b8e85d5",
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "4af924c9-5600-9d7b-8c4c-532346d23a51",
+    "name" : "box_image",
+    "label" : "Box Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_australia_view.jpg",
+      "alt" : "img_australia_view",
+      "width" : 1270,
+      "height" : 944,
+      "max_width" : 1270,
+      "max_height" : 944
+    }
+  }, {
+    "id" : "c73d4811-202e-9df5-431c-96e27b8e85d5",
+    "name" : "box_title",
+    "label" : "Box Title",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>Reason 1</h4>\n<h5>Ranked #5 Best city <br>in the world</h5>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at tempus vel parturient duis viverra quis hendrerit. Facilisi quis consectetur massa a ultrices facilisis orci. Diam a platea vitae eget nunc urna. Fermentum pharetra integer ultricies purus odio nam. Lacus, gravida platea auctor id quis faucibus in.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "box_image" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_australia_view.jpg",
+      "alt" : "img_australia_view",
+      "width" : 1270,
+      "height" : 944,
+      "max_width" : 1270,
+      "max_height" : 944
+    },
+    "box_title" : "<h4>Reason 1</h4>\n<h5>Ranked #5 Best city <br>in the world</h5>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at tempus vel parturient duis viverra quis hendrerit. Facilisi quis consectetur massa a ultrices facilisis orci. Diam a platea vitae eget nunc urna. Fermentum pharetra integer ultricies purus odio nam. Lacus, gravida platea auctor id quis faucibus in.</p>"
+  }, {
+    "box_image" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_australia_view.jpg",
+      "alt" : "img_australia_view",
+      "width" : 1270,
+      "height" : 944,
+      "max_width" : 1270,
+      "max_height" : 944
+    },
+    "box_title" : "<h4>Reason 1</h4>\n<h5>Ranked #5 Best city <br>in the world</h5>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at tempus vel parturient duis viverra quis hendrerit. Facilisi quis consectetur massa a ultrices facilisis orci. Diam a platea vitae eget nunc urna. Fermentum pharetra integer ultricies purus odio nam. Lacus, gravida platea auctor id quis faucibus in.</p>"
+  }, {
+    "box_image" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_australia_view.jpg",
+      "alt" : "img_australia_view",
+      "width" : 1270,
+      "height" : 944,
+      "max_width" : 1270,
+      "max_height" : 944
+    },
+    "box_title" : "<h4>Reason 1</h4>\n<h5>Ranked #5 Best city <br>in the world</h5>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at tempus vel parturient duis viverra quis hendrerit. Facilisi quis consectetur massa a ultrices facilisis orci. Diam a platea vitae eget nunc urna. Fermentum pharetra integer ultricies purus odio nam. Lacus, gravida platea auctor id quis faucibus in.</p>"
+  }, {
+    "box_image" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_australia_view.jpg",
+      "alt" : "img_australia_view",
+      "width" : 1270,
+      "height" : 944,
+      "max_width" : 1270,
+      "max_height" : 944
+    },
+    "box_title" : "<h4>Reason 1</h4>\n<h5>Ranked #5 Best city <br>in the world</h5>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at tempus vel parturient duis viverra quis hendrerit. Facilisi quis consectetur massa a ultrices facilisis orci. Diam a platea vitae eget nunc urna. Fermentum pharetra integer ultricies purus odio nam. Lacus, gravida platea auctor id quis faucibus in.</p>"
+  }, {
+    "box_image" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_australia_view.jpg",
+      "alt" : "img_australia_view",
+      "width" : 1270,
+      "height" : 944,
+      "max_width" : 1270,
+      "max_height" : 944
+    },
+    "box_title" : "<h4>Reason 1</h4>\n<h5>Ranked #5 Best city <br>in the world</h5>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at tempus vel parturient duis viverra quis hendrerit. Facilisi quis consectetur massa a ultrices facilisis orci. Diam a platea vitae eget nunc urna. Fermentum pharetra integer ultricies purus odio nam. Lacus, gravida platea auctor id quis faucibus in.</p>"
+  } ]
+} ]

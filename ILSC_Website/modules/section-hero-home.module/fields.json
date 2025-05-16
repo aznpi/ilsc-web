@@ -1,0 +1,64 @@
+[ {
+  "id" : "1f05a7b7-52cc-b2eb-c1a3-e769709d4bdc",
+  "name" : "hero_text",
+  "label" : "Hero Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h1>Empowering<br>students through<br>education</h1>\n<h2>Your journey to learning english starts here</h2>"
+}, {
+  "id" : "a09f3350-c5dc-fe0e-47a6-1202e2ca218d",
+  "name" : "hero_image",
+  "label" : "Hero Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : true,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/hero_home.jpg",
+    "alt" : "hero_home",
+    "width" : 2880,
+    "height" : 1440,
+    "max_width" : 2880,
+    "max_height" : 1440
+  }
+}, {
+  "id" : "1f7a5fbb-f5dd-02a6-83b2-1e113f7c1bc2",
+  "name" : "hero_video_url",
+  "label" : "Hero Video URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "FILE" ],
+  "type" : "url",
+  "display_width" : null,
+  "default" : {
+    "type" : "EXTERNAL",
+    "href" : "",
+    "content_id" : null
+  }
+}, {
+  "id" : "539c16cc-5fd8-a4dd-efab-ebd9f66bc2ea",
+  "name" : "mobile_hero_image",
+  "label" : "Mobile Hero Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/hero_home_mobile_2.jpg",
+    "alt" : "hero_home_mobile_2",
+    "width" : 1166,
+    "height" : 1440,
+    "max_width" : 1166,
+    "max_height" : 1440
+  }
+} ]

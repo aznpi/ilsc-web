@@ -1,0 +1,156 @@
+{% set queryparam = '' %}
+{% set category = "Youth Programs"%}
+{% set queryparam = queryparam ~ "&category__eq="+category|urlencode%}
+{% set queryparam = queryparam ~ "&enable__eq=true"  %}
+
+{% set fees = hubdb_table_rows(6973607,queryparam) %}
+{% set priceListArray = [] %}
+
+{% for fee in fees %}
+{% do priceListArray.append({
+      item:fee.item_name.name,
+      description:fee.price_description,
+      inclusiveTxt:fee.description,
+      priceCurrent: fee.price_current,
+      priceNext: fee.price_year_2
+   }) %}
+{% endfor %}
+{% set anchorId = module.anchor_id|lower|replace(' ','-')|replace("'","-")|replace(',','-') %}
+
+<section id="{{anchorId}}" class="section-normal section-pricing-boxes">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="description center">
+          <h2 class="bold">{{module.anchor_id}}</h2>
+          <h2 class="bold">
+            <span><a href="#" data-bs-target="#{{anchorId}}-price"  data-bs-slide-to="0" class="active current-year"></a> {% if module.enable_next_year_price_boolean %}| <a href="#" data-bs-target="#{{anchorId}}-price"  data-bs-slide-to="1" class="next-year"></a>{% endif %}</span>
+          </h2>
+          <h4>
+            {{ module.title_description }}
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div id="{{anchorId}}-price" class="carousel slide">
+      <div class="carousel-inner">        
+        <div class="carousel-item active">
+          
+          <div class="row boxes-container">
+            {% for priceItem in priceListArray|groupby('item') %}
+            <div class="col-md-{{ module.column_choice }}">
+              <div class="price-box-container">
+                <div class="box-container" style="background: linear-gradient(169deg,rgba(245,130,32,1), rgba(245,130,32,1) 74%,rgba({{ module.bg_color.color|convert_rgb }},{{ module.bg_color.opacity }}) 74.3%, rgba({{ module.bg_color.color|convert_rgb }},{{ module.bg_color.opacity }}) 100%);">
+                  <h5>{{priceItem.grouper}}</h5>
+                </div>
+                <div class="description">
+                  {% for listItem in priceItem.list|groupby('description') %}
+                    {% for price in listItem.list|unique %}
+                      {{price.inclusiveTxt}}
+                    {% endfor %}
+                  {% endfor %}
+                </div>
+                <div class="price-table">
+                  <table>
+                    {% for listItem in priceItem.list|groupby('description') %}
+                      {% for price in listItem.list|unique %}
+
+                        <tr>
+                          <td class="item">{{listItem.grouper}}</td>
+                          <td class="price-item">{{price.priceCurrent|format_currency("en-US")}}</td>
+                        </tr>
+
+                      {% endfor %}
+                    {% endfor %}
+                  </table>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+
+        </div>
+        {% if module.enable_next_year_price_boolean %}
+          <div class="carousel-item">
+
+            <div class="row boxes-container">
+              {% for priceItem in priceListArray|groupby('item') %}
+              <div class="col-md-{{ module.column_choice }}">
+                <div class="price-box-container">
+                  <div class="box-container" style="background: linear-gradient(169deg,rgba(245,130,32,1), rgba(245,130,32,1) 74%,rgba({{ module.bg_color.color|convert_rgb }},{{ module.bg_color.opacity }}) 74.3%, rgba({{ module.bg_color.color|convert_rgb }},{{ module.bg_color.opacity }}) 100%);">
+                    <h5>{{priceItem.grouper}}</h5>
+                  </div>
+                  <div class="description">
+                    {% for listItem in priceItem.list|groupby('description') %}
+                      {% for price in listItem.list|unique %}
+                        {{price.inclusiveTxt}}
+                      {% endfor %}
+                    {% endfor %}
+                  </div>
+                  <div class="price-table">
+                    <table>
+                      {% for listItem in priceItem.list|groupby('description') %}
+
+
+                      {% for price in listItem.list|unique %}
+
+                      <tr>
+                        <td class="item">{{listItem.grouper}}</td>
+                        <td class="price-item">{{price.priceNext|format_currency("en-US")}}</td>
+                      </tr>
+
+                      {% endfor %}
+                      {% endfor %}
+                    </table>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+
+          </div>
+        {% endif %}
+      </div>
+    </div>
+    {% if module.bottom_rich_text %}
+      <div class="row">
+        <div class="col-md-12">
+          <div class="description">
+            {% inline_rich_text field="bottom_rich_text" value="{{ module.bottom_rich_text }}" %}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+{% require_js position='footer'%}
+<script>
+$(document).ready(function(){
+  $('#{{anchorId}} a.year-link').click(function(){
+    $('#{{anchorId}} a.year-link').removeClass('active');
+    $(this).addClass('active');
+  });
+
+  function resizeProgramBoxes{{anchorId|replace('-','')}}(){
+
+    var resizeArray = ['.price-table table']
+    var arrayLength = resizeArray.length;
+    var maxHeight = [];
+
+    for (var i = 0; i < arrayLength; i++) {
+      maxHeight[i] = 0;
+      $("#{{anchorId}} .price-box-container "+ resizeArray[i]).each(function () {
+        if ($(this).height() > maxHeight[i]) { maxHeight[i] = $(this).height(); }
+      });
+      $("#{{anchorId}} .price-box-container "+ resizeArray[i]).height(maxHeight[i]);
+    }
+
+  }
+
+  resizeProgramBoxes{{anchorId|replace('-','')}}();
+  window.addEventListener("resize", resizeProgramBoxes{{anchorId|replace('-','')}});
+  });
+
+</script>
+{% end_require_js %}

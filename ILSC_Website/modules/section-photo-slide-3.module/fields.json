@@ -1,0 +1,188 @@
+[ {
+  "id" : "2453c549-46a2-2d36-e712-0e4e91ac720b",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Things to do in Sydney</h2>\n<h5>EXPLORE THE BEST OF SYDNEY</h5>"
+}, {
+  "id" : "a22f9c67-416a-2767-fa1b-944eda5176a8",
+  "name" : "enable_disable_box_link_choice",
+  "label" : "Enable/Disable Box Link Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "enable", "Enable" ], [ "disable", "Disable" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "disable"
+}, {
+  "id" : "7d5f92c3-d010-f178-1bb6-f056050275fb",
+  "name" : "choice_field",
+  "label" : "Text Align",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "center", "Center Text" ], [ "left", "Left Text" ], [ "right", "Right Text" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "left"
+}, {
+  "id" : "4c1134ae-3bef-4b32-deb2-60c93e8ba0a9",
+  "name" : "image_group",
+  "label" : "Image Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 10,
+    "sorting_label_field" : "b9150d94-9fe1-e924-f70c-21d6791a13cd",
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "b9150d94-9fe1-e924-f70c-21d6791a13cd",
+    "name" : "image",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_ilscgive_1.jpg",
+      "alt" : "ILSC Community",
+      "width" : 354,
+      "height" : 403,
+      "max_width" : 354,
+      "max_height" : 403
+    }
+  }, {
+    "id" : "47102f78-49a5-1176-6f90-a9225e7d1dd1",
+    "name" : "short_description",
+    "label" : "Short Description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null
+  }, {
+    "id" : "ed2c861c-f655-dc9d-ae67-4f09ed897748",
+    "name" : "link_field",
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "a22f9c67-416a-2767-fa1b-944eda5176a8",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "enable",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 32926210447
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_ilscgive_1.jpg",
+      "alt" : "ILSC Community",
+      "width" : 354,
+      "height" : 403,
+      "max_width" : 354,
+      "max_height" : 403
+    },
+    "link_field" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 32926210447
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_ilscgive_1.jpg",
+      "alt" : "ILSC Community",
+      "width" : 354,
+      "height" : 403,
+      "max_width" : 354,
+      "max_height" : 403
+    },
+    "link_field" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 32926210447
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_ilscgive_1.jpg",
+      "alt" : "ILSC Community",
+      "width" : 354,
+      "height" : 403,
+      "max_width" : 354,
+      "max_height" : 403
+    },
+    "link_field" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 32926210447
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_ilscgive_1.jpg",
+      "alt" : "ILSC Community",
+      "width" : 354,
+      "height" : 403,
+      "max_width" : 354,
+      "max_height" : 403
+    },
+    "link_field" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 32926210447
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+} ]

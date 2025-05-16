@@ -1,0 +1,59 @@
+<footer class="footer-container">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 logo-image">
+          <img src="{{ module.logo.src }}" alt="{{ module.logo.alt }}" {{ sizeAttrs }}>
+			</div>
+      
+      {% for item in module.column %}
+        <div class="col-md-2 footer-dropdown">
+          <input id="{{item.column_id}}-footer-id" type="checkbox" name="footer-menu">
+          <label for="{{item.column_id}}-footer-id">
+            {% inline_rich_text field="column_title" value="{{ item.column_title }}" %}
+          </label>
+          <ul class="footer-dropdown-item">
+            {% for item2 in item.link_group %}
+              <li><a href="{{ item2.link_field.url.href }}" {% if item2.link_field.open_in_new_tab %}target="_blank"{% endif %}>{{ item2.link_text }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+			{% endfor %}
+      
+			<div class="divider"></div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-9 footnote">
+				{% inline_rich_text field="copyright" value="{{ module.copyright }}" %}
+      </div>
+			<div class="col-md-3 social-media-container">
+        <h5>
+          {% inline_text field="follow_us_text" value="{{ module.follow_us_text }}" %}
+        </h5>
+        <ul>
+					<li><a href="{{ module.social_media.fb_link.url.href }}" {% if module.social_media.fb_link.open_in_new_tab %}target="_blank"{% endif %}><i class="fab fa-facebook-square"></i></a></li>
+					<li><a href="{{ module.social_media.instagram_link.url.href }}" {% if module.social_media.instagram_link.open_in_new_tab %}target="_blank"{% endif %}><i class="fab fa-instagram"></i></a></li>
+					<li><a href="{{ module.social_media.youtube_link.url.href }}" {% if module.social_media.youtube_link.open_in_new_tab %}target="_blank"{% endif %}><i class="fab fa-youtube"></i></a></li>
+					<li><a href="{{ module.social_media.linkedin_link.url.href }}" {% if module.social_media.linkedin_link.open_in_new_tab %}target="_blank"{% endif %}><i class="fab fa-linkedin-in"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="ilscModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+      <div class="modal-body">
+      	
+      </div>
+      
+    </div>
+  </div>
+</div>

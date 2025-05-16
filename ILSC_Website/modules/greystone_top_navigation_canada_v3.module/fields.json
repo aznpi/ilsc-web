@@ -1,0 +1,2593 @@
+[ {
+  "id" : "3fb86191-fb26-7356-8b36-5ee9f61e23af",
+  "name" : "home_link",
+  "label" : "Home Link",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 31460906441
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "picker" : "image",
+  "id" : "f3a50182-f61f-ff42-7994-ba6641dd148b",
+  "name" : "logo_svg_file",
+  "label" : "Logo SVG File",
+  "required" : false,
+  "locked" : true,
+  "type" : "file",
+  "display_width" : null,
+  "default" : "https://www.ilsc.com/hubfs/template-resources/images/internal/logos/logo_Greystone_College-Color-Logo-Horizontal.svg"
+}, {
+  "picker" : "image",
+  "id" : "ae732765-7baf-9f57-d181-c6e4db28e601",
+  "name" : "alternate_logo_svg_file",
+  "label" : "Alternate Logo SVG File",
+  "required" : false,
+  "locked" : true,
+  "type" : "file",
+  "display_width" : null,
+  "default" : "https://www.ilsc.com/hubfs/GC_Horizontal_Logo_CMYK_FR_%20(1).svg"
+}, {
+  "id" : "dd8c6ae7-719a-4e7c-9740-e33b312b3049",
+  "name" : "logo_alt",
+  "label" : "Logo Alt",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "ILSC Language Schools and Greystone College"
+}, {
+  "id" : "7052cf13-9e01-96f4-a205-f8d55e3dd6b9",
+  "name" : "alternate_logo_alt",
+  "label" : "Alternate Logo Alt",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "ILSC Language Schools and Greystone College"
+}, {
+  "id" : "52d48380-99c3-a816-58ae-8a60e4c2482e",
+  "name" : "language_code_to_use_alternate_logo",
+  "label" : "Language Code to use Alternate Logo",
+  "inline_help_text" : "Language Code to use alternate Logo",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "fr"
+}, {
+  "id" : "42104af9-36ab-0d96-55ab-cd95cdca53d8",
+  "name" : "nav_titles",
+  "label" : "Nav Titles",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "15a1e2de-364e-2766-3e52-f7563614ab67",
+    "name" : "nav_title_destinations",
+    "label" : "Nav Title - Destinations",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Destinations"
+  }, {
+    "id" : "faa5762d-4c81-f8ab-de31-ffaaa8039059",
+    "name" : "nav_title_programs",
+    "label" : "Nav Title - Programs",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Study"
+  }, {
+    "id" : "3757b31b-0f02-ac3a-8729-61a8ba9a95bb",
+    "name" : "nav_title_work",
+    "label" : "Nav Title - Work",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Work"
+  }, {
+    "id" : "cff58dee-2f83-9b2f-1af1-e1744e5102a5",
+    "name" : "nav_title_student_services",
+    "label" : "Nav Title - Student Services",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Student Services"
+  }, {
+    "id" : "456231a5-317d-0f5b-39fb-74c092778191",
+    "name" : "nav_title_admissions",
+    "label" : "Nav Title - Admissions",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Admissions"
+  }, {
+    "id" : "70156122-1e82-44cb-04f1-e9fbfa13ba92",
+    "name" : "nav_title_login",
+    "label" : "Nav Title - Login",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Login"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "nav_title_destinations" : "Destinations",
+    "nav_title_programs" : "Study",
+    "nav_title_work" : "Work",
+    "nav_title_student_services" : "Student Services",
+    "nav_title_admissions" : "Admissions",
+    "nav_title_login" : "Login"
+  }
+}, {
+  "id" : "cbb99dd3-f6f1-eb93-699b-32bb1556a1bb",
+  "name" : "destinations_menu",
+  "label" : "Destinations Menu",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "d9d1d120-f0f0-a95c-da8f-508b058d5d65",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>STUDY IN CANADA</h4>"
+  }, {
+    "id" : "1cb36b6f-8540-f559-fd28-3d73a3e38b73",
+    "name" : "links",
+    "label" : "Links",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 12,
+      "sorting_label_field" : "9c165d2c-d143-ad6e-5b55-1d9d5dc6115a",
+      "default" : 3
+    },
+    "children" : [ {
+      "id" : "b4d31c00-9720-b923-3db0-9cc867619343",
+      "name" : "link_page",
+      "label" : "Link Page",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "CONTENT" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "9c165d2c-d143-ad6e-5b55-1d9d5dc6115a",
+      "name" : "link_title",
+      "label" : "Link Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Montreal"
+    }, {
+      "id" : "364de59e-3b34-dd59-8a5c-3f98218dcab9",
+      "name" : "image_field",
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_menu_Montreal.jpg",
+        "alt" : "img_menu_Montreal",
+        "loading" : "lazy",
+        "width" : 352,
+        "height" : 141,
+        "max_width" : 352,
+        "max_height" : 141
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ {
+      "link_page" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_title" : "Montreal",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_menu_Montreal.jpg",
+        "alt" : "img_menu_Montreal",
+        "loading" : "lazy",
+        "width" : 352,
+        "height" : 141,
+        "max_width" : 352,
+        "max_height" : 141
+      }
+    }, {
+      "link_page" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_title" : "Montreal",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_menu_Montreal.jpg",
+        "alt" : "img_menu_Montreal",
+        "loading" : "lazy",
+        "width" : 352,
+        "height" : 141,
+        "max_width" : 352,
+        "max_height" : 141
+      }
+    }, {
+      "link_page" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_title" : "Montreal",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_menu_Montreal.jpg",
+        "alt" : "img_menu_Montreal",
+        "loading" : "lazy",
+        "width" : 352,
+        "height" : 141,
+        "max_width" : 352,
+        "max_height" : 141
+      }
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "title" : "<h4>STUDY IN CANADA</h4>",
+    "links" : [ {
+      "link_page" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_title" : "Montreal",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_menu_Montreal.jpg",
+        "alt" : "img_menu_Montreal",
+        "loading" : "lazy",
+        "width" : 352,
+        "height" : 141,
+        "max_width" : 352,
+        "max_height" : 141
+      }
+    }, {
+      "link_page" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_title" : "Montreal",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_menu_Montreal.jpg",
+        "alt" : "img_menu_Montreal",
+        "loading" : "lazy",
+        "width" : 352,
+        "height" : 141,
+        "max_width" : 352,
+        "max_height" : 141
+      }
+    }, {
+      "link_page" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_title" : "Montreal",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_menu_Montreal.jpg",
+        "alt" : "img_menu_Montreal",
+        "loading" : "lazy",
+        "width" : 352,
+        "height" : 141,
+        "max_width" : 352,
+        "max_height" : 141
+      }
+    } ]
+  }
+}, {
+  "id" : "b4f3d7ae-fc77-e4b8-5530-f1f8f00b7374",
+  "name" : "programs_menu",
+  "label" : "Programs Menu",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "7c3141e4-9694-117c-1dcd-c135a601de95",
+    "name" : "links",
+    "label" : "Links",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 4,
+      "sorting_label_field" : "d524e69a-0799-94d2-9d2b-b957f495099a",
+      "default" : 2
+    },
+    "children" : [ {
+      "id" : "d524e69a-0799-94d2-9d2b-b957f495099a",
+      "name" : "header_title",
+      "label" : "Header Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "PROGRAMS"
+    }, {
+      "id" : "f3d16fd4-0b54-256c-d9b8-26c8ac82d7fb",
+      "name" : "image_field",
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_menu_Programs.jpg",
+        "alt" : "img_menu_Programs",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 190,
+        "max_width" : 257,
+        "max_height" : 190
+      }
+    }, {
+      "id" : "c11a7a8f-d2db-81e1-37d7-d2b513da91c4",
+      "name" : "link_field_group",
+      "label" : "Link Field group",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "max" : 20,
+        "sorting_label_field" : "8576b94e-092c-e5ee-b0d4-7de84c62c4dc",
+        "default" : 5
+      },
+      "children" : [ {
+        "id" : "ad08695b-04bc-83c2-4221-8486810a0b70",
+        "name" : "link_field",
+        "label" : "Link",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+        "show_advanced_rel_options" : false,
+        "type" : "link",
+        "display_width" : null,
+        "default" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }, {
+        "id" : "8576b94e-092c-e5ee-b0d4-7de84c62c4dc",
+        "name" : "link_text",
+        "label" : "Link Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Business"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : [ {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Business"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Business"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Business"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Business"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Business"
+      } ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ {
+      "header_title" : "PROGRAMS",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_menu_Programs.jpg",
+        "alt" : "img_menu_Programs",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 190,
+        "max_width" : 257,
+        "max_height" : 190
+      },
+      "link_field_group" : [ {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Business"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Business"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Business"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Business"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Business"
+      } ]
+    }, {
+      "header_title" : "PROGRAMS",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_menu_Programs.jpg",
+        "alt" : "img_menu_Programs",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 190,
+        "max_width" : 257,
+        "max_height" : 190
+      },
+      "link_field_group" : [ {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Business"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Business"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Business"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Business"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Business"
+      } ]
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "links" : [ {
+      "header_title" : "PROGRAMS",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_menu_Programs.jpg",
+        "alt" : "img_menu_Programs",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 190,
+        "max_width" : 257,
+        "max_height" : 190
+      },
+      "link_field_group" : [ {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Business"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Business"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Business"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Business"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Business"
+      } ]
+    }, {
+      "header_title" : "PROGRAMS",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_menu_Programs.jpg",
+        "alt" : "img_menu_Programs",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 190,
+        "max_width" : 257,
+        "max_height" : 190
+      },
+      "link_field_group" : [ {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Business"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Business"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Business"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Business"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Business"
+      } ]
+    } ]
+  }
+}, {
+  "id" : "edddc8bb-622d-aa27-6b15-ef359cfd3486",
+  "name" : "work_menu",
+  "label" : "Work Menu",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "69b56c63-b9ad-23db-9572-67dbfa11566c",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>WORK</h4>"
+  }, {
+    "id" : "d0ff7a7a-92af-5e80-456b-01d46aeefbd7",
+    "name" : "links",
+    "label" : "Links",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 12,
+      "sorting_label_field" : "9c165d2c-d143-ad6e-5b55-1d9d5dc6115a",
+      "default" : 3
+    },
+    "children" : [ {
+      "id" : "fe5e00f8-1491-7bc0-c045-ed227642b613",
+      "name" : "link_page",
+      "label" : "Link Page",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "CONTENT" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "bf6d69a3-fcc0-2bff-ce87-4f41c097193d",
+      "name" : "link_title",
+      "label" : "Link Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Montreal"
+    }, {
+      "id" : "cfa08811-2afb-9e34-6434-96a696ee6904",
+      "name" : "image_field",
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_menu_Montreal.jpg",
+        "alt" : "img_menu_Montreal",
+        "loading" : "lazy",
+        "width" : 352,
+        "height" : 141,
+        "max_width" : 352,
+        "max_height" : 141
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ {
+      "link_page" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_title" : "Montreal",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_menu_Montreal.jpg",
+        "alt" : "img_menu_Montreal",
+        "loading" : "lazy",
+        "width" : 352,
+        "height" : 141,
+        "max_width" : 352,
+        "max_height" : 141
+      }
+    }, {
+      "link_page" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_title" : "Montreal",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_menu_Montreal.jpg",
+        "alt" : "img_menu_Montreal",
+        "loading" : "lazy",
+        "width" : 352,
+        "height" : 141,
+        "max_width" : 352,
+        "max_height" : 141
+      }
+    }, {
+      "link_page" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_title" : "Montreal",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_menu_Montreal.jpg",
+        "alt" : "img_menu_Montreal",
+        "loading" : "lazy",
+        "width" : 352,
+        "height" : 141,
+        "max_width" : 352,
+        "max_height" : 141
+      }
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "title" : "<h4>WORK</h4>",
+    "links" : [ {
+      "link_page" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_title" : "Montreal",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_menu_Montreal.jpg",
+        "alt" : "img_menu_Montreal",
+        "loading" : "lazy",
+        "width" : 352,
+        "height" : 141,
+        "max_width" : 352,
+        "max_height" : 141
+      }
+    }, {
+      "link_page" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_title" : "Montreal",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_menu_Montreal.jpg",
+        "alt" : "img_menu_Montreal",
+        "loading" : "lazy",
+        "width" : 352,
+        "height" : 141,
+        "max_width" : 352,
+        "max_height" : 141
+      }
+    }, {
+      "link_page" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_title" : "Montreal",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_menu_Montreal.jpg",
+        "alt" : "img_menu_Montreal",
+        "loading" : "lazy",
+        "width" : 352,
+        "height" : 141,
+        "max_width" : 352,
+        "max_height" : 141
+      }
+    } ]
+  }
+}, {
+  "id" : "f81b9147-8789-95c4-9b2c-fef4310742aa",
+  "name" : "student_services_menu",
+  "label" : "Student Services Menu",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "ab477c7b-9f0c-065b-c60f-9b4f709040a4",
+    "name" : "links",
+    "label" : "Links",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 4,
+      "sorting_label_field" : "d524e69a-0799-94d2-9d2b-b957f495099a",
+      "default" : 2
+    },
+    "children" : [ {
+      "id" : "ef8eeb00-6678-cdcc-42f8-22a2c2a8b931",
+      "name" : "header_title",
+      "label" : "Header Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "STUDENT SERVICES"
+    }, {
+      "id" : "8987ac13-36e2-5d6f-b770-b1a953fcdc74",
+      "name" : "image_field",
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_menu_Student_Services.jpg",
+        "alt" : "img_menu_Student_Services",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 190,
+        "max_width" : 257,
+        "max_height" : 190
+      }
+    }, {
+      "id" : "c1545b73-6de6-bbf5-cf82-1c0d42fe919d",
+      "name" : "link_field_group",
+      "label" : "Link Field group",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "max" : 20,
+        "sorting_label_field" : "4a7268d9-ed49-44c8-baac-d5f56e6abb48",
+        "default" : 5
+      },
+      "children" : [ {
+        "id" : "e4e79c2e-ad5d-c0ae-39f1-74befc929bf1",
+        "name" : "link_field",
+        "label" : "Link",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+        "show_advanced_rel_options" : false,
+        "type" : "link",
+        "display_width" : null,
+        "default" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }, {
+        "id" : "4a7268d9-ed49-44c8-baac-d5f56e6abb48",
+        "name" : "link_text",
+        "label" : "Link Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Visas & Insurance"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : [ {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      } ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ {
+      "header_title" : "STUDENT SERVICES",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_menu_Student_Services.jpg",
+        "alt" : "img_menu_Student_Services",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 190,
+        "max_width" : 257,
+        "max_height" : 190
+      },
+      "link_field_group" : [ {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      } ]
+    }, {
+      "header_title" : "STUDENT SERVICES",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_menu_Student_Services.jpg",
+        "alt" : "img_menu_Student_Services",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 190,
+        "max_width" : 257,
+        "max_height" : 190
+      },
+      "link_field_group" : [ {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      } ]
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "links" : [ {
+      "header_title" : "STUDENT SERVICES",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_menu_Student_Services.jpg",
+        "alt" : "img_menu_Student_Services",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 190,
+        "max_width" : 257,
+        "max_height" : 190
+      },
+      "link_field_group" : [ {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      } ]
+    }, {
+      "header_title" : "STUDENT SERVICES",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_menu_Student_Services.jpg",
+        "alt" : "img_menu_Student_Services",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 190,
+        "max_width" : 257,
+        "max_height" : 190
+      },
+      "link_field_group" : [ {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      } ]
+    } ]
+  }
+}, {
+  "id" : "ef5f957e-0901-ed12-c03a-7978d5806fb5",
+  "name" : "admissions_menu",
+  "label" : "Admissions Menu",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "5ee06f22-a77b-95dd-c18b-bf81a90c568e",
+    "name" : "links",
+    "label" : "Links",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "a5acb114-50b2-4f90-b2c4-45e58860424a",
+      "name" : "header_title",
+      "label" : "Header Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "ADMISSION AND FEES"
+    }, {
+      "id" : "ab0ee725-ba46-b2e1-3962-bc43f7ce9bc7",
+      "name" : "image_field",
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_menu_Admissions.jpg",
+        "alt" : "img_menu_Admissions",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 190,
+        "max_width" : 257,
+        "max_height" : 190
+      }
+    }, {
+      "id" : "2f409d2d-b2ef-0341-8611-df2d1783e450",
+      "name" : "link_field_group",
+      "label" : "Link Field group",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "max" : 20,
+        "sorting_label_field" : "53c8fb42-a604-0526-e955-4767b86bca52",
+        "default" : 5
+      },
+      "children" : [ {
+        "id" : "b1fd3008-7a58-9be1-1764-140196ae858e",
+        "name" : "link_field",
+        "label" : "Link",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+        "show_advanced_rel_options" : false,
+        "type" : "link",
+        "display_width" : null,
+        "default" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }, {
+        "id" : "53c8fb42-a604-0526-e955-4767b86bca52",
+        "name" : "link_text",
+        "label" : "Link Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Visas & Insurance"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : [ {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      } ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "header_title" : "ADMISSION AND FEES",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_menu_Admissions.jpg",
+        "alt" : "img_menu_Admissions",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 190,
+        "max_width" : 257,
+        "max_height" : 190
+      },
+      "link_field_group" : [ {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      } ]
+    }
+  }, {
+    "id" : "8de67b88-10c0-01d0-a406-311ecdedf68c",
+    "name" : "apply_now_field_group",
+    "label" : "Apply Now Field group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "d131ae28-f72d-cf89-f6c0-571ed937a6cb",
+      "name" : "text_field",
+      "label" : "Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Ready to make the next step?"
+    }, {
+      "id" : "4b226616-98da-e670-4290-cdde22cac61d",
+      "name" : "link_text",
+      "label" : "Link Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "APPLY NOW"
+    }, {
+      "id" : "820b0b85-9fb5-b1e3-70cb-cfcd8d8c176a",
+      "name" : "link_field_1",
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 42695959143
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "text_field" : "Ready to make the next step?",
+      "link_text" : "APPLY NOW",
+      "link_field_1" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 42695959143
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }, {
+    "id" : "91f19465-9c8a-fd0a-07bb-251750902b14",
+    "name" : "quote_field_group",
+    "label" : "Quote Field group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "8c93b786-1df5-4535-8ba6-3aeda03b65eb",
+      "name" : "show_link",
+      "label" : "Show Link",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "display_width" : null,
+      "default" : true
+    }, {
+      "id" : "f7f22b86-d0bd-acd8-af5e-dafb0368f62f",
+      "name" : "text_field",
+      "label" : "Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Ready to make the next step?"
+    }, {
+      "id" : "d2b7e6a1-1f9f-0baf-ad6a-0f54460e6b60",
+      "name" : "link_text",
+      "label" : "Link Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "GET A QUOTE"
+    }, {
+      "id" : "6c319583-df6d-04c4-c8e1-2e41ea6aa176",
+      "name" : "link_field_1",
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "#quote-modal",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "show_link" : true,
+      "text_field" : "Ready to make the next step?",
+      "link_text" : "GET A QUOTE",
+      "link_field_1" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "#quote-modal",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "links" : {
+      "header_title" : "ADMISSION AND FEES",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/img_menu_Admissions.jpg",
+        "alt" : "img_menu_Admissions",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 190,
+        "max_width" : 257,
+        "max_height" : 190
+      },
+      "link_field_group" : [ {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      }, {
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "link_text" : "Visas & Insurance"
+      } ]
+    },
+    "apply_now_field_group" : {
+      "text_field" : "Ready to make the next step?",
+      "link_text" : "APPLY NOW",
+      "link_field_1" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 42695959143
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    },
+    "quote_field_group" : {
+      "show_link" : true,
+      "text_field" : "Ready to make the next step?",
+      "link_text" : "GET A QUOTE",
+      "link_field_1" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "#quote-modal",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }
+}, {
+  "id" : "4c4943f8-9888-f5d3-d5ff-38496ba5082b",
+  "name" : "partners_login_menu",
+  "label" : "Partners Login Menu",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "a3df90e0-ead5-b635-9a23-a2853d8a46d3",
+    "name" : "title_partners_login",
+    "label" : "Title Partners Login",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>PARTNERS LOGIN</h4>"
+  }, {
+    "id" : "d7ce44b2-5291-9b0e-49f9-5052ab3dd48a",
+    "name" : "text_1",
+    "label" : "text 1",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "New to ILSC. Create an account to get started today."
+  }, {
+    "id" : "6c04267b-d3f8-0ab6-857e-cca68da74030",
+    "name" : "text_2",
+    "label" : "text 2",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Have an account? Sign in now."
+  }, {
+    "id" : "f40cc537-b16c-bcad-d695-0d1b8a87bada",
+    "name" : "button_partners_login",
+    "label" : "Button Partners Login",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "0496f548-3daa-994c-356e-0c973ab242ac",
+      "name" : "partners_login_url",
+      "label" : "Partners Login URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      }
+    }, {
+      "id" : "e4461720-8472-a3d6-ab0a-764d0dbb97b8",
+      "name" : "button_text_partners_login",
+      "label" : "Button Text Partners Login",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Partners Login"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "partners_login_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text_partners_login" : "Partners Login"
+    }
+  }, {
+    "id" : "d1ff6514-223e-a2a6-7a9d-3cbadd39b8bd",
+    "name" : "button_partners_create_account",
+    "label" : "Button Partners Create Account",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "a6e8ec4b-46f3-769f-e691-cfe8592d8c8b",
+      "name" : "partners_login_url",
+      "label" : "Create Account URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      }
+    }, {
+      "id" : "58cca784-3dac-9a93-ae7f-df8a9039b5f6",
+      "name" : "button_text_partners_login",
+      "label" : "Button Text Partners Create Account",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Create My Account"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "partners_login_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text_partners_login" : "Create My Account"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "title_partners_login" : "<h4>PARTNERS LOGIN</h4>",
+    "text_1" : "New to ILSC. Create an account to get started today.",
+    "text_2" : "Have an account? Sign in now.",
+    "button_partners_login" : {
+      "partners_login_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text_partners_login" : "Partners Login"
+    },
+    "button_partners_create_account" : {
+      "partners_login_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text_partners_login" : "Create My Account"
+    }
+  }
+}, {
+  "id" : "fbae2e0e-371c-e4a6-4d9b-48548df41101",
+  "name" : "student_login_menu",
+  "label" : "Student Login Menu",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "f01df4fa-bc2c-200f-dc16-506abe9f489f",
+    "name" : "title_student_login",
+    "label" : "Title Student Login",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>STUDENT LOGIN</h4>"
+  }, {
+    "id" : "65f14b95-db50-da14-3bfc-99face552bb4",
+    "name" : "text_1",
+    "label" : "text 1",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Have an account? Sign in now."
+  }, {
+    "id" : "a89b9035-24a6-c154-729a-c060f4e5c502",
+    "name" : "button_student_login",
+    "label" : "Button Student Login",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "399d8afc-f1e5-0aa3-aaa3-57539a88e517",
+      "name" : "student_login_url",
+      "label" : "Student Login URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      }
+    }, {
+      "id" : "f5e2d66a-de0c-5610-0585-1afb3c9acef7",
+      "name" : "button_text_student_login",
+      "label" : "Button Text Student Login",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "MyILSC Login"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "student_login_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text_student_login" : "MyILSC Login"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "title_student_login" : "<h4>STUDENT LOGIN</h4>",
+    "text_1" : "Have an account? Sign in now.",
+    "button_student_login" : {
+      "student_login_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text_student_login" : "MyILSC Login"
+    }
+  }
+}, {
+  "id" : "3554945f-8da6-e49c-0b04-eaea98371ae0",
+  "name" : "alumni_login_menu",
+  "label" : "Alumni Login Menu",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "d0566bc7-9f41-46cd-b370-638803d1e489",
+    "name" : "title_alumni_login",
+    "label" : "Title Alumni Login",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>ALUMNI LOGIN</h4>"
+  }, {
+    "id" : "9caa1e84-d897-a3ed-08de-ee2649160411",
+    "name" : "text_1",
+    "label" : "text 1",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Have an account? Sign in now."
+  }, {
+    "id" : "b63c0574-9ef1-b41c-6d6f-d78e5661c282",
+    "name" : "button_alumni_login",
+    "label" : "Button Alumni Login",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "3b531552-b4da-c520-8aac-d4614c3946d5",
+      "name" : "alumni_login_url",
+      "label" : "Alumni Login URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      }
+    }, {
+      "id" : "daaef419-d608-5f3b-8adc-0af11ffa7d22",
+      "name" : "button_text_alumni_login",
+      "label" : "Button Text Alumni Login",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Alumni Login"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "alumni_login_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text_alumni_login" : "Alumni Login"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "title_alumni_login" : "<h4>ALUMNI LOGIN</h4>",
+    "text_1" : "Have an account? Sign in now.",
+    "button_alumni_login" : {
+      "alumni_login_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text_alumni_login" : "Alumni Login"
+    }
+  }
+}, {
+  "id" : "4c44f97c-d73e-2775-f4b4-be9c9f44b7cb",
+  "name" : "search_menu",
+  "label" : "Search Menu",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "06101793-8eb1-8776-2133-67e839d82ec2",
+    "name" : "title_search",
+    "label" : "Title Search",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>SEARCH</h4>"
+  }, {
+    "id" : "b0499547-b48e-19ce-b2e2-ebb466b9dd6d",
+    "name" : "text_search_placeholder",
+    "label" : "Text Search Placeholder",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "TYPE TO SEARCH"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "title_search" : "<h4>SEARCH</h4>",
+    "text_search_placeholder" : "TYPE TO SEARCH"
+  }
+}, {
+  "id" : "b809dafb-952a-7e01-7028-8ae79902758b",
+  "name" : "title_language",
+  "label" : "Title Language",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h4>Languages</h4>"
+}, {
+  "id" : "fbbde9d3-42ab-6aad-f7ba-8087e59000c6",
+  "name" : "mobile_cta",
+  "label" : "Mobile CTA",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "898ed808-0c35-58c6-1fc9-4a55b3323c58",
+    "name" : "cta_1_group",
+    "label" : "CTA 1 group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "53ffce41-121f-1ad9-8220-48b1b17feb7d",
+      "name" : "cta_url",
+      "label" : "CTA URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    }, {
+      "id" : "5faa9fd5-7515-3f43-084f-dcf70bdacac5",
+      "name" : "cta_text",
+      "label" : "CTA Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "CONTACT US"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "cta_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "cta_text" : "CONTACT US"
+    }
+  }, {
+    "id" : "7ef5f651-9a9b-f255-be9c-5610b3212464",
+    "name" : "cta_2_group",
+    "label" : "CTA 2 group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "0083833c-43db-68e6-a61c-348a552cd9d7",
+      "name" : "cta_url",
+      "label" : "CTA URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    }, {
+      "id" : "5867077c-4da4-9a89-b45c-80699488fb4f",
+      "name" : "cta_text",
+      "label" : "CTA Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "APPLY NOW"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "cta_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "cta_text" : "APPLY NOW"
+    }
+  }, {
+    "id" : "f91e67ca-6ae6-fbdb-7e7a-96737f84cf55",
+    "name" : "cta_quote_group",
+    "label" : "CTA Quote group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "c9a2c710-cb68-76ff-10db-e3a06a768bff",
+      "name" : "show_link",
+      "label" : "Show Link",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "display_width" : null,
+      "default" : true
+    }, {
+      "id" : "ed379b32-1db8-db25-76c0-c29f414f1c04",
+      "name" : "cta_url",
+      "label" : "CTA URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "type" : "EXTERNAL",
+        "href" : "#quote-modal",
+        "content_id" : null
+      }
+    }, {
+      "id" : "af8d0a8d-9a48-ff77-0c47-03dafa36b273",
+      "name" : "cta_text",
+      "label" : "CTA Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "GET A QUOTE"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "show_link" : true,
+      "cta_url" : {
+        "type" : "EXTERNAL",
+        "href" : "#quote-modal",
+        "content_id" : null
+      },
+      "cta_text" : "GET A QUOTE"
+    }
+  }, {
+    "id" : "a8358b9a-2316-7e68-d986-1fbc561475df",
+    "name" : "cta_phone_group",
+    "label" : "CTA Phone group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "68ca86c1-b95a-ef0d-e563-0e4c42395232",
+      "name" : "show_link",
+      "label" : "Show Link",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "display_width" : null,
+      "default" : true
+    }, {
+      "id" : "5404a4ec-a138-1684-f4cf-683dce97c90c",
+      "name" : "cta_text",
+      "label" : "CTA Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Call us: 1-855-560-0700"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "show_link" : true,
+      "cta_text" : "Call us: 1-855-560-0700"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "cta_1_group" : {
+      "cta_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "cta_text" : "CONTACT US"
+    },
+    "cta_2_group" : {
+      "cta_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "cta_text" : "APPLY NOW"
+    },
+    "cta_quote_group" : {
+      "show_link" : true,
+      "cta_url" : {
+        "type" : "EXTERNAL",
+        "href" : "#quote-modal",
+        "content_id" : null
+      },
+      "cta_text" : "GET A QUOTE"
+    },
+    "cta_phone_group" : {
+      "show_link" : true,
+      "cta_text" : "Call us: 1-855-560-0700"
+    }
+  }
+} ]

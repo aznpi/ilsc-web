@@ -1,0 +1,424 @@
+[ {
+  "id" : "50a70c67-a038-490c-2470-de4ab4f99715",
+  "name" : "enable_online_langguage_assesment_on_program_choice",
+  "label" : "Enable Online Langguage Assesment on Program Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "enable", "Enable" ], [ "disable", "Disable" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "disable"
+}, {
+  "id" : "68530e5c-f415-12c0-c39b-fdab8aad8b52",
+  "name" : "online_language_assessment_image",
+  "label" : "Online Language Assessment Image",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "50a70c67-a038-490c-2470-de4ab4f99715",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "enable",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "exact",
+    "src" : "https://www.ilsc.com/hubfs/icon_green_check.png",
+    "alt" : "icon_green_check",
+    "loading" : "lazy",
+    "width" : 36,
+    "height" : 36,
+    "max_width" : 36,
+    "max_height" : 36
+  }
+}, {
+  "id" : "354bc312-266f-7a8f-290a-1edff2a816f0",
+  "name" : "title_text",
+  "label" : "Title Text",
+  "help_text" : "",
+  "inline_help_text" : "Anchor Name must match the Navigation Anchor",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Full-time program"
+}, {
+  "id" : "61aeda78-1109-5499-0e2d-fd0dbfd74716",
+  "name" : "anchor_name_text",
+  "label" : "Anchor Name Text",
+  "help_text" : "",
+  "inline_help_text" : "Anchor Name must match the Navigation Anchor. Do no enter symbols.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Full-time program"
+}, {
+  "id" : "7b5b8cae-bb2f-9a3a-f1a0-67065c07ac18",
+  "name" : "enable_short_box_choice",
+  "label" : "Size Box Choice",
+  "inline_help_text" : "Fixed Small Size Box = Box size will be fixed to fit row, Fixed Medium Size Box = 2 box per row, Flexible Size Box = Box will be flexible based on number of boxes",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "enable", "Fixed Small Size Box" ], [ "2_box_per_row", "Fixed Medium Size Box" ], [ "disable", "Flexible Size Box" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "disable"
+}, {
+  "id" : "1b1565ad-f513-1ace-f834-c952829fc94b",
+  "name" : "enable_header_bar_choice",
+  "label" : "Enable Header Bar Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "enable", "Enable" ], [ "disable", "Disable" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "disable"
+}, {
+  "id" : "06ebe43a-9415-2b0c-e442-69fdf4098a2c",
+  "name" : "show_year_choice",
+  "label" : "Show Year Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "enable", "Show" ], [ "disable", "Hide" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "enable"
+}, {
+  "id" : "d1062dbd-c054-9828-6732-fc3e71b70290",
+  "name" : "header_bar_color",
+  "label" : "Header Bar Color",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "1b1565ad-f513-1ace-f834-c952829fc94b",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "enable",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#FF8B35",
+    "opacity" : 100
+  }
+}, {
+  "id" : "741058aa-6f56-bb71-a68b-a6387c6801ce",
+  "name" : "header_bar_text",
+  "label" : "Header Bar Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "1b1565ad-f513-1ace-f834-c952829fc94b",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "enable",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null
+}, {
+  "id" : "a2092725-9fdd-749a-1531-6555d7ff4a58",
+  "name" : "pricing_description",
+  "label" : "Pricing Description",
+  "help_text" : "Anchor Name must match the Navigation Anchor",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Prices listed are per week."
+}, {
+  "id" : "926af832-2e09-4468-7b19-6dd50f137d9b",
+  "name" : "campus_location",
+  "label" : "Campus Location",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "Vancouver", "Vancouver" ], [ "Toronto", "Toronto" ], [ "Montréal", "Montréal" ], [ "Adelaide", "Adelaide" ], [ "Brisbane", "Brisbane" ], [ "Melbourne", "Melbourne" ], [ "Sydney", "Sydney" ], [ "New Delhi", "New Delhi" ], [ "Online", "Online" ], [ "Perth", "Perth" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "40fbaf9f-1f5e-5792-f5a3-3f5b989d1c24",
+  "name" : "category_choice",
+  "label" : "Category Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "Full Time Programs", "Full Time Programs" ], [ "Part Time Programs", "Part Time Programs" ], [ "High School", "High School" ], [ "Junior Camps", "Junior Camp" ], [ "Family Camps", "Family Camp" ], [ "Homestay", "Homestay" ], [ "Student Apartment", "Student Apartment" ], [ "Other Program Fees", "Other Program Fees" ], [ "Other Accommodation Fees", "Other Accommodation Fees" ], [ "Yoga Packages", "Yoga Packages" ], [ "Residence", "Residence" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "913f2748-b32a-a21c-5059-5ecdb9e3bb47",
+  "name" : "background_color",
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#F6F6F6",
+    "opacity" : 100
+  }
+}, {
+  "id" : "6fdd9d36-58b6-a5bd-7a97-6266bd63b209",
+  "name" : "price_year_field_group",
+  "label" : "Price Year Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 3,
+    "sorting_label_field" : "6086f5e0-7a9c-510a-de50-09f7726db9dd",
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "6086f5e0-7a9c-510a-de50-09f7726db9dd",
+    "name" : "price_year_text",
+    "label" : "Price Year Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "2021"
+  }, {
+    "id" : "5f971d57-231b-6ca1-3ff4-35b52649d9af",
+    "name" : "price_target_choice",
+    "label" : "Price Target Choice",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "price_current", "Current Price" ], [ "price_year_2", "Year 2 Price" ], [ "price_year_3", "Year 3 Price" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "price_current"
+  }, {
+    "id" : "55f7a3fc-ff2d-0f93-6422-868c4814b0c4",
+    "name" : "programs_available_target_choice",
+    "label" : "Programs Available Target Choice",
+    "inline_help_text" : "Choose the year for programs available.",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "programs_available", "Current Year" ], [ "programs_available_year_2", "Year 2" ], [ "programs_available_year_3", "Year 3" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : ""
+  }, {
+    "id" : "e8a4afeb-21f8-ce7b-c354-7aa0a3e12c72",
+    "name" : "price_box_field_group",
+    "label" : "Price Box Field group",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 6,
+      "sorting_label_field" : "1ca6bb80-13f4-00c4-a423-cbb8231256eb",
+      "default" : 1
+    },
+    "children" : [ {
+      "id" : "ea843e94-82b9-699b-53cb-9c7dca9d705e",
+      "name" : "sort_price_row_choice",
+      "label" : "Sort Price Row Choice",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "True", "Descending" ], [ "False", "Ascending" ], [ "none", "None" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "none"
+    }, {
+      "id" : "1ca6bb80-13f4-00c4-a423-cbb8231256eb",
+      "name" : "item_choice",
+      "label" : "Item Choice",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "Intensive", "Intensive" ], [ "Morning", "Morning" ], [ "Afternoon", "Afternoon" ], [ "Evening", "Evening" ], [ "AM", "AM" ], [ "PM", "PM" ], [ "Evening Mon-Wed", "Evening Mon-Wed" ], [ "Evening Thu-Fri", "Evening Thu-Fri" ], [ "Registration Fees", "Registration Fees" ], [ "Material Fees", "Material Fees" ], [ "Additional Fees", "Additional Fees" ], [ "Full-Time", "Full-Time" ], [ "Full-Time Online 1", "Full-Time Online 1" ], [ "Full-Time Online 2", "Full-Time Online 2" ], [ "Part-Time Online ", "Part-Time Online " ], [ "Individual Credits", "Individual Credits" ], [ "Fast Track to Higher Education", "Fast Track to Higher Education" ], [ "Foundation Year", "Foundation Year" ], [ "ILSC Campus Homestay", "ILSC Campus Homestay" ], [ "ILSC Campus Day Only", "ILSC Campus Day Only" ], [ "University of British Columbia (UBC) Residence", "University of British Columbia (UBC) Residence" ], [ "McGill University Downtown Campus Residence", "McGill University Downtown Campus Residence" ], [ "Homestay", "Homestay" ], [ "Homestay Summer", "Homestay Summer" ], [ "Homestay Winter", "Homestay Winter" ], [ "Residence: Lord Stanley Suites", "Residence: Lord Stanley Suites" ], [ "Residence Summer: Lord Stanley Suites", "Residence Summer: Lord Stanley Suites" ], [ "Residence Winter: Lord Stanley Suites", "Residence Winter: Lord Stanley Suites" ], [ "Full board", "Full board" ], [ "Half board", "Half board" ], [ "Roomstay", "Roomstay" ], [ "Single Apartment - Single", "Single Apartment - Single" ], [ "Shared Apartment - Shared", "Shared Apartment - Shared" ], [ "4 Weeks Package", "4 Weeks Package" ], [ "2 Weeks Package", "2 Weeks Package" ], [ "Full board 2022", "Full board 2022" ], [ "Half board 2022", "Half board 2022" ], [ "Roomstay 2022", "Roomstay 2022" ], [ "ILSC Campus Homestay Winter Intensive", "ILSC Campus Homestay Winter Intensive" ], [ "ILSC Campus Day Only Winter Intensive", "ILSC Campus Day Only Winter Intensive" ], [ "Day Only Winter", "Day Only Winter" ], [ "North Vancouver Day Only Summer Intensive", "North Vancouver Day Only Summer Intensive" ], [ "North Vancouver Homestay Summer Intensive", "North Vancouver Homestay Summer Intensive" ], [ "University of British Columbia (UBC) Day Only", "University of British Columbia (UBC) Day Only" ], [ "ILSC Campus Homestay Summer", "ILSC Campus Homestay Summer" ], [ "ILSC Campus Day Only Summer", "ILSC Campus Day Only Summer" ], [ "Family Plus Homestay Winter", "Family Plus Homestay Winter" ], [ "Family Plus Day Only Winter", "Family Plus Day Only Winter" ], [ "Family Plus North Vancouver Homestay Summer Intensive", "Family Plus North Vancouver Homestay Summer Intensive" ], [ "Family Plus North Vancouver Day Only Summer Intensive", "Family Plus North Vancouver Day Only Summer Intensive" ], [ "Family Plus Homestay Summer", "Family Plus Homestay Summer" ], [ "Family Plus Day Only Summer", "Family Plus Day Only Summer" ], [ "Intensive Online - Schedule 1", "Intensive Online - Schedule 1" ], [ "Intensive Online - Schedule 2", "Intensive Online - Schedule 2" ], [ "Semi-Intensive Online - Schedule 1", "Semi-Intensive Online - Schedule 1" ], [ "Semi-Intensive Online - Schedule 2", "Semi-Intensive Online - Schedule 2" ], [ "Core Online 1", "Core Online 1" ], [ "Core Online 2", "Core Online 2" ], [ "ILSC Campus Homestay Summer Skills Plus", "ILSC Campus Homestay Summer Skills Plus" ], [ "ILSC Campus Day Only Summer Skills Plus", "ILSC Campus Day Only Summer Skills Plus" ], [ "Family Camp Homestay Summer", "Family Camp Homestay Summer" ], [ "Family Camp Day Only Summer", "Family Camp Day Only Summer" ], [ "ILSC Campus Homestay Winter Experience", "ILSC Campus Homestay Winter Experience" ], [ "ILSC Campus Day Only Winter Experience", "ILSC Campus Day Only Winter Experience" ], [ "University of British Columbia (UBC) Residence Skills Plus", "University of British Columbia (UBC) Residence Skills Plus" ], [ "University of British Columbia (UBC) Day Only Skills Plus", "University of British Columbia (UBC) Day Only Skills Plus" ], [ "McGill University Downtown Campus Residence Skills Plus", "McGill University Downtown Campus Residence Skills Plus" ], [ "Elective Online - Schedule 1", "Elective Online - Schedule 1" ], [ "Elective Online - Schedule 2", "Elective Online - Schedule 2" ], [ "Intensive Online", "Intensive Online" ], [ "Semi-Intensive Online", "Semi-Intensive Online" ], [ "Elective Online", "Elective Online" ], [ "ILSC Campus Homestay Winter", "ILSC Campus Homestay Winter" ], [ "ILSC Campus Day Only Winter", "ILSC Campus Day Only Winter" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null
+    }, {
+      "id" : "1d571b21-a136-e843-1b38-d59e9399db2b",
+      "name" : "show_description",
+      "label" : "Show Description",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "Hide", "Hide" ], [ "Show", "Show" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "Show"
+    }, {
+      "id" : "9d4df0ff-b3b1-244a-e320-0e0c5e119591",
+      "name" : "cta_disclaimer_text",
+      "label" : "CTA Disclaimer Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ {
+      "sort_price_row_choice" : "none",
+      "show_description" : "Show"
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "price_year_text" : "2021",
+    "price_target_choice" : "price_current",
+    "programs_available_target_choice" : "",
+    "price_box_field_group" : [ {
+      "sort_price_row_choice" : "none",
+      "show_description" : "Show"
+    } ]
+  } ]
+}, {
+  "id" : "11bc6aa1-c186-2a3a-490e-88516081a5d7",
+  "name" : "cta_field_group",
+  "label" : "CTA Field group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "4dce1d14-a925-ad7c-b284-5129327c514a",
+    "name" : "cta_message_text",
+    "label" : "CTA Message Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "or contact your local agent for a customized price quote"
+  }, {
+    "id" : "658056c8-11a2-4044-5a09-bcee558a2c6f",
+    "name" : "cta_button_text_copy",
+    "label" : "CTA Button Text copy",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Contact Us"
+  }, {
+    "id" : "4c3dcb9d-b890-3f88-dfaf-d9f9e7c4a08a",
+    "name" : "cta_link",
+    "label" : "CTA Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 35557010349
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "cta_message_text" : "or contact your local agent for a customized price quote",
+    "cta_button_text_copy" : "Contact Us",
+    "cta_link" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 35557010349
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+}, {
+  "id" : "5865bc38-5d71-8b26-9b32-22fcf5b1500c",
+  "name" : "footnoe_rich_text",
+  "label" : "Footnoe Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<p style=\"text-align: center;\"><em><a href=\"https://www.ilsc.com/hubfs/Website/PDF/2020-2022-Start-Date-Calendar.pdf\" rel=\"noopener\" target=\"_blank\">Click here</a> to view start dates</em></p>"
+} ]

@@ -1,0 +1,109 @@
+{% set queryparamAll = "&enable_disable__eq=Enabled&orderBy=-dated_created" %}
+
+{% set webinarAll = hubdb_table_rows(4824754,queryparamAll) %}
+{% set categoryNames = hubdb_table_rows(4892219) %}
+{% set languageNames = hubdb_table_rows(5241662) %}
+{% set resourceNames = hubdb_table_rows(5241700) %}
+
+<section class="section webinar-info webinar-all {% if module.bg_color.color == '#FFFFFF' %} bg-white-canvas {% endif %}" id="content" style="background-color:rgba({{ module.bg_color.color|convert_rgb }}, {{ module.bg_color.opacity/100 }});overflow:visible;" id="content">
+	<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+      </div>
+    </div>
+    <div class="row select-dropdown">
+      <div class="col-md-4 select-container" id="select-type">
+        <select id="select-type">
+          <option value="SHOWALLTYPE" selected>
+            SHOW ALL TYPE
+          </option>
+          {% for row in resourceNames %}
+            <option value="{{ row.resource_type|upper|replace(' ','') }}">
+             {{ row.resource_type|upper }}
+            </option>
+          {% endfor %}
+        </select> 
+      </div>
+      <div class="col-md-4 select-container" id="select-categories">
+        <select id="select-category">
+          <option value="SHOWALLCATEGORIES" selected>
+            SHOW ALL CATEGORIES
+          </option>
+          {% for row in categoryNames %}
+            <option value="{{ row.category|upper|replace(' ','') }}">
+             {{ row.category|upper }}
+            </option>
+          {% endfor %}
+        </select> 
+      </div>
+      <div class="col-md-4 select-container" id="select-languages">
+        <select id="select-language">
+          <option value="SHOWALLLANGUAGES" selected>
+            SHOW ALL LANGUAGES
+          </option>
+          {% for row in languageNames %}
+            <option value="{{ row.language|upper|replace(' ','') }}">
+             {{ row.language|upper }}
+            </option>
+          {% endfor %}
+        </select> 
+      </div>
+    </div>
+    <div class="row all-container">
+    {% for row in webinarAll %}
+      
+      {% set webinarLink = row.page_url %}
+      {% set webinarLink2 = row.page_link_2 %}
+
+      {% if row.register_or_watch_now.name == 'Register Now' %}
+      {% set btnClass = "btn-orange" %}
+      {% elif row.register_or_watch_now.name == 'Watch Now'%}
+      {% set btnClass = "btn-black" %}
+      {% else %}
+      {% set btnClass = "btn-orange" %}
+      {% endif %}
+  
+      
+        <div class="col-md-4 filter-box-container" data-categorytype="{% for item in row.category_code %}{{ item.category|upper|replace(' ','') }}{% endfor %}" data-resourcetype="{% for item in row.video_type %}{{ item.resource_type|upper|replace(' ','') }}{% endfor %}" data-languagetype="{% for item in row.translate_language %}{{ item.language|upper|replace(' ','') }}{% endfor %}">
+          <div class="info-container">
+            <div class="webinar-header {% for item in row.category_code %}webinar-{{ item.color_code.name|lower|replace(' ','-') }}{% endfor %}">
+              <h5>
+                {{ row.sub_title|upper }}
+              </h5>
+            </div>
+            <div class="content-container">
+              <h4 class="title">
+                {{ row.title }}
+              </h4>
+              
+              {% if row.short_schedule_text %}
+                <div class="schedule-text">
+                  {{ row.short_schedule_text }}
+                </div>
+               {% endif %}
+              {% if row.time_durations_in_hours %}
+              <h6>
+                <i class="far fa-clock"></i>&nbsp;&nbsp;{{ row.time_durations_in_hours }}
+              </h6>
+              {% endif %}
+              {% if row.register_or_watch_now.name != 'No Button' %}
+                <div class="btn-container" {% if webinarLink2 is defined && row.register_or_watch_now.name == "Register Now" %}style="bottom:80px;"{% endif %}>
+                  {% if webinarLink2 is defined && row.register_or_watch_now.name == "Register Now" %}Session 1:{% endif %} <a href="{{ webinarLink }}" target="_blank" class="btn {{ btnClass }} bold">{{ row.register_or_watch_now.name }}</a>
+                </div>
+                {% if webinarLink2 is defined && row.register_or_watch_now.name == "Register Now"%}
+                  <div class="btn-container">
+                    Session 2: <a href="{{ webinarLink2 }}" target="_blank" class="btn {{ btnClass }} bold">{{ row.register_or_watch_now.name }}</a>
+                  </div>
+                {% endif %}
+                
+              {% endif %}
+            </div>
+          </div>           
+        </div>    
+    {% endfor %}
+      </div>
+    
+	</div>
+  
+</section>

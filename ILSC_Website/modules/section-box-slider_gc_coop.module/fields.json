@@ -1,0 +1,36 @@
+[ {
+  "id" : "fc816bfc-37a5-ab84-290d-601b52a52806",
+  "name" : "country_program_choice",
+  "label" : "Country Program Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "Canada", "Canada" ], [ "Australia", "Australia" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "Canada"
+}, {
+  "id" : "0271cc21-d261-968a-1dfa-6b7bd6f4537d",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2><span>The perfect course for you</span></h2>\n<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p>"
+}, {
+  "id" : "7cafc62b-012f-2243-2f83-30694f591beb",
+  "name" : "link_text",
+  "label" : "Link Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Read More"
+} ]

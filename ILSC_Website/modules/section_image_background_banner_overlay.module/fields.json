@@ -1,0 +1,113 @@
+[ {
+  "id" : "fe80de98-7023-d0c5-676d-0195d8540d90",
+  "name" : "richtext_field",
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2 style=\"font-size: 48px;\"><span style=\"color: #ffffff;\">Choose Co-operative Education to add relevant work experience to your learning</span></h2>\n<div style=\"margin-top: 30px;\"><a class=\"btn btn-white-outline\">LEARN MORE ABOUT CO-OP</a></div>"
+}, {
+  "id" : "50b42190-c24e-bb5f-6640-cfb1839b50b5",
+  "name" : "background_choice",
+  "label" : "Background Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "image", "Background Image" ], [ "color", "Background Color" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "image"
+}, {
+  "id" : "fa8fdbe6-454e-c841-a854-518cd1f2274c",
+  "name" : "background_image_field_group",
+  "label" : "Background Image Field group",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "50b42190-c24e-bb5f-6640-cfb1839b50b5",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "image",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "children" : [ {
+    "id" : "2ce68292-adf2-aad7-e78d-b11c8966885c",
+    "name" : "bg_image",
+    "label" : "BG Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.ilsc.com/hubfs/img_Working_in_Canada_CTA.jpg",
+      "alt" : "img_Working_in_Canada_CTA",
+      "loading" : "lazy",
+      "width" : 1440,
+      "height" : 466,
+      "max_width" : 1440,
+      "max_height" : 466
+    }
+  }, {
+    "id" : "d886d341-b280-7a8f-3465-d7a64a1357f0",
+    "name" : "overlay_color",
+    "label" : "Overlay Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "display_width" : null,
+    "default" : {
+      "color" : "#FFFFFF",
+      "opacity" : 0
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "bg_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.ilsc.com/hubfs/img_Working_in_Canada_CTA.jpg",
+      "alt" : "img_Working_in_Canada_CTA",
+      "loading" : "lazy",
+      "width" : 1440,
+      "height" : 466,
+      "max_width" : 1440,
+      "max_height" : 466
+    },
+    "overlay_color" : {
+      "color" : "#FFFFFF",
+      "opacity" : 0
+    }
+  }
+}, {
+  "id" : "ba37ee1b-09c0-04d8-6a6d-900e14921a06",
+  "name" : "bg_color",
+  "label" : "BG Color",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "50b42190-c24e-bb5f-6640-cfb1839b50b5",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "color",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : null,
+    "opacity" : null
+  }
+} ]

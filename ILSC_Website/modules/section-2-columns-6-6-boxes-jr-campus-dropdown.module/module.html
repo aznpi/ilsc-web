@@ -1,0 +1,67 @@
+<section class="section-1-columns-6-6 section section-campus bg-white-canvas">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			{% inline_rich_text field="title" value="{{ module.title }}" %}
+      </div>
+		</div>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<div class="box-container orange">
+					{% if module.box_1.image_field.src %}
+            <img class="lazy-dd" data-src="{{ module.box_1.image_field.src }}" alt="{{ module.box_1.image_field.alt }}" loading="lazy">
+          {% endif %}
+					<div class="box-content">
+			 			{% inline_rich_text field="box_1.text_content" value="{{ module.box_1.text_content }}" %}
+			 			
+            <div class="a-link-container">
+                 <a href="{{ module.box_1.box_link.href }}">{{ module.box_1.link_text }}</a>
+              </div>
+			 		</div>
+				</div>
+			</div>
+      <div class="col-md-6">
+				<div class="box-container teal">
+					{% if module.box_2.image_field.src %}
+            <img class="lazy-dd" data-src="{{ module.box_2.image_field.src }}" alt="{{ module.box_2.image_field.alt }}" loading="lazy">
+          {% endif %}
+					<div class="box-content">
+			 			{% inline_rich_text field="box_2.text_content" value="{{ module.box_2.text_content }}" %}
+			 			
+            <div class="a-link-container">
+                 <a href="{{ module.box_2.box_link.href }}">{{ module.box_2.link_text }}</a>
+              </div>
+			 		</div>
+				</div>
+			</div>
+      <div class="col-md-6">
+				<div class="box-container yellow">
+					{% if module.box_3.image_field.src %}
+            <img class="lazy-dd" data-src="{{ module.box_3.image_field.src }}" alt="{{ module.box_3.image_field.alt }}" loading="lazy">
+          {% endif %}
+					<div class="box-content">
+			 			{% inline_rich_text field="box_3.text_content" value="{{ module.box_3.text_content }}" %}
+			 			<div class="a-link-container">
+                 <a href="{{ module.box_3.box_link.href }}">{{ module.box_3.link_text }}</a>
+              </div>
+			 		</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="box-container green">
+					{% if module.box_4.image_field.src %}
+            <img class="lazy-dd" data-src="{{ module.box_4.image_field.src }}" alt="{{ module.box_4.image_field.alt }}" loading="lazy">
+          {% endif %}
+					<div class="box-content">
+			 			{% inline_rich_text field="box_4.text_content" value="{{ module.box_4.text_content }}" %}
+			 			
+            <div class="a-link-container">
+                 <a href="{{ module.box_4.box_link.href }}">{{ module.box_4.link_text }}</a>
+              </div>
+			 		</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

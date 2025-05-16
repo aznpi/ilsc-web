@@ -1,0 +1,192 @@
+[ {
+  "id" : "6382c090-c454-902c-3b85-5651fc12748e",
+  "name" : "show_number_of_slides",
+  "label" : "Show Number of Slides",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "min" : 1,
+  "max" : 99,
+  "step" : 1,
+  "type" : "number",
+  "display_width" : null,
+  "default" : 4
+}, {
+  "id" : "4f0313ed-af3f-c3ef-1258-54b7376eb63a",
+  "name" : "image_field_group",
+  "label" : "Image Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 99,
+    "sorting_label_field" : "b9150d94-9fe1-e924-f70c-21d6791a13cd",
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "b9150d94-9fe1-e924-f70c-21d6791a13cd",
+    "name" : "image",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_supportive_staff.jpg",
+      "alt" : "Supportive<br/> Staff",
+      "width" : 500,
+      "height" : 500,
+      "max_width" : 500,
+      "max_height" : 500
+    }
+  }, {
+    "id" : "65aad5be-872a-66c3-0aa0-1eb496352d44",
+    "name" : "add_link_choice",
+    "label" : "Add Link Choice",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "yes", "Yes" ], [ "No", "No" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "No"
+  }, {
+    "id" : "c938a1bd-f0d9-f5f4-e65e-7a877e92444f",
+    "name" : "link_field",
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "65aad5be-872a-66c3-0aa0-1eb496352d44",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "yes",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "supported_types" : [ "EXTERNAL", "CONTENT", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "image" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_supportive_staff.jpg",
+      "alt" : "Supportive<br/> Staff",
+      "width" : 500,
+      "height" : 500,
+      "max_width" : 500,
+      "max_height" : 500
+    },
+    "add_link_choice" : "No",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "image" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_supportive_staff.jpg",
+      "alt" : "Supportive<br/> Staff",
+      "width" : 500,
+      "height" : 500,
+      "max_width" : 500,
+      "max_height" : 500
+    },
+    "add_link_choice" : "No",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "image" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_supportive_staff.jpg",
+      "alt" : "Supportive<br/> Staff",
+      "width" : 500,
+      "height" : 500,
+      "max_width" : 500,
+      "max_height" : 500
+    },
+    "add_link_choice" : "No",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "image" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_supportive_staff.jpg",
+      "alt" : "Supportive<br/> Staff",
+      "width" : 500,
+      "height" : 500,
+      "max_width" : 500,
+      "max_height" : 500
+    },
+    "add_link_choice" : "No",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+}, {
+  "id" : "2453c549-46a2-2d36-e712-0e4e91ac720b",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Why choose ILSC Junior Programs</h2>\n<p>Our young students will live the experience of a lifetime and return home with lasting memories and improved language skills. Exciting excursions and fun extracurricular activities an integral part of the language learning process.</p>"
+}, {
+  "id" : "7d5f92c3-d010-f178-1bb6-f056050275fb",
+  "name" : "choice_field",
+  "label" : "Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "center", "Center Text" ], [ "left", "Left Text" ], [ "right", "Right Text" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "center"
+} ]

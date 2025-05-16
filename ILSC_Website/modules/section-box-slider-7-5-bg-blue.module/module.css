@@ -1,0 +1,16 @@
+.a-link-container a{
+  color:#FFF;
+}
+.banner .blue-box-slide .slick-prev{
+  left:-50px;
+}
+.banner .blue-box-slide .slick-next{
+  right:-50px;
+}
+.banner .blue-box-slide .slick-prev, .banner .blue-box-slide .slick-next{
+  background:none;
+  box-shadow: none;
+}
+.banner .blue-box-slide .slick-prev:before, .banner .blue-box-slide .slick-next:before{
+  color:#FFF;
+}

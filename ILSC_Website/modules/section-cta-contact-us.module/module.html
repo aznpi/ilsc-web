@@ -1,0 +1,33 @@
+<section class="section-cta center section" style="background-color:{{ module.bg_color.color }};color:{{ module.font_color.color }};">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+        
+				{% inline_rich_text field="title" value="{{ module.title }}" %}
+				<div class="btn-container">
+					  {% set href = module.button_1.button_url.href %}
+            {% if module.button_1.button_url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+            {% endif %}
+						<a href="{{ href }}" class="btn {{ module.button_1.button_bg_choice }}" {% if module.button_1.button_url.type is equalto "EXTERNAL" %} target="_blank" {% endif %}>{% inline_text field="button_1.button_text" value="{{ module.button_1.button_text }}" %}</a>
+					
+				    {% set href = module.button_2.button_url.href %}
+            {% if module.button_2.button_url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+            {% endif %}
+						<a href="{{ href }}" class="btn {{ module.button_2.button_bg_choice }}" {% if module.button_2.button_url.type is equalto "EXTERNAL" %} target="_blank" {% endif %}>{% inline_text field="button_2.button_text" value="{{ module.button_2.button_text }}" %}</a>
+          
+          {% if module.button_3.hide_show == "show" %}
+            {% set href = module.button_3.button_url.href %}
+            {% if module.button_3.button_url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+            {% endif %}
+            <a href="{{ href }}" class="btn {{ module.button_3.button_bg_choice }}" {% if module.button_3.button_url.type is equalto "EXTERNAL" %} target="_blank" {% endif %}>{% inline_text field="button_3.button_text" value="{{ module.button_3.button_text }}" %}</a>
+					{% endif %}	
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+

@@ -1,0 +1,291 @@
+{% set logoHref = module.logo_link.url.href %}
+{% if module.logo_link.url.type is equalto "EMAIL_ADDRESS" %}
+	{% set logoHref = "mailto:" + logoHref %}
+{% endif %}
+
+<header id="section-top-navigation" class="top-nav fixed-top">
+  {% if module.enable_top_banner_boolean %}
+    <div class="top-banner">
+      <div class="container">
+        <ul class="top-banner-links">          
+          {% for item in module.top_banner_field_group %} 
+          {% set href = item.link_field_1.url.href %}
+          {% if item.link_field_1.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% elif item.link_field_1.url.type is equalto "PHONE_NUMBER" %}
+          {% set href = "tel:" + item.link_text|replace('-','') %}
+          {% endif %}
+          <li>
+            {% if item.icon_image.src %}
+            {% set sizeAttrs = 'width="{{ item.icon_image.width|escape_attr }}" height="{{ item.icon_image.height|escape_attr }}"' %}
+            {% if item.icon_image.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ item.icon_image.width|escape_attr }}" height="{{ item.icon_image.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+            {% elif item.icon_image.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ item.icon_image.max_width|escape_attr }}" height="{{ item.icon_image.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = item.icon_image.loading != 'disabled' ? 'loading="{{ item.icon_image.loading|escape_attr }}"' : '' %}
+            <div class="icon-tb"><img src="{{ item.icon_image.src|escape_url }}" alt="{{ item.icon_image.alt|escape_attr }}" {{ loadingAttr }}></div>
+            {% endif %}
+            {% if item.enable_modal_boolean %}
+            <a href="#"
+              data-bs-target="{{href}}" data-bs-toggle="modal"
+               >{{ item.link_text }}</a>
+            {% else %}
+            <a href="{{ href }}"
+               {% if item.link_field_1.open_in_new_tab %}target="_blank"{% endif %}
+               {% if item.link_field_1.rel %}rel="{{ item.link_field_1.rel|escape_attr }}"{% endif %}
+               >{{ item.link_text }}</a>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  {% endif %}
+  <nav id="landing-nav-bar" class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand mobile-brand" href="{{ logoHref }}"
+	{% if module.logo_link.open_in_new_tab %}target="_blank"{% endif %}
+	{% if module.logo_link.rel %}rel="{{ module.logo_link.rel }}"{% endif %}
+	>
+        {% if module.logo_image.src %}
+          {% set sizeAttrs = 'width="{{ module.logo_image.width }}" height="{{ module.logo_image.height }}"' %}
+          {% if module.logo_image.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ module.logo_image.width }}" height="{{ module.logo_image.height }}" style="max-width: 100%; height: auto;"' %}
+          {% elif module.logo_image.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ module.logo_image.max_width }}" height="{{ module.logo_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+           {% set loadingAttr = module.logo_image.loading != 'disabled' ? 'loading="{{ module.logo_image.loading }}"' : '' %}
+          <img src="{{ module.logo_image.src }}" alt="{{ module.logo_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="nav-bar-items collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="nav-sub">
+          {% if module.sub_nav_field_group.link_nav_field_group.download_digital_field_group.enable %}
+            <div class="btn-download">
+              {% set href = module.sub_nav_field_group.link_nav_field_group.download_digital_field_group.link_field.url.href %}
+  {% if module.sub_nav_field_group.link_nav_field_group.download_digital_field_group.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+            {% endif %}
+              <a class="nav-link" href="{{ href }}"
+              {% if module.sub_nav_field_group.link_nav_field_group.download_digital_field_group.link_field.open_in_new_tab %}target="_blank"{% endif %}
+              {% if module.sub_nav_field_group.link_nav_field_group.download_digital_field_group.link_field.rel %}rel="{{ module.sub_nav_field_group.link_nav_field_group.download_digital_field_group.link_field.rel }}"{% endif %}
+              >
+                <div>{{ module.sub_nav_field_group.link_nav_field_group.download_digital_field_group.button_text }}</div>
+                <div class="icon-download"></div>
+              </a>
+            </div>
+          {% endif %}
+          <div class="sub-link-container">
+            <ul class="navbar-nav sub-nav">
+              {% if module.sub_nav_field_group.link_nav_field_group.login_field_group.enable %}
+                {% set href = module.sub_nav_field_group.link_nav_field_group.login_field_group.link_field.url.href %}
+{% if module.sub_nav_field_group.link_nav_field_group.login_field_group.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+              {% endif %}
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ href }}"
+                {% if module.sub_nav_field_group.link_nav_field_group.login_field_group.link_field.open_in_new_tab %}target="_blank"{% endif %}
+                {% if module.sub_nav_field_group.link_nav_field_group.login_field_group.link_field.rel %}rel="{{ module.sub_nav_field_group.link_nav_field_group.login_field_group.link_field.rel }}"{% endif %}
+                >
+                    {{ module.sub_nav_field_group.link_nav_field_group.login_field_group.link_text }}
+                  </a>
+                </li>
+              {% endif %}
+              {% if module.sub_nav_field_group.link_nav_field_group.search_field_group.enable %}
+                <li class="nav-item dropdown search">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSearch" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-search"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownSearch">
+                    <div class="navbar-menu-content container search-content">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-container">
+                            <h4>{{ module.sub_nav_field_group.link_nav_field_group.search_field_group.SEARCH }}</h4>
+                            <form action="{% if content.language.languageTag %}{% if content.language.languageTag != "en" %}/{{content.language.languageTag}}{% endif %}{% endif %}/search-results" id="form1">
+                              <input type="hidden" name="type" value="SITE_PAGE">
+                              <input type="hidden" name="type" value="BLOG_POST">
+                              <input type="hidden" name="type" value="LISTING_PAGE">
+                              <input type="hidden" name="type" value="LANDING_PAGE">
+                              <input type="hidden" name="pathPrefix" value="/">
+                              <input type="hidden" name="language" value="{{content.language.languageTag}}">
+
+
+                              <div class="form-group search-group">
+                                <input class="form-control form-control-lg" type="text" placeholder="TYPE TO SEARCH" id="term" name="term">
+                                <div class="input-group-append btn-search">
+                                  <button form="form1" type="submit" class="btn btn-orange btn-clear"><i class="fas fa-search"></i></button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              {% endif %}
+
+              <li class="nav-item dropdown language-dropdown">
+
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="lang-code">EN</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  
+                   
+                  <li class="dropdown-item lng-ar lng-translate">
+                            <a href="/{{ content.translated_content['ar'].slug  }}">AR</a>
+                          </li>
+                           <li class="dropdown-item lng-zh lng-translate">
+                             <a href="/{{ content.translated_content['zh'].slug  }}">ZH</a>
+                          </li>
+                          <li class="dropdown-item lng-zh-tw lng-translate">
+                            <a href="/{{ content.translated_content['zh-tw'].slug  }}">ZH-TW</a>
+                          </li>
+                          <li class="dropdown-item lng-ja lng-translate">
+                            <a href="/{{ content.translated_content['ja'].slug  }}">JA</a>
+                          </li>
+                          <li class="dropdown-item lng-ko lng-translate">
+                            <a href="/{{ content.translated_content['ko'].slug  }}">KO</a>
+                          </li>
+                          <li class="dropdown-item lng-pt-br lng-translate">
+                            <a href="/{{ content.translated_content['pt-br'].slug  }}">PT-BR</a>
+                          </li>
+                          <li class="dropdown-item lng-es lng-translate">
+                            <a href="/{{ content.translated_content['es'].slug  }}">ES</a>
+                          </li>
+                          <li class="dropdown-item lng-vi lng-translate">
+                            <a href="/{{ content.translated_content['vi'].slug  }}">VI</a>
+                          </li>
+                          <li class="dropdown-item lng-fr lng-translate">
+                            <a href="/{{ content.translated_content['fr'].slug  }}">FR</a>
+                          </li>
+                          <li class="dropdown-item lng-th lng-translate">
+                            <a href="/{{ content.translated_content['th'].slug  }}">TH</a>
+                          </li>
+                          <li class="dropdown-item lng-th lng-translate">
+                            <a href="/{{ content.translated_content['it'].slug  }}">IT</a>
+                          </li>
+                          <li class="dropdown-item lng-en lng-translate">
+                            <a href="/{{ content.translated_content['en'].slug  }}">EN</a>
+                          </li>
+                  
+                  
+                </ul>                      
+              </li>
+
+            </ul>
+            <div id="magic-line"></div>
+          </div>
+        </div>
+        <div class="main-nav">
+          <a class="navbar-brand" href="{{ logoHref }}"
+             {% if module.logo_link.open_in_new_tab %}target="_blank"{% endif %}
+             {% if module.logo_link.rel %}rel="{{ module.logo_link.rel }}"{% endif %}
+             >
+            {% if module.logo_image.src %}
+              {% set sizeAttrs = 'width="{{ module.logo_image.width }}" height="{{ module.logo_image.height }}"' %}
+              {% if module.logo_image.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ module.logo_image.width }}" height="{{ module.logo_image.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif module.logo_image.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ module.logo_image.max_width }}" height="{{ module.logo_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = module.logo_image.loading != 'disabled' ? 'loading="{{ module.logo_image.loading }}"' : '' %}
+              <img src="{{ module.logo_image.src }}" alt="{{ module.logo_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </a>
+          <div class="nav-main">
+            <ul class="navbar-nav mr-auto">  
+              {% for item in module.nav_tier_field_group %}
+              
+                {% set directHref = item.direct_title_link.url.href %}
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link {% if item.has_direct_link %}direct-target{% endif %}" href="#" {% if item.has_direct_link %}data-href="{{directHref}}"{% endif %} {% if item.has_dropdown_menu_boolean %} id="navbarDropdown{{loop.index}}" role="button" aria-haspopup="true" aria-expanded="false" data-bs-toggle="dropdown"{% endif %}>
+                    {{ item.nav_title_field }}
+                  </a>
+                  {% if item.has_dropdown_menu_boolean %}
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown{{loop.index}}">
+                      <div class="navbar-menu-content container">
+                        {% if item.dropdown_menu_field_group.menu_title_text %}
+                          <div class="sub-menu-title">
+                            <h4>{{ item.dropdown_menu_field_group.menu_title_text }}</h4>
+                          </div>
+                        {% endif %}
+
+                        <div class="row {% if item.dropdown_menu_field_group.enable_centering_column %}j-center{% endif %}">
+                          {% for item2 in item.dropdown_menu_field_group.link_column_field_group %}
+                              <div class="link-container col-md-4">
+                                <div class="column-box">
+                                  {% if item2.column_title_text %}
+                                    <div class="sub-menu-title">
+                                      <h4>{{ item2.column_title_text }}</h4>
+                                    </div>
+                                  {% endif %}
+                                  {% if item2.box_image.src %}
+                                    <div class="menu-image-box-container">
+                                      <div class="polygon-white"></div>
+                                      <div class="polygon-color" style="background-color: rgba({{item2.box_bg_color.color|convert_rgb }}, {{ item2.box_bg_color.opacity/100 }});"></div>
+                                      <div class="image-container"><img src="{{ item2.box_image.src }}" alt="{{ item2.box_image.alt }}" class="img-fluid"></div>
+                                    </div>
+                                  {% endif %}
+                                  {% if item2.link_field_group %}
+                                    <ul>
+                                      {% for item3 in item2.link_field_group %}
+                                        {% set href = item3.link.url.href %}
+                                          {% if item3.link.url.type is equalto "EMAIL_ADDRESS" %}
+                                            {% set href = "mailto:" + href %}
+                                          {% endif %}
+
+                                        <li><a href="{{ href }}"
+                                          {% if item3.link.open_in_new_tab %}target="_blank"{% endif %}
+                                          {% if item3.link.rel %}rel="{{ item3.link.rel }}"{% endif %}
+                                          >{{ item3.link_text }}</a></li>
+                                      {% endfor %}
+
+                                    </ul>
+                                  {% endif %}
+                                  {% if item2.enable_cta_button %}
+
+                                    {% set href = item2.cta_button_link.url.href %}
+                                    {% if item2.cta_button_link.url.type is equalto "EMAIL_ADDRESS" %}
+                                      {% set href = "mailto:" + href %}
+                                    {% endif %}
+
+
+                                    <div class="btn-container">
+                                      <a href="{{ href }}"
+                                        {% if item2.cta_button_link.open_in_new_tab %}target="_blank"{% endif %}
+                                        {% if item2.cta_button_link.rel %}rel="{{ item2.cta_button_link.rel }}"{% endif %} class="btn btn-orange">{{ item2.cta_button_text }}</a>
+                                    </div>
+                                  {% endif %}
+                                </div>
+                                {% if !loop.last %}
+                                  {% if item2.link_field_group || item2.enable_cta_button %}
+                                    <div class="vertical-divider"></div>
+                                  {% endif %}
+                                {% endif %}
+                              </div>
+
+                          {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+                  {% endif %}
+                </li>
+              {% endfor %}              
+            </ul>
+            <div id="magic-line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

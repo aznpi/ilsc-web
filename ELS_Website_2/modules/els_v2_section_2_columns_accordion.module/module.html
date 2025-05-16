@@ -1,0 +1,55 @@
+{% if module.image_width_choice == 'small' %}
+  {% set leftColumnW = '3' %}
+  {% set rightColumnW = '9' %}
+{% elif module.image_width_choice == 'medium' %}
+  {% set leftColumnW = '5' %}
+  {% set rightColumnW = '7' %}
+{% elif module.image_width_choice == 'large' %}
+  {% set leftColumnW = '6' %}
+  {% set rightColumnW = '6' %}
+{% else %}
+  {% set leftColumnW = '3' %}
+  {% set rightColumnW = '9' %}
+{% endif %}
+
+<section class="section section-accordion section-3-9 section-faq" id="content" style="background-color:rgba({{module.bg_color.color|convert_rgb }}, {{module.bg_color.opacity/100 }})">
+    <div class="container">
+      {% if module.title_accordion_rich_text %}
+      <div class="row title">
+        <div class="col-md-12">
+          {% inline_rich_text field="title_accordion_rich_text" value="{{ module.title_accordion_rich_text }}" %}
+        </div>
+      </div>
+      {% endif %}
+      <div class="row">
+        <div class="col-md-{{leftColumnW}} bg-image-container" style="background-image:url({{ module.bg_image_field.src }});">
+
+        </div>
+        <div class="col-md-{{rightColumnW}} column-accordion">
+          <div class="accordion left" id="accordionFaq-{{ module.accordion_assignment_choice }}">
+            
+            {% for item in module.accordion_field_group %}
+                <div class="card">
+                  <div class="card-header" id="heading-{{loop.index}}-{{ module.accordion_assignment_choice }}">
+                    <h3 class="mb-0">
+                      <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{loop.index}}-{{ module.accordion_assignment_choice }}" {% if loop.index == 2 %} aria-expanded="true" {% else %} aria-expanded="false" {% endif %} aria-controls="collapse-{{loop.index}}-{{ module.accordion_assignment_choice }}">
+                        {% inline_rich_text field="title_rich_text" value="{{ item.title_rich_text }}" %}
+                      </button>
+                    </h3>
+                  </div>
+
+                  <div id="collapse-{{loop.index}}-{{ module.accordion_assignment_choice }}" {% if loop.index == 2 %} class="collapse show" {% else %} class="collapse" {% endif %} aria-labelledby="heading-{{loop.index}}-{{ module.accordion_assignment_choice }}" data-bs-parent="#accordionFaq-{{ module.accordion_assignment_choice }}">
+                    <div class="card-body">
+                     {% inline_rich_text field="body_rich_text" value="{{ item.body_rich_text }}" %}
+                    </div>
+                  </div>
+                </div>
+
+            {% endfor %}
+            
+          </div>
+           
+        </div>
+      </div>
+    </div>
+  </section>

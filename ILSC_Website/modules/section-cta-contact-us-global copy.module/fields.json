@@ -1,0 +1,256 @@
+[ {
+  "id" : "01b5f6dd-b0b9-25c7-c2f7-60bc06ae30d7",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Ready to make the next step?</h2>"
+}, {
+  "id" : "7b528eb5-333b-e5cd-dcc9-76120283efe9",
+  "name" : "bg_color",
+  "label" : "BG Color",
+  "required" : false,
+  "locked" : true,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#ff8b35",
+    "opacity" : 100
+  }
+}, {
+  "id" : "dedde578-7bd7-91e0-5bdd-178c956d6077",
+  "name" : "font_color",
+  "label" : "Font Color",
+  "required" : false,
+  "locked" : true,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#fff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "06b12157-cfb3-5efd-0b3c-fb9926340ab2",
+  "name" : "button_1",
+  "label" : "Button 1",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "0662b684-cb07-b236-0f43-ed12d01b5f45",
+    "name" : "button_url",
+    "label" : "Button URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "CONTENT", "EXTERNAL", "EMAIL_ADDRESS" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 35557010349
+    }
+  }, {
+    "id" : "db424719-e4f8-42d1-2649-0cfb3944eaae",
+    "name" : "button_text",
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Contact Us"
+  }, {
+    "id" : "a8cf86cb-413b-a9f2-7c68-50bc39ca4210",
+    "name" : "button_bg_choice",
+    "label" : "Button BG Choice",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "btn-outline-primary btn-white-outline", "Transparent" ], [ "btn-primary btn-white", "Solid" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "btn-outline-primary btn-white-outline"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "button_url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 35557010349
+    },
+    "button_text" : "Contact Us",
+    "button_bg_choice" : "btn-outline-primary btn-white-outline"
+  }
+}, {
+  "id" : "21ca01c9-9b6d-d10b-0db3-f1cd0b7ef62a",
+  "name" : "button_2",
+  "label" : "Button 2",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "76fc7d1e-326e-c55b-bc19-0ef5bb65b177",
+    "name" : "button_url",
+    "label" : "Button URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "CONTENT", "EXTERNAL", "EMAIL_ADDRESS" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 35601038414
+    }
+  }, {
+    "id" : "00981421-6d63-394b-c988-a6a4f25e3115",
+    "name" : "button_text",
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Apply Now"
+  }, {
+    "id" : "bad4a800-450c-85a9-9b7e-fe1da0d9303b",
+    "name" : "button_bg_choice",
+    "label" : "Button BG Choice",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "btn-outline-primary btn-white-outline", "Transparent" ], [ "btn-primary btn-white", "Solid" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "btn-primary btn-white"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "button_url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 35601038414
+    },
+    "button_text" : "Apply Now",
+    "button_bg_choice" : "btn-primary btn-white"
+  }
+}, {
+  "id" : "de140772-443b-66d0-c40c-478f350a454f",
+  "name" : "button_3",
+  "label" : "Button 3",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "ec41e9d2-fb23-5383-40cc-54ac224d7c2d",
+    "name" : "hide_show",
+    "label" : "Hide/Show",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "hide"
+  }, {
+    "id" : "1d8c9f7b-3559-fc10-02a3-8f78db1748b5",
+    "name" : "button_url",
+    "label" : "Button URL",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "ec41e9d2-fb23-5383-40cc-54ac224d7c2d",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "show",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "supported_types" : [ "CONTENT", "EXTERNAL", "EMAIL_ADDRESS" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : ""
+    }
+  }, {
+    "id" : "7dc601b4-ddb7-c969-55c4-229a037cf32e",
+    "name" : "button_text",
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "ec41e9d2-fb23-5383-40cc-54ac224d7c2d",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "show",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Request Pricing"
+  }, {
+    "id" : "f031d24b-31ee-9856-260b-6ece19b5aaf0",
+    "name" : "button_bg_choice",
+    "label" : "Button BG Choice",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "ec41e9d2-fb23-5383-40cc-54ac224d7c2d",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "show",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "display" : "select",
+    "choices" : [ [ "btn-outline-primary btn-white-outline", "Transparent" ], [ "btn-primary btn-white", "Solid" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "btn-outline-primary btn-white-outline"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "hide_show" : "hide",
+    "button_url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : ""
+    },
+    "button_text" : "Request Pricing",
+    "button_bg_choice" : "btn-outline-primary btn-white-outline"
+  }
+} ]

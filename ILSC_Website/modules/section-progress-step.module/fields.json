@@ -1,0 +1,161 @@
+[ {
+  "id" : "7bd21b9e-90df-c257-fb75-5e6ed0e20020",
+  "name" : "page_step_number",
+  "label" : "Page Step Number",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "type" : "number",
+  "display_width" : null,
+  "default" : 1
+}, {
+  "id" : "db22bde6-080f-c34b-1194-84db3722b11a",
+  "name" : "enable_link_back_choice",
+  "label" : "Enable Link Back Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "enable", "Enable" ], [ "disable", "Disable" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "enable"
+}, {
+  "id" : "f369626e-1f87-355d-e2f5-d17bd07b8d2a",
+  "name" : "step_field_group",
+  "label" : "Step Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 99,
+    "sorting_label_field" : "27e2ef6e-bf7a-222f-aa39-f60b26d1eaea",
+    "default" : 4
+  },
+  "visibility" : {
+    "controlling_field" : "db22bde6-080f-c34b-1194-84db3722b11a",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "enable",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "children" : [ {
+    "id" : "27e2ef6e-bf7a-222f-aa39-f60b26d1eaea",
+    "name" : "step_number",
+    "label" : "Step Number",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "min" : 1,
+    "max" : 99,
+    "step" : 1,
+    "type" : "number",
+    "display_width" : null,
+    "default" : 1
+  }, {
+    "id" : "a473668d-b5f0-a0b9-60a2-9fa7991cbd30",
+    "name" : "step_text",
+    "label" : "Step Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Provide Your Personal Information"
+  }, {
+    "id" : "ed3e9aec-91f6-e149-a443-30ff4fb8ad26",
+    "name" : "page_link",
+    "label" : "Page Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 46927741042
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "c8b395d4-d8d4-f892-cb69-4c8a98909b0d",
+    "name" : "icon_font_awesome_unicode",
+    "label" : "ICON - Font-awesome Unicode",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "f4ff"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "step_number" : 1,
+    "step_text" : "Provide Your Personal Information",
+    "page_link" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 46927741042
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "icon_font_awesome_unicode" : "f4ff"
+  }, {
+    "step_number" : 1,
+    "step_text" : "Provide Your Personal Information",
+    "page_link" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 46927741042
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "icon_font_awesome_unicode" : "f4ff"
+  }, {
+    "step_number" : 1,
+    "step_text" : "Provide Your Personal Information",
+    "page_link" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 46927741042
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "icon_font_awesome_unicode" : "f4ff"
+  }, {
+    "step_number" : 1,
+    "step_text" : "Provide Your Personal Information",
+    "page_link" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 46927741042
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "icon_font_awesome_unicode" : "f4ff"
+  } ]
+} ]

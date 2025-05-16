@@ -1,0 +1,114 @@
+[ {
+  "id" : "6b353411-d51f-eb61-30e2-47420350e5c9",
+  "name" : "bg_color",
+  "label" : "BG Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 0
+  }
+}, {
+  "id" : "a140eea6-45ff-05f1-3b5d-86d15fce4e86",
+  "name" : "title_rich_text",
+  "label" : "Title Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>TITLE</h2>"
+}, {
+  "id" : "5adf7348-524c-490b-fa84-16e48dc8d1b8",
+  "name" : "see_all_text",
+  "label" : "See All Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "SEE ALL WEBINARS"
+}, {
+  "id" : "f213330c-abfa-2971-05d6-38def619e1a4",
+  "name" : "see_all_link",
+  "label" : "SEE ALL Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "44d0ab9e-b5ee-4d29-bfa6-3f8332fa3f3a",
+  "name" : "training_image",
+  "label" : "Training Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.ilsc.com/hubfs/img_product_training.jpg",
+    "alt" : "img_product_training",
+    "loading" : "lazy",
+    "width" : 545,
+    "height" : 488,
+    "max_width" : 545,
+    "max_height" : 488
+  }
+}, {
+  "id" : "81f81938-b0c1-2f59-aa1b-770fb504ae5c",
+  "name" : "see_all_training_text",
+  "label" : "See All Training Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "SEE ALL TRAINING"
+}, {
+  "id" : "dfd44f8c-0dd7-6128-a19b-70705b18a4e1",
+  "name" : "see_all_training_link",
+  "label" : "SEE ALL TRAINING Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "ddec39a6-6daf-108a-8b51-7115e756d647",
+  "name" : "training_rich_text",
+  "label" : "Training Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2><span>Product Training</span></h2>\n<h5><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh etiam nam enim proin phasellus.</span><span></span></h5>\n<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cras at in ullamcorper. Euismod mattis viverra in est ut egestas suscipit sem cursus.</span></p>"
+} ]

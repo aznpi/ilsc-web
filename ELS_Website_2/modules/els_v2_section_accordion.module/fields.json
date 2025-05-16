@@ -1,0 +1,173 @@
+[ {
+  "id" : "521506a6-5105-8950-22ac-4f84e4461f3f",
+  "name" : "multiple_accordion_assignment_choice",
+  "label" : "Multiple Accordion Assignment Choice",
+  "inline_help_text" : "This is a unique identifier that is assigned to an accordion. If there are multiple accordions on 1 page, please assigned a different letter for each. This will improve the functionality of the accordions.",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "A", "A" ], [ "B", "B" ], [ "C", "C" ], [ "D", "D" ], [ "E", "E" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "A"
+}, {
+  "id" : "e90d055b-ec43-4244-8d8d-8d3b8959859e",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Your Questions Answered</h2>\n<p>Everything you need to know about homestay program. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+}, {
+  "id" : "d0d7ef2a-9aa2-de46-b675-9bff6a97d891",
+  "name" : "button_show_more_text",
+  "label" : "Button Show More Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "SHOW MORE"
+}, {
+  "id" : "45959db5-495c-73fe-90a9-f797e571457b",
+  "name" : "button_show_less_text",
+  "label" : "Button Show Less Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "SHOW LESS"
+}, {
+  "id" : "d49b96dc-c8b4-e88d-bcd3-a4afc7d2e7ef",
+  "name" : "faq_items",
+  "label" : "FAQ items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 99,
+    "sorting_label_field" : "677c0227-becb-9f8c-c244-21567ac47486",
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "677c0227-becb-9f8c-c244-21567ac47486",
+    "name" : "question_text",
+    "label" : "Question Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Question"
+  }, {
+    "id" : "746ea8e1-47c1-02d7-316e-d63abbe4769a",
+    "name" : "answer_text",
+    "label" : "Answer Text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<p>Answer</p>\n<p>&nbsp;</p>"
+  }, {
+    "id" : "e459640a-c512-4f16-1e4e-f53a4a5b0414",
+    "name" : "faq_child_items",
+    "label" : "FAQ Child Items",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 0,
+      "max" : 99,
+      "sorting_label_field" : "dd9b49db-6731-f0f0-4894-4baad6519b3c",
+      "default" : 0
+    },
+    "children" : [ {
+      "id" : "dd9b49db-6731-f0f0-4894-4baad6519b3c",
+      "name" : "question_child_text",
+      "label" : "Question Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null
+    }, {
+      "id" : "148c8adb-5b5b-98d3-39b8-97ed321fcd12",
+      "name" : "answer_child_text",
+      "label" : "Answer Child Text",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : { }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "question_text" : "Question",
+    "answer_text" : "<p>Answer</p>\n<p>&nbsp;</p>",
+    "faq_child_items" : { }
+  }, {
+    "question_text" : "Question",
+    "answer_text" : "<p>Answer</p>\n<p>&nbsp;</p>",
+    "faq_child_items" : { }
+  }, {
+    "question_text" : "Question",
+    "answer_text" : "<p>Answer</p>\n<p>&nbsp;</p>",
+    "faq_child_items" : { }
+  }, {
+    "question_text" : "Question",
+    "answer_text" : "<p>Answer</p>\n<p>&nbsp;</p>",
+    "faq_child_items" : { }
+  }, {
+    "question_text" : "Question",
+    "answer_text" : "<p>Answer</p>\n<p>&nbsp;</p>",
+    "faq_child_items" : { }
+  } ]
+}, {
+  "id" : "26730bbc-18a4-e701-4be3-150a8c4834e7",
+  "name" : "show_only_5",
+  "label" : "Show only 5",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "enable", "Enable" ], [ "disable", "Disable" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "enable"
+}, {
+  "id" : "3fbb659e-03da-4886-b82a-7fd5a3172f85",
+  "name" : "bg_color",
+  "label" : "BG Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#f5f8fa",
+    "opacity" : 100
+  }
+} ]

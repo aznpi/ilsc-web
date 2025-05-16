@@ -1,0 +1,349 @@
+[ {
+  "id" : "04878ce2-e4c2-ac94-9e90-1be3946a157a",
+  "name" : "tabs",
+  "label" : "Tabs",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "a3abb5ab-efaa-3803-a373-8089c8920b26",
+    "name" : "tab_1",
+    "label" : "Tab 1",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "2d04de45-f279-53cd-553b-f9677e468918",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Welcome to Student One"
+    }, {
+      "id" : "f26fe2ac-836b-9938-9db9-443c692a03dc",
+      "name" : "text_content",
+      "label" : "Text Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<h2>Student one wharf street offers the ultimate australian lifestyle.</h2>\n<p>Student One is a 5-minute walk from ILSC-Brisbane, located in the city centre, offering 687 beds in shared and private studio apartments designed to meet the needs and budget of international students. Located in the heart of Brisbane City, Student One Wharf Street is the world's tallest student accommodation building.</p>"
+    }, {
+      "id" : "963e80f4-5ce8-9904-03fd-25614a3b434f",
+      "name" : "image_field",
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_student_one_welcome.jpg",
+        "alt" : "img_student_one_welcome",
+        "width" : 1122,
+        "height" : 748,
+        "max_width" : 1122,
+        "max_height" : 748
+      }
+    }, {
+      "id" : "e1058f6e-ab48-b40d-6de6-e3931440c155",
+      "name" : "hide_show_cta",
+      "label" : "Hide/Show CTA",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "show"
+    }, {
+      "id" : "46b267b8-29de-0226-bea8-d4381d1575c7",
+      "name" : "cta_url",
+      "label" : "CTA Url",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "e1058f6e-ab48-b40d-6de6-e3931440c155",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "show",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "supported_types" : [ "CONTENT", "EXTERNAL", "FILE", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    }, {
+      "id" : "821f18aa-b9ba-0c12-3680-81f76b8056d3",
+      "name" : "cta_text",
+      "label" : "CTA Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "e1058f6e-ab48-b40d-6de6-e3931440c155",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "show",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "WATCH OUR VIDEO"
+    }, {
+      "id" : "d915509f-41d1-5c61-f952-4371795046dc",
+      "name" : "cta_font_awesome_icon",
+      "label" : "CTA Font Awesome Icon",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "e1058f6e-ab48-b40d-6de6-e3931440c155",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "show",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "display" : "select",
+      "choices" : [ [ "far fa-play-circle", "Play Video Icon" ], [ "far fa-file-pdf", "PDF Icon" ], [ "far fa-arrow-right", "Page Icon" ], [ "fas fa-blog", "Blog Icon" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "far fa-play-circle"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "title" : "Welcome to Student One",
+      "text_content" : "<h2>Student one wharf street offers the ultimate australian lifestyle.</h2>\n<p>Student One is a 5-minute walk from ILSC-Brisbane, located in the city centre, offering 687 beds in shared and private studio apartments designed to meet the needs and budget of international students. Located in the heart of Brisbane City, Student One Wharf Street is the world's tallest student accommodation building.</p>",
+      "image_field" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_student_one_welcome.jpg",
+        "alt" : "img_student_one_welcome",
+        "width" : 1122,
+        "height" : 748,
+        "max_width" : 1122,
+        "max_height" : 748
+      },
+      "hide_show_cta" : "show",
+      "cta_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "cta_text" : "WATCH OUR VIDEO",
+      "cta_font_awesome_icon" : "far fa-play-circle"
+    }
+  }, {
+    "id" : "f86f0737-de58-9089-68f1-e334cfa8ca1d",
+    "name" : "tab_2",
+    "label" : "Tab 2",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "c589762c-7e48-a26a-e8d3-eb7c9f3f1dbd",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Features"
+    }, {
+      "id" : "0154250b-05f3-7a3d-6786-be887aab7696",
+      "name" : "text_content",
+      "label" : "Text Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<h2>Features</h2>\n<ul class=\"arrows-orange\">\n<li>Fully furnished and air-conditioned rooms</li>\n<li>High ceilings, with full-height windows and block-out fabric blinds</li>\n<li>Free unlimited high-speed internet</li>\n<li>Communal spaces for socializing and study</li>\n<li>Media rooms with large screens for movies and gaming</li>\n<li>Gym and outdoor BBQ</li>\n<li>Secure swipe card access</li>\n<li>Kitchen including stone benchtops, cooktop, microwave and fridge</li>\n<li>Electronic laundry machines (usage charges apply on swipe card)</li>\n<li>Use of the gym and Student One facilities is included</li>\n<li>Office hours are 24/7</li>\n</ul>"
+    }, {
+      "id" : "387d4d99-9224-2fca-c2e1-5926b5884258",
+      "name" : "image_field",
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_student_one_features.jpg",
+        "alt" : "img_student_one_features",
+        "width" : 1088,
+        "height" : 724,
+        "max_width" : 1088,
+        "max_height" : 724
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "title" : "Features",
+      "text_content" : "<h2>Features</h2>\n<ul class=\"arrows-orange\">\n<li>Fully furnished and air-conditioned rooms</li>\n<li>High ceilings, with full-height windows and block-out fabric blinds</li>\n<li>Free unlimited high-speed internet</li>\n<li>Communal spaces for socializing and study</li>\n<li>Media rooms with large screens for movies and gaming</li>\n<li>Gym and outdoor BBQ</li>\n<li>Secure swipe card access</li>\n<li>Kitchen including stone benchtops, cooktop, microwave and fridge</li>\n<li>Electronic laundry machines (usage charges apply on swipe card)</li>\n<li>Use of the gym and Student One facilities is included</li>\n<li>Office hours are 24/7</li>\n</ul>",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_student_one_features.jpg",
+        "alt" : "img_student_one_features",
+        "width" : 1088,
+        "height" : 724,
+        "max_width" : 1088,
+        "max_height" : 724
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "tab_1" : {
+      "title" : "Welcome to Student One",
+      "text_content" : "<h2>Student one wharf street offers the ultimate australian lifestyle.</h2>\n<p>Student One is a 5-minute walk from ILSC-Brisbane, located in the city centre, offering 687 beds in shared and private studio apartments designed to meet the needs and budget of international students. Located in the heart of Brisbane City, Student One Wharf Street is the world's tallest student accommodation building.</p>",
+      "image_field" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_student_one_welcome.jpg",
+        "alt" : "img_student_one_welcome",
+        "width" : 1122,
+        "height" : 748,
+        "max_width" : 1122,
+        "max_height" : 748
+      },
+      "hide_show_cta" : "show",
+      "cta_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "cta_text" : "WATCH OUR VIDEO",
+      "cta_font_awesome_icon" : "far fa-play-circle"
+    },
+    "tab_2" : {
+      "title" : "Features",
+      "text_content" : "<h2>Features</h2>\n<ul class=\"arrows-orange\">\n<li>Fully furnished and air-conditioned rooms</li>\n<li>High ceilings, with full-height windows and block-out fabric blinds</li>\n<li>Free unlimited high-speed internet</li>\n<li>Communal spaces for socializing and study</li>\n<li>Media rooms with large screens for movies and gaming</li>\n<li>Gym and outdoor BBQ</li>\n<li>Secure swipe card access</li>\n<li>Kitchen including stone benchtops, cooktop, microwave and fridge</li>\n<li>Electronic laundry machines (usage charges apply on swipe card)</li>\n<li>Use of the gym and Student One facilities is included</li>\n<li>Office hours are 24/7</li>\n</ul>",
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_student_one_features.jpg",
+        "alt" : "img_student_one_features",
+        "width" : 1088,
+        "height" : 724,
+        "max_width" : 1088,
+        "max_height" : 724
+      }
+    }
+  }
+}, {
+  "id" : "d25e5635-713e-7b14-f66e-db94953649c2",
+  "name" : "enable_tab_button_boolean",
+  "label" : "Enable Tab Button Boolean",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "display_width" : null,
+  "default" : false
+}, {
+  "id" : "4e7af0d9-2c8c-a01f-74cd-46ef553ef714",
+  "name" : "btn_field_group",
+  "label" : "BTN Field group",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "enable_tab_button_boolean",
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "children" : [ {
+    "id" : "66844425-d211-b9e9-bb4a-91cb34c64c20",
+    "name" : "btn_link",
+    "label" : "BTN Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "https://ilscaustralia.guestybookings.com",
+        "type" : "EXTERNAL"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "9f9d8dc6-d9cc-c49e-cc26-d83916117d21",
+    "name" : "btn_text",
+    "label" : "BTN Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Click here to search for availability"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "btn_link" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "https://ilscaustralia.guestybookings.com",
+        "type" : "EXTERNAL"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "btn_text" : "Click here to search for availability"
+  }
+}, {
+  "id" : "8e3e7bf6-ec65-b55b-07a1-fcf26ef79da7",
+  "name" : "mobile_tab_text",
+  "label" : "Mobile Tab Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Features:"
+} ]

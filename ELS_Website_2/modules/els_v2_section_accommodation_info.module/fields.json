@@ -1,0 +1,196 @@
+[ {
+  "id" : "db4d7f01-50ea-a135-6050-958721ab436a",
+  "name" : "anchor_id",
+  "label" : "Anchor ID",
+  "inline_help_text" : "Enter anchor ID when using anchor nav. Do not use special characters and spaces.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null
+}, {
+  "id" : "ec8ade86-57e7-dd52-7d8e-77519ab46f43",
+  "name" : "padding_choice",
+  "label" : "Padding Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "padding-none", "None" ], [ "padding-bottom-none", "No Bottom Padding" ], [ "padding-top-none", "No Top Padding" ], [ "padding-top", "Top Padding" ], [ "padding-bottom", "Bottom Padding" ], [ "padding-top-extra", "Top Padding Extra" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "cdb8a180-0621-2219-2b7a-46dad9258921",
+  "name" : "margin_choice",
+  "label" : "Margin Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "", "None" ], [ "margin-top-extra", "Margin Top Extra" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "ce6e15d5-41e5-05f0-d0fc-d202925950c2",
+  "name" : "bg_color_choice",
+  "label" : "BG Color Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "grey-linear-box", "Grey Linear" ], [ "orange-linear-box", "Orange Linear" ], [ "blue-linear-box", "Blue Linear" ], [ "orange-radial-box", "Orange Radial" ], [ "light-grey-linear-box", "Light Grey" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "560821b0-d0f3-b896-28f3-82add76791a5",
+  "name" : "title_rich_text",
+  "label" : "Title Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Learn English <span class=\"bold\">in Chicago at</span> <img src=\"https://www.ilsc.com/hubfs/ELS/Website%20v2/template-resources/images/logos/dominican-university-of-california-logo%201-min.png\" alt=\"dominican-university-of-california-logo 1-min\" class=\"img-fluid\"></h2>"
+}, {
+  "id" : "a0a5d858-1bb0-bf15-c5d7-112c823f8532",
+  "name" : "description_rich_text",
+  "label" : "Description Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<p>The beautiful ivy-covered buildings of Dominican University create an academic atmosphere that is complemented by large, modern classrooms with smart technology. When you study English at ELS Chicago, you'll have full access to the Dominican University campus facilities, which include a large library, dining facilities, and a new fitness center that features a large indoor running track.</p>\n<p><span class=\"bold\">Planning to transfer to an American college or university after your studies?</span> Upon successful completion of ELS Level 112, you will fulfill the English language entry requirement for conditional admission to Dominican University, as well as additional nearby partner colleges and universities.</p>"
+}, {
+  "id" : "973ed5d0-c383-1a80-1ccf-530a693067b3",
+  "name" : "bg_photo_angle_color",
+  "label" : "BG Photo Angle Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#f58220",
+    "opacity" : 100
+  }
+}, {
+  "id" : "28dde8c8-9e44-51b5-c4a8-8a24837e2d5d",
+  "name" : "icon_slide_field_group",
+  "label" : "Icon Slide Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 10,
+    "sorting_label_field" : "042ff6e9-d70a-b9cd-f430-79af66f5664c",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "042ff6e9-d70a-b9cd-f430-79af66f5664c",
+    "name" : "image_field",
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.ilsc.com/hubfs/ELS/Website%20v2/template-resources/images/icon/icon_dollar-min.png",
+      "alt" : "icon_dollar-min",
+      "loading" : "lazy",
+      "width" : 61,
+      "height" : 61,
+      "max_width" : 61,
+      "max_height" : 61
+    }
+  }, {
+    "id" : "babd1539-4737-a499-413e-f82f66c5e465",
+    "name" : "title_text",
+    "label" : "Title Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null
+  }, {
+    "id" : "101f88ce-6a82-1141-2034-175a0f2857d2",
+    "name" : "sub_text",
+    "label" : "Sub Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ ]
+}, {
+  "id" : "c29dad92-ba3b-c910-5aad-f09480c6a0f2",
+  "name" : "image_field_1",
+  "label" : "Main Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "41c7ebb7-381e-4e42-4eb7-ac6d84c95be2",
+  "name" : "modal_id",
+  "label" : "Modal ID",
+  "inline_help_text" : "Enter unique id.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null
+}, {
+  "id" : "a0cf0314-d9f2-1201-d5f8-e5f5e4618227",
+  "name" : "image_slide",
+  "label" : "Image Slide",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 99,
+    "sorting_label_field" : null,
+    "default" : 0
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+} ]

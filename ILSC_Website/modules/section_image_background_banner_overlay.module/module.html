@@ -1,0 +1,27 @@
+<section class="section section-overlay">
+  <div class="container">
+    <div class="row bg-image">
+      <div class="col-md-12">
+        <div class="content-container center">
+          {% inline_rich_text field="richtext_field" value="{{ module.richtext_field }}" %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  {% if module.background_choice == "image" %}
+    .section-overlay .bg-image{
+      background:url({{ module.background_image_field_group.bg_image.src }}) rgba({{ module.background_image_field_group.overlay_color.color|convert_rgb }}, {{ module.background_image_field_group.overlay_color.opacity/100 }});
+      background-repeat:no-repeat;
+      background-size:cover;
+      background-blend-mode:overlay;
+    }
+  {% endif %}
+  {% if module.background_choice == "color" %}
+    .section-overlay .section-overlay{
+      background-color: {{ module.bg_color.color }};
+    }
+  {% endif %}
+</style>

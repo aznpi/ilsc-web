@@ -1,0 +1,57 @@
+
+{% set rec_posts = blog_recent_posts(module.blog_field, 10) %}
+
+<section class="section-container section-blog-boxes section-4-column">
+  <div class="container">
+    <div class="row row-title">
+      <div class="col-md-12">
+        {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+      </div>
+    </div>
+    <div class="row">
+      {% for rec_post in rec_posts %}
+        <div class="col-md-3 col-boxes" style="margin-bottom:20px;" onClick="javscript:location.href='{{rec_post.absolute_url}}';">
+          <div class="box-container">
+            
+              <div class="image-container" style="border-bottom:8px solid;border-color:{{ module.highlight_color.color }}:width:100%;">
+                
+                <img src="{{rec_post.post_list_summary_featured_image}}" class="img-fluid">      
+              </div>  
+            
+            <div class="description-container">
+              <h3 style="color:{{ module.highlight_color.color }}">
+               {{ rec_post.name }}
+              </h3>
+              <div class="description-content">
+               {{ rec_post.meta_description|truncatehtml(120, '...' , false) }}
+                <div class="post-meta"><span class="timestamp"><i class="fa fa-clock-o"></i> {{ rec_post.publish_date|datetimeformat('%b %e, %Y') }}</span></div>
+              </div>
+              
+              
+              <a class="link" href="{{rec_post.absolute_url}}">
+                Find out more
+              </a>
+            </div>
+          </div>
+       </div>
+      {% endfor %}
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        {% if not simple_list_page %}
+                  
+          <div class="blogPagination">
+            {% if last_page_num > 0 %}
+            <a class="previous-posts-link" href="{{ blog_page_link(last_page_num) }}"><i class="fa fa-angle-left"></i>&nbsp; Previous</a>
+            {% endif %}
+            <a class="all-posts-link" href="{{ group.absolute_url }}/all">All posts</a>
+            {% if next_page_num %}
+            <a class="next-posts-link" href="{{ blog_page_link(next_page_num) }}">Next &nbsp;<i class="fa fa-angle-right"></i></a>
+            {% endif %}
+          </div>
+
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

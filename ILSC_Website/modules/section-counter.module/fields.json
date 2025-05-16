@@ -1,0 +1,127 @@
+[ {
+  "id" : "50cc75c9-0b01-8d98-a5ba-6e5fe510a1e7",
+  "name" : "counter_group",
+  "label" : "Counter Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 4,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "8e7c5e71-1be8-f0e4-0f5f-4c1b0fd5ba95",
+    "name" : "counter_number",
+    "label" : "Counter Number",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "8"
+  }, {
+    "id" : "e9d7b799-a1c3-994d-9183-b21346f7d6f1",
+    "name" : "counter_title",
+    "label" : "Counter Title",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h5>LANGUAGE SCHOOLS</h5>"
+  }, {
+    "id" : "3f9db765-4cf9-67d3-c240-9093ab830b27",
+    "name" : "font_color",
+    "label" : "Font Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "display_width" : null,
+    "default" : {
+      "color" : "#FF8B35",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "counter_number" : "8",
+    "counter_title" : "<h5>LANGUAGE SCHOOLS</h5>",
+    "font_color" : {
+      "color" : "#FF8B35",
+      "opacity" : 100
+    }
+  }, {
+    "counter_number" : "8",
+    "counter_title" : "<h5>LANGUAGE SCHOOLS</h5>",
+    "font_color" : {
+      "color" : "#FF8B35",
+      "opacity" : 100
+    }
+  }, {
+    "counter_number" : "8",
+    "counter_title" : "<h5>LANGUAGE SCHOOLS</h5>",
+    "font_color" : {
+      "color" : "#FF8B35",
+      "opacity" : 100
+    }
+  }, {
+    "counter_number" : "8",
+    "counter_title" : "<h5>LANGUAGE SCHOOLS</h5>",
+    "font_color" : {
+      "color" : "#FF8B35",
+      "opacity" : 100
+    }
+  } ]
+}, {
+  "id" : "458b93ea-a7a7-36d1-88df-0ab8cd1983fb",
+  "name" : "cta_group",
+  "label" : "CTA group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "cad34c00-3682-0718-5992-f83270cd616b",
+    "name" : "cta_url",
+    "label" : "CTA URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    }
+  }, {
+    "id" : "191cd7f9-34e8-df7c-f0f0-912e25d72e45",
+    "name" : "cta_text",
+    "label" : "CTA Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "LEARN MORE ABOUT ILSC"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "cta_url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    },
+    "cta_text" : "LEARN MORE ABOUT ILSC"
+  }
+} ]

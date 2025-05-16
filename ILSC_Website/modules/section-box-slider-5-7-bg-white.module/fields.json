@@ -1,0 +1,152 @@
+[ {
+  "id" : "654925e1-34f6-721c-a008-37941c09f00b",
+  "name" : "title_text",
+  "label" : "Title Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Flexible Learning: Sample Schedules</h2>\n<p>When you take General English at ILSC, your study schedule and course choices are totally up to you! You can combine courses however you like, according to your English level, by choosing from courses across our Communication, Creative &amp; Cultural English, Academic &amp; Test Preparation, or Business English options. Plus, every 4 weeks, you can choose new courses and focus on different skills or topics of interest.</p>"
+}, {
+  "id" : "1ef32c6c-c57d-f147-8682-2363c5c0987e",
+  "name" : "box_slide",
+  "label" : "Box Slide",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 5,
+    "sorting_label_field" : "b752680b-9aa6-1e6b-f627-6d37644d802e",
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "b752680b-9aa6-1e6b-f627-6d37644d802e",
+    "name" : "main_text",
+    "label" : "Main Text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h2><span style=\"color: #ff8b35;\">Learn English Online</span></h2>\n<p>Progress and fluency comes through constant exposure to the language. Through using your new knowledge - all day, every day. In class, with your friends, out in the city. It will be an amazing adventure.</p>"
+  }, {
+    "id" : "4e1e190b-e343-2268-71c0-e39623fa797f",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_laptop_4.png",
+      "alt" : "img_laptop_4",
+      "width" : 483,
+      "height" : 344,
+      "max_width" : 483,
+      "max_height" : 344
+    }
+  }, {
+    "id" : "4dc4b761-90e9-545c-84d8-1a35b0171301",
+    "name" : "cta_group",
+    "label" : "CTA group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "25bd772b-f27e-2ebf-441b-695fd89198b0",
+      "name" : "hide_show_cta",
+      "label" : "Hide/Show CTA",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "hide"
+    }, {
+      "id" : "3a97a8bd-80d1-0987-a531-00e31f18707a",
+      "name" : "link_url",
+      "label" : "Link Url",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "939bd810-abe2-1aca-43e4-a424fac65c40",
+      "name" : "link_url_text",
+      "label" : "Link Url Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "LEARN MORE"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "hide_show_cta" : "hide",
+      "link_url" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_url_text" : "LEARN MORE"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "main_text" : "<h2><span style=\"color: #ff8b35;\">Learn English Online</span></h2>\n<p>Progress and fluency comes through constant exposure to the language. Through using your new knowledge - all day, every day. In class, with your friends, out in the city. It will be an amazing adventure.</p>",
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_laptop_4.png",
+      "alt" : "img_laptop_4",
+      "width" : 483,
+      "height" : 344,
+      "max_width" : 483,
+      "max_height" : 344
+    },
+    "cta_group" : {
+      "hide_show_cta" : "hide",
+      "link_url" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_url_text" : "LEARN MORE"
+    }
+  } ]
+} ]

@@ -1,0 +1,23 @@
+[ {
+  "id" : "d6faf8fc-05f1-8119-2897-c113a1191d07",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h4>WHAT OUR HOMESTAY FAMILIES ARE SAYING</h4>"
+}, {
+  "id" : "3df281d8-de02-5cb0-ef7d-e3c5bf942883",
+  "name" : "residence_name",
+  "label" : "Residence Name",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "All Residences", "All Residences" ], [ "APT Living", "APT Living" ], [ "GEC Viva Tower", "GEC Viva Tower" ], [ "Campus One", "Campus One" ], [ "Harrington Housing - Sherbourne", "Harrington Housing - Sherbourne" ], [ "Evo", "Evo" ], [ "Iglu-Chatswood", "Iglu-Chatswood" ], [ "Student One", "Student One" ], [ "Iglu-Melbourne", "Iglu-Melbourne" ], [ "Urbanest North Terrace", "Urbanest North Terrace" ], [ "Student Apartments", "Student Apartments" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+} ]

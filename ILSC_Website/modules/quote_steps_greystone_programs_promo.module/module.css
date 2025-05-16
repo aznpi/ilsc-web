@@ -1,0 +1,124 @@
+.section-gc-quote-steps .disclaimer a{
+  color: #81b1cc;
+}
+.section-gc-quote-steps .summary-link a{
+  color: #81b1cc;
+}
+.section-gc-quote-steps .summary-link a:hover{
+  color: #003346;
+}
+.section-gc-quote-steps .campus-selection-container{
+  height:600px;
+}
+.section-gc-quote-steps .step-breadcrumb-container .step-number >div.active,
+.section-gc-quote-steps .step-breadcrumb-container .step-number >div.active ~ div{
+  background: linear-gradient(to right, #81B1CC 50%, transparent 0);
+  background-size: 200% 100%;
+  background-position: right;
+}
+
+.section-gc-quote-steps .btn-orange{
+  background-color:#81B1CC;
+  border-color:#81B1CC;
+}
+
+.section-gc-quote-steps .btn-orange:hover{
+  background-color: #003346;
+  border-color: #003346;
+  color:#FFF;
+}
+
+.section-gc-quote-steps .btn-orange-outline{
+  color:#81B1CC;
+  border-color:#81B1CC;
+}
+.section-gc-quote-steps .btn-orange-outline:hover{
+  background-color: #81B1CC;
+  border-color:#81B1CC;
+  color: #FFF;
+}
+
+.section-gc-quote-steps .step-container .radio-container .program-option input[type=radio]:checked+*::before{
+  background-color: #81B1CC;
+  border-color:#81B1CC;
+}
+.section-gc-quote-steps .step-container .radio-container .program-option input[type=radio]:checked + label{
+  font-weight:600;
+}
+.section-gc-quote-steps .program-price-list .title{
+  margin-top:15px;
+}
+
+.section-gc-quote-steps .program-price-list .program-option label{
+  display:flex;
+}
+
+.section-gc-quote-steps .program-price-list .program-option label .program-name{
+  width:60%;
+}
+.section-gc-quote-steps .program-price-list .program-option label .price-container{
+  align-self: flex-end;
+  width:40%;
+}
+.section-gc-quote-steps .step-container .radio-container .option-select input[type="radio"]:checked+label{
+  background-color: #81b1cc;
+}
+.section-gc-quote-steps .accommodation-price-selection-container .program-option .toggle-popover{
+  color: #81b1cc;
+}
+.ui-datepicker.gc-datepicker .ui-state-default,
+.ui-datepicker.gc-datepicker .ui-widget-content .ui-state-default,
+.ui-datepicker.gc-datepicker .ui-widget-header .ui-state-default,
+.ui-datepicker.gc-datepicker .ui-button,
+html .ui-datepicker.gc-datepicker .ui-button.ui-state-disabled:hover,
+html .ui-datepicker.gc-datepicker .ui-button.ui-state-disabled:active{  
+    color: #81b1cc;
+}
+.ui-datepicker.gc-datepicker .ui-state-disabled .ui-state-default{
+    color: #81b1cc !important;
+}
+
+.ui-datepicker.gc-datepicker .ui-datepicker td a {
+    background: #81b1cc !important;  
+}
+.ui-datepicker.gc-datepicker .ui-widget-header{
+  color: #81b1cc !important;
+  
+}
+.ui-datepicker.gc-datepicker .ui-datepicker td a {
+    background: #81b1cc !important;  
+}
+.ui-datepicker.gc-datepicker .ui-datepicker-prev span,
+.ui-datepicker.gc-datepicker .ui-datepicker-next span{
+  background-color:#81b1cc;  
+}
+.ui-datepicker.gc-datepicker .ui-datepicker-prev:before,
+.ui-datepicker.gc-datepicker .ui-datepicker-next:before {
+    color: #FFF;
+}
+.ui-datepicker.gc-datepicker td a {
+    background: #81b1cc !important;
+}
+.ui-datepicker.gc-datepicker .ui-state-hover,
+.ui-datepicker.gc-datepicker .ui-widget-content .ui-state-hover,
+.ui-datepicker.gc-datepicker .ui-widget-header .ui-state-hover,
+.ui-datepicker.gc-datepicker .ui-state-focus,
+.ui-datepicker.gc-datepickers .ui-widget-content .ui-state-focus,
+.ui-datepicker.gc-datepicker .ui-widget-header .ui-state-focus,
+.ui-datepicker.gc-datepicker .ui-button:hover,
+.ui-datepicker.gc-datepicker .ui-button:focus {
+	color: #CCC !important;
+}
+
+.section-gc-quote-steps #quote-price-container #quote-selection-container .quote-title{
+  background: #81b1cc;  
+}
+.section-gc-quote-steps #quote-price-container #quote-selection-container .quote-box.total-price-container .line-item{
+  border: 1px solid #81b1cc;  
+}
+.section-gc-quote-steps #quote-price-container .new-quote{
+  color: #81b1cc;
+}
+.section-gc-quote-steps.section-quote-steps .loading{
+  color: #81b1cc;
+}

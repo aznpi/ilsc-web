@@ -1,0 +1,39 @@
+[ {
+  "id" : "b752680b-9aa6-1e6b-f627-6d37644d802e",
+  "name" : "title_text",
+  "label" : "Title Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2><span>ILSC English Level Equivalencies</span></h2>\n<p><span>ILSC offers a wide range of courses at 10 progressive language levels: from Beginner 1 (B1) to Advanced 2 (A2). ILSC's core courses are typically offered at all 10 levels, while afternoon skills courses often combine students from two successive levels, allowing them to share their strengths and skills with other students.</span></p>"
+}, {
+  "id" : "88cb4027-7dd1-cf3c-8664-387f273d0840",
+  "name" : "image_field",
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_language_levels_comparison.png",
+    "alt" : "img_language_levels_comparison",
+    "width" : 1142,
+    "height" : 693,
+    "max_width" : 1142,
+    "max_height" : 693
+  }
+}, {
+  "id" : "57ab3b72-1d1f-ec3d-0202-5ce522dd3f7a",
+  "name" : "footnote_text",
+  "label" : "Footnote text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<p style=\"font-size: 12px;\"><span>NOTE: THE RANGE OF TESTS LISTED HERE VARIES GREATLY IN DESIGN, PURPOSE AND FORMAT. THIS CHART IS INTENDED TO SERVER ONLY AS A GUIDELINE OF TEST SCORES AND ILSC LEVELS AND WILL NOT NECESSARILY APPLY EQUALLY TO EVERY INDIVIDUAL.</span></p>"
+} ]

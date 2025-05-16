@@ -1,0 +1,354 @@
+[ {
+  "id" : "5a3af11b-185e-d652-3ab3-bb3a04d0dd53",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Live with a Homestay Family</h2>\n<p>Are you looking for a home away from home? Be welcomed into one of ILSC’s Homestay families, and experience a supportive living environment.</p>"
+}, {
+  "id" : "1bbea743-e046-7b46-fc7d-f384dab28f88",
+  "name" : "dropdown_text",
+  "label" : "Dropdown Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "CHOOSE YOUR LOCATION"
+}, {
+  "id" : "484148e7-d667-d001-008e-f7772cab3022",
+  "name" : "box_1",
+  "label" : "Box 1",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "da4cb6f7-1cd9-8ea5-85ff-fcf461519e4e",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_ilsc_camps.jpg",
+      "alt" : "img_ilsc_camps",
+      "width" : 1086,
+      "height" : 462,
+      "max_width" : 1086,
+      "max_height" : 462
+    }
+  }, {
+    "id" : "92a6dd99-a120-7106-f805-0a7033573af0",
+    "name" : "text_content",
+    "label" : "Text Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>Junior Camps at ILSC Campuses<br>&nbsp;</h4>\n<p>Learn English or French* at one of our downtown campuses while you explore a new place and culture.</p>"
+  }, {
+    "id" : "7d6630a2-9d26-a4e2-8c83-e87bed21496a",
+    "name" : "box_link",
+    "label" : "Box Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "CONTENT" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    }
+  }, {
+    "id" : "7ec6725f-60cb-a9c8-caec-e1564c7f227d",
+    "name" : "link_text",
+    "label" : "Link Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Read more about ILSC Campus Camps"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_ilsc_camps.jpg",
+      "alt" : "img_ilsc_camps",
+      "width" : 1086,
+      "height" : 462,
+      "max_width" : 1086,
+      "max_height" : 462
+    },
+    "text_content" : "<h4>Junior Camps at ILSC Campuses<br>&nbsp;</h4>\n<p>Learn English or French* at one of our downtown campuses while you explore a new place and culture.</p>",
+    "box_link" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    },
+    "link_text" : "Read more about ILSC Campus Camps"
+  }
+}, {
+  "id" : "6625f136-0964-fc63-1125-52825d1f27df",
+  "name" : "box_2",
+  "label" : "Box 2",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "7a1917ca-b8a8-6f12-50eb-6e6d5bcf56b7",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_university_campuses.jpg",
+      "alt" : "img_university_campuses",
+      "width" : 1086,
+      "height" : 462,
+      "max_width" : 1086,
+      "max_height" : 462
+    }
+  }, {
+    "id" : "3857f82f-578c-1236-3fd2-989f1c7c945c",
+    "name" : "text_content",
+    "label" : "Text Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>Junior Camps at<br>University Campus Residences</h4>\n<p>Live, learn and explore with other international students in a university residence in Canada.</p>"
+  }, {
+    "id" : "14cbf4e9-f1fe-3b2a-d164-dd58aa755929",
+    "name" : "box_link",
+    "label" : "Box Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "CONTENT" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : ""
+    }
+  }, {
+    "id" : "f051b552-9810-09bb-42c5-b9164d3ce2af",
+    "name" : "link_text",
+    "label" : "Link Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Read more about University Residence Camps"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_university_campuses.jpg",
+      "alt" : "img_university_campuses",
+      "width" : 1086,
+      "height" : 462,
+      "max_width" : 1086,
+      "max_height" : 462
+    },
+    "text_content" : "<h4>Junior Camps at<br>University Campus Residences</h4>\n<p>Live, learn and explore with other international students in a university residence in Canada.</p>",
+    "box_link" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : ""
+    },
+    "link_text" : "Read more about University Residence Camps"
+  }
+}, {
+  "id" : "36a17316-28d5-1b4b-483c-0d4bd4834509",
+  "name" : "box_3",
+  "label" : "Box 3",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "114b910a-ec7a-e19f-b832-92dd1eb72f01",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_family_camps.jpg",
+      "alt" : "img_family_camps",
+      "width" : 1086,
+      "height" : 462,
+      "max_width" : 1086,
+      "max_height" : 462
+    }
+  }, {
+    "id" : "8f2ac395-0142-d698-fab0-ef1e473a452b",
+    "name" : "text_content",
+    "label" : "Text Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>Family Camps</h4>\n<p>Enjoy a family cultural adventure where you’ll learn English and explore the city together.</p>"
+  }, {
+    "id" : "aac37bdd-fdfc-a58a-e13b-3a539d03fa48",
+    "name" : "box_link",
+    "label" : "Box Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "CONTENT" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : ""
+    }
+  }, {
+    "id" : "6052e4b8-b20e-f975-41c4-6b11d5ee93ce",
+    "name" : "link_text",
+    "label" : "Link Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Read more about Family Camps"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_family_camps.jpg",
+      "alt" : "img_family_camps",
+      "width" : 1086,
+      "height" : 462,
+      "max_width" : 1086,
+      "max_height" : 462
+    },
+    "text_content" : "<h4>Family Camps</h4>\n<p>Enjoy a family cultural adventure where you’ll learn English and explore the city together.</p>",
+    "box_link" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : ""
+    },
+    "link_text" : "Read more about Family Camps"
+  }
+}, {
+  "id" : "b24161a3-d515-99f7-280c-209df49988dc",
+  "name" : "box_4",
+  "label" : "Box 4",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "3579c9a9-a8b6-351b-b354-632899643ad9",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_esl_bridge.jpg",
+      "alt" : "img_esl_bridge",
+      "width" : 1086,
+      "height" : 462,
+      "max_width" : 1086,
+      "max_height" : 462
+    }
+  }, {
+    "id" : "5a445d16-e7a2-50ea-0531-936f9aa5391e",
+    "name" : "text_content",
+    "label" : "Text Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>ESL High School Bridge</h4>\n<p>Improve your English, prepare for study in a Canadian high school, and open up more opportunities for higher education.</p>"
+  }, {
+    "id" : "8a737fdf-bb43-a95d-a0de-9bea3535ef28",
+    "name" : "box_link",
+    "label" : "Box Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "CONTENT" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : ""
+    }
+  }, {
+    "id" : "fa91d714-b1a5-6821-3be0-fe74cf8ec775",
+    "name" : "link_text",
+    "label" : "Link Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Read more about ESL-High School Bridge"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_esl_bridge.jpg",
+      "alt" : "img_esl_bridge",
+      "width" : 1086,
+      "height" : 462,
+      "max_width" : 1086,
+      "max_height" : 462
+    },
+    "text_content" : "<h4>ESL High School Bridge</h4>\n<p>Improve your English, prepare for study in a Canadian high school, and open up more opportunities for higher education.</p>",
+    "box_link" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : ""
+    },
+    "link_text" : "Read more about ESL-High School Bridge"
+  }
+} ]

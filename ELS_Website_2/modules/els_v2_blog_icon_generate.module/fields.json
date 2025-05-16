@@ -1,0 +1,58 @@
+[ {
+  "id" : "f8d0420e-4d7e-4b53-1c3d-61251302a28e",
+  "name" : "category_field_group",
+  "label" : "Category Field group",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 100,
+    "sorting_label_field" : "842fb1ab-b9df-c517-9823-6394923f6d2f",
+    "default" : 0
+  },
+  "children" : [ {
+    "id" : "3c3c33ae-219e-1825-df71-d071ef2f58b2",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "842fb1ab-b9df-c517-9823-6394923f6d2f",
+    "name" : "tag_field",
+    "label" : "Tag",
+    "required" : false,
+    "locked" : false,
+    "tag_value" : "SLUG",
+    "type" : "tag",
+    "display_width" : null
+  }, {
+    "id" : "462e6ff3-c2fd-aacb-4cb7-7fc616afb05b",
+    "name" : "bg_color",
+    "label" : "BG Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "display_width" : null,
+    "default" : {
+      "color" : null,
+      "opacity" : null
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ ]
+} ]

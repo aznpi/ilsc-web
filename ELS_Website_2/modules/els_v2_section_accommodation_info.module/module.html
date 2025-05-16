@@ -1,0 +1,120 @@
+{% if module.anchor_id %}
+  <a class="anchor-link" name="{{ module.anchor_id|replace(' ','-')|replace("'","-")|replace(',','-') }}"></a>
+{% endif %}
+<section class="section-normal section-diagonal section-accommodation-description {{ module.padding_choice }} {{ module.margin_choice }}">
+  <div class="diagonal-box {{ module.bg_color_choice }}"></div>
+  <div class="container"> 
+    <div class="row">
+      <div class="col-md-7">
+        <div class="description">
+          {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+          {% inline_rich_text field="description_rich_text" value="{{ module.description_rich_text }}" %}
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="image-box-container">
+          <div class="polygon-image-bg" style="background-color: {{ module.bg_photo_angle_color.color }};"></div>
+          <div class="image-container">
+            {% if module.image_field_1.src %}
+              {% set sizeAttrs = 'width="{{ module.image_field_1.width }}" height="{{ module.image_field_1.height }}"' %}
+              {% if module.image_field_1.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.image_field_1.width }}" height="{{ module.image_field_1.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif module.image_field_1.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.image_field_1.max_width }}" height="{{ module.image_field_1.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+               {% set loadingAttr = module.image_field_1.loading != 'disabled' ? 'loading="{{ module.image_field_1.loading }}"' : '' %}
+              <img src="{{ module.image_field_1.src }}" alt="{{ module.image_field_1.alt }}" class="img-fluid">
+            {% endif %}
+            {% if module.image_slide %}
+              <div class="icon-plus icon-container" data-bs-toggle="modal" data-bs-target="#{{ module.modal_id }}-modal"></div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="icon-list center">
+          {% for item in module.icon_slide_field_group %}      
+            <li>
+              <div class="icon-container">
+                {% if item.image_field.src %}
+                  {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+                  {% if item.image_field.size_type == 'auto' %}
+                    {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif item.image_field.size_type == 'auto_custom_max' %}
+                    {% set sizeAttrs = 'width="{{ item.image_field.max_width }}" height="{{ item.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                   {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' : '' %}
+                  <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" class="img-fluid">
+                {% endif %}
+              </div>
+              <div class="title">{{ item.title_text }}</div>
+              <div class="sub-title">{{ item.sub_text }}</div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Modal -->
+{% if module.image_slide %}
+  <div class="modal accommodation-modal fade" id="{{ module.modal_id }}-modal" tabindex="-1" aria-labelledby="{{ module.modal_id }}Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" data-bs-theme="dark">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="ratio ratio-1-1">
+            <div class="{{ module.modal_id }}-modal-slider text-white">
+              {% for item in module.image_slide %}
+                {% if item.src %}
+                  <div>
+                    <div class="image-container">
+                      <img src="{{ item.src }}" alt="{{ item.alt }}" width="800px">
+                    </div>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+            <div class="page-indicator">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% require_js position="footer" %}
+  <script>
+    $(document).ready(function(){
+        $('.{{ module.modal_id }}-modal-slider').slick({
+        infinite: false,
+        arrows:true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        nextArrow:'<div class="slick-next"><i class="fas fa-angle-double-right"></i></div>',
+        prevArrow:'<div class="slick-prev"><i class="fas fa-angle-double-left"></i></div>',
+      });
+    });
+    var $status = $('.page-indicator');
+    var $slickElement = $('.{{ module.modal_id }}-modal-slider');
+
+    $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+      //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+      var i = (currentSlide ? currentSlide : 0) + 1;
+      $status.text(i + '/' + slick.slideCount);
+    });
+    $('.{{ module.modal_id }}-modal').on('shown.bs.modal', function (e) {
+      $('.{{ module.modal_id }}-modal-slider').slick('setPosition');
+      $('#{{ module.modal_id }}-modal .ratio').addClass('open');
+    })
+  </script>
+{% end_require_js %}
+{% endif %}

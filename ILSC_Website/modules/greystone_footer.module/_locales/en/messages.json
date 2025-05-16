@@ -1,0 +1,572 @@
+{
+  "column.default.column_title" : {
+    "message" : "<h5>COMPANY</h5>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "column.default.link_group.link_text" : {
+    "message" : "About ILSC",
+    "description" : null,
+    "placeholders" : null
+  },
+  "column.default.link_group.link_url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "column.default.link_group.link_url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "column.default.link_group.link_url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "column.link_1.default.link_text_1" : {
+    "message" : "About ILSC",
+    "description" : null,
+    "placeholders" : null
+  },
+  "column.link_1.default.link_url_1.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "column.link_1.default.link_url_1.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "column.link_1.default.link_url_1.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "column.link_group.default.link_text" : {
+    "message" : "About ILSC",
+    "description" : null,
+    "placeholders" : null
+  },
+  "column.link_group.default.link_url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "column.link_group.default.link_url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "column.link_group.default.link_url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "column.links.default.link_text" : {
+    "message" : "About ILSC",
+    "description" : null,
+    "placeholders" : null
+  },
+  "column.links.default.link_url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "column.links.default.link_url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "column.links.default.link_url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "column_1.default.column_title" : {
+    "message" : "<h5>COMPANY</h5>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "column_1.default.link_1.link_text_1" : {
+    "message" : "About ILSC",
+    "description" : null,
+    "placeholders" : null
+  },
+  "column_1.default.link_1.link_url_1.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "column_1.default.link_1.link_url_1.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "column_1.default.link_1.link_url_1.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.default.link_1.link_text_1" : {
+    "message" : "About ILSC",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.default.link_1.link_url_1.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.default.link_1.link_url_1.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.default.link_1.link_url_1.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.default.link_2.link_text_2" : {
+    "message" : "Why Choose ILSC",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.default.link_2.link_url_2.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.default.link_2.link_url_2.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.default.link_2.link_url_2.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.default.link_3.link_text_3" : {
+    "message" : "Our Commitment",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.default.link_3.link_url_3.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.default.link_3.link_url_3.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.default.link_3.link_url_3.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.default.link_4.link_text_4" : {
+    "message" : "Careers",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.default.link_4.link_url_4.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.default.link_4.link_url_4.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.default.link_4.link_url_4.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.default.link_5.link_text_5" : {
+    "message" : "Awards",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.default.link_5.link_url_5.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.default.link_5.link_url_5.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.default.link_5.link_url_5.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.default.link_6.link_text_6" : {
+    "message" : "Blog",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.default.link_6.link_url_6.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.default.link_6.link_url_6.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.default.link_6.link_url_6.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.default.title_company" : {
+    "message" : "<h5>COMPANY</h5>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_url_1_.default.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_url_1_.default.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_url_1_.default.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.name" : {
+    "message" : "footer",
+    "description" : "",
+    "placeholders" : null
+  },
+  "copyright.default" : {
+    "message" : "<p>© 2020 ILSC Education Group. All Rights Reserved.</p>\n<p>All programs are part of the English Language Programs for International Students CRICOS Code: 060152J. ILSC (Brisbane) PTY LTD is trading as ILSC-Brisbane, ILSC-Sydney, ILSC-Melbourne, ILSC-Adelaide, ILSC Australia RTO Number 31564, CRICOS Code: 02137M.</p>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "copyright.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "copyright.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "fb_link.default.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "fb_link.default.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "fb_link.default.url.href" : {
+    "message" : "https://www.facebook.com/ilscfb",
+    "description" : null,
+    "placeholders" : null
+  },
+  "fb_link.default.url.type" : {
+    "message" : "EXTERNAL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_group.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_group.default.link_text" : {
+    "message" : "WORK WITH US",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_group.default.link_url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_group.default.link_url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_group.default.link_url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_group.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_group.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_group.link_text.default" : {
+    "message" : "WORK WITH US",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_group.link_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_group.link_text.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_group.link_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_group.link_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_group.link_url.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_group.link_url.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_group.link_url.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "logo.default.alt" : {
+    "message" : "logo_ilsc_vertical",
+    "description" : "",
+    "placeholders" : null
+  },
+  "logo.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "logo.label" : {
+    "message" : "logo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "greystone_footer",
+    "description" : "",
+    "placeholders" : null
+  },
+  "our_programs_menu.name" : {
+    "message" : "footer",
+    "description" : "",
+    "placeholders" : null
+  },
+  "side_flyout.box_1.box_link_url.default.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_1.box_link_url.default.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_1.box_link_url.default.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_1.name" : {
+    "message" : "footer",
+    "description" : "",
+    "placeholders" : null
+  },
+  "side_flyout.name" : {
+    "message" : "footer",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_media.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.fb_link.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.fb_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.fb_link.label" : {
+    "message" : "fb_Link",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.follow_us_text.default" : {
+    "message" : "Follow us on",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.follow_us_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.follow_us_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.follow_us_text.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.follow_us_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.follow_us_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.instagram_link.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.instagram_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.instagram_link.label" : {
+    "message" : "instagram_Link",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.instagram_link_copy.default.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.instagram_link_copy.default.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.instagram_link_copy.default.url.href" : {
+    "message" : "https://www.instagram.com/ilsc/",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.instagram_link_copy.default.url.type" : {
+    "message" : "EXTERNAL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.linkedin_link.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.linkedin_link.default.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.linkedin_link.default.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.linkedin_link.default.url.href" : {
+    "message" : "https://ca.linkedin.com/school/ilsc-education-group/",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.linkedin_link.default.url.type" : {
+    "message" : "EXTERNAL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.linkedin_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.linkedin_link.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.name" : {
+    "message" : "greystone_footer",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_media.youtube_link.default.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.youtube_link.default.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.youtube_link.default.url.href" : {
+    "message" : "https://www.youtube.com/user/ilscTV",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.youtube_link.default.url.type" : {
+    "message" : "EXTERNAL",
+    "description" : null,
+    "placeholders" : null
+  }
+}

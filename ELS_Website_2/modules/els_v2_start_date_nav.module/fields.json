@@ -1,0 +1,102 @@
+[ {
+  "id" : "7ba3b149-ec6d-4321-6b2f-6b3b3fbc2592",
+  "name" : "padding_choice",
+  "label" : "Padding Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "padding-top", "Padding Top" ], [ "padding-bottom", "Padding Bottom" ], [ "padding-none", "Padding None" ], [ "padding-extra", "Extra Padding" ], [ "padding-top-extra", "Padding Top Extra" ], [ "padding-bottom-extra", "Padding Bottom Extra" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "6d24fde5-2957-ab9d-5865-604d1ef3a6b4",
+  "name" : "main_content_rich_text",
+  "label" : "Main Content Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h3>Fees valid for registrations received between Nov 1, 2020 and Jul 31, 2021, for start dates after Dec 31, 2020.</h3>\n<h3><em>All fees are in Canadian Dollars (CAD)</em></h3>\n<p>The availability of programs is subject to student enrolment. Registration and materials fees apply to all core and specialty programs unless specified otherwise. Registration fee based on study start dates.</p>"
+}, {
+  "id" : "a5a7473c-03f7-5f9c-81ea-b2fe635856fa",
+  "name" : "nav_field_group",
+  "label" : "Nav Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 99,
+    "sorting_label_field" : "7b371a22-289e-ce68-81a1-b93b762caf81",
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "7b371a22-289e-ce68-81a1-b93b762caf81",
+    "name" : "nav_title_rich_text",
+    "label" : "Nav Title Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null
+  }, {
+    "id" : "94f0face-0669-46a3-0970-3820f6532ce3",
+    "name" : "anchor_name",
+    "label" : "Anchor Name",
+    "inline_help_text" : "Programs Title will need to match the Anchor name of the module.",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Full-time program"
+  }, {
+    "id" : "d90b2411-6a45-4bbc-71ba-c0d54cd597a5",
+    "name" : "color_field",
+    "label" : "Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "display_width" : null,
+    "default" : {
+      "color" : null,
+      "opacity" : null
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "anchor_name" : "Full-time program",
+    "color_field" : {
+      "color" : null,
+      "opacity" : null
+    }
+  }, {
+    "anchor_name" : "Full-time program",
+    "color_field" : {
+      "color" : null,
+      "opacity" : null
+    }
+  }, {
+    "anchor_name" : "Full-time program",
+    "color_field" : {
+      "color" : null,
+      "opacity" : null
+    }
+  } ]
+}, {
+  "id" : "db7f3ab4-b3a1-3dd7-f36f-bf40a312c3aa",
+  "name" : "disclaimer_1_rich_text",
+  "label" : "Disclaimer Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<p><strong>Programs with this symbol require that you take our Pre Registration Online Language Assessment.</strong></p>"
+} ]

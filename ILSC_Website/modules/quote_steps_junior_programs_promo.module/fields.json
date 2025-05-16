@@ -1,0 +1,343 @@
+[ {
+  "id" : "b6f5f2b0-bb35-a103-5b2c-486067017ba4",
+  "name" : "logo_link",
+  "label" : "Logo Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 42547182674
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "717025e9-91de-7462-9f7c-6d7ca7d413cb",
+  "name" : "logo_image",
+  "label" : "Logo Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.ilsc.com/hubfs/Logos/GC_Horizontal_Logo_RGB.png",
+    "alt" : "GC_Horizontal_Logo_RGB",
+    "loading" : "lazy",
+    "width" : 508,
+    "height" : 120,
+    "max_width" : 508,
+    "max_height" : 120
+  }
+}, {
+  "id" : "95692b72-dac2-c100-800c-34b021c079ef",
+  "name" : "bg_image",
+  "label" : "BG Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.ilsc.com/hubfs/GC%20Graduateding%20copy%201.png",
+    "alt" : "GC Graduateding copy 1",
+    "loading" : "lazy",
+    "width" : 758,
+    "height" : 658,
+    "max_width" : 758,
+    "max_height" : 658
+  }
+}, {
+  "id" : "d36d6a7e-dbde-941e-95fd-388d942c2306",
+  "name" : "dot_image",
+  "label" : "Dot Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.ilsc.com/hubfs/bg_blue_dots.png",
+    "alt" : "bg_blue_dots",
+    "loading" : "lazy",
+    "width" : 39,
+    "height" : 96,
+    "max_width" : 39,
+    "max_height" : 96
+  }
+}, {
+  "id" : "2945cfed-0ff8-a8bc-c097-10fe67623fd8",
+  "name" : "country_field_group",
+  "label" : "Country Selection",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "902fa467-db7d-06c9-e367-5df1848b3eaf",
+    "name" : "link_field_group",
+    "label" : "Link Field group",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 10,
+      "sorting_label_field" : "733e0981-df97-e407-9b73-94189c30d67a",
+      "default" : 1
+    },
+    "children" : [ {
+      "id" : "733e0981-df97-e407-9b73-94189c30d67a",
+      "name" : "country_choice",
+      "label" : "Country Choice",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "Australia", "Australia" ], [ "Canada", "Canada" ], [ "India", "India" ], [ "Online", "Online" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "Australia"
+    }, {
+      "id" : "40ce471f-54b5-1142-6f13-27bf2cf401d0",
+      "name" : "direct_link_choice",
+      "label" : "Direct Link Choice",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "False", "False" ], [ "True", "True" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "False"
+    }, {
+      "id" : "4c612483-9ca2-466d-2d26-9290edd1495c",
+      "name" : "currency_choice",
+      "label" : "Currency Choice",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "AUD", "AUD" ], [ "CAD", "CAD" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null
+    }, {
+      "id" : "13ea9133-f3fd-7f3a-dd56-ce26e5e92875",
+      "name" : "campus_id",
+      "label" : "Campus Id",
+      "inline_help_text" : "Enter campus Id from campus table from the HUBDB",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "country_field_group.link_field_group.direct_link_choice",
+        "controlling_value_regex" : "True",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ {
+      "country_choice" : "Australia",
+      "direct_link_choice" : "False"
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "link_field_group" : [ {
+      "country_choice" : "Australia",
+      "direct_link_choice" : "False"
+    } ]
+  }
+}, {
+  "id" : "c68315c5-9e0d-d7aa-b133-d3a61e8dc5d3",
+  "name" : "high_season_settings_current_year",
+  "label" : "High Season Settings Current Year",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "2bc61160-8ee7-a51c-7a32-cfaa6c7222c0",
+    "name" : "min_date",
+    "label" : "Min Date",
+    "required" : true,
+    "locked" : false,
+    "type" : "date",
+    "display_width" : null,
+    "default" : 1655794800000
+  }, {
+    "id" : "ace4dbdb-3221-b22e-5720-4b6d43a9ac9e",
+    "name" : "max_date",
+    "label" : "Max_Date",
+    "required" : true,
+    "locked" : false,
+    "type" : "date",
+    "display_width" : null,
+    "default" : 1660374000000
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "min_date" : 1655794800000,
+    "max_date" : 1660374000000
+  }
+}, {
+  "id" : "e47c731f-edd5-116c-4c56-cc8b1a891b32",
+  "name" : "high_season_settings_year_2",
+  "label" : "High Season Settings Year 2",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "25d04c49-6174-b50c-8675-5312db29caf4",
+    "name" : "min_date",
+    "label" : "Min Date",
+    "required" : true,
+    "locked" : false,
+    "type" : "date",
+    "display_width" : null,
+    "default" : 1655794800000
+  }, {
+    "id" : "4d782b66-4101-3901-6816-3fa492a1d914",
+    "name" : "max_date",
+    "label" : "Max_Date",
+    "required" : true,
+    "locked" : false,
+    "type" : "date",
+    "display_width" : null,
+    "default" : 1660374000000
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "min_date" : 1655794800000,
+    "max_date" : 1660374000000
+  }
+}, {
+  "id" : "aec57cab-7e63-940c-cc32-211cc83fa499",
+  "name" : "accommodation_season_dates",
+  "label" : "Accommodation Season Dates",
+  "inline_help_text" : "Set dates before today's date to disable the High Season Price feature.",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "e37eb7b5-c9b8-505c-4ce7-d7278a81837e",
+    "name" : "high_season_settings_year",
+    "label" : "High Season Settings Current Year",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "eb6275ea-59e1-ac12-ae66-7ce4a297810a",
+      "name" : "min_date",
+      "label" : "Min Date",
+      "required" : true,
+      "locked" : false,
+      "type" : "date",
+      "display_width" : null,
+      "default" : 1648796400000
+    }, {
+      "id" : "71716aa7-2c72-510a-5320-35fe792e2307",
+      "name" : "max_date",
+      "label" : "Max_Date",
+      "required" : true,
+      "locked" : false,
+      "type" : "date",
+      "display_width" : null,
+      "default" : 1667199600000
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "min_date" : 1648796400000,
+      "max_date" : 1667199600000
+    }
+  }, {
+    "id" : "2f6e58c2-9a00-0338-aea9-5ce651190420",
+    "name" : "high_season_settings_year_2",
+    "label" : "High Season Settings Year 2",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "6eb6efb5-307b-5a0a-02cc-46d75867872c",
+      "name" : "min_date",
+      "label" : "Min Date",
+      "required" : true,
+      "locked" : false,
+      "type" : "date",
+      "display_width" : null,
+      "default" : 1648796400000
+    }, {
+      "id" : "e11d7c39-f25a-232f-23cd-2684525e0905",
+      "name" : "max_date",
+      "label" : "Max_Date",
+      "required" : true,
+      "locked" : false,
+      "type" : "date",
+      "display_width" : null,
+      "default" : 1667199600000
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "min_date" : 1648796400000,
+      "max_date" : 1667199600000
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "high_season_settings_year" : {
+      "min_date" : 1648796400000,
+      "max_date" : 1667199600000
+    },
+    "high_season_settings_year_2" : {
+      "min_date" : 1648796400000,
+      "max_date" : 1667199600000
+    }
+  }
+} ]

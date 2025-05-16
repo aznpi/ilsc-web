@@ -1,0 +1,21 @@
+[ {
+  "id" : "1bc5a56f-29ab-14a3-1977-40a4fc8939bf",
+  "name" : "text_field",
+  "label" : "Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null
+}, {
+  "id" : "c95d945c-ff5a-1c93-4535-6226260bad2c",
+  "name" : "content_text",
+  "label" : "Content text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h5 style=\"text-align: center;\"><a href=\"https://www.ilsc.com/language-schools/online-application/step-1-agent\" rel=\"noopener\">Return to form to apply for another student &gt;&gt;</a></h5>"
+} ]

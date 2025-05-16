@@ -1,0 +1,13 @@
+[ {
+  "id" : "7cbf8793-9fda-4917-66fa-72c2d3f63cbd",
+  "name" : "subtitle_category_text",
+  "label" : "Subtitle Category Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "UPDATES"
+} ]

@@ -1,0 +1,22 @@
+.section{
+  position:relative;
+  overflow:hidden;
+}
+.section.section-cta-banner .cta-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 100px;
+}
+.section.section-cta-banner .btn-video-container{
+  display:inline-block;
+  margin-top:0;
+}
+.section.section-cta-banner .btn-video-container .far{
+  font-weight:600;
+}
+
+@media (max-width: 480px){
+  
+}

@@ -1,0 +1,232 @@
+{% set num =  1 %}
+
+<section class="section-normal section-faq" style="background-color:{{ module.bg_color.color }}">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 title-container">
+				{% inline_rich_text field="title" value="{{ module.title }}" %}
+      </div>
+			
+		</div>
+		<div class="row accordion-container ">
+      <div class="accordion-option right">
+        <a href="javascript:void(0)" class="toggle-accordion" accordion-id="#accordionFaq-{{ module.multiple_accordion_assignment_choice }}"></a>
+      </div>
+			<div class="col-md-12">
+						<div class="accordion accordion-child left" id="accordionFaq-{{ module.multiple_accordion_assignment_choice }}">
+              
+            {% if  module.show_only_5 == "enable" %}
+              {% for item in module.faq_items%}
+                   {% if num < 6 %}
+                    <div class="card">
+                      <div class="card-header" id="heading-{{num}}">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-{{num}}-{{ module.multiple_accordion_assignment_choice }}" {% if num == 1 %} aria-expanded="true" {% else %} aria-expanded="false" {% endif %} aria-controls="collapse-{{num}}-{{ module.multiple_accordion_assignment_choice }}">
+                            {{ item.question_text }}
+                          </button>
+                        </h2>
+                      </div>
+
+                      <div id="collapse-{{num}}-{{ module.multiple_accordion_assignment_choice }}" {% if num == 1 %} class="collapse show" {% else %} class="collapse" {% endif %} aria-labelledby="heading-{{num}}" data-parent="#accordionFaq-{{ module.multiple_accordion_assignment_choice }}">
+                        <div class="card-body">
+                          <div>
+                              {{ item.answer_text }}
+                          </div>
+                            <div class="row accordion-container accordion-child-container">
+                                <div class="col-md-12">
+                                      <div class="accordion accordion-child-item left" id="accordionFaq-child-{{num}}-{{ module.multiple_accordion_assignment_choice }}">
+
+                                        {% for item2 in item.faq_child_items %}
+
+                                            <div class="card">
+                                              <div class="card-header" id="heading-{{num}}-{{loop.index}}-{{ module.multiple_accordion_assignment_choice }}">
+                                                <div class="mb-0">
+                                                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-{{num}}-{{loop.index}}-{{ module.multiple_accordion_assignment_choice }}" {% if loop.index == 1 %} aria-expanded="true" {% else %} aria-expanded="false" {% endif %} aria-controls="collapse-{{num}}-{{loop.index}}-{{ module.multiple_accordion_assignment_choice }}">
+                                                    <div class="row">
+                                                    <div class="col-md-12">
+                                                      <h5>
+                                                        {{ item2.question_child_text }}
+                                                      </h5>
+                                                    </div>
+                                                    </div>
+                                                  </button>
+                                                </div>
+                                              </div>
+
+                                              <div id="collapse-{{num}}-{{loop.index}}-{{ module.multiple_accordion_assignment_choice }}" {% if loop.index == 1 %} class="collapse show" {% else %} class="collapse" {% endif %} aria-labelledby="heading-{{num}}-{{loop.index}}-{{ module.multiple_accordion_assignment_choice }}" data-parent="#accordionFaq-child-{{num}}-{{ module.multiple_accordion_assignment_choice }}">
+                                                <div class="card-body">
+                                                  {% inline_rich_text field="answer_child_text" value="{{item2.answer_child_text}}" %}
+                                                </div>
+                                              </div>
+                                            </div>
+                                        {% endfor %}
+
+
+                                      </div>
+
+                                  </div>
+                                </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  {% endif %} 
+                  {% set num = num + 1%}
+                {% endfor %}
+
+                {% if module.faq_items|length > 5 %}
+                  <div class="show-more-faq-container" style="display:none;">
+                    {% for item in module.faq_items %}
+                        {% if loop.index > 5%}
+                          {% set num = loop.index + 1 %}
+                          <div class="card">
+                            <div class="card-header" id="heading-{{num}}-{{ module.multiple_accordion_assignment_choice }}">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-{{num}}-{{ module.multiple_accordion_assignment_choice }}" aria-expanded="false" aria-controls="collapse-{{num}}-{{ module.multiple_accordion_assignment_choice }}">
+                                  {{ item.question_text }}
+                                </button>
+                              </h2>
+                            </div>
+
+                            <div id="collapse-{{num}}-{{ module.multiple_accordion_assignment_choice }}" class="collapse" aria-labelledby="heading-{{num}}-{{ module.multiple_accordion_assignment_choice }}" data-parent="#accordionFaq-{{ module.multiple_accordion_assignment_choice }}">
+                              <div class="card-body">
+                                <div>
+                                  {{ item.answer_text }}
+                                </div>
+                                 <div class="row accordion-container accordion-child-container">
+                                <div class="col-md-12">
+                                      <div class="accordion accordion-child-item left" id="accordionFaq-child-{{num}}-{{ module.multiple_accordion_assignment_choice }}">
+
+                                        {% for item2 in item.faq_child_items %}
+
+                                            <div class="card">
+                                              <div class="card-header" id="heading-{{num}}-{{loop.index}}-{{ module.multiple_accordion_assignment_choice }}">
+                                                <div class="mb-0">
+                                                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-{{num}}-{{loop.index}}-{{ module.multiple_accordion_assignment_choice }}" {% if loop.index == 1 %} aria-expanded="true" {% else %} aria-expanded="false" {% endif %} aria-controls="collapse-{{num}}-{{loop.index}}-{{ module.multiple_accordion_assignment_choice }}">
+                                                    <div class="row">
+                                                    <div class="col-md-12">
+                                                      <h5>
+                                                        {{ item2.question_child_text }}
+                                                      </h5>
+                                                    </div>
+                                                    </div>
+                                                  </button>
+                                                </div>
+                                              </div>
+
+                                              <div id="collapse-{{num}}-{{loop.index}}-{{ module.multiple_accordion_assignment_choice }}" {% if loop.index == 1 %} class="collapse show" {% else %} class="collapse" {% endif %} aria-labelledby="heading-{{num}}-{{loop.index}}-{{ module.multiple_accordion_assignment_choice }}" data-parent="#accordionFaq-child-{{num}}-{{ module.multiple_accordion_assignment_choice }}">
+                                                <div class="card-body">
+                                                  {% inline_rich_text field="answer_child_text" value="{{item2.answer_child_text}}" %}
+                                                </div>
+                                              </div>
+                                            </div>
+                                        {% endfor %}
+
+
+                                      </div>
+
+                                  </div>
+                                </div>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        {% endif %}
+                    
+                     {% endfor %}
+                  </div>
+                  {% endif %}
+              
+              {% else%}
+                {% for item in module.faq_items%}
+                     
+                      <div class="card">
+                        <div class="card-header" id="heading-{{num}}-{{ module.multiple_accordion_assignment_choice }}">
+                          <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-{{num}}-{{ module.multiple_accordion_assignment_choice }}" {% if num == 1 %} aria-expanded="true" {% else %} aria-expanded="false" {% endif %} aria-controls="collapse-{{num}}-{{ module.multiple_accordion_assignment_choice }}">
+                              {{ item.question_text }}
+                            </button>
+                          </h2>
+                        </div>
+
+                        <div id="collapse-{{num}}-{{ module.multiple_accordion_assignment_choice }}" {% if num == 1 %} class="collapse show" {% else %} class="collapse" {% endif %} aria-labelledby="heading-{{num}}-{{ module.multiple_accordion_assignment_choice }}" data-parent="#accordionFaq-{{ module.multiple_accordion_assignment_choice }}">
+                          <div class="card-body">
+                            <div>
+                              {{ item.answer_text }}
+                            </div>
+                            
+                             <div class="row accordion-container accordion-child-container">
+                                <div class="col-md-12">
+                                      <div class="accordion accordion-child-item left" id="accordionFaq-child-{{num}}-{{ module.multiple_accordion_assignment_choice }}">
+
+                                        {% for item2 in item.faq_child_items %}
+
+                                            <div class="card">
+                                              <div class="card-header" id="heading-{{num}}-{{loop.index}}-{{ module.multiple_accordion_assignment_choice }}">
+                                                <div class="mb-0">
+                                                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-{{num}}-{{loop.index}}-{{ module.multiple_accordion_assignment_choice }}" {% if loop.index == 1 %} aria-expanded="true" {% else %} aria-expanded="false" {% endif %} aria-controls="collapse-{{num}}-{{loop.index}}-{{ module.multiple_accordion_assignment_choice }}">
+                                                    <div class="row">
+                                                    <div class="col-md-12">
+                                                      <h5>
+                                                        {{ item2.question_child_text }}
+                                                      </h5>
+                                                    </div>
+                                                    </div>
+                                                  </button>
+                                                </div>
+                                              </div>
+
+                                              <div id="collapse-{{num}}-{{loop.index}}-{{ module.multiple_accordion_assignment_choice }}" {% if loop.index == 1 %} class="collapse show" {% else %} class="collapse" {% endif %} aria-labelledby="heading-{{num}}-{{loop.index}}-{{ module.multiple_accordion_assignment_choice }}" data-parent="#accordionFaq-child-{{num}}-{{ module.multiple_accordion_assignment_choice }}">
+                                                <div class="card-body">
+                                                  {% inline_rich_text field="answer_child_text" value="{{item2.answer_child_text}}" %}
+                                                </div>
+                                              </div>
+                                            </div>
+                                        {% endfor %}
+
+
+                                      </div>
+
+                                  </div>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                   {% set num = num + 1%}
+                  {% endfor %}
+              {% endif %}
+						</div>
+				
+				</div>
+			</div>
+    {% if  module.show_only_5 == "enable" %}
+        {% if  module.faq_items|length > 5 %}
+          <div class="row">
+            <div class="col-md-12 center">
+              <button class="btn btn-black-outline show-more-faq">{{ module.button_show_more_text }}</button>
+            </div>
+          </div>
+        {% endif %}
+    {% endif %}
+		</div>
+</section>
+
+<script>
+$(document).ready(function(){
+		
+		$('.btn.show-more-faq').click(function(){
+			
+			if($(this).hasClass('show-more')){
+				$(this).removeClass('show-more');
+				$(this).html('{{ module.button_show_more_text }}');
+			}else{
+				$(this).addClass('show-more');
+				$(this).html('{{ module.button_show_less_text }}');
+			}
+			
+			$('.show-more-faq-container').slideToggle( "slow", function() {
+			  
+			 });
+		})
+	});
+</script>

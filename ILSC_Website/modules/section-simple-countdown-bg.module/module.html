@@ -1,0 +1,55 @@
+<section class="section section-countdown section-simple {% if module.enable_disable_parallax_choice == 'enable' %}parallax{% endif %}" id="content" style="background-image:url({{ module.bg_image_1_field.src }});">
+  <div class="overlay" style="background-color: rgba({{ module.bg_overlay_color.color|convert_rgb }}, {{ module.bg_overlay_color.opacity/100 }});">
+  </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+          {% inline_rich_text field="main_rich_text" value="{{ module.main_rich_text }}" %}
+      </div>
+		</div>
+    <div class="row">
+			<div class="col-md-12">
+          <div id="countdown-timer" style="color:rgba({{ module.time_text_color.color|convert_rgb }}, {{ module.time_text_color.opacity/100 }});">
+
+          </div>
+      </div>
+		</div>
+    <div class="row">
+			<div class="col-md-12">
+          {% inline_rich_text field="bottom_rich_text_copy" value="{{ module.bottom_rich_text_copy }}" %}
+      </div>
+		</div>
+	</div>
+</section>
+
+
+<script>
+// Set the date we're counting down to
+const countDownDate = new Date("{{ module.deadline_date_time|replace(' ','T') }}").getTime();
+
+// Update the count down every 1 second
+const xTimeInterval = setInterval(function() {
+
+  // Get today's date and time
+  const nowCounter = new Date().getTime();
+
+  // Find the distance between now and the count down date
+ const distanceCounter = countDownDate - nowCounter;
+
+  // Time calculations for days, hours, minutes and seconds
+  const daysCounter = Math.floor(distanceCounter / (1000 * 60 * 60 * 24));
+  const hoursCounter = Math.floor((distanceCounter % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutesCounter = Math.floor((distanceCounter % (1000 * 60 * 60)) / (1000 * 60));
+  const secondsCounter = Math.floor((distanceCounter % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("countdown-timer").innerHTML = "<ul><li><span class='time-data'>" + daysCounter + "</span><span class='time-title'>DAYS</span></li><li><span class='time-data'>" + hoursCounter + "</span><span class='time-title'>HOURS</span></li><li><span class='time-data'>"
+  + minutesCounter + "</span><span class='time-title'>MINUTES</span></li><li><span class='time-data'>" + secondsCounter + "</span><span class='time-title'>SECONDS</span></li></ul>";
+
+  // If the count down is finished, write some text
+  if (distanceCounter < 0) {
+    clearInterval(xTimeInterval);
+    document.getElementById("countdown-timer").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>

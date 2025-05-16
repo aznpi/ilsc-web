@@ -1,0 +1,73 @@
+{% if module.anchor_id %}
+  <a class="anchor-link" name="{{ module.anchor_id|replace(' ','-')|replace("'","-")|replace(',','-')}}"></a>
+{% endif %}
+<section class="section-normal section-icon-image-slider">
+  <div class="container">
+    <div class="row row-title">
+      <div class="col-md-12">
+        {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="icon-list center">
+          {% for item in module.icons_field_group %}
+            <li>
+              <div class="icon-container">
+                {% if item.icon_image.src %}
+                    {% set sizeAttrs = 'width="{{ item.icon_image.width }}" height="{{ item.icon_image.height }}"' %}
+                    {% if item.icon_image.size_type == 'auto' %}
+                      {% set sizeAttrs = 'width="{{ item.icon_image.width }}" height="{{ item.icon_image.height }}" style="max-width: 100%; height: auto;"' %}
+                    {% elif item.icon_image.size_type == 'auto_custom_max' %}
+                      {% set sizeAttrs = 'width="{{ item.icon_image.max_width }}" height="{{ item.icon_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                     {% set loadingAttr = item.icon_image.loading != 'disabled' ? 'loading="{{ item.icon_image.loading }}"' : '' %}
+                    <img src="{{ item.icon_image.src }}" alt="{{ item.icon_image.alt }}" class="img-fluid" loading="lazy">
+                {% endif %}
+                </div>
+              <div class="sub-description">{{ item.sub_title_text }}</div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    {% if module.enable_slider_boolean %}
+      <div class="row">
+        <div class="col-md-12">
+          <div class="image-slider">
+
+            {% for item in module.slider_field_group %}
+              <div>
+                  {% if item.image_field.src %}
+                    {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+                    {% if item.image_field.size_type == 'auto' %}
+                      {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+                    {% elif item.image_field.size_type == 'auto_custom_max' %}
+                      {% set sizeAttrs = 'width="{{ item.image_field.max_width }}" height="{{ item.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                     {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' : '' %}
+                    <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" class="img-fluid">
+                  {% endif %}
+                {% if item.description_rich_text %}
+                  <div class="description-overlay">
+                    <div class="description center">
+                      {% inline_rich_text field="description_rich_text" value="{{ item.description_rich_text }}" %}
+                    </div>
+                  </div>
+                {% endif %}
+              </div>
+            {% endfor %}
+
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</section>
+{% require_css %}
+<style>
+  section.section-icon-image-slider ul.icon-list li{
+    width:{{ module.icon_column_choice }}% !important;
+  }
+</style>
+{% end_require_css %}

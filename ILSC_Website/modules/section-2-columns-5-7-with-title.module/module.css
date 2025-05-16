@@ -1,0 +1,10 @@
+.section{
+  position:relative;
+  overflow:hidden;
+}
+.title-section h2{
+  margin-bottom:30px;
+}
+.title-section .school-details ul{
+  margin-top:0;
+}

@@ -1,0 +1,43 @@
+[ {
+  "id" : "4e564d17-0cdd-ed81-6c62-f5649643b46a",
+  "name" : "bg_color",
+  "label" : "BG Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#028727",
+    "opacity" : 100
+  }
+}, {
+  "id" : "871ed825-0b3f-44da-3c81-583c1c1a95d4",
+  "name" : "logo_image",
+  "label" : "Logo Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "exact",
+    "src" : "https://www.ilsc.com/hubfs/Landing%20Pages/ELS-ILSC-Vancouver-Integration/els-logo.svg",
+    "alt" : "els-logo",
+    "loading" : "lazy",
+    "width" : 75,
+    "height" : 70,
+    "max_width" : 378,
+    "max_height" : 353
+  }
+}, {
+  "id" : "bd9b8ad6-5206-67ef-6b03-58932d36e65b",
+  "name" : "title_rich_text",
+  "label" : "Title Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h1 style=\"text-align: center;\">Payment Complete!</h1>"
+} ]

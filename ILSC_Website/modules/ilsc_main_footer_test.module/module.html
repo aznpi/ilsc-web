@@ -1,0 +1,203 @@
+<footer class="footer-container">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 logo-image">
+          {% if module.logo.src %}
+            {% set sizeAttrs = 'width="{{ module.logo.width }}" height="{{ module.logo.height }}"' %}
+            {% if module.logo.size_type == 'auto' %}
+              {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+            {% elif module.logo.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.logo.max_width }}px; max-height: {{ module.logo.max_height }}px"' %}
+            {% endif %}
+             {% set loadingAttr = module.logo.loading != 'disabled' ? 'loading="{{ module.logo.loading }}"' : '' %}
+              {% set href = module.main_logo_link.url.href %}
+              {% if module.main_logo_link.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+              {% endif %}
+              {% set rel = [] %}
+              {% if module.main_logo_link.no_follow %}
+                {% do rel.append("nofollow") %}
+              {% endif %}
+              {% if module.main_logo_link.open_in_new_tab %}
+                {% do rel.append("noopener") %}
+              {% endif %}
+              <a href="{{ href }}"
+	{% if module.main_logo_link.open_in_new_tab %}target="_blank"{% endif %}
+	{% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+	>
+                <img src="{{ module.logo.src }}" alt="{{ module.logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              </a>
+          {% endif %}
+			</div>
+         
+      {% for item in module.column %}
+        <div class="col-md-3 footer-dropdown">
+          <input id="{{item.column_id}}-footer-id" type="checkbox" name="footer-menu">
+          <label for="{{item.column_id}}-footer-id">
+            {% inline_rich_text field="column_title" value="{{ item.column_title }}" %}
+          </label>
+          
+          <ul class="footer-dropdown-item">
+            {% for item2 in item.link_group %}
+              <li>
+                {% if item2.is_popup %}
+                  <a href="#" data-toggle="modal" data-target="{{ item2.link_field.url.href }}">{{ item2.link_text }}</a>
+                {% else %}
+                  <a href="{% if item2.link_field.url.href != "" %} {{ item2.link_field.url.href }} {% else %} javascript:void(0);{% endif %}" {% if item2.link_field.open_in_new_tab %}target="_blank"{% endif %}>{{ item2.link_text }}</a>
+                {% endif %}
+                {% if item2.enable_child_links == "show" %}  
+                  <ul class="child-links">
+                     {% for item4 in item2.child_link_field_group %}
+                        {% set href = item4.link_field.url.href %}
+                        {% if item4.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+                          {% set href = "mailto:" + href %}
+                        {% endif %}
+                        {% set rel = [] %}
+                        {% if item4.link_field.no_follow %}
+                          {% do rel.append("nofollow") %}
+                        {% endif %}
+                        {% if item4.link_field.open_in_new_tab %}
+                          {% do rel.append("noopener") %}
+                        {% endif %}
+            
+                    <li>                       
+                        <a href="{{ href }}" {% if item4.link_field.open_in_new_tab %}target="_blank"{% endif %} {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}>{{ item4.link_text_field }}</a>                     
+                    </li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </li>
+                
+              {% if item2.enable_social_media == "show" %}
+                <li>
+                  <ul class="footer-social">
+                    {% for item3 in item2.social_field_group %}
+                      {% set href = item3.social_link.url.href %}
+                      <li class="footer-social-icons"><a href="{{ href }}"{% if item3.social_link.open_in_new_tab %}target="_blank"{% endif %}{% if rel %}rel="{{ rel|join(" ") }}"{% endif %}><i class="{{ item3.social_icon_choice }}"></i></a></li>
+                    {% endfor %} 
+                  </ul>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+			{% endfor %}
+      
+			<div class="divider"></div>
+		</div>
+		<div class="row row-logo">
+			<div class="col-md-8">
+				{% if module.logo_footer_secondary_image.src %}
+          {% set sizeAttrs = 'width="{{ module.logo_footer_secondary_image.width }}" height="{{ module.logo_footer_secondary_image.height }}"' %}
+          {% if module.logo_footer_secondary_image.size_type == 'auto' %}
+            {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+          {% elif module.logo_footer_secondary_image.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.logo_footer_secondary_image.max_width }}px; max-height: {{ module.logo_footer_secondary_image.max_height }}px"' %}
+          {% endif %}
+           {% set loadingAttr = module.logo_footer_secondary_image.loading != 'disabled' ? 'loading="{{ module.logo_footer_secondary_image.loading }}"' : '' %}
+          <img src="{{ module.logo_footer_secondary_image.src }}" alt="{{ module.logo_footer_secondary_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+			<div class="col-md-2 logo-pad">
+        {% if module.logo_footer_1_image.src %}
+           {% set href = module.footer_logo_1_link.url.href %}
+          {% set sizeAttrs = 'width="{{ module.logo_footer_1_image.width }}" height="{{ module.logo_footer_1_image.height }}"' %}
+          {% if module.logo_footer_1_image.size_type == 'auto' %}
+            {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+          {% elif module.logo_footer_1_image.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.logo_footer_1_image.max_width }}px; max-height: {{ module.logo_footer_1_image.max_height }}px"' %}
+          {% endif %}
+           {% set loadingAttr = module.logo_footer_1_image.loading != 'disabled' ? 'loading="{{ module.logo_footer_1_image.loading }}"' : '' %}
+           {% if module.footer_logo_1_link.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+          {% endif %}
+          {% set rel = [] %}
+          {% if module.footer_logo_1_link.no_follow %}
+            {% do rel.append("nofollow") %}
+          {% endif %}
+          {% if module.footer_logo_1_link.open_in_new_tab %}
+            {% do rel.append("noopener") %}
+          {% endif %}
+          <a href="{{ href }}"
+            {% if module.footer_logo_1_link.open_in_new_tab %}target="_blank"{% endif %}
+            {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+            >
+              <img src="{{ module.logo_footer_1_image.src }}" alt="{{ module.logo_footer_1_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          </a>
+        {% endif %}
+			</div>
+      <div class="col-md-2 logo-pad">
+        {% if module.logo_footer_2_image.src %}
+          {% set href = module.footer_logo_2_link.url.href %}
+          {% set sizeAttrs = 'width="{{ module.logo_footer_2_image.width }}" height="{{ module.logo_footer_2_image.height }}"' %}
+          {% if module.logo_footer_2_image.size_type == 'auto' %}
+            {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+          {% elif module.logo_footer_2_image.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.logo_footer_2_image.max_width }}px; max-height: {{ module.logo_footer_2_image.max_height }}px"' %}
+          {% endif %}
+           {% set loadingAttr = module.logo_footer_2_image.loading != 'disabled' ? 'loading="{{ module.logo_footer_2_image.loading }}"' : '' %}
+          {% if module.footer_logo_2_link.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+          {% endif %}
+          {% set rel = [] %}
+          {% if module.footer_logo_2_link.no_follow %}
+            {% do rel.append("nofollow") %}
+          {% endif %}
+          {% if module.footer_logo_2_link.open_in_new_tab %}
+            {% do rel.append("noopener") %}
+          {% endif %}
+          <a href="{{ href }}"
+            {% if module.footer_logo_2_link.open_in_new_tab %}target="_blank"{% endif %}
+            {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+            >
+              <img src="{{ module.logo_footer_2_image.src }}" alt="{{ module.logo_footer_2_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          </a>
+        {% endif %}
+			</div>
+      <div class="divider"></div>
+		</div>
+    
+		<div class="row">
+			<div class="col-md-8 footnote">
+				{% inline_rich_text field="copyright" value="{{ module.copyright }}" %}
+      </div>
+			<div class="col-md-4">
+         <ul class="footnote-links">
+           {% for item in module.footnote_link_group %}
+              {% set href = item.link.url.href %}
+              {% if item.link.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+              {% endif %}
+              {% set rel = [] %}
+              {% if item.link.no_follow %}
+                {% do rel.append("nofollow") %}
+              {% endif %}
+              {% if item.link.open_in_new_tab %}
+                {% do rel.append("noopener") %}
+              {% endif %}
+                <li>
+                  <a href="{{ href }}" {% if item.link.open_in_new_tab %}target="_blank"{% endif %} {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}>{{ item.text_field }}</a>
+                </li>
+           {% endfor %}
+        </ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="ilscModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+      <div class="modal-body">
+      	
+      </div>
+      
+    </div>
+  </div>
+</div>

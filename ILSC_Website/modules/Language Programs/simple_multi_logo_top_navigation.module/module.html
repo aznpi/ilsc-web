@@ -1,0 +1,46 @@
+<header class="simple-cta-header top-nav fixed-top">
+  <nav id="landing-nav-bar" class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <ul class="header-logo">
+        {% for item in module.logo_field_group %}
+          {% set href = item.home_link.url.href %}
+          {% if item.home_link.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+          {% endif %}
+          <li>
+            <a class="navbar-brand-multi" href="{{ href }}"
+              {% if item.home_link.open_in_new_tab %}target="_blank"{% endif %}
+              {% if item.home_link.rel %}rel="{{ item.home_link.rel }}"{% endif %}
+              >
+              <img src="{{ item.logo_svg_file }}" alt="{{ item.logo_alt }}" {% if item.set_width %}width='{{item.set_width}}'{% endif %}/>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+      
+      <div class="nav-bar-items collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto menu-hide">
+          {% if module.cta_1 %}
+            <li class="nav-item">
+              {% cta guid="{{ module.cta_1 }}" %}
+            </li>
+          {% endif %}
+          {% if module.cta_2 %}
+            <li class="nav-item">
+              {% cta guid="{{ module.cta_2 }}" %}
+            </li>
+          {% else %}
+            {% if module.button_rich_text %}
+            <li class="nav-item">
+              {% inline_rich_text field="button_rich_text" value="{{ module.button_rich_text }}" %}
+            </li>
+            {% endif %}
+          {% endif %}
+        </ul>
+      </div>
+
+      
+    </div>
+  </nav>
+</header>
+

@@ -1,0 +1,585 @@
+<h2>
+  School / École : {{contact.study_school}}
+</h2>
+{% if contact.online_application_status != 'Student' %}
+  <table>
+    <th>
+      Agent Information / Informations sur les agents
+    </th>
+    <tr>
+      <td>Agency Name / Nom d'agence:</td><td>{% if contact.agent_name %}{{contact.agent_name}}{% else %}N/A{% endif %}</td>
+    </tr>
+    <tr>
+      <td>Agency Contact Name / Nom du contact de l'agence:</td><td>{% if contact.agency_contact_person %}{{contact.agency_contact_person}}{% else %}N/A{% endif %}</td>
+    </tr>
+    <tr>
+      <td>Agency Contact Email / E-mail de contact de l'agence:</td><td>{% if contact.agency_contact_email %}{{contact.agency_contact_email}}{% else %}N/A{% endif %}</td>
+    </tr>
+    <tr>
+      <td>Agency Telephone Number / Numéro de téléphone de l'agence:</td><td>{% if contact.agency_contact_telephone_number %}{{contact.agency_contact_telephone_number}}{% else %}N/A{% endif %}</td>
+    </tr>
+    <tr>
+      <td>Agency Head Office Country/Region<br>Pays/région du siège social de l’agence:</td><td>{% if contact.agency_head_office_country_region %}{{contact.agency_head_office_country_region}}{% else %}N/A{% endif %}</td>
+    </tr>
+  </table>
+{% endif %}
+
+<table>
+  <th>Student Information / Informations sur les étudiants</th>
+  <tr>
+    <td>Record ID / Identifiant de l'enregistrement:</td><td>{{contact.hs_object_id}}</td>
+  </tr>
+  <tr>
+    <td>Student First Name / Prénom de l'étudiant:</td><td>{{contact.firstname}}</td>
+  </tr>
+  <tr>
+    <td>Student Last Name / Nom de famille de l'étudiant:</td><td>{{contact.lastname}}</td>
+  </tr>
+  <tr>
+    <td>Student Middle Name / Deuxième prénom de l'étudiant:</td><td>{{contact.middle_name}}</td>
+  </tr>
+  <tr>
+    <td>Email:</td><td>{{contact.email}}</td>
+  </tr>
+  <tr>
+    <td>Phone Number / Numéro de téléphone:</td><td>{{contact.phone}}</td>
+  </tr>
+  <tr>
+    <td>Address / Adresse:</td><td>{{contact.student_complete_address}}</td>
+  </tr>
+  <tr>
+    <td>Address - City / Ville:</td><td>{{contact.city}}</td>
+  </tr>
+  <tr>
+    <td>Address - State/Province / État/Province:</td><td>{{contact.state}}</td>
+  </tr>
+  <tr>
+    <td>Postal Code / Code Postal:</td><td>{{contact.zip}}</td>
+  </tr>
+  <tr>
+    <td>Country / Pays:</td><td>{{contact.country_of_residence}}</td>
+  </tr>
+  <tr>
+    <td>Nationality / Nationalité:</td><td>{{contact.nationality}}</td>
+  </tr>
+  <tr>
+    <td>Date of Birth / Date de naissance:</td><td>{{contact.birthdate}}</td>
+  </tr>
+  <tr>
+    <td>Country of Birth / Pays de naissance:</td><td>{{contact.country_of_birth}}</td>
+  </tr>
+  <tr>
+    <td>City of Birth / Ville de naissance:</td><td>{{contact.city_of_birth__c}}</td>
+  </tr>
+  <tr>
+    <td>Gender / Genre:</td><td>{{contact.gender_student}}</td>
+  </tr>
+  <tr>
+    <td>Native Language / Langue maternelle:</td><td>{{contact.first_language__cloned_}}</td>
+  </tr>
+  {% if contact.preferred_language_spoken__c %}
+    <tr>
+      <td>[Student Application Only] Preferred Language Spoke / Langue préférée parlée:</td><td>{{contact.preferred_language_spoken__c}}</td>
+    </tr>
+  {% endif %}
+  <tr>
+    <td>Visa Status in your country of study/ What Visa will you apply for<br>Statut du visa dans votre pays d'études / Quel visa demanderez-vous:</td><td>{{contact.visa_status_in_your_country_of_study}}</td>
+  </tr>
+  {% if contact.student_visa_option_other_specified %}
+    <tr>
+      <td>[Australia onshore only] Current Visa Type number<br>[Australie à terre uniquement] Numéro de type de visa actuel</td><td>{{contact.student_visa_option_other_specified}}</td>
+    </tr>
+  {% endif %}
+  {% if contact.australia_visa_refusal_history %}
+    <tr>
+      <td>[Australia only] Visa refusal history<br>[Australie uniquement] Historique des refus de visa</td><td>{{contact.australia_visa_refusal_history}}</td>
+    </tr>
+  {% endif %}
+</table>
+<table>
+  <th>Study Information / Informations sur l'étude</th>
+  <tr>
+    <td>Study Country / Pays d'étude:</td><td>{{contact.study_country}}</td>
+  </tr>
+  <tr>
+    <td>Study School / École d'études:</td><td>{{contact.study_school}}</td>
+  </tr>
+  <tr>
+    <td>Study Location / Lieu d'étude:</td><td>{{contact.study_campus}}</td>
+  </tr>
+  {% if contact.promo_code %}
+    <tr>
+      <td>Promo Code / Code promo:</td><td>{{contact.promo_code}}</td>
+    </tr>
+  {% endif %}
+  <tr>
+    <td>Study Programs / Programmes d'études:</td><td>{{contact.program_name}}</td>
+  </tr>
+  {% if contact.program_type %}
+    <tr>
+      <td>Program Type / Type de programme:</td><td>{{contact.program_type}}</td>
+    </tr>
+  {% endif %}
+  <tr>
+    <td>Program Schedule / Calendrier du programme:</td><td>{{contact.program_schedule}}</td>
+  </tr>
+  <tr>
+    <td>Start Date / Date de début:</td><td>{{contact.program_start_date}}</td>
+  </tr>
+  <tr>
+    <td>Weeks of Study / Semaines d'études:</td><td>{{contact.weeks_of_study}}</td>
+  </tr>
+  <tr>
+    <td>Are you also applying for a program at Greystone College? /<br>Postulez-vous également à un programme au Greystone College?</td><td>{{contact.apply_for_a_program_at_greystone_college}}</td>
+  </tr>
+  {% if apply_for_a_program_at_greystone_college != 'No' %}
+    <tr>
+      <td>+Greystone College / Collège Greystone:</td>
+      <td>
+        <table>
+          <tr>
+            <td>Study Program / Programmes d'études:</td><td>{{contact.additional_program_name}}</td>
+          </tr>
+          <tr>
+            <td>Program Type / Type de programme:</td><td>{{contact.additional_program_type}}</td>
+          </tr>
+          <tr>
+            <td>Program Schedule / Calendrier du programme:</td><td>{{contact.additional_program_schedule}}</td>
+          </tr>
+          <tr>
+            <td>Start Date / Date de début:</td><td>{{contact.additional_program_start_date}}</td>
+          </tr>
+          <tr>
+            <td>Weeks of Study / Semaines d'études:</td><td>{{contact.additional_study_of_weeks}}</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  {% endif %}
+  {% if contact.additional_programs != 'n/a' %}
+    {% set lists = contact.additional_programs|split("},") %}
+    <tr>
+      <td>Additional Programs - 2nd to 5th Programs /<br>Programmes supplémentaires - 2e au 5e programmes:</td>
+      <td>
+        {% for list in lists %}
+            <table>
+            {% set items = list|split('",') %}
+            {% for item in items %}
+             {% set rowStr =  item|replace('"','')|replace('[','')|replace('{','')|replace('}','')|replace(']','') %} 
+              {% set rowList = rowStr|split(':') %}
+              {% if item is string_containing '{' %}
+                <th><strong>Program / Programme:</strong></th>
+                <tr>
+                  {% for rowItem in rowList%}
+                    <td>{{ rowItem }}{% if loop.index == 1 %}:{% endif %}</td>
+                  {% endfor %}
+                </tr>
+                {% else %}
+                   <tr>
+                    {% for rowItem in rowList%}
+                      <td>{{ rowItem }}{% if loop.index == 1 %}:{% endif %}</td>
+                    {% endfor %}
+                  </tr>
+              {% endif %}
+
+            {% endfor %}
+            </table>
+          {% endfor%}
+      </td>
+    </tr>
+  {% endif %} 
+  {% if contact.are_you_also_applying_for_lasalle_partnership_program_ %}
+    <tr>
+      <td>[Canada only] Apply for LaSalle Collage Credit Transfer Program?<br>[Canada seulement] Faire une demande au programme de transfert de crédits LaSalle Collage?:</td><td>{{ contact.are_you_also_applying_for_lasalle_partnership_program_ }}</td>
+    </tr>
+  {% endif %}
+  {% if contact.junior_camp_programs_t_shirt_size %}
+    <tr>
+      <td>T-Shirt Size / Taille du T-shirt:</td><td>{{ contact.junior_camp_programs_t_shirt_size }}</td>
+    </tr>
+  {% endif %}
+  {% if contact.junior_camp_additional_family_member %}
+    {% set lists = contact.junior_camp_additional_family_member|split("},") %}
+    <tr>
+      <td>Additional Family Members in camp /<br>Membres supplémentaires de la famille dans le camp:</td>
+      <td>
+        {% for list in lists %}
+            <table>
+            {% set items = list|split('",') %}
+            {% for item in items %}
+             {% set rowStr =  item|replace('"','')|replace('[','')|replace('{','')|replace('}','')|replace(']','') %} 
+              {% set rowList = rowStr|split(':') %}
+              {% if item is string_containing '{' %}
+                <th><strong>Family Member / Membre de la famille:</strong></th>
+                <tr>
+                  {% for rowItem in rowList%}
+                    <td>{{ rowItem }}{% if loop.index == 1 %}:{% endif %}</td>
+                  {% endfor %}
+                </tr>
+                {% else %}
+                   <tr>
+                    {% for rowItem in rowList%}
+                      <td>{{ rowItem }}{% if loop.index == 1 %}:{% endif %}</td>
+                    {% endfor %}
+                  </tr>
+              {% endif %}
+
+            {% endfor %}
+            </table>
+          {% endfor%}
+      </td>
+    </tr>
+  {% endif %}
+  {% if contact.prola_taken %}
+  <tr>
+    <td>Have you or your student taken the Pre-Arrival Language Placement test? /<br>Avez-vous ou votre élève passé le test de placement linguistique avant l'arrivée?</td><td>{{contact.prola_taken}}</td>
+  </tr>
+  {% endif %}
+  {% if contact.prola_number %}
+    <tr>
+      <td>ILSC General/Academic English Placement Test #/<br>Test de placement en anglais général/académique ILSC:</td><td>{{ contact.prola_number }}</td>
+    </tr>
+  {% endif %}
+  {% if study_additional_online_information_and_notes %}
+    <tr>
+      <td>Additional information and notes (Online) /<br>Informations et notes supplémentaires (en ligne):</td><td>{{contact.study_additional_online_information_and_notes}}</td>
+    </tr>
+  {% endif %}
+  {% if study_additional_information_and_notes %}
+    <tr>
+      <td>Additional information and notes (including holiday requests for Australia campus) /<br>Informations et notes supplémentaires (y compris les demandes de vacances pour le campus australien):</td><td>{{contact.study_additional_information_and_notes}}</td>
+    </tr>
+  {% endif %}
+  {% if contact.applying_for_student_visa_outside_of_australia %}
+    <tr>
+      <td>[Australia only] Applying student visa outside of Australia* /<br>[Australie uniquement] Demander un visa étudiant en dehors de l'Australie*:</td><td>{{contact.applying_for_student_visa_outside_of_australia}}</td>
+    </tr>
+  {% endif %}
+</table>
+<table>
+  <th>Accommodation / Hébergement</th>
+  <tr>
+    <td>Do you want to book your accommodation with us? /<br>Vous souhaitez réserver votre hébergement avec nous ?</td><td>{{contact.need_homestay_or_aa}}</td>
+  </tr>
+  {% if contact.need_homestay_or_aa != 'No' %}
+    <tr>
+      <td>Accommodation Type / Type d'hébergement:</td><td>{{contact.accommodation_type}}</td>
+    </tr>
+    <tr>
+      <td>Homestay Option / Accommodation Name<br>Option de famille d'accueil / Nom de l'hébergement:</td><td>{{contact.accommodation_name}}</td>
+    </tr>
+    <tr>
+      <td>Accommodation Check-in Date / Date d'arrivée à l'hébergement:</td><td>{{contact.check_in_date}}</td>
+    </tr>
+    {% if contact.check_out_date %}
+      <tr>
+        <td>Accommodation Check-out Date / Date de départ de l'hébergement:</td><td>{{contact.check_out_date}}</td>
+      </tr>
+    {% endif %}
+    <tr>
+      <td>Weeks of Stay / Semaines de séjour:</td><td>{{contact.weeks_of_stay}}</td>
+    </tr>
+    {% if contact.additional_notes_on_accommodation %}
+      <tr>
+        <td>Additional Note on Accommodations / Note supplémentaire sur l'hébergement:</td><td>{{contact.additional_notes_on_accommodation}}</td>
+      </tr>
+    {% endif %}
+  {% if contact.accommodation_type != 'Residence' %}
+    <th>ILSC/Greystone College Homestay Preferences /<br>Préférences en matière de séjour chez l'habitant de l'ILSC/Greystone College</th>
+      <tr>
+        <td>Do you require a special diet? /<br>Avez-vous besoin d'un régime spécial ?</td><td>{{contact.do_you_require_a_special_diet_}}{% if contact.do_you_require_a_special_diet_ != 'No' %} : {{contact.special_diet}}{% endif %}</td>
+      </tr>
+      <tr>
+        <td>Do you smoke? / Fumez-vous?</td><td>{{contact.do_you_smoke_}}</td>
+      </tr>
+      <tr>
+        <td>Are you comfortable children at home? /<br>Vos enfants sont-ils à l'aise à la maison?</td><td>{{contact.are_you_comfortable_with_children_in_the_home_}}{% if contact.contact.are_you_comfortable_with_children_in_the_home_ != 'No' %} : {{contact.specify_homestay_children_in_home}}{% endif %}</td>
+      </tr>
+      <tr>
+        <td>Are you comfortable with pets in the home? If no, please specify no preference /<br>Êtes-vous à l’aise avec les animaux à la maison ? Si non, veuillez préciser aucune préférence:</td><td>{{contact.are_you_comfortable_with_pets_in_the_home_}}{% if contact.re_you_comfortable_with_pets_in_the_home_ != 'Yes' %} : {{contact.type_of_pet_not_preferred}}{% endif %}</td>
+      </tr>
+      <tr>
+        <td>Are you comfortable other students in the home? if no, please specify no preference /<br>Êtes-vous à l’aise avec les autres étudiants à la maison ? si non, veuillez préciser aucune préférence:</td><td>{{contact.other_students}}{% if contact.other_students != 'Yes' %} : {{contact.other_students_specify_preference}}{% endif %}</td>
+      </tr>
+  {% endif %}
+  
+  <th>Airport Transfer / Transfert de l'aéroport</th>
+    <tr>
+      <td>Airport Transfer / Transfert de l'aéroport:</td><td>{{contact.airport_transfer}}</td>
+    </tr>
+    
+      {% if contact.brisbane_airport %}
+        <tr>
+          <td>[Brisbane only] Select the airport / [Brisbane uniquement] Sélectionnez l'aéroport:</td><td>{{contact.brisbane_airport}}</td>
+        </tr>
+      {% endif %}
+      {% if contact.arrival_date %}
+        <tr>
+          <td>Arrival Date / Date d'arrivée:</td><td>{{contact.arrival_date}}</td>
+        </tr>
+      {% endif %}
+      {% if contact.departure_date %}
+        <tr>
+          <td>Departure Date / Date de départ:</td><td>{{contact.departure_date}}</td>
+        </tr>
+      {% endif %}
+      {% if contact.airline_and_flight_number %}
+        <tr>
+          <td>Airline and flight number (if applicable) /<br>Compagnie aérienne et numéro de vol (le cas échéant):</td><td>{{contact.airline_and_flight_number}}</td>
+        </tr>
+      {% endif %}
+      {% if contact.airline_unaccompanied_minor_service %}
+        <tr>
+          <td>[Minor only] Will you be booking unaccompanied minor service through your airline? /<br>[Mineur uniquement] Réserverez-vous un service pour mineurs non accompagnés via votre compagnie aérienne?</td><td>{{contact.airline_unaccompanied_minor_service}}</td>
+        </tr>
+      {% endif %}
+      {% if interests_and_other_comments %}
+        <tr>
+          <td>Additional information and comments /<br>Informations complémentaires et commentaires:</td><td>{{contac.interests_and_other_comments}}</td>
+        </tr>
+      {% endif %}
+    
+  {% endif %}
+</table>
+<table>
+  <th>Additional Personal Information / Informations personnelles supplémentaires</th>
+  <tr>
+    <th>Insurance / Assurance</th>
+  </tr>
+  <tr>
+    <td>Do you need ILSC/Greystone College to organize your Overseas Student Health Coverage (medical insurance)? /<br>Avez-vous besoin de l'ILSC/Greystone College pour organiser votre couverture santé pour étudiants étrangers (assurance médicale)?</td><td>{{contact.medical_insurance}}</td>
+  </tr>
+  {% if medical_insurance != 'No' %}
+    <tr>
+      <td>Medical insurance start date / Date de début de l'assurance maladie:</td><td>{{contact.medical_insurance_start_date}}</td>
+    </tr>
+    <tr>
+      <td>Medical insurance end date / Date de fin de l'assurance maladie:</td><td>{{contact.medical_insurance_end_date}}</td>
+    </tr>
+  {% endif %}
+  <th>Additional Information / Informations Complémentaires</th>
+  <tr>
+    <td>Emergency Contact / Personne à contacter en cas d'urgence:</td><td>{{contact.name_of_emergency_contact}}</td>
+  </tr>
+  <tr>
+    <td>Emergency Contact Phone Number /<br>Numéro de téléphone du contact d’urgence:</td><td>{{contact.emergency_contact_phone__}}</td>
+  </tr>
+  <tr>
+    <td>Emergency Contact Email /<br>Adresse e-mail du contact d'urgence:</td><td>{{contact.emergency_contact_email}}</td>
+  </tr>
+  <tr>
+    <td>Do you have any physical or mental medical conditions we should be aware of? /<br>Avez-vous des problèmes de santé physiques ou mentaux dont nous devrions être conscients?</td><td>{{contact.do_you_have_any_physical_or_mental_medical_conditions_}}{% if do_you_have_any_physical_or_mental_medical_conditions_ != 'No' %} : {{contact.student_s_physical_or_mental_medical_conditions}}{% endif %}</td>
+  </tr>
+  <tr>
+    <td>Do you take daily medication? /<br>Prenez-vous des médicaments quotidiennement?</td><td>{{contact.do_you_take_daily_medication_}}{% if contact.do_you_take_daily_medication_ != 'No'%} : {{contact.daily_medicine}}{% endif %}</td>
+  </tr>
+  <tr>
+    <td>Do you have any allergies? /<br>As tu des allergies?</td><td>{{contact.any_allergies}}{% if contact.any_allergies != 'No' %} : {{contact.do_you_have_any_allergies_}}{% endif %}</td>
+  </tr>
+  <tr>
+    <td>Are you travelling with family members? /<br>Vous voyagez avec des membres de votre famille?</td><td>{{contact.travelling_with_family_members}}</td>
+  </tr>
+  {% if contact.travelling_with_family_members != 'No' %}
+    {% set lists = contact.family_members_traveling_with|split("},") %}
+    <tr>
+      <td>
+        Family Members / Membres de la famille:
+      </td>
+      <td>
+        {% for list in lists %}
+              <table>
+              {% set items = list|split('",') %}
+              {% for item in items %}
+               {% set rowStr =  item|replace('"','')|replace('[','')|replace('{','')|replace('}','')|replace(']','') %} 
+                {% set rowList = rowStr|split(':') %}
+                {% if item is string_containing '{' %}
+                  <th><strong>Family Member / Membres de la famille:</strong></th>
+                  <tr>
+                    {% for rowItem in rowList%}
+                      <td>{{ rowItem }}{% if loop.index == 1 %}:{% endif %}</td>
+                    {% endfor %}
+                  </tr>
+                  {% else %}
+                     <tr>
+                      {% for rowItem in rowList%}
+                        <td>{{ rowItem }}{% if loop.index == 1 %}:{% endif %}</td>
+                      {% endfor %}
+                    </tr>
+                {% endif %}
+
+              {% endfor %}
+              </table>
+            {% endfor%}
+      </td>
+    </tr>
+  {% endif %}
+  {% if contact.travelling_with_a_group %}
+    <tr>
+      <td>Are you travelling with a group? /<br>Vous voyagez en groupe?</td><td>{{contact.travelling_with_a_group}}{% if contact.travelling_with_a_group != 'No' %} : {{contact.name_of_travelling_group}}{% endif %}</td>
+    </tr>
+  {% endif %}
+  {% if contact.custodian_letter %}
+    <tr>
+      <td>[Minor only] Do you need a custodian letter or a minor consent form? /<br>[Mineur seulement] Avez-vous besoin d'une lettre du tuteur ou d'un formulaire de consentement mineur?</td><td>{{contact.custodian_letter}}</td>
+    </tr>
+  {% endif %}
+</table>
+{% if contact.passport_copy || contact.english_test_score_copy || contact.diploma_copy || contact.visa_copy || contact.gte_copy || contact.student_contract_terms_and_conditions || contact.terms_and_conditions_file %}
+  <table>
+    <th>Attachments / Pièces jointes</th>
+    {% if contact.passport_copy %}
+    <tr>
+      <td>Passport Copy / Copie du passeport:</td><td>{{contact.passport_copy}}</td>
+    </tr>
+    {% endif %}
+    {% if contact.english_test_score_copy %}
+    <tr>
+      <td>English Test Score / Résultat du test d'anglais:</td><td>{{contact.english_test_score_copy}}</td>
+    </tr>
+    {% endif %}
+    {% if contact.diploma_copy %}
+    <tr>
+      <td>High School Diploma / Baccalauréat:</td><td>{{contact.diploma_copy}}</td>
+    </tr>
+    {% endif %}
+    {% if contact.visa_copy %}
+    <tr>
+      <td>[Australia Walk-in only] Visa Copy / [Australie sans rendez-vous uniquement] Copie de visa:</td><td>{{contact.visa_copy}}</td>
+    </tr>
+    {% endif %}
+    {% if contact.gte_copy %}
+    <tr>
+      <td>[Australia only] GTE Copy / [Australie uniquement] Copie GTE:</td><td>{{contact.gte_copy}}</td>
+    </tr>
+    {% endif %}
+    {% if contact.student_contract_terms_and_conditions %}
+    <tr>
+      <td>Student contract terms and conditions / Conditions générales du contrat étudiant:</td><td>{{contact.student_contract_terms_and_conditions}}</td>
+    </tr>
+    {% endif %}
+    {% if contact.terms_and_conditions_file %}
+    <tr>
+      <td>Terms and Conditions File / Fichier des conditions générales:</td><td>{{contact.terms_and_conditions_file}}</td>
+    </tr>
+    {% endif %}
+  </table>
+{% endif %}
+
+{% if contact.online_application_status != 'Agent' %}
+  <table>
+    <th>Declaration and Acknowledgement for ILSC Language Schools and Greystone College Canada: STUDENT DECLARATION</th>
+    <tr>
+      <td>1. I certify that all the information provided in my application for admission to ILSC Language School and/or Greystone College is true, accurate, and complete to the best of my knowledge. I understand that any falsification, misrepresentation, or omission of information may result in the rejection of my application or the cancellation of my admission, enrollment, or registration at ILSC Language School and/or Greystone College. /<br>
+      Je certifie que toutes les informations fournies dans ma demande d'admission à l'école de langues ILSC et/ou au Collège Greystone sont vraies, exactes et complètes au meilleur de ma connaissance. Je comprends que toute falsification, fausse déclaration ou omission d'informations peut entraîner le rejet de ma candidature ou l'annulation de mon admission, ou de mon inscription à l'ILSC Language School et/ou au Collège Greystone.</td>
+    </tr>
+    <tr>
+      <td>2. I acknowledge that ILSC Language School and/or Greystone College reserves the right to verify the authenticity of the information provided in my application, including contacting relevant institutions or authorities for verification purposes. I agree to cooperate fully with any verification procedures that may be required. /<br>
+      Je reconnais que l'ILSC Language School et/ou le Collège Greystone se réservent le droit de vérifier l'authenticité des informations fournies dans ma candidature, notamment en contactant les institutions ou autorités compétentes à des fins de vérification. J'accepte de coopérer pleinement avec toute procédure de vérification qui pourrait être nécessaire.</td>
+    </tr>
+    <tr>
+      <td>3. I understand that it is the responsibility of the student or their agent to inform ILSC Language School and/or Greystone College promptly of any changes or updates to the information provided in this application, including changes to the student's academic record, contact information, or personal circumstances. /<br>
+      Je comprends qu'il est de ma responsabilité d'informer rapidement l'ILSC Language School et/ou le Collège Greystone de tout changement ou mise à jour des informations fournies dans ma candidature, y compris des modifications apportées à mon dossier académique, mes coordonnées ou ma situation personnelle.</td>
+    </tr>
+    <tr>
+      <td>4. I confirm that the student has read and understood all the instructions and requirements for the admission process outlined by ILSC Language School and/or Greystone College Admission Policy – please see web link for ILSC Language School for <a href="https://www.ilsc.com/language-schools/policies-procedures">https://www.ilsc.com/language-schools/policies-procedures</a> and/or Greystone College <a href="https://www.ilsc.com/greystone-college/canada/policies">https://www.ilsc.com/greystone-college/canada/policies</a> /<br>
+      Je confirme que j'ai lu et compris toutes les instructions et exigences pour le processus d'admission décrites par l'ILSC Language School et/ou la politique d'admission du Collège Greystone – veuillez consulter ce lien pour l'école de langues ILSC <a href="https://www.ilsc.com/language-schools/policies-procedures">https://www.ilsc.com/language-schools/policies-procedures</a> et/ou le Collège Greystone <a href="https://www.ilsc.com/language-schools/policies-procedures">https://www.ilsc.com/language-schools/policies-procedures</a> and/or Greystone College <a href="https://www.ilsc.com/greystone-college/canada/policies">https://www.ilsc.com/greystone-college/canada/policies</a></td>
+    </tr>
+    <tr>
+      <td>5. I further understand that ILSC Language School and/or Greystone College follows the government-mandated refund policy – please see ILSC Language School Tuition Refund Policy at <a href="https://www.ilsc.com/language-schools/policies-procedures">https://www.ilsc.com/language-schools/policies-procedures</a> and/or Greystone College Tuition Refund Policy at <a href="https://www.ilsc.com/greystone-college/canada/policies">https://www.ilsc.com/greystone-college/canada/policies.</a> /<br>
+      Je comprends en outre que l'ILSC Language School et/ou le Collège Greystone respecte la politique de remboursement établie par le gouvernement – veuillez consulter la politique de remboursement des frais de scolarité de l'ILSC Language School à l’adresse <a href="https://www.ilsc.com/language-schools/policies-procedures">https://www.ilsc.com/language-schools/policies-procedures</a> et/ou du Collège Greystone. Politique de remboursement des frais de scolarité sur <a href="https://www.ilsc.com/greystone-college/canada/policies">https://www.ilsc.com/greystone-college/canada/policies.</a></td>
+    </tr>
+    <tr>
+       <td>6. [Greystone College only] I acknowledge that I have read and understood the obligation to bring my personal laptop for on-campus use, ensuring it meets or exceeds the minimum technology standards specified at <a href="https://www.ilsc.com/greystone-college/canada/admissions">https://www.ilsc.com/greystone-college/canada/admissions.</a> /<br>
+      [Pour le Collège Greystone uniquement] Je reconnais avoir lu et compris l'obligation d'apporter mon ordinateur portable personnel pour son utilisation sur le campus, en m'assurant qu'il respecte ou dépasse les normes technologiques minimales précisées à l’adresse <a href="https://www.ilsc.com/greystone-college/canada/admissions">https://www.ilsc.com/greystone-college/canada/admissions.</a></td>
+    </tr>
+    <tr>
+       <td>7. I understand that submitting this application does not guarantee admission to ILSC Language School and/or Greystone College, and that admission is subject to meeting ILSC Language School’s and/or Greystone College’s admission requirements./ <br>
+      Je comprends que le fait de soumettre ma candidature ne garantit pas l'admission à l'ILSC Language School et/ou au Collège Greystone, et que l'admission est soumise au respect des conditions d'admission de l'ILSC Language School et/ou du Collège Greystone.</td>
+    </tr>
+    <tr>
+       <td>8. I agree to abide by all the rules, policies, and regulations of the institution if admitted as a student. /<br>
+      J'accepte de respecter tous les règles, politiques et réglements de l'établissement si je suis admis en tant qu'étudiant.</td>
+    </tr>
+    <tr>
+       <td>9. I understand and agree the school reserves the right to modify any schedule, program or course due to regulatory, academic or logistical reasons. /<br>
+      Je comprends et j'accepte que l'école se réserve le droit de modifier tout horaire, programme ou cours pour des raisons réglementaires, académiques ou logistiques.</td>
+    </tr>
+    <tr>
+       <td>10. I hereby consent to the collection, storage, and processing of my personal data and academic records by ILSC Language School and/or Greystone College for the purpose of evaluating my application for admission and for other administrative and academic purposes related to my enrollment. /<br>
+      J'accepte par la présente la collecte, le stockage et le traitement de mes données personnelles et de mes dossiers académiques par l'ILSC Language School et/ou dans le but d'évaluer ma demande d'admission et à d'autres fins administratives et académiques liées à mon inscription.</td>
+    </tr>
+    <tr>
+       <td>11. I acknowledge that to graduate from Collège Greystone Montréal, I must meet the graduation requirements as detailed in the following link: <a href="https://www.ilsc.com/greystone-college/canada/policies">https://www.ilsc.com/greystone-college/canada/policies</a>. This includes achieving the required level of French language proficiency as mandated by the Ministry of French Languages in Québec. /<br>
+      Je reconnais que pour obtenir mon diplôme du Collège Greystone Montréal - Programme d’anglais, je dois satisfaire aux exigences d’obtention du diplôme telles que détaillées dans le lien suivant :  <a href="https://www.ilsc.com/greystone-college/canada/policies">https://www.ilsc.com/greystone-college/canada/policies</a>. Cela comprend l’atteinte du niveau de compétence linguistique en français requis par le ministère des Langues françaises du Québec.</td>
+    </tr>
+    <tr>
+      <td>{% if contact.agent_declaration_and_acknowledgement_for_greystone_college_ilsc_canada %}{{contact.agent_declaration_and_acknowledgement_for_greystone_college_ilsc_canada}}{% else %}N/A{% endif %}</td>
+    </tr>
+  </table>
+{% endif %}
+
+{% if contact.online_application_status != 'Student' %}
+  <table>
+    <th>Declaration and Acknowledgement for ILSC Language Schools and Greystone College Canada: AGENT DECLARATION /<br>
+      Déclaration et reconnaissance pour les écoles de langues ILSC et le Collège Greystone au Canada :DÉCLARATION DE L'AGENT
+    </th>
+    <tr>
+      <td>1. I certify that all the information provided in this application for admission to ILSC Language School and/or Greystone College is true, accurate, and complete to the best of my knowledge. I understand that any falsification, misrepresentation, or omission of information may result in the rejection of the application or the cancellation of admission, enrollment, or registration at ILSC Language School and/or Greystone College. /<br>
+Je certifie que toutes les informations fournies dans cette demande d'admission à l'ILSC Language School et/ou au Collège Greystone sont vraies, exactes et complètes au meilleur de ma connaissance. Je comprends que toute falsification, fausse déclaration ou omission d'informations peut entraîner le rejet de la candidature ou l'annulation de l'admission ou de mon inscription à l'ILSC Language School et/ou au Collège Greystone.</td>
+    </tr>
+    <tr>
+      <td>2. I acknowledge that ILSC Language School and/or Greystone College reserves the right to verify the authenticity of the information provided in this application, including contacting relevant institutions or authorities for verification purposes. I confirm that the student has been informed and agrees to cooperate fully with any verification procedures that may be required. /<br>
+Je reconnais que l'ILSC Language School et/ou le Collège Greystone se réservent le droit de vérifier l'authenticité des informations fournies dans cette candidature, notamment en contactant les institutions ou autorités compétentes à des fins de vérification. Je confirme que l'étudiant a été informé et s'engage à coopérer pleinement à toute procédure de vérification qui pourrait être requise. </td>
+    </tr>
+    <tr>
+      <td>3. I understand that it is the responsibility of the student or their agent to inform ILSC Language School and/or Greystone College promptly of any changes or updates to the information provided in this application, including changes to the student's academic record, contact information, or personal circumstances. /<br>
+Je comprends qu'il est de la responsabilité de l'étudiant ou de son agent d'informer rapidement l'ILSC Language School et/ou le Collège Greystone de tout changement ou mise à jour des informations fournies dans cette candidature, y compris les modifications apportées au dossier scolaire de l'étudiant, à ses coordonnées ou à ses circonstances personnelles.</td>
+    </tr>
+    <tr>
+      <td>4. I confirm that the student has read and understood all the instructions and requirements for the admission process outlined by ILSC Language School and/or Greystone College Admission Policy – please see web link for ILSC Language School for <a href="https://www.ilsc.com/language-schools/policies-procedures">https://www.ilsc.com/language-schools/policies-procedures</a> and/or Greystone College <a href="https://www.ilsc.com/greystone-college/canada/policies">https://www.ilsc.com/greystone-college/canada/policies</a> /<br>
+Je confirme que l'étudiant a lu et compris toutes les instructions et exigences pour le processus d'admission décrites par l'ILSC Language School et/ou la politique d'admission du Collège Greystone– veuillez consulter ce lien pour l'ILSC Language School <a href="https://www.ilsc.com/language-schools/policies-procedures">https://www.ilsc.com/language-schools/policies-procedures</a> et/ou celui-ci pour le Collège Greystone <a href="https://www.ilsc.com/greystone-college/canada/policies">https://www.ilsc.com/greystone-college/canada/policies</a></td>
+    </tr>
+    <tr>
+      <td>5. I confirm that the student has read and understood the government-mandated refund policy, which ILSC Language School and/or Greystone College must adhere to – please see ILSC Language School Tuition Refund Policy at <a href="https://www.ilsc.com/language-schools/policies-procedures">https://www.ilsc.com/language-schools/policies-procedures</a> and/or Greystone College Tuition Refund Policy at <a href="https://www.ilsc.com/greystone-college/canada/policies">https://www.ilsc.com/greystone-college/canada/policies.</a> /<br>
+Je confirme que l'étudiant a lu et compris la politique de remboursement établie par le gouvernement, à laquelle l'ILSC Language School et/ou le Collège Greystone doivent adhérer – veuillez consulter la politique de remboursement des frais de scolarité de l'ILSC Language School à l’adresse <a href="https://www.ilsc.com/language-schools/policies-procedures">https://www.ilsc.com/language-schools/policies-procedures</a> et/ou la politique de remboursement des frais de scolarité du Collège Greystone à l’adresse <a href="https://www.ilsc.com/greystone-college/canada/policies">https://www.ilsc.com/greystone-college/canada/policies</a></td>
+    </tr>
+    <tr>
+       <td>6. [Greystone College only] I confirm that the student has read and understood the obligation to bring a personal laptop for on-campus use, ensuring it meets or exceeds the minimum technology standards specified at <a href="https://www.ilsc.com/greystone-college/canada/admissions">https://www.ilsc.com/greystone-college/canada/admissions.</a> /<br>
+[Pour le Collège Greystone uniquement] Je confirme que l'étudiant a lu et compris l'obligation d'apporter un ordinateur portable personnel pour son utilisation sur le campus, en m'assurant qu'il respecte ou dépasse les normes technologiques minimales précisées à l’adresse <a href="https://www.ilsc.com/greystone-college/canada/admissions">https://www.ilsc.com/greystone-college/canada/admissions.</a></td>
+    </tr>
+    <tr>
+       <td>7. I have informed the student that submitting this application does not guarantee admission to ILSC Language School and/or Greystone College, and that admission is subject to meeting ILSC Language School and/or Greystone College’s admission requirements. /<br>
+J'ai informé l'étudiant que le fait de soumettre sa candidature ne garantit pas l'admission à l'ILSC Language School et/ou au Collège Greystone, et que l'admission est soumise au respect des conditions d'admission de l'ILSC Language School et/ou du Collège Greystone.</td>
+    </tr>
+    <tr>
+       <td>8. I confirm that the student has agreed to abide by all the rules, policies, and regulations of the institution if admitted to a program of study at ILSC Language School and/or Greystone College. /<br>
+Je confirme que l'étudiant a accepté de respecter tous les règles, politiques et réglements de l'établissement s'il est admis à un programme d'études à l'ILSC Language School et/ou au Collège Greystone.</td>
+    </tr>
+    <tr>
+       <td>9. The student understands and agrees that the language school and/or college reserves the right to modify any schedule, program, or course due to regulatory, academic, or logistical reasons. /<br>
+L'étudiant comprend et accepte que l'école de langues et/ou le collège se réserve(nt) le droit de modifier tout horaire, programme ou cours pour des raisons réglementaires, académiques ou logistiques.</td>
+    </tr>
+    <tr>
+       <td>10. I confirm that the student has consented to the collection, storage, and processing of their personal data and academic records by ILSC Language School and/or Greystone College for the purpose of evaluating their application for admission and for other administrative and academic purposes related to their enrollment. /<br>
+Je confirme que l'étudiant a consenti à la collecte, au stockage et au traitement de ses données personnelles et de son dossier académique par l'ILSC Language School et/ou le Collège Greystone dans le but d'évaluer sa demande d'admission et à d'autres fins administratives et académiques liées à son inscription.</td>
+    </tr>
+    <tr>
+       <td>11. I confirm that the student understands that to graduate from Collège Greystone Montréal, the student must meet the graduation requirements as detailed in the following link: <a href="https://www.ilsc.com/greystone-college/canada/policies">https://www.ilsc.com/greystone-college/canada/policies</a>. This includes achieving the required level of French language proficiency as mandated by the Ministry of French Languages in Québec. /<br>
+      Je confirme que l'étudiant comprend que pour obtenir son diplôme du Collège Greystone Montréal, il doit satisfaire aux exigences d'obtention du diplôme détaillées dans le lien suivant : <a href="https://www.ilsc.com/greystone-college/canada/policies">https://www.ilsc.com/greystone-college/canada/policies</a>. Cela inclut l'obtention des exigences requises. Niveau de maîtrise de la langue française tel que mandaté par le ministère des Langues françaises du Québec.</td>
+    </tr>
+    <tr>
+      <td>{% if contact.agent_declaration_and_acknowledgement_for_greystone_college_ilsc_canada %}{{contact.agent_declaration_and_acknowledgement_for_greystone_college_ilsc_canada}}{% else %}N/A{% endif %}</td>
+    </tr>
+  </table>
+{% endif %}
+
+{% if contact.e_signature_digital_confirmation %}
+  <table>
+    <th>Electronic Signature Received / Signature électronique reçue</th>
+    {% if contact.e_signature_digital_confirmation %}
+    <tr>
+      <td>Signature:</td><td>{{contact.e_signature_digital_confirmation}}</td>
+    </tr>
+    {% endif %}
+  </table>
+{% endif %}

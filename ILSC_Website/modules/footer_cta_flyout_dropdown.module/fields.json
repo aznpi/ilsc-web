@@ -1,0 +1,455 @@
+[ {
+  "id" : "c95beb0a-8e40-205b-9e27-ef2597091ad7",
+  "name" : "cta_flyout",
+  "label" : "CTA Flyout",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "9973a8b6-c420-d245-9847-74cb5e786b8d",
+    "name" : "box_1",
+    "label" : "Box 1",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "4f2a6646-4745-e912-8cce-78e0f58252c1",
+      "name" : "button_text",
+      "label" : "Button Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "CONTACT US"
+    }, {
+      "id" : "7ad3976f-3818-3ff9-0664-e2baa6ac5887",
+      "name" : "dropdown_field_group",
+      "label" : "Dropdown Field group",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "max" : 3,
+        "sorting_label_field" : "d0909bb6-75c9-6d08-04e6-7978d6b44b50",
+        "default" : 2
+      },
+      "children" : [ {
+        "id" : "d94e679e-85a3-8a41-9e5e-9121bd227f33",
+        "name" : "icon_choice",
+        "label" : "Icon Choice",
+        "required" : false,
+        "locked" : false,
+        "display" : "select",
+        "choices" : [ [ "icon-ilsc", "Language School" ], [ "icon-gc", "Greystone College" ] ],
+        "multiple" : false,
+        "reordering_enabled" : true,
+        "preset" : null,
+        "type" : "choice",
+        "display_width" : null,
+        "default" : "icon-ilsc"
+      }, {
+        "id" : "d0909bb6-75c9-6d08-04e6-7978d6b44b50",
+        "name" : "box_link_text",
+        "label" : "Box Link Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Contact us at Language Schools"
+      }, {
+        "id" : "2c38fa8a-0211-ffa5-2993-c5d309ffd82a",
+        "name" : "box_link_url",
+        "label" : "Box Link Url",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+        "type" : "url",
+        "display_width" : null,
+        "default" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 35557010349
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : [ {
+        "icon_choice" : "icon-ilsc",
+        "box_link_text" : "Contact us at Language Schools",
+        "box_link_url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 35557010349
+        }
+      }, {
+        "icon_choice" : "icon-ilsc",
+        "box_link_text" : "Contact us at Language Schools",
+        "box_link_url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 35557010349
+        }
+      } ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "button_text" : "CONTACT US",
+      "dropdown_field_group" : [ {
+        "icon_choice" : "icon-ilsc",
+        "box_link_text" : "Contact us at Language Schools",
+        "box_link_url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 35557010349
+        }
+      }, {
+        "icon_choice" : "icon-ilsc",
+        "box_link_text" : "Contact us at Language Schools",
+        "box_link_url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 35557010349
+        }
+      } ]
+    }
+  }, {
+    "id" : "a24f6495-bd87-9ed3-48d7-44f0a765526b",
+    "name" : "box_2",
+    "label" : "Box 2",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "c7a6f578-e1cd-53e0-30e2-88ba2fe90f97",
+      "name" : "box_link_text",
+      "label" : "Box Link Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "LANGUAGE LEVEL TEST"
+    }, {
+      "id" : "0a597465-58af-7da9-e8b1-602bf384f52b",
+      "name" : "box_link_url",
+      "label" : "Box Link Url",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "box_link_text" : "LANGUAGE LEVEL TEST",
+      "box_link_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    }
+  }, {
+    "id" : "34244d26-84fa-bac3-102a-bddc9e418723",
+    "name" : "quote_box",
+    "label" : "Quote Box",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "0d3936e1-365a-19b5-fcbf-98cf1a6208f7",
+      "name" : "show_link",
+      "label" : "Show Link",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "display_width" : null,
+      "default" : false
+    }, {
+      "id" : "11e2b3e9-f034-1431-2eec-cbfbf7a81782",
+      "name" : "box_link_text",
+      "label" : "Box Link Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "GET A QUOTE"
+    }, {
+      "id" : "c795ccb5-9697-3923-f274-bd92891536ff",
+      "name" : "box_link_url",
+      "label" : "Box Link Url",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "type" : "EXTERNAL",
+        "href" : "#quote-modal",
+        "content_id" : null
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "show_link" : false,
+      "box_link_text" : "GET A QUOTE",
+      "box_link_url" : {
+        "type" : "EXTERNAL",
+        "href" : "#quote-modal",
+        "content_id" : null
+      }
+    }
+  }, {
+    "id" : "9a632448-bad4-c37e-a472-543731f9aac6",
+    "name" : "box_3",
+    "label" : "Box 3",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "ca80624d-15dd-1d38-db53-ad8d79386348",
+      "name" : "button_text",
+      "label" : "Button Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "CONTACT US"
+    }, {
+      "id" : "df86b2dc-5bd7-9d6c-2864-4ff0292a0c3e",
+      "name" : "dropdown_field_group",
+      "label" : "Dropdown Field group",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "max" : 3,
+        "sorting_label_field" : "54475e6e-d21f-526d-30ef-3662ebdbf3fc",
+        "default" : 2
+      },
+      "children" : [ {
+        "id" : "8522aeb6-5a30-d600-23ff-277e50973af5",
+        "name" : "icon_choice",
+        "label" : "Icon Choice",
+        "required" : false,
+        "locked" : false,
+        "display" : "select",
+        "choices" : [ [ "icon-ilsc", "Language School" ], [ "icon-gc", "Greystone College" ] ],
+        "multiple" : false,
+        "reordering_enabled" : true,
+        "preset" : null,
+        "type" : "choice",
+        "display_width" : null,
+        "default" : "icon-ilsc"
+      }, {
+        "id" : "54475e6e-d21f-526d-30ef-3662ebdbf3fc",
+        "name" : "box_link_text",
+        "label" : "Box Link Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Contact us at Language Schools"
+      }, {
+        "id" : "a3b2d5e4-cb29-38bd-9ae7-5c728f358d84",
+        "name" : "box_link_url",
+        "label" : "Box Link Url",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+        "type" : "url",
+        "display_width" : null,
+        "default" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 35557010349
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : [ {
+        "icon_choice_copy" : "icon-ilsc",
+        "box_link_text" : "Contact us at Language Schools",
+        "box_link_url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 35557010349
+        }
+      }, {
+        "icon_choice_copy" : "icon-ilsc",
+        "box_link_text" : "Contact us at Language Schools",
+        "box_link_url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 35557010349
+        }
+      } ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "button_text" : "CONTACT US",
+      "dropdown_field_group" : [ {
+        "icon_choice_copy" : "icon-ilsc",
+        "box_link_text" : "Contact us at Language Schools",
+        "box_link_url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 35557010349
+        }
+      }, {
+        "icon_choice_copy" : "icon-ilsc",
+        "box_link_text" : "Contact us at Language Schools",
+        "box_link_url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 35557010349
+        }
+      } ]
+    }
+  }, {
+    "id" : "33b433b3-c3c1-0281-edee-f2f4624df287",
+    "name" : "phone_box",
+    "label" : "Phone Box",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "ddbd1029-3d80-ef13-ecc3-93a6b231dc56",
+      "name" : "show_link",
+      "label" : "Show Link",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "display_width" : null,
+      "default" : true
+    }, {
+      "id" : "8a6f7b4b-086e-1a8e-3b10-d3a5dcc2cd64",
+      "name" : "box_link_text",
+      "label" : "Box Link Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Call us: 1-855-560-0700"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "show_link" : true,
+      "box_link_text" : "Call us: 1-855-560-0700"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "box_1" : {
+      "button_text" : "CONTACT US",
+      "dropdown_field_group" : [ {
+        "icon_choice" : "icon-ilsc",
+        "box_link_text" : "Contact us at Language Schools",
+        "box_link_url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 35557010349
+        }
+      }, {
+        "icon_choice" : "icon-ilsc",
+        "box_link_text" : "Contact us at Language Schools",
+        "box_link_url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 35557010349
+        }
+      } ]
+    },
+    "box_2" : {
+      "box_link_text" : "LANGUAGE LEVEL TEST",
+      "box_link_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    },
+    "quote_box" : {
+      "show_link" : false,
+      "box_link_text" : "GET A QUOTE",
+      "box_link_url" : {
+        "type" : "EXTERNAL",
+        "href" : "#quote-modal",
+        "content_id" : null
+      }
+    },
+    "box_3" : {
+      "button_text" : "CONTACT US",
+      "dropdown_field_group" : [ {
+        "icon_choice_copy" : "icon-ilsc",
+        "box_link_text" : "Contact us at Language Schools",
+        "box_link_url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 35557010349
+        }
+      }, {
+        "icon_choice_copy" : "icon-ilsc",
+        "box_link_text" : "Contact us at Language Schools",
+        "box_link_url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 35557010349
+        }
+      } ]
+    },
+    "phone_box" : {
+      "show_link" : true,
+      "box_link_text" : "Call us: 1-855-560-0700"
+    }
+  }
+} ]

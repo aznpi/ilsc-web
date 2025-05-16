@@ -1,0 +1,34 @@
+[ {
+  "id" : "e90d055b-ec43-4244-8d8d-8d3b8959859e",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Your Questions Answered</h2>\n<p>Everything you need to know about homestay program. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+}, {
+  "id" : "d0d7ef2a-9aa2-de46-b675-9bff6a97d891",
+  "name" : "button_show_more_text",
+  "label" : "Button Show More Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "SHOW MORE"
+}, {
+  "id" : "45959db5-495c-73fe-90a9-f797e571457b",
+  "name" : "button_show_less_text",
+  "label" : "Button Show Less Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "SHOW LESS"
+} ]

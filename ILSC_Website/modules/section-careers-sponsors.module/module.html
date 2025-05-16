@@ -1,0 +1,50 @@
+<div class="section section-text center bg-white-canvas section-career-sponsors" id="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {% inline_rich_text field="content_text" value="{{ module.content_text }}" %}
+      </div>
+    </div>
+    {% for item in module.tier_sponsor_field_group %}
+      <div class="row tier-sponsor">
+        <div class="col-md-12">
+          <div class="tier-title" style="background-color: rgba({{ module.title_bg_color.color|convert_rgb }}, {{ module.title_bg_color.opacity/100 }});">
+            {% for x in range (0,item.numer_of_stars_choice) %}<i class="fas fa-star"></i>&nbsp;&nbsp;{% endfor %}{{ item.tier_title_text }}{% for x in range (0,item.numer_of_stars_choice) %}&nbsp;&nbsp;<i class="fas fa-star"></i>{% endfor %}
+          </div>
+        </div>
+      </div>
+      <div class="row sponsor">
+        <div class="col-md-12 sponsor-logo">
+          <div class="row row-sponsor">           
+              	{% for item2 in item.sponsor_field_group %}
+                  {% if item2.sponsor_image.src %}
+                  {% set sizeAttrs = 'width="{{ item2.sponsor_image.width }}" height="{{ item2.sponsor_image.height }}"' %}
+                  {% if item2.sponsor_image.size_type == 'auto' %}
+                  {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                  {% elif item2.sponsor_image.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ item2.sponsor_image.max_width }}" height="{{ item2.sponsor_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = item2.sponsor_image.loading != 'disabled' ? 'loading="{{ item2.sponsor_image.loading }}"' : '' %}                 
+                  <div class="col sponsor-logo">
+                    {% set href = item2.sponsor_link.url.href %}
+                    {% if item2.sponsor_link.url.type is equalto "EMAIL_ADDRESS" %}
+                      {% set href = "mailto:" + href %}
+                    {% endif %}
+                    {% if href %}
+                    <a href="{{ href }}"
+                      {% if item2.sponsor_link.open_in_new_tab %}target="_blank"{% endif %}
+                      {% if item2.sponsor_link.rel %}rel="{{ item2.sponsor_link.rel }}"{% endif %}
+                      ><img src="{{ item2.sponsor_image.src }}" alt="{{ item2.sponsor_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                      </a>
+                    {% else %}
+                      <img src="{{ item2.sponsor_image.src }}" alt="{{ item2.sponsor_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                    {% endif %}
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>    
+        </div>
+      </div>
+    {% endfor %}   
+  </div>
+</div>

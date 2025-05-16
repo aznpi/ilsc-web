@@ -1,0 +1,34 @@
+<section class="section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				{% inline_rich_text field="title" value="{{ module.title }}" %}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+        <div class="slider-wrapper">
+          <div class="box-slide box-shadow">
+            
+               {% for item in module.box_slide %}
+                  {% if item.box_image.src %}
+                     <div>
+                      <div class="box-container drop-shadow">
+
+                          <img src="{{ item.box_image.src }}" alt="{{ item.box_image.alt }}" loading="lazy">
+
+                        <div class="box-content a-link-container a-link-small">
+                        {% inline_rich_text field="box_slide_1.box_title" value="{{ item.box_title }}" %}
+                        <a href="{{ item.link_url.url.href }}">{{ module.link_text }}</a>
+                        </div>
+                      </div>
+                     </div>
+                  {% endif %}
+              {% endfor %}    
+            
+          </div>
+        </div>
+			</div>
+		</div>
+	</div>
+</section>

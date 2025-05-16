@@ -1,0 +1,172 @@
+{
+  "column.link_group.child_link_field_group.name" : {
+    "message" : "ilsc_main_footer",
+    "description" : null,
+    "placeholders" : null
+  },
+  "column.link_group.choice_field.choices.value 1" : {
+    "message" : "Label 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "column.link_group.choice_field.choices.value 2" : {
+    "message" : "Label 2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "column.link_group.field_group.name" : {
+    "message" : "ilsc_main_footer",
+    "description" : null,
+    "placeholders" : null
+  },
+  "column.link_group.field_group.social_icon_choice.choices.value 1" : {
+    "message" : "Label 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "column.link_group.field_group.social_icon_choice.choices.value 2" : {
+    "message" : "Label 2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "column.link_group.name" : {
+    "message" : "ilsc_main_footer",
+    "description" : null,
+    "placeholders" : null
+  },
+  "column.name" : {
+    "message" : "main_footer",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.name" : {
+    "message" : "footer",
+    "description" : null,
+    "placeholders" : null
+  },
+  "copyright.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "copyright.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "copyright.label" : {
+    "message" : "Rich text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "footnote_link_group.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "footnote_link_group.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "footnote_link_group.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "footnote_link_group.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "footnote_link_group.link.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "footnote_link_group.link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "footnote_link_group.link.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "footnote_link_group.link.label" : {
+    "message" : "Link",
+    "description" : null,
+    "placeholders" : null
+  },
+  "footnote_link_group.link.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "footnote_link_group.name" : {
+    "message" : "ilsc_main_footer",
+    "description" : null,
+    "placeholders" : null
+  },
+  "footnote_link_group.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "footnote_link_group.text_field.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "footnote_link_group.text_field.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "footnote_link_group.text_field.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "footnote_link_group.text_field.label" : {
+    "message" : "Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "footnote_link_group.text_field.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "footnote_link_group.text_field.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "ilsc_main_footer",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.name" : {
+    "message" : "footer",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_1.name" : {
+    "message" : "footer",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.name" : {
+    "message" : "main_footer",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.name" : {
+    "message" : "footer",
+    "description" : null,
+    "placeholders" : null
+  }
+}

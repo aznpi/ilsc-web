@@ -1,0 +1,407 @@
+[ {
+  "id" : "e90d055b-ec43-4244-8d8d-8d3b8959859e",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Your Questions Answered</h2>\n<p>Everything you need to know about homestay program. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+}, {
+  "id" : "d49b96dc-c8b4-e88d-bcd3-a4afc7d2e7ef",
+  "name" : "faq_items",
+  "label" : "FAQ items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 20,
+    "sorting_label_field" : "677c0227-becb-9f8c-c244-21567ac47486",
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "677c0227-becb-9f8c-c244-21567ac47486",
+    "name" : "question_text",
+    "label" : "Question Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Question"
+  }, {
+    "id" : "746ea8e1-47c1-02d7-316e-d63abbe4769a",
+    "name" : "answer_text",
+    "label" : "Answer Text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<p>Answer</p>"
+  }, {
+    "id" : "65165666-447f-ec6c-f600-eadd523f0dfa",
+    "name" : "logo_image",
+    "label" : "Logo Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto_custom_max",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/logo_alto.png",
+      "alt" : "logo_alto",
+      "width" : 170,
+      "height" : 63,
+      "max_width" : 170,
+      "max_height" : 63
+    }
+  }, {
+    "id" : "68125d87-f141-06cb-70d9-8f66d723ce37",
+    "name" : "hide_show_cta_choice",
+    "label" : "Hide/Show CTA Choice",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "show"
+  }, {
+    "id" : "5554f188-b3de-6782-9cd4-e1c2c6c265be",
+    "name" : "document_cta_group",
+    "label" : "Document CTA group",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "68125d87-f141-06cb-70d9-8f66d723ce37",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "show",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "children" : [ {
+      "id" : "d5d3e587-1203-5668-8042-99a302db2ae2",
+      "name" : "document_link",
+      "label" : "Document Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "type" : "FILE",
+          "href" : "https://www.ilsc.com/hubfs/pdf/ilsc-canada-accommodations-homestay-guideline.pdf",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "63d0450b-c31e-bd2f-e164-c91af39be571",
+      "name" : "cta_text",
+      "label" : "CTA Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "DOWNLOAD THE FLYER"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "document_link" : {
+        "url" : {
+          "type" : "FILE",
+          "href" : "https://www.ilsc.com/hubfs/pdf/ilsc-canada-accommodations-homestay-guideline.pdf",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "cta_text" : "DOWNLOAD THE FLYER"
+    }
+  }, {
+    "id" : "756d4572-4f65-e97b-33ea-74f5fe2ca9f1",
+    "name" : "faq_child_items",
+    "label" : "FAQ child items",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 20,
+      "sorting_label_field" : "67b1d5cc-0d27-3afb-85a0-b1641bf56455",
+      "default" : 5
+    },
+    "children" : [ {
+      "id" : "67b1d5cc-0d27-3afb-85a0-b1641bf56455",
+      "name" : "question_text",
+      "label" : "Question Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Question"
+    }, {
+      "id" : "8b08a0c6-3c0e-793e-6495-c5795480f305",
+      "name" : "answer_text",
+      "label" : "Answer Text",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<p>Answer</p>"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    }, {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    }, {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    }, {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    }, {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "question_text" : "Question",
+    "answer_text" : "<p>Answer</p>",
+    "logo_image" : {
+      "size_type" : "auto_custom_max",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/logo_alto.png",
+      "alt" : "logo_alto",
+      "width" : 170,
+      "height" : 63,
+      "max_width" : 170,
+      "max_height" : 63
+    },
+    "faq_child_items" : [ {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    }, {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    }, {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    }, {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    }, {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    } ],
+    "hide_show_cta_choice" : "show",
+    "document_cta_group" : {
+      "document_link" : {
+        "url" : {
+          "type" : "FILE",
+          "href" : "https://www.ilsc.com/hubfs/pdf/ilsc-canada-accommodations-homestay-guideline.pdf",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "cta_text" : "DOWNLOAD THE FLYER"
+    }
+  }, {
+    "question_text" : "Question",
+    "answer_text" : "<p>Answer</p>",
+    "logo_image" : {
+      "size_type" : "auto_custom_max",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/logo_alto.png",
+      "alt" : "logo_alto",
+      "width" : 170,
+      "height" : 63,
+      "max_width" : 170,
+      "max_height" : 63
+    },
+    "faq_child_items" : [ {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    }, {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    }, {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    }, {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    }, {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    } ],
+    "hide_show_cta_choice" : "show",
+    "document_cta_group" : {
+      "document_link" : {
+        "url" : {
+          "type" : "FILE",
+          "href" : "https://www.ilsc.com/hubfs/pdf/ilsc-canada-accommodations-homestay-guideline.pdf",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "cta_text" : "DOWNLOAD THE FLYER"
+    }
+  }, {
+    "question_text" : "Question",
+    "answer_text" : "<p>Answer</p>",
+    "logo_image" : {
+      "size_type" : "auto_custom_max",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/logo_alto.png",
+      "alt" : "logo_alto",
+      "width" : 170,
+      "height" : 63,
+      "max_width" : 170,
+      "max_height" : 63
+    },
+    "faq_child_items" : [ {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    }, {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    }, {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    }, {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    }, {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    } ],
+    "hide_show_cta_choice" : "show",
+    "document_cta_group" : {
+      "document_link" : {
+        "url" : {
+          "type" : "FILE",
+          "href" : "https://www.ilsc.com/hubfs/pdf/ilsc-canada-accommodations-homestay-guideline.pdf",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "cta_text" : "DOWNLOAD THE FLYER"
+    }
+  }, {
+    "question_text" : "Question",
+    "answer_text" : "<p>Answer</p>",
+    "logo_image" : {
+      "size_type" : "auto_custom_max",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/logo_alto.png",
+      "alt" : "logo_alto",
+      "width" : 170,
+      "height" : 63,
+      "max_width" : 170,
+      "max_height" : 63
+    },
+    "faq_child_items" : [ {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    }, {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    }, {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    }, {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    }, {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    } ],
+    "hide_show_cta_choice" : "show",
+    "document_cta_group" : {
+      "document_link" : {
+        "url" : {
+          "type" : "FILE",
+          "href" : "https://www.ilsc.com/hubfs/pdf/ilsc-canada-accommodations-homestay-guideline.pdf",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "cta_text" : "DOWNLOAD THE FLYER"
+    }
+  }, {
+    "question_text" : "Question",
+    "answer_text" : "<p>Answer</p>",
+    "logo_image" : {
+      "size_type" : "auto_custom_max",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/logo_alto.png",
+      "alt" : "logo_alto",
+      "width" : 170,
+      "height" : 63,
+      "max_width" : 170,
+      "max_height" : 63
+    },
+    "faq_child_items" : [ {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    }, {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    }, {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    }, {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    }, {
+      "question_text" : "Question",
+      "answer_text" : "<p>Answer</p>"
+    } ],
+    "hide_show_cta_choice" : "show",
+    "document_cta_group" : {
+      "document_link" : {
+        "url" : {
+          "type" : "FILE",
+          "href" : "https://www.ilsc.com/hubfs/pdf/ilsc-canada-accommodations-homestay-guideline.pdf",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "cta_text" : "DOWNLOAD THE FLYER"
+    }
+  } ]
+} ]

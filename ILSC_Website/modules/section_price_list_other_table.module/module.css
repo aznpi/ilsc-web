@@ -1,0 +1,59 @@
+.section-other-price-list-table.price-list-table th.header-location span{
+  position:relative;
+  top: unset;
+  left: unset;
+}
+.price-list-table .price-table{
+  width:100%;
+}
+.price-list-table .price-table table{
+  width:100%;
+}
+.price-list-table .btn-container{
+  margin-top:30px;
+}
+.price-list-table th,.price-list-table td{
+  border:1px solid;
+  text-align:center !important;
+  padding:5px;
+}
+.price-list-table td.description{
+  font-weight:300;
+}
+.price-list-table td.price{
+  font-weight:600;
+  font-size:1.4em;
+}
+.price-list-table th.header-location{
+  border-right:0;
+  font-size: 1.5em;
+  padding:10px;
+  position:relative;
+  height:50px
+}
+
+.price-list-table th.header-location:last-child{
+  border: 1px solid;
+}
+.price-list-table th.no-border{
+  border-left:0;
+  border-right:0;
+}
+.price-list-table th.no-border-all{
+  border:0;
+}
+.price-list-table th.no-border:last-child{
+  border-right:1px solid;
+}
+.price-list-table th.bg-orange >div{
+  color:#FFF;
+  font-weight:600;
+  background-color:#ff8b35;
+  overflow:hidden;
+  font-size.8em;
+}
+.price-list-table th.bg-orange{
+  border:1px solid #000;
+  overflow:hidden;
+  padding:5px;
+}

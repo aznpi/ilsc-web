@@ -1,0 +1,97 @@
+<header class="top-nav fixed-top home-nav">
+	<nav class="mobile-nav-wrap" role="navigation">
+		<div class="mobile-header-nav">
+		    <ul class="container">
+		      <li><a href="{{ module.menu_links.link_1.link_field.href }}">{{ module.menu_links.link_1.link_text }}</a></li>
+		      <li><a href="{{ module.menu_links.link_2.link_field.href }}">{{ module.menu_links.link_2.link_text }}</a></li>
+		      <li><a href="{{ module.menu_links.link_3.link_field.href }}">{{ module.menu_links.link_3.link_text }}</a></li>
+		      <li><a href="{{ module.menu_links.link_4.link_field.href }}">{{ module.menu_links.link_4.link_text }}</a></li>
+		      <li><a href="{{ module.menu_links.link_5.link_field.href }}">{{ module.menu_links.link_5.link_text }}</a></li>
+		    </ul>
+	    </div>
+	  </nav>
+	<div class="container">
+		
+
+		<a class="mobile-menu-toggle js-toggle-menu hamburger-menu" href="#">
+		  <span class="menu-item"></span>
+		  <span class="menu-item"></span>
+		  <span class="menu-item"></span>
+		</a>
+		
+		<div class="logo">
+			<a href="/" class="home-link"><img src="{{ module.logo_svg_file }}" alt="{{ module.logo_alt }}" width="225px" /></a>
+		</div>
+		
+
+  </div>
+  <nav id="landing-nav-bar" class="navbar navbar-expand-lg navbar-light">
+	 	<div class="nav-bar-items collapse navbar-collapse container" id="navbarSupportedContent">
+	 		<ul class="navbar-nav mr-auto menu-hide navbar-right">
+	 			<li></li>
+	 			<li class="nav-item dropdown active">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          {{ module.login_menu.login_text }}
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+		        	<div class="navbar-menu-content container login-content">
+			          <div class="row">
+		        			<div class="col-md-6">
+		        				<h4>
+		        					{{ module.login_menu.partners_menu.partners_login_title }}
+		        				</h4>
+		        				<p>{{ module.login_menu.partners_menu.parnters_text_1 }}</p>
+		        				 <a href="{{ module.login_menu.partners_menu.button_1_url.href }}" class="btn btn-outline-primary btn-black-outline">{{ module.login_menu.partners_menu.button_1_text }}</a>
+                    <p>{{ module.login_menu.partners_menu.parnters_text_2 }}</p>
+		        				<a href="{{ module.login_menu.partners_menu.button_2_url.href }}" class="btn btn-primary btn-orange">{{ module.login_menu.partners_menu.button_2_text }}</a>
+		        				<div class="vertical-divider"></div>
+		        			</div>
+		        			<div class="col-md-3">
+		        				<h4>
+		        					{{ module.login_menu.student_menu.student_login_title }}
+		        				</h4>
+		        				<p>{{ module.login_menu.student_menu.student_text_1 }}</p>
+		        				<a href="{{ module.login_menu.student_menu.button_1_url.href }}" class="btn btn-primary btn-orange">{{ module.login_menu.student_menu.button_1_text }}</a>
+		        				<div class="vertical-divider"></div>
+		        			</div>
+		        			<div class="col-md-3">
+		        				<h4>
+		        					{{ module.login_menu.alumni_menu.alumni_login_title }}
+		        				</h4>
+		        				<p>{{ module.login_menu.alumni_menu.alumni_text_1 }}</p>
+		        				<a href="{{ module.login_menu.alumni_menu.button_1_url.href }}" class="btn btn-outline-primary btn-black-outline">{{ module.login_menu.alumni_menu.button_1_text }}</a>
+		        			</div>
+		        		</div>
+		          	</div>
+		        </div>
+		      </li>
+		      <li class="nav-item dropdown language-selector">
+
+            <a class="nav-link dropdown-toggle language-link" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              EN
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+              <div class="navbar-menu-content container">
+                <div class="row">
+                  <div class="col-md-12">
+                    {% inline_rich_text field="title_language" value="{{ module.title_language }}" %}
+                    <ul>
+                      <li class="lng-en"><a class="dropdown-item" href="/{{ content.translated_content['en'].slug || 'en' }}">English</a></li>
+                      <li class="lng-es"><a class="dropdown-item" href="/{{ content.translated_content['es'].slug || 'es' }}">Spanish</a></li>
+                      <li class="lng-pt"><a class="dropdown-item" href="/{{ content.translated_content['pt'].slug || 'pt' }}">Portugese</a></li>
+                      <li class="lng-ru"><a class="dropdown-item" href="/{{ content.translated_content['ru'].slug || 'ru' }}">Russian</a></li>
+                      <li class="lng-zh"><a class="dropdown-item" href="/{{ content.translated_content['zh'].slug || 'zh' }}">Chinese</a></li>
+                      <li class="lng-ko"><a class="dropdown-item" href="/{{ content.translated_content['ko'].slug || 'ko' }}">Korean</a></li>
+                      <li class="lng-ja"><a class="dropdown-item" href="/{{ content.translated_content['es'].slug || 'ja' }}">Japanese</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </li>
+	 		</ul>
+	 	</div>
+	 </nav>
+</header>

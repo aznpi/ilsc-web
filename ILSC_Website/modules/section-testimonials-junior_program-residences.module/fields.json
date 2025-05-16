@@ -1,0 +1,115 @@
+[ {
+  "id" : "d6faf8fc-05f1-8119-2897-c113a1191d07",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h4>WHAT OUR HOMESTAY FAMILIES ARE SAYING</h4>"
+}, {
+  "id" : "8f46b673-e6a9-92d5-87da-9a48ee0ea67c",
+  "name" : "cta_group",
+  "label" : "CTA Group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "6e343c51-0924-fa6f-be59-fa3219da38fc",
+    "name" : "hide_show_cta",
+    "label" : "Hide/Show CTA",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "show"
+  }, {
+    "id" : "3e675576-19c5-0aee-45cf-d7058d0cdf59",
+    "name" : "cta_text",
+    "label" : "CTA Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "6e343c51-0924-fa6f-be59-fa3219da38fc",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "show",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "WATCH OUR VIDEO"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "hide_show_cta" : "show",
+    "cta_text" : "WATCH OUR VIDEO"
+  }
+}, {
+  "id" : "156ab8e6-5e77-4aa9-3250-f2c60459e9f5",
+  "name" : "junior_camp_type",
+  "label" : "Junior Camp Type",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "Junior Camp at ILSC", "Junior Camp at ILSC" ], [ "Junior Camp Residences", "Junior Camp Residences" ], [ "Family Camp", "Family Camp" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "933fb2e5-db97-7658-18e5-aa396c7fb29d",
+  "name" : "junior_residence_location",
+  "label" : "Junior Residence Location",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "156ab8e6-5e77-4aa9-3250-f2c60459e9f5",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "Junior Camp Residences",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "display" : "select",
+  "choices" : [ [ "All Locations", "All Locations" ], [ "UBC", "UBC" ], [ "McGill", "McGill" ], [ "U of T", "U of T" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "f6c7bfff-c94e-488c-a928-1262c493eb0f",
+  "name" : "junior_camp_location",
+  "label" : "Junior/Family Camp Location",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "156ab8e6-5e77-4aa9-3250-f2c60459e9f5",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "Junior Camp Residences",
+    "property" : null,
+    "operator" : "NOT_EQUAL",
+    "access" : null
+  },
+  "display" : "select",
+  "choices" : [ [ "All Locations", "All Locations" ], [ "Vancouver", "Vancouver" ], [ "Toronto", "Toronto" ], [ "Montreal", "Montreal" ], [ "Canada", "Canada" ], [ "Adelaide", "Adelaide" ], [ "Brisbane", "Brisbane" ], [ "Melbourne", "Melbourne" ], [ "Sydney", "Sydney" ], [ "Australia", "Australia" ], [ "New Delhi", "New Delhi" ], [ "India", "India" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+} ]

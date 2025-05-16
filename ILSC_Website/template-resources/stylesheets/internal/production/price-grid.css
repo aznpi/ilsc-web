@@ -1,0 +1,333 @@
+/* @import url('http://example.com/example_style.css'); */
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+
+/*
+
+Price CSS Stylesheet
+Author: Tat Chow
+Date: Sept 15, 2021
+
+*/
+/*
+    Table of Contents
+
+    1.0 - Pricing Grid
+   	
+
+/* 1.0 Pricing Grid */
+section.price-list-nav{
+  padding-bottom:50px;
+}
+section.price-list-nav .price-list-drop select{
+  -moz-appearance:none; /* Firefox */
+  -webkit-appearance:none; /* Safari and Chrome */
+  appearance:none;
+  background:rgba(243, 243, 243, 0.9);
+  border:0;
+  padding:10px 50px;
+  width:100%
+}
+section.price-list-nav .price-list-drop{
+    margin:0 auto;
+    position:relative;
+    width:60%
+}
+section.price-list-nav .price-list-drop:after{
+    color: #111;
+    content: '\f107';
+    font-family: "Font Awesome 5 Free";
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1;
+}
+section.price-list-nav select option{
+  text-align:center;
+}
+.price-list-content .icon-container{
+ display:flex;
+ align-items:center; 
+}
+.price-list-content .icon-container img{
+  width:auto;
+  margin:0 auto;
+  text-align:center;
+  display:block;
+}
+.price-list-content .content-container{
+  display:flex;
+  align-items:center;
+}
+.price-list-content .row{
+  padding:20px 0;
+}
+.price-list-content .anchor-container .col{
+  padding-left:5px;
+  padding-right:5px;
+}
+.price-list-content .anchor-container .anchor-box-container{
+  padding:30px 10px;
+  border:1px solid #C1C1C1;
+  background-color: #FDFDFD;
+  min-height:162px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content:center;
+  cursor:pointer;
+  transition:.5s;
+}
+.price-list-content .anchor-container .anchor-box-container:hover{
+  background-color: #C1C1C1;
+}
+.price-list-content .anchor-container .anchor-box-container span{
+  color:#013247;
+  text-align:center;
+  align-items:center;
+  text-decoration:none;
+  font-size:40px;
+  letter-spacing: -2px;
+    line-height: 45px;
+}
+@media only screen and (max-width: 1199.97px){
+.price-list-content .anchor-container .anchor-box-container span{
+    font-size:30px;
+  }
+}
+@media only screen and (max-width: 991.97px){
+  .price-list-content .anchor-container .col{
+    flex-basis:auto;
+    margin-bottom:10px;
+  }
+}
+
+.price-list-grid .price-year{
+  margin-top:30px;
+}
+.price-list-grid .price-year ul{
+  display:block;
+  margin:0 auto;
+  width:40%;
+}
+.price-list-grid .price-year ul li{
+  display:inline-flex;
+  margin-bottom: 30px;
+  padding:0px 30px;
+  text-align:center;   
+}
+.price-list-grid .price-year ul li a.active{
+  color:#ff8b35;
+  font-weight:300;
+}
+.price-list-grid .price-year ul li.year-border{
+  border-right:1px solid #003346;
+}
+.price-list-grid .price-year ul li a{
+  color:#003346;
+  font-size:30px;
+  font-weight:100;
+  text-decoration:none;
+}
+
+.price-list-grid .col {
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.price-list-grid .program-box-container{
+  background:#FFFFFF;
+  border-radius:20px;
+  overflow:hidden;
+  -webkit-box-shadow: 0px 5px 4px -2px #C4C4C4; 
+  box-shadow: 0px 5px 4px -2px #C4C4C4;
+  margin-bottom:10px;
+}
+.price-list-grid .program-box-container .title{
+  padding:20px 30px;
+  color:#FFFFFF;
+  background:#F58426;
+  margin-bottom:0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.price-list-grid .program-box-container .content-container{
+  font-size:20px;
+  font-weight:300;
+}
+.price-list-grid .program-box-container .content-container ul{
+  margin-bottom:0;
+}
+.price-list-grid .program-box-container .content-container .divider{
+  height:1px;
+  width:75%;
+  margin:0 auto;
+  border-bottom:1px solid #CACACA;
+}
+.price-list-grid .program-box-container .program-available li:first-child{
+ margin: 20px 30px 5px;
+}
+.price-list-grid .program-box-container .program-available li:last-child{
+  margin: 5px 30px 30px;
+}
+.price-list-grid .program-box-container .program-available li:only-child{
+  margin: 20px 30px 30px;
+}
+.price-list-grid .program-box-container .program-available li{
+  position:relative;
+  margin: 5px 30px;
+}
+.price-list-grid .program-box-container .program-available li:before,.price-list-grid .program-box-container .description-container .description ul li.no-asset:before {
+    position: absolute;
+    top: 9px;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background-size: contain;
+    content: '';
+    background-size:15px 15px;
+    background-repeat:no-repeat;
+}
+.price-list-grid .program-box-container .program-available li:before{
+  left: 0;
+  background-image: url('https://www.ilsc.com/hubfs/icon_green_check.png');
+}
+.price-list-grid .program-box-container .description-container .description ul li.no-asset:before {
+  left: -25px;
+  background-image: url('https://www.ilsc.com/hubfs/icon_no_asset.png');
+}
+.price-list-grid .program-box-container .description-container .description ul li.no-asset{  
+  list-style-type: none;
+  position:relative;
+}
+.price-list-grid .program-box-container .program-available a{
+  text-decoration:underline;
+  padding-left: 30px;
+  display: block;
+  -webkit-text-underline-position: under;
+  -ms-text-underline-position: below;
+  text-underline-position: under; 
+}
+.price-list-grid .program-box-container .program-available,.price-list-grid .program-box-container .description ul{
+  list-style-type: initial;
+  padding-left: 20px;
+}
+.price-list-grid .program-box-container .program-available{
+  display:inline-table;
+}
+.price-list-grid .program-box-container .description{
+  padding:30px 50px;
+  display:inline-table;
+}
+.price-list-grid .program-box-container .price-table{
+  background: rgba(222,222,222,0.15);
+}
+.price-list-grid .program-box-container .content-container .price-table .price-row{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.price-list-grid .program-box-container .content-container .price-table .price-row:nth-child(odd){
+  background: rgba(196, 196, 196, 0.15);
+}
+.price-list-grid .program-box-container .content-container .price-table .price-row:nth-child(even){
+  background: rgba(222, 222, 222, 0.15);
+}
+.price-list-grid .program-box-container .content-container .price-table .price-row .item-name{
+  font-size:25px;
+  font-weight: 200;
+  align-items: center;
+  display: flex;
+}
+.price-list-grid .program-box-container .content-container .price-table .price-row .price-amount{
+  font-size:50px;
+  font-weight:400;
+}
+.price-list-grid h1.program-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price-list-grid h1.program-title img{
+  margin-right:15px;
+  width:initial;
+}
+.price-list-grid .header-bar{
+  border-radius: 20px;
+  padding: 15px 0;
+}
+.price-list-grid .footnote p{
+  font-size:30px;
+}
+.price-list-grid .program-box-container .cta-container{
+  padding:20px 20px;
+}
+.price-list-grid .program-box-container .cta-container .disclaimer{
+ font-style:italic;
+}
+.price-list-grid .program-box-container .cta-container .cta-msg{
+  color:#F58426;
+  padding: 0 66px;
+}
+.price-list-grid .program-box-container.program-box-container .cta-container .disclaimer,.price-list-grid .program-box-container .cta-container .cta-msg{
+  font-size:15px;
+  font-weight:light;
+  margin-bottom:20px;
+}
+.price-list-grid .program-box-container .cta-container .cta-btn a{
+  font-size:20px;
+  margin-bottom:20px;
+  width:190px;
+}
+.section-other-price-container .other-price-container .price-title-header{
+  background:#f58426 !important;
+}
+.section-other-price-container .other-price-container .price-title-header .price-title{
+  color:#FFFFFF;
+}
+.section-other-price-container .other-price-container .price-title-header .price-title h4{
+  margin:0;
+}
+.section-other-price-container .other-price-container .price-table .price-row .item-name,.section-other-price-container .other-price-container .price-title-header .price-title:nth-child(1){
+  width:60%;
+}
+.section-other-price-container .other-price-container .price-title-header .price-title:nth-child(2){
+  width:40%;
+}
+.section-other-price-container .other-price-container .price-table .price-row .price-amount{
+  font-size:25px !important;
+  width:40%;
+}
+.section-other-price-container .other-price-container .price-table .price-row{
+  padding:0 !important;
+  border:1px solid #D9D9D9;
+}
+.section-other-price-container .other-price-container .price-table .price-row >div{
+  padding:10px 30px;
+}
+.section-other-price-container .other-price-container .price-table .price-row >div:nth-child(1){
+  border-right:1px solid #D9D9D9;
+}
+.section-other-price-container .other-price-container .price-table .price-row .item-name{
+  font-size:25px;
+}
+..section-other-price-container.price-list-grid .program-box-container .title{
+  padding:10px 30px;
+}
+.price-list-grid .program-box-container .price-table .price-row .item-name span.desc-disclaimer{
+  font-size:18px;
+  display:contents;
+  
+}

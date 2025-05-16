@@ -1,0 +1,158 @@
+[ {
+  "id" : "e052f12f-266a-7cff-7a99-8b2995815cde",
+  "name" : "title_rich_text",
+  "label" : "Title Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<div>\n<h1 style=\"text-align: center;\">Upcoming Talks &amp; Experiences</h1>\n</div>\n<div>\n<p style=\"text-align: center;\" variant=\"lg\">Diverse voices, innovative companies, big ideas.</p>\n</div>"
+}, {
+  "id" : "1bc278bb-1069-2ec7-918d-d7ff097d9b26",
+  "name" : "description_rich_text",
+  "label" : "Description Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<div display=\"flex\" width=\"100%\">\n<div>\n<div>\n<div>\n<h1>InVision Talk Series: Lean Tactics for Design Systems</h1>\n</div>\n</div>\n<div>\n<div>\n<p font-weight=\"[object Object]\" _css2=\"\" variant=\"lg\">Speakers from InVision, Object Edge and Conn's Home Plus</p>\n</div>\n</div>\n</div>\n<div>\n<div>\n<div display=\"inline-flex\">\n<div>\n<div>\n<h3>March 11-25, 2021</h3>\n</div>\n</div>\n</div>\n</div>\n<div>\n<div><span><a class=\"btn btn-orange\">Register Now</a></span></div>\n</div>\n</div>\n</div>\n<div display=\"[object Object]\">\n<div display=\"grid\" width=\"100%\" height=\"100%\">\n<div display=\"flex\" width=\"[object Object]\" height=\"[object Object]\">\n<div>\n<div>&nbsp;</div>\n</div>\n</div>\n</div>\n</div>"
+}, {
+  "id" : "0b707ea5-30a3-0e32-de38-11c82cce1909",
+  "name" : "box_color",
+  "label" : "Box Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#FF9902",
+    "opacity" : 100
+  }
+}, {
+  "id" : "18e0cb73-5592-b4a6-84b3-2b1790f9830c",
+  "name" : "photo_image_1",
+  "label" : "Photo Image 1",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.ilsc.com/hubfs/img_student_class.jpg",
+    "alt" : "img_student_class",
+    "loading" : "lazy",
+    "width" : 700,
+    "height" : 806,
+    "max_width" : 700,
+    "max_height" : 806
+  }
+}, {
+  "id" : "5031ec93-dc64-824e-5624-299d8ad243dd",
+  "name" : "photo_image_2",
+  "label" : "Photo Image 2",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.ilsc.com/hubfs/img_student_class.jpg",
+    "alt" : "img_student_class",
+    "loading" : "lazy",
+    "width" : 700,
+    "height" : 806,
+    "max_width" : 700,
+    "max_height" : 806
+  }
+}, {
+  "id" : "eef7031b-a83f-1312-1cb3-6e79896c4a08",
+  "name" : "photo_image_3",
+  "label" : "Photo Image 3",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.ilsc.com/hubfs/img_student_class.jpg",
+    "alt" : "img_student_class",
+    "loading" : "lazy",
+    "width" : 700,
+    "height" : 806,
+    "max_width" : 700,
+    "max_height" : 806
+  }
+}, {
+  "id" : "79ec2da3-82d2-3bf2-99ed-e724c92ef04b",
+  "name" : "photo_image_4",
+  "label" : "Photo Image 4",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.ilsc.com/hubfs/img_student_class.jpg",
+    "alt" : "img_student_class",
+    "loading" : "lazy",
+    "width" : 700,
+    "height" : 806,
+    "max_width" : 700,
+    "max_height" : 806
+  }
+}, {
+  "id" : "f2b6896b-db38-ae61-56ba-8861861536c6",
+  "name" : "category_field_group",
+  "label" : "Category Field group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "ac70aa80-b118-9d9e-7779-b25f58df7692",
+    "name" : "text_field",
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "DESIGN SYSTEMS"
+  }, {
+    "id" : "3696846b-058e-6846-455a-ef33087badd3",
+    "name" : "color_field",
+    "label" : "Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "display_width" : null,
+    "default" : {
+      "color" : "#69A84F",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "text_field" : "DESIGN SYSTEMS",
+    "color_field" : {
+      "color" : "#69A84F",
+      "opacity" : 100
+    }
+  }
+} ]

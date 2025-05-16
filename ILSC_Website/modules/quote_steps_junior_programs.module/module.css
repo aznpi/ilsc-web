@@ -1,0 +1,53 @@
+.section-jr-quote-steps .campus-selection-container{
+  height:600px;
+}
+.section-quote-steps.section-jr-quote-steps .slick-track .slick-slide:first-child:before{
+  background-position: 570px 0;
+}
+.section-jr-quote-steps .step-breadcrumb-container .step-number>div.step-3{
+  width:40%;
+}
+.section-jr-quote-steps .step-breadcrumb-container {
+    margin-left: 50px;
+}
+
+.quote-select-container .item-description ul {
+    list-style-type: disc;
+    padding: 0 0px 0 20px;
+}
+.section-jr-quote-steps .family-add-selection-container.step-container .radio-container .option-row{
+  display:flex;
+  margin-bottom:10px;
+}
+.section-jr-quote-steps .family-add-selection-container.step-container .radio-container .option-select.program-option{
+  align-self: center;
+  text-align: center;
+  font-size: 25px;
+}
+.section-jr-quote-steps .family-add-selection-container.step-container .radio-container .select-option{
+  padding:20px;
+}
+.section-jr-quote-steps .family-add-selection-container.step-container .select-container .selectBox,
+.section-jr-quote-steps .family-add-selection-container.step-container .select-container .selectBox.show{
+  background:none;
+  padding:0;
+}
+.accom-btn-container{
+  margin-bottom: 50px;
+  clear: both;
+  overflow: hidden;
+}
+.accom-btn-container button.prev {
+    float: left;
+}
+.accom-btn-container button {
+    margin: 50px 0 20px;
+    width: 150px !important;
+    float: right;
+}
+.accom-btn-container button.next.disable, .accom-btn-container button.next.disable:hover {
+    background-color: #aeaeae;
+    border-color: #FFF;
+    color: #cecece;
+    cursor: default;
+}

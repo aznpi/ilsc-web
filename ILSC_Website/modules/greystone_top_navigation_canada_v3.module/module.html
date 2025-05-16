@@ -1,0 +1,378 @@
+{% set langChar = content.language.languageTag %}
+{% set urlPath = request.path|urldecode %}
+{% if langChar == module.language_code_to_use_alternate_logo %}
+  {% set imgUrl = module.alternate_logo_svg_file %}
+  {% set imgAlt = module.alternate_logo_alt %}
+{% else %}
+{# enableAlt is set in the Settings of the page editor #}
+  {% if enableAlt %}
+    {% set imgUrl = module.alternate_logo_svg_file %}
+    {% set imgAlt = module.alternate_logo_alt %}
+  {% else%}
+    {% set imgUrl = module.logo_svg_file %}
+    {% set imgAlt = module.logo_alt %}
+  {% endif %}
+{% endif %}
+
+<header class="top-nav fixed-top gc-nav">
+  <nav id="landing-nav-bar" class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+
+      <a class="navbar-brand" href="{{ module.home_link.url.href }}"><img src="{{ imgUrl }}" alt="{{ imgAlt }}" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+
+      <div class="nav-bar-items collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto menu-hide">
+
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {% inline_text field="nav_titles.nav_title_destinations" value="{{ module.nav_titles.nav_title_destinations }}" %}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <div class="navbar-menu-content study-content container">
+                <div class="row">
+                  <div class="col-md-12">
+                      {{ module.destinations_menu.title }}
+                  </div>
+                </div>
+                <div class="row">
+                  {% set colNumberDestination = (12/module.destinations_menu.links|length)|round %}     
+              
+                  {% for item in module.destinations_menu.links %}
+                    {% set href = item.link_page.url.href %}
+                    <div class="col-md-{{colNumberDestination}} target-container" onClick="window.location.href = '{{ href }}';">
+                        <div class="image-container">
+                          <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" style="width:100%;">
+                        </div>
+                      <div class="center">
+                        <p>
+                          {% inline_text field="link_title" value="{{ item.link_title }}" %}
+                        </p>
+                      </div>
+                    </div>
+                  {% endfor %}
+                           
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             {% inline_text field="nav_titles.nav_title_programs" value="{{ module.nav_titles.nav_title_programs }}" %}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+              <div class="navbar-menu-content container">
+                <div class="row">
+                  {% set colNumberPrograms = (12/module.programs_menu.links|length)|round %}
+                   {% for item in module.programs_menu.links %}
+                      <div class="col-md-{{colNumberPrograms}}">    
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="image-container">
+                              <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" style="width:100%;">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <h5>
+                              {% inline_text field="header_title" value="{{ item.header_title }}" %}
+                            </h5>
+                            <ul> 
+                              {% for item2 in item.link_field_group %}
+                                {% set href = item2.link_field.url.href %}
+                                {% if item2.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+                                  {% set href = "mailto:" + href %}
+                                {% endif %}
+                                {% set rel = [] %}
+                                {% if item2.link_field.no_follow %}
+                                  {% do rel.append("nofollow") %}
+                                {% endif %}
+                                {% if item2.link_field.open_in_new_tab %}
+                                  {% do rel.append("noopener") %}
+                                {% endif %}
+                                <li>
+                                  <a href="{{ href }}"
+                                      {% if item2.link_field.open_in_new_tab %}target="_blank"{% endif %}
+                                      {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                                      >
+                                      {% inline_text field="link_text" value="{{ item2.link_text }}" %}
+                                  </a>
+                                </li>
+                              {% endfor %}
+                            </ul>
+                          </div>
+                        </div>
+                        
+                      </div>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {% inline_text field="nav_titles.nav_title_work" value="{{ module.nav_titles.nav_title_work }}" %}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <div class="navbar-menu-content study-content container">
+                <div class="row">
+                  <div class="col-md-12">
+                      {{ module.work_menu.title }}
+                  </div>
+                </div>
+                <div class="row">
+                  {% set colNumberWork = (12/module.work_menu.links|length)|round %}     
+              
+                  {% for item in module.work_menu.links %}
+                    {% set href = item.link_page.url.href %}
+                    <div class="target-container col-md-{{colNumberWork}}" onClick="window.location.href = '{{ href }}';">
+                        <div class="image-container">
+                          <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" style="width:100%;">
+                        </div>
+                      <div class="center">
+                        <p>
+                          {% inline_text field="link_title" value="{{ item.link_title }}" %}
+                        </p>
+                      </div>
+                    </div>
+                  {% endfor %}
+                           
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{ module.nav_titles.nav_title_student_services }}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+              <div class="navbar-menu-content container">
+                <div class="row">
+                  {% set colNumberStudent = (12/module.student_services_menu.links|length)|round %}
+                   {% for item in module.student_services_menu.links %}
+                      <div class="target-container col-md-{{colNumberStudent}}">    
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="image-container">
+                              <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" style="width:100%;">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <h5>
+                              {% inline_text field="header_title" value="{{ item.header_title }}" %}
+                            </h5>
+                            <ul> 
+                              {% for item2 in item.link_field_group %}
+                                {% set href = item2.link_field.url.href %}
+                                {% if item2.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+                                  {% set href = "mailto:" + href %}
+                                {% endif %}
+                                {% set rel = [] %}
+                                {% if item2.link_field.no_follow %}
+                                  {% do rel.append("nofollow") %}
+                                {% endif %}
+                                {% if item2.link_field.open_in_new_tab %}
+                                  {% do rel.append("noopener") %}
+                                {% endif %}
+                                <li>
+                                  <a href="{{ href }}"
+                                      {% if item2.link_field.open_in_new_tab %}target="_blank"{% endif %}
+                                      {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                                      >
+                                      {% inline_text field="link_text" value="{{ item2.link_text }}" %}
+                                  </a>
+                                </li>
+                              {% endfor %}
+                            </ul>
+                          </div>
+                        </div>
+                        
+                      </div>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             {% inline_text field="nav_titles.nav_title_admissions" value="{{ module.nav_titles.nav_title_admissions }}" %}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown5">
+              <div class="navbar-menu-content container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="row">
+                          <div class="col-md-6">
+                            <div class="image-container">
+                              <img src="{{ module.admissions_menu.links.image_field.src }}" alt="{{ module.admissions_menu.links.image_field.alt }}" style="width:100%;">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <h5>
+                              {% inline_text field="admissions_menu.links.header_title" value="{{ module.admissions_menu.links.header_title }}" %}
+                            </h5>
+                            <ul> 
+                              {% for item in module.admissions_menu.links.link_field_group %}
+                                {% set href = item.link_field.url.href %}
+                                {% if item.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+                                  {% set href = "mailto:" + href %}
+                                {% endif %}
+                                {% set rel = [] %}
+                                {% if item.link_field.no_follow %}
+                                  {% do rel.append("nofollow") %}
+                                {% endif %}
+                                {% if item.link_field.open_in_new_tab %}
+                                  {% do rel.append("noopener") %}
+                                {% endif %}
+                                <li>
+                                  <a href="{{ href }}"
+                                      {% if item.link_field.open_in_new_tab %}target="_blank"{% endif %}
+                                      {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                                      >
+                                      {% inline_text field="link_text" value="{{ item.link_text }}" %}
+                                  </a>
+                                </li>
+                              {% endfor %}
+                            </ul>
+                          </div>
+                        </div>
+                    
+                    <div class="vertical-divider"></div>
+                  </div>
+                  <div class="col-md-6 apply-container">
+                    <h3>
+                      {% inline_text field="admissions_menu.apply_now_field_group.text_field" value="{{ module.admissions_menu.apply_now_field_group.text_field }}" %}
+                    </h3>
+                    <ul>
+                      {% if module.admissions_menu.quote_field_group.show_link %}
+                        <li>
+                          <a href="#" data-toggle="modal" data-target="{{module.admissions_menu.quote_field_group.link_field_1.url.href}}" class="btn-apply btn btn-outline-primary btn-pathway-blue-outline">{{ module.admissions_menu.quote_field_group.link_text }}</a>
+                        </li>
+                      {% endif %}
+                      <li>
+                        <a href="{{module.admissions_menu.apply_now_field_group.link_field_1.url.href}}" class="btn-apply btn btn-primary btn-blue">{% inline_text field="admissions_menu.apply_now_field_group.link_text" value="{{ module.admissions_menu.apply_now_field_group.link_text }}" %}</a>
+                      </li>
+                    </ul>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {% inline_text field="nav_titles.nav_title_login" value="{{ module.nav_titles.nav_title_login }}" %}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown6">
+              <div class="navbar-menu-content container login-content">
+                <div class="row">
+                  <div class="col-md-6">
+                    {% inline_rich_text field="partners_login_menu.title_partners_login" value="{{ module.partners_login_menu.title_partners_login }}" %}
+                    <p>{{ module.partners_login_menu.text_1 }}</p>
+                    <a href="{{ module.partners_login_menu.button_partners_create_account.partners_login_url.href }}" {% if module.partners_login_menu.button_partners_create_account.partners_login_url.open_in_new_tab %}target="_blank"{% endif %} class="btn btn-outline-primary btn-black-outline">{% inline_text field="partners_login_menu.button_partners_create_account.button_text_partners_login" value="{{ module.partners_login_menu.button_partners_create_account.button_text_partners_login }}" %}</a>
+                    <p>{{ module.partners_login_menu.text_2 }}</p>
+                    <a href="{{ module.partners_login_menu.button_partners_login.partners_login_url.href }}" {% if module.partners_login_menu.button_partners_login.partners_login_url.open_in_new_tab %}target="_blank"{% endif %} class="btn btn-primary btn-blue">{% inline_text field="partners_login_menu.button_partners_login.button_text_partners_login" value="{{ module.partners_login_menu.button_partners_login.button_text_partners_login }}" %}</a>
+                    <div class="vertical-divider"></div>
+                  </div>
+                  <div class="col-md-6">
+                    {% inline_rich_text field="student_login_menu.title_student_login" value="{{ module.student_login_menu.title_student_login }}" %}
+                    <p>{% inline_text field="student_login_menu.text_1" value="{{ module.student_login_menu.text_1 }}" %}</p>
+                    <a href="{{ module.student_login_menu.button_student_login.student_login_url.href }}" {% if module.student_login_menu.button_student_login.student_login_url.open_in_new_tab %}target="_blank"{% endif %} class="btn btn-primary btn-blue">{% inline_text field="student_login_menu.button_student_login.button_text_student_login" value="{{ module.student_login_menu.button_student_login.button_text_student_login }}" %}</a>
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </li>
+
+      <li class="nav-item dropdown language-selector">
+
+            <a class="nav-link dropdown-toggle language-link" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              EN
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+              <div class="navbar-menu-content container">
+                <div class="row">
+                  <div class="col-md-12">
+                    {% inline_rich_text field="title_language" value="{{ module.title_language }}" %}
+                    <ul>
+                     
+                      <li class="lng-en"><a class="dropdown-item" href="/{{ content.translated_content['en'].slug  }}">English</a></li>
+                      <li class="lng-fr"><a class="dropdown-item" href="/{{ content.translated_content['fr'].slug  }}">French</a></li>
+                      <li class="lng-es"><a class="dropdown-item" href="/{{ content.translated_content['es'].slug  }}">Spanish</a></li>
+                      <li class="lng-pt-br"><a class="dropdown-item" href="/{{ content.translated_content['pt-br'].slug  }}">Portuguese</a></li>
+                      <li class="lng-ja"><a class="dropdown-item" href="/{{ content.translated_content['ja'].slug }}">Japanese</a></li>
+                      <li class="lng-ko"><a class="dropdown-item" href="/{{ content.translated_content['ko'].slug }}">Korean</a></li>
+                      <li class="lng-zh-tw"><a class="dropdown-item" href="/{{ content.translated_content['zh-tw'].slug }}">Chinese</a></li>
+                      <li class="lng-tr"><a class="dropdown-item" href="/{{ content.translated_content['tr'].slug }}">Turkish</a></li>
+                      <li class="lng-vi"><a class="dropdown-item" href="/{{ content.translated_content['vi'].slug }}">Vietnamese</a></li>
+                      <li class="lng-th"><a class="dropdown-item" href="/{{ content.translated_content['th'].slug }}">Thai</a></li>
+                      <li class="lng-ar"><a class="dropdown-item" href="/{{ content.translated_content['ar'].slug }}">Arabic</a></li>
+                      <li class="lng-it"><a class="dropdown-item" href="/{{ content.translated_content['it'].slug }}">Italian</a></li>
+                      
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </li>
+     
+          <li class="nav-item dropdown search">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown8" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-search"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown8">
+              <div class="navbar-menu-content container search-content">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-container">
+                      {% inline_rich_text field="search_menu.title_search" value="{{ module.search_menu.title_search }}" %}
+                      <form action="{% if content.language.languageTag != "en" %}/{{content.language.languageTag}}{% endif %}/greystone-college/canada/search-results" id="form1">
+                          <input type="hidden" name="type" value="SITE_PAGE">
+                          <input type="hidden" name="type" value="BLOG_POST">
+                          <input type="hidden" name="type" value="LISTING_PAGE">
+                          <input type="hidden" name="type" value="LANDING_PAGE">
+                          <input type="hidden" name="pathPrefix" value="{% if content.language.languageTag != "en" %}/{{content.language.languageTag}}{% endif %}/greystone-college/canada">
+                          
+                          {% if content.language.languageTag != "en" %}
+                              <input type="hidden" name="language" value="{{content.language.languageTag}}">
+                            {% else %}
+                              <input type="hidden" name="language" value="en">
+                          {% endif %}
+                          
+                        <div class="form-group">
+                          <input class="form-control form-control-lg notranslate" type="text" placeholder="{{ module.search_menu.text_search_placeholder }}" id="term" name="term">
+                          <div class="input-group-append btn-search">
+                            <button form="form1" type="submit" class="btn btn-primary btn-clear"><i class="fas fa-times"></i></button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        
+        <div class="header-cta-container">
+          {% if module.mobile_cta.cta_phone_group.show_link %}
+            <div class="phone-text text-center"><i class="fas fa-phone"></i>&nbsp;&nbsp;{{ module.mobile_cta.cta_phone_group.cta_text }}</div>
+		    	{% endif %}
+		    	<a href="{{ module.mobile_cta.cta_1_group.cta_url.href }}" class="btn btn-primary btn-orange">{{ module.mobile_cta.cta_1_group.cta_text }}</a>
+          {% if module.mobile_cta.cta_quote_group.show_link %}
+            <a href="#" data-toggle="modal" data-target="{{ module.mobile_cta.cta_quote_group.cta_url.href }}" class="btn btn-outline-primary btn-pathway-blue-outline">{{ module.mobile_cta.cta_quote_group.cta_text }}</a>
+		    	{% endif %}
+          <a href="{{ module.mobile_cta.cta_2_group.cta_url.href }}" class="btn btn-outline-primary btn-black-outline">{{ module.mobile_cta.cta_2_group.cta_text }}</a>
+		    </div>
+
+      </div>
+    </div>
+  </nav>
+</header>
+

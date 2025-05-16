@@ -1,0 +1,92 @@
+<section class="section-destination-nav section bg-white-canvas">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			{% inline_rich_text field="title" value="{{ module.title }}" %}
+			</div>
+		</div>
+		<div class="row row-2 div-target">
+   
+      {% if module.city.city.bg_city_1.src %}
+          <div class="col-md-3" onclick="{% if module.city.city.link_city_1.open_in_new_tab %} window.open('{{ module.city.city.link_city_1.url.href }}') {% else if %}location.href='{{ module.city.city.link_city_1.url.href }}'{% endif %};">
+            <div class="pic">
+
+              <img class="lazy" data-src="{{  module.city.city.bg_city_1.src }}" alt="{{  module.city.city.bg_city_1.alt}}" loading="lazy">
+
+              <div class="overlay"></div>
+            </div>
+            <div class="link-container">
+              <div>
+                <span>{{ module.city.city.title_city_1 }}</span>
+              </div>
+            </div>
+          </div>
+      {% endif %}
+      {% if module.city.city.bg_city_2.src %}
+          <div class="col-md-3" onclick="{% if module.city.city.link_city_2.open_in_new_tab %} window.open('{{ module.city.city.link_city_2.url.href }}') {% else if %}location.href='{{ module.city.city.link_city_2.url.href }}'{% endif %};">
+            <div class="pic">
+
+              <img class="lazy" data-src="{{  module.city.city.bg_city_2.src }}" alt="{{  module.city.city.bg_city_2.alt}}" loading="lazy">
+
+              <div class="overlay"></div>
+            </div>
+            <div class="link-container">
+              <div>
+                <span>{{ module.city.city.title_city_2 }}</span>
+              </div>
+            </div>
+          </div>
+      {% endif %}
+          
+       {% if module.city.city.bg_city_3.src %}
+          <div class="col-md-3" onclick="{% if module.city.city.link_city_3.open_in_new_tab %} window.open('{{ module.city.city.link_city_3.url.href }}') {% else if %}location.href='{{ module.city.city.link_city_3.url.href }}'{% endif %};">
+            <div class="pic">
+
+              <img class="lazy" data-src="{{  module.city.city.bg_city_3.src }}" alt="{{  module.city.city.bg_city_3.alt}}" loading="lazy">
+
+              <div class="overlay"></div>
+            </div>
+            <div class="link-container">
+              <div>
+                <span>{{ module.city.city.title_city_3 }}</span>
+              </div>
+            </div>
+          </div>
+      {% endif %}
+          
+      {% if module.city.city.bg_city_4.src %}
+        <div class="col-md-3" onclick="{% if module.city.city.link_city_4.open_in_new_tab %} window.open('{{ module.city.city.link_city_4.url.href }}') {% else if %}location.href='{{ module.city.city.link_city_4.url.href }}'{% endif %};">
+          <div class="pic">
+
+            <img class="lazy" data-src="{{  module.city.city.bg_city_4.src }}" alt="{{  module.city.city.bg_city_4.alt}}" loading="lazy">
+
+            <div class="overlay"></div>
+          </div>
+          <div class="link-container">
+            <div>
+              <span>{{ module.city.city.title_city_4 }}</span>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+      {% if module.city.city.bg_city_5.src %}
+        <div class="col-md-3" onclick="{% if module.city.city.link_city_5.open_in_new_tab %} window.open('{{ module.city.city.link_city_5.url.href }}') {% else if %}location.href='{{ module.city.city.link_city_5.url.href }}'{% endif %};">
+          <div class="pic">
+
+            <img class="lazy" data-src="{{  module.city.city.bg_city_5.src }}" alt="{{  module.city.city.bg_city_5.alt}}" loading="lazy">
+
+            <div class="overlay"></div>
+          </div>
+          <div class="link-container">
+            <div>
+              <span>{{ module.city.city.title_city_5 }}</span>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+          
+    </div>
+	
+  </div>
+				
+</section>

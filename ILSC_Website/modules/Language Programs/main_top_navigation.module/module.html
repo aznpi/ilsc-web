@@ -1,0 +1,919 @@
+<header class="top-nav fixed-top">
+  <nav id="landing-nav-bar" class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+
+      <a class="navbar-brand" href="/"><img src="{{ module.logo_image.src }}" alt="{{ module.logo_image.alt }}" {{ sizeAttrs }}></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="nav-bar-items collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto menu-hide">
+
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {% inline_text field="nav_titles.nav_title_destinations" value="{{ module.nav_titles.nav_title_destinations }}" %}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <div class="navbar-menu-content study-content container">
+                <div class="row">
+                  <div class="link-container col-md-4">
+                    <div class="link-image">
+                      <img src="{{ module.study_in_canada_menu.icon_canda_leaf.src }}" alt="{{ module.study_in_canada_menu.icon_canda_leaf.alt }}" >
+                    </div>
+                    <div>
+                      {% inline_rich_text field="study_in_canada_menu.title_study_canada" value="{{ module.study_in_canada_menu.title_study_canada }}" %}
+                      <ul>
+                        <li>
+                          {% set href = module.study_in_canada_menu.canada_links.link_page_canada.url.href %}
+
+                          <a href="{{ href }}" class="dropdown-item"
+                             {% if module.study_in_canada_menu.canada_links.link_page_canada.open_in_new_tab %}target="_blank"{% endif %}
+                             {% if module.study_in_canada_menu.canada_links.link_page_canada.no_follow %}rel="nofollow"{% endif %}
+                             >
+                            {% inline_text field="study_in_canada_menu.canada_links.link_title_canada" value="{{ module.study_in_canada_menu.canada_links.link_title_canada }}" %}
+                          </a>
+                        </li>
+                        
+                        {% if module.study_in_canada_menu.links_1.link_title %}
+                          <li>                
+                            {% set href = module.link_page.url.href %}
+                            
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="study_in_canada_menu.links_1.link_title" value="{{ module.study_in_canada_menu.links_1.link_title }}" %}
+                            </a>
+                            
+                          </li>
+                        {% endif %}
+                        
+                        {% if module.study_in_canada_menu.links_2.link_title %}
+                          <li>
+                            {% set href = module.study_in_canada_menu.links_2.link_page.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="study_in_canada_menu.links_2.link_title" value="{{ module.study_in_canada_menu.links_2.link_title }}" %}
+                            </a>
+
+                          </li>
+                        {% endif %}
+                        
+                        {% if module.study_in_canada_menu.links_3.link_title %}
+                          <li>
+                            {% set href = module.study_in_canada_menu.links_3.link_page.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item" >
+                              {% inline_text field="study_in_canada_menu.links_3.link_title" value="{{ module.study_in_canada_menu.links_3.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                         {% if module.study_in_canada_menu.links_4.link_title %}
+                          <li>
+                            {% set href = module.study_in_canada_menu.links_4.link_page.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item" >
+                              {% inline_text field="study_in_canada_menu.links_4.link_title" value="{{ module.study_in_canada_menu.links_4.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        
+                         {% if module.study_in_canada_menu.links_5.link_title %}
+                          <li>
+                            {% set href = module.study_in_canada_menu.links_5.link_page.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item" >
+                              {% inline_text field="study_in_canada_menu.links_5.link_title" value="{{ module.study_in_canada_menu.links_5.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        
+                        {% if module.study_in_canada_menu.links_6.link_title %}
+                          <li>
+                            {% set href = module.study_in_canada_menu.links_6.link_page.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item" >
+                              {% inline_text field="study_in_canada_menu.links_6.link_title" value="{{ module.study_in_canada_menu.links_6.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        
+                        {% if module.study_in_canada_menu.links_7.link_title %}
+                          <li>
+                            {% set href = module.study_in_canada_menu.links_7.link_page.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item" >
+                              {% inline_text field="study_in_canada_menu.links_7.link_title" value="{{ module.study_in_canada_menu.links_7.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        
+                        {% if module.study_in_canada_menu.links_8.link_title %}
+                          <li>
+                            {% set href = module.study_in_canada_menu.links_8.link_page.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item" >
+                              {% inline_text field="study_in_canada_menu.links_8.link_title" value="{{ module.study_in_canada_menu.links_8.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                      </ul>
+                      <div class="vertical-divider"></div>
+                    </div>
+                  </div>
+                  <div class="link-container col-md-4">
+                    <div class="link-image">
+                      <img src="{{ module.study_in_australia_menu.icon_australia.src }}" alt="{{ module.study_in_australia_menu.icon_australia.alt }}" >
+                    </div>
+                    <div>
+                      {% inline_rich_text field="study_in_australia_menu.title_study_australia" value="{{ module.study_in_australia_menu.title_study_australia }}" %}
+                      <ul>
+                        <li>
+                          {% set href = module.study_in_australia_menu.australia_links.link_page_australia.url.href %}
+
+                          <a href="{{ href }}" class="dropdown-item"
+                             {% if module.study_in_australia_menu.australia_links.link_page_australia.open_in_new_tab %}target="_blank"{% endif %}
+                             {% if module.study_in_australia_menu.australia_links.link_page_australia.no_follow %}rel="nofollow"{% endif %}
+                             >
+                            {% inline_text field="study_in_australia_menu.australia_links.link_title_australia" value="{{ module.study_in_australia_menu.australia_links.link_title_australia }}" %}
+                          </a>
+                        </li>
+                        {% if module.study_in_australia_menu.links_1.link_title %}
+                          <li>
+                            {% set href = module.study_in_australia_menu.links_1.link_page.url.href %}
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="study_in_australia_menu.links_1.link_title" value="{{ module.study_in_australia_menu.links_1.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        
+                        {% if module.study_in_australia_menu.links_2.link_title %}
+                          <li>
+                            {% set href = module.study_in_australia_menu.links_2.link_page.url.href %}
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="study_in_australia_menu.links_2.link_title" value="{{ module.study_in_australia_menu.links_2.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        
+                        {% if module.study_in_australia_menu.links_3.link_title %}
+                          <li>
+                            {% set href = module.study_in_australia_menu.links_3.link_page.url.href %}
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="study_in_australia_menu.links_3.link_title" value="{{ module.study_in_australia_menu.links_3.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        
+                        {% if module.study_in_australia_menu.links_4.link_title %}
+                          <li>
+                            {% set href = module.study_in_australia_menu.links_4.link_page.url.href %}
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="study_in_australia_menu.links_4.link_title" value="{{ module.study_in_australia_menu.links_4.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        
+                        {% if module.study_in_australia_menu.links_5.link_title %}
+                          <li>
+                            {% set href = module.study_in_australia_menu.links_5.link_page.url.href %}
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="study_in_australia_menu.links_5.link_title" value="{{ module.study_in_australia_menu.links_5.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        
+                        {% if module.study_in_australia_menu.links_6.link_title %}
+                          <li>
+                            {% set href = module.study_in_australia_menu.links_6.link_page.url.href %}
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="study_in_australia_menu.links_6.link_title" value="{{ module.study_in_australia_menu.links_6.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        
+                        {% if module.study_in_australia_menu.links_7.link_title %}
+                          <li>
+                            {% set href = module.study_in_australia_menu.links_7.link_page.url.href %}
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="study_in_australia_menu.links_7.link_title" value="{{ module.study_in_australia_menu.links_7.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        
+                        {% if module.study_in_australia_menu.links_8.link_title %}
+                          <li>
+                            {% set href = module.study_in_australia_menu.links_8.link_page.url.href %}
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="study_in_australia_menu.links_8.link_title" value="{{ module.study_in_australia_menu.links_8.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        
+                      </ul>
+                      <div class="vertical-divider"></div>
+                    </div>
+                  </div>
+                  <div class="link-container col-md-4">
+                    <div class="link-image">     
+                      <img src="{{ module.study_india_menu.icon_india.src }}" alt="{{ module.study_india_menu.icon_india.alt }}" >
+                    </div>
+                    <div>
+                      {% inline_rich_text field="study_india_menu.title_study_india" value="{{ module.study_india_menu.title_study_india }}" %}
+                      <ul>
+                        <li>
+                          {% set href = module.study_india_menu.india_links.link_page_india.url.href %}
+                          <a href="{{ href }}" class="dropdown-item"
+                             {% if module.study_india_menu.india_links.link_page_india.open_in_new_tab %}target="_blank"{% endif %}
+                             {% if module.study_india_menu.india_links.link_page_india.no_follow %}rel="nofollow"{% endif %}
+                             >
+                            {% inline_text field="study_india_menu.india_links.link_title_india" value="{{ module.study_india_menu.india_links.link_title_india }}" %}
+                          </a>
+                        </li>
+                        {% if module.study_india_menu.links_1.link_title %}
+                          <li>
+                            {% set href = module.study_india_menu.links_1.link_page.url.href %}
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="module.study_india_menu.links_1.link_title" value="{{ module.study_india_menu.links_1.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        
+                        {% if module.study_india_menu.links_2.link_title %}
+                          <li>
+                            {% set href = module.study_india_menu.links_2.link_page.url.href %}
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="module.study_india_menu.links_2.link_title" value="{{ module.study_india_menu.links_2.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        
+                        {% if module.study_india_menu.links_3.link_title %}
+                          <li>
+                            {% set href = module.study_india_menu.links_3.link_page.url.href %}
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="module.study_india_menu.links_3.link_title" value="{{ module.study_india_menu.links_3.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        
+                         {% if module.study_india_menu.links_4.link_title %}
+                          <li>
+                            {% set href = module.study_india_menu.links_4.link_page.url.href %}
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="module.study_india_menu.links_4.link_title" value="{{ module.study_india_menu.links_4.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        
+                         {% if module.study_india_menu.links_5.link_title %}
+                          <li>
+                            {% set href = module.study_india_menu.links_5.link_page.url.href %}
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="module.study_india_menu.links_5.link_title" value="{{ module.study_india_menu.links_5.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+
+
+                      </ul>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             {% inline_text field="nav_titles.nav_title_language_programs" value="{{ module.nav_titles.nav_title_language_programs }}" %}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+              <div class="navbar-menu-content container">
+                <div class="row">
+                  <div class="link-container col">
+                    
+                    <div>
+                      {% inline_rich_text field="language_programs_menu.title_column_1" value="{{ module.language_programs_menu.title_column_1 }}" %}
+                      <ul>
+                        {% if module.language_programs_menu.link_1_group.link_title %}
+                          <li>
+                            {% set href = module.language_programs_menu.link_1_group.link_url.url.href %}
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="language_programs_menu.link_1_group.link_title" value="{{ module.language_programs_menu.link_1_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                         {% if module.language_programs_menu.link_2_group.link_title %}
+                          <li>
+                            {% set href = module.language_programs_menu.link_2_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="language_programs_menu.link_2_group.link_title" value="{{ module.language_programs_menu.link_2_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        {% if module.language_programs_menu.link_3_group.link_title %}
+                          <li>
+                            {% set href = module.language_programs_menu.link_3_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="language_programs_menu.link_3_group.link_title" value="{{ module.language_programs_menu.link_3_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        {% if module.language_programs_menu.link_4_group.link_title %}
+                          <li>
+                            {% set href = module.language_programs_menu.link_4_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="language_programs_menu.link_4_group.link_title" value="{{ module.language_programs_menu.link_4_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        {% if module.language_programs_menu.link_5_group.link_title %}
+                          <li>
+                            {% set href = module.language_programs_menu.link_5_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="language_programs_menu.link_5_group.link_title" value="{{ module.language_programs_menu.link_5_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        
+                        {% if module.language_programs_menu.link_6_group.link_title %}
+                          <li>
+                            {% set href = module.language_programs_menu.link_6_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="language_programs_menu.link_6_group.link_title" value="{{ module.language_programs_menu.link_6_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        
+                        {% if module.language_programs_menu.link_7_group.link_title %}
+                          <li>
+                            {% set href = module.language_programs_menu.link_7_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="language_programs_menu.link_7_group.link_title" value="{{ module.language_programs_menu.link_7_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        
+                        {% if module.language_programs_menu.link_8_group.link_title %}
+                          <li>
+                            {% set href = module.language_programs_menu.link_8_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="language_programs_menu.link_8_group.link_title" value="{{ module.language_programs_menu.link_8_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                      </ul>
+                    </div>
+                    <div class="vertical-divider"></div>
+                  </div>
+                  <div class="link-container col">
+                    
+                    <div>
+                      {% inline_rich_text field="academic_test_preparation_menu.title_column_1" value="{{ module.academic_test_preparation_menu.title_column_1 }}" %}
+                      <ul>
+                        {% if module.academic_test_preparation_menu.link_1_group.link_title %}
+                          <li>
+                            {% set href = module.academic_test_preparation_menu.link_1_group.link_url.url.href %}
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="academic_test_preparation_menu.link_1_group.link_title" value="{{ module.academic_test_preparation_menu.link_1_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                         {% if module.academic_test_preparation_menu.link_2_group.link_title %}
+                          <li>
+                            {% set href = module.academic_test_preparation_menu.link_2_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="academic_test_preparation_menu.link_2_group.link_title" value="{{ module.academic_test_preparation_menu.link_2_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        {% if module.academic_test_preparation_menu.link_3_group.link_title %}
+                          <li>
+                            {% set href = module.academic_test_preparation_menu.link_3_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="academic_test_preparation_menu.link_3_group.link_title" value="{{ module.academic_test_preparation_menu.link_3_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        {% if module.academic_test_preparation_menu.link_4_group.link_title %}
+                          <li>
+                            {% set href = module.academic_test_preparation_menu.link_4_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="academic_test_preparation_menu.link_4_group.link_title" value="{{ module.academic_test_preparation_menu.link_4_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        {% if module.academic_test_preparation_menu.link_5_group.link_title %}
+                          <li>
+                            {% set href = module.academic_test_preparation_menu.link_5_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="academic_test_preparation_menu.link_5_group.link_title" value="{{ module.academic_test_preparation_menu.link_5_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        
+                        {% if module.academic_test_preparation_menu.link_6_group.link_title %}
+                          <li>
+                            {% set href = module.academic_test_preparation_menu.link_6_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="academic_test_preparation_menu.link_6_group.link_title" value="{{ module.academic_test_preparation_menu.link_6_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        
+                        {% if module.academic_test_preparation_menu.link_7_group.link_title %}
+                          <li>
+                            {% set href = module.academic_test_preparation_menu.link_7_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="academic_test_preparation_menu.link_7_group.link_title" value="{{ module.academic_test_preparation_menu.link_7_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        
+                        {% if module.academic_test_preparation_menu.link_8_group.link_title %}
+                          <li>
+                            {% set href = module.academic_test_preparation_menu.link_8_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="academic_test_preparation_menu.link_8_group.link_title" value="{{ module.academic_test_preparation_menu.link_8_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                      </ul>
+                    </div>
+                    <div class="vertical-divider"></div>
+                  </div>
+                  <div class="link-container col">
+                    
+                    <div>
+                      {% inline_rich_text field="greystone_college_and_university_pathway_menu.title_column_1" value="{{ module.greystone_college_and_university_pathway_menu.title_column_1 }}" %}
+                      <ul>
+                        {% if module.greystone_college_and_university_pathway_menu.link_1_group.link_title %}
+                          <li>
+                            {% set href = module.greystone_college_and_university_pathway_menu.link_1_group.link_url.url.href %}
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="greystone_college_and_university_pathway_menu.link_1_group.link_title" value="{{ module.greystone_college_and_university_pathway_menu.link_1_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                         {% if module.greystone_college_and_university_pathway_menu.link_2_group.link_title %}
+                          <li>
+                            {% set href = module.greystone_college_and_university_pathway_menu.link_2_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="greystone_college_and_university_pathway_menu.link_2_group.link_title" value="{{ module.greystone_college_and_university_pathway_menu.link_2_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        {% if module.greystone_college_and_university_pathway_menu.link_3_group.link_title %}
+                          <li>
+                            {% set href = module.greystone_college_and_university_pathway_menu.link_3_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="greystone_college_and_university_pathway_menu.link_3_group.link_title" value="{{ module.greystone_college_and_university_pathway_menu.link_3_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        {% if module.greystone_college_and_university_pathway_menu.link_4_group.link_title %}
+                          <li>
+                            {% set href = module.greystone_college_and_university_pathway_menu.link_4_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="greystone_college_and_university_pathway_menu.link_4_group.link_title" value="{{ module.greystone_college_and_university_pathway_menu.link_4_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        {% if module.greystone_college_and_university_pathway_menu.link_5_group.link_title %}
+                          <li>
+                            {% set href = module.greystone_college_and_university_pathway_menu.link_5_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="greystone_college_and_university_pathway_menu.link_5_group.link_title" value="{{ module.greystone_college_and_university_pathway_menu.link_5_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        
+                        {% if module.greystone_college_and_university_pathway_menu.link_6_group.link_title %}
+                          <li>
+                            {% set href = module.greystone_college_and_university_pathway_menu.link_6_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="greystone_college_and_university_pathway_menu.link_6_group.link_title" value="{{ module.greystone_college_and_university_pathway_menu.link_6_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        
+                        {% if module.greystone_college_and_university_pathway_menu.link_7_group.link_title %}
+                          <li>
+                            {% set href = module.greystone_college_and_university_pathway_menu.link_7_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="greystone_college_and_university_pathway_menu.link_7_group.link_title" value="{{ module.greystone_college_and_university_pathway_menu.link_7_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        
+                        {% if module.greystone_college_and_university_pathway_menu.link_8_group.link_title %}
+                          <li>
+                            {% set href = module.greystone_college_and_university_pathway_menu.link_8_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="greystone_college_and_university_pathway_menu.link_8_group.link_title" value="{{ module.greystone_college_and_university_pathway_menu.link_8_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                      </ul>
+                    </div>
+                    <div class="vertical-divider"></div>
+                  </div>
+                  <div class="link-container col">
+                    
+                    <div>
+                      {% inline_rich_text field="adult_and_junior_programs_menu.title_column_1" value="{{ module.adult_and_junior_programs_menu.title_column_1 }}" %}
+                      <ul>
+                        {% if module.adult_and_junior_programs_menu.link_1_group.link_title %}
+                          <li>
+                            {% set href = module.adult_and_junior_programs_menu.link_1_group.link_url.url.href %}
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="adult_and_junior_programs_menu.link_1_group.link_title" value="{{ module.adult_and_junior_programs_menu.link_1_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                         {% if module.adult_and_junior_programs_menu.link_2_group.link_title %}
+                          <li>
+                            {% set href = module.adult_and_junior_programs_menu.link_2_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="adult_and_junior_programs_menu.link_2_group.link_title" value="{{ module.adult_and_junior_programs_menu.link_2_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        {% if module.adult_and_junior_programs_menu.link_3_group.link_title %}
+                          <li>
+                            {% set href = module.adult_and_junior_programs_menu.link_3_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="adult_and_junior_programs_menu.link_3_group.link_title" value="{{ module.adult_and_junior_programs_menu.link_3_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        {% if module.adult_and_junior_programs_menu.link_4_group.link_title %}
+                          <li>
+                            {% set href = module.adult_and_junior_programs_menu.link_4_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="adult_and_junior_programs_menu.link_4_group.link_title" value="{{ module.adult_and_junior_programs_menu.link_4_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        {% if module.adult_and_junior_programs_menu.link_5_group.link_title %}
+                          <li>
+                            {% set href = module.adult_and_junior_programs_menu.link_5_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="adult_and_junior_programs_menu.link_5_group.link_title" value="{{ module.adult_and_junior_programs_menu.link_5_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        {% if module.adult_and_junior_programs_menu.link_6_group.link_title %}
+                          <li>
+                            {% set href = module.adult_and_junior_programs_menu.link_6_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="adult_and_junior_programs_menu.link_6_group.link_title" value="{{ module.adult_and_junior_programs_menu.link_6_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        {% if module.adult_and_junior_programs_menu.link_7_group.link_title %}
+                          <li>
+                            {% set href = module.adult_and_junior_programs_menu.link_7_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="adult_and_junior_programs_menu.link_7_group.link_title" value="{{ module.adult_and_junior_programs_menu.link_7_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        {% if module.adult_and_junior_programs_menu.link_8_group.link_title %}
+                          <li>
+                            {% set href = module.adult_and_junior_programs_menu.link_8_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="adult_and_junior_programs_menu.link_8_group.link_title" value="{{ module.adult_and_junior_programs_menu.link_8_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                      </ul>
+                    </div>
+                    <div class="vertical-divider"></div>
+                  </div>
+                  <div class="link-container col">
+                    
+                    <div>
+                      {% inline_rich_text field="services_menu.title_column_1" value="{{ module.services_menu.title_column_1 }}" %}
+                      <ul>
+                        {% if module.services_menu.link_1_group.link_title %}
+                          <li>
+                            {% set href = module.services_menu.link_1_group.link_url.url.href %}
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="services_menu.link_1_group.link_title" value="{{ module.services_menu.link_1_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                         {% if module.services_menu.link_2_group.link_title %}
+                          <li>
+                            {% set href = module.services_menu.link_2_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="services_menu.link_2_group.link_title" value="{{ module.services_menu.link_2_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        {% if module.services_menu.link_3_group.link_title %}
+                          <li>
+                            {% set href = module.services_menu.link_3_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="services_menu.link_3_group.link_title" value="{{ module.services_menu.link_3_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        {% if module.services_menu.link_4_group.link_title %}
+                          <li>
+                            {% set href = module.services_menu.link_4_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="services_menu.link_4_group.link_title" value="{{ module.services_menu.link_4_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        {% if module.services_menu.link_5_group.link_title %}
+                          <li>
+                            {% set href = module.services_menu.link_5_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="services_menu.link_5_group.link_title" value="{{ module.services_menu.link_5_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        {% if module.services_menu.link_6_group.link_title %}
+                          <li>
+                            {% set href = module.services_menu.link_6_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="services_menu.link_6_group.link_title" value="{{ module.services_menu.link_6_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        {% if module.services_menu.link_7_group.link_title %}
+                          <li>
+                            {% set href = module.services_menu.link_7_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="services_menu.link_7_group.link_title" value="{{ module.services_menu.link_7_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                        {% if module.services_menu.link_8_group.link_title %}
+                          <li>
+                            {% set href = module.services_menu.link_8_group.link_url.url.href %}
+
+                            <a href="{{ href }}" class="dropdown-item">
+                              {% inline_text field="services_menu.link_8_group.link_title" value="{{ module.services_menu.link_8_group.link_title }}" %}
+                            </a>
+                          </li>
+                        {% endif %}
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {% inline_text field="nav_titles.nav_title_accommadations" value="{{ module.nav_titles.nav_title_accommadations }}" %}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+              <div class="navbar-menu-content container accom-content">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="link-image link-image-lg col">                             						
+                        <img src="{{ module.homestay_menu.image_homestay.src }}" alt="{{ module.homestay_menu.image_homestay.alt }}" >                           
+                      </div>
+                      <div class="col">
+                        {% inline_rich_text field="homestay_menu.title_homestay" value="{{ module.homestay_menu.title_homestay }}" %}
+                        <ul>
+                          
+                          {% if module.homestay_menu.homestay_links_1.link_title %}
+                            <li>
+                              {% set href = module.homestay_menu.homestay_links_1.link_page.url.href %}
+
+                              <a href="{{ href }}" class="dropdown-item">
+                                {% inline_text field="homestay_menu.homestay_links_1.link_title" value="{{ module.homestay_menu.homestay_links_1.link_title }}" %}
+                              </a>
+                            </li>
+                          {% endif %}
+                          
+                          {% if module.homestay_menu.homestay_links_2.link_title %}
+                            <li>
+                              {% set href = module.homestay_menu.homestay_links_2.link_page.url.href %}
+
+                              <a href="{{ href }}" class="dropdown-item">
+                                {% inline_text field="homestay_menu.homestay_links_2.link_title" value="{{ module.homestay_menu.homestay_links_2.link_title }}" %}
+                              </a>
+                            </li>
+                          {% endif %}
+                          
+                          {% if module.homestay_menu.homestay_links_3.link_title %}
+                            <li>
+                              {% set href = module.homestay_menu.homestay_links_3.link_page.url.href %}
+
+                              <a href="{{ href }}" class="dropdown-item">
+                                {% inline_text field="homestay_menu.homestay_links_3.link_title" value="{{ module.homestay_menu.homestay_links_3.link_title }}" %}
+                              </a>
+                            </li>
+                          {% endif %}
+                          
+                          {% if module.homestay_menu.homestay_links_4.link_title %}
+                            <li>
+                              {% set href = module.homestay_menu.homestay_links_4.link_page.url.href %}
+
+                              <a href="{{ href }}" class="dropdown-item">
+                                {% inline_text field="homestay_menu.homestay_links_4.link_title" value="{{ module.homestay_menu.homestay_links_4.link_title }}" %}
+                              </a>
+                            </li>
+                          {% endif %}
+
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="button-row row">
+                      <div class="col">
+                        {% inline_rich_text field="homestay_menu.message_homestay" value="{{ module.homestay_menu.message_homestay }}" %}
+                      </div>
+                      <div class="col">
+                        <a href="{{ module.homestay_menu.button_homestay.button_url.url.href }}" class="btn btn-primary btn-orange" >{% inline_text field="homestay_menu.button_homestay.button_text_homestay" value="{{ module.homestay_menu.button_homestay.button_text_homestay }}" %}</a>
+                      </div>
+                    </div>
+                    <div class="vertical-divider"></div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="link-image link-image-lg col">
+                        <img src="{{ module.residences_menu.image_residence.src }}" alt="{{ module.residences_menu.image_residence.alt }}" >
+                      </div>
+                      <div class="col">
+                        {% inline_rich_text field="residences_menu.title_residences" value="{{ module.residences_menu.title_residences }}" %}
+                        <ul>
+                          
+                          {% if module.residences_menu.residences_links_1.link_title %}
+                            <li>
+                              {% set href = module.residences_menu.residences_links_1.link_page.url.href %}                             
+                              <a href="{{ href }}" class="dropdown-item">
+                                {% inline_text field="residences_menu.residences_links_1.link_title" value="{{ module.residences_menu.residences_links_1.link_title }}" %}
+                              </a>
+                            </li>
+                          {% endif %}
+                          
+                          {% if module.residences_menu.residences_links_2.link_title %}
+                            <li>
+                              {% set href = module.residences_menu.residences_links_2.link_page.url.href %}                             
+                              <a href="{{ href }}" class="dropdown-item">
+                                {% inline_text field="residences_menu.residences_links_2.link_title" value="{{ module.residences_menu.residences_links_2.link_title }}" %}
+                              </a>
+                            </li>
+                          {% endif %}
+                          
+                          {% if module.residences_menu.residences_links_3.link_title %}
+                            <li>
+                              {% set href = module.residences_menu.residences_links_3.link_page.url.href %}                             
+                              <a href="{{ href }}" class="dropdown-item">
+                                {% inline_text field="residences_menu.residences_links_3.link_title" value="{{ module.residences_menu.residences_links_3.link_title }}" %}
+                              </a>
+                            </li>
+                          {% endif %}
+                          
+                          {% if module.residences_menu.residences_links_4.link_title %}
+                            <li>
+                              {% set href = module.residences_menu.residences_links_4.link_page.url.href %}                             
+                              <a href="{{ href }}" class="dropdown-item">
+                                {% inline_text field="residences_menu.residences_links_4.link_title" value="{{ module.residences_menu.residences_links_4.link_title }}" %}
+                              </a>
+                            </li>
+                          {% endif %}
+
+                        </ul>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {% inline_text field="nav_titles.nav_title_login" value="{{ module.nav_titles.nav_title_login }}" %}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+              <div class="navbar-menu-content container login-content">
+                <div class="row">
+                  <div class="col-md-6">
+                    {% inline_rich_text field="partners_login_menu.title_partners_login" value="{{ module.partners_login_menu.title_partners_login }}" %}
+                    <p>{{ module.partners_login_menu.text_1 }}</p>
+                    <a href="{{ module.partners_login_menu.button_partners_create_account.partners_login_url.url.href }}" class="btn btn-outline-primary btn-black-outline">{% inline_text field="partners_login_menu.button_partners_create_account.button_text_partners_login" value="{{ module.partners_login_menu.button_partners_create_account.button_text_partners_login }}" %}</a>
+                    <p>{{ module.partners_login_menu.text_2 }}</p>
+                    <a href="{{ module.partners_login_menu.button_partners_login.partners_login_url.href }}" class="btn btn-primary btn-orange">{% inline_text field="partners_login_menu.button_partners_login.button_text_partners_login" value="{{ module.partners_login_menu.button_partners_login.button_text_partners_login }}" %}</a>
+                    <div class="vertical-divider"></div>
+                  </div>
+                  <div class="col-md-3">
+                    {% inline_rich_text field="student_login_menu.title_student_login" value="{{ module.student_login_menu.title_student_login }}" %}
+                    <p>{% inline_text field="student_login_menu.text_1" value="{{ module.student_login_menu.text_1 }}" %}</p>
+                    <a href="{{ module.student_login_menu.button_student_login.student_login_url.url.href }}" class="btn btn-primary btn-orange">{% inline_text field="student_login_menu.button_student_login.button_text_student_login" value="{{ module.student_login_menu.button_student_login.button_text_student_login }}" %}</a>
+                    <div class="vertical-divider"></div>
+                  </div>
+                  <div class="col-md-3">
+                    {% inline_rich_text field="alumni_login_menu.title_alumni_login" value="{{ module.alumni_login_menu.title_alumni_login }}" %}
+                    <p>{% inline_text field="alumni_login_menu.text_1" value="{{ module.alumni_login_menu.text_1 }}" %}</p>
+                    <a href="{{ module.alumni_login_menu.button_alumni_login.alumni_login_url.url.href }}" class="btn btn-outline-primary btn-black-outline">{% inline_text field="alumni_login_menu.button_alumni_login.button_text_alumni_login" value="{{ module.alumni_login_menu.button_alumni_login.button_text_alumni_login }}" %}</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="nav-item dropdown language-selector">
+
+            <a class="nav-link dropdown-toggle language-link" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              EN
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+              <div class="navbar-menu-content container">
+                <div class="row">
+                  <div class="col-md-12">
+                    {% inline_rich_text field="title_language" value="{{ module.title_language }}" %}
+                    <ul>
+                      <li class="lng-en"><a class="dropdown-item" href="/{{ content.translated_content['en'].slug || 'en' }}">English</a></li>
+                      <li class="lng-es"><a class="dropdown-item" href="/{{ content.translated_content['es'].slug || 'es' }}">Spanish</a></li>
+                      <li class="lng-pt"><a class="dropdown-item" href="/{{ content.translated_content['pt'].slug || 'pt' }}">Portugese</a></li>
+                      <li class="lng-ru"><a class="dropdown-item" href="/{{ content.translated_content['ru'].slug || 'ru' }}">Russian</a></li>
+                      <li class="lng-zh"><a class="dropdown-item" href="/{{ content.translated_content['zh'].slug || 'zh' }}">Chinese</a></li>
+                      <li class="lng-ko"><a class="dropdown-item" href="/{{ content.translated_content['ko'].slug || 'ko' }}">Korean</a></li>
+                      <li class="lng-ja"><a class="dropdown-item" href="/{{ content.translated_content['es'].slug || 'ja' }}">Japanese</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </li>
+          <li class="nav-item dropdown search">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-search"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+              <div class="navbar-menu-content container search-content">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-container">
+                      {% inline_rich_text field="search_menu.title_search" value="{{ module.search_menu.title_search }}" %}
+                      <form action="#">
+                        <div class="form-group">
+                          <input class="form-control form-control-lg" type="text" placeholder="{{ module.search_menu.text_search_placeholder }}">
+                          <div class="input-group-append btn-search">
+                            <button type="submit" class="btn btn-primary btn-clear"><i class="fas fa-times"></i></button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+</header>
+

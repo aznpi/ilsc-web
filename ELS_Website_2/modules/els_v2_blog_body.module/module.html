@@ -1,0 +1,67 @@
+{% macro render_read_time(body) %}
+  {% set str = body|lower %}
+  {% set img_count = str|split('<img')|length %}
+  {% set img_minutes = ((img_count * 12) / 60)|round(0, 'ceil') %}
+  {% set read_time = (str|striptags|wordcount / 275)|round(0, 'ceil') + img_minutes %}
+  {{ read_time }}
+{% endmacro %}
+
+<section class="section-blog-body" style="padding-top:0;">
+  <div class="container">
+    <div class="row" style="margin-bottom:50px;">
+      <div class="col-md-12 col-right">
+        {% for tag in content.tag_list %} 
+          {% if loop.first %}
+            <div class="tag-container icon-{{tag.slug}}">
+              <div class="tag">{{tag.name}}</div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+         <div class="time-container">
+           <ul>
+             <li class="date">
+               {{ content.publish_date|datetimeformat('%b %e, %Y') }}<br>
+               {#{% if content.blog_post_author %}
+                posted by: <a class="author-link" href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}">{{ content.blog_post_author.display_name }}</a>
+               {% endif %}#}
+             </li>
+             <li class="time">{{render_read_time(content.post_body)}} MIN READ</li>
+           </ul>
+        </div>
+        <div class="title">
+          <h1>
+            {{ content.name }}
+          </h1>
+        </div>
+      </div>
+      <div class="col-md-4 col-right">
+        <div class="share-container">
+          <span>SHARE ARTICLE:</span>
+          <div class="social-icon">
+            {% widget_block social_sharing "my_social_sharing" label='Social Sharing', use_page_url=True, overrideable=True  %}
+              
+              
+              {% widget_attribute "facebook" is_json=True %}
+                  {"custom_link_format": "", "enabled": true, "network": "facebook", "img_src": "https://5020112.fs1.hubspotusercontent-na1.net/hubfs/5020112/ELS/Website%20v2/template-resources/images/icon/icon_facebook.png"}
+              {% end_widget_attribute %}
+              {% widget_attribute "linkedin" is_json=True %}
+                  {"custom_link_format": "", "enabled": true, "network": "linkedin", "img_src": "https://5020112.fs1.hubspotusercontent-na1.net/hubfs/5020112/ELS/Website%20v2/template-resources/images/icon/icon_linkedin.png"}
+              {% end_widget_attribute %}
+              
+              
+          {% end_widget_block %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-body">
+      <div class="col-md-12">
+         {{ content.post_body }}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,36 @@
+{% set teamVar = 0 %} 
+<section class="section section-team bg-white-canvas no-pad">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 center">
+        {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+      </div>
+    </div>   
+
+    
+    
+    <div class="row team-tab">
+          {% for item2 in module.team_member %}
+            
+            <div class="col-md-3 center member-container">
+              <div class="image-container">
+                <img src="{{ item2.headshot_image.src }}" alt="{{ item2.headshot_image.alt }}" class="headshot"/>
+              </div>
+              <div class="description-container">
+                <h5>
+                  {{ item2.member_full_name }}
+                </h5>
+                <p>
+                  {{ item2.member_position }}
+                </p>
+              </div>
+            </div>
+            
+          {% endfor %}
+      
+    </div>
+    
+
+    
+  </div>
+</section>

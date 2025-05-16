@@ -1,0 +1,125 @@
+{% set queryparam = "" %}
+{% set queryparam = queryparam ~ "&program_area_codes__in=" +module.program_area_code|urlencode %}
+{% set queryparam = queryparam ~ "&enable__eq=true"  %}
+{% set schedules = hubdb_table_rows(17433398,queryparam) %}
+{% set scheduleArray = [] %}
+{% set campusArray = [] %}
+
+{% for schedItem in schedules %}
+
+  {% set scheduleInfo1 = schedItem.schedule_information ? schedItem.schedule_information : '' %}
+  {% set scheduleInfo2 = schedItem.schedule_information_2 ? schedItem.schedule_information_2 : '' %}
+  {% set scheduleInfo3 = schedItem.schedule_information_2 ? schedItem.schedule_information_3 : '' %}
+  {% set scheduleInfo4 = schedItem.schedule_information_2 ? schedItem.schedule_information_4 : '' %}
+  {% set subDescription = schedItem.sub_description ? schedItem.sub_description : '' %}
+  {% set mainDescription = schedItem.main_description ? schedItem.main_description : '' %}
+
+
+  {% do scheduleArray.append({ schedule_name: schedItem.schedule_name,schedule_label: schedItem.schedule_label,campus: schedItem.campus["name"], schedule_information_1: scheduleInfo1,schedule_information_2: scheduleInfo2, schedule_information_3: scheduleInfo3,schedule_information_4: scheduleInfo4,sub_description: subDescription,main_description: mainDescription })%}
+
+{% endfor %}
+
+{% for group in scheduleArray|groupby('campus') %}
+  {% do campusArray.append(group.grouper) %}
+{% endfor %}
+
+<section class="section section-schedule price-list-nav {% if module.background_color.color == '#FFFFFF' %}bg-white-canvas{% endif %} price-list-grid" id="content" style="background-color:rgba({{module.background_color.color|convert_rgb }}, {{module.background_color.opacity/100 }})">
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}      
+      </div> 
+    </div>
+    
+    <div class="row">
+      <div class="col-md-12">
+        <div class="campus-target-row">
+          <h5>
+            Select Campus:
+          </h5>
+         {% for campus in campusArray %}
+          {% set pipe = campusArray|length > 1 && !loop.last ? '&nbsp;<span>|</span>' : '' %}
+          <span class="campus-target {% if loop.first %}active{% endif %}" data-target="{{loop.index0}}">{{campus}}</span>{{pipe}}
+         {% endfor %}
+        </div>
+      </div>
+    </div>
+    
+    <div class="row slick-row-campus">
+      <div class="col-md-12 slider-wrapper">
+        <div class="box-slider">
+          {% for group in scheduleArray|groupby('campus') %}
+            <div>
+              <div class="schedule-box">
+                <div class="row">
+                  {% for content in group.list %}
+
+                  <div class="col-md-6">
+                    <div class="program-box-container">
+                      <div class="title center">
+                        <h3>
+                          {{content.schedule_label}}
+                        </h3>
+                      </div>
+                      <div class="content-container">
+
+                        <div class="description-container">
+
+                          <div class="description time-block">
+                              {% if content.schedule_information_1 %}
+                                <div class="center item-block">
+                                  {{content.schedule_information_1}}
+                                </div>
+                              {% endif %}
+                              {% if content.schedule_information_2 %}
+                                <div class="center item-block">
+                                  {{content.schedule_information_2}}
+                                </div>
+                              {% endif %}
+                              {% if content.schedule_information_3 %}
+                                <div class="center item-block">
+                                  {{content.schedule_information_3}}
+                                </div>
+                              {% endif %}
+                              {% if content.schedule_information_4 %}
+                                <div class="center item-block">
+                                  {{content.schedule_information_4}}
+                                </div>
+                              {% endif %}
+                          </div>
+                          {% if content.sub_description %}
+                            <div class="sub-description center">
+                              {{content.sub_description}}
+                            </div>
+                          {% endif %}
+                          {% if content.main_description %}
+                          <div class="description main-description">
+                            {{content.main_description}}
+                          </div>
+                          {% endif %}
+                        </div>
+
+
+                      </div>
+
+                    </div>
+                  </div>              
+
+                  {% endfor %}
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="footnote">
+                    {% inline_rich_text field="footnote_rich_text" value="{{ module.footnote_rich_text }}" %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>    
+  </div>
+</section>

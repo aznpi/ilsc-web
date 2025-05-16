@@ -1,0 +1,28 @@
+<section class="section-normal section-4-column-boxes section-destination {{ module.margin_choice }} {{ module.box_color_overlay_replacement_choice }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+        <div class="description">
+          {% inline_rich_text field="description_rich_text" value="{{ module.description_rich_text }}" %}
+        </div>
+      </div>
+    </div>
+    <div class="row images-box-container">
+  
+      {% for item in module.box_field_group %}
+        {% set href = item.link_field.url.href %}
+        <div class="col-md-3" onclick="location.href='{{href}}';">
+          <div class="box-container" style="background-image: url('{{ item.image_field.src }}');background-size:{{ module.bg_size_choice }};{% if module.bg_size_choice == 'contain' %}background-position:center 30px;{% endif%}">
+            <div class="bottom-container">
+              <div class="title-container">
+                {% inline_rich_text field="title_rich_text" value="{{ item.title_rich_text }}" %}
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+      
+    </div>
+  </div>
+</section>

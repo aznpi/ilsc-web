@@ -1,0 +1,3487 @@
+{
+  "alumni_login_menu.button_alumni_login.alumni_login_url.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "alumni_login_menu.button_alumni_login.alumni_login_url.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "alumni_login_menu.button_alumni_login.alumni_login_url.label" : {
+    "message" : "Alumni Login URL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "alumni_login_menu.button_alumni_login.button_text_alumni_login.default" : {
+    "message" : "Alumni Login",
+    "description" : null,
+    "placeholders" : null
+  },
+  "alumni_login_menu.button_alumni_login.button_text_alumni_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "alumni_login_menu.button_alumni_login.button_text_alumni_login.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "alumni_login_menu.button_alumni_login.button_text_alumni_login.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "alumni_login_menu.button_alumni_login.button_text_alumni_login.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "alumni_login_menu.button_alumni_login.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "alumni_login_menu.button_alumni_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "alumni_login_menu.button_alumni_login.label" : {
+    "message" : "Button Student Login copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "alumni_login_menu.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "alumni_login_menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "alumni_login_menu.label" : {
+    "message" : "Student Login Menu copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "alumni_login_menu.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "alumni_login_menu.text_1.default" : {
+    "message" : "Have an account? Sign in now.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "alumni_login_menu.text_1.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "alumni_login_menu.text_1.label" : {
+    "message" : "text 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "alumni_login_menu.text_1.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "alumni_login_menu.text_1.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "alumni_login_menu.title_alumni_login.default" : {
+    "message" : "<h4>ALUMNI LOGIN</h4>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "alumni_login_menu.title_alumni_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "alumni_login_menu.title_alumni_login.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.button_homestay.button_text_homestay.default" : {
+    "message" : "Become a Homestay",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.button_homestay.button_text_homestay.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.button_homestay.button_text_homestay.label" : {
+    "message" : "Button Text Homestay",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.button_homestay.button_text_homestay.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.button_homestay.button_text_homestay.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.button_homestay.button_url.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.button_homestay.button_url.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.button_homestay.button_url.label" : {
+    "message" : "Button URL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.button_homestay.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.button_homestay.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.button_homestay.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_australia_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_australia_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_australia_links.label" : {
+    "message" : "HomeStay Canada Links copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_australia_links.link_page_homestay_australia.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_australia_links.link_page_homestay_australia.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_australia_links.link_page_homestay_australia.label" : {
+    "message" : "Link Page Homestay Australia",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_australia_links.link_title_homestay_australia.default" : {
+    "message" : "Homestay Australia",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_australia_links.link_title_homestay_australia.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_australia_links.link_title_homestay_australia.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_australia_links.link_title_homestay_australia.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_australia_links.link_title_homestay_australia.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_canada_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_canada_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_canada_links.label" : {
+    "message" : "TEF Links copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_canada_links.link_page_homestay_canada.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_canada_links.link_page_homestay_canada.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_canada_links.link_page_homestay_canada.label" : {
+    "message" : "Link Page Homestay Canada",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_canada_links.link_title_homestay_canada.default" : {
+    "message" : "Homestay Canada",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_canada_links.link_title_homestay_canada.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_canada_links.link_title_homestay_canada.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_canada_links.link_title_homestay_canada.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.homestay_canada_links.link_title_homestay_canada.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.image_homestay.default.alt" : {
+    "message" : "HomeStay",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.image_homestay.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.image_homestay.label" : {
+    "message" : "Image HomeStay",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.message_homestay.default" : {
+    "message" : "<h5>WANT TO BECOME A HOMESTAY FAMILY</h5>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.message_homestay.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.message_homestay.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "homestay_menu.title_homestay.default" : {
+    "message" : "<h4>HOMESTAY</h4>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.title_homestay.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.title_homestay.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.url_field.default.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.url_field.default.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "homestay_menu.url_field.default.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "icon_junior_programs.default.src" : {
+    "message" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_learn_english-1.png",
+    "description" : null,
+    "placeholders" : null
+  },
+  "icon_learn_french_copy.default.src" : {
+    "message" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_university.png",
+    "description" : null,
+    "placeholders" : null
+  },
+  "icon_test_centre.default.src" : {
+    "message" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_test_pencil.png",
+    "description" : null,
+    "placeholders" : null
+  },
+  "icon_university_pathway_copy.default.src" : {
+    "message" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_learn_english-1.png",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_homestay.default.size_type" : {
+    "message" : "auto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_homestay.default.src" : {
+    "message" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_homestay_photo.jpg",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_residence.default.size_type" : {
+    "message" : "auto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_residence.default.src" : {
+    "message" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_photo.jpg",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.australia_partners_links.default.link_page_australia_partners.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.australia_partners_links.default.link_page_australia_partners.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.australia_partners_links.default.link_page_australia_partners.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.australia_partners_links.default.link_page_australia_partners.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.australia_partners_links.default.link_page_australia_partners.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.australia_partners_links.default.link_title_australia_partners" : {
+    "message" : "Australia Partners",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.canada_partners_links.default.link_page_canada_partners.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.canada_partners_links.default.link_page_canada_partners.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.canada_partners_links.default.link_page_canada_partners.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.canada_partners_links.default.link_page_canada_partners.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.canada_partners_links.default.link_page_canada_partners.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.canada_partners_links.default.link_title_canada_partners" : {
+    "message" : "Canada Partners",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.esl_high_school_bridge_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.esl_high_school_bridge_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.esl_high_school_bridge_links.label" : {
+    "message" : "Family Camps Links copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.esl_high_school_bridge_links.link_page_esl_high_school_bridge.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.esl_high_school_bridge_links.link_page_esl_high_school_bridge.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.esl_high_school_bridge_links.link_page_esl_high_school_bridge.label" : {
+    "message" : "Link Page ESL High School Bridge",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.esl_high_school_bridge_links.link_title_esl_high_school_bridge.default" : {
+    "message" : "ESL High School Bridge",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.esl_high_school_bridge_links.link_title_esl_high_school_bridge.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.esl_high_school_bridge_links.link_title_esl_high_school_bridge.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.esl_high_school_bridge_links.link_title_esl_high_school_bridge.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.esl_high_school_bridge_links.link_title_esl_high_school_bridge.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.family_camps_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.family_camps_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.family_camps_links.label" : {
+    "message" : "ILSC Camps Links copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.family_camps_links.link_page_family_camps.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.family_camps_links.link_page_family_camps.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.family_camps_links.link_page_family_camps.label" : {
+    "message" : "Link Page Family Camps",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.family_camps_links.link_title_family_camps.default" : {
+    "message" : "Family Camps",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.family_camps_links.link_title_family_camps.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.family_camps_links.link_title_family_camps.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.family_camps_links.link_title_family_camps.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.family_camps_links.link_title_family_camps.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.icon_junior_programs.default.alt" : {
+    "message" : "Junior Programs",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.icon_junior_programs.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.icon_junior_programs.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.ilsc_camps_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.ilsc_camps_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.ilsc_camps_links.label" : {
+    "message" : "ILSC Camps Links",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.ilsc_camps_links.link_page_ilsc_camps.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.ilsc_camps_links.link_page_ilsc_camps.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.ilsc_camps_links.link_page_ilsc_camps.label" : {
+    "message" : "Link Page ILSC Camps",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.ilsc_camps_links.link_title_ilsc_camps.default" : {
+    "message" : "ILSC Camps",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.ilsc_camps_links.link_title_ilsc_camps.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.ilsc_camps_links.link_title_ilsc_camps.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.ilsc_camps_links.link_title_ilsc_camps.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.ilsc_camps_links.link_title_ilsc_camps.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.junior_programs_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.junior_programs_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.junior_programs_links.label" : {
+    "message" : "Junior Programs Links",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.junior_programs_links.link_page_junior_programs.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.junior_programs_links.link_page_junior_programs.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.junior_programs_links.link_page_junior_programs.label" : {
+    "message" : "Link Page Junior Programs",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.junior_programs_links.link_title_junior_programs.default" : {
+    "message" : "Choose Junior Programs",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.junior_programs_links.link_title_junior_programs.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.junior_programs_links.link_title_junior_programs.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.junior_programs_links.link_title_junior_programs.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.junior_programs_links.link_title_junior_programs.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.label" : {
+    "message" : "University Pathway Menu copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "junior_programs_menu.residences_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.residences_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.residences_links.label" : {
+    "message" : "Residences Links",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.residences_links.link_page_residences.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.residences_links.link_page_residences.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.residences_links.link_page_residences.label" : {
+    "message" : "Link Page Residences",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.residences_links.link_title_residences.default" : {
+    "message" : "Residences",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.residences_links.link_title_residences.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.residences_links.link_title_residences.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.residences_links.link_title_residences.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.residences_links.link_title_residences.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.title_junior_programs.default" : {
+    "message" : "<h4>Junior Programs</h4>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.title_junior_programs.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.title_junior_programs.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.usa_partners_links.default.link_page_usa_partners.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.usa_partners_links.default.link_page_usa_partners.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.usa_partners_links.default.link_page_usa_partners.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.usa_partners_links.default.link_page_usa_partners.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.usa_partners_links.default.link_page_usa_partners.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "junior_programs_menu.usa_partners_links.default.link_title_usa_partners" : {
+    "message" : "USA Partners",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.beyond_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.beyond_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.beyond_links.label" : {
+    "message" : "Business English Links copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.beyond_links.link_page_30_beyond.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.beyond_links.link_page_30_beyond.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.beyond_links.link_page_30_beyond.label" : {
+    "message" : "Link Page 30 Beyone",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.beyond_links.link_title_30_beyond.default" : {
+    "message" : "30 & Beyond",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.beyond_links.link_title_30_beyond.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.beyond_links.link_title_30_beyond.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.beyond_links.link_title_30_beyond.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.beyond_links.link_title_30_beyond.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.business_english_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.business_english_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.business_english_links.label" : {
+    "message" : "General English Links copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.business_english_links.link_page_business_english.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.business_english_links.link_page_business_english.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.business_english_links.link_page_business_english.label" : {
+    "message" : "Link Page Business English",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.business_english_links.link_title_business_english.default" : {
+    "message" : "Business English",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.business_english_links.link_title_business_english.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.business_english_links.link_title_business_english.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.business_english_links.link_title_business_english.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.business_english_links.link_title_business_english.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.general_english_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.general_english_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.general_english_links.label" : {
+    "message" : "New Delhi Links copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.general_english_links.link_page_general_english.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.general_english_links.link_page_general_english.default.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.general_english_links.link_page_general_english.default.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.general_english_links.link_page_general_english.default.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.general_english_links.link_page_general_english.default.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.general_english_links.link_page_general_english.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.general_english_links.link_page_general_english.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.general_english_links.link_title_general_english.default" : {
+    "message" : "General English",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.general_english_links.link_title_general_english.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.general_english_links.link_title_general_english.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.general_english_links.link_title_general_english.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.general_english_links.link_title_general_english.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.icon_learn_english.default.alt" : {
+    "message" : "Learn English",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.icon_learn_english.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.icon_learn_english.label" : {
+    "message" : "Icon Learn English",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "learn_english_menu.title_learn_english.default" : {
+    "message" : "<h4>Learn English</h4>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.title_learn_english.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.title_learn_english.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.volunteer_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.volunteer_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.volunteer_links.label" : {
+    "message" : "30 Beyond Links copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.volunteer_links.link_page_volunteer.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.volunteer_links.link_page_volunteer.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.volunteer_links.link_page_volunteer.label" : {
+    "message" : "Link Page Volunteer",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.volunteer_links.link_title_volunteer.default" : {
+    "message" : "Volunteer",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.volunteer_links.link_title_volunteer.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.volunteer_links.link_title_volunteer.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.volunteer_links.link_title_volunteer.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_english_menu.volunteer_links.link_title_volunteer.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.business_english_links.default.link_page_business_english.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.business_english_links.default.link_page_business_english.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.business_english_links.default.link_page_business_english.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.business_english_links.default.link_page_business_english.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.business_english_links.default.link_page_business_english.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.business_english_links.default.link_title_business_english" : {
+    "message" : "Business English",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.business_french_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.business_french_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.business_french_links.label" : {
+    "message" : "Business French Links",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.business_french_links.link_page_business_french.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.business_french_links.link_page_business_french.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.business_french_links.link_page_business_french.label" : {
+    "message" : "Link Page Business French",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.business_french_links.link_title_business_french.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.business_french_links.link_title_business_french.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.business_french_links.link_title_business_french.label" : {
+    "message" : "Link Title - Business French",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.business_french_links.link_title_business_french.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.business_french_links.link_title_business_french.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.general_english_links.default.link_page_general_english.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.general_english_links.default.link_page_general_english.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.general_english_links.default.link_page_general_english.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.general_english_links.default.link_page_general_english.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.general_english_links.default.link_page_general_english.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.general_english_links.default.link_title_general_english" : {
+    "message" : "General English",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.general_french_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.general_french_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.general_french_links.label" : {
+    "message" : "General French Links",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.general_french_links.link_page_general_french.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.general_french_links.link_page_general_french.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.general_french_links.link_page_general_french.label" : {
+    "message" : "Link Page General French",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.general_french_links.link_title_general_french.default" : {
+    "message" : "General French",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.general_french_links.link_title_general_french.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.general_french_links.link_title_general_french.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.general_french_links.link_title_general_french.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.general_french_links.link_title_general_french.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.icon_learn_french.default.alt" : {
+    "message" : "Learn French",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.icon_learn_french.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.icon_learn_french.label" : {
+    "message" : "Icon Learn French",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.label" : {
+    "message" : "Learn English Menu copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.title_learn_french.default" : {
+    "message" : "<h4>Learn French</h4>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.title_learn_french.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.title_learn_french.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.volunteer_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.volunteer_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.volunteer_links.label" : {
+    "message" : "Volunteer Links",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.volunteer_links.link_page_volunteer.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.volunteer_links.link_page_volunteer.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.volunteer_links.link_page_volunteer.label" : {
+    "message" : "Link Page Volunteer",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.volunteer_links.link_title_volunteer.default" : {
+    "message" : "Volunteer",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.volunteer_links.link_title_volunteer.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.volunteer_links.link_title_volunteer.label" : {
+    "message" : "Link Title - Volunteer",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.volunteer_links.link_title_volunteer.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "learn_french_menu.volunteer_links.link_title_volunteer.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_field.default.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_field.default.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_field.default.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_field.default.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_field.default.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "logo_image.default.alt" : {
+    "message" : "ILSC Language Schools",
+    "description" : "",
+    "placeholders" : null
+  },
+  "logo_image.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "logo_image.label" : {
+    "message" : "logo_Image",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "language_programs_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "nav_titles.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_titles.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_titles.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_titles.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "nav_titles.nav_title_accommadations.default" : {
+    "message" : "Accommodations",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_titles.nav_title_accommadations.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_titles.nav_title_accommadations.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_titles.nav_title_accommadations.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_titles.nav_title_accommadations.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_titles.nav_title_destinations.default" : {
+    "message" : "Destinations",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_titles.nav_title_destinations.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_titles.nav_title_destinations.label" : {
+    "message" : "Nav Title - Destinations",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_titles.nav_title_destinations.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_titles.nav_title_destinations.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_titles.nav_title_language_programs.default" : {
+    "message" : "Language Programs",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_titles.nav_title_language_programs.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_titles.nav_title_language_programs.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_titles.nav_title_language_programs.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_titles.nav_title_language_programs.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_titles.nav_title_login.default" : {
+    "message" : "Login",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_titles.nav_title_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_titles.nav_title_login.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_titles.nav_title_login.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "nav_titles.nav_title_login.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.button_text_partners_login.default" : {
+    "message" : "Create My Account",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.button_text_partners_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.button_text_partners_login.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.button_text_partners_login.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.button_text_partners_login.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.label" : {
+    "message" : "Button Partners Login copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.partners_login_url.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.partners_login_url.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_create_account.partners_login_url.label" : {
+    "message" : "Create Account URL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.button_text_partners_login.default" : {
+    "message" : "Partners Login",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.button_text_partners_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.button_text_partners_login.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.button_text_partners_login.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.button_text_partners_login.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.partners_login_url.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.partners_login_url.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.button_partners_login.partners_login_url.label" : {
+    "message" : "Partners Login URL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.label" : {
+    "message" : "Residences Menu copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "partners_login_menu.text_1.default" : {
+    "message" : "New to ILSC. Create an account to get started today.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.text_1.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.text_1.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.text_1.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.text_1.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.text_2.default" : {
+    "message" : "Have an account? Sign in now.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.text_2.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.text_2.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.text_2.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.text_2.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.title_partners_login.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.title_partners_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "partners_login_menu.title_partners_login.label" : {
+    "message" : "Title Partners Login",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.image_residence.default.alt" : {
+    "message" : "Residence",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.image_residence.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.image_residence.label" : {
+    "message" : "Image Residence",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "residences_menu.residences_australia_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_australia_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_australia_links.label" : {
+    "message" : "HomeStay Australia Links copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_australia_links.link_page_residences_australia.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_australia_links.link_page_residences_australia.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_australia_links.link_page_residences_australia.label" : {
+    "message" : "Link Page Residences Australia",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_australia_links.link_title_residences_australia.default" : {
+    "message" : "Residences Australia",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_australia_links.link_title_residences_australia.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_australia_links.link_title_residences_australia.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_australia_links.link_title_residences_australia.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_australia_links.link_title_residences_australia.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_canada_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_canada_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_canada_links.label" : {
+    "message" : "Residences Australia Links copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_canada_links.link_page_residences_canada.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_canada_links.link_page_residences_canada.default.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_canada_links.link_page_residences_canada.default.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_canada_links.link_page_residences_canada.default.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_canada_links.link_page_residences_canada.default.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_canada_links.link_page_residences_canada.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_canada_links.link_page_residences_canada.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_canada_links.link_title_residences_canada.default" : {
+    "message" : "Residences Canada",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_canada_links.link_title_residences_canada.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_canada_links.link_title_residences_canada.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_canada_links.link_title_residences_canada.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.residences_canada_links.link_title_residences_canada.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.title_residences.default" : {
+    "message" : "<h4>RESIDENCES</h4>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.title_residences.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "residences_menu.title_residences.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "search_menu.text_search_placeholder.default" : {
+    "message" : "TYPE TO SEARCH",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.text_search_placeholder.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.text_search_placeholder.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.text_search_placeholder.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.text_search_placeholder.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.title_search.default" : {
+    "message" : "<h4>SEARCH</h4>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.title_search.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_menu.title_search.label" : {
+    "message" : "Title Search",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.button_text_student_login.default" : {
+    "message" : "MyILSC Login",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.button_text_student_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.button_text_student_login.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.button_text_student_login.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.button_text_student_login.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.label" : {
+    "message" : "Button Partners Create Account copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.student_login_url.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.student_login_url.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.button_student_login.student_login_url.label" : {
+    "message" : "Student Login URL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.label" : {
+    "message" : "Partners Login Menu copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "student_login_menu.text_1.default" : {
+    "message" : "Have an account? Sign in now.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.text_1.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.text_1.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.text_1.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.text_1.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.title_student_login.default" : {
+    "message" : "<h4>STUDENT LOGIN</h4>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.title_student_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "student_login_menu.title_student_login.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia.default.icon_australia.alt" : {
+    "message" : "icon_australia_kangaroo",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia.default.icon_australia.size_type" : {
+    "message" : "auto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia.default.icon_australia.src" : {
+    "message" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_australia_kangaroo.png",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia.default.title_study_australia" : {
+    "message" : "Study in Australia",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.adelaide_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.adelaide_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.adelaide_links.label" : {
+    "message" : "Melbourne Links copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.adelaide_links.link_page_adelaid.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.adelaide_links.link_page_adelaid.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.adelaide_links.link_page_adelaid.label" : {
+    "message" : "Link Page Adelaide",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.adelaide_links.link_title_adelaide.default" : {
+    "message" : "ILSC Adelaide",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.adelaide_links.link_title_adelaide.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.adelaide_links.link_title_adelaide.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.adelaide_links.link_title_adelaide.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.adelaide_links.link_title_adelaide.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.australia_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.australia_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.australia_links.label" : {
+    "message" : "Canada Links copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.australia_links.link_page_australia.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.australia_links.link_page_australia.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.australia_links.link_page_australia.label" : {
+    "message" : "Link Page Australia",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.australia_links.link_title_australia.default" : {
+    "message" : "Choose Australia",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.australia_links.link_title_australia.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.australia_links.link_title_australia.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.australia_links.link_title_australia.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.australia_links.link_title_australia.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.brisbane_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.brisbane_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.brisbane_links.label" : {
+    "message" : "Sydney Links copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.brisbane_links.link_page_brisbane.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.brisbane_links.link_page_brisbane.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.brisbane_links.link_page_brisbane.label" : {
+    "message" : "Link Page Brisbane",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.brisbane_links.link_title_brisbane.default" : {
+    "message" : "ILSC Brisbane",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.brisbane_links.link_title_brisbane.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.brisbane_links.link_title_brisbane.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.brisbane_links.link_title_brisbane.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.brisbane_links.link_title_brisbane.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.icon_australia.default.alt" : {
+    "message" : "icon_australia_kangaroo",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.icon_australia.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.icon_australia.label" : {
+    "message" : "Icon Australia",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.label" : {
+    "message" : "Study in Australia Menu",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.melbourne_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.melbourne_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.melbourne_links.label" : {
+    "message" : "Brisbane Links copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.melbourne_links.link_page_melbourne.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.melbourne_links.link_page_melbourne.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.melbourne_links.link_page_melbourne.label" : {
+    "message" : "Link Page Melbourne",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.melbourne_links.link_title_Melbourne.default" : {
+    "message" : "ILSC Melbourne",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.melbourne_links.link_title_Melbourne.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.melbourne_links.link_title_Melbourne.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.melbourne_links.link_title_Melbourne.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.melbourne_links.link_title_Melbourne.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "study_in_australia_menu.sydney_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.sydney_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.sydney_links.label" : {
+    "message" : "Australia Links copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.sydney_links.link_page_sydney.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.sydney_links.link_page_sydney.default.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.sydney_links.link_page_sydney.default.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.sydney_links.link_page_sydney.default.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.sydney_links.link_page_sydney.default.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.sydney_links.link_page_sydney.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.sydney_links.link_page_sydney.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.sydney_links.link_title_sydney.default" : {
+    "message" : "ILSC Sydney",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.sydney_links.link_title_sydney.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.sydney_links.link_title_sydney.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.sydney_links.link_title_sydney.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.sydney_links.link_title_sydney.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.title_study_australia.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.title_study_australia.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_australia_menu.title_study_australia.label" : {
+    "message" : "Title Study Australia",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.canada_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.canada_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.canada_links.label" : {
+    "message" : "Montreal Links copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.canada_links.link_page_canada.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.canada_links.link_page_canada.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.canada_links.link_page_canada.label" : {
+    "message" : "Link Page Canada",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.canada_links.link_title_canada.default" : {
+    "message" : "Choose Canada",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.canada_links.link_title_canada.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.canada_links.link_title_canada.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.canada_links.link_title_canada.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.canada_links.link_title_canada.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.field_group.default.link_page_toronto.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.field_group.default.link_page_toronto.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.field_group.default.link_page_toronto.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.field_group.default.link_page_toronto.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.field_group.default.link_page_toronto.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.field_group.default.link_page_vancouver.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.field_group.default.link_page_vancouver.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.field_group.default.link_page_vancouver.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.field_group.default.link_page_vancouver.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.field_group.default.link_page_vancouver.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.field_group.default.link_title_vancouver" : {
+    "message" : "ILSC Vancouver",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.field_group.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "study_in_canada_menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.icon_canda_leaf.default.alt" : {
+    "message" : "Study in Canada",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.icon_canda_leaf.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.icon_canda_leaf.label" : {
+    "message" : "Icon Canada Leaf",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.montreal_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.montreal_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.montreal_links.label" : {
+    "message" : "Toronto Links copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.montreal_links.link_page_montreal.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.montreal_links.link_page_montreal.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.montreal_links.link_page_montreal.label" : {
+    "message" : "Link Page Montreal",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.montreal_links.link_title_montreal.default" : {
+    "message" : "ILSC Montreal",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.montreal_links.link_title_montreal.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.montreal_links.link_title_montreal.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.montreal_links.link_title_montreal.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.montreal_links.link_title_montreal.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "study_in_canada_menu.toronto_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.toronto_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.toronto_links.label" : {
+    "message" : "Vancouver Links copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.toronto_links.link_page_toronto.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.toronto_links.link_page_toronto.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.toronto_links.link_page_toronto.label" : {
+    "message" : "Link Page Toronto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.toronto_links.link_title_toronto.default" : {
+    "message" : "ILSC Toronto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.toronto_links.link_title_toronto.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.toronto_links.link_title_toronto.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.toronto_links.link_title_toronto.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.toronto_links.link_title_toronto.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.vancouver_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.vancouver_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.vancouver_links.label" : {
+    "message" : "Vancouver Links",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.vancouver_links.link_page_vancouver.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.vancouver_links.link_page_vancouver.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.vancouver_links.link_page_vancouver.label" : {
+    "message" : "Link Page Vancouver",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.vancouver_links.link_title_vancouver.default" : {
+    "message" : "ILSC Vancouver",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.vancouver_links.link_title_vancouver.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.vancouver_links.link_title_vancouver.label" : {
+    "message" : "Link Title - Vancouver",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.vancouver_links.link_title_vancouver.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_in_canada_menu.vancouver_links.link_title_vancouver.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.icon_india.default.alt" : {
+    "message" : "Study in India",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.icon_india.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.icon_india.label" : {
+    "message" : "Icon India",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.india_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.india_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.india_links.label" : {
+    "message" : "Adelaide Links copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.india_links.link_page_india.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.india_links.link_page_india.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.india_links.link_page_india.label" : {
+    "message" : "Link Page India",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.india_links.link_title_india.default" : {
+    "message" : "Choose India",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.india_links.link_title_india.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.india_links.link_title_india.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.india_links.link_title_india.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.india_links.link_title_india.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "study_india_menu.new_delhi_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.new_delhi_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.new_delhi_links.label" : {
+    "message" : "India Links copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.new_delhi_links.link_page_new_delhi.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.new_delhi_links.link_page_new_delhi.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.new_delhi_links.link_page_new_delhi.label" : {
+    "message" : "Link Page New Delhi",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.new_delhi_links.link_title_new_delhi.default" : {
+    "message" : "ILSC New Delhi",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.new_delhi_links.link_title_new_delhi.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.new_delhi_links.link_title_new_delhi.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.new_delhi_links.link_title_new_delhi.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "study_india_menu.new_delhi_links.link_title_new_delhi.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.australia_partners_links.default.link_page_australia_partners.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.australia_partners_links.default.link_page_australia_partners.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.australia_partners_links.default.link_page_australia_partners.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.australia_partners_links.default.link_page_australia_partners.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.australia_partners_links.default.link_page_australia_partners.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.australia_partners_links.default.link_title_australia_partners" : {
+    "message" : "Australia Partners",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.cambridge_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.cambridge_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.cambridge_links.label" : {
+    "message" : "Cambridge Links",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.cambridge_links.link_page_cambridge.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.cambridge_links.link_page_cambridge.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.cambridge_links.link_page_cambridge.label" : {
+    "message" : "Link Page Cambridge",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.cambridge_links.link_title_cambridge.default" : {
+    "message" : "Cambridge",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.cambridge_links.link_title_cambridge.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.cambridge_links.link_title_cambridge.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.cambridge_links.link_title_cambridge.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.cambridge_links.link_title_cambridge.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.canada_partners_links.default.link_page_canada_partners.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.canada_partners_links.default.link_page_canada_partners.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.canada_partners_links.default.link_page_canada_partners.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.canada_partners_links.default.link_page_canada_partners.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.canada_partners_links.default.link_page_canada_partners.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.canada_partners_links.default.link_title_canada_partners" : {
+    "message" : "Canada Partners",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.icon_test_centre.default.alt" : {
+    "message" : "Test Centre",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.icon_test_centre.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.icon_test_centre.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.ielts_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.ielts_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.ielts_links.label" : {
+    "message" : "IELTS Links",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.ielts_links.link_page_ielts.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.ielts_links.link_page_ielts.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.ielts_links.link_page_ielts.label" : {
+    "message" : "Link Page IELTS",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.ielts_links.link_title_ielts.default" : {
+    "message" : "IELTS",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.ielts_links.link_title_ielts.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.ielts_links.link_title_ielts.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.ielts_links.link_title_ielts.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.ielts_links.link_title_ielts.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.label" : {
+    "message" : "University Pathway Menu copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "test_centre_menu.tef_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.tef_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.tef_links.label" : {
+    "message" : "TEF Links",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.tef_links.link_page_tef.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.tef_links.link_page_tef.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.tef_links.link_page_tef.label" : {
+    "message" : "Link Page TEF",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.tef_links.link_title_tef.default" : {
+    "message" : "TEF / TEFAQ",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.tef_links.link_title_tef.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.tef_links.link_title_tef.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.tef_links.link_title_tef.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.tef_links.link_title_tef.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.title_test_centre.default" : {
+    "message" : "<h4>Test Centre</h4>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.title_test_centre.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.title_test_centre.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.usa_partners_links.default.link_page_usa_partners.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.usa_partners_links.default.link_page_usa_partners.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.usa_partners_links.default.link_page_usa_partners.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.usa_partners_links.default.link_page_usa_partners.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.usa_partners_links.default.link_page_usa_partners.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "test_centre_menu.usa_partners_links.default.link_title_usa_partners" : {
+    "message" : "USA Partners",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title_language.default" : {
+    "message" : "<h4>Languages</h4>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title_language.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title_language.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.australia_partners_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.australia_partners_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.australia_partners_links.label" : {
+    "message" : "Canada Partners Links copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.australia_partners_links.link_page_australia_partners.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.australia_partners_links.link_page_australia_partners.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.australia_partners_links.link_page_australia_partners.label" : {
+    "message" : "Link Page Australia Partners",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.australia_partners_links.link_title_australia_partners.default" : {
+    "message" : "Australia Partners",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.australia_partners_links.link_title_australia_partners.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.australia_partners_links.link_title_australia_partners.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.australia_partners_links.link_title_australia_partners.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.australia_partners_links.link_title_australia_partners.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.canada_partners_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.canada_partners_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.canada_partners_links.label" : {
+    "message" : "Canada Partners Links",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.canada_partners_links.link_page_canada_partners.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.canada_partners_links.link_page_canada_partners.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.canada_partners_links.link_page_canada_partners.label" : {
+    "message" : "Link Page Canada Partners",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.canada_partners_links.link_title_canada_partners.default" : {
+    "message" : "Canada Partners",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.canada_partners_links.link_title_canada_partners.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.canada_partners_links.link_title_canada_partners.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.canada_partners_links.link_title_canada_partners.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.canada_partners_links.link_title_canada_partners.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.general_french_links.default.link_page_general_french.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.general_french_links.default.link_page_general_french.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.general_french_links.default.link_page_general_french.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.general_french_links.default.link_page_general_french.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.general_french_links.default.link_page_general_french.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.general_french_links.default.link_title_general_french" : {
+    "message" : "General French",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.icon_university_pathway.default.alt" : {
+    "message" : "University Pathway",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.icon_university_pathway.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.icon_university_pathway.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.label" : {
+    "message" : "Learn French Menu copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.name" : {
+    "message" : "language_schools_top_navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "university_pathway_menu.title_university_pathway.default" : {
+    "message" : "<h4>University Pathway</h4>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.title_university_pathway.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.title_university_pathway.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.usa_partners_links.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.usa_partners_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.usa_partners_links.label" : {
+    "message" : "Australia Partners Links copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.usa_partners_links.link_page_usa_partners.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.usa_partners_links.link_page_usa_partners.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.usa_partners_links.link_page_usa_partners.label" : {
+    "message" : "Link Page USA Partners",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.usa_partners_links.link_title_usa_partners.default" : {
+    "message" : "USA Partners",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.usa_partners_links.link_title_usa_partners.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.usa_partners_links.link_title_usa_partners.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.usa_partners_links.link_title_usa_partners.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "university_pathway_menu.usa_partners_links.link_title_usa_partners.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  }
+}

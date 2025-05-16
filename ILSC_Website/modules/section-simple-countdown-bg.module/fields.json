@@ -1,0 +1,86 @@
+[ {
+  "id" : "8b9487fa-6cfd-97ae-4c54-31da02e5e477",
+  "name" : "deadline_date_time",
+  "label" : "Deadline Date/Time",
+  "required" : false,
+  "locked" : false,
+  "step" : 15,
+  "type" : "datetime",
+  "display_width" : null,
+  "default" : 1659364200000
+}, {
+  "id" : "4e1e190b-e343-2268-71c0-e39623fa797f",
+  "name" : "bg_image_1_field",
+  "label" : "BG Image 1",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "src" : "https://www.ilsc.com/hubfs/bg_graduate_gc.jpg",
+    "alt" : "bg_graduate_gc",
+    "width" : 1440,
+    "height" : 386,
+    "max_width" : 1440,
+    "max_height" : 386
+  }
+}, {
+  "id" : "0eba4c0c-87cd-c598-5f3f-b3b18aafa02d",
+  "name" : "bg_overlay_color",
+  "label" : "BG Overlay Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#003346",
+    "opacity" : 65
+  }
+}, {
+  "id" : "593c5014-e42d-b678-7451-b79a2b705c1f",
+  "name" : "time_text_color",
+  "label" : "Time Text Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "1ae7cb82-f676-c7f8-f705-face88003cd7",
+  "name" : "main_rich_text",
+  "label" : "Main Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2 style=\"text-align: center;\"><span style=\"color: #ffffff;\">Upgrade your English</span></h2>\n<div style=\"text-align: center;\"><span style=\"color: #ffffff;\">Do you need to improve your English before starting a program at Greystone College Vancouver?</span></div>\n<div style=\"text-align: center;\"><span style=\"color: #ffffff;\">Check out our Greystone College Pathway program, available at our ILSC Vancouver language school. </span></div>\n<div style=\"text-align: center;\"><a style=\"margin-top: 30px;\" class=\"btn btn-primary btn-white-outline\">GREYSTONE COLLEGE PATHWAY PROGRAM AT ILSC</a></div>"
+}, {
+  "id" : "cfeffae7-6482-7433-5084-b8ce9b4641d2",
+  "name" : "bottom_rich_text_copy",
+  "label" : "Bottom Rich text copy",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2 style=\"text-align: center;\"><span style=\"color: #ffffff;\">Upgrade your English</span></h2>\n<div style=\"text-align: center;\"><span style=\"color: #ffffff;\">Do you need to improve your English before starting a program at Greystone College Vancouver?</span></div>\n<div style=\"text-align: center;\"><span style=\"color: #ffffff;\">Check out our Greystone College Pathway program, available at our ILSC Vancouver language school. </span></div>\n<div style=\"text-align: center;\"><a style=\"margin-top: 30px;\" class=\"btn btn-primary btn-white-outline\">GREYSTONE COLLEGE PATHWAY PROGRAM AT ILSC</a></div>"
+}, {
+  "id" : "8c9fb81d-fdaf-6d24-3b31-8672d6f492aa",
+  "name" : "enable_disable_parallax_choice",
+  "label" : "Enable/Disable Parallax Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "enable", "Enable" ], [ "disable", "Disable" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "enable"
+} ]

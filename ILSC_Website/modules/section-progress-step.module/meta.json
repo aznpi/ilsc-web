@@ -1,0 +1,17 @@
+{
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 47346364841,
+  "css_assets" : [ {
+    "autoload" : true,
+    "path" : "../../template-resources/stylesheets/internal/production/ilsc_progress.css",
+    "name" : "ilsc_progress.css"
+  } ],
+  "js_assets" : [ {
+    "autoload" : true,
+    "path" : "../../template-resources/javascript/internal/cookie-set.js",
+    "name" : "cookie-set.js"
+  } ],
+  "is_available_for_new_content" : true
+}

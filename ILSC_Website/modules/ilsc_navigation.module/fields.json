@@ -1,0 +1,709 @@
+[ {
+  "picker" : "file",
+  "id" : "c1f7461a-1160-25f2-44bc-880159bb40bc",
+  "name" : "logo_svg_file",
+  "label" : "Logo SVG File",
+  "required" : false,
+  "locked" : true,
+  "type" : "file",
+  "display_width" : null,
+  "default" : "https://www.ilsc.com/hubfs/logo_Education%20Group-Color-Logo-Horizontal.svg"
+}, {
+  "id" : "0615e063-0681-afc6-d19b-a304a31c0526",
+  "name" : "logo_alt",
+  "label" : "Logo Alt",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "ILSC Logo"
+}, {
+  "id" : "e36f4a6c-482f-d0c4-6ebe-0cc1eefdba61",
+  "name" : "menu_links",
+  "label" : "Menu Links",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "bf085255-e263-2821-7cba-895a2ac964c4",
+    "name" : "link_1",
+    "label" : "Link 1",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "d8e5a021-1600-7bb2-4b85-fac86b495e16",
+      "name" : "link_field",
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "30a286a3-1637-127f-eac5-22744e9003e1",
+      "name" : "link_text",
+      "label" : "Link Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "ABOUT US"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_text" : "ABOUT US"
+    }
+  }, {
+    "id" : "ab45c5b2-2edb-af51-9c08-694d7f9e61c2",
+    "name" : "link_2",
+    "label" : "Link 2",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "64795f9a-8a77-5b6b-c685-32ec7f2962ee",
+      "name" : "link_field",
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "8351a85e-63ae-114c-6bfc-584a40a00da3",
+      "name" : "link_text",
+      "label" : "Link Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "WHY CHOOSE ILSC"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_text" : "WHY CHOOSE ILSC"
+    }
+  }, {
+    "id" : "35b0031f-aee9-38c6-422b-adba9f046e3b",
+    "name" : "link_3",
+    "label" : "Link 3",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "d9e79731-404b-8ae9-1ded-0e68ae82d030",
+      "name" : "link_field",
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "1358109f-6abc-b21a-700b-690e0501ea35",
+      "name" : "link_text",
+      "label" : "Link Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "OUR COMMITMENT"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_text" : "OUR COMMITMENT"
+    }
+  }, {
+    "id" : "e2fed5b7-af6b-90f2-afbe-e2867c020e2f",
+    "name" : "link_4",
+    "label" : "Link 4",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "ff40f55a-f1d9-4ac8-ce02-33f7bc57b53e",
+      "name" : "link_field",
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "afeaae45-6baa-621d-a30e-be51d1df5122",
+      "name" : "link_text",
+      "label" : "Link Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "CAREERS"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_text" : "CAREERS"
+    }
+  }, {
+    "id" : "70ff53f5-e2b6-c9d1-3e58-946a9f8c81c2",
+    "name" : "link_5",
+    "label" : "Link 5",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "957ada4d-57aa-a8a3-7f3a-7cac5723c3c5",
+      "name" : "link_field",
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "dd2ec721-ce7e-31e5-3012-f7839e5084c9",
+      "name" : "link_text",
+      "label" : "Link Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "AWARDS"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_text" : "AWARDS"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "link_1" : {
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_text" : "ABOUT US"
+    },
+    "link_2" : {
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_text" : "WHY CHOOSE ILSC"
+    },
+    "link_3" : {
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_text" : "OUR COMMITMENT"
+    },
+    "link_4" : {
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_text" : "CAREERS"
+    },
+    "link_5" : {
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_text" : "AWARDS"
+    }
+  }
+}, {
+  "id" : "fd0f6b7e-f2b4-4888-56de-7a86901e1289",
+  "name" : "login_menu",
+  "label" : "Login Menu",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "7d12d481-41b1-3ed9-a523-e305890f31ca",
+    "name" : "login_text",
+    "label" : "Login Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Login"
+  }, {
+    "id" : "accb967c-b401-fef3-45ab-e028fdfc3cc1",
+    "name" : "partners_menu",
+    "label" : "Partners Menu",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "ec6bee2d-705c-d284-b6ee-7941f22ef0aa",
+      "name" : "partners_login_title",
+      "label" : "Partners Login Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "PARTNERS LOGIN"
+    }, {
+      "id" : "645c005f-fc24-1826-960c-2a8d724da5d1",
+      "name" : "parnters_text_1",
+      "label" : "Parnters Text 1",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "New to ILSC. Create an account to get started today."
+    }, {
+      "id" : "4905191e-dd0a-e190-6178-bfe67659d998",
+      "name" : "button_1_url",
+      "label" : "Button 1 Url",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    }, {
+      "id" : "bb97ebf6-6bea-5900-30f8-9c28d4a6c968",
+      "name" : "button_1_text",
+      "label" : "Button 1 Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Create my account"
+    }, {
+      "id" : "1a6c7924-8fe7-5fa6-3e5a-6a4827f509ae",
+      "name" : "button_2_text",
+      "label" : "Button 2 Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Create my account"
+    }, {
+      "id" : "75ef41c9-4804-df7e-8035-2b0dff9b6e65",
+      "name" : "parnters_text_2",
+      "label" : "Parnters Text 2",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Have an account? Sign in now."
+    }, {
+      "id" : "3f378f04-f904-800e-6127-10596f72972a",
+      "name" : "button_2_url",
+      "label" : "Button 2 Url",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "partners_login_title" : "PARTNERS LOGIN",
+      "parnters_text_1" : "New to ILSC. Create an account to get started today.",
+      "button_1_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "button_1_text" : "Create my account",
+      "button_2_text" : "Create my account",
+      "parnters_text_2" : "Have an account? Sign in now.",
+      "button_2_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    }
+  }, {
+    "id" : "7336174b-2e52-95d5-3d0e-b2ecd29e8bbd",
+    "name" : "student_menu",
+    "label" : "Student Menu",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "a74d61c4-7683-bf44-a2b7-12ef58276c49",
+      "name" : "student_login_title",
+      "label" : "Student Login Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "STUDENT LOGIN"
+    }, {
+      "id" : "5132b279-4a9d-dcec-719c-6972228d2fd2",
+      "name" : "student_text_1",
+      "label" : "Student Text 1",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Have an account? Sign in now."
+    }, {
+      "id" : "5542f4f2-6dd8-5395-0c62-0631dee7d47a",
+      "name" : "button_1_url",
+      "label" : "Button 1 Url",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    }, {
+      "id" : "b3bf11b3-0d78-bca8-a6ba-dff41de8e367",
+      "name" : "button_1_text",
+      "label" : "Button 1 Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "My ILSC Login"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "student_login_title" : "STUDENT LOGIN",
+      "student_text_1" : "Have an account? Sign in now.",
+      "button_1_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "button_1_text" : "My ILSC Login"
+    }
+  }, {
+    "id" : "b827bd93-f57b-7591-2bb0-1710774a8a6f",
+    "name" : "alumni_menu",
+    "label" : "Alumni Menu",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "38afb37a-29b2-f1a0-f99e-8573c86382ee",
+      "name" : "alumni_login_title",
+      "label" : "Alumni Login Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "ALUMNI LOGIN"
+    }, {
+      "id" : "76af1748-2012-5c77-d462-ba4da8994fe0",
+      "name" : "alumni_text_1",
+      "label" : "Alumni Text 1",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Have an account? Sign in now."
+    }, {
+      "id" : "43dd4905-28ce-08bd-d0a2-424d2a8833c8",
+      "name" : "button_1_url",
+      "label" : "Button 1 Url",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    }, {
+      "id" : "6a67d84e-2864-c97e-0766-8f486d5d0c41",
+      "name" : "button_1_text",
+      "label" : "Button 1 Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Alumni Login"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "alumni_login_title" : "ALUMNI LOGIN",
+      "alumni_text_1" : "Have an account? Sign in now.",
+      "button_1_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "button_1_text" : "Alumni Login"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "login_text" : "Login",
+    "partners_menu" : {
+      "partners_login_title" : "PARTNERS LOGIN",
+      "parnters_text_1" : "New to ILSC. Create an account to get started today.",
+      "button_1_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "button_1_text" : "Create my account",
+      "button_2_text" : "Create my account",
+      "parnters_text_2" : "Have an account? Sign in now.",
+      "button_2_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    },
+    "student_menu" : {
+      "student_login_title" : "STUDENT LOGIN",
+      "student_text_1" : "Have an account? Sign in now.",
+      "button_1_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "button_1_text" : "My ILSC Login"
+    },
+    "alumni_menu" : {
+      "alumni_login_title" : "ALUMNI LOGIN",
+      "alumni_text_1" : "Have an account? Sign in now.",
+      "button_1_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "button_1_text" : "Alumni Login"
+    }
+  }
+}, {
+  "id" : "1b61b36f-7d88-5684-58ad-3bfb1af1d175",
+  "name" : "title_language",
+  "label" : "Title Language",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Languages"
+} ]

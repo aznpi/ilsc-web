@@ -1,0 +1,244 @@
+[ {
+  "id" : "c5d592b6-2f8d-a2e3-df92-21d0331e6744",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Choose your program"
+}, {
+  "id" : "46c3f3e4-ecc7-ffc0-60ee-29b2a09b6ab8",
+  "name" : "video_link_url",
+  "label" : "Video Link URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "display_width" : null,
+  "default" : {
+    "type" : "EXTERNAL",
+    "href" : "https://www.youtube.com/embed/PEFdzUTmG10",
+    "content_id" : null
+  }
+}, {
+  "id" : "9b3f1cf8-dcb8-f3c1-4033-baba21ee2045",
+  "name" : "video_text",
+  "label" : "Video Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "WATCH OUR VIDEO"
+}, {
+  "id" : "ee174c98-cdcf-ae1c-3006-e8571e45d387",
+  "name" : "box",
+  "label" : "Box",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 15,
+    "sorting_label_field" : "592c45e4-bf07-c54d-3f51-f6f4e6efa3b6",
+    "default" : 6
+  },
+  "children" : [ {
+    "id" : "592c45e4-bf07-c54d-3f51-f6f4e6efa3b6",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h5>Improve your language skills</h5>\n<h3>Learn English<br>or French</h3>"
+  }, {
+    "id" : "288ad685-b06f-92a8-421b-e77118e973a4",
+    "name" : "page_link_url",
+    "label" : "Page Link URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "CONTENT" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 30874926814
+    }
+  }, {
+    "id" : "0eed4f9e-6b08-b6aa-3e39-e477b60801fe",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_slider_english.jpg",
+      "alt" : "img_slider_english",
+      "width" : 700,
+      "height" : 806,
+      "max_width" : 700,
+      "max_height" : 806
+    }
+  }, {
+    "id" : "3cc057de-a558-1aa1-6e60-177562d183d4",
+    "name" : "short_description",
+    "label" : "Short Description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h5>Something about something</h5>\n<h3>More about something</h3>"
+  }, {
+    "id" : "1c3c5d8a-f78a-063b-1ca3-4b23f811cf6c",
+    "name" : "new_window_choice",
+    "label" : "New Window Choice",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "no", "No" ], [ "yes", "Yes" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "no"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "title" : "<h5>Improve your language skills</h5>\n<h3>Learn English<br>or French</h3>",
+    "page_link_url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 30874926814
+    },
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_slider_english.jpg",
+      "alt" : "img_slider_english",
+      "width" : 700,
+      "height" : 806,
+      "max_width" : 700,
+      "max_height" : 806
+    },
+    "short_description" : "<h5>Something about something</h5>\n<h3>More about something</h3>",
+    "new_window_choice" : "no"
+  }, {
+    "title" : "<h5>Improve your language skills</h5>\n<h3>Learn English<br>or French</h3>",
+    "page_link_url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 30874926814
+    },
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_slider_english.jpg",
+      "alt" : "img_slider_english",
+      "width" : 700,
+      "height" : 806,
+      "max_width" : 700,
+      "max_height" : 806
+    },
+    "short_description" : "<h5>Something about something</h5>\n<h3>More about something</h3>",
+    "new_window_choice" : "no"
+  }, {
+    "title" : "<h5>Improve your language skills</h5>\n<h3>Learn English<br>or French</h3>",
+    "page_link_url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 30874926814
+    },
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_slider_english.jpg",
+      "alt" : "img_slider_english",
+      "width" : 700,
+      "height" : 806,
+      "max_width" : 700,
+      "max_height" : 806
+    },
+    "short_description" : "<h5>Something about something</h5>\n<h3>More about something</h3>",
+    "new_window_choice" : "no"
+  }, {
+    "title" : "<h5>Improve your language skills</h5>\n<h3>Learn English<br>or French</h3>",
+    "page_link_url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 30874926814
+    },
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_slider_english.jpg",
+      "alt" : "img_slider_english",
+      "width" : 700,
+      "height" : 806,
+      "max_width" : 700,
+      "max_height" : 806
+    },
+    "short_description" : "<h5>Something about something</h5>\n<h3>More about something</h3>",
+    "new_window_choice" : "no"
+  }, {
+    "title" : "<h5>Improve your language skills</h5>\n<h3>Learn English<br>or French</h3>",
+    "page_link_url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 30874926814
+    },
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_slider_english.jpg",
+      "alt" : "img_slider_english",
+      "width" : 700,
+      "height" : 806,
+      "max_width" : 700,
+      "max_height" : 806
+    },
+    "short_description" : "<h5>Something about something</h5>\n<h3>More about something</h3>",
+    "new_window_choice" : "no"
+  }, {
+    "title" : "<h5>Improve your language skills</h5>\n<h3>Learn English<br>or French</h3>",
+    "page_link_url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 30874926814
+    },
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_slider_english.jpg",
+      "alt" : "img_slider_english",
+      "width" : 700,
+      "height" : 806,
+      "max_width" : 700,
+      "max_height" : 806
+    },
+    "short_description" : "<h5>Something about something</h5>\n<h3>More about something</h3>",
+    "new_window_choice" : "no"
+  } ]
+}, {
+  "id" : "fdf9c7c3-a1bc-6aaa-232f-3a77d5008a05",
+  "name" : "cta_text",
+  "label" : "CTA Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "LEARN MORE"
+} ]

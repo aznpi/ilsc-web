@@ -1,0 +1,56 @@
+[ {
+  "id" : "2934783d-a0c9-c586-bd61-eac3c72ec9e4",
+  "name" : "link_field",
+  "label" : "Link",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "content_id" : 135493409105,
+      "href" : null,
+      "type" : "CONTENT"
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "2bf17d4d-7a1c-8027-fe31-6b1a1e2f0187",
+  "name" : "bg_color",
+  "label" : "BG Color",
+  "required" : false,
+  "locked" : true,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#009fdf",
+    "opacity" : 100
+  }
+}, {
+  "id" : "2e55a026-41bc-c4d6-18c2-c1e08862fba7",
+  "name" : "title_text",
+  "label" : "Title Text",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "READY TO APPLY?"
+}, {
+  "id" : "26a29f89-0993-1f86-02a0-e5f935c43de2",
+  "name" : "button_text",
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "APPLY NOW"
+} ]

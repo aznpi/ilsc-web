@@ -1,0 +1,130 @@
+[ {
+  "id" : "b3914e32-9157-5cf0-3fac-623a9ec2419d",
+  "name" : "cta_text",
+  "label" : "Phone Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Call us!"
+}, {
+  "id" : "dcf26699-393c-9583-f6b1-54fd79b19e79",
+  "name" : "cta_phone_number",
+  "label" : "CTA Phone Number",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "+19095935555"
+}, {
+  "id" : "38057795-05be-aa22-1d72-7cb27ff9dced",
+  "name" : "message_text",
+  "label" : "Contact Us Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Contact Us!"
+}, {
+  "id" : "0138538d-2964-1679-6d55-24c1a8235dc5",
+  "name" : "contact_us_link",
+  "label" : "Contact Us Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "content_id" : 108940660531,
+      "href" : null,
+      "type" : "CONTENT"
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "e1fe9152-7c78-be56-03d9-9244f53f8f6e",
+  "name" : "quote_text",
+  "label" : "Quote Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Get A Quote"
+}, {
+  "id" : "f32c2ac1-39bd-e146-ff84-b45c2c900dc1",
+  "name" : "free_test_text",
+  "label" : "Free Test Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Take A Free Test"
+}, {
+  "id" : "95087beb-3a53-045b-24a1-a4b03c089067",
+  "name" : "free_test_link",
+  "label" : "Free Test Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "content_id" : 140873030796,
+      "href" : null,
+      "type" : "CONTENT"
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "80324c7b-8652-ae9f-3066-3998de309eb2",
+  "name" : "apply_now_text",
+  "label" : "Apply Now Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Apply Now!"
+}, {
+  "id" : "8f64ec05-c641-c617-4ab2-876c114720b7",
+  "name" : "apply_now_link",
+  "label" : "Apply Now Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "content_id" : 135493409105,
+      "href" : null,
+      "type" : "CONTENT"
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+} ]

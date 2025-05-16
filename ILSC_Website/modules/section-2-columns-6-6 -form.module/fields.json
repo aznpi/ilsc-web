@@ -1,0 +1,25 @@
+[ {
+  "id" : "b752680b-9aa6-1e6b-f627-6d37644d802e",
+  "name" : "main_text",
+  "label" : "Main Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>A vibrant, world-class cosmopolitan city.</h2>\n<p>Learn English in Sydney, Australia’s oldest, largest and most diverse city, with a population of over four million people. This vibrant, cosmopolitan city is a popular tourist destination with a huge range of sightseeing options, including iconic architecture, more than 70 stunning beaches, incredible granite cliffs, and the beautiful Sydney Harbour that surrounds the city.</p>"
+}, {
+  "id" : "1119d346-cfc9-8635-84fe-da3193aa6d29",
+  "name" : "form_field",
+  "label" : "Form",
+  "required" : false,
+  "locked" : false,
+  "type" : "form",
+  "display_width" : null,
+  "default" : {
+    "form_id" : "b499b977-61d2-410b-beee-c7837c211f7c",
+    "response_type" : "inline",
+    "message" : "Thanks for submitting the form.",
+    "gotowebinar_webinar_key" : null,
+    "form_type" : "HUBSPOT"
+  }
+} ]

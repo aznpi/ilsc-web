@@ -1,0 +1,257 @@
+[ {
+  "id" : "b5bbd11a-3148-ab36-d601-a80ea04bf801",
+  "name" : "anchor_name_text",
+  "label" : "Anchor Name Text",
+  "inline_help_text" : "Anchor Name must match the anchor name in the navigation. Do no enter symbols.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null
+}, {
+  "id" : "3fc11f5b-60d7-f6f9-ec4f-ff3c05b7c43c",
+  "name" : "title_text",
+  "label" : "Title Text",
+  "inline_help_text" : "Anchor Name must match the anchor name in the navigation.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null
+}, {
+  "id" : "93397f83-b3d8-2704-0d88-5afa4859919c",
+  "name" : "background_color",
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "48ef24a6-aeb6-d5fc-4f91-440e488aac6e",
+  "name" : "show_year_choice",
+  "label" : "Show Year Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "enable", "Enable" ], [ "disable", "Disable" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "enable"
+}, {
+  "id" : "8fd2a240-ea0e-d3a1-6428-0e211a79a2af",
+  "name" : "slide_cover_field_group",
+  "label" : "Slide Cover Field group",
+  "inline_help_text" : "This field will show slide before the date slides.",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "cffbef4b-a198-739e-da88-6c9e579bc241",
+    "name" : "description_rich_text",
+    "label" : "Description Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null
+  }, {
+    "id" : "8e60b6c4-70af-8ffd-c45c-640a37346e85",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }
+}, {
+  "id" : "e910f31b-07bf-600a-2320-161e9c24265f",
+  "name" : "year_field_group",
+  "label" : "Year Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 4,
+    "sorting_label_field" : "40a4ef30-a4f9-3734-ead9-26410f275ba3",
+    "default" : 0
+  },
+  "children" : [ {
+    "id" : "40a4ef30-a4f9-3734-ead9-26410f275ba3",
+    "name" : "year_text",
+    "label" : "Year Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "2021"
+  }, {
+    "id" : "ff53109d-ec6a-7e69-9c35-3833676791ec",
+    "name" : "month_box_field_group",
+    "label" : "Month Box Field group",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 12,
+      "sorting_label_field" : "",
+      "default" : 1
+    },
+    "children" : [ {
+      "id" : "25ee2a06-55eb-a8b7-c826-9b082199c72a",
+      "name" : "enable_month_choice",
+      "label" : "Month or Weeks Choice",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "enable", "Month" ], [ "disable", "Weeks" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null
+    }, {
+      "id" : "1afb8833-097b-afc8-9abd-42e7ed48ad7a",
+      "name" : "month_choice",
+      "label" : "Month Choice",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "25ee2a06-55eb-a8b7-c826-9b082199c72a",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "enable",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "display" : "select",
+      "choices" : [ [ "JAN", "JAN" ], [ "FEB", "FEB" ], [ "MAR", "MAR" ], [ "APR", "APR" ], [ "MAY", "MAY" ], [ "JUN", "JUN" ], [ "JULY", "JULY" ], [ "AUG", "AUG" ], [ "SEP", "SEP" ], [ "OCT", "OCT" ], [ "NOV", "NOV" ], [ "DEC", "DEC" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "JAN"
+    }, {
+      "id" : "5c718c71-2b25-c724-0fb8-23c753bedd9a",
+      "name" : "week_text",
+      "label" : "Week Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "25ee2a06-55eb-a8b7-c826-9b082199c72a",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "disable",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : ""
+    }, {
+      "id" : "3881b3c8-9351-4a11-cbc4-cfc3290b2a2b",
+      "name" : "date_text",
+      "label" : "Date Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "1"
+    }, {
+      "id" : "58de98b9-7d70-f279-1279-0fd908ac4cb8",
+      "name" : "enable_padding_choice",
+      "label" : "Enable Padding Choice",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "25ee2a06-55eb-a8b7-c826-9b082199c72a",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "enable",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "display" : "select",
+      "choices" : [ [ "enable", "Enable" ], [ "disable", "Disable" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "enable"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ {
+      "month_choice" : "JAN",
+      "enable_padding_choice" : "enable",
+      "week_text" : "",
+      "date_text" : "1"
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "year_text" : "2021",
+    "month_box_field_group" : [ {
+      "month_choice" : "JAN",
+      "enable_padding_choice" : "enable",
+      "week_text" : "",
+      "date_text" : "1"
+    } ]
+  }
+}, {
+  "id" : "fb556739-5486-027d-1944-cf79373f47a1",
+  "name" : "footer_rich_text",
+  "label" : "Footer Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null
+} ]

@@ -1,0 +1,9 @@
+<section class="section {{ module.text_align }} section-banner" style="background:{{ module.bg_color }}{% if module.bg_image.src %},url({{ module.bg_image.src }}) top right no-repeat{% endif %}" >
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				{% inline_rich_text field="richtext_field" value="{{ module.richtext_field }}" %}
+			</div>
+		</div>
+	</div>
+</section>

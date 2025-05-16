@@ -1,0 +1,11 @@
+.section-calendar .cover-slide-content{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 991.97px){
+  .section-calendar .cover-slide-content{
+    display: block; 
+   text-align:center;
+  }
+}

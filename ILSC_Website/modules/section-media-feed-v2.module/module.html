@@ -1,0 +1,31 @@
+<section class="section media-feed bg-white-canvas no-pad">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				{% inline_rich_text field="title" value="{{ module.title }}" %}
+			</div>
+		</div>
+	</div>
+	
+			<div class="media-slide">        
+       {% for item in module.insta %}
+	      {% if item.image_field.src %}
+          <div>
+            <div class="content-container">
+                {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+                {% if item.image_field.size_type == 'auto' %}
+                  {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                {% elif item.image_field.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.image_field.max_width }}px; max-height: {{ item.image_field.max_height }}px"' %}
+                {% endif %}
+                <a href="{{ item.link_url.href }}" target="_blank"><img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" loading="lazy" width="100%" height="100%"></a>
+
+              <div class="insta-{{ item.choice_field }}"></div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+        
+			</div>
+
+</section>

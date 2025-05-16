@@ -1,0 +1,14 @@
+.section-testimonials .quote-container{
+  width:90%;
+  margin:0 auto;
+}
+.section-testimonials .testimonial-slide-1 .quote-container h2{
+  font-size: 1.75rem;
+  line-height: 36px;
+}
+.section-testimonials .slick-next,.section-testimonials .slick-prev{
+  filter:  brightness(0) invert(1);
+}
+.section-testimonials .slick-dots{
+  bottom:-100px;
+}

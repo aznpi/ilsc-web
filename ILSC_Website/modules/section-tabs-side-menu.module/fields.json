@@ -1,0 +1,336 @@
+[ {
+  "id" : "1ae82e13-c813-57bf-2aec-810d33203f01",
+  "name" : "default_first_tab_open_boolean",
+  "label" : "Default First Tab Open Boolean",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "display_width" : null,
+  "default" : false
+}, {
+  "id" : "b7799973-c103-08f8-80d8-4fa5c58ca819",
+  "name" : "tabs_field_group",
+  "label" : "Tabs Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 20,
+    "sorting_label_field" : "18babe96-6710-18be-f892-d005b04a1bee",
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "18babe96-6710-18be-f892-d005b04a1bee",
+    "name" : "tab_title_text",
+    "label" : "Tab Title Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "ADMISSION"
+  }, {
+    "id" : "c7975843-51aa-ad8d-7ffa-4e7cd937d098",
+    "name" : "top_title_rich_text",
+    "label" : "Top Title Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h2><span>Admission Requirements</span></h2>\n<p><span>To be admitted to any Greystone College program, prospective students must meet specific requirements regarding age, prior education, English level, and demonstrated proficiency in the basic skills required for college-level work. Admission requirements vary depending on your chosen campus:</span></p>"
+  }, {
+    "id" : "9058f41f-67e1-8672-6166-75ef0ea5a1f6",
+    "name" : "enable_dsiable_accordion_choice",
+    "label" : "Enable/Dsiable Accordion Choice",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "enable", "Enable" ], [ "disable", "Disable" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "enable"
+  }, {
+    "id" : "bf3f1b22-38a5-5431-3cea-47f1dc2929b1",
+    "name" : "enable_dsiable_accordion_2_choice",
+    "label" : "Enable/Dsiable Accordion 2 Choice",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "enable", "Enable" ], [ "disable", "Disable" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "disable"
+  }, {
+    "id" : "d3497d47-b66b-affa-40fb-5c8c20e3fe96",
+    "name" : "accordion_field_group",
+    "label" : "Accordion Field group",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 99,
+      "sorting_label_field" : "dcbd3c8b-c760-c5f0-2de9-9e21ce0d064b",
+      "default" : 4
+    },
+    "visibility" : {
+      "controlling_field" : "9058f41f-67e1-8672-6166-75ef0ea5a1f6",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "enable",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "children" : [ {
+      "id" : "dcbd3c8b-c760-c5f0-2de9-9e21ce0d064b",
+      "name" : "title_text",
+      "label" : "Title Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "TITLE"
+    }, {
+      "id" : "e0aceae4-e8f3-843e-3f7c-aae4bb47cf7e",
+      "name" : "content_rich_text",
+      "label" : "Content Rich text",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<p>Content Here</p>"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    } ]
+  }, {
+    "id" : "bc153300-515a-5256-e43e-8fd6224d2395",
+    "name" : "bottom_title_rich_text",
+    "label" : "Bottom Title Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : ""
+  }, {
+    "id" : "47442a9c-2f61-4d48-7f31-4635f70d9ae4",
+    "name" : "accordion_2_field_group",
+    "label" : "Accordion 2 Field group",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 20,
+      "sorting_label_field" : "dcbd3c8b-c760-c5f0-2de9-9e21ce0d064b",
+      "default" : 4
+    },
+    "visibility" : {
+      "controlling_field" : "bf3f1b22-38a5-5431-3cea-47f1dc2929b1",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "enable",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "children" : [ {
+      "id" : "b4c5ed95-6f7f-1b86-5b55-5098e4d4dac2",
+      "name" : "title_text",
+      "label" : "Title Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "TITLE"
+    }, {
+      "id" : "4b57ab31-c861-9304-6c8b-02deb70820ed",
+      "name" : "content_rich_text",
+      "label" : "Content Rich text",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<p>Content Here</p>"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "tab_title_text" : "ADMISSION",
+    "top_title_rich_text" : "<h2><span>Admission Requirements</span></h2>\n<p><span>To be admitted to any Greystone College program, prospective students must meet specific requirements regarding age, prior education, English level, and demonstrated proficiency in the basic skills required for college-level work. Admission requirements vary depending on your chosen campus:</span></p>",
+    "enable_dsiable_accordion_choice" : "enable",
+    "enable_dsiable_accordion_2_choice" : "disable",
+    "accordion_field_group" : [ {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    } ],
+    "bottom_title_rich_text" : "",
+    "accordion_2_field_group" : [ {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    } ]
+  }, {
+    "tab_title_text" : "ADMISSION",
+    "top_title_rich_text" : "<h2><span>Admission Requirements</span></h2>\n<p><span>To be admitted to any Greystone College program, prospective students must meet specific requirements regarding age, prior education, English level, and demonstrated proficiency in the basic skills required for college-level work. Admission requirements vary depending on your chosen campus:</span></p>",
+    "enable_dsiable_accordion_choice" : "enable",
+    "enable_dsiable_accordion_2_choice" : "disable",
+    "accordion_field_group" : [ {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    } ],
+    "bottom_title_rich_text" : "",
+    "accordion_2_field_group" : [ {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    } ]
+  }, {
+    "tab_title_text" : "ADMISSION",
+    "top_title_rich_text" : "<h2><span>Admission Requirements</span></h2>\n<p><span>To be admitted to any Greystone College program, prospective students must meet specific requirements regarding age, prior education, English level, and demonstrated proficiency in the basic skills required for college-level work. Admission requirements vary depending on your chosen campus:</span></p>",
+    "enable_dsiable_accordion_choice" : "enable",
+    "enable_dsiable_accordion_2_choice" : "disable",
+    "accordion_field_group" : [ {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    } ],
+    "bottom_title_rich_text" : "",
+    "accordion_2_field_group" : [ {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    } ]
+  }, {
+    "tab_title_text" : "ADMISSION",
+    "top_title_rich_text" : "<h2><span>Admission Requirements</span></h2>\n<p><span>To be admitted to any Greystone College program, prospective students must meet specific requirements regarding age, prior education, English level, and demonstrated proficiency in the basic skills required for college-level work. Admission requirements vary depending on your chosen campus:</span></p>",
+    "enable_dsiable_accordion_choice" : "enable",
+    "enable_dsiable_accordion_2_choice" : "disable",
+    "accordion_field_group" : [ {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    } ],
+    "bottom_title_rich_text" : "",
+    "accordion_2_field_group" : [ {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    }, {
+      "title_text" : "TITLE",
+      "content_rich_text" : "<p>Content Here</p>"
+    } ]
+  } ]
+} ]

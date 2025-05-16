@@ -1,0 +1,410 @@
+[ {
+  "id" : "e7424cae-6d3a-d04c-4932-dfcad9eb4502",
+  "name" : "title_text",
+  "label" : "Title text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Study Schedules</h2>\n<p><span class=\"bold\" style=\"color: #ff8b35;\">CORE:</span> Core courses provide a strong foundation in the subject area. <span class=\"bold\" style=\"color: #199dc3;\">SKILLS:</span> Skills electives focus in-depth on specific skills. 1 lesson = 50 minutes.</p>"
+}, {
+  "id" : "29663fa6-d87f-3d03-f666-d089270ef358",
+  "name" : "hide_show_tab_header_choice",
+  "label" : "Hide/Show Tab Header Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "show"
+}, {
+  "id" : "04878ce2-e4c2-ac94-9e90-1be3946a157a",
+  "name" : "tabs",
+  "label" : "Tabs",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "a3abb5ab-efaa-3803-a373-8089c8920b26",
+    "name" : "tab_1",
+    "label" : "Tab 1",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "6902dff6-b0af-f7cb-190a-8362d94f52dc",
+      "name" : "hide_show",
+      "label" : "Hide/Show",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "show"
+    }, {
+      "id" : "2d04de45-f279-53cd-553b-f9677e468918",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "CANADA"
+    }, {
+      "id" : "0d267318-f80b-cf4a-fa4e-8b92e0dc7677",
+      "name" : "schedule_items",
+      "label" : "Schedule Items",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "max" : null,
+        "sorting_label_field" : null,
+        "default" : 4
+      },
+      "children" : [ {
+        "id" : "4d387ef4-8443-9a17-9d21-f342f4ff83c4",
+        "name" : "schedule_title",
+        "label" : "Schedule Title",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Full-Time Intensive Schedule (30 Lessons / week)"
+      }, {
+        "id" : "6b686c2e-0e89-04c5-fce1-2d018c5c65f0",
+        "name" : "schedule_text",
+        "label" : "Schedule text",
+        "required" : false,
+        "locked" : false,
+        "type" : "richtext",
+        "display_width" : null,
+        "default" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : [ {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      }, {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      }, {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      }, {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      } ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "hide_show" : "show",
+      "title" : "CANADA",
+      "schedule_items" : [ {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      }, {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      }, {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      }, {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      } ]
+    }
+  }, {
+    "id" : "488b8e0b-d5e1-971c-d67b-7eea4822038b",
+    "name" : "tab_2",
+    "label" : "Tab 2",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "b1bd026a-7d99-6d38-756a-1180662f045e",
+      "name" : "hide_show",
+      "label" : "Hide/Show",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "show"
+    }, {
+      "id" : "5d6e4be5-0ac5-93ed-a689-0af4a364b4f7",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "AUSTRALIA"
+    }, {
+      "id" : "287aebf4-2762-7ac6-c618-933af6911224",
+      "name" : "schedule_items",
+      "label" : "Schedule Items",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "max" : null,
+        "sorting_label_field" : null,
+        "default" : 4
+      },
+      "children" : [ {
+        "id" : "58183db0-fdcd-9a91-7a75-793b87d0ab4e",
+        "name" : "schedule_title",
+        "label" : "Schedule Title",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Full-Time Intensive Schedule (30 Lessons / week)"
+      }, {
+        "id" : "172c3330-578f-4b58-d0d0-f9af64cee0e9",
+        "name" : "schedule_text",
+        "label" : "Schedule text",
+        "required" : false,
+        "locked" : false,
+        "type" : "richtext",
+        "display_width" : null,
+        "default" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : [ {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      }, {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      }, {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      }, {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      } ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "hide_show" : "show",
+      "title" : "AUSTRALIA",
+      "schedule_items" : [ {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      }, {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      }, {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      }, {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      } ]
+    }
+  }, {
+    "id" : "9854a8fb-13aa-0977-27f4-8d32522da9ec",
+    "name" : "tab_3",
+    "label" : "Tab 3",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "ec5fc955-b488-9c44-7cb6-5f5f2f8f7887",
+      "name" : "hide_show",
+      "label" : "Hide/Show",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "show"
+    }, {
+      "id" : "0ed04621-2d89-f8ec-3cc6-14726f7b7d8c",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "INDIA"
+    }, {
+      "id" : "f3a92a5f-b972-f153-7385-b407f1ba0940",
+      "name" : "schedule_items",
+      "label" : "Schedule Items",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "max" : null,
+        "sorting_label_field" : null,
+        "default" : 4
+      },
+      "children" : [ {
+        "id" : "7a94b192-5768-7de7-cc03-a5b22efe5c52",
+        "name" : "schedule_title",
+        "label" : "Schedule Title",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Full-Time Intensive Schedule (30 Lessons / week)"
+      }, {
+        "id" : "9ff58825-f643-142c-f0bb-d211c9b589e1",
+        "name" : "schedule_text",
+        "label" : "Schedule text",
+        "required" : false,
+        "locked" : false,
+        "type" : "richtext",
+        "display_width" : null,
+        "default" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : [ {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      }, {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      }, {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      }, {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      } ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "hide_show" : "show",
+      "title" : "INDIA",
+      "schedule_items" : [ {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      }, {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      }, {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      }, {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      } ]
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "tab_1" : {
+      "hide_show" : "show",
+      "title" : "CANADA",
+      "schedule_items" : [ {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      }, {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      }, {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      }, {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      } ]
+    },
+    "tab_2" : {
+      "hide_show" : "show",
+      "title" : "AUSTRALIA",
+      "schedule_items" : [ {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      }, {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      }, {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      }, {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      } ]
+    },
+    "tab_3" : {
+      "hide_show" : "show",
+      "title" : "INDIA",
+      "schedule_items" : [ {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      }, {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      }, {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      }, {
+        "schedule_title" : "Full-Time Intensive Schedule (30 Lessons / week)",
+        "schedule_text" : "<hr>\n<h5>MONDAY TO FRIDAY : 9:00AM - 12:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course</p>\n<h5>MONDAY TO THURSDAY : 1:00PM - 4:00PM</h5>\n<p>Choose a <span style=\"color: #ff8b35;\"><strong>CORE</strong></span> course or 2 <strong><span style=\"color: #199dc3;\">SKILLS</span></strong> elective</p>\n<hr>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      } ]
+    }
+  }
+} ]

@@ -1,0 +1,46 @@
+<footer class="footer-container">
+	<div class="container"> 
+		<div class="row">
+			<div class="col-md-8 footnote">
+				{% inline_rich_text field="copyright" value="{{ module.copyright }}" %}
+      </div>
+			<div class="col-md-4">
+         <ul class="footnote-links">
+           {% for item in module.footnote_link_group %}
+              {% set href = item.link.url.href %}
+              {% if item.link.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+              {% endif %}
+              {% set rel = [] %}
+              {% if item.link.no_follow %}
+                {% do rel.append("nofollow") %}
+              {% endif %}
+              {% if item.link.open_in_new_tab %}
+                {% do rel.append("noopener") %}
+              {% endif %}
+                <li>
+                  <a href="{{ href }}" {% if item.link.open_in_new_tab %}target="_blank"{% endif %} {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}>{{ item.text_field }}</a>
+                </li>
+           {% endfor %}
+        </ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="ilscModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+      <div class="modal-body">
+      	
+      </div>
+      
+    </div>
+  </div>
+</div>

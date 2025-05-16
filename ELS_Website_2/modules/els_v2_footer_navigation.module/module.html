@@ -1,0 +1,109 @@
+<section class="section-footer">
+  <div class="polygon-overlay">
+    <div class="polygon-orange-overlay">
+
+    </div>
+    <div class="polygon-blue-overlay"></div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 left-container">
+        <div class="logo-container">
+          {% if module.logo_image.src %}
+            {% set sizeAttrs = 'width="{{ module.logo_image.width }}" height="{{ module.logo_image.height }}"' %}
+            {% if module.logo_image.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ module.logo_image.width }}" height="{{ module.logo_image.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif module.logo_image.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ module.logo_image.max_width }}" height="{{ module.logo_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+             {% set loadingAttr = module.logo_image.loading != 'disabled' ? 'loading="{{ module.logo_image.loading }}"' : '' %}
+                    <img src="{{ module.logo_image.src }}" alt="{{ module.logo_image.alt }}" width="141px" class="img-fluid">
+
+          {% endif %}
+        </div>
+        <h3>
+          {{ module.sub_text }}
+        </h3>
+        <div class="social-media-container">
+          <ul>
+            {% for item in module.social_media %}
+              {% set href = item.link_field.url.href %}
+              {% if item.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+              {% endif %}
+              <li> 
+                <a href="{{ href }}"
+                  {% if item.link_field.open_in_new_tab %}target="_blank"{% endif %}
+                  {% if item.link_field.rel %}rel="{{ item.link_field.rel }}"{% endif %}
+                  >{{ item.social_icon_svg.embed_html }}</a>
+              </li>
+          {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-9 right-container">
+        <div class="row">
+          {% for item in module.main_footer_nav_field_group.column_field_group %}
+            <div class="col footer-dropdown">
+              <input type="checkbox" name="footer-menu" id="{{ item.title_text_field|replace(' ','')|lower }}-footer-id">
+              <label for="{{ item.title_text_field|replace(' ','')|lower }}-footer-id">
+                <h4>{{ item.title_text_field }}</h4>
+              </label>
+              <ul class="footer-dropdown-item">
+                {% for item2 in item.link_field_group %}
+                {% set href = item2.link_field_1.url.href %}
+                {% if item2.link_field_1.url.type is equalto "EMAIL_ADDRESS" %}
+                  {% set href = "mailto:" + href %}
+                {% endif %}
+                <li><a href="{{ href }}"
+                    {% if item2.link_field_1.open_in_new_tab %}target="_blank"{% endif %}
+                    {% if item2.link_field_1.rel %}rel="{{ item2.link_field_1.rel }}"{% endif %}
+                    >{{ item2.text_link }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endfor %}
+        </div>
+        
+        <div class="row sub-footer">
+          <div class="col-md-12 border-top">
+            <ul>
+              {% for item in module.sub_footer_nav_field_group.column_field_group.link_field_group %}
+              {% set href = item.link_field_1.url.href %}
+              {% if item.link_field_1.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+              {% endif %}
+              <li><a href="{{ href }}"
+              {% if item.link_field_1.open_in_new_tab %}target="_blank"{% endif %}
+              {% if item.link_field_1.rel %}rel="{{ item.link_field_1.rel }}"{% endif %}
+              >{{ item.text_link }}</a></li>
+              {% endfor %}
+            </ul>
+            <ul class="footer-copyright">
+              <li>{{ module.copyright_text }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="ilscModal" tabindex="-1" aria-labelledby="ilscModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" data-bs-theme="dark">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="ratio ratio-16x9">
+          <iframe src="" title="ELS English School" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

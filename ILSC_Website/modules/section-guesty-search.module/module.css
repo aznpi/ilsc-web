@@ -1,0 +1,23 @@
+section.guesty-widget__item.guests-dropdown { display: none !important; }
+.guesty-root-element.guesty-widget__container{
+  justify-content:center;
+}
+
+.section{
+  position:relative;
+  overflow:hidden;
+}
+.section-simple{
+  background-size:cover;
+}
+.section-simple .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 480px){
+ 
+}

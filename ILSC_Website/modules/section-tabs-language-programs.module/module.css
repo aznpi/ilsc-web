@@ -1,0 +1,39 @@
+.tab-courses.accordion-container .accordion .card{
+  border:0;
+  outline: 1px solid rgba(0,0,0,.125);
+}
+
+a.tip-text,a.tip-tex:hover{
+  text-decoration:none !important;
+}
+
+.tab-navigation-landing ul#pills-course-tab{
+  margin-bottom:0 !important;
+  margin-top:30px;
+  padding:0 115px;
+}
+
+.tab-navigation-landing ul#pills-course-tab li{
+  color:#BDBDBD;
+  cursor:pointer;
+  text-align:left;
+  width:50%;
+}
+.tab-navigation-landing ul#pills-course-tab li .nav-link{
+  background-color: rgb(255, 139, 53,.1);
+  color: #FF8B35 !important;
+  width:100%;
+  padding: 25px 50px;
+}
+.tab-navigation-landing ul#pills-course-tab li .nav-link.active{
+  background:#FF8B35;
+  border-bottom:0;
+  color:#FFF !important;
+  padding: 25px 50px !important;
+}
+.section-faq .tab-courses .accordion{
+  margin-top:0;
+}
+.col-md-6.section-faq .accordion-container{
+  padding:0 !important;
+}

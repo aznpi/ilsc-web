@@ -1,0 +1,50 @@
+<section class="{{ module.bg_angle_choice }} section-normal {{ module.padding_choice }} {{ module.margin_choice }} polygon-absolute {% if module.flip_bg_angle %}polygon-flip{% endif %}">
+      <div class="{% if module.bg_angle_choice == 'section-diagonal' %}diagonal-box{% elif module.bg_angle_choice == 'section-polygon'%}polygon-box{% endif %} {{ module.bg_color_choice }} underlap-partial-overlay"></div>
+        <div class="container">
+          <div class="row row-title">
+            <div class="col-md-12 {{ module.font_color_choice }}">
+              {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <ul class="icon-list list-3 center {{ module.font_color_choice }}">
+                {% for item in module.icon_field_group %}
+                <li>
+                  {% if item.icon_image.src %}
+                    {% set sizeAttrs = 'width="{{ item.icon_image.width }}" height="{{ item.icon_image.height }}"' %}
+                    {% if item.icon_image.size_type == 'auto' %}
+                      {% set sizeAttrs = 'width="{{ item.icon_image.width }}" height="{{ item.icon_image.height }}" style="max-width: 100%; height: auto;"' %}
+                      {% elif item.icon_image.size_type == 'auto_custom_max' %}
+                      {% set sizeAttrs = 'width="{{ item.icon_image.max_width }}" height="{{ item.icon_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                    {% set loadingAttr = item.icon_image.loading != 'disabled' ? 'loading="{{ item.icon_image.loading }}"' : '' %}
+                    <div class="icon-container">  
+                      <img src="{{ item.icon_image.src }}" alt="{{ item.icon_image.alt }}" class="img-fluid">
+                    </div>
+                  {% endif %}
+                  <div class="title">
+                    {% inline_rich_text field="title_rich_text" value="{{ item.title_rich_text }}" %}
+                  </div>
+                  <div class="sub-title">
+                     {% inline_rich_text field="sub_title_rich_tex" value="{{ item.sub_title_rich_tex }}" %}
+                  </div>
+                 
+                </li>
+              {% endfor %}
+              
+              
+              </ul>
+            </div>
+          </div>
+          {% if module.bottom_rich_text %}
+            <div class="row" style="padding:50px 0 150px;">
+              <div class="col-md-12 {{ module.font_color_choice }}">
+                {% inline_rich_text field="bottom_rich_text" value="{{ module.bottom_rich_text }}" %}
+              </div>
+            </div>
+          {% endif %}
+          
+        </div>
+      
+    </section>

@@ -1,0 +1,56 @@
+<section class="section photo-slide-4 {% if module.bg_color.color == '#FFFFFF'%}bg-white-canvas{% endif %}" style="background-color:{{ module.bg_color.color }};">
+  
+  <div class="container">		
+          <div class="row">
+						
+            <div class="col-md-12 title-text">
+              {% inline_rich_text field="title" value="{{ module.title }}" %}
+            </div>
+          </div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="gallery-slide photo-slide photo-slider-4 {{ module.choice_field }} mix">
+                {% for item in module.box_group %}
+                  {% set href = item.link_field.url.href %}
+                  {% if item.image.src %}
+                  <div class="box-container" {% if module.enable_disable_box_link_choice == "enable" %} onClick="location.href='{{ href }}';" style="cursor:pointer;" {% endif %}>
+                    <div>
+                      <img src="{{ item.image.src }}" alt="{{ item.image.alt }}" loading="lazy">
+                      <h4>{{ item.image.alt }}</h4>
+                    </div>
+                    <div class="short-description-container">
+                      <div class="short-description">			 			
+                       {% inline_rich_text field="short_description" value="{{ item.short_description }}" %}
+
+                      </div>
+                    </div>	
+                  </div>
+                  {% endif %}
+								{% endfor %}
+							</div>
+						</div>
+					
+					</div>
+			</div>
+</section>
+
+{% if module.hover_effect_choice == "on" %}
+  <style>
+    .photo-slide-4 .mix  .box-container:hover .short-description-container {
+      opacity: .9;
+    }
+    .photo-slide-4 .mix  .box-container:hover h4 {
+      display:none;
+    }
+    .photo-slide-4 .mix  .box-container:hover .short-description-container .short-description {
+      height: 100%;
+      top: 100%;
+      -webkit-transform: translateY(-100%);
+      -moz-transform: translateY(-100%);
+      -o-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+      transform: translateY(-100%);
+    }
+  </style>
+{% endif %}
+

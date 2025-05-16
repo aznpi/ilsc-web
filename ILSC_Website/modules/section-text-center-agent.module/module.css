@@ -1,0 +1,12 @@
+#agent-content{
+  display:none;
+}
+.section.section-text .col-md-12{
+  padding:0 130px;
+}
+
+@media (max-width: 600px) {
+  .section.section-text .col-md-12{
+    padding:0;
+  }
+}

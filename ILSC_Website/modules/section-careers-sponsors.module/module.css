@@ -1,0 +1,29 @@
+.section.section-text.section-career-sponsors .col-md-12{
+  padding:10px 130px;
+}
+
+@media (max-width: 600px) {
+  .section.section-text.section-career-sponsors .col-md-12{
+    padding:10px 0;
+  }
+}
+.section-career-sponsors .tier-sponsor{
+  text-align:center;
+  color:#FFFFFF;
+  
+}
+.section-career-sponsors .tier-sponsor .tier-title{
+  padding:10px 0;
+  margin:0 auto;
+}
+
+.section-career-sponsors .sponsor .row-sponsor{
+  display:flex;
+  align-items:center;
+}
+
+.section-career-sponsors .sponsor .row-sponsor .sponsor-logo img{
+  display:flex;
+  margin:0 auto;
+  width:auto;
+}

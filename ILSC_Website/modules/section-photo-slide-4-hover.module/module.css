@@ -1,0 +1,61 @@
+.photo-slide-4 .mix{
+  position:relative;
+}
+.photo-slide-4 .mix .box-container{
+  overflow:hidden;
+  position:relative;
+}
+
+.section .title-text h2{
+  margin-bottom:50px;
+}
+
+
+.photo-slide-4 .mix .box-container img {
+
+  width:100%;
+  vertical-align:middle;
+ 
+}
+
+.photo-slide-4 .mix .box-container .short-description-container {
+  opacity: 0;
+  transition: opacity .2s;
+  background: #FFF;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+  top: 0;
+  left:0;
+  overflow:hidden;
+}
+
+.photo-slide-4 .mix .box-container .short-description-container .short-description {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 70%;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+  opacity: .9;
+  padding: 50px;
+}
+
+.photo-slide-4 .mix .box-container .short-description-container .short-description p{
+  font-size: 1rem !important;
+  margin-top:10px;
+}
+.photo-slide-4 .mix .box-container .short-description-container .short-description {
+    position: absolute;
+    left: 10px;
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+}

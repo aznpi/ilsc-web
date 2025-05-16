@@ -1,0 +1,17 @@
+<div class="cta-flyout">
+	<div class="container">
+		<div class="row flyout-row-center">
+      <div>
+        <ul class="cta-button">
+          {% if  module.cta_flyout.phone_box.show_link %}
+            <li class="phone-text">
+              <span class="bold">{{ module.cta_flyout.phone_box.box_link_text }}</span>&nbsp;&nbsp;&nbsp;&nbsp;
+            </li>
+          {% endif %}
+          <li><a href="{{ module.cta_flyout.box_2.box_link_url.href }}" class="btn btn-outline-primary btn-black-outline">{{ module.cta_flyout.box_2.box_link_text }}</a></li>
+        </ul>     
+      </div>
+		</div>
+	</div>
+</div>
+

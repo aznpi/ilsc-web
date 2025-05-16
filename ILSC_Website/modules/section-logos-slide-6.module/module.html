@@ -1,0 +1,31 @@
+<section class="section section-logo-slide" style="background-color:{{ module.bg_color.color }}">
+  
+  <div class="container">		
+          <div class="row">
+						
+            <div class="col-md-12 center">
+              {% inline_rich_text field="title_text" value="{{ module.title_text }}" %}
+            </div>
+          </div>
+					<div class="row row-logo">
+						
+						<div class="col-md-12">
+							<div class="logo-slide">
+
+                {% for item in module.logo %}
+								
+									<div class="image-container">
+										<img src="{{ item.src }}" alt="{{ item.alt }}" loading="lazy">
+										
+									</div>
+								
+                {% endfor %}
+
+							</div>
+						</div>
+					
+					</div>
+			</div>
+</section>
+
+

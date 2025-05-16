@@ -1,0 +1,38 @@
+.section{
+  position:relative;
+  overflow:hidden;
+}
+.section.webinar-info .feature-container{
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
+  margin:30px 0 50px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.section.webinar-info .feature-container >div, .section.webinar-info .upcoming-container >div{
+  padding:0;
+}
+.section.webinar-info .upcoming-container >div:nth-child(odd){
+  padding-right: 10px;
+  padding-left: 15px;
+}
+.section.webinar-info .upcoming-container >div:nth-child(even){
+  padding-left: 10px;
+  padding-right: 15px;
+}
+.section.webinar-info .upcoming-container .content-container{
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
+  min-height:550px;
+}
+.section.webinar-info .content-container h5{
+  margin-bottom:0;
+}
+.section.webinar-info .feature-container .content-container h5:not(:nth-child(1)),.section.webinar-info .upcoming-container .content-container h5:not(:nth-child(1)){
+  margin:0;
+}
+.section.webinar-info .content-container h5.title-speaker{
+  margin: 30px 0 20px !important;
+}
+.section.webinar-info .info-container .content-container{
+  overflow: hidden;
+  padding: 30px 50px 50px;
+}

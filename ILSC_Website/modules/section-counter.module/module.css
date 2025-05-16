@@ -1,0 +1,156 @@
+.section-counter{
+  background: #f5f8fa;
+}
+.section-counter a{
+  margin:50px auto 0;
+  width:350px !important;
+}
+
+.section-counter .container{
+    padding: 100px 50px;
+}
+@media (max-width: 480px) {
+  .section-counter .container{
+      padding: 25px 50px;
+  }
+}
+.section-counter .counters {
+  display: -webkit-box;
+  display: flex;
+}
+
+.section-counter .counter {
+  line-height: 1;
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-align: center;
+          align-items: center;
+  height: 4.375rem;
+  font-size: 4.375rem;
+  margin: 0 1.25rem;
+  font-weight: 700;
+}
+.section-counter .counter > span {
+  z-index: 1;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  height: 100%;
+  -webkit-transition: -webkit-transform 2s ease;
+  transition: -webkit-transform 2s ease;
+  transition: transform 2s ease;
+  transition: transform 2s ease, -webkit-transform 2s ease;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  line-height: 1;
+}
+.section-counter .counter > span span {
+  -webkit-box-flex: 0;
+          flex: 0 0 100%;
+  height: 100%;
+}
+.section-counter .counter:nth-child(1) > span {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.section-counter .counter:nth-child(2) > span {
+  -webkit-transition-delay: 0.375s;
+          transition-delay: 0.375s;
+}
+.section-counter .counter:nth-child(3) > span {
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+.section-counter .counter:nth-child(4) > span {
+  -webkit-transition-delay: 1.125s;
+          transition-delay: 1.125s;
+}
+.section-counter .counter:nth-child(5) > span {
+  -webkit-transition-delay: 1.5s;
+          transition-delay: 1.5s;
+}
+.section-counter .counter:nth-child(6) > span {
+  -webkit-transition-delay: 1.875s;
+          transition-delay: 1.875s;
+}
+.section-counter .counter:nth-child(7) > span {
+  -webkit-transition-delay: 2.25s;
+          transition-delay: 2.25s;
+}
+.section-counter .counter:nth-child(8) > span {
+  -webkit-transition-delay: 2.625s;
+          transition-delay: 2.625s;
+}
+.section-counter .counter:nth-child(9) > span {
+  -webkit-transition-delay: 3s;
+          transition-delay: 3s;
+}
+.section-counter .counter:nth-child(10) > span {
+  -webkit-transition-delay: 3.375s;
+          transition-delay: 3.375s;
+}
+.section-counter .counter:nth-child(11) > span {
+  -webkit-transition-delay: 3.75s;
+          transition-delay: 3.75s;
+}
+.section-counter .counter:nth-child(12) > span {
+  -webkit-transition-delay: 4.125s;
+          transition-delay: 4.125s;
+}
+.section-counter .counter:nth-child(13) > span {
+  -webkit-transition-delay: 4.5s;
+          transition-delay: 4.5s;
+}
+.section-counter .counter:nth-child(14) > span {
+  -webkit-transition-delay: 4.875s;
+          transition-delay: 4.875s;
+}
+.section-counter .counter:nth-child(15) > span {
+  -webkit-transition-delay: 5.25s;
+          transition-delay: 5.25s;
+}
+.section-counter .counter:nth-child(16) > span {
+  -webkit-transition-delay: 5.625s;
+          transition-delay: 5.625s;
+}
+.section-counter .counter:nth-child(17) > span {
+  -webkit-transition-delay: 6s;
+          transition-delay: 6s;
+}
+.section-counter .counter:nth-child(18) > span {
+  -webkit-transition-delay: 6.375s;
+          transition-delay: 6.375s;
+}
+.section-counter .counter:nth-child(19) > span {
+  -webkit-transition-delay: 6.75s;
+          transition-delay: 6.75s;
+}
+.section-counter .counter:nth-child(20) > span {
+  -webkit-transition-delay: 7.125s;
+          transition-delay: 7.125s;
+}
+
+.section-counter .counter:nth-child(1) {
+  color: #FF8B35;
+}
+
+@media (max-width: 600px) {
+  .section-counter .container{
+    padding-top:50px;
+    padding-left:15px;
+    padding-right:15px;
+  }
+  .section-counter .counter>span{
+    margin:0 auto;
+  }
+  .section-counter .counters h5{
+    text-align:center;
+  }
+}
+[dir="rtl"] .section-counter .counters h5{
+  text-align:right;
+}

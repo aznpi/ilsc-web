@@ -1,0 +1,185 @@
+[ {
+  "id" : "fe1a6365-58b5-f55a-4d02-61b97a177130",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2><span>The perfect Junior Programs for you</span></h2>"
+}, {
+  "id" : "aa25d52d-b5ce-227a-bf6d-b460beea96f3",
+  "name" : "sub_title",
+  "label" : "Sub Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h3><span>Explore Junior Programs by choosing a campus.</span></h3>"
+}, {
+  "id" : "a902292d-ba3a-09b2-787b-9339cf09957c",
+  "name" : "filter_icon_field_group",
+  "label" : "Filter Icon Field group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "3f9a1d8a-7434-e93c-d04a-8aff4ecb24a9",
+    "name" : "icon_field_group",
+    "label" : "Icon Field group",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 0,
+      "max" : 99,
+      "sorting_label_field" : "cfd4b30c-d416-7fda-379c-9c3a1d2d3e36",
+      "default" : 1
+    },
+    "children" : [ {
+      "id" : "cfd4b30c-d416-7fda-379c-9c3a1d2d3e36",
+      "name" : "filter_name",
+      "label" : "Filter Name",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null
+    }, {
+      "id" : "60898203-cd7c-06b7-dfef-c0365c279835",
+      "name" : "image_field",
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ {
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "icon_field_group" : [ {
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    } ]
+  }
+}, {
+  "id" : "aa3f2751-af9c-f2ec-d829-14a830471f41",
+  "name" : "program_category_choice",
+  "label" : "Program Category Choice",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 10,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "display" : "select",
+  "choices" : [ [ "Junior Camps", "Junior Camps" ], [ "Family Camps", "Family Camps" ], [ "High School", "High School" ], [ "Programs", "Programs" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : [ "Junior Camps" ]
+}, {
+  "id" : "356c5ab8-d1bb-3859-51e4-98dc83cc67a3",
+  "name" : "campus_field_group",
+  "label" : "Campus Field group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "e84c0c76-a999-f25f-4f78-eb76cb9a1ffd",
+    "name" : "title_text",
+    "label" : "Title Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "CHOOSE YOUR CITY"
+  }, {
+    "id" : "89500e2a-b61e-d0d3-50a1-f9d9cb88810a",
+    "name" : "campus",
+    "label" : "Campus",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 0,
+      "max" : 99,
+      "sorting_label_field" : null,
+      "default" : 1
+    },
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : [ "Vancouver" ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "title_text" : "CHOOSE YOUR CITY",
+    "campus" : [ "Vancouver" ]
+  }
+}, {
+  "id" : "723825d1-d005-1e0d-9886-4ca3d755e319",
+  "name" : "link_text",
+  "label" : "Link Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "SEE MORE DETAILS"
+}, {
+  "id" : "cc6e9672-7f21-419e-2a7c-3e82d3db17ab",
+  "name" : "new_text_color",
+  "label" : "NEW Text Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#FF8B35",
+    "opacity" : 100
+  }
+} ]

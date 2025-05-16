@@ -1,0 +1,177 @@
+[ {
+  "id" : "31b1299e-239c-07f7-3396-d79cf6e5e86b",
+  "name" : "background_color",
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "57cef67c-32e1-6367-20e9-b734bfda6aa3",
+  "name" : "school_choice",
+  "label" : "School Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "ILSC Language School", "ILSC Language School" ], [ "Greystone College", "Greystone College" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "ILSC Language School"
+}, {
+  "id" : "80c39bc8-32b8-844a-563b-3e0916ee4782",
+  "name" : "title_text",
+  "label" : "Title Text",
+  "inline_help_text" : "Please do not enter any special characters into the TItle, Only '/'  and '-' allowed.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Canada 2021"
+}, {
+  "id" : "659e9485-76f5-fe03-4f42-4871f25a7ebb",
+  "name" : "sub_title_rich_text",
+  "label" : "Sub Title Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null
+}, {
+  "id" : "25f3707c-d7cf-2bad-63c6-b2a674cb6843",
+  "name" : "footer_rich_text",
+  "label" : "Footer Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null
+}, {
+  "id" : "cbdd4ffd-f1e6-8fd1-3449-b68434383ab9",
+  "name" : "row_field_group",
+  "label" : "Row Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 99,
+    "sorting_label_field" : "a27b4982-c3a4-b4f1-c748-09af04498ff4",
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "0a834803-afa9-70ce-1030-34199b4917e9",
+    "name" : "item_choice",
+    "label" : "Item Choice",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "ILSC Campus Homestay", "ILSC Campus Homestay" ], [ "Homestay Summer", "Homestay Summer" ], [ "Homestay Winter", "Homestay Winter" ], [ "Residence Summer: Lord Stanley Suites", "Residence Summer: Lord Stanley Suites" ], [ "Residence Winter: Lord Stanley Suites", "Residence Winter: Lord Stanley Suites" ], [ "McGill University Downtown Campus Residence", "McGill University Downtown Campus Residence" ], [ "University of British Columbia (UBC) Residence", "University of British Columbia (UBC) Residence" ], [ "ILSC Campus Homestay Summer", "ILSC Campus Homestay Summer" ], [ "ILSC Campus Day Only Summer", "ILSC Campus Day Only Summer" ], [ "North Vancouver Homestay Summer Intensive", "North Vancouver Homestay Summer Intensive" ], [ "North Vancouver Day Only Summer Intensive", "North Vancouver Day Only Summer Intensive" ], [ "ILSC Campus Homestay Winter Intensive", "ILSC Campus Homestay Winter Intensive" ], [ "ILSC Campus Day Only Winter Intensive", "ILSC Campus Day Only Winter Intensive" ], [ "University of British Columbia (UBC) Day Only", "University of British Columbia (UBC) Day Only" ], [ "Family Plus Homestay Winter", "Family Plus Homestay Winter" ], [ "Family Plus Day Only Winter", "Family Plus Day Only Winter" ], [ "Family Plus North Vancouver Homestay Summer Intensive", "Family Plus North Vancouver Homestay Summer Intensive" ], [ "Family Plus North Vancouver Day Only Summer Intensive", "Family Plus North Vancouver Day Only Summer Intensive" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "ILSC Campus Homestay"
+  }, {
+    "id" : "a27b4982-c3a4-b4f1-c748-09af04498ff4",
+    "name" : "category_choice",
+    "label" : "Category Choice",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "Junior Camps", "Junior Camp" ], [ "Family Camps", "Family Camp" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "Junior Camps"
+  }, {
+    "id" : "c1f45141-ff02-646e-4e46-23a3b23f2642",
+    "name" : "weeks_choice",
+    "label" : "Weeks Choice",
+    "inline_help_text" : "Required if you have chosen a city.",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 0,
+      "max" : 10,
+      "sorting_label_field" : null,
+      "default" : 1
+    },
+    "display" : "select",
+    "choices" : [ [ "1 Weeks", "1 Weeks" ], [ "2 Weeks", "2 Weeks" ], [ "3 Weeks", "3 Weeks" ], [ "4 Weeks", "4 Weeks" ], [ "5 Weeks", "5 Weeks" ], [ "6 Weeks", "6 Weeks" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : [ "1 Weeks" ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "item_choice" : "ILSC Campus Homestay",
+    "category_choice" : "Junior Camps",
+    "weeks_choice" : [ "1 Weeks" ]
+  } ]
+}, {
+  "id" : "5b01a4c9-5119-d9bd-3d88-43b6326fd655",
+  "name" : "campus_choice",
+  "label" : "Campus Choice",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 99,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "display" : "select",
+  "choices" : [ [ "Montreal", "Montreal" ], [ "Toronto", "Toronto" ], [ "Vancouver", "Vancouver" ], [ "Adelaide", "Adelaide" ], [ "Brisbane", "Brisbane" ], [ "Melbourne", "Melbourne" ], [ "Sydney", "Sydney" ], [ "Online", "Online" ], [ "New Delhi", "New Delhi" ], [ "Perth", "Perth" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : [ "Vancouver" ]
+}, {
+  "id" : "9153caa2-35ba-5e1d-0962-715d869b4c62",
+  "name" : "country_choice",
+  "label" : "Country Choice",
+  "inline_help_text" : "Required if you have chosen a city.",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "Canada", "Canada" ], [ "Australia", "Australia" ], [ "India", "India" ], [ "Online", "Online" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "Canada"
+}, {
+  "id" : "d2071b78-a4c7-e492-0d50-d7c088ec9e7d",
+  "name" : "price_year_choice",
+  "label" : "Price Year Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "price_current", "Current Year" ], [ "price_year_2", "Year 2" ], [ "price_year_3", "Year 3" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "price_current"
+} ]

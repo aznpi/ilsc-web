@@ -1,0 +1,112 @@
+[ {
+  "id" : "322f2869-94de-8b18-f7f0-2bfe667d00ec",
+  "name" : "price_list",
+  "label" : "Price List Field group",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 99,
+    "sorting_label_field" : "29cde942-334e-895f-3acf-2e6eae090370",
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "29cde942-334e-895f-3acf-2e6eae090370",
+    "name" : "page_name",
+    "label" : "Page Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "1"
+  }, {
+    "id" : "7d5a0425-2875-3884-a94e-58d9a9f7efb3",
+    "name" : "link_field",
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 57550220928
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "d468bc46-20ef-00aa-73d1-933143f11314",
+    "name" : "url_tag_text",
+    "label" : "Url Tag Text",
+    "inline_help_text" : "*Do no edit",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "pricing-table"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "page_name" : "1",
+    "link_field" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 57550220928
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "url_tag_text" : "pricing-table"
+  }, {
+    "page_name" : "1",
+    "link_field" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 57550220928
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "url_tag_text" : "pricing-table"
+  }, {
+    "page_name" : "1",
+    "link_field" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 57550220928
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "url_tag_text" : "pricing-table"
+  } ]
+}, {
+  "id" : "df3f3a2c-bc4e-57fc-d64b-0f74fdbbd173",
+  "name" : "pagination_text",
+  "label" : "Pagination Text",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "See more pricing. Go to Page:"
+} ]

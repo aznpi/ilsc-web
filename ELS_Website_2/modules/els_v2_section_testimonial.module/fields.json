@@ -1,0 +1,98 @@
+[ {
+  "id" : "e17b73fa-e373-4cd4-f9c9-41aa4ae9ced9",
+  "name" : "padding_choice",
+  "label" : "Padding Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "padding-none", "No Padding" ], [ "padding-top", "Padding Top" ], [ "padding-bottom", "Padding Bottom" ], [ "padding-top-none", "No Padding Top " ], [ "padding-bottom-none", "No Padding Bottom" ], [ "padding-top-extra", "Extra Top Padding" ], [ "padding-bottom-extra", "Extra Bottom Padding" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "5824c83f-81c6-7463-0515-5dfc0f94734f",
+  "name" : "title_rich_text",
+  "label" : "Title Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2 class=\"bold\">What Our Students<br><span style=\"color: #ff8b35;\">Say About Us</span></h2>"
+}, {
+  "id" : "71516ed6-9eb4-926c-5e6c-4e0d6d10fad8",
+  "name" : "bg_image",
+  "label" : "BG Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.ilsc.com/hubfs/bg_multi_polygon.png",
+    "alt" : "bg_multi_polygon",
+    "loading" : "lazy",
+    "width" : 787,
+    "height" : 559,
+    "max_width" : 787,
+    "max_height" : 559
+  }
+}, {
+  "id" : "760c52e7-91de-a6d1-bf10-8a9305d802cc",
+  "name" : "testimonial_field_group",
+  "label" : "Testimonial Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 10,
+    "sorting_label_field" : "2627ba95-22c4-b95f-940a-a1617b3fce8b",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "2627ba95-22c4-b95f-940a-a1617b3fce8b",
+    "name" : "author_image",
+    "label" : "Author Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "e4e767ef-ad67-f15c-1893-7df32d459047",
+    "name" : "quote_rich_text",
+    "label" : "Quote Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<p class=\"bold\">I absolutely loved my experience at ELS Chicago!</p>\n<p>The teachers were incredibly professional and dedicated, making learning enjoyable and effective. The university campus facilities were amazing, providing a conducive environment for both studying and socializing. I highly recommend ELS Chicago for anyone looking for top-notch education and a fantastic campus experience.</p>"
+  }, {
+    "id" : "d7bada39-bd28-5349-2a3a-7a2142b35ea1",
+    "name" : "author_details_rich_text",
+    "label" : "Author Details Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<span class=\"bold\">Leon Santillan</span>, Cali - Colombia <span class=\"bold\" style=\"color: #ff8b35;\">/ ELS Chicago Alumni</span>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ ]
+} ]

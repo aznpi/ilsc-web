@@ -1,0 +1,73 @@
+.cta-flyout .cta-button .dropdown li{
+  background-size:25px 25px;
+  background-repeat:no-repeat;
+  padding-left:50px;
+  background-position: 10px 13px;
+}
+
+.cta-flyout .cta-button .dropdown li.icon-ilsc{
+  background-image:url(https://www.ilsc.com/hubfs/Website/Logos/logo_ilsc_50x50.png);
+}
+.cta-flyout .cta-button .dropdown li.icon-gc{
+  background-image:url(https://www.ilsc.com/hubfs/Website/Logos/logo_gc_50x50.png);
+}
+
+.cta-flyout .cta-button .dropdown .dropdown-item:focus,.cta-flyout .cta-button .dropdown .dropdown-item:hover{
+  background-color:transparent;
+}
+.cta-flyout .cta-button .dropdown ul.dropdown-menu li{
+  cursor:pointer;
+}
+.cta-flyout .cta-button .dropdown ul.dropdown-menu li:hover{
+  background-color: rgb(242,242,242);
+  background-color: linear-gradient(90deg, rgba(242,242,242,0.30996148459383754) 0%, rgba(222,222,222,0.23713235294117652) 35%, rgba(222,222,222,0.1923144257703081) 100%);
+}
+.cta-flyout .cta-button .dropdown.show .dropdown-toggle::after{
+    border-top: none;
+    border-bottom: 4px solid #000000;
+}
+.cta-flyout .cta-button .dropdown .dropdown-item{
+  display:inline-block;
+  padding: .25rem 1.5rem .25rem 0;
+}
+.cta-flyout .school-details ul.arrows li:before{
+  margin-left:0;
+}
+.cta-flyout ul li a.bold{
+  font-weight:700 !important;
+}
+
+@media (max-width: 480px) {
+  .cta-flyout{
+    padding:0 !important;
+  }
+  .footer-container .cta-flyout .container>.row div:first-child{
+    text-align:center;
+  }
+  .cta-flyout ul.cta-button{
+    margin-top:20px;
+  }
+  .cta-flyout ul.cta-button li{
+    padding: 0 3px !important;
+  }
+  .footer-container  .cta-flyout ul li a{
+    letter-spacing: 0;
+    line-height: 1;
+    font-size: .7rem;
+    height:30px;
+    display: flex;
+    align-items: center;
+    
+  }
+  .footer-container .cta-flyout .container>.row div:first-child{
+    padding-bottom:0;
+  }
+  .footer-container .cta-flyout .container>.row div:last-child{
+    padding-top:10px;
+  }
+}
+@media (max-width: 812px){ 
+  .footer-container .cta-flyout{
+    display:none;
+  }
+}

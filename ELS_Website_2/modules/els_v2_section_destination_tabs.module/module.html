@@ -1,0 +1,34 @@
+<section class="tab-navigation-landing section-carousel section-normal {{ module.padding_choice }}">
+  <div class="divider"></div>
+  <div class="container">
+    <nav id="carousel-nav-container" class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">Features:</a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav-Menu" aria-controls="navbarNav-Menu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="navbar-collapse collapse" id="navbarNav-Menu" style="">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          {% for item in module.tabs_field_group %}
+            <li class="nav-item">
+              <a class="nav-link {% if loop.first %}active{% endif %}" id="pills-{{loop.index}}-tab" data-bs-toggle="pill" href="#pills-{{loop.index}}" role="tab" aria-controls="pills-{{loop.index}}" aria-selected="true">{{ item.tab_title_text }}</a>
+            </li>
+{% endfor %}
+          
+        </ul>
+      </div>
+    </nav>
+    <div class="tab-content" id="pills-tabContent">
+      
+      {% for item in module.tabs_field_group %}
+        <div class="tab-pane fade {% if loop.first %}active show{% endif %}" id="pills-{{loop.index}}" role="tabpanel" aria-labelledby="pills-{{loop.index}}-tab">
+          <div class="content-container">
+            <div class="row">
+              <div class="col-md-12 description">
+                {% inline_rich_text field="description_rich_text" value="{{ item.description_rich_text }}" %}
+              </div>
+            </div>     
+          </div>
+        </div>
+      {% endfor %}
+      
+    </div>
+  </div>
+</section>

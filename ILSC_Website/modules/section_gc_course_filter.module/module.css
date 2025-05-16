@@ -1,0 +1,235 @@
+.section-course-filter.filter-container{
+  min-height:1000px;
+  padding-top:50px;
+} 
+.section-course-filter .show-row .btn{
+  width:auto;
+  border-radius:5px;
+}
+.section-course-filter .hide{
+  display:none;
+}
+.section-course-filter .show{
+  display:block;
+}
+.section-course-filter .dropdown-menu{
+  width:100%;
+}
+.section-course-filter .row-search .search-filter{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+html[dir='rtl'] .section-course-filter .row-search .search-filter .btn-container a.btn.btn-search{
+  border-radius:10px 0 0 10px;
+}
+html[dir='rtl'] .section-course-filter .row-search .search-filter .btn-group:first-child button.dropdown-toggle.btn-white{
+  border-radius: 0 10px 10px 0;
+}
+.section-course-filter .row-search .search-filter button.btn-toggle{
+  border-radius:10px 0 0 10px;
+  color: #111111;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: left;
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9
+}
+.section-course-filter .row-search .search-filter .dropdown-menu a{
+  cursor:pointer;
+}
+.section-course-filter .row-search .search-filter button.dropdown-toggle{
+  text-align:left;
+}
+.section-course-filter .row-search .search-filter button.dropdown-toggle:after{
+  content: "\f107";
+  font-family: Font Awesome\ 5 Free;
+  font-size: 18px;
+  font-weight: 600;
+  position: absolute;
+  right: 25px;
+  top: 7px;
+  color: #AEABAB;
+  border:0;
+}
+.section-course-filter .row-search .search-filter .btn-group button.dropdown-toggle.btn-white{
+  color:#111 !important;
+  border-radius:0;
+}
+.section-course-filter .row-search .search-filter .btn-group:first-child button.dropdown-toggle.btn-white{
+  border-radius:10px 0 0 10px;
+  border-right:1px solid #CCC;
+}
+.section-course-filter .row-search .search-filter button.dropdown-toggle.btn-white:hover{
+  background-color:#FFF !important;
+}
+.section-course-filter .row-search .search-filter .btn-container a.btn.btn-search{
+    background: #003346;
+    border-radius: 0 10px 10px 0;
+    color: #fff;
+    width: auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding-right:50px;
+}
+.section-course-filter .row-search .search-filter a.btn.btn-search:after{
+  content: "\f002";
+  font-family: Font Awesome\ 5 Free;
+  font-size: 14px;
+  font-weight: 600;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.section-course-filter .row-search .search-filter a.btn.btn-search:hover{
+  color: #81B1CC !important;
+}
+.section-course-filter .row-courses{
+  visibility:visible;
+  opacity: 1;
+ transition: visibility 0s .5s, opacity .6s linear;
+}
+.section-course-filter .row-courses, .section-course-filter .row-search{
+  margin-top:50px;
+}
+.section-course-filter .course-container{
+  min-height:300px;
+  margin-bottom:30px;
+  border:1px solid #CCC;
+  border-radius:5px;
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  box-shadow: 0px 0px 10px 0px #00000033;
+}
+.section-course-filter .course-container .tag-container{
+  position:absolute;
+  top:-15px;
+  right:0;
+  display:flex;
+  justify-content:end;
+  width:100%;
+}
+.section-course-filter .course-container .tag-container.tag-column{
+  flex-direction:column;
+  align-items:flex-end;
+  width:auto;
+}
+.section-course-filter .course-container .tag-area{
+  padding:5px 15px;
+  background: #F58236;
+  color:#FFF;
+  border-radius:5px;
+  font-size:14px;
+  margin-left:5px;
+  margin-bottom:5px;
+  text-align:center;
+  width:auto;
+}
+.section-course-filter .course-container .image-container{
+  height:200px;
+}
+.section-course-filter .course-container .header{
+  background: #003346;
+  color:#FFF;
+}
+.section-course-filter .course-container .header, .section-course-filter .course-container .tab-content{
+  padding:10px 20px;
+}
+.section-course-filter .course-container .image-container img{
+  object-fit:cover;
+  width:100%;
+  height:100%;
+}
+.section-course-filter .course-container .campus-group{
+  margin-bottom:15px;
+  border-left:2px solid #81B1CC;
+  padding-left:10px;
+}
+.section-course-filter .course-container .campus-group .title{
+  font-weight:700;
+  font-size:16px;
+  padding-left:10px;
+}
+.section-course-filter .course-container .campus-group .dates{
+  padding-left:10px;
+}
+.section-course-filter .course-container h6{
+  font-weight:700;
+  margin-bottom:10px;
+}
+.section-course-filter .course-container p{
+  font-size:16px;
+  margin-top:10px;
+}
+.section-course-filter .course-container .title h5{
+  margin:0;
+  display:flex;
+  align-items:center;
+}
+.section-course-filter .course-container .title{
+  margin-bottom:0;
+}
+.section-course-filter .course-container .course-nav .nav-tabs{
+  width:100%;
+  font-weight:600;
+  display:inline-block;
+  white-space:nowrap;
+  overflow:hidden;
+}
+.section-course-filter .course-container .course-nav .nav-tabs,.section-course-filter .course-container .course-nav .nav-tabs .nav-item,.section-course-filter .course-container .course-nav .nav-tabs .nav-item .nav-link{
+ border:0;
+}
+.section-course-filter .course-container .course-nav .nav-tabs .nav-item,.section-course-filter .course-container .course-nav .nav-tabs .nav-item .nav-link{
+  background-color:transparent;
+  font-weight:600;
+  height:100%;
+  width:100%;
+  padding:10px;
+  margin:0;
+}
+.section-course-filter .course-container .course-nav .nav-tabs .nav-item .nav-link.active{
+  background-color:#FFF;
+  color: #81B1CC;
+  border-bottom:4px solid #81B1CC;
+}
+.section-course-filter .course-container .course-nav .nav-tabs .nav-item{
+  display:inline-block;
+  width:33%;
+  text-align:center;
+  background: #F5F8FA;
+  height:100%;
+  padding:0;
+}
+.section-course-filter .course-container .course-nav .tab-content{
+  padding:15px;
+}
+
+.section-course-filter .lds-dual-ring {
+  position:absolute;
+  top:100px;
+  left:50%;
+  width: 80px;
+  height: 80px;
+}
+.section-course-filter .lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #81B1CC;
+  border-color: #81B1CC transparent #81B1CC transparent;
+  animation: lds-dual-ring .7s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

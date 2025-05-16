@@ -1,0 +1,101 @@
+.section.box-slide-no-image{
+  padding-bottom:0;
+}
+.mix .box-container{
+  background-color:#FFF;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  padding:20px;
+  position:relative;
+  margin-bottom:30px;
+  overflow:hidden;
+}
+.mix  .box-container:hover img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+.mix  .box-container:hover .short-description-container {
+  opacity: 1;
+}
+
+.mix  .box-container:hover .short-description-container .short-description {
+  height: 100%;
+  top: 100%;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.mix  .box-container img {
+  webkit-transition: transform .4s;
+  -moz-transition: transform .4s;
+  -o-transition: transform .4s;
+  -ms-transition: transform .4s;
+  transition: transform .4s;
+  width:100%;
+  vertical-align:middle;
+  line-height:1;
+}
+.mix  .box-container.hover-orange .short-description-container{
+  color:#FFF;
+  background: #FF9933;
+}
+.mix  .box-container.hover-orange .short-description-container a{
+ color:#FFF;
+}
+
+.mix  .box-container.hover-white .short-description-container{
+  background: #FFF;
+}
+
+.mix  .box-container .short-description-container {
+  opacity: 0;
+  transition: opacity .2s;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+  top: 0;
+  left:0;
+  overflow:hidden;
+}
+
+.mix  .box-container .short-description-container .short-description {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 70%;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+  opacity: .9;
+  padding: 20px;
+}
+.mix  .box-container .short-description-container .short-description a{
+  bottom:0;
+}
+.mix  .box-container .short-description-container .short-description p{
+  font-size: 1rem !important;
+  margin-top:10px;
+}
+.mix  .box-container .short-description-container .short-description {
+    position: absolute;
+    left: 10px;
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+}
+.mix  .box-container .a-link-small{
+  padding:0 15px;
+}

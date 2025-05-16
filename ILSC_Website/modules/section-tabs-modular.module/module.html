@@ -1,0 +1,32 @@
+<section id="content" class="tab-navigation-landing section">
+	<div class="divider"></div>
+	<div class="container">
+    <nav id="carousel-nav-container" class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand" href="#">{{ module.tabs.mobile_tab_text }}</a>
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav-Menu" aria-controls="navbarNav-Menu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+				<div class="navbar-collapse collapse" id="navbarNav-Menu" style="">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            {% for item in module.tabs.tab %}
+            <li class="nav-item">
+              <a class="nav-link {% if loop.index == 1 %}active{% endif %}" id="pills-{{loop.index}}-tab" data-toggle="pill" href="#pills-{{loop.index}}" role="tab" aria-controls="pills-{{loop.index}}" aria-selected="true">{{ item.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+      </div>
+    </nav>
+		<div class="tab-content" id="pills-tabContent">
+      {% for item in module.tabs.tab %}
+        <div class="tab-pane fade {% if loop.index == 1 %}show active{% endif %}" id="pills-{{loop.index}}" role="tabpanel" aria-labelledby="pills-{{loop.index}}-tab">
+          <div class="content-container">
+            <div class="row">
+              <div class="col-md-12">
+               {% inline_rich_text field="text_content" value="{{ item.text_content }}" %}
+              </div>
+            </div>
+        </div>
+        </div>
+		  {% endfor %}
+		</div>
+	</div>
+</section>
+

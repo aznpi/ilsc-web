@@ -1,0 +1,99 @@
+[ {
+  "id" : "db483522-31a4-341f-f423-c59bb3604e4c",
+  "name" : "anchor_id",
+  "label" : "Anchor ID",
+  "inline_help_text" : "Enter anchor id when using anchor nav. Do not use special characters and spaces.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null
+}, {
+  "id" : "ec8ade86-57e7-dd52-7d8e-77519ab46f43",
+  "name" : "padding_choice",
+  "label" : "Padding Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "padding-none", "None" ], [ "padding-bottom-none", "No Bottom Padding" ], [ "padding-top-none", "No Top Padding" ], [ "padding-top", "Top Padding" ], [ "padding-bottom", "Bottom Padding" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "ce6e15d5-41e5-05f0-d0fc-d202925950c2",
+  "name" : "bg_color_choice",
+  "label" : "BG Color Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "grey-linear-box", "Grey Linear" ], [ "orange-linear-box", "Orange Linear" ], [ "blue-linear-box", "Blue Linear" ], [ "orange-radial-box", "Orange Radial" ], [ "light-grey-linear-box", "Light Grey" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "560821b0-d0f3-b896-28f3-82add76791a5",
+  "name" : "title_rich_text",
+  "label" : "Title Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Learn English <span class=\"bold\">in Chicago at</span> <img src=\"https://www.ilsc.com/hubfs/ELS/Website%20v2/template-resources/images/logos/dominican-university-of-california-logo%201-min.png\" alt=\"dominican-university-of-california-logo 1-min\" class=\"img-fluid\"></h2>"
+}, {
+  "id" : "a0a5d858-1bb0-bf15-c5d7-112c823f8532",
+  "name" : "description_rich_text",
+  "label" : "Description Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<p>The beautiful ivy-covered buildings of Dominican University create an academic atmosphere that is complemented by large, modern classrooms with smart technology. When you study English at ELS Chicago, you'll have full access to the Dominican University campus facilities, which include a large library, dining facilities, and a new fitness center that features a large indoor running track.</p>\n<p><span class=\"bold\">Planning to transfer to an American college or university after your studies?</span> Upon successful completion of ELS Level 112, you will fulfill the English language entry requirement for conditional admission to Dominican University, as well as additional nearby partner colleges and universities.</p>"
+}, {
+  "id" : "f7354335-e5dd-c3e8-8ac2-1341c3c155de",
+  "name" : "bg_angle_image",
+  "label" : "BG Angle Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.ilsc.com/hubfs/ELS/Website%20v2/template-resources/images/background/bg_shape_red_angles.png",
+    "alt" : "bg_shape_red_angles",
+    "loading" : "lazy",
+    "width" : 663,
+    "height" : 512,
+    "max_width" : 663,
+    "max_height" : 512
+  }
+}, {
+  "id" : "042ff6e9-d70a-b9cd-f430-79af66f5664c",
+  "name" : "image_field",
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.ilsc.com/hubfs/email%20banners/Email%20images/ELS%20Chicago%20Reopening%20Email/Chicago-dominican-university.png",
+    "alt" : "Chicago-dominican-university",
+    "loading" : "lazy",
+    "width" : 926,
+    "height" : 693,
+    "max_width" : 926,
+    "max_height" : 693
+  }
+} ]

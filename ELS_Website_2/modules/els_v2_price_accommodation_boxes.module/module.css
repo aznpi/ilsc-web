@@ -1,0 +1,6 @@
+.section-pricing-boxes h5{
+  margin-bottom:30px;
+}
+.section-pricing-boxes li.campus-name, .section-pricing-boxes a.year-target{
+  cursor:pointer;
+}

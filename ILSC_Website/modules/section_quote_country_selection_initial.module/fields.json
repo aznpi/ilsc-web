@@ -1,0 +1,9 @@
+[ {
+  "id" : "7e933db5-a27f-3c42-2352-ab53d958b966",
+  "name" : "content_rich_text",
+  "label" : "Content Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null
+} ]

@@ -1,0 +1,45 @@
+<section class="section section-info-tabs bg-white-canvas" id="content">
+	<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {% inline_rich_text field="title_text" value="{{ module.title_text }}" %}
+      </div>
+    </div>
+        
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" data-tabs="tabs">
+      {% for item in module.tabs.tab %}
+      <li class="nav-item">
+        <a class="nav-link {% if loop.index == 1 %}active{% endif %}" id="pills-{{loop.index}}-tab" data-toggle="pill" href="#pills-{{loop.index}}" role="tab" aria-controls="pills-{{loop.index}}" aria-selected="true">{% inline_text field="title" value="{{ item.title }}" %}</a>
+      </li>
+      {% endfor %}
+    </ul>
+    
+		<div class="tab-content" id="pills-tabContent">
+      
+      {% for item in module.tabs.tab %}
+        <div class="tab-pane fade {% if loop.index == 1 %}show active{% endif %}" id="pills-{{loop.index}}" role="tabpanel" aria-labelledby="pills-{{loop.index}}-tab">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="image-container">
+                  <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" class="lazy">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="description-container">
+                  {% inline_rich_text field="description" value="{{ item.description }}" %}  
+                </div>           
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+      
+		</div>
+	</div>
+</section>
+<style>
+  .section-info-tabs ul.nav-pills li.nav-item{
+    width:calc(100%/{{ module.tabs.tab|length }});
+}
+</style>

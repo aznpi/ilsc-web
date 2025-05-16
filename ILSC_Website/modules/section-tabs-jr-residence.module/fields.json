@@ -1,0 +1,927 @@
+[ {
+  "id" : "04878ce2-e4c2-ac94-9e90-1be3946a157a",
+  "name" : "tabs",
+  "label" : "Tabs",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "a3abb5ab-efaa-3803-a373-8089c8920b26",
+    "name" : "tab_1",
+    "label" : "Tab 1",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "c1718a07-8691-badb-9606-a5cf0824c0bb",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Welcome to UBC"
+    }, {
+      "id" : "f26fe2ac-836b-9938-9db9-443c692a03dc",
+      "name" : "text_content",
+      "label" : "Text Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<h2>Explore Vancouver’s amazing natural beauty while you learn English and live on campus.</h2>\n<p>In our Residential Junior summer camp program, you’ll live in UBC’s Totem Park residence, study English on campus, and connect with other international students throughout your entire program. Experience an exciting combination of beautiful Vancouver, and prestigious UBC!</p>"
+    }, {
+      "id" : "7f36d2aa-46d3-f6a5-cf5a-0e799d17a6eb",
+      "name" : "image_video_choice",
+      "label" : "Image/Video Choice",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "image", "Image" ], [ "video", "Video" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "image"
+    }, {
+      "id" : "eb39e7d4-780e-1eeb-4c62-4976e24da69b",
+      "name" : "video_field_group",
+      "label" : "Video Field group",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "tabs.tab_1.image_video_choice",
+        "controlling_value_regex" : "video",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "children" : [ {
+        "id" : "6322b7f3-68e1-9ae7-0583-9901517cf1e3",
+        "name" : "video_image",
+        "label" : "Video Image",
+        "required" : false,
+        "locked" : false,
+        "responsive" : true,
+        "resizable" : true,
+        "show_loading" : false,
+        "type" : "image",
+        "display_width" : null,
+        "default" : {
+          "src" : "https://www.ilsc.com/hubfs/experience-ilsc-video.jpg",
+          "alt" : "experience-ilsc-video",
+          "width" : 1579,
+          "height" : 821,
+          "max_width" : 1579,
+          "max_height" : 821
+        }
+      }, {
+        "id" : "fc895d10-5ec9-2538-a559-7dcd717aa1e7",
+        "name" : "video_link_url",
+        "label" : "Youtube Video Link URL",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "FILE" ],
+        "type" : "url",
+        "display_width" : null,
+        "default" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : true,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : {
+        "video_image" : {
+          "src" : "https://www.ilsc.com/hubfs/experience-ilsc-video.jpg",
+          "alt" : "experience-ilsc-video",
+          "width" : 1579,
+          "height" : 821,
+          "max_width" : 1579,
+          "max_height" : 821
+        },
+        "video_link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }
+    }, {
+      "id" : "963e80f4-5ce8-9904-03fd-25614a3b434f",
+      "name" : "image_field",
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "tabs.tab_1.image_video_choice",
+        "controlling_value_regex" : "image",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_ubc_group.png",
+        "alt" : "img_ubc_group",
+        "width" : 570,
+        "height" : 509,
+        "max_width" : 570,
+        "max_height" : 509
+      }
+    }, {
+      "id" : "bda5fc84-58bd-c3d6-70c9-9e6630140c5d",
+      "name" : "cta_1",
+      "label" : "CTA 1",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "07e92cfa-27d7-0624-9d45-981cc9b52368",
+        "name" : "hide_show_cta",
+        "label" : "Hide/Show CTA",
+        "required" : false,
+        "locked" : false,
+        "display" : "select",
+        "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+        "multiple" : false,
+        "reordering_enabled" : true,
+        "preset" : null,
+        "type" : "choice",
+        "display_width" : null,
+        "default" : "show"
+      }, {
+        "id" : "46b267b8-29de-0226-bea8-d4381d1575c7",
+        "name" : "cta_url",
+        "label" : "CTA Url",
+        "required" : false,
+        "locked" : false,
+        "visibility" : {
+          "controlling_field" : "07e92cfa-27d7-0624-9d45-981cc9b52368",
+          "controlling_field_path" : null,
+          "controlling_value_regex" : "show",
+          "property" : null,
+          "operator" : "EQUAL",
+          "access" : null
+        },
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE" ],
+        "type" : "url",
+        "display_width" : null,
+        "default" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.youtube.com/embed/0ci-uzkLIwM",
+          "content_id" : null
+        }
+      }, {
+        "id" : "b9569c62-4002-a1fb-134a-221de8db7c8a",
+        "name" : "cta_url_text",
+        "label" : "CTA URL Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "visibility" : {
+          "controlling_field" : "07e92cfa-27d7-0624-9d45-981cc9b52368",
+          "controlling_field_path" : null,
+          "controlling_value_regex" : "show",
+          "property" : null,
+          "operator" : "EQUAL",
+          "access" : null
+        },
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "WATCH OUR VIDEO"
+      }, {
+        "id" : "039190e7-58fc-e678-17ec-4abceff48d58",
+        "name" : "cta_font_awesome_icon",
+        "label" : "CTA Font Awesome Icon",
+        "required" : false,
+        "locked" : false,
+        "visibility" : {
+          "controlling_field" : "07e92cfa-27d7-0624-9d45-981cc9b52368",
+          "controlling_field_path" : null,
+          "controlling_value_regex" : "show",
+          "property" : null,
+          "operator" : "EQUAL",
+          "access" : null
+        },
+        "display" : "select",
+        "choices" : [ [ "far fa-play-circle", "Play Video Icon" ], [ "far fa-file-pdf", "PDF Icon" ], [ "far fa-arrow-right", "Page Icon" ], [ "fas fa-blog", "Blog Icon" ], [ "none", "None" ] ],
+        "multiple" : false,
+        "reordering_enabled" : true,
+        "preset" : null,
+        "type" : "choice",
+        "display_width" : null,
+        "default" : "far fa-play-circle"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : {
+        "hide_show_cta" : "show",
+        "cta_url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.youtube.com/embed/0ci-uzkLIwM",
+          "content_id" : null
+        },
+        "cta_url_text" : "WATCH OUR VIDEO",
+        "cta_font_awesome_icon" : "far fa-play-circle"
+      }
+    }, {
+      "id" : "3d1ed45f-8282-9145-bf60-0be13a098e61",
+      "name" : "cta_2",
+      "label" : "CTA 2",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "62feba71-4613-48db-69cf-c2cd458c802c",
+        "name" : "hide_show_cta",
+        "label" : "Hide/Show CTA",
+        "required" : false,
+        "locked" : false,
+        "display" : "select",
+        "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+        "multiple" : false,
+        "reordering_enabled" : true,
+        "preset" : null,
+        "type" : "choice",
+        "display_width" : null,
+        "default" : "hide"
+      }, {
+        "id" : "ade79c42-adcb-3c5f-c28e-4a1d42258186",
+        "name" : "cta_url",
+        "label" : "CTA Url",
+        "required" : false,
+        "locked" : false,
+        "visibility" : {
+          "controlling_field" : "62feba71-4613-48db-69cf-c2cd458c802c",
+          "controlling_field_path" : null,
+          "controlling_value_regex" : "show",
+          "property" : null,
+          "operator" : "EQUAL",
+          "access" : null
+        },
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "BLOG" ],
+        "type" : "url",
+        "display_width" : null,
+        "default" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.youtube.com/embed/0ci-uzkLIwM",
+          "content_id" : null
+        }
+      }, {
+        "id" : "8976986b-20f1-e5b7-799a-6702a0e5e7cf",
+        "name" : "cta_url_text",
+        "label" : "CTA URL Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "visibility" : {
+          "controlling_field" : "62feba71-4613-48db-69cf-c2cd458c802c",
+          "controlling_field_path" : null,
+          "controlling_value_regex" : "show",
+          "property" : null,
+          "operator" : "EQUAL",
+          "access" : null
+        },
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "WATCH OUR VIDEO"
+      }, {
+        "id" : "5de21e3b-eaa9-5f24-4832-50d7bb00afde",
+        "name" : "cta_font_awesome_icon",
+        "label" : "CTA Font Awesome Icon",
+        "required" : false,
+        "locked" : false,
+        "visibility" : {
+          "controlling_field" : "62feba71-4613-48db-69cf-c2cd458c802c",
+          "controlling_field_path" : null,
+          "controlling_value_regex" : "show",
+          "property" : null,
+          "operator" : "EQUAL",
+          "access" : null
+        },
+        "display" : "select",
+        "choices" : [ [ "far fa-play-circle", "Play Video Icon" ], [ "far fa-file-pdf", "PDF Icon" ], [ "far fa-arrow-right", "Page Icon" ], [ "fas fa-blog", "Blog Icon" ], [ "none", "None" ] ],
+        "multiple" : false,
+        "reordering_enabled" : true,
+        "preset" : null,
+        "type" : "choice",
+        "display_width" : null,
+        "default" : "far fa-play-circle"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : {
+        "hide_show_cta" : "hide",
+        "cta_url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.youtube.com/embed/0ci-uzkLIwM",
+          "content_id" : null
+        },
+        "cta_url_text" : "WATCH OUR VIDEO",
+        "cta_font_awesome_icon" : "far fa-play-circle"
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "title" : "Welcome to UBC",
+      "text_content" : "<h2>Explore Vancouver’s amazing natural beauty while you learn English and live on campus.</h2>\n<p>In our Residential Junior summer camp program, you’ll live in UBC’s Totem Park residence, study English on campus, and connect with other international students throughout your entire program. Experience an exciting combination of beautiful Vancouver, and prestigious UBC!</p>",
+      "image_video_choice" : "image",
+      "video_field_group" : {
+        "video_image" : {
+          "src" : "https://www.ilsc.com/hubfs/experience-ilsc-video.jpg",
+          "alt" : "experience-ilsc-video",
+          "width" : 1579,
+          "height" : 821,
+          "max_width" : 1579,
+          "max_height" : 821
+        },
+        "video_link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      },
+      "image_field" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_ubc_group.png",
+        "alt" : "img_ubc_group",
+        "width" : 570,
+        "height" : 509,
+        "max_width" : 570,
+        "max_height" : 509
+      },
+      "cta_1" : {
+        "hide_show_cta" : "show",
+        "cta_url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.youtube.com/embed/0ci-uzkLIwM",
+          "content_id" : null
+        },
+        "cta_url_text" : "WATCH OUR VIDEO",
+        "cta_font_awesome_icon" : "far fa-play-circle"
+      },
+      "cta_2" : {
+        "hide_show_cta" : "hide",
+        "cta_url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.youtube.com/embed/0ci-uzkLIwM",
+          "content_id" : null
+        },
+        "cta_url_text" : "WATCH OUR VIDEO",
+        "cta_font_awesome_icon" : "far fa-play-circle"
+      }
+    }
+  }, {
+    "id" : "f86f0737-de58-9089-68f1-e334cfa8ca1d",
+    "name" : "tab_2",
+    "label" : "Tab 2",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "c589762c-7e48-a26a-e8d3-eb7c9f3f1dbd",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Programs Snapshot"
+    }, {
+      "id" : "0154250b-05f3-7a3d-6786-be887aab7696",
+      "name" : "text_content",
+      "label" : "Text Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<h5>WHAT TO EXPECT</h5>\n<p>1-6 weeks</p>\n<h5>PROGRAM START DATES</h5>\n<p>2020: Jun 28, Jul 5, Jul 12, Jul 19, Jul 26, Aug 2</p>\n<h5>AGE REQUIREMENT</h5>\n<p>10-17 years old</p>\n<h5>ENGLISH LEVEL</h5>\n<p>Any level</p>"
+    }, {
+      "id" : "1e66267a-765a-1744-e9a1-a63392d86b4f",
+      "name" : "image_field",
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_ubc_snap.png",
+        "alt" : "img_ubc_snap",
+        "width" : 638,
+        "height" : 392,
+        "max_width" : 638,
+        "max_height" : 392
+      }
+    }, {
+      "id" : "a032599f-af8a-4615-4cce-8f2ca8d25c9e",
+      "name" : "hide_show_cta",
+      "label" : "Hide/Show CTA",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "show"
+    }, {
+      "picker" : "file",
+      "id" : "215a1e5f-c41a-9cae-a29f-a976badb00e5",
+      "name" : "cta_link_url",
+      "label" : "CTA Link Url",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "a032599f-af8a-4615-4cce-8f2ca8d25c9e",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "show",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "type" : "file",
+      "display_width" : null
+    }, {
+      "id" : "c0ccdeed-1ecc-3b2d-28da-ae1417a8aceb",
+      "name" : "cta_link_text",
+      "label" : "CTA Link Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "a032599f-af8a-4615-4cce-8f2ca8d25c9e",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "show",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "VIEW OUR FACTSHEET"
+    }, {
+      "id" : "d3edf5c3-2aad-ec64-354b-a4ef0192b087",
+      "name" : "cta_font_awesome_icon",
+      "label" : "CTA Font Awesome Icon",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "a032599f-af8a-4615-4cce-8f2ca8d25c9e",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "show",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "display" : "select",
+      "choices" : [ [ "far fa-play-circle", "Play Video Icon" ], [ "far fa-file-pdf", "PDF Icon" ], [ "far fa-arrow-right", "Page Icon" ], [ "fas fa-blog", "Blog Icon" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "far fa-file-pdf"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "title" : "Programs Snapshot",
+      "text_content" : "<h5>WHAT TO EXPECT</h5>\n<p>1-6 weeks</p>\n<h5>PROGRAM START DATES</h5>\n<p>2020: Jun 28, Jul 5, Jul 12, Jul 19, Jul 26, Aug 2</p>\n<h5>AGE REQUIREMENT</h5>\n<p>10-17 years old</p>\n<h5>ENGLISH LEVEL</h5>\n<p>Any level</p>",
+      "image_field" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_ubc_snap.png",
+        "alt" : "img_ubc_snap",
+        "width" : 638,
+        "height" : 392,
+        "max_width" : 638,
+        "max_height" : 392
+      },
+      "hide_show_cta" : "show",
+      "cta_link_text" : "VIEW OUR FACTSHEET",
+      "cta_font_awesome_icon" : "far fa-file-pdf"
+    }
+  }, {
+    "id" : "fcda3f76-d80a-5893-2f55-fc837ef3aa64",
+    "name" : "tab_3",
+    "label" : "Tab 3",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "416aab9b-f8c4-0206-c17f-cb46ae11728b",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Live"
+    }, {
+      "id" : "74fe08a1-ab66-9c8c-4d31-f9d77564a0b8",
+      "name" : "text_content",
+      "label" : "Text Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<h2>Students live and dine within the UBC Totem Park Residence.</h2>\n<ul>\n<li><span class=\"bold\">CAPACITY:</span> 200</li>\n<li><span class=\"bold\">ACCOMMODATIONS:</span> Single rooms(limited doubles available upon request)</li>\n<li><span class=\"bold\">BATHROOMS:</span> Shared, 1:6</li>\n<li><span class=\"bold\">LAUNDRY:</span> Coin-operated machines available</li>\n<li><span class=\"bold\">INTERNET:</span> Wireless internet available in student common spaces</li>\n<li><span class=\"bold\">STUDENT TO STAFF RATIO:</span> 1:15</li>\n<li><span class=\"bold\">MEALS:</span> 3 meals per day</li>\n</ul>"
+    }, {
+      "id" : "8468877a-6c96-e966-f1e2-111e9fcbcf33",
+      "name" : "image_field",
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_ubc_room.png",
+        "alt" : "img_ubc_room",
+        "width" : 537,
+        "height" : 330,
+        "max_width" : 537,
+        "max_height" : 330
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "title" : "Live",
+      "text_content" : "<h2>Students live and dine within the UBC Totem Park Residence.</h2>\n<ul>\n<li><span class=\"bold\">CAPACITY:</span> 200</li>\n<li><span class=\"bold\">ACCOMMODATIONS:</span> Single rooms(limited doubles available upon request)</li>\n<li><span class=\"bold\">BATHROOMS:</span> Shared, 1:6</li>\n<li><span class=\"bold\">LAUNDRY:</span> Coin-operated machines available</li>\n<li><span class=\"bold\">INTERNET:</span> Wireless internet available in student common spaces</li>\n<li><span class=\"bold\">STUDENT TO STAFF RATIO:</span> 1:15</li>\n<li><span class=\"bold\">MEALS:</span> 3 meals per day</li>\n</ul>",
+      "image_field" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_ubc_room.png",
+        "alt" : "img_ubc_room",
+        "width" : 537,
+        "height" : 330,
+        "max_width" : 537,
+        "max_height" : 330
+      }
+    }
+  }, {
+    "id" : "af09cec3-cdcb-c357-b3a0-a89286ae634d",
+    "name" : "tab_4",
+    "label" : "Tab 4",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "89c6c5c4-909d-0a32-8e72-eeaa9a69c216",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Learn"
+    }, {
+      "id" : "9bc25507-d548-bd09-f6b5-1f1c2edcad39",
+      "name" : "text_content",
+      "label" : "Text Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<h2>Classes take place within the UBC academic facilities.</h2>\n<ul>\n<li><span class=\"bold\">NUMBER OF LANGUAGE LEVELS:</span> 5 Levels</li>\n<li><span class=\"bold\">NUMBER OF LESSONS:</span> 17 (15 hours per week)</li>\n<li><span class=\"bold\">NUMBER OF STUDENT PER CLASS:</span> 16 max</li>\n<li><span class=\"bold\">CONTENT:</span> Academic reading, grammar, vocabulary, essay writing, speaking and listening</li>\n<li><span class=\"bold\">CERTIFICATE:</span> End of course certificate and student progress reports provided</li>\n</ul>"
+    }, {
+      "id" : "874fbc77-9c95-8ad3-2aa8-b86ee7f3851e",
+      "name" : "image_field",
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_ubc_class.png",
+        "alt" : "img_ubc_class",
+        "width" : 542,
+        "height" : 333,
+        "max_width" : 542,
+        "max_height" : 333
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "title" : "Learn",
+      "text_content" : "<h2>Classes take place within the UBC academic facilities.</h2>\n<ul>\n<li><span class=\"bold\">NUMBER OF LANGUAGE LEVELS:</span> 5 Levels</li>\n<li><span class=\"bold\">NUMBER OF LESSONS:</span> 17 (15 hours per week)</li>\n<li><span class=\"bold\">NUMBER OF STUDENT PER CLASS:</span> 16 max</li>\n<li><span class=\"bold\">CONTENT:</span> Academic reading, grammar, vocabulary, essay writing, speaking and listening</li>\n<li><span class=\"bold\">CERTIFICATE:</span> End of course certificate and student progress reports provided</li>\n</ul>",
+      "image_field" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_ubc_class.png",
+        "alt" : "img_ubc_class",
+        "width" : 542,
+        "height" : 333,
+        "max_width" : 542,
+        "max_height" : 333
+      }
+    }
+  }, {
+    "id" : "0d9cda10-f619-6e4e-60be-b085b3dcbb4f",
+    "name" : "tab_5",
+    "label" : "Tab 5",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "b538d364-cf26-c958-fef0-aa3d08158837",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Explore"
+    }, {
+      "id" : "a0946eed-179d-0afb-d8b1-091cd7ee874b",
+      "name" : "text_content",
+      "label" : "Text Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<p>Students enjoy a social program that combines on-site activities, evening activities and off-site trips.</p>\n<p><span class=\"bold\">ATERNOON ON-SITE ACTIVITIES:</span> Students are offered a selection of onsite afternoon activities every Monday, Wednesday, and Friday. Activities include group sports, as well as performing and visual arts options. Options available vary from week to week.</p>\n<p><span class=\"bold\">EVENING ACTIVITIES:</span> Activities include scavenger hunts, sports evenings, student performances and dance parties.</p>\n<p><span class=\"bold\">OFF-SITE ACTIVITIES:</span> 4 off-site activities per week. Activities may include: Whistler, Capliano Suspension Bridge, Playland Amusement Park, Stanley park and more.</p>"
+    }, {
+      "id" : "5f2d6a37-00b2-bb11-6cba-285a8d8caaae",
+      "name" : "image_field",
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_ubc_seawall.png",
+        "alt" : "img_ubc_seawall",
+        "width" : 542,
+        "height" : 333,
+        "max_width" : 542,
+        "max_height" : 333
+      }
+    }, {
+      "id" : "9d689a4c-f5bb-e4b7-04af-02cbd6ccd78f",
+      "name" : "hide_show_cta_copy",
+      "label" : "Hide/Show CTA copy",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "show"
+    }, {
+      "picker" : "file",
+      "id" : "e185ea82-c48a-5cc6-791a-521bf809de45",
+      "name" : "cta_link_url",
+      "label" : "CTA Link Url",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "9d689a4c-f5bb-e4b7-04af-02cbd6ccd78f",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "show",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "type" : "file",
+      "display_width" : null
+    }, {
+      "id" : "5af3b1ce-9db0-c69b-5e21-3d40ae8375e5",
+      "name" : "cta_link_text",
+      "label" : "CTA Link Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "9d689a4c-f5bb-e4b7-04af-02cbd6ccd78f",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "show",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "CHECKOUT OUR ACTIVITY CALENDAR"
+    }, {
+      "id" : "019d255c-0af5-8eb1-5f24-78a5856ae200",
+      "name" : "cta_font_awesome_icon",
+      "label" : "CTA Font Awesome Icon",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "9d689a4c-f5bb-e4b7-04af-02cbd6ccd78f",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "show",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "display" : "select",
+      "choices" : [ [ "far fa-play-circle", "Play Video Icon" ], [ "far fa-file-pdf", "PDF Icon" ], [ "far fa-arrow-right", "Page Icon" ], [ "fas fa-blog", "Blog Icon" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "far fa-file-pdf"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "title" : "Explore",
+      "text_content" : "<p>Students enjoy a social program that combines on-site activities, evening activities and off-site trips.</p>\n<p><span class=\"bold\">ATERNOON ON-SITE ACTIVITIES:</span> Students are offered a selection of onsite afternoon activities every Monday, Wednesday, and Friday. Activities include group sports, as well as performing and visual arts options. Options available vary from week to week.</p>\n<p><span class=\"bold\">EVENING ACTIVITIES:</span> Activities include scavenger hunts, sports evenings, student performances and dance parties.</p>\n<p><span class=\"bold\">OFF-SITE ACTIVITIES:</span> 4 off-site activities per week. Activities may include: Whistler, Capliano Suspension Bridge, Playland Amusement Park, Stanley park and more.</p>",
+      "image_field" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_ubc_seawall.png",
+        "alt" : "img_ubc_seawall",
+        "width" : 542,
+        "height" : 333,
+        "max_width" : 542,
+        "max_height" : 333
+      },
+      "hide_show_cta_copy" : "show",
+      "cta_link_text" : "CHECKOUT OUR ACTIVITY CALENDAR",
+      "cta_font_awesome_icon" : "far fa-file-pdf"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "tab_1" : {
+      "title" : "Welcome to UBC",
+      "text_content" : "<h2>Explore Vancouver’s amazing natural beauty while you learn English and live on campus.</h2>\n<p>In our Residential Junior summer camp program, you’ll live in UBC’s Totem Park residence, study English on campus, and connect with other international students throughout your entire program. Experience an exciting combination of beautiful Vancouver, and prestigious UBC!</p>",
+      "image_video_choice" : "image",
+      "video_field_group" : {
+        "video_image" : {
+          "src" : "https://www.ilsc.com/hubfs/experience-ilsc-video.jpg",
+          "alt" : "experience-ilsc-video",
+          "width" : 1579,
+          "height" : 821,
+          "max_width" : 1579,
+          "max_height" : 821
+        },
+        "video_link_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      },
+      "image_field" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_ubc_group.png",
+        "alt" : "img_ubc_group",
+        "width" : 570,
+        "height" : 509,
+        "max_width" : 570,
+        "max_height" : 509
+      },
+      "cta_1" : {
+        "hide_show_cta" : "show",
+        "cta_url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.youtube.com/embed/0ci-uzkLIwM",
+          "content_id" : null
+        },
+        "cta_url_text" : "WATCH OUR VIDEO",
+        "cta_font_awesome_icon" : "far fa-play-circle"
+      },
+      "cta_2" : {
+        "hide_show_cta" : "hide",
+        "cta_url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.youtube.com/embed/0ci-uzkLIwM",
+          "content_id" : null
+        },
+        "cta_url_text" : "WATCH OUR VIDEO",
+        "cta_font_awesome_icon" : "far fa-play-circle"
+      }
+    },
+    "tab_2" : {
+      "title" : "Programs Snapshot",
+      "text_content" : "<h5>WHAT TO EXPECT</h5>\n<p>1-6 weeks</p>\n<h5>PROGRAM START DATES</h5>\n<p>2020: Jun 28, Jul 5, Jul 12, Jul 19, Jul 26, Aug 2</p>\n<h5>AGE REQUIREMENT</h5>\n<p>10-17 years old</p>\n<h5>ENGLISH LEVEL</h5>\n<p>Any level</p>",
+      "image_field" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_ubc_snap.png",
+        "alt" : "img_ubc_snap",
+        "width" : 638,
+        "height" : 392,
+        "max_width" : 638,
+        "max_height" : 392
+      },
+      "hide_show_cta" : "show",
+      "cta_link_text" : "VIEW OUR FACTSHEET",
+      "cta_font_awesome_icon" : "far fa-file-pdf"
+    },
+    "tab_3" : {
+      "title" : "Live",
+      "text_content" : "<h2>Students live and dine within the UBC Totem Park Residence.</h2>\n<ul>\n<li><span class=\"bold\">CAPACITY:</span> 200</li>\n<li><span class=\"bold\">ACCOMMODATIONS:</span> Single rooms(limited doubles available upon request)</li>\n<li><span class=\"bold\">BATHROOMS:</span> Shared, 1:6</li>\n<li><span class=\"bold\">LAUNDRY:</span> Coin-operated machines available</li>\n<li><span class=\"bold\">INTERNET:</span> Wireless internet available in student common spaces</li>\n<li><span class=\"bold\">STUDENT TO STAFF RATIO:</span> 1:15</li>\n<li><span class=\"bold\">MEALS:</span> 3 meals per day</li>\n</ul>",
+      "image_field" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_ubc_room.png",
+        "alt" : "img_ubc_room",
+        "width" : 537,
+        "height" : 330,
+        "max_width" : 537,
+        "max_height" : 330
+      }
+    },
+    "tab_4" : {
+      "title" : "Learn",
+      "text_content" : "<h2>Classes take place within the UBC academic facilities.</h2>\n<ul>\n<li><span class=\"bold\">NUMBER OF LANGUAGE LEVELS:</span> 5 Levels</li>\n<li><span class=\"bold\">NUMBER OF LESSONS:</span> 17 (15 hours per week)</li>\n<li><span class=\"bold\">NUMBER OF STUDENT PER CLASS:</span> 16 max</li>\n<li><span class=\"bold\">CONTENT:</span> Academic reading, grammar, vocabulary, essay writing, speaking and listening</li>\n<li><span class=\"bold\">CERTIFICATE:</span> End of course certificate and student progress reports provided</li>\n</ul>",
+      "image_field" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_ubc_class.png",
+        "alt" : "img_ubc_class",
+        "width" : 542,
+        "height" : 333,
+        "max_width" : 542,
+        "max_height" : 333
+      }
+    },
+    "tab_5" : {
+      "title" : "Explore",
+      "text_content" : "<p>Students enjoy a social program that combines on-site activities, evening activities and off-site trips.</p>\n<p><span class=\"bold\">ATERNOON ON-SITE ACTIVITIES:</span> Students are offered a selection of onsite afternoon activities every Monday, Wednesday, and Friday. Activities include group sports, as well as performing and visual arts options. Options available vary from week to week.</p>\n<p><span class=\"bold\">EVENING ACTIVITIES:</span> Activities include scavenger hunts, sports evenings, student performances and dance parties.</p>\n<p><span class=\"bold\">OFF-SITE ACTIVITIES:</span> 4 off-site activities per week. Activities may include: Whistler, Capliano Suspension Bridge, Playland Amusement Park, Stanley park and more.</p>",
+      "image_field" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_ubc_seawall.png",
+        "alt" : "img_ubc_seawall",
+        "width" : 542,
+        "height" : 333,
+        "max_width" : 542,
+        "max_height" : 333
+      },
+      "hide_show_cta_copy" : "show",
+      "cta_link_text" : "CHECKOUT OUR ACTIVITY CALENDAR",
+      "cta_font_awesome_icon" : "far fa-file-pdf"
+    }
+  }
+}, {
+  "id" : "52c69bc1-106c-4eb0-46a7-b2e704e61836",
+  "name" : "mobile_tab_text",
+  "label" : "Mobile Tab Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Features:"
+} ]

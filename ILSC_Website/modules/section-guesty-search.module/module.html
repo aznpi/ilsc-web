@@ -1,0 +1,25 @@
+<section class="section section-simple {% if module.enable_disable_parallax_choice == 'enable' %}parallax{% endif %}" id="content" style="background-image:url({{ module.bg_image_1_field.src }});">
+  <div class="overlay" style="{% if module.bg_color_choice =='solid' %}background-color: rgba({{ module.bg_overlay_color.color|convert_rgb }}, {{ module.bg_overlay_color.opacity/100 }});{% else %}background:{{ module.linear_color_text }};{% endif %}">
+  </div>
+	<div class="container">
+    {% if module.main_rich_text %}
+		<div class="row" style="padding:50px 0;">
+			<div class="col-md-12">
+          {% inline_rich_text field="main_rich_text" value="{{ module.main_rich_text }}" %}
+      </div>
+		</div>
+    {% endif %}
+    <div class="row">
+      <div class="col-md-12 guest-search-container">
+        {{ module.script_embed }}
+      </div>
+    </div>
+    {% if module.bottom_rich_text %}
+    <div class="row" style="padding:50px 0;">
+      <div class="col-md-12">
+        {% inline_rich_text field="bottom_rich_text" value="{{ module.bottom_rich_text }}" %}
+      </div>
+    </div>
+    {% endif %}
+	</div>
+</section>

@@ -1,0 +1,32 @@
+<section class="section {% if module.disable_enable_bg_color_choice == 'disable' %} bg-white-canvas {% endif %} section-6-6" id="content" {% if module.disable_enable_bg_color_choice == 'enable' %} style="background-color:rgba({{module.bg_color.color|convert_rgb }}, {{module.bg_color.opacity/100 }})
+" {% endif %}>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				{% inline_rich_text field="main_text" value="{{ module.main_text }}" %}
+        {% if module.cta_group.hide_show_cta == "show"%}
+          <div class="btn-video-container">
+            <div>
+              <i class="{{ module.cta_group.cta_font_awesome_icon }}"></i>
+            </div>
+            <div>
+              {% if module.cta_group.cta_font_awesome_icon == "far fa-play-circle" %}
+                <a href="#ilscModal" data-toggle="modal" class="video-btn" src="{{ module.cta_group.link_url.url.href }}">
+                  {% else %}
+                
+                  <a href="{{ module.cta_group.link_url.url.href }}"  	{% if module.cta_group.link_url.open_in_new_tab %}target="_blank"{% endif %}>
+              {% endif %}
+                  {{ module.cta_group.link_url_text }}
+              </a>
+            </div>
+          </div>
+        {% endif %}
+			</div>
+			<div class="col-md-6">
+				{% if module.image_field.src %}
+          <img class="lazy" data-src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" loading="lazy">
+        {% endif %}
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,163 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "path" : "/ILSC_Website/template-resources/stylesheets/external/slick/slick.css",
+    "type" : "cos_extension_resource"
+  }, {
+    "path" : "/ILSC_Website/template-resources/stylesheets/external/slick/slick-theme.css",
+    "type" : "cos_extension_resource"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/ELS_Website/template-resources/stylesheets/els_main.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/ELS_Website/template-resources/stylesheets/els_top_navigation.css"
+  } ],
+  "attachedJs" : [ {
+    "path" : "/ELS_Website/template-resources/javascript/els_top_navigation.js",
+    "type" : "cos_extension_resource"
+  }, {
+    "path" : "/ILSC_Website/template-resources/javascript/external/slick/slick-min.js",
+    "type" : "cos_extension_resource"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/ELS_Website/template-resources/javascript/main_function.js"
+  } ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_168546952303556",
+        "label" : "els_top_navigation_landing",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/ELS_Website/modules/els_top_navigation_landing",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "els_top_navigation_landing",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_15907833089239",
+        "label" : "Flexible column",
+        "type" : "widget_container",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_168546968250566",
+        "label" : "els_footer_landing",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/ELS_Website/modules/els_footer_landing",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "els_footer_landing",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

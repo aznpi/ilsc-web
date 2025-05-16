@@ -1,0 +1,932 @@
+[ {
+  "id" : "ce4f861e-29a0-64fc-bc0b-2578996d9358",
+  "name" : "program_name",
+  "label" : "Program Name",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "General English", "General English" ], [ "Business English", "Business English" ], [ "Academic and Test preparation", "Academic and Test preparation" ], [ "Creative & Cultural English", "Creative & Cultural English" ], [ "General French", "General French" ], [ "Creative & Cultural French", "Creative & Cultural French" ], [ "30 Plus", "30 Plus" ], [ "Business English and Hospitality Mastery", "Business English and Hospitality Mastery" ], [ "English for Creative Arts Mastery", "English for Creative Arts Mastery" ], [ "English through Green Leadership", "English through Green Leadership" ], [ "English through Journalism", "English through Journalism" ], [ "English through Global Social Responsibility Mastery", "English through Global Social Responsibility Mastery" ], [ "English for International Business Management Mastery", "English for International Business Management Mastery" ], [ "Marketing & Communications English Mastery", "Marketing & Communications English Mastery" ], [ "Business English Communication Mastery", "Business English Communication Mastery" ], [ "Online English Communication", "Online English Communication" ], [ "University Pathway Online", "University Pathway Online" ], [ "Greystone College Pathway Online", "Greystone College Pathway Online" ], [ "Volunteer Experience", "Volunteer Experience" ], [ "Volunteer Experience French", "Volunteer Experience French" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "General English"
+}, {
+  "id" : "04878ce2-e4c2-ac94-9e90-1be3946a157a",
+  "name" : "tabs",
+  "label" : "Tabs",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "a3abb5ab-efaa-3803-a373-8089c8920b26",
+    "name" : "tab_1",
+    "label" : "Tab 1",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "2d04de45-f279-53cd-553b-f9677e468918",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Welcome to Australia"
+    }, {
+      "id" : "f26fe2ac-836b-9938-9db9-443c692a03dc",
+      "name" : "text_content",
+      "label" : "Text Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<h2>Welcome to Australia</h2>\n<p>Australia is a land of dreams. From the sacred legends of the aboriginal Dreamtime, when the great spirits conjured the coral reefs, rainforests, and scorched red deserts, to armchair travelers who describe Australia as their dream destination, the Land Down Under deserves all the hype.</p>"
+    }, {
+      "id" : "963e80f4-5ce8-9904-03fd-25614a3b434f",
+      "name" : "image_field",
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_australia_group.png",
+        "alt" : "img_australia_group",
+        "width" : 537,
+        "height" : 353,
+        "max_width" : 537,
+        "max_height" : 353
+      }
+    }, {
+      "id" : "ca5567d0-9fd1-34ae-aa88-b4e0ebfdb114",
+      "name" : "cta_1",
+      "label" : "CTA 1",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "c6c1c2ed-d247-b32d-a85d-03ba3d5f93f3",
+        "name" : "hide_show_cta",
+        "label" : "Hide/Show CTA",
+        "required" : false,
+        "locked" : false,
+        "display" : "select",
+        "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+        "multiple" : false,
+        "reordering_enabled" : true,
+        "preset" : null,
+        "type" : "choice",
+        "display_width" : null,
+        "default" : "show"
+      }, {
+        "id" : "46b267b8-29de-0226-bea8-d4381d1575c7",
+        "name" : "cta_url",
+        "label" : "CTA Url",
+        "required" : false,
+        "locked" : false,
+        "visibility" : {
+          "controlling_field" : "c6c1c2ed-d247-b32d-a85d-03ba3d5f93f3",
+          "controlling_field_path" : null,
+          "controlling_value_regex" : "show",
+          "property" : null,
+          "operator" : "EQUAL",
+          "access" : null
+        },
+        "supported_types" : [ "CONTENT", "EXTERNAL", "FILE", "BLOG" ],
+        "type" : "url",
+        "display_width" : null,
+        "default" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        }
+      }, {
+        "id" : "821f18aa-b9ba-0c12-3680-81f76b8056d3",
+        "name" : "cta_text",
+        "label" : "CTA Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "visibility" : {
+          "controlling_field" : "c6c1c2ed-d247-b32d-a85d-03ba3d5f93f3",
+          "controlling_field_path" : null,
+          "controlling_value_regex" : "show",
+          "property" : null,
+          "operator" : "EQUAL",
+          "access" : null
+        },
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "WATCH OUR VIDEO"
+      }, {
+        "id" : "b458da4e-59c8-11e0-61d4-b18e64699f09",
+        "name" : "cta_font_awesome_icon",
+        "label" : "CTA Font Awesome Icon",
+        "required" : false,
+        "locked" : false,
+        "visibility" : {
+          "controlling_field" : "c6c1c2ed-d247-b32d-a85d-03ba3d5f93f3",
+          "controlling_field_path" : null,
+          "controlling_value_regex" : "show",
+          "property" : null,
+          "operator" : "EQUAL",
+          "access" : null
+        },
+        "display" : "select",
+        "choices" : [ [ "far fa-play-circle", "Play Video Icon" ], [ "far fa-file-pdf", "PDF Icon" ], [ "far fa-arrow-right", "Page Icon" ], [ "fas fa-blog", "Blog Icon" ], [ "", "None" ] ],
+        "multiple" : false,
+        "reordering_enabled" : true,
+        "preset" : null,
+        "type" : "choice",
+        "display_width" : null,
+        "default" : "far fa-play-circle"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : {
+        "hide_show_cta" : "show",
+        "cta_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "cta_text" : "WATCH OUR VIDEO",
+        "cta_font_awesome_icon" : "far fa-play-circle"
+      }
+    }, {
+      "id" : "a1f70281-4577-ac58-77f1-fe53a96d7372",
+      "name" : "cta_2",
+      "label" : "CTA 2",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "6772cb12-ec4f-c176-2176-91ac35e3a2d9",
+        "name" : "hide_show_cta",
+        "label" : "Hide/Show CTA",
+        "required" : false,
+        "locked" : false,
+        "display" : "select",
+        "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+        "multiple" : false,
+        "reordering_enabled" : true,
+        "preset" : null,
+        "type" : "choice",
+        "display_width" : null,
+        "default" : "hide"
+      }, {
+        "id" : "ecbc2baa-4bbd-20f7-18b0-67cd0d1221da",
+        "name" : "cta_url",
+        "label" : "CTA Url",
+        "required" : false,
+        "locked" : false,
+        "visibility" : {
+          "controlling_field" : "6772cb12-ec4f-c176-2176-91ac35e3a2d9",
+          "controlling_field_path" : null,
+          "controlling_value_regex" : "show",
+          "property" : null,
+          "operator" : "EQUAL",
+          "access" : null
+        },
+        "supported_types" : [ "CONTENT", "EXTERNAL", "FILE", "BLOG" ],
+        "type" : "url",
+        "display_width" : null,
+        "default" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        }
+      }, {
+        "id" : "2eae6a3d-1c53-9285-4b88-f17a0cc363fc",
+        "name" : "cta_text",
+        "label" : "CTA Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "visibility" : {
+          "controlling_field" : "6772cb12-ec4f-c176-2176-91ac35e3a2d9",
+          "controlling_field_path" : null,
+          "controlling_value_regex" : "show",
+          "property" : null,
+          "operator" : "EQUAL",
+          "access" : null
+        },
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "WATCH OUR VIDEO"
+      }, {
+        "id" : "5ac522b9-0d76-9b49-bed8-450cafd1b441",
+        "name" : "cta_font_awesome_icon",
+        "label" : "CTA Font Awesome Icon",
+        "required" : false,
+        "locked" : false,
+        "visibility" : {
+          "controlling_field" : "6772cb12-ec4f-c176-2176-91ac35e3a2d9",
+          "controlling_field_path" : null,
+          "controlling_value_regex" : "show",
+          "property" : null,
+          "operator" : "EQUAL",
+          "access" : null
+        },
+        "display" : "select",
+        "choices" : [ [ "far fa-play-circle", "Play Video Icon" ], [ "far fa-file-pdf", "PDF Icon" ], [ "far fa-arrow-right", "Page Icon" ], [ "fas fa-blog", "Blog Icon" ], [ "", "None" ] ],
+        "multiple" : false,
+        "reordering_enabled" : true,
+        "preset" : null,
+        "type" : "choice",
+        "display_width" : null,
+        "default" : "far fa-play-circle"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : {
+        "hide_show_cta" : "hide",
+        "cta_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "cta_text" : "WATCH OUR VIDEO",
+        "cta_font_awesome_icon" : "far fa-play-circle"
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "title" : "Welcome to Australia",
+      "text_content" : "<h2>Welcome to Australia</h2>\n<p>Australia is a land of dreams. From the sacred legends of the aboriginal Dreamtime, when the great spirits conjured the coral reefs, rainforests, and scorched red deserts, to armchair travelers who describe Australia as their dream destination, the Land Down Under deserves all the hype.</p>",
+      "image_field" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_australia_group.png",
+        "alt" : "img_australia_group",
+        "width" : 537,
+        "height" : 353,
+        "max_width" : 537,
+        "max_height" : 353
+      },
+      "cta_1" : {
+        "hide_show_cta" : "show",
+        "cta_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "cta_text" : "WATCH OUR VIDEO",
+        "cta_font_awesome_icon" : "far fa-play-circle"
+      },
+      "cta_2" : {
+        "hide_show_cta" : "hide",
+        "cta_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "cta_text" : "WATCH OUR VIDEO",
+        "cta_font_awesome_icon" : "far fa-play-circle"
+      }
+    }
+  }, {
+    "id" : "488b8e0b-d5e1-971c-d67b-7eea4822038b",
+    "name" : "tab_2",
+    "label" : "Tab 2",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "5d6e4be5-0ac5-93ed-a689-0af4a364b4f7",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Health and Safety"
+    }, {
+      "id" : "522bdff3-1b71-38ea-8deb-43e8f99ab93f",
+      "name" : "text_content",
+      "label" : "Text Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<div>\n<h5>LOCATION AVAILABLE</h5>\n<p>Vancouver and Toronto</p>\n</div>\n<div>\n<h5>PROGRAM LENGTH</h5>\n<p>1 week minimum</p>\n</div>\n<div>\n<h5>PROGRAM START DATES</h5>\n<p>Every Monday except the last week of the session</p>\n</div>\n<div>\n<h5>SCHEDULE</h5>\n<p>Part-Time AM, Full-Time, or Full-Time Intensive</p>\n</div>\n<div>\n<h5>ENGLISH LEVEL</h5>\n<p>Beginner 3 to Intermediate 4</p>\n</div>\n<div>\n<h5>ENTRY RQUIREMENT</h5>\n<p>ILSC Beginner 3 or 4</p>\n</div>"
+    }, {
+      "id" : "a7bcc4ee-fed4-1081-edb8-169c1d124a5e",
+      "name" : "image_field",
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_class_room.jpg",
+        "alt" : "img_class_room",
+        "width" : 1276,
+        "height" : 739,
+        "max_width" : 1276,
+        "max_height" : 739
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "title" : "Health and Safety",
+      "text_content" : "<div>\n<h5>LOCATION AVAILABLE</h5>\n<p>Vancouver and Toronto</p>\n</div>\n<div>\n<h5>PROGRAM LENGTH</h5>\n<p>1 week minimum</p>\n</div>\n<div>\n<h5>PROGRAM START DATES</h5>\n<p>Every Monday except the last week of the session</p>\n</div>\n<div>\n<h5>SCHEDULE</h5>\n<p>Part-Time AM, Full-Time, or Full-Time Intensive</p>\n</div>\n<div>\n<h5>ENGLISH LEVEL</h5>\n<p>Beginner 3 to Intermediate 4</p>\n</div>\n<div>\n<h5>ENTRY RQUIREMENT</h5>\n<p>ILSC Beginner 3 or 4</p>\n</div>",
+      "image_field" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_class_room.jpg",
+        "alt" : "img_class_room",
+        "width" : 1276,
+        "height" : 739,
+        "max_width" : 1276,
+        "max_height" : 739
+      }
+    }
+  }, {
+    "id" : "9854a8fb-13aa-0977-27f4-8d32522da9ec",
+    "name" : "tab_3",
+    "label" : "Tab 3",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "0ed04621-2d89-f8ec-3cc6-14726f7b7d8c",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Courses"
+    }, {
+      "id" : "3f9aefce-7a1c-fbc0-1e2c-00815b27e506",
+      "name" : "view_option",
+      "label" : "View Option",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "course", "Course Accordion" ], [ "columns-2", "2 Columns Description" ], [ "column-accordion", "1 Column + Accordion" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "course"
+    }, {
+      "id" : "e906218b-079d-4167-336a-ee50b5d4e565",
+      "name" : "text_content",
+      "label" : "Text Content",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "3f9aefce-7a1c-fbc0-1e2c-00815b27e506",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "course",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<div class=\"desc-container\">\n<h2>Courses</h2>\n<p>Choose core and skills courses depending on you schedule. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n</div>"
+    }, {
+      "id" : "2d5cfb13-3275-c6b9-454e-df0727f155b1",
+      "name" : "language_level_text",
+      "label" : "Language Level Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "3f9aefce-7a1c-fbc0-1e2c-00815b27e506",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "course",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Language Levels"
+    }, {
+      "id" : "ec4fbec8-c7ee-0a70-6ce8-949a884c7f10",
+      "name" : "locations_text",
+      "label" : "Locations Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "3f9aefce-7a1c-fbc0-1e2c-00815b27e506",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "course",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Locations"
+    }, {
+      "id" : "2a721c23-9cc8-baef-b09f-0bde5a7bd31c",
+      "name" : "course_text",
+      "label" : "Course Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "3f9aefce-7a1c-fbc0-1e2c-00815b27e506",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "course",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Course"
+    }, {
+      "id" : "dcb57165-14ab-7058-35ad-61a4a6afbacd",
+      "name" : "core_courses_text",
+      "label" : "Core Courses Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "3f9aefce-7a1c-fbc0-1e2c-00815b27e506",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "course",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "CORE COURSES"
+    }, {
+      "id" : "47cffde0-cbfd-43a7-2a99-8578277370c7",
+      "name" : "skills_electives_text",
+      "label" : "Skills Electives Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "3f9aefce-7a1c-fbc0-1e2c-00815b27e506",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "course",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "SKILLS ELECTIVES"
+    }, {
+      "id" : "05cc6094-593a-517f-3f55-bb59f91df3e4",
+      "name" : "language_levels",
+      "label" : "Language Levels",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "3f9aefce-7a1c-fbc0-1e2c-00815b27e506",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "course",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "children" : [ {
+        "id" : "5d7735a2-43d4-89b4-c0bc-a34927eef570",
+        "name" : "b1_text",
+        "label" : "B1 - Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Beginner 1 (B1): I can understand and say a few words, very simple and polite phrases."
+      }, {
+        "id" : "a55f28bd-9a4d-f465-64e6-936d06849e31",
+        "name" : "b2_text",
+        "label" : "B2 - Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Beginner 2 (B2): I can understand and say a few words, very simple and polite phrases."
+      }, {
+        "id" : "973a3095-46e7-a495-a0e1-22984f6869a4",
+        "name" : "b3_text",
+        "label" : "B3 - Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Beginner 3 (B3): I can understand and say simple sentences, have short conversations, give short descriptions or tell stories about familiar topics."
+      }, {
+        "id" : "2a361a44-ac46-d740-174f-b9dbff150aaa",
+        "name" : "b4_text",
+        "label" : "B4 - Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Beginner 4 (B4): I can understand and say simple sentences, have short conversations, give short descriptions or tell stories about familiar topics."
+      }, {
+        "id" : "8f63b3dd-0445-b9da-fdb8-de75141cec66",
+        "name" : "i1_text",
+        "label" : "I1 - Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Intermediate 1 (I1): I can understand and participate in formal and informal conversations, group interactions and discussions on familiar topics."
+      }, {
+        "id" : "df79b602-b9ea-cd57-ad86-cfdedd145069",
+        "name" : "i2_text",
+        "label" : "I2 - Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Intermediate 2 (I2): I can understand and participate in formal and informal conversations, group interactions and discussions on familiar topics."
+      }, {
+        "id" : "fb8a6234-2ee8-eb72-a9cf-e87e81fee597",
+        "name" : "i3_text",
+        "label" : "I3 - Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Intermediate 3 (I3): Discussions on familiar topics, general knowledge and some specialized situations."
+      }, {
+        "id" : "8f12c5e0-c3aa-86a8-0fb0-568461ac6214",
+        "name" : "i4_text",
+        "label" : "I4 - Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Intermediate 4 (I4): Discussions on familiar topics, general knowledge and some specialized situations."
+      }, {
+        "id" : "d8553e6c-75f2-bf82-af11-5b4827afcb84",
+        "name" : "a1_text",
+        "label" : "A1 - Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Advanced 1 (A1): I can understand and participate in complex conversations on a broad variety of topics, and can present on specialized topics in my field. I can follow extended discussions, lectures or presentations."
+      }, {
+        "id" : "4f840b98-8a43-bfe7-bec2-a20170578044",
+        "name" : "a2_text",
+        "label" : "A2 - Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Advanced 2 (A2): I can understand and participate in complex conversations on a broad variety of topics, and can present on specialized topics in my field. I can follow extended discussions, lectures or presentations."
+      }, {
+        "id" : "4529465d-bf6f-e227-5edc-8826488a049f",
+        "name" : "m1_text",
+        "label" : "M1 - Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Mastery 1 (M1): I can understand and participate in complex conversations in academic and professional settings about academic themes such as Economics, Biology, Social Sciences and more. I can understand complex text, and can analyze and synthesize information for academic writing."
+      }, {
+        "id" : "7d6d2c6c-4c0f-50c2-f2a4-dc801e238058",
+        "name" : "m2_text",
+        "label" : "M2 - Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Mastery 2 (M2): I can understand and participate in complex conversations in academic and professional settings about academic themes such as Economics, Biology, Social Sciences and more. I can understand complex text, and can analyze and synthesize information for academic writing."
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : {
+        "b1_text" : "Beginner 1 (B1): I can understand and say a few words, very simple and polite phrases.",
+        "b2_text" : "Beginner 2 (B2): I can understand and say a few words, very simple and polite phrases.",
+        "b3_text" : "Beginner 3 (B3): I can understand and say simple sentences, have short conversations, give short descriptions or tell stories about familiar topics.",
+        "b4_text" : "Beginner 4 (B4): I can understand and say simple sentences, have short conversations, give short descriptions or tell stories about familiar topics.",
+        "i1_text" : "Intermediate 1 (I1): I can understand and participate in formal and informal conversations, group interactions and discussions on familiar topics.",
+        "i2_text" : "Intermediate 2 (I2): I can understand and participate in formal and informal conversations, group interactions and discussions on familiar topics.",
+        "i3_text" : "Intermediate 3 (I3): Discussions on familiar topics, general knowledge and some specialized situations.",
+        "i4_text" : "Intermediate 4 (I4): Discussions on familiar topics, general knowledge and some specialized situations.",
+        "a1_text" : "Advanced 1 (A1): I can understand and participate in complex conversations on a broad variety of topics, and can present on specialized topics in my field. I can follow extended discussions, lectures or presentations.",
+        "a2_text" : "Advanced 2 (A2): I can understand and participate in complex conversations on a broad variety of topics, and can present on specialized topics in my field. I can follow extended discussions, lectures or presentations.",
+        "m1_text" : "Mastery 1 (M1): I can understand and participate in complex conversations in academic and professional settings about academic themes such as Economics, Biology, Social Sciences and more. I can understand complex text, and can analyze and synthesize information for academic writing.",
+        "m2_text" : "Mastery 2 (M2): I can understand and participate in complex conversations in academic and professional settings about academic themes such as Economics, Biology, Social Sciences and more. I can understand complex text, and can analyze and synthesize information for academic writing."
+      }
+    }, {
+      "id" : "3763e2ce-2048-4c83-f3fb-eabc3ac67c78",
+      "name" : "column_1_description",
+      "label" : "Column 1 Description",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "3f9aefce-7a1c-fbc0-1e2c-00815b27e506",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "course",
+        "property" : null,
+        "operator" : "NOT_EQUAL",
+        "access" : null
+      },
+      "type" : "richtext",
+      "display_width" : null
+    }, {
+      "id" : "c70bd706-4fa6-54a6-5d6d-458de4ef2797",
+      "name" : "column_2_description",
+      "label" : "Column 2 Description",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "3f9aefce-7a1c-fbc0-1e2c-00815b27e506",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "columns-2",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "type" : "richtext",
+      "display_width" : null
+    }, {
+      "id" : "eedd4e79-e248-37ed-ee9b-f53e371a4d08",
+      "name" : "course_description_items",
+      "label" : "Course Description Items",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "max" : 10,
+        "sorting_label_field" : "16b1bb1a-5081-d244-b91b-499e0f19f4f7",
+        "default" : 4
+      },
+      "visibility" : {
+        "controlling_field" : "3f9aefce-7a1c-fbc0-1e2c-00815b27e506",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "column-accordion",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "children" : [ {
+        "id" : "16b1bb1a-5081-d244-b91b-499e0f19f4f7",
+        "name" : "courses_description_title",
+        "label" : "Courses Description Title",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Test"
+      }, {
+        "id" : "6318c425-7e65-c415-ed28-d6b1571f1800",
+        "name" : "course_description_text",
+        "label" : "Course Description Text",
+        "required" : false,
+        "locked" : false,
+        "type" : "richtext",
+        "display_width" : null,
+        "default" : "<p>TEST</p>\n<div class=\"school-details\">\n<ul class=\"arrows-orange\">\n<li>Test</li>\n</ul>\n</div>"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : [ {
+        "courses_description_title" : "Test",
+        "course_description_text" : "<p>TEST</p>\n<div class=\"school-details\">\n<ul class=\"arrows-orange\">\n<li>Test</li>\n</ul>\n</div>"
+      }, {
+        "courses_description_title" : "Test",
+        "course_description_text" : "<p>TEST</p>\n<div class=\"school-details\">\n<ul class=\"arrows-orange\">\n<li>Test</li>\n</ul>\n</div>"
+      }, {
+        "courses_description_title" : "Test",
+        "course_description_text" : "<p>TEST</p>\n<div class=\"school-details\">\n<ul class=\"arrows-orange\">\n<li>Test</li>\n</ul>\n</div>"
+      }, {
+        "courses_description_title" : "Test",
+        "course_description_text" : "<p>TEST</p>\n<div class=\"school-details\">\n<ul class=\"arrows-orange\">\n<li>Test</li>\n</ul>\n</div>"
+      } ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "title" : "Courses",
+      "view_option" : "course",
+      "text_content" : "<div class=\"desc-container\">\n<h2>Courses</h2>\n<p>Choose core and skills courses depending on you schedule. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n</div>",
+      "language_level_text" : "Language Levels",
+      "locations_text" : "Locations",
+      "course_text" : "Course",
+      "core_courses_text" : "CORE COURSES",
+      "skills_electives_text" : "SKILLS ELECTIVES",
+      "language_levels" : {
+        "b1_text" : "Beginner 1 (B1): I can understand and say a few words, very simple and polite phrases.",
+        "b2_text" : "Beginner 2 (B2): I can understand and say a few words, very simple and polite phrases.",
+        "b3_text" : "Beginner 3 (B3): I can understand and say simple sentences, have short conversations, give short descriptions or tell stories about familiar topics.",
+        "b4_text" : "Beginner 4 (B4): I can understand and say simple sentences, have short conversations, give short descriptions or tell stories about familiar topics.",
+        "i1_text" : "Intermediate 1 (I1): I can understand and participate in formal and informal conversations, group interactions and discussions on familiar topics.",
+        "i2_text" : "Intermediate 2 (I2): I can understand and participate in formal and informal conversations, group interactions and discussions on familiar topics.",
+        "i3_text" : "Intermediate 3 (I3): Discussions on familiar topics, general knowledge and some specialized situations.",
+        "i4_text" : "Intermediate 4 (I4): Discussions on familiar topics, general knowledge and some specialized situations.",
+        "a1_text" : "Advanced 1 (A1): I can understand and participate in complex conversations on a broad variety of topics, and can present on specialized topics in my field. I can follow extended discussions, lectures or presentations.",
+        "a2_text" : "Advanced 2 (A2): I can understand and participate in complex conversations on a broad variety of topics, and can present on specialized topics in my field. I can follow extended discussions, lectures or presentations.",
+        "m1_text" : "Mastery 1 (M1): I can understand and participate in complex conversations in academic and professional settings about academic themes such as Economics, Biology, Social Sciences and more. I can understand complex text, and can analyze and synthesize information for academic writing.",
+        "m2_text" : "Mastery 2 (M2): I can understand and participate in complex conversations in academic and professional settings about academic themes such as Economics, Biology, Social Sciences and more. I can understand complex text, and can analyze and synthesize information for academic writing."
+      },
+      "course_description_items" : [ {
+        "courses_description_title" : "Test",
+        "course_description_text" : "<p>TEST</p>\n<div class=\"school-details\">\n<ul class=\"arrows-orange\">\n<li>Test</li>\n</ul>\n</div>"
+      }, {
+        "courses_description_title" : "Test",
+        "course_description_text" : "<p>TEST</p>\n<div class=\"school-details\">\n<ul class=\"arrows-orange\">\n<li>Test</li>\n</ul>\n</div>"
+      }, {
+        "courses_description_title" : "Test",
+        "course_description_text" : "<p>TEST</p>\n<div class=\"school-details\">\n<ul class=\"arrows-orange\">\n<li>Test</li>\n</ul>\n</div>"
+      }, {
+        "courses_description_title" : "Test",
+        "course_description_text" : "<p>TEST</p>\n<div class=\"school-details\">\n<ul class=\"arrows-orange\">\n<li>Test</li>\n</ul>\n</div>"
+      } ]
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "tab_1" : {
+      "title" : "Welcome to Australia",
+      "text_content" : "<h2>Welcome to Australia</h2>\n<p>Australia is a land of dreams. From the sacred legends of the aboriginal Dreamtime, when the great spirits conjured the coral reefs, rainforests, and scorched red deserts, to armchair travelers who describe Australia as their dream destination, the Land Down Under deserves all the hype.</p>",
+      "image_field" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_australia_group.png",
+        "alt" : "img_australia_group",
+        "width" : 537,
+        "height" : 353,
+        "max_width" : 537,
+        "max_height" : 353
+      },
+      "cta_1" : {
+        "hide_show_cta" : "show",
+        "cta_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "cta_text" : "WATCH OUR VIDEO",
+        "cta_font_awesome_icon" : "far fa-play-circle"
+      },
+      "cta_2" : {
+        "hide_show_cta" : "hide",
+        "cta_url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "cta_text" : "WATCH OUR VIDEO",
+        "cta_font_awesome_icon" : "far fa-play-circle"
+      }
+    },
+    "tab_2" : {
+      "title" : "Health and Safety",
+      "text_content" : "<div>\n<h5>LOCATION AVAILABLE</h5>\n<p>Vancouver and Toronto</p>\n</div>\n<div>\n<h5>PROGRAM LENGTH</h5>\n<p>1 week minimum</p>\n</div>\n<div>\n<h5>PROGRAM START DATES</h5>\n<p>Every Monday except the last week of the session</p>\n</div>\n<div>\n<h5>SCHEDULE</h5>\n<p>Part-Time AM, Full-Time, or Full-Time Intensive</p>\n</div>\n<div>\n<h5>ENGLISH LEVEL</h5>\n<p>Beginner 3 to Intermediate 4</p>\n</div>\n<div>\n<h5>ENTRY RQUIREMENT</h5>\n<p>ILSC Beginner 3 or 4</p>\n</div>",
+      "image_field" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_class_room.jpg",
+        "alt" : "img_class_room",
+        "width" : 1276,
+        "height" : 739,
+        "max_width" : 1276,
+        "max_height" : 739
+      }
+    },
+    "tab_3" : {
+      "title" : "Courses",
+      "view_option" : "course",
+      "text_content" : "<div class=\"desc-container\">\n<h2>Courses</h2>\n<p>Choose core and skills courses depending on you schedule. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n</div>",
+      "language_level_text" : "Language Levels",
+      "locations_text" : "Locations",
+      "course_text" : "Course",
+      "core_courses_text" : "CORE COURSES",
+      "skills_electives_text" : "SKILLS ELECTIVES",
+      "language_levels" : {
+        "b1_text" : "Beginner 1 (B1): I can understand and say a few words, very simple and polite phrases.",
+        "b2_text" : "Beginner 2 (B2): I can understand and say a few words, very simple and polite phrases.",
+        "b3_text" : "Beginner 3 (B3): I can understand and say simple sentences, have short conversations, give short descriptions or tell stories about familiar topics.",
+        "b4_text" : "Beginner 4 (B4): I can understand and say simple sentences, have short conversations, give short descriptions or tell stories about familiar topics.",
+        "i1_text" : "Intermediate 1 (I1): I can understand and participate in formal and informal conversations, group interactions and discussions on familiar topics.",
+        "i2_text" : "Intermediate 2 (I2): I can understand and participate in formal and informal conversations, group interactions and discussions on familiar topics.",
+        "i3_text" : "Intermediate 3 (I3): Discussions on familiar topics, general knowledge and some specialized situations.",
+        "i4_text" : "Intermediate 4 (I4): Discussions on familiar topics, general knowledge and some specialized situations.",
+        "a1_text" : "Advanced 1 (A1): I can understand and participate in complex conversations on a broad variety of topics, and can present on specialized topics in my field. I can follow extended discussions, lectures or presentations.",
+        "a2_text" : "Advanced 2 (A2): I can understand and participate in complex conversations on a broad variety of topics, and can present on specialized topics in my field. I can follow extended discussions, lectures or presentations.",
+        "m1_text" : "Mastery 1 (M1): I can understand and participate in complex conversations in academic and professional settings about academic themes such as Economics, Biology, Social Sciences and more. I can understand complex text, and can analyze and synthesize information for academic writing.",
+        "m2_text" : "Mastery 2 (M2): I can understand and participate in complex conversations in academic and professional settings about academic themes such as Economics, Biology, Social Sciences and more. I can understand complex text, and can analyze and synthesize information for academic writing."
+      },
+      "course_description_items" : [ {
+        "courses_description_title" : "Test",
+        "course_description_text" : "<p>TEST</p>\n<div class=\"school-details\">\n<ul class=\"arrows-orange\">\n<li>Test</li>\n</ul>\n</div>"
+      }, {
+        "courses_description_title" : "Test",
+        "course_description_text" : "<p>TEST</p>\n<div class=\"school-details\">\n<ul class=\"arrows-orange\">\n<li>Test</li>\n</ul>\n</div>"
+      }, {
+        "courses_description_title" : "Test",
+        "course_description_text" : "<p>TEST</p>\n<div class=\"school-details\">\n<ul class=\"arrows-orange\">\n<li>Test</li>\n</ul>\n</div>"
+      }, {
+        "courses_description_title" : "Test",
+        "course_description_text" : "<p>TEST</p>\n<div class=\"school-details\">\n<ul class=\"arrows-orange\">\n<li>Test</li>\n</ul>\n</div>"
+      } ]
+    }
+  }
+}, {
+  "id" : "d4698bd1-8656-9cbb-78c4-0d4e09085a3a",
+  "name" : "mobile_tab_text",
+  "label" : "Mobile Tab Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Features:"
+} ]

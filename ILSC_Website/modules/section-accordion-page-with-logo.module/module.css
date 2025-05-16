@@ -1,0 +1,29 @@
+.section-faq .accordion-container{
+  margin-top:-100px;
+}
+.section-faq.section-accordion-logo .accordion{
+  border:0;
+  box-shadow:none;
+}
+.section-faq.section-accordion-logo .accordion .card{
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  border-bottom: 1px solid #E5E5E5 !important;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left:0;
+  padding-right:0;
+}
+.section-faq.section-accordion-logo .accordion img{
+  width:75%;
+}
+.section-faq.section-accordion-logo .accordion .btn:after {
+    content: none !important;
+    font-family: none;
+}
+.section-faq.section-accordion-logo .accordion .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

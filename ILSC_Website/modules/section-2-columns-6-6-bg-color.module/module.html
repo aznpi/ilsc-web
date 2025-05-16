@@ -1,0 +1,19 @@
+<section class="section section-blue bg-white-canvas">
+	<div class="container" style="background-color:{{ module.bg_color.color }};color:{{ module.font_color.color }};">
+		<div class="row">
+			<div class="col-md-6 text-container">
+				{% inline_rich_text field="main_text" value="{{ module.main_text }}" %}
+        {% if module.cta_group.hide_show_cta == "show" %}
+          <div class="a-link-container">
+            <a href="{{ module.cta_group.link_url.url.href }}" style="color:{{ module.font_color.color }};">{{ module.cta_group.link_url_text }}</a>
+          </div>
+        {% endif %}
+			</div>
+			<div class="col-md-6 image-container">
+				{% if module.image_field.src %}
+          <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}">
+        {% endif %}
+			</div>
+		</div>
+	</div>
+</section>

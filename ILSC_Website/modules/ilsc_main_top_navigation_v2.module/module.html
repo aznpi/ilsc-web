@@ -1,0 +1,197 @@
+<header class="top-nav fixed-top main-group">
+  <nav class="mobile-nav-wrap" role="navigation">
+    <div class="mobile-header-nav">
+      <ul class="container">
+        {% for item in module.left_menu_field_group.link_field_group %}
+	        {% set href = item.link_field.url.href %}
+          {% if item.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+          {% endif %}
+          <li><a {% if item.link_field.url.type is equalto "CALL_TO_ACTION"  %}
+              href="{{ href }}" {# The href here is not escaped as it is not editable and functions as a JavaScript call to the associated CTA #}
+            {% else %}
+              href="{{ href|escape_url }}"
+            {% endif %}
+            {% if item.link_field.open_in_new_tab %}
+              target="_blank"
+            {% endif %}
+            {% if item.link_field.rel %}
+              rel="{{ item.link_field.rel|escape_attr }}"
+            {% endif %}>{{ item.link_text }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+  <nav id="landing-nav-bar" class="navbar navbar-expand-lg navbar-light">
+    <div class="container top-menu">
+      <div>      
+        <a class="mobile-menu-toggle js-toggle-menu hamburger-menu" href="#">
+          <span class="menu-item"></span>
+          <span class="menu-item"></span>
+          <span class="menu-item"></span>
+        </a>
+       </div>
+      <div class="main-logo">
+        <a class="navbar-brand" href="{{ module.home_link.url.href }}"><img src="{{ module.logo_svg_file }}" alt="{{ module.logo_alt }}" width="225px" height="100%"/></a>
+      </div>
+      
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="nav-bar-items collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto menu-hide">
+          
+          {% for item in module.left_menu_field_group.link_field_group %}
+            {% set href = item.link_field.url.href %}
+            {% if item.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+            {% endif %}
+            <li class="nav-item left-menu"><a class="nav-link" {% if item.link_field.url.type is equalto "CALL_TO_ACTION"  %}
+                href="{{ href }}" {# The href here is not escaped as it is not editable and functions as a JavaScript call to the associated CTA #}
+              {% else %}
+                href="{{ href|escape_url }}"
+              {% endif %}
+              {% if item.link_field.open_in_new_tab %}
+                target="_blank"
+              {% endif %}
+              {% if item.link_field.rel %}
+                rel="{{ item.link_field.rel|escape_attr }}"
+              {% endif %}>{{ item.link_text }}</a></li>
+          {% endfor %}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {% inline_text field="nav_login_text" value="{{ module.nav_login_text }}" %}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+              <div class="navbar-menu-content container login-content">
+                <div class="row">
+                  <div class="col-md-6">
+                    {% inline_rich_text field="partners_login_menu.title_partners_login" value="{{ module.partners_login_menu.title_partners_login }}" %}
+                    <p>{{ module.partners_login_menu.text_1 }}</p>
+                    <a href="{{ module.partners_login_menu.button_partners_create_account.partners_login_url.href }}" {% if module.partners_login_menu.button_partners_create_account.partners_login_url.open_in_new_tab %}target="_blank"{% endif %} class="btn btn-outline-primary btn-black-outline">{% inline_text field="partners_login_menu.button_partners_create_account.button_text_partners_login" value="{{ module.partners_login_menu.button_partners_create_account.button_text_partners_login }}" %}</a>
+                    <p>{{ module.partners_login_menu.text_2 }}</p>
+                    <a href="{{ module.partners_login_menu.button_partners_login.partners_login_url.href }}" {% if module.partners_login_menu.button_partners_login.partners_login_url.open_in_new_tab %}target="_blank"{% endif %} class="btn btn-primary btn-orange">{% inline_text field="partners_login_menu.button_partners_login.button_text_partners_login" value="{{ module.partners_login_menu.button_partners_login.button_text_partners_login }}" %}</a>
+                    <div class="vertical-divider"></div>
+                  </div>
+                  <div class="col-md-6">
+                    {% inline_rich_text field="student_login_menu.title_student_login" value="{{ module.student_login_menu.title_student_login }}" %}
+                    <p>{% inline_text field="student_login_menu.text_1" value="{{ module.student_login_menu.text_1 }}" %}</p>
+                    <a href="{{ module.student_login_menu.button_student_login.student_login_url.href }}" {% if module.student_login_menu.button_student_login.student_login_url.open_in_new_tab %}target="_blank"{% endif %} class="btn btn-primary btn-orange">{% inline_text field="student_login_menu.button_student_login.button_text_student_login" value="{{ module.student_login_menu.button_student_login.button_text_student_login }}" %}</a>
+                     <p>&nbsp;</p>
+                    
+                    <a href="{{ module.greystone_login_menu.button_alumni_login.alumni_login_url.href }}" {% if module.greystone_login_menu.button_alumni_login.alumni_login_url.open_in_new_tab %}target="_blank"{% endif %} class="btn btn-primary btn-blue">{% inline_text field="greystone_login_menu.button_alumni_login.button_text_alumni_login" value="{{ module.greystone_login_menu.button_alumni_login.button_text_alumni_login }}" %}</a>
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </li>
+
+      
+          <li class="nav-item dropdown language-selector">
+
+            <a class="nav-link dropdown-toggle language-link" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              EN
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+              <div class="navbar-menu-content container">
+                <div class="row">
+                  <div class="col-md-12">
+                    {% inline_rich_text field="title_language" value="{{ module.title_language }}" %}
+                    <ul>
+                     
+                      <li class="lng-en"><a class="dropdown-item" href="/{{ content.translated_content['en'].slug  }}">English</a></li>
+                      <li class="lng-es"><a class="dropdown-item" href="/{{ content.translated_content['es'].slug  }}">Spanish</a></li>
+                      <li class="lng-pt-br"><a class="dropdown-item" href="/{{ content.translated_content['pt-br'].slug  }}">Portuguese</a></li>
+                      <li class="lng-fr"><a class="dropdown-item" href="/{{ content.translated_content['fr'].slug  }}">French</a></li>
+                      <li class="lng-ja"><a class="dropdown-item" href="/{{ content.translated_content['ja'].slug }}">Japanese</a></li>
+                      <li class="lng-ko"><a class="dropdown-item" href="/{{ content.translated_content['ko'].slug }}">Korean</a></li>
+                      <li class="lng-zh-tw"><a class="dropdown-item" href="/{{ content.translated_content['zh-tw'].slug }}">Chinese</a></li>
+                      <li class="lng-tr"><a class="dropdown-item" href="/{{ content.translated_content['tr'].slug }}">Turkish</a></li>
+                      <li class="lng-vi"><a class="dropdown-item" href="/{{ content.translated_content['vi'].slug }}">Vietnamese</a></li>
+                      <li class="lng-th"><a class="dropdown-item" href="/{{ content.translated_content['th'].slug }}">Thai</a></li>
+                      <li class="lng-ar"><a class="dropdown-item" href="/{{ content.translated_content['ar'].slug }}">Arabic</a></li>
+                                     
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </li>
+        
+     
+          <li class="nav-item dropdown search">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-search"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+              <div class="navbar-menu-content container search-content">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-container">
+                      {% inline_rich_text field="search_menu.title_search" value="{{ module.search_menu.title_search }}" %}
+                      <form action="{% if content.language.languageTag %}{% if content.language.languageTag != "en" %}/{{content.language.languageTag}}{% endif %}{% endif %}/search-results" id="form1">
+                          
+                          <input type="hidden" name="type" value="SITE_PAGE">
+                          <input type="hidden" name="type" value="BLOG_POST">
+                          <input type="hidden" name="type" value="LISTING_PAGE">
+                          <input type="hidden" name="type" value="LANDING_PAGE">
+                          
+                          {% if content.language.languageTag != "en" %}
+                              <input type="hidden" name="language" value="{{content.language.languageTag}}">
+                            {% else %}
+                              <input type="hidden" name="language" value="en">
+                          {% endif %}
+                          
+                        <div class="form-group">
+                          <input class="form-control form-control-lg notranslate" type="text" placeholder="{{ module.search_menu.text_search_placeholder }}" id="term" name="term">
+                          <div class="input-group-append btn-search">
+                            <button form="form1" type="submit" class="btn btn-primary btn-clear"><i class="fas fa-times"></i></button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="header-cta-container">
+          {% if module.mobile_cta.cta_phone_group.show_link %}
+            <div class="phone-text text-center">         
+              <i class="fas fa-phone"></i>&nbsp;&nbsp;{{ module.mobile_cta.cta_phone_group.cta_text }}
+            </div>
+          {% endif %}
+          <div class="dropdown">
+             <a href="#" class="btn btn-primary btn-orange dropdown-toggle" role="button" id="dropdownOne" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ module.mobile_cta.cta_1_group.link_title_text }}</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownOne">
+                {% for item in module.mobile_cta.cta_1_group.link_field_group %}
+                 <li onClick="location.href='{{ item.cta_url.href }}'" class="{{ item.icon_choice }}"><a class="dropdown-item" href="#">{{ item.cta_text }}</a></li>
+                {% endfor %}
+              </ul>
+          </div>
+          {% if module.mobile_cta.cta_quote_group.show_link %}
+            <div>         
+              <a href="#" data-toggle="modal" data-target="{{ module.mobile_cta.cta_quote_group.cta_url.href }}" class="btn btn-outline-primary btn-pathway-blue-outline">{{ module.mobile_cta.cta_quote_group.cta_text }}</a>        
+            </div>
+          {% endif %}
+		    	<div class="dropdown">
+             <a href="#" class="btn btn-outline-primary btn-black-outline dropdown-toggle" role="button" id="dropdownTwo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ module.mobile_cta.cta_2_group.link_title_text }}</a>
+              <ul class="dropdown-menu dropdown-menu-2" aria-labelledby="dropdownTwo">
+                {% for item in module.mobile_cta.cta_2_group.link_field_group %}
+                 <li onClick="location.href='{{ item.cta_url.href }}'" class="{{ item.icon_choice }}"><a class="dropdown-item" href="#">{{ item.cta_text }}</a></li>
+                {% endfor %}
+              </ul>
+          </div>	    	
+		    </div>
+
+      </div>
+    </div>
+  </nav>
+</header>
+

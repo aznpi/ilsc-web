@@ -1,0 +1,23 @@
+.section{
+  position:relative;
+  overflow:hidden;
+}
+.section-5-7{
+  background-size:cover;
+}
+.section-5-7 .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.section-5-7 .col-md-7{
+  padding: 0 50px;
+}
+.section-5-7 .col-md-7 .content-box-container{ 
+  padding: 0 40px;
+}
+@media (max-width: 480px){
+ 
+}

@@ -1,0 +1,103 @@
+.footer-container .row-logo{
+  display:flex;
+  justify-content: space-between;
+} 
+.footer-container .footer-dropdown h5{
+  white-space: nowrap;
+}
+.footer-container .footer-dropdown input{
+    display:none;
+  }
+.footer-container .logo-pad{
+  padding-top:10px;
+}
+.footer-container ul.footnote-links{
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    width: 50%;
+    float:right;
+    margin-top:-10px;
+}
+.footer-container ul.footnote-links li{
+    display: block;
+    flex: 0 1 auto;
+}
+.footer-container ul.footer-dropdown-item ul.footer-social{
+     display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    width: 70%;
+    margin-top: -10px;
+}
+.footer-container ul.footer-dropdown-item ul.footer-social li.footer-social-icons{
+    display: block;
+    flex: 0 1 auto;
+}
+.footer-container ul.footer-dropdown-item ul.footer-social  li.footer-social-icons i.fab{
+  font-size:24px;
+}
+.footer-container .footer-dropdown ul.footer-dropdown-item li ul.child-links{
+    margin-left:30px;
+  }
+@media (max-width: 991.97px) { 
+ .footer-container .col{
+    flex-basis:auto;
+  }
+  .footer-container .row-logo{
+    display:block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+ .footer-container .social-media-container{
+  padding-left:0px !important;
+   text-align:center;
+}
+  .footer-container .logo-image img{
+    display:block;
+    margin:0 auto 50px;
+    width:250px !important;
+  }
+  .footer-container .container .col-md-2{
+    width:100%;
+  }
+  .footer-container{
+    margin-bottom: 60px !important;
+  }
+  .footer-container .footer-dropdown{
+    border-bottom: 1px solid #95a09e;
+    padding: 0;
+  }
+  .footer-container .footer-dropdown label{
+    padding: 33px 0 0 30px;
+    width: 100%;
+  }
+  .footer-container .footer-dropdown label h5{
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+  .footer-container .footer-dropdown label h5:after {
+    float: right;
+    font-family: "Font Awesome 5 Free";
+    content: '\f107';
+    display: inline-block;
+    font-size: .9rem;
+    font-weight: 600;
+    margin-right: 40px;
+}
+ 
+  .footer-container .footer-dropdown input:checked ~ ul.footer-dropdown-item{
+    display:block;
+    padding-left: 50px;
+  }
+  .footer-container .footer-dropdown ul.footer-dropdown-item{
+    display:none;
+  }
+  .footer-container .social-media-container ul{
+    text-align:center !important;
+  }
+  
+  .footer-container .divider{
+    display:none;
+  }
+}

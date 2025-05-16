@@ -1,0 +1,25 @@
+<section class="section title-section bg-grey">
+	<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>{{ module.title_text }}</h2>
+      </div>
+    </div>
+		<div class="row">
+      <div class="col-md-6">
+				{% if module.image_field.src %}
+          <img class="lazy-ph" data-src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" loading="lazy">
+        {% endif %}
+			</div>
+			<div class="col-md-6 school-details">
+				{% inline_rich_text field="main_text" value="{{ module.main_text }}" %}
+        {% if module.cta_group.hide_show_cta == "show"%}
+          <div class="btn-video-container">
+            <div><i class="far fa-play-circle"></i></div><div><a href="#ilscModal" data-toggle="modal" class="video-btn" src="{{ module.cta_group.link_url.url.href }}">{{ module.cta_group.link_url_text }}</a></div>
+          </div>
+        {% endif %}
+			</div>
+			
+		</div>
+	</div>
+</section>

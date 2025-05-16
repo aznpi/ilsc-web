@@ -1,0 +1,372 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/ILSC_Website/template-resources/stylesheets/external/slick/slick-theme.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/ILSC_Website/template-resources/stylesheets/external/slick/slick.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/ILSC_Website/template-resources/stylesheets/internal/production/main.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/ILSC_Website/template-resources/stylesheets/internal/production/landing_page.css"
+  } ],
+  "attachedJs" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/ILSC_Website/template-resources/javascript/internal/top_navigation_language_schools.js"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/ILSC_Website/template-resources/javascript/external/slick/slick-min.js"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/ILSC_Website/template-resources/javascript/internal/video-modal.js"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/ILSC_Website/template-resources/javascript/internal/main_function.js"
+  } ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1624319442447263",
+        "label" : "accommodations_top_navigation",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/ILSC_Website/modules/accommodations_top_navigation",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "accommodations_top_navigation",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_159242468447317",
+        "label" : "Flexible column",
+        "type" : "widget_container",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ {
+          "x" : 0,
+          "w" : 12,
+          "name" : "module_159285649897838",
+          "label" : "section-hero-with-video",
+          "type" : "custom_widget",
+          "params" : {
+            "css_class" : "",
+            "css_id" : "",
+            "css_id_str" : "",
+            "css_style" : "",
+            "overrideable" : true,
+            "path" : "/ILSC_Website/modules/section-hero-with-video",
+            "per_widget_wrapper_html" : "",
+            "schema_version" : 2,
+            "widget_name" : "section-hero-with-video",
+            "wrapping_html" : ""
+          },
+          "rows" : [ ],
+          "rowMetaData" : [ ],
+          "cells" : [ ],
+          "cssId" : "",
+          "cssClass" : "",
+          "cssStyle" : "",
+          "styles" : null,
+          "widgets" : [ ]
+        }, {
+          "x" : 0,
+          "w" : 12,
+          "name" : "module_1593803743500117",
+          "label" : "section-tabs-homestay-landing",
+          "type" : "custom_widget",
+          "params" : {
+            "css_class" : "",
+            "css_id" : "",
+            "css_id_str" : "",
+            "css_style" : "",
+            "overrideable" : true,
+            "path" : "/ILSC_Website/modules/section-tabs-homestay-landing",
+            "per_widget_wrapper_html" : "",
+            "schema_version" : 2,
+            "widget_name" : "section-tabs-homestay-landing",
+            "wrapping_html" : ""
+          },
+          "rows" : [ ],
+          "rowMetaData" : [ ],
+          "cells" : [ ],
+          "cssId" : "",
+          "cssClass" : "",
+          "cssStyle" : "",
+          "styles" : null,
+          "widgets" : [ ]
+        }, {
+          "x" : 0,
+          "w" : 12,
+          "name" : "module_1593820848005159",
+          "label" : "section-box-slider-no-image",
+          "type" : "custom_widget",
+          "params" : {
+            "css_class" : "",
+            "css_id" : "",
+            "css_id_str" : "",
+            "css_style" : "",
+            "overrideable" : true,
+            "path" : "/ILSC_Website/modules/section-3-box-slider-no-image",
+            "per_widget_wrapper_html" : "",
+            "schema_version" : 2,
+            "widget_name" : "section-box-slider-no-image",
+            "wrapping_html" : ""
+          },
+          "rows" : [ ],
+          "rowMetaData" : [ ],
+          "cells" : [ ],
+          "cssId" : "",
+          "cssClass" : "",
+          "cssStyle" : "",
+          "styles" : null,
+          "widgets" : [ ]
+        }, {
+          "x" : 0,
+          "w" : 12,
+          "name" : "module_159596180454984",
+          "label" : "section-simple-banner",
+          "type" : "custom_widget",
+          "params" : {
+            "css_class" : "",
+            "css_id" : "",
+            "css_id_str" : "",
+            "css_style" : "",
+            "overrideable" : true,
+            "path" : "/ILSC_Website/modules/section-simple-banner",
+            "per_widget_wrapper_html" : "",
+            "schema_version" : 2,
+            "widget_name" : "section-simple-banner",
+            "wrapping_html" : ""
+          },
+          "rows" : [ ],
+          "rowMetaData" : [ ],
+          "cells" : [ ],
+          "cssId" : "",
+          "cssClass" : "",
+          "cssStyle" : "",
+          "styles" : null,
+          "widgets" : [ ]
+        }, {
+          "x" : 0,
+          "w" : 12,
+          "name" : "module_159675720031434",
+          "label" : "section-faq-page",
+          "type" : "custom_widget",
+          "params" : {
+            "css_class" : "",
+            "css_id" : "",
+            "css_id_str" : "",
+            "css_style" : "",
+            "overrideable" : true,
+            "path" : "/ILSC_Website/modules/section-accordion-page",
+            "per_widget_wrapper_html" : "",
+            "schema_version" : 2,
+            "widget_name" : "section-faq-page",
+            "wrapping_html" : ""
+          },
+          "rows" : [ ],
+          "rowMetaData" : [ ],
+          "cells" : [ ],
+          "cssId" : "",
+          "cssClass" : "",
+          "cssStyle" : "",
+          "styles" : null,
+          "widgets" : [ ]
+        }, {
+          "x" : 0,
+          "w" : 12,
+          "name" : "module_1593823375343201",
+          "label" : "section-simple-banner",
+          "type" : "custom_widget",
+          "params" : {
+            "css_class" : "",
+            "css_id" : "",
+            "css_id_str" : "",
+            "css_style" : "",
+            "overrideable" : true,
+            "path" : "/ILSC_Website/modules/section-simple-banner",
+            "per_widget_wrapper_html" : "",
+            "schema_version" : 2,
+            "widget_name" : "section-simple-banner",
+            "wrapping_html" : ""
+          },
+          "rows" : [ ],
+          "rowMetaData" : [ ],
+          "cells" : [ ],
+          "cssId" : "",
+          "cssClass" : "",
+          "cssStyle" : "",
+          "styles" : null,
+          "widgets" : [ ]
+        }, {
+          "x" : 0,
+          "w" : 12,
+          "name" : "module_1593822072974191",
+          "label" : "section-testimonials",
+          "type" : "custom_widget",
+          "params" : {
+            "css_class" : "",
+            "css_id" : "",
+            "css_id_str" : "",
+            "css_style" : "",
+            "overrideable" : true,
+            "path" : "/ILSC_Website/modules/section-testimonials",
+            "per_widget_wrapper_html" : "",
+            "schema_version" : 2,
+            "widget_name" : "section-testimonials",
+            "wrapping_html" : ""
+          },
+          "rows" : [ ],
+          "rowMetaData" : [ ],
+          "cells" : [ ],
+          "cssId" : "",
+          "cssClass" : "",
+          "cssStyle" : "",
+          "styles" : null,
+          "widgets" : [ ]
+        }, {
+          "x" : 0,
+          "w" : 12,
+          "name" : "module_159416399928242",
+          "label" : "section-simple-banner",
+          "type" : "custom_widget",
+          "params" : {
+            "css_class" : "",
+            "css_id" : "",
+            "css_id_str" : "",
+            "css_style" : "",
+            "overrideable" : true,
+            "path" : "/ILSC_Website/modules/section-simple-banner",
+            "per_widget_wrapper_html" : "",
+            "schema_version" : 2,
+            "widget_name" : "section-simple-banner",
+            "wrapping_html" : ""
+          },
+          "rows" : [ ],
+          "rowMetaData" : [ ],
+          "cells" : [ ],
+          "cssId" : "",
+          "cssClass" : "",
+          "cssStyle" : "",
+          "styles" : null,
+          "widgets" : [ ]
+        } ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_164642319300898",
+        "label" : "Footer ILSC Module group",
+        "type" : "global_group",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "path" : "/ILSC_Website/templates/Footer ILSC Module group.template.json",
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

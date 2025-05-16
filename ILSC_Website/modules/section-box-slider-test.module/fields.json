@@ -1,0 +1,169 @@
+[ {
+  "id" : "0271cc21-d261-968a-1dfa-6b7bd6f4537d",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2><span>The perfect course for you</span></h2>\n<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p>"
+}, {
+  "id" : "7cafc62b-012f-2243-2f83-30694f591beb",
+  "name" : "link_text",
+  "label" : "Link Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Read More"
+}, {
+  "id" : "7c440199-87a9-0642-caf7-1807af1e6ef0",
+  "name" : "box_slide",
+  "label" : "Box Slide",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 12,
+    "sorting_label_field" : "4af924c9-5600-9d7b-8c4c-532346d23a51",
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "4af924c9-5600-9d7b-8c4c-532346d23a51",
+    "name" : "box_image",
+    "label" : "Box Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_students.jpg",
+      "alt" : "img_students",
+      "width" : 698,
+      "height" : 418,
+      "max_width" : 698,
+      "max_height" : 418
+    }
+  }, {
+    "id" : "c73d4811-202e-9df5-431c-96e27b8e85d5",
+    "name" : "box_title",
+    "label" : "Box Title",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>General English</h4>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque sem massa malesuada mi.</p>"
+  }, {
+    "id" : "0da87178-7c3b-1817-d799-28fb494c0a3a",
+    "name" : "link_url",
+    "label" : "Link URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "BLOG", "FILE" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 32304017129
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "box_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_students.jpg",
+      "alt" : "img_students",
+      "width" : 698,
+      "height" : 418,
+      "max_width" : 698,
+      "max_height" : 418
+    },
+    "box_title" : "<h4>General English</h4>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque sem massa malesuada mi.</p>",
+    "link_url" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 32304017129
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "box_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_students.jpg",
+      "alt" : "img_students",
+      "width" : 698,
+      "height" : 418,
+      "max_width" : 698,
+      "max_height" : 418
+    },
+    "box_title" : "<h4>General English</h4>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque sem massa malesuada mi.</p>",
+    "link_url" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 32304017129
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "box_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_students.jpg",
+      "alt" : "img_students",
+      "width" : 698,
+      "height" : 418,
+      "max_width" : 698,
+      "max_height" : 418
+    },
+    "box_title" : "<h4>General English</h4>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque sem massa malesuada mi.</p>",
+    "link_url" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 32304017129
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "box_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_students.jpg",
+      "alt" : "img_students",
+      "width" : 698,
+      "height" : 418,
+      "max_width" : 698,
+      "max_height" : 418
+    },
+    "box_title" : "<h4>General English</h4>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque sem massa malesuada mi.</p>",
+    "link_url" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 32304017129
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+} ]

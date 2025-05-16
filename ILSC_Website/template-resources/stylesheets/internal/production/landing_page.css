@@ -1,0 +1,88 @@
+/*
+
+ILSC MAIN CSS Stylesheet
+Author: Tat Chow
+Date: May 19, 2020
+
+*/
+/*
+    Table of Contents
+
+   
+    Landing Pages
+    
+    
+*/
+/* Landing Pages  */
+/* line 23, ../../../sass/internal/landing_pages.scss */
+.section-hero {
+  max-height: 720px;
+  overflow: hidden;
+}
+/* line 28, ../../../sass/internal/landing_pages.scss */
+.section-hero h1 {
+  font-weight: 900;
+  font-size: 3.75rem;
+  line-height: 64px;
+}
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+  .section-hero h1 {
+    font-size: 2.2rem;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+  .section-hero h1 {
+    font-size: 2.2rem;
+  }
+  
+}
+.section-hero#home-section .content-container{
+  top:30%;
+}
+/* line 34, ../../../sass/internal/landing_pages.scss */
+.section-hero h2 {
+  font-weight: 100;
+  font-size: 1.875rem;
+}
+/* line 39, ../../../sass/internal/landing_pages.scss */
+.section-hero h4 {
+  padding: 20px 0;
+  font-size: 1.5rem;
+  line-height: 28px;
+}
+/* line 46, ../../../sass/internal/landing_pages.scss */
+.section-hero .hero-image img {
+  width: 100%;
+}
+/* line 51, ../../../sass/internal/landing_pages.scss */
+.section-hero .content-container {
+  color: #FFF;
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) and (max-width: 992.97px) {
+  .section-hero .content-container {
+    bottom: 50px;
+  }
+}
+/* line 62, ../../../sass/internal/landing_pages.scss */
+.hero-video-container.btn-video-container a {
+  color: #FFF;
+  letter-spacing: 2px;
+}
+/* line 67, ../../../sass/internal/landing_pages.scss */
+.hero-video-container.btn-video-container a:hover:after {
+  border-color: #FFF;
+}
+/* line 72, ../../../sass/internal/landing_pages.scss */
+.hero-video-container.btn-video-container a:after {
+  border-color: #FFF;
+}
+/* line 79, ../../../sass/internal/landing_pages.scss */
+.hero-video-container.btn-video-container i {
+  color: #FFF;
+  vertical-align:bottom;
+}
+
+/* 3.1 Language Schools */

@@ -1,0 +1,317 @@
+{% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+
+<table>
+  <th>SECTION 1 - STUDENT DETAILS</th>
+  <tr>
+    <td class="q-label">Record ID:</td><td>{{contact.hs_object_id}}</td>
+  </tr>
+    <tr>
+    <td class="q-label">Family Name:</td><td>{{contact.lastname}}</td>
+  </tr>
+  <tr>
+    <td class="q-label">Given Name:</td><td>{{contact.firstname}}</td>
+  </tr>
+  <tr>
+    <td class="q-label">Middle Name:</td><td>{{contact.middle_name}}</td>
+  </tr>
+  <tr>
+    <td class="q-label">Nationality:</td><td>{{contact.nationality}}</td>
+  </tr>
+  <tr>
+    <td class="q-label">Date of Birth:</td><td>{{contact.birthdate}}</td>
+  </tr>
+  <tr>
+    <td class="q-label">Email:</td><td>{{contact.email}}</td>
+  </tr>
+
+</table>
+
+<table>
+  <th>SECTION 2 - ACADEMIC (Previous study in HOME / Other countries - not Australia)</th>
+  <tr>
+    <td>
+      <h4>
+        Course 1
+      </h4>
+       <uL>
+         <li>
+           <ul class="group-ul">
+             <li class="q-label">Course/Qualification Name 1:</li>
+             <li>
+              {{contact.gsa_most_recent_course_qualifications_name_1}}
+             </li>
+           </ul>
+           <ul class="group-ul">
+             <li class="q-label">Completed 1:</li>
+             <li>
+              {{contact.gsa_most_recent_course_qualification_completed}}
+             </li>
+           </ul>
+           <ul class="group-ul">
+             <li class="q-label">Completed Date 1:</li>
+             <li>
+              {{contact.gsa_most_recent_course_qualification_completed_date_1}}
+             </li>
+           </ul>
+         </li>
+      </uL>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h4>
+        Course 2
+      </h4>
+       <uL>
+         <li>
+           <ul class="group-ul">
+             <li class="q-label">Course/Qualification Name 2:</li>
+             <li>
+              {{contact.gsa_most_recent_course_qualifications_name_2}}
+             </li>
+           </ul>
+           <ul class="group-ul">
+             <li class="q-label">Completed 2:</li>
+             <li>
+              {{contact.gsa_most_recent_course_qualification_completed_2}}
+             </li>
+           </ul>
+           <ul class="group-ul">
+             <li class="q-label">Completed Date 2:</li>
+             <li>
+              {{contact.gsa_most_recent_course_qualification_completed_date_2}}
+             </li>
+           </ul>
+         </li>
+      </uL>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h4>
+        Course 3
+      </h4>
+       <uL>
+         <li>
+           <ul class="group-ul">
+             <li class="q-label">Course/Qualification Name 3:</li>
+             <li>
+              {{contact.gsa_most_recent_course_qualifications_name_3}}
+             </li>
+           </ul>
+           <ul class="group-ul">
+             <li class="q-label">Completed 3:</li>
+             <li>
+              {{contact.gsa_most_recent_course_qualification_completed_3}}
+             </li>
+           </ul>
+           <ul class="group-ul">
+             <li class="q-label">Completed Date 3:</li>
+             <li>
+              {{contact.gsa_most_recent_course_qualification_completed_date_3}}
+             </li>
+           </ul>
+         </li>
+      </uL>
+    </td>
+  </tr>
+  <tr>
+    <td>Documents to be attached to GSA:</td><td>{{contact.documents_to_be_attached_to_gsa}}</td>
+  </tr>
+  <tr>
+    <td class="top-text">Courses/Qualifications Attached Document (Original):</td>
+    <td>
+      {% set linkArray = contact.gsa_courses_qualifications_attached_documents|split(';')%}
+      <ul>
+        {% for item in linkArray %}
+          <li>
+            <a href="{{item}}" target="_blank">{{item}}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </td>
+  </tr>
+  
+  <tr>
+    <td class="top-text">Courses/Qualifications Attached Document (English Translation):</td>
+    <td>
+      {% set linkArray = contact.gsa_courses_qualifications_attached_documents_english_translation|split(';')%}
+      <ul>
+        {% for item in linkArray %}
+          <li>
+            <a href="{{item}}" target="_blank">{{item}}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </td>
+  </tr>
+    
+
+</table>
+
+<table>
+  <th>SECTION 3 - STUDENT VISA APPLICATION</th>
+  <tr>
+    <td class="q-label">QUESTION 1 – applicant’s current circumstances: </td><td>{{contact.gsa_applicant_s_current_circumstances}}</td>
+  </tr>
+  <tr>
+    <td class="q-label">QUESTION 2 – reasons for choosing Australia and education provider: </td><td>{{contact.gsa_reasons_for_choosing_australia_and_education_provider}}</td>
+  </tr>
+  <tr>
+    <td class="q-label">QUESTION 3 – benefits of the chosen course: </td><td>{{contact.gsa_benefits_of_the_chosen_course}}</td>
+  </tr>
+   <tr>
+    <td class="q-label">QUESTION 4 – additional information: </td><td>{{contact.gsa_additional_information}}</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="q-label">QUESTION 5 – TO BE COMPLETED BY ONSHORE APPLICANTS ONLY</td>
+  </tr>
+  <tr>
+    <td>Do you currently hold or ever held a Student Visa in Australia?: </td><td>{{contact.do_you_currently_hold_or_ever_held_a_student_visa_in_australia_}}</td>
+  </tr>
+  {% if contact.do_you_currently_hold_or_ever_held_a_student_visa_in_australia_ == 'Yes' %}
+    <tr>
+      <td class="q-label">YES: QUESTION 5A – previous study in Australia: </td><td>{{contact.gsa_previous_study_in_australia}}</td>
+    </tr>
+  {% else %}
+    <tr>
+      <td class="q-label">NO: QUESTION 5B – Applicants holding a Visa Other than a Student Visa (Subclass 500): </td><td>{{contact.gsa_reasons_for_choosing_australia_and_education_provider}}</td>
+    </tr>
+  {% endif %}
+  <tr>
+    <td colspan="2" class="q-label">QUESTION 6 – FUTURE EMPLOYMENT INFORMATION</td>
+  </tr>
+  <tr>
+    <td>Have you been offered a job after completing your course/studies?: </td><td>{{contact.have_you_been_offered_a_job_after_completing_your_course_studies_}}</td>
+  </tr>
+  {% if contact.have_you_been_offered_a_job_after_completing_your_course_studies_ == 'Yes' %}
+    <tr>
+      <td colspan="2" class="q-label">YES:</td>
+    </tr>
+    <tr>
+      <td>Future employment (Provide details of the employer/business) Organisation name:</td><td>{{contact.future_employment___organisation_name}}</td>
+    </tr>
+    <tr>
+      <td>Industry Type:</td><td>{{contact.future_employment___industry_type}}</td>
+    </tr>
+    <tr>
+      <td>Country:</td><td>{{contact.future_employment___country}}</td>
+    </tr>
+  <tr>
+      <td>Postcode:</td><td>{{contact.future_employment___postcode}}</td>
+    </tr>
+  <tr>
+      <td>Address:</td><td>{{contact.future_employment___address}}</td>
+    </tr>
+  <tr>
+      <td>Suburb/Town:</td><td>{{contact.future_employment___suburb_town}}</td>
+    </tr>
+  <tr>
+      <td>State/Province:</td><td>{{contact.future_employment___state_province}}</td>
+    </tr>
+  <tr>
+      <td>Contact Person Given Name(s):</td><td>{{contact.future_employment___contact_person_given_name_s_}}</td>
+    </tr>
+  <tr>
+      <td>Contact Family Name:</td><td>{{contact.future_employment___contact_person_family_name}}</td>
+    </tr>
+  <tr>
+      <td>Position Details:</td><td>{{contact.future_employment___position_details}}</td>
+    </tr>
+  <tr>
+      <td>Mobile/Cell Phone:</td><td>{{contact.future_employment___mobile_cell_phone}}</td>
+    </tr>
+  
+    {% else %}
+    <tr>
+      <td class="q-label">NO: QUESTION 6B – For applicants without a job offer:</td><td>{{contact.give_details_of_the_type_of_employment_you_will_seek_after_completing_your_course}}</td>
+    </tr>
+    
+  {% endif%}
+</table>
+
+<table>
+  <th>SUPPORTED DOCUMENTS</th>
+  <tr>
+    <td colspan="2" class="q-label">Financial Documents:</td>
+  </tr>
+  <tr>
+    <td>Financial Documentation:</td>
+    <td>
+      {{contact.gsa_required_documents_financial_documentation}}
+    </td>
+  </tr>
+  <tr>
+    <td class="top-text">Financial Documentation Attached Documents:</td>
+    <td>
+      {% set linkArray = contact.gsa_financial_documentation_attached_documents|split(';')%}
+    <ul>
+      {% for item in linkArray %}
+        <li>
+          <a href="{{item}}" target="_blank">{{item}}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    </td>
+  </tr>
+  
+  <tr>
+    <td colspan="2" class="q-label">Family Assets:</td>
+  </tr>
+  <tr>
+    <td>Family Assets:</td><td>{{contact.gsa_required_documents_family_assets}}</td>
+  </tr>
+  <tr>
+    <td class="top-text">Family Assets Attached Documents:</td>
+    <td>
+      {% set linkArray = contact.gsa_family_assets_attached_documents|split(';')%}
+    <ul>
+      {% for item in linkArray %}
+        <li>
+          <a href="{{item}}" target="_blank">{{item}}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    </td>
+  </tr>
+  
+  <tr>
+    <td colspan="2" class="q-label">Question 5A - ACADEMIC Previous study in AUSTRALIA:</td>
+  </tr>
+  <tr>
+    <td>ACADEMIC Previous study in AUSTRALIA Related documents:</td><td>{{contact.academic_previous_study_in_australia_related_documents}}</td>
+  </tr>
+  <tr>
+    <td class="top-text">ACADEMIC Previous study in AUSTRALIA Attached Documents:</td>
+    <td>
+      {% set linkArray = contact.academic_previous_study_in_australia_attached_documents|split(';')%}
+    <ul>
+      {% for item in linkArray %}
+        <li>
+          <a href="{{item}}" target="_blank">{{item}}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    </td>
+  </tr>
+  
+  <tr>
+    <td colspan="2" class="q-label">Other Relevant Documents:</td>
+  </tr>
+  <tr>
+    <td>Other Relevant Documents:</td><td>{{contact.gsa_required_documents_other_relevant_documents}}</td>
+  </tr>
+  <tr>
+    <td class="top-text">Other Relevant Documents Attached Documents:</td>
+    <td>
+      {% set linkArray = contact.gsa_other_relevant_documents_attached_documents|split(';')%}
+    <ul>
+      {% for item in linkArray %}
+        <li>
+          <a href="{{item}}" target="_blank">{{item}}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    </td>
+  </tr>
+</table>

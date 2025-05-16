@@ -1,0 +1,19 @@
+<section class="section bg-white-canvas" id="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+				{% inline_rich_text field="main_text" value="{{ module.main_text }}" %}
+        {% if module.cta_group.hide_show_cta == "show"%}
+          <div class="btn-video-container">
+            <div><i class="far fa-play-circle"></i></div><div><a href="#ilscModal" data-toggle="modal" class="video-btn" src="{{ module.cta_group.link_url.url.href }}">{{ module.cta_group.link_url_text }}</a></div>
+          </div>
+        {% endif %}
+			</div>
+			<div class="col-md-5">
+				{% if module.image_field.src %}
+          <img class="lazy" data-src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" loading="lazy">
+        {% endif %}
+			</div>
+		</div>
+	</div>
+</section>

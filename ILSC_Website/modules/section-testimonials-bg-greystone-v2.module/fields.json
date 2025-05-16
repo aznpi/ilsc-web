@@ -1,0 +1,188 @@
+[ {
+  "id" : "59319799-5293-ea48-524d-3a1a5b4cbb59",
+  "name" : "title_rich_text",
+  "label" : "Title Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h5 style=\"text-align: center;\"><span style=\"color: #81b1cc;\">WHAT OUR PARTNERS ARE SAYING</span></h5>"
+}, {
+  "id" : "4548d4a2-81b4-0719-8f53-97da245efc07",
+  "name" : "testimonials_field_group",
+  "label" : "Testimonials Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 20,
+    "sorting_label_field" : "b2f806bc-f49e-a9ea-69c7-9e14cab2ab26",
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "9e870969-dcdf-80bf-34bc-af7bbbd6d049",
+    "name" : "testimonial_rich_text",
+    "label" : "Testimonial Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<p style=\"text-align: center;\"><span style=\"color: #ffffff;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et risus accumsan nisl congue sollicitudin neque elementum. Cras adipiscing massa condimentum lorem ullamcorper urna odio risus sed. Urna, amet nec, justo, lorem quam mi sapien, velit. Nulla vulputate vestibulum quisque amet purus diam nisl sit mauris.</span></p>"
+  }, {
+    "id" : "8f46b673-e6a9-92d5-87da-9a48ee0ea67c",
+    "name" : "cta_group",
+    "label" : "CTA Group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "6e343c51-0924-fa6f-be59-fa3219da38fc",
+      "name" : "hide_show_cta",
+      "label" : "Hide/Show CTA",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "hide"
+    }, {
+      "id" : "3e675576-19c5-0aee-45cf-d7058d0cdf59",
+      "name" : "cta_text",
+      "label" : "CTA Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "6e343c51-0924-fa6f-be59-fa3219da38fc",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "show",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "WATCH HER VIDEO"
+    }, {
+      "id" : "3735579b-73a7-82a5-cf18-12684a5c38ed",
+      "name" : "video_url",
+      "label" : "Video URL",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "6e343c51-0924-fa6f-be59-fa3219da38fc",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "show",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.youtube.com/embed/kjBIrnMqPpk",
+        "content_id" : null
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "hide_show_cta" : "hide",
+      "cta_text" : "WATCH HER VIDEO",
+      "video_url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.youtube.com/embed/kjBIrnMqPpk",
+        "content_id" : null
+      }
+    }
+  }, {
+    "id" : "b2f806bc-f49e-a9ea-69c7-9e14cab2ab26",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.ilsc.com/hubfs/logo_van_aquarium.png",
+      "alt" : "logo_van_aquarium",
+      "loading" : "lazy",
+      "width" : 175,
+      "height" : 101,
+      "max_width" : 175,
+      "max_height" : 101
+    }
+  }, {
+    "id" : "5fb39183-2a41-596e-02e7-3c5ba66cbf34",
+    "name" : "name_rich_text",
+    "label" : "Name Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h5><span style=\"color: #ffffff;\">VANCOUVER AQUARIUM</span></h5>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "testimonial_rich_text" : "<p style=\"text-align: center;\"><span style=\"color: #ffffff;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et risus accumsan nisl congue sollicitudin neque elementum. Cras adipiscing massa condimentum lorem ullamcorper urna odio risus sed. Urna, amet nec, justo, lorem quam mi sapien, velit. Nulla vulputate vestibulum quisque amet purus diam nisl sit mauris.</span></p>",
+    "cta_group" : {
+      "hide_show_cta" : "hide",
+      "cta_text" : "WATCH HER VIDEO",
+      "video_url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.youtube.com/embed/kjBIrnMqPpk",
+        "content_id" : null
+      }
+    },
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://www.ilsc.com/hubfs/logo_van_aquarium.png",
+      "alt" : "logo_van_aquarium",
+      "loading" : "lazy",
+      "width" : 175,
+      "height" : 101,
+      "max_width" : 175,
+      "max_height" : 101
+    },
+    "name_rich_text" : "<h5><span style=\"color: #ffffff;\">VANCOUVER AQUARIUM</span></h5>"
+  } ]
+}, {
+  "id" : "6f3d653e-317c-416c-ce29-582b18b69a89",
+  "name" : "bg_image",
+  "label" : "BG Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.ilsc.com/hubfs/bg_testimonials_partners.jpg",
+    "alt" : "bg_testimonials_partners",
+    "loading" : "lazy",
+    "width" : 1440,
+    "height" : 568,
+    "max_width" : 1440,
+    "max_height" : 568
+  }
+} ]

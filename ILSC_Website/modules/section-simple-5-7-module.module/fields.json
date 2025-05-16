@@ -1,0 +1,52 @@
+[ {
+  "id" : "b3b54236-ec3f-889f-51b2-dccae43d66a2",
+  "name" : "bg_color",
+  "label" : "BG Color",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "linear-gradient(90deg, #003346 3.55%, #003346 35.04%, rgba(0, 51, 70, 0) 83.06%)"
+}, {
+  "id" : "35496a5d-0c9e-6b84-9424-86bcaceeb734",
+  "name" : "bg_image",
+  "label" : "BG Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null
+  }
+}, {
+  "id" : "78ab4865-7ea4-411e-c45d-b44edc9b9301",
+  "name" : "richtext_field",
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Speak to a homestay<br>specialist today.</h2>\n<h3>We are looking forward to answering your questions.</h3>\n<a href=\"#\" class=\"btn btn-white-outline\">CONTACT US</a>"
+}, {
+  "id" : "8d87cc6b-c11d-cd26-6edf-70255c46e22f",
+  "name" : "text_align",
+  "label" : "text align",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "center", "Center" ], [ "left", "Left" ], [ "right", "Right" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "center"
+} ]

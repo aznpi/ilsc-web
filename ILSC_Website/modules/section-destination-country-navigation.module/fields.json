@@ -1,0 +1,560 @@
+[ {
+  "id" : "fbac01e0-921d-1e1b-6405-66437f200efb",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2><span>Choose Schools in Amazing Destinations</span></h2>\n<h5>LEARN ENGLISH, FRENCH, OR HINDI IN AUSTRALIA, CANADA, INDIA OR USA</h5>"
+}, {
+  "id" : "64d33e71-2530-0aaf-30a2-d10c81ad3259",
+  "name" : "canada",
+  "label" : "Canada",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "98e1377c-4c80-9d36-4441-20e93cefcb3b",
+    "name" : "enable_box_boolean",
+    "label" : "Enable Box Boolean",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : true
+  }, {
+    "id" : "94648444-65ca-45db-50c5-ac64883c3968",
+    "name" : "bg_image",
+    "label" : "BG Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.ilsc.com/hubfs/Website/Destinations/img_box_canada_2.jpg",
+      "alt" : "Study English in Canada or take a business or hospitality program in a city like Toronto",
+      "width" : 350,
+      "height" : 403,
+      "max_width" : 350,
+      "max_height" : 403
+    }
+  }, {
+    "id" : "55c3c1d1-374b-4e55-3fe3-cccec386f3a0",
+    "name" : "icon",
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "94648444-65ca-45db-50c5-ac64883c3968",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : "NOT_EMPTY",
+      "access" : null
+    },
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_canada_leaf.png",
+      "alt" : "icon_canada_leaf",
+      "width" : 130,
+      "height" : 130,
+      "max_width" : 130,
+      "max_height" : 130
+    }
+  }, {
+    "id" : "a7c3702e-63c6-ac34-7f12-27c63dba038e",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "94648444-65ca-45db-50c5-ac64883c3968",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : "NOT_EMPTY",
+      "access" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "CANADA"
+  }, {
+    "id" : "f411573b-0b54-aeea-a6e3-7bf74695e4a1",
+    "name" : "url_field",
+    "label" : "URL",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "94648444-65ca-45db-50c5-ac64883c3968",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : null,
+      "access" : null
+    },
+    "supported_types" : [ "CONTENT", "EXTERNAL" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 31715488593
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "enable_box_boolean" : true,
+    "bg_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.ilsc.com/hubfs/Website/Destinations/img_box_canada_2.jpg",
+      "alt" : "Study English in Canada or take a business or hospitality program in a city like Toronto",
+      "width" : 350,
+      "height" : 403,
+      "max_width" : 350,
+      "max_height" : 403
+    },
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_canada_leaf.png",
+      "alt" : "icon_canada_leaf",
+      "width" : 130,
+      "height" : 130,
+      "max_width" : 130,
+      "max_height" : 130
+    },
+    "title" : "CANADA",
+    "url_field" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 31715488593
+    }
+  }
+}, {
+  "id" : "d3fcfba7-f21d-e3b0-3505-d3b63b25ccda",
+  "name" : "australia",
+  "label" : "Australia",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "3e886c79-774d-9dc5-4088-7f4bb25bf80e",
+    "name" : "enable_box_boolean",
+    "label" : "Enable Box Boolean",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : true
+  }, {
+    "id" : "708acc8f-03ba-f4fd-f5f8-78ff86ac5302",
+    "name" : "bg_image",
+    "label" : "BG Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://www.ilsc.com/hubfs/Website/Destinations/img_box_aus_2.jpg",
+      "alt" : "Sydney Opera House - Study English in Australia or take a business program in a city like Sydney",
+      "width" : 350,
+      "height" : 403,
+      "max_width" : 350,
+      "max_height" : 403
+    }
+  }, {
+    "id" : "48c71ae5-5f8c-677c-bca0-abef10cd874a",
+    "name" : "url_field",
+    "label" : "URL",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "708acc8f-03ba-f4fd-f5f8-78ff86ac5302",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : null,
+      "access" : null
+    },
+    "supported_types" : [ "CONTENT", "EXTERNAL" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 31667128414
+    }
+  }, {
+    "id" : "4b5cf2e7-4733-c676-afa9-8c7866f13f5c",
+    "name" : "icon",
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "708acc8f-03ba-f4fd-f5f8-78ff86ac5302",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : null,
+      "access" : null
+    },
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_australia_kangaroo.png",
+      "alt" : "icon_australia_kangaroo",
+      "width" : 138,
+      "height" : 130,
+      "max_width" : 138,
+      "max_height" : 130
+    }
+  }, {
+    "id" : "9637f21b-f453-c179-4045-797e272035ca",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "708acc8f-03ba-f4fd-f5f8-78ff86ac5302",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : null,
+      "access" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "AUSTRALIA"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "enable_box_boolean" : true,
+    "bg_image" : {
+      "src" : "https://www.ilsc.com/hubfs/Website/Destinations/img_box_aus_2.jpg",
+      "alt" : "Sydney Opera House - Study English in Australia or take a business program in a city like Sydney",
+      "width" : 350,
+      "height" : 403,
+      "max_width" : 350,
+      "max_height" : 403
+    },
+    "url_field" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 31667128414
+    },
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_australia_kangaroo.png",
+      "alt" : "icon_australia_kangaroo",
+      "width" : 138,
+      "height" : 130,
+      "max_width" : 138,
+      "max_height" : 130
+    },
+    "title" : "AUSTRALIA"
+  }
+}, {
+  "id" : "a2d1b19c-e610-8047-2170-16cda6a9e28c",
+  "name" : "india",
+  "label" : "India",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "75ad6f31-6ba5-f414-1378-777bd9832076",
+    "name" : "enable_box_boolean",
+    "label" : "Enable Box Boolean",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : true
+  }, {
+    "id" : "a908d42a-3ae7-ba04-611e-082b75f7f2a7",
+    "name" : "bg_image",
+    "label" : "BG Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://www.ilsc.com/hubfs/Website/Destinations/img_box_india_2.jpg",
+      "alt" : "Taj Mahal: Study English or Hindi in India, in the city of New Delhi near the Taj Mahal",
+      "width" : 350,
+      "height" : 403,
+      "max_width" : 350,
+      "max_height" : 403
+    }
+  }, {
+    "id" : "448c38f2-2317-1ef0-a3f2-566974b29b2a",
+    "name" : "url_field",
+    "label" : "URL",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "a908d42a-3ae7-ba04-611e-082b75f7f2a7",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : null,
+      "access" : null
+    },
+    "supported_types" : [ "CONTENT", "EXTERNAL" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 31714524656
+    }
+  }, {
+    "id" : "b265f86f-c0b6-f4e1-1b2e-acf811721ff5",
+    "name" : "icon",
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "a908d42a-3ae7-ba04-611e-082b75f7f2a7",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : null,
+      "access" : null
+    },
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_india_taj.png",
+      "alt" : "icon_india_taj",
+      "width" : 130,
+      "height" : 130,
+      "max_width" : 130,
+      "max_height" : 130
+    }
+  }, {
+    "id" : "44c6e183-d11d-e744-8943-91824bfbd1c0",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "a908d42a-3ae7-ba04-611e-082b75f7f2a7",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : null,
+      "access" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "INDIA"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "enable_box_boolean" : true,
+    "bg_image" : {
+      "src" : "https://www.ilsc.com/hubfs/Website/Destinations/img_box_india_2.jpg",
+      "alt" : "Taj Mahal: Study English or Hindi in India, in the city of New Delhi near the Taj Mahal",
+      "width" : 350,
+      "height" : 403,
+      "max_width" : 350,
+      "max_height" : 403
+    },
+    "url_field" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 31714524656
+    },
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_india_taj.png",
+      "alt" : "icon_india_taj",
+      "width" : 130,
+      "height" : 130,
+      "max_width" : 130,
+      "max_height" : 130
+    },
+    "title" : "INDIA"
+  }
+}, {
+  "id" : "80c46393-0a3a-fb19-d3a3-c108c18ef4b0",
+  "name" : "usa",
+  "label" : "USA",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "9be04146-80dd-398b-344d-ba04ff2a97f0",
+    "name" : "enable_box_boolean",
+    "label" : "Enable Box Boolean",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : false
+  }, {
+    "id" : "499318d1-5d5a-2a8f-cd02-1a107a93d3a6",
+    "name" : "bg_image",
+    "label" : "BG Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://www.ilsc.com/hubfs/Website/Destinations/ELS-NY_USA%20Destination_3.jpg",
+      "alt" : "Study English in the USA",
+      "width" : 350,
+      "height" : 403,
+      "max_width" : 350,
+      "max_height" : 403
+    }
+  }, {
+    "id" : "fb4eb779-1c91-8581-13d5-3dd6c38338a6",
+    "name" : "url_field",
+    "label" : "URL",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "499318d1-5d5a-2a8f-cd02-1a107a93d3a6",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : "NOT_EMPTY",
+      "access" : null
+    },
+    "supported_types" : [ "CONTENT", "EXTERNAL" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "type" : "EXTERNAL",
+      "href" : "https://www.els.edu/destinations",
+      "content_id" : null
+    }
+  }, {
+    "id" : "ad34f108-07e2-2e7c-1aaf-25f97ea87115",
+    "name" : "icon",
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "499318d1-5d5a-2a8f-cd02-1a107a93d3a6",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : "NOT_EMPTY",
+      "access" : null
+    },
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.ilsc.com/hubfs/icon_usa_lg.png",
+      "alt" : "icon_usa_lg",
+      "width" : 128,
+      "height" : 128,
+      "max_width" : 128,
+      "max_height" : 128
+    }
+  }, {
+    "id" : "8c0cf290-6afd-f6d9-bf42-c319c2efb8b7",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "499318d1-5d5a-2a8f-cd02-1a107a93d3a6",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : "NOT_EMPTY",
+      "access" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Study in USA"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "enable_box_boolean" : false,
+    "bg_image" : {
+      "src" : "https://www.ilsc.com/hubfs/Website/Destinations/ELS-NY_USA%20Destination_3.jpg",
+      "alt" : "Study English in the USA",
+      "width" : 350,
+      "height" : 403,
+      "max_width" : 350,
+      "max_height" : 403
+    },
+    "url_field" : {
+      "type" : "EXTERNAL",
+      "href" : "https://www.els.edu/destinations",
+      "content_id" : null
+    },
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.ilsc.com/hubfs/icon_usa_lg.png",
+      "alt" : "icon_usa_lg",
+      "width" : 128,
+      "height" : 128,
+      "max_width" : 128,
+      "max_height" : 128
+    },
+    "title" : "Study in USA"
+  }
+} ]

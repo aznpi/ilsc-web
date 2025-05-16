@@ -1,0 +1,53 @@
+[ {
+  "id" : "04fec035-7542-54a6-dbc2-adc3ced0c042",
+  "name" : "bg_color",
+  "label" : "BG Color",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "linear-gradient(180deg, #81B1CC 0%, #81B1CC 59.38%, #81B1CC 100%)"
+}, {
+  "id" : "13e54eca-6334-0f4a-4193-cfb1460b530d",
+  "name" : "richtext_field",
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2><span style=\"color: #ffffff;\">Ready to make the next step?</span></h2>\n<a href=\"https://www.ilsc.com/greystone-college/contact-us\" class=\"btn btn-white-outline\" rel=\"noopener\">CONTACT US</a> <a href=\"https://www.ilsc.com/greystone-college/apply-now\" class=\"btn btn-primary btn-white\" rel=\"noopener\">APPLY NOW</a>"
+}, {
+  "id" : "0adcfbfa-29a3-c0db-e59d-12f2c2dc6e84",
+  "name" : "text_align",
+  "label" : "Text Align",
+  "required" : false,
+  "locked" : true,
+  "display" : "select",
+  "choices" : [ [ "center", "Center" ], [ "right", "Right" ], [ "left", "Left" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "center"
+}, {
+  "id" : "178a563f-bd1d-c9f6-7bc2-cc03da58e5ea",
+  "name" : "bg_image",
+  "label" : "BG Image",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+} ]

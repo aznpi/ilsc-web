@@ -1,0 +1,39 @@
+<section class="section {% if module.disable_enable_bg_color_choice == 'disable' %} bg-white-canvas {% endif %} section-1-columns-6-6 " id="content" {% if module.disable_enable_bg_color_choice == 'enable' %} style="background-color:rgba({{ module.bg_color.color|convert_rgb }}, {{module.bg_color.opacity/100 }})
+" {% endif %}>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			{% inline_rich_text field="title" value="{{ module.title }}" %}
+      </div>
+		</div>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<div class="box-container">
+          {% if module.box_1.image_field.src %}
+            <img class="lazy top-img" data-src="{{ module.box_1.image_field.src }}" alt="{{ module.box_1.image_field.alt }}">
+          {% endif %}
+					<div class="box-content a-link-small">
+			 			{% inline_rich_text field="box_1.text_content" value="{{ module.box_1.text_content }}" %}
+            <div class="a-link-container">
+              <a href="{{ module.box_1.link_url.href }}">{{ module.box_1.link_text }}</a>
+            </div>
+			 		</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="box-container">
+					{% if module.box_2.image_field.src %}
+            <img class="lazy top-img" data-src="{{ module.box_2.image_field.src }}" alt="{{ module.box_2.image_field.alt }}">
+          {% endif %}
+					<div class="box-content">
+			 			{% inline_rich_text field="box_2.text_content" value="{{ module.box_2.text_content }}" %}
+			 			<div class="a-link-container">
+              <a href="{{ module.box_2.link_url.href }}">{{ module.box_2.link_text }}</a>
+            </div>
+			 		</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

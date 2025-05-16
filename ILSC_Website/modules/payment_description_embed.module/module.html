@@ -1,0 +1,43 @@
+<div id="payment-process-complete" class="payment-process-complete" style="display:none;">
+  <div class="row">
+    <div class="col-md-12 center">
+      {% if module.logo_image.src %}
+        {% set sizeAttrs = 'width="{{ module.logo_image.width|escape_attr }}" height="{{ module.logo_image.height|escape_attr }}"' %}
+        {% if module.logo_image.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ module.logo_image.width|escape_attr }}" height="{{ module.logo_image.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+        {% elif module.logo_image.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ module.logo_image.max_width|escape_attr }}" height="{{ module.logo_image.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+         {% set loadingAttr = module.logo_image.loading != 'disabled' ? 'loading="{{ module.logo_image.loading|escape_attr }}"' : '' %}
+        <img src="{{ module.logo_image.src|escape_url }}" alt="{{ module.logo_image.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }} class="center" style="margin:100px auto;">
+      {% endif %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+    </div>    
+  </div>
+  <div class="row">
+    <div class="col-md-12 progress-bar-container">
+      <div class="progress">
+        <div class="progress-value"></div>
+      </div>
+    </div>
+  </div>
+</div>
+{% require_js position="footer" %}
+  <script>
+   
+      $(document).ready(function(){
+        if(window.self == window.parent){
+          $('.payment-confirm-element').removeClass();
+        }else{
+          $('body').css('background-color','#{{ module.bg_color }}');
+          $('#payment-process-complete').show();
+          window.parent.closePaymentModal();
+        }
+      });
+      
+  </script>
+{% end_require_js %}

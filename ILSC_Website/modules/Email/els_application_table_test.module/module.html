@@ -1,0 +1,107 @@
+<table>
+  <th>Student Information</th>
+  <tr>
+    <td>Record ID:</td><td>{{contact.hs_object_id}}</td>
+  </tr>
+  <tr>
+    <td>Student First Name:</td><td>{{contact.firstname}}</td>
+  </tr>
+  <tr>
+    <td>Student Last Name:</td><td>{{contact.lastname}}</td>
+  </tr>
+  <tr>
+    <td>Student Middle Name:</td><td>{{contact.middle_name}}</td>
+  </tr>
+  <tr>
+    <td>Email:</td><td>{{contact.email}}</td>
+  </tr>
+  <tr>
+    <td>Phone Number:</td><td>{{contact.phone}}</td>
+  </tr>
+  <tr>
+    <td>Address:</td><td>{{contact.student_complete_address}}</td>
+  </tr>
+  <tr>
+    <td>Address - City:</td><td>{{contact.city}}</td>
+  </tr>
+  <tr>
+    <td>Address - State/Province:</td><td>{{contact.state}}</td>
+  </tr>
+  <tr>
+    <td>Postal Code:</td><td>{{contact.zip}}</td>
+  </tr>
+  <tr>
+    <td>Country:</td><td>{{contact.country_of_residence}}</td>
+  </tr>
+  <tr>
+    <td>Nationality:</td><td>{{contact.nationality}}</td>
+  </tr>
+  <tr>
+    <td>Date of Birth:</td><td>{{contact.birthdate}}</td>
+  </tr>
+  <tr>
+    <td>Country of Birth:</td><td>{{contact.country_of_birth}}</td>
+  </tr>
+  <tr>
+    <td>City of Birth:</td><td>{{contact.city_of_birth__c}}</td>
+  </tr>
+  <tr>
+    <td>Gender:</td><td>{{contact.gender_student}}</td>
+  </tr>
+  <tr>
+    <td>Native Language:</td><td>{{contact.first_language__cloned_}}</td>
+  </tr>
+  {% if contact.preferred_language_spoken__c %}
+    <tr>
+      <td>[Student Application Only] Preferred Language Spoke:</td><td>{{contact.preferred_language_spoken__c}}</td>
+    </tr>
+  {% endif %}
+  <tr>
+    <td>Visa Status in your country of study/ What Visa will you apply for:</td><td>{{contact.visa_status_in_your_country_of_study}}</td>
+  </tr>
+  {% if contact.student_visa_option_other_specified %}
+    <tr>
+      <td>[Australia onshore only] Current Visa Type number]</td><td>{{contact.student_visa_option_other_specified}}</td>
+    </tr>
+  {% endif %}
+  {% if contact.australia_visa_refusal_history %}
+    <tr>
+      <td>[Australia only] Visa refusal history</td><td>{{contact.australia_visa_refusal_history}}</td>
+    </tr>
+  {% endif %}
+</table>
+<table>
+  <th>Study Information</th>
+  {% if contact.form_i_20_dependents %}
+    {% set lists = contact.form_i_20_dependents|split("},") %}
+    <tr>
+      <td>Form I-20 Dependents</td>
+      <td>
+        {% for list in lists %}
+          <table>
+          {% set items = list|split('",') %}
+          {% for item in items %}
+           {% set rowStr =  item|replace('"','')|replace('[','')|replace('{','')|replace('}','')|replace(']','') %} 
+            {% set rowList = rowStr|split(':') %}
+            {% if item is string_containing '{' %}
+              <th><strong>Dependent:</strong></th>
+              <tr>
+                {% for rowItem in rowList%}
+                  <td>{{ rowItem }}{% if loop.index == 1 %}:{% endif %}</td>
+                {% endfor %}
+              </tr>
+              {% else %}
+                 <tr>
+                  {% for rowItem in rowList%}
+                    <td>{{ rowItem }}{% if loop.index == 1 %}:{% endif %}</td>
+                  {% endfor %}
+                </tr>
+            {% endif %}
+       
+          {% endfor %}
+          </table>
+        {% endfor%}
+      </td>
+    </tr>
+  {% endif %}
+</table>

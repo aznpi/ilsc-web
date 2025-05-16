@@ -1,0 +1,194 @@
+:root {
+	--checkbox-size: 25px;
+	--bg-color: #FFA69E;
+	--checkbox-color: #111;
+	--hover-color: #ff8b35;
+	--tick-color: #81b1cc;
+}
+.filter-program-container p.search-txt-container{
+  margin:0;
+}
+.filter-program-container .search-filter-container h6{
+  text-align:center;
+  font-size:1.25rem;
+  font-weight:600;
+}
+.box-content.a-link-container{
+  min-height:300px;
+}
+.box-content.a-link-container a.a-link{
+  position:absolute;
+  bottom:40px;
+  left:40px;
+}
+.filter-program-container .box-container{
+  margin-bottom:20px;
+}
+.filter-program-container .box-container img{
+  height:220px;
+  object-fit:cover;
+}
+.filter-program-container .panel-default{
+  margin-bottom:30px;
+}
+.filter-program-container .search-filter-container .col{
+  margin-bottom:20px;
+}
+.filter-program-container ul.list-group{
+  width:100%;
+}
+.filter-program-container li.list-group-item{
+  display:flex;
+  align-items:center;
+  justify-content:space-evenly;
+  width:100%;
+  white-space:nowrap;
+}
+.filter-program-container li.list-group-item .checkbox{
+  display:flex;
+  align-items:center;
+  justify-content:start;
+  width:100%;
+}
+
+.filter-program-container label {
+	display: inline-block;
+	margin: 0 calc(var(--checkbox-size) * 0.25);
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	border: calc(var(--checkbox-size) * 0.125) solid var(--checkbox-color);
+	border-radius: 50%;
+	-webkit-transition: 400ms 100ms ease-out;
+	-o-transition: 400ms 100ms ease-out;
+	transition: 400ms 100ms ease-out;
+
+}
+
+.filter-program-container label:hover {
+	border-color: var(--hover-color);
+}
+
+.filter-program-container input[type="checkbox"] {
+	position: absolute;
+	left: -9999px;
+}
+
+.filter-program-container .tick {
+	  border-bottom: calc(var(--checkbox-size)*.30) solid var(--tick-color);
+    border-right: calc(var(--checkbox-size)*.25) solid var(--tick-color);
+    height: calc(var(--checkbox-size)*.65);
+    opacity: 0;
+    position: relative;
+    right: calc(var(--checkbox-size)*-.4);
+    top: calc(var(--checkbox-size)*-0);
+    -webkit-transform: rotate(45deg) scale(0);
+    -ms-transform: rotate(45deg) scale(0);
+    transform: rotate(45deg) scale(0);
+    -webkit-transition: all .6s cubic-bezier(.175,.885,.32,1.5);
+    -o-transition: all .6s cubic-bezier(.175,.885,.32,1.5);
+    transition: all .6s cubic-bezier(.175,.885,.32,1.5);
+    width: calc(var(--checkbox-size)*.25);
+}
+
+.filter-program-container .tick:before {
+	content: '';
+	position: absolute;
+	left: calc(var(--checkbox-size) * -0.125);
+	bottom: calc(var(--checkbox-size) * -0.25);
+	border: calc(var(--checkbox-size) * 0.125) solid var(--tick-color);
+	border-radius: 50%;
+}
+
+.filter-program-container .tick:after {
+	content: '';
+	position: absolute;
+	right: calc(var(--checkbox-size) * -0.25);
+	top: calc(var(--checkbox-size) * -0.125);
+	border: calc(var(--checkbox-size) * 0.125) solid var(--tick-color);
+	border-radius: 50%;
+}
+
+.filter-program-container input[type="checkbox"]:checked + label .tick {
+	opacity: 1;
+	-webkit-transform: rotate(45deg) scale(1);
+	    -ms-transform: rotate(45deg) scale(1);
+	        transform: rotate(45deg) scale(1);
+}
+
+.filter-program-container input[type="checkbox"]:focus + label {
+	-webkit-animation-name: cb-pop;
+	        animation-name: cb-pop;
+	-webkit-animation-duration: 400ms;
+	        animation-duration: 400ms;
+	-webkit-animation-iteration-count: 1;
+	        animation-iteration-count: 1;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+}
+
+@-webkit-keyframes cb-pop {
+	0% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+	33% {
+		-webkit-transform: scale(0.9);
+		        transform: scale(0.9);
+	}
+	66% {
+		-webkit-transform: scale(1.1);
+		        transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes cb-pop {
+	0% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+	33% {
+		-webkit-transform: scale(0.9);
+		        transform: scale(0.9);
+	}
+	66% {
+		-webkit-transform: scale(1.1);
+		        transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+.filter-program-container .program-box-slide{
+  min-height:500px;
+  position:relative;
+}
+.filter-program-container .lds-dual-ring {
+  position:absolute;
+  top:30px;
+  left:50%;
+  width: 80px;
+  height: 80px;
+}
+.filter-program-container .lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #ff8b35;
+  border-color: #ff8b35 transparent #ff8b35 transparent;
+  animation: lds-dual-ring .7s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+

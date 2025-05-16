@@ -1,0 +1,7 @@
+.section-timeline-box .simple-boxes .description-container{
+  display:none;
+  padding:0 !important;
+}
+.section-timeline-box .simple-boxes .description-container .description{
+  padding:0;
+}

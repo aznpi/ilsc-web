@@ -1,0 +1,55 @@
+{% set num =  1 %}
+<section class="section section-faq section-accordion-logo bg-white-canvas">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				{% inline_rich_text field="title" value="{{ module.title }}" %}
+      </div>
+			
+		</div>
+		<div class="row accordion-container">
+			<div class="col-md-12">
+						<div class="accordion left" id="accordionFaq">
+
+              {% for item in module.faq_items%}
+             
+                  <div class="card">
+                    <div class="card-header" id="heading-{{num}}">
+                      <div class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-{{num}}" {% if num == 1 %} aria-expanded="true" {% else %} aria-expanded="false" {% endif %} aria-controls="collapse-{{num}}">
+                          <div class="row">
+                            
+                          
+                          <div class="col-md-4">
+                            <img src="{{ item.logo_image.src }}" alt="{{ item.logo_image.alt }}">
+                          </div>
+                          <div class="col-md-8">
+                            <h4>
+                              {{ item.question_text }}
+                            </h4>
+                          </div>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div id="collapse-{{num}}" {% if num == 1 %} class="collapse show" {% else %} class="collapse" {% endif %} aria-labelledby="heading-{{num}}" data-parent="#accordionFaq">
+                      <div class="card-body">
+                       {{ item.answer_text }}
+                      </div>
+                    </div>
+                  </div>
+         
+                {% set num = num + 1%}
+						  {% endfor %}
+             
+              
+						</div>
+				
+				</div>
+			</div>
+    
+      
+		</div>
+</section>
+

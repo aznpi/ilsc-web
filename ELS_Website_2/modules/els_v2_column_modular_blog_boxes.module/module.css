@@ -1,0 +1,14 @@
+.section-blog-boxes.section-4-column .box-container .description-content{
+  min-height:50px;
+}
+.section-blog-boxes.section-4-column .box-container .image-container{
+  height:160px;
+}
+.section-blog-boxes.section-4-column .box-container .image-container img{
+  object-fit:cover;
+  width:100%;
+  height:100%;
+}
+.section-blog-boxes.section-4-column .box-container a.link{
+  color: rgb(245, 130, 32);
+}

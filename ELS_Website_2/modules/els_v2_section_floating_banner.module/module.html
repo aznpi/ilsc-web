@@ -1,0 +1,12 @@
+<section class="section-normal section-cta-banner section-bg-container section-price-banner">
+  <div class="container">
+    <div class="container-right-bg" style="background-color: {{ module.bg_color.color }};"></div>  
+    <div class="row row-price" style="background-color: {{ module.bg_color.color }};">
+      <div class="col-md-12">
+        <div class="description-container {{ module.font_color_choice }}">
+          {% inline_rich_text field="richtext_field" value="{{ module.richtext_field }}" %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

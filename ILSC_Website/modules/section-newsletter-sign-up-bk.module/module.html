@@ -1,0 +1,20 @@
+<section class="bg-grey section-form section section-newsletter">
+	<div class="container">
+		<div class="row">
+			
+      <div class="col-md-4">
+        {% inline_rich_text field="title_newsletter" value="{{ module.title_newsletter }}" %}
+      </div>
+			<div class="col-md-8">
+        {% form
+          form_to_use="{{ module.newsletter_form.form_id }}"
+          response_response_type="{{ module.newsletter_form.response_type }}"
+          response_message="{{ module.newsletter_form.message }}"
+          response_redirect_id="{{ module.newsletter_form.redirect_id }}"
+          response_redirect_url="{{module.newsletter_form.redirect_url}}"
+          gotowebinar_webinar_key="{{ module.newsletter_form.gotowebinar_webinar_key }}"
+        %}
+      </div>
+		</div>
+	</div>
+</section>

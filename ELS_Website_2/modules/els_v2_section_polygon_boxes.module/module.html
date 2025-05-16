@@ -1,0 +1,61 @@
+<section class="{{ module.bg_angle_choice }} section-normal {{ module.padding_choice }} {{ module.margin_choice }} polygon-absolute">
+      <div class="{% if module.bg_angle_choice == 'section-diagonal' %}diagonal-box{% elif module.bg_angle_choice == 'section-polygon'%}polygon-box{% endif %} {{ module.bg_color_choice }} underlap-partial-overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 center">
+              {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+            </div>
+          </div>
+          <div class="row polygon-boxes-row">
+            {% for item in module.field_group %}
+              <div class="col-md-{{ module.number_of_column_choice }}">
+                {% if item.icon_image.src %}
+                  {% set sizeAttrs = 'width="{{ item.icon_image.width }}" height="{{ item.icon_image.height }}"' %}
+                  {% if item.icon_image.size_type == 'auto' %}
+                    {% set sizeAttrs = 'width="{{ item.icon_image.width }}" height="{{ item.icon_image.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif item.icon_image.size_type == 'auto_custom_max' %}
+                    {% set sizeAttrs = 'width="{{ item.icon_image.max_width }}" height="{{ item.icon_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                   {% set loadingAttr = item.icon_image.loading != 'disabled' ? 'loading="{{ item.icon_image.loading }}"' : '' %}
+                  <div class="icon-container"><img src="{{ item.icon_image.src }}" alt="{{ item.icon_image.alt }}" class="img-fluid"></div>
+                {% endif %}
+                <div class="polygon-wrap">
+                  <div class="polygon-content-box content-box polygon-grey"></div>
+                </div>
+                <div class="polygon-inner-box polygon-orange">
+                  <div class="description">
+                    {% inline_rich_text field="description_rich_text" value="{{ item.description_rich_text }}" %}
+                  </div>
+                </div>
+
+              </div>
+            {% endfor %}
+            
+          </div>
+        </div>
+      
+    </section>
+{% require_js position="footer"%}
+  <script>
+    $(document).ready(function(){
+        function resizePolygonBoxesSection(){
+
+          var resizeArray = ['.polygon-inner-box,.polygon-content-box']
+          var arrayLength = resizeArray.length;
+          var maxHeight = [];
+
+          for (var i = 0; i < arrayLength; i++) {
+              maxHeight[i] = 0;
+              $(".section-polygon "+ resizeArray[i]).each(function () {
+                if ($(this).height() > maxHeight[i]) { maxHeight[i] = $(this).height(); }
+            });
+            $(".section-polygon "+ resizeArray[i]).height(maxHeight[i]);
+          }
+
+      }
+
+      resizePolygonBoxesSection();
+      window.addEventListener("resize", resizePolygonBoxesSection);
+    });
+  </script>
+{% end_require_js %}

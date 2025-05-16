@@ -1,0 +1,12 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "eslint.validate": [
+        "javascript"
+    ],
+    "editor.language.colorizedBracketPairs": [
+        
+    ],
+    "livePreview.defaultPreviewPath": "/form.html"
+}

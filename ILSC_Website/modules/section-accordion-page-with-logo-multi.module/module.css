@@ -1,0 +1,50 @@
+.section-faq.section-faq-full .accordion-container{
+  padding:0;
+}
+.section-faq.section-accordion-logo .a-link-container i{
+  font-weight:600;
+}
+.section-faq.section-accordion-logo .a-link-container div:last-child{
+  padding-left:5px;
+}
+.section-faq .accordion.accordion-child button.btn{
+  background: url(https://f.hubspotusercontent10.net/hubfs/5020112/template-resources/images/internal/icons/icon_triangle_right.png) no-repeat;
+  background-position: right center;
+}
+.section-faq .accordion.accordion-child .btn[aria-expanded="true"]{
+  background: url(https://f.hubspotusercontent10.net/hubfs/5020112/template-resources/images/internal/icons/icon_triangle_down.png) no-repeat;
+  background-position: right center;
+}
+.section-faq.section-accordion-logo .accordion.accordion-child .card{
+  padding-top:0;
+  padding-bottom:0;
+}
+.section-faq .accordion.accordion-child h5{
+  margin:0;
+}
+.section-faq.section-accordion-logo .accordion{
+  border:0;
+  box-shadow:none;
+}
+.section-faq.section-accordion-logo .accordion .card{
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  border-bottom: 1px solid #E5E5E5 !important;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left:0;
+  padding-right:0;
+}
+.section-faq.section-accordion-logo .accordion img{
+  width:auto;
+}
+.section-faq.section-accordion-logo .accordion .btn:after {
+    content: none !important;
+    font-family: none;
+}
+.section-faq.section-accordion-logo .accordion .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

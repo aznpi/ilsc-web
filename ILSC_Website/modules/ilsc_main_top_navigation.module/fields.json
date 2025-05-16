@@ -1,0 +1,737 @@
+[ {
+  "id" : "3fb86191-fb26-7356-8b36-5ee9f61e23af",
+  "name" : "home_link",
+  "label" : "Home Link",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 31460906441
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "picker" : "file",
+  "id" : "f3a50182-f61f-ff42-7994-ba6641dd148b",
+  "name" : "logo_svg_file",
+  "label" : "Logo SVG File",
+  "required" : false,
+  "locked" : true,
+  "type" : "file",
+  "display_width" : null,
+  "default" : "https://www.ilsc.com/hubfs/logo_Education%20Group-Color-Logo-Horizontal.svg"
+}, {
+  "id" : "dd8c6ae7-719a-4e7c-9740-e33b312b3049",
+  "name" : "logo_alt",
+  "label" : "Logo Alt",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "ILSC Language Schools and Greystone College"
+}, {
+  "id" : "149b301b-e7b2-1777-0915-df571cd611dc",
+  "name" : "left_menu_field_group",
+  "label" : "Left Menu Field group",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "67dd14d3-e2c5-ddd3-de31-82fff53ec7d8",
+    "name" : "link_field_group",
+    "label" : "Link Field group",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 10,
+      "sorting_label_field" : "61b17cbc-ce85-9a73-41bb-d68c72dcdeb7",
+      "default" : 5
+    },
+    "children" : [ {
+      "id" : "fd05144e-16b6-d14a-0bb0-ab668691e933",
+      "name" : "link_field",
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 34512881134
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "61b17cbc-ce85-9a73-41bb-d68c72dcdeb7",
+      "name" : "link_text",
+      "label" : "Link Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "ABOUT US"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ {
+      "link_field" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 34512881134
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_text" : "ABOUT US"
+    }, {
+      "link_field" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 34512881134
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_text" : "ABOUT US"
+    }, {
+      "link_field" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 34512881134
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_text" : "ABOUT US"
+    }, {
+      "link_field" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 34512881134
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_text" : "ABOUT US"
+    }, {
+      "link_field" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 34512881134
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_text" : "ABOUT US"
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "link_field_group" : [ {
+      "link_field" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 34512881134
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_text" : "ABOUT US"
+    }, {
+      "link_field" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 34512881134
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_text" : "ABOUT US"
+    }, {
+      "link_field" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 34512881134
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_text" : "ABOUT US"
+    }, {
+      "link_field" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 34512881134
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_text" : "ABOUT US"
+    }, {
+      "link_field" : {
+        "url" : {
+          "type" : "CONTENT",
+          "href" : null,
+          "content_id" : 34512881134
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_text" : "ABOUT US"
+    } ]
+  }
+}, {
+  "id" : "cea2c863-fe24-cd2e-15e2-bbc3bff9ccbd",
+  "name" : "nav_login_text",
+  "label" : "Nav Login Text",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Login"
+}, {
+  "id" : "4c4943f8-9888-f5d3-d5ff-38496ba5082b",
+  "name" : "partners_login_menu",
+  "label" : "Partners Login Menu",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "a3df90e0-ead5-b635-9a23-a2853d8a46d3",
+    "name" : "title_partners_login",
+    "label" : "Title Partners Login",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>PARTNERS LOGIN</h4>"
+  }, {
+    "id" : "d7ce44b2-5291-9b0e-49f9-5052ab3dd48a",
+    "name" : "text_1",
+    "label" : "text 1",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "New to ILSC. Create an account to get started today."
+  }, {
+    "id" : "6c04267b-d3f8-0ab6-857e-cca68da74030",
+    "name" : "text_2",
+    "label" : "text 2",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Have an account? Sign in now."
+  }, {
+    "id" : "f40cc537-b16c-bcad-d695-0d1b8a87bada",
+    "name" : "button_partners_login",
+    "label" : "Button Partners Login",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "0496f548-3daa-994c-356e-0c973ab242ac",
+      "name" : "partners_login_url",
+      "label" : "Partners Login URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      }
+    }, {
+      "id" : "e4461720-8472-a3d6-ab0a-764d0dbb97b8",
+      "name" : "button_text_partners_login",
+      "label" : "Button Text Partners Login",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Partners Login"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "partners_login_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text_partners_login" : "Partners Login"
+    }
+  }, {
+    "id" : "d1ff6514-223e-a2a6-7a9d-3cbadd39b8bd",
+    "name" : "button_partners_create_account",
+    "label" : "Button Partners Create Account",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "a6e8ec4b-46f3-769f-e691-cfe8592d8c8b",
+      "name" : "partners_login_url",
+      "label" : "Create Account URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      }
+    }, {
+      "id" : "58cca784-3dac-9a93-ae7f-df8a9039b5f6",
+      "name" : "button_text_partners_login",
+      "label" : "Button Text Partners Create Account",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Create My Account"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "partners_login_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text_partners_login" : "Create My Account"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "title_partners_login" : "<h4>PARTNERS LOGIN</h4>",
+    "text_1" : "New to ILSC. Create an account to get started today.",
+    "text_2" : "Have an account? Sign in now.",
+    "button_partners_login" : {
+      "partners_login_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text_partners_login" : "Partners Login"
+    },
+    "button_partners_create_account" : {
+      "partners_login_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text_partners_login" : "Create My Account"
+    }
+  }
+}, {
+  "id" : "fbae2e0e-371c-e4a6-4d9b-48548df41101",
+  "name" : "student_login_menu",
+  "label" : "Student Login Menu",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "f01df4fa-bc2c-200f-dc16-506abe9f489f",
+    "name" : "title_student_login",
+    "label" : "Title Student Login",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>STUDENT LOGIN</h4>"
+  }, {
+    "id" : "65f14b95-db50-da14-3bfc-99face552bb4",
+    "name" : "text_1",
+    "label" : "text 1",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Have an account? Sign in now."
+  }, {
+    "id" : "a89b9035-24a6-c154-729a-c060f4e5c502",
+    "name" : "button_student_login",
+    "label" : "Button Student Login",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "399d8afc-f1e5-0aa3-aaa3-57539a88e517",
+      "name" : "student_login_url",
+      "label" : "Student Login URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      }
+    }, {
+      "id" : "f5e2d66a-de0c-5610-0585-1afb3c9acef7",
+      "name" : "button_text_student_login",
+      "label" : "Button Text Student Login",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "MyILSC Login"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "student_login_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text_student_login" : "MyILSC Login"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "title_student_login" : "<h4>STUDENT LOGIN</h4>",
+    "text_1" : "Have an account? Sign in now.",
+    "button_student_login" : {
+      "student_login_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text_student_login" : "MyILSC Login"
+    }
+  }
+}, {
+  "id" : "3554945f-8da6-e49c-0b04-eaea98371ae0",
+  "name" : "alumni_login_menu",
+  "label" : "Alumni Login Menu",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "d0566bc7-9f41-46cd-b370-638803d1e489",
+    "name" : "title_alumni_login",
+    "label" : "Title Alumni Login",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>ALUMNI LOGIN</h4>"
+  }, {
+    "id" : "9caa1e84-d897-a3ed-08de-ee2649160411",
+    "name" : "text_1",
+    "label" : "text 1",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Have an account? Sign in now."
+  }, {
+    "id" : "b63c0574-9ef1-b41c-6d6f-d78e5661c282",
+    "name" : "button_alumni_login",
+    "label" : "Button Alumni Login",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "3b531552-b4da-c520-8aac-d4614c3946d5",
+      "name" : "alumni_login_url",
+      "label" : "Alumni Login URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      }
+    }, {
+      "id" : "daaef419-d608-5f3b-8adc-0af11ffa7d22",
+      "name" : "button_text_alumni_login",
+      "label" : "Button Text Alumni Login",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Alumni Login"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "alumni_login_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text_alumni_login" : "Alumni Login"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "title_alumni_login" : "<h4>ALUMNI LOGIN</h4>",
+    "text_1" : "Have an account? Sign in now.",
+    "button_alumni_login" : {
+      "alumni_login_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text_alumni_login" : "Alumni Login"
+    }
+  }
+}, {
+  "id" : "4c44f97c-d73e-2775-f4b4-be9c9f44b7cb",
+  "name" : "search_menu",
+  "label" : "Search Menu",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "06101793-8eb1-8776-2133-67e839d82ec2",
+    "name" : "title_search",
+    "label" : "Title Search",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>SEARCH</h4>"
+  }, {
+    "id" : "b0499547-b48e-19ce-b2e2-ebb466b9dd6d",
+    "name" : "text_search_placeholder",
+    "label" : "Text Search Placeholder",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "TYPE TO SEARCH"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "title_search" : "<h4>SEARCH</h4>",
+    "text_search_placeholder" : "TYPE TO SEARCH"
+  }
+}, {
+  "id" : "b809dafb-952a-7e01-7028-8ae79902758b",
+  "name" : "title_language",
+  "label" : "Title Language",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h4>Languages</h4>"
+}, {
+  "id" : "fbbde9d3-42ab-6aad-f7ba-8087e59000c6",
+  "name" : "mobile_cta",
+  "label" : "Mobile CTA",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "898ed808-0c35-58c6-1fc9-4a55b3323c58",
+    "name" : "cta_1_group",
+    "label" : "CTA 1 group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "53ffce41-121f-1ad9-8220-48b1b17feb7d",
+      "name" : "cta_url",
+      "label" : "CTA URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    }, {
+      "id" : "5faa9fd5-7515-3f43-084f-dcf70bdacac5",
+      "name" : "cta_text",
+      "label" : "CTA Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "CONTACT US"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "cta_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "cta_text" : "CONTACT US"
+    }
+  }, {
+    "id" : "7ef5f651-9a9b-f255-be9c-5610b3212464",
+    "name" : "cta_2_group",
+    "label" : "CTA 2 group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "0083833c-43db-68e6-a61c-348a552cd9d7",
+      "name" : "cta_url",
+      "label" : "CTA URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    }, {
+      "id" : "5867077c-4da4-9a89-b45c-80699488fb4f",
+      "name" : "cta_text",
+      "label" : "CTA Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "APPLY NOW"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "cta_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "cta_text" : "APPLY NOW"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "cta_1_group" : {
+      "cta_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "cta_text" : "CONTACT US"
+    },
+    "cta_2_group" : {
+      "cta_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "cta_text" : "APPLY NOW"
+    }
+  }
+} ]

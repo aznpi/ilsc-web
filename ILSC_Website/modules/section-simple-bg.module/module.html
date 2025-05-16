@@ -1,0 +1,11 @@
+<section class="section section-simple {% if module.enable_disable_parallax_choice == 'enable' %}parallax{% endif %}" id="content" style="background-image:url({{ module.bg_image_1_field.src }});">
+  <div class="overlay" style="background-color: rgba({{ module.bg_overlay_color.color|convert_rgb }}, {{ module.bg_overlay_color.opacity/100 }});">
+  </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+          {% inline_rich_text field="main_rich_text" value="{{ module.main_rich_text }}" %}
+      </div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,563 @@
+<section class="section section-form section-application-form hs-form">
+    <nav class="fixed-side-menu sticky-nav">
+      <h5>Application Steps:</h5>
+      <ul class="fixed-side-menu-list">
+        <li class="active menu-status step-1 status-select" data-step="1">
+          <a href="#">Applicant Status</a>          
+        </li> 
+        <li class="menu-student step-2 student-info-select" data-step="2">
+          <a href="#">Student Application</a>
+          <ul>
+            <li>Student Information</li>
+          </ul>
+        </li>
+        <li class="menu-program step-3 study-program-select" data-step="3">
+          <a href="#">Program Information</a>
+          <ul>
+            <li>Country</li>
+            <li>School</li>
+            <li>Campus</li>
+            <li>Program</li>
+          </ul>
+        </li>
+        <li class="menu-accommodation step-4 accommodation-select" data-step="4">
+          <a href="#">Accommodation Information</a>
+          <ul>
+            <li>Details</li>
+            <li>Airport Transfer</li>
+          </ul>
+        </li>
+        <li class="menu-additional step-5 additional-select" data-step="5">
+          <a href="#">Additional Information</a>
+          <ul>
+            <li>Insurance</li>
+            <li>Additional Information</li>
+            <li>Additional Files</li>
+          </ul>
+        </li>
+        <li class="menu-complete step-6 submit-select" data-step="6">
+          <a href="#">Application Summary</a>
+        </li>
+        <li class="menu-complete step-7 application-completed" data-step="7">
+          <a href="#">Submitted</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container step-container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="step-breadcrumb-container">
+            <div class="step-title">
+              <span>Step </span><span class="current-step">1</span>/<span class="last-step"></span>
+            </div>
+            <div class="step-number">
+              <div class="step-5"></div>
+              <div class="step-4"></div>
+              <div class="step-3"></div>
+              <div class="step-2"></div>
+              <div class="step-1 active"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 app-step-container">
+          <div class="application-step-form-slide">
+            <!-- Step - Status -->
+            <div>
+              <div class="step-container" data-init="false">
+                <div class="step-title">
+                  <h1>
+                    {{ module.application_title }}
+                  </h1>                                        
+                </div>
+                <form id="form-status" data-submit="false">
+                  <div class="form-group">
+                    <label for="userStatus">What's your status? *</label>
+                    <div class="input">
+                      <ul class="inputs-list multi-container applicant-status-boxes">
+                        <li class="hs-form-radio option-student">
+                          <label id="applicant-student"> 
+                            <div class="box-color"></div>
+                            <input type="radio" name="online_applicant_status" value="Student" required><span>Student</span>
+                          </label>
+                        </li>
+                        <li class="hs-form-radio option-agent">
+                          <label id="applicant-agent">
+                            <div class="box-color"></div>
+                            <input type="radio" name="online_applicant_status" value="Agent" required><span>Agent</span>
+                          </label>
+                        </li>
+                        <li class="hs-form-radio option-advisor">
+                          <label id="applicant-advisor">
+                            <div class="box-color"></div>
+                            <input type="radio" name="online_applicant_status" value="Walk-in Student Advisor" required><span>Walk-in Student Advisor</span>
+                          </label>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                    <div class="btn-container"> 
+                      <div class="summary-link"></div>                                      
+                      <button type="button" class="btn btn-orange bold next disable" data-step="status-select" data-form="form-status" data-check="true" tabindex="0">Next</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- Step - Student Information -->
+            <div>
+              <div class="student-information-container step-container" data-init="false">
+                <div class="step-title">
+                  <h1>
+                    Student Application
+                  </h1>                                        
+                </div>
+                <form id="form-agent" class="form-hide" data-submit="false">
+                  <h3>Enter Agency Information</h3>
+                  <div class="agent-information-form study-box-container"></div>
+                </form>
+                <form id="form-advisor" class="form-hide" data-submit="false">
+                  <h3>Enter Student Advisor Information</h3>
+                  <div class="advisor-information-form study-box-container"></div>
+                </form>
+                <form id="form-student" class="form-hide" data-submit="false">
+                  <h3>Enter Student Information</h3>
+                  <div class="student-information-form study-box-container"></div>
+                  <div class="btn-container">
+                    <button type="button" class="btn btn-orange-outline bold prev">Back</button>
+                    <button type="button" class="btn btn-orange bold next enable" data-step="student-info-select" data-form="form-advisor,form-agent,form-student" data-check="true" tabindex="0">Next</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- Step - Study Information -->
+            <div> 
+              <div class="study-information-form dropdown-container step-container" data-init="false">
+                <div class="step-title">
+                  <h1>
+                    Program Application
+                  </h1>
+  
+                </div>
+                <form id="study-form" class="was-validated" data-submit="false">  
+                  <div class="study-info-container">                                    
+                    <div class="study-box-container country-select-container">
+                      <h3>Select Study Destination<sup>*</sup></h3>
+                      <div class="dropdown country-dropdown">
+                        <button id="country-select" class="btn dropdown-select country-select drop-select open" data-selected="false" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="selected-text">Choose Study Destination</span><i class="fas fa-angle-down"></i>
+                        </button>
+  
+                        <ul class="dropdown-menu drop-country" aria-labelledby="country-select"></ul> 
+                        <input type="hidden" value="" name="program_country" required>
+  
+                      </div>
+                    </div>
+                  </div>
+                  <div class="study-info-container">
+                    <div class="study-school-selection study-box-container disabled">
+                      <h3>Choose School<sup>*</sup></h3>
+                      <div class="input-container study-hide">
+                        <ul class="inputs-list multi-container applicant-status-boxes"></ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="study-info-container">
+                    <div class="study-campus-selection study-box-container disabled">
+                      <h3>Choose Campus<sup>*</sup></h3>
+                      <div class="input-container study-hide">
+                        <ul class="inputs-list multi-container applicant-status-boxes"></ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="study-info-container">
+                    <div class="study-program-selection study-box-container disabled">
+                      <h3>Choose Program<sup>*</sup></h3>
+                      <div class="additional-input-container primary-input study-hide">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="additional-program-form"></div>                                              
+                          </div>
+                        </div>
+                      </div>
+                      <div class="input-container study-hide program-input primary-input">                                              
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="study-program-dropdown">
+                              <select class='form-control study-program-select primary-input' id="program-name" name='"program_name"' required>
+                                <option disabled selected value=''>Choose Program</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="input-container study-hide program-option-input primary-input">   
+                        <div class="row">                                                    
+                          <div class="col-md-12">
+                            <div class="program-schedule-input"></div>
+                          </div>                                                  
+                        </div>
+                      </div>
+                      <div class="input-container study-hide schedule-input primary-input">   
+                        <div class="row">                                                    
+                          <div class="col-md-6">
+                            <div class="time-input"></div>
+                          </div>  
+                          <div class="col-md-6">
+                            <div class="week-input"></div>
+                            <input type="hidden" name="program_weeks_primary-input" value="" disabled>
+                          </div>                                                     
+                        </div>
+                      </div>
+                      <div class="input-container study-hide partner-input primary-input">   
+                        <div class="row">                                                    
+                          <div class="col-md-12">
+                            <div class="partner-option-input"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="input-container study-hide date-input primary-input">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="study-program-start-date-dropdown">
+                              <label>Choose Start Date<sup>*</sup></label>
+                              <select class='form-control startdate-dropdown primary-input' id="program-startdate-primary-input" name="program_startdate_primary-input" disabled required>
+                                <option disabled selected value=''>Choose Start Date</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="input-container study-hide program-option-duration-input primary-input">   
+                        <div class="row">                                                        
+                          <div class="col-md-12">
+                            <div class="duration-dropdown">
+                              <label>Choose Duration<sup>*</sup></label>
+                              <select class='form-control week-duration-dropdown primary-input' id="program-option-duration-primary-input" name="program_option_duration_primary-input" disabled required>
+                                <option disabled selected value=''>Choose Duration</option>
+                              </select>
+                            </div>
+                          </div>                                                     
+                        </div>
+                      </div>
+                      <div class="input-container study-hide alternate-initial alternate-input">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="study-program-alternate-option"></div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="study-program-alternate study-hide">
+                              <h3>+Greystone College</h3>
+                              <div class="additional-input-container alternate-input study-hide">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <div class="additional-program-form"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="input-container study-hide program-input alternate-input">                                              
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <div class="study-program-dropdown">
+                                      <select class='form-control study-program-select alternate-input' id="program-name" disabled name='"program_name"' required>
+                                        <option disabled selected value=''>Choose Program</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="input-container study-hide schedule-input alternate-input">   
+                                <div class="row">                                                    
+                                  <div class="col-md-6">
+                                    <div class="time-input"></div>
+                                  </div>  
+                                  <div class="col-md-6">
+                                    <div class="week-input"></div>
+                                    <input type="hidden" name="program_weeks_alternate-input" value="" disabled>
+                                  </div>                                                     
+                                </div>
+                              </div>
+                              <div class="input-container study-hide partner-input alternate-input">   
+                                <div class="row">                                                    
+                                  <div class="col-md-12">
+                                    <div class="partner-option-input"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="input-container study-hide alternate-input date-input">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <div class="study-program-start-date-dropdown">
+                                      <label>Choose Start Date<sup>*</sup></label>
+                                      <select class='form-control startdate-dropdown alternate-input' id="program-startdate-alternate-input" name="program_startdate_alternate-input" required disabled>
+                                        <option disabled selected value=''>Choose Start Date</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>                                                                
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+  
+                    </div>
+                  </div>
+                  <div class="study-info-container">
+                    <div class="additional-notes-container study-box-container study-hide disabled">
+                      <h3>Additional Information<sup>*</sup></h3>
+                      <div class="additional-notes-input"></div>
+                    </div>
+                  </div>
+                  <div class="btn-container">
+                    <button type="button" class="btn btn-orange-outline bold prev">Back</button>
+                    <button type="button" class="btn btn-orange bold next enable" data-step="study-program-select" data-form="study-form" data-check="true" tabindex="0">Next</button>
+                  </div>
+                </form>
+                <div id="program-hs-file-form"></div>
+              </div>
+  
+  
+            </div>
+            <!-- Step - Accommodation Information -->
+            <div> 
+              <div class="accommodation-form dropdown-container step-container" data-init="false">
+                <div class="step-title">
+                  <h1>
+                    Accommodation Application
+                  </h1>
+                </div>
+                <form id="accommodation-form" class="was-validated" data-submit="false"> 
+                  <div class="study-box-container">
+                    <div class="step-title">
+                      <h5>
+                        Do you want to book your accommodation with us?
+                      </h5>
+                    </div>
+  
+                    <div class="form-group">                                
+                      <div id="accommodation-option-container" class="radio-container">
+  
+                        <div class="accommodation-option-selection-container accommodation-selection-container option-selection-container">              
+                          <div class="option-select program-option">
+                            <input type="radio" class="program-option" id="yes-accomm-option" name="accommodation_option" value="1" autocomplete="off" tabindex="0" required>
+                            <label for="yes-accomm-option">YES</label>
+                          </div>
+                          <div class="option-select program-option">
+                            <input type="radio" class="program-option" id="no-accomm-option" name="accommodation_option" value="0" autocomplete="off" tabindex="0" required>
+                            <label for="no-accomm-option">NO</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="study-box-container accommodation-details study-hide">
+                    <h3>Accommodation Details<sup>*</sup></h3>
+                    <div class="form-group">     
+                      <div id="accommodation-type-option-container" class="radio-container input-container study-hide"></div>
+                    </div>
+                    <div class="form-group accommodation-details">     
+                      <div id="accommodation-location-option-container" class="radio-container input-container study-hide">
+                        <label for="accommodation-location-select">Accommodation location<sup>*</sup></label>
+                        <select class="form-control" id="accommodation-location-select" name="accommodation_location" disabled></select>
+                      </div>
+                      <div class="input-container accommodation-check-in-date study-hide">
+                        <label for="accommodation-datePicker">Choose Check-In Date<sup>*</sup></label>
+                        <input type='text' value='' class='form-control accommodation-checkin-date-picker' id='accommodation-checkin-datePicker' name='accommodation_checkin_datepicker' placeholder='YYYY-MM-DD' required disabled>
+                      </div>
+                      <div class="input-container accommodation-check-out-date study-hide">
+                        <label for="accommodation-datePicker">Choose Check-Out Date<sup>*</sup></label>
+                        <input type='text' value='' class='form-control accommodation-checkout-date-picker' id='accommodation-checkout-datePicker' name='accommodation_checkout_datepicker' placeholder='YYYY-MM-DD' disabled>
+                      </div>
+                       <div class="input-container accommodation-duration study-hide">
+                         <label for="accommodation-duration-select">Choose Duration<sup>*</sup></label>
+                         <select class="form-control" id="accommodation-duration-select" name="accommodation_duration" disabled></select>
+                      </div>
+                      <div class="input-container accommodation-name study-hide">
+                        <div class="accommodation-name-option"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="study-box-container accommodation-homestay-details study-hide">
+                    <h3>Additional Details<sup>*</sup></h3>
+                    <div class="homestay-details"></div>
+                  </div>
+                  <div class="study-box-container accommodation-airport-transfer-details study-hide">
+                    <h3>Airport Transfer<sup>*</sup></h3>
+                    <div class="airport-transfer-details"></div>
+                  </div>
+                </form>
+  
+  
+                <div class="btn-container">
+                  <button type="button" class="btn btn-orange-outline bold prev">Back</button>
+                  <button class="btn btn-orange bold next enable" data-step="accommodation-select" data-form="accommodation-form" data-check="true" tabindex="0">Next</button>
+                </div>
+              </div>
+  
+  
+            </div>
+            <!-- Step - Additional Information -->
+            <div> 
+              <div class="additional-form dropdown-container step-container" data-init="false">
+                <div class="step-title">
+                  <h1>
+                    Additional Information
+                  </h1>
+                </div>
+                <form id="additional-form" class="was-validated" data-submit="false"> 
+                <div class="study-box-container additional-airport-transfer-details study-hide">
+                    <h3>Airport Transfer<sup>*</sup></h3>
+                    <div class="airport-transfer-details"></div>
+                </div> 
+                  <div class="study-box-container">
+                    <h3>Insurance<sup>*</sup></h3>
+                    <div class="form-group">
+                      <div id="insurance-option-container"></div>
+                    </div>
+                  </div>
+                  <div class="study-box-container">
+                    <h3>Additional Personal Information<sup>*</sup></h3><div class="form-group">
+                    <div id="additional-info-container" class="additional-info-container"></div>
+                    </div>
+                  </div>
+                  <div class="study-box-container">
+                    <h3>Additional Files<sup>*</sup></h3>
+                    <p><sup>*</sup>The following documents are required for enrollment. If you do not have the following documents, they will be requested at a later date.</p>
+                    <div class="form-group">
+                      <div id="additional-files-container" class="additional-files-container"></div>
+                    </div>
+                  </div>
+                </form>
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                <div id="additional-hs-file-form"></div>
+                <div class="btn-container">
+                  <button type="button" data-step="additional-select" class="btn btn-orange-outline bold prev">Back</button>
+                  <button class="btn btn-orange bold next enable" data-step="additional-select" data-form="additional-form" data-check="true" tabindex="0">Next</button>
+                </div>
+              </div>
+            </div>
+            <!-- Step - Summary Information -->
+            <div>
+              <div class="application-summary step-container" data-init="false">
+                <div class="step-title">
+                  <h1>
+                    Application Summary Review
+                  </h1>
+                </div>
+                <div class="accordion" id="application-summary-container">
+                  <div class="card">
+                    <div class="study-box-container peronal-info-box-container" id="headingOne">
+                      <div class="edit-form" data-step="2">[edit]</div>
+                      <h4 class="accordion-header">
+                        <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <span>Student Information</span>
+                        </button>
+                      </h4>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                        <div class="accordion-body">
+                          <div class="peronal-info-summary-container summary-container"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="study-box-container study-info-box-container" id="headingTwo">
+                      <div class="edit-form" data-step="3">[edit]</div>
+                      <h4 class="accordion-header">
+                        <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                          <span>Program Information</span>
+                        </button>
+                      </h4>
+                      <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo">
+                        <div class="accordion-body">
+                          <div class="study-info-primary-summary-container summary-container"></div>
+                          <div class="study-info-dependent-summary-container summary-container"></div>
+                          <div class="study-info-alternate-summary-container summary-container"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="study-box-container accommodation-info-box-container" id="headingThree">
+                      <div class="edit-form" data-step="4">[edit]</div>
+                      <h4 class="accordion-header">
+                        <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                          <span>Accommodation Information</span>
+                        </button>
+                      </h4>
+                      <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree">
+                        <div class="accordion-body">
+                          <div class="accommodation-info-summary-container summary-container"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="study-box-container additional-info-box-container" id="headingFour">
+                      <div class="edit-form" data-step="5">[edit]</div>
+                      <h4 class="accordion-header">
+                        <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                          <span>Additional Information</span>
+                        </button>
+                      </h4>
+                      <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour">
+                        <div class="accordion-body">
+                          <div class="additional-info-summary-container summary-container"></div>
+                          <div class="additional-info-family-summary-container summary-container"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <form id="submit-complete" data-submit="false">
+                  <input type="hidden" name="online-application-completion" value="Yes">
+                  <input type="hidden" name="policy_acknowledgement" value=true>
+  
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="submit-policy-container"></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="submit-policy-file-container"></div>
+                    </div>
+                  </div>
+                </form>
+                <div id="contract-hs-file-form"></div>
+                <div class="btn-container center">                                   
+                  <button class="btn btn-orange bold next enable" data-form="submit-complete" data-step="submit-select" data-check="true" tabindex="0">Confirm</button>
+                </div>
+              </div>  
+            </div>
+            <div>
+              <div class="application-complete step-container">
+                <div class="step-title">
+                  {% inline_rich_text field="completed_rich_text" value="{{ module.completed_rich_text }}" %}
+                  <div class="center btn-container">
+                     <a onclick="javacript:window.location.reload();" class="btn btn-orange text-center" style="width: 200px;">Start a New Application</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row denote-container">
+        <div class="col-md-12">
+          <h5><sup>*</sup> Required.</h5>
+        </div>
+      </div>
+    </div>
+    <input type="hidden" name="status-form-complete" value="false">
+    <input type="hidden" name="student-form-complete" value="false">
+    <input type="hidden" name="program-form-complete" value="false">
+    <input type="hidden" name="accommodation-form-complete" value="false">
+    <input type="hidden" name="additional-form-complete" value="false">
+    <input type="hidden" name="application-form-complete" valuse="false">
+  </section>

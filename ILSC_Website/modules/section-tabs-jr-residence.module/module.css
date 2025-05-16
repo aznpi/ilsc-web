@@ -1,0 +1,16 @@
+.section.tab-navigation-landing p{
+  margin-top:0;
+}
+
+.tab-navigation-landing{
+  overflow:hidden;
+}
+.section.tab-navigation-landing .image-container a.icon-play{
+    left: 43%;
+    top: 30%;
+    position:absolute;
+}
+.section .color-circle {
+    left: -330px !important;
+    top: -550px !important;
+}

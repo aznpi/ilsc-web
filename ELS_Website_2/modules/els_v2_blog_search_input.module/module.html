@@ -1,0 +1,40 @@
+<section class="section-search" style="background: linear-gradient(89.98deg, #009FDF 1.86%, #3FADD9 63.52%, #EBEBEB 139.53%);">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {% if module.field_label %}
+          <h1>{{ module.field_label }}</h1>
+        {% endif %}
+        <div class="hs-search-field"> 
+          <div class="hs-search-field__bar">
+            <form action="{% if content.language.languageTag != "en" %}/{{content.language.languageTag}}{% endif %}{{ module.search_results_path }}">
+              <div class="input-wrapper">
+                <input type="text" class="hs-search-field__input notranslate" name="term" autocomplete="off" aria-label="{{ module.field_label || "Search" }}" placeholder="{{ module.placeholder }}">
+              </div>
+             <input type="hidden" name="pathPrefix" value="{% if content.language.languageTag != "en" %}/{{content.language.languageTag}}{% endif %}{{ module.search_path }}">
+        {% if module.content_types.website_pages %}
+          <input type="hidden" name="type" value="SITE_PAGE">
+        {% endif %}
+        {% if module.content_types.landing_pages %}
+          <input type="hidden" name="type" value="LANDING_PAGE">
+        {% endif %}
+        {% if module.content_types.blog_posts %}
+          <input type="hidden" name="type" value="BLOG_POST">
+          <input type="hidden" name="type" value="LISTING_PAGE">
+        {% endif %}
+        {% if module.content_types.knowledge_articles %}
+          <input type="hidden" name="type" value="KNOWLEDGE_ARTICLE">
+        {% endif %}
+        {% if content.language.languageTag != "en" %}
+            <input type="hidden" name="language" value="{{content.language.languageTag}}">
+          {% else %}
+            <input type="hidden" name="language" value="en">
+        {% endif %}
+            </form>
+          </div>
+          <ul class="hs-search-field__suggestions"></ul>
+        </div> 
+      </div>
+    </div>
+  </div>
+</section>

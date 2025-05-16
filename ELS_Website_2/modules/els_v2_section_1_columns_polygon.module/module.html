@@ -1,0 +1,17 @@
+<section class="{{ module.bg_angle_choice }} section-1-column section-normal {{ module.padding_choice }} {{ module.margin_choice }} {% if module.bg_angle_choice == 'section-polygon' %}polygon-absolute{% endif%}">
+  <div class="{% if module.bg_angle_choice == 'section-diagonal' %}diagonal-box{% elif module.bg_angle_choice == 'section-polygon'%}polygon-box{% endif %} {{ module.bg_color_choice }}"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 {{ module.text_color_choice }}">
+        {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">     
+        <div class="description {{ module.text_color_choice }}">
+          {% inline_rich_text field="description_rich_text" value="{{ module.description_rich_text }}" %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

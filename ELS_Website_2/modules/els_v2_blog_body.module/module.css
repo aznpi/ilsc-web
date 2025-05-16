@@ -1,0 +1,57 @@
+.section-blog-body .title{
+  margin-top:100px;
+}
+
+.els-blog .section-blog-body .tag-container:before{
+  right:33%;
+  z-index:2;
+}
+.els-blog .section-blog-body .col-right{
+  padding-right:0;
+}
+.els-blog .section-blog-body .tag-container .tag{
+  width:40%;
+}
+.section-blog-body .row-body{
+  margin-top:50px;
+}
+.section-blog-body .time-container{
+  width:50%;
+}
+.section-blog-body .share-container{
+  display:flex;
+  justify-content:end;
+  align-items:top;
+}
+.section-blog-body .share-container span{
+  font-family: Barlow;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  text-align: justified;
+  color:#353538;
+
+}
+.section-blog-body .share-container .social-icon{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  margin-left:15px;
+}
+.section-blog-body .share-container .social-icon a{
+  display:block;
+  width:35px !important;
+}
+.section-blog-body .share-container .social-icon img{
+  filter: brightness(0) saturate(100%) invert(73%) sepia(0%) saturate(2376%) hue-rotate(183deg) brightness(84%) contrast(67%);
+  object-fit:contain;
+  max-width:unset !important;
+  max-height:unset !important;
+  width:100%;
+  height:100%;
+}
+.section-blog-body .share-container .social-icon img:hover{
+  filter: brightness(0) saturate(100%) invert(66%) sepia(22%) saturate(6822%) hue-rotate(347deg) brightness(99%) contrast(94%);
+}

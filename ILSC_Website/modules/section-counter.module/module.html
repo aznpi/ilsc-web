@@ -1,0 +1,18 @@
+<div class="section section-counter no-pad">
+  <div class="container">
+    <div class="row counters">     
+      {% for item in module.counter_group %}
+        <div class="col-md-3">
+          <h3 class="counter" aria-label="{{ item.counter_number }}" style="color:{{ item.font_color.color }}">{{ item.counter_number }}</h3>
+          {% inline_rich_text field="counter_title" value="{{ item.counter_title }}" %}
+        </div>
+      {% endfor %}
+ 
+    </div>
+    <div class="row">
+      <div class="col-md-12 center">
+        <a href="{{ module.cta_group.cta_url.href }}" class="btn btn-outline-primary btn-black-outline">{{ module.cta_group.cta_text }}</a>
+      </div>
+    </div>
+  </div>
+</div>

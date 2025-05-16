@@ -1,0 +1,39 @@
+{% if module.background_image.src %}
+	{% set imageBg =  module.background_image.src %} 
+{% else %}
+  {% set imageBg =  '' %} 
+{% endif %}
+{% if module.bg_color_overlay  %}
+   {% set overlayBg =  module.bg_color_overlay %}
+   
+{% else %}
+  {% set overlayBg =  'transparent' %}
+ 
+{% endif %}
+
+
+<section class="section-2-columns-6-6 section" style="background-image:url({{ imageBg }});background-size:cover;box-shadow: inset 2000px 0 0 0 {{overlayBg}};">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				{% inline_rich_text field="content_text" value="{{ module.content_text }}" %} 
+        <div class="btn-container">
+				
+             {% if module.cta_image_video.enable_image_player == "on" %}
+                <a href="#ilscModal" src="{{ module.cta_image_video.video_link_url.href }}" data-toggle="modal" class="btn btn-primary btn-orange video-btn" tabindex="0">{{ module.cta_button_group.btn_text }}</a>
+              {% else if%}
+                <a href="{{ module.cta_button_group.btn_link_url.href }}" class="btn btn-primary btn-orange">{{ module.cta_button_group.btn_text }}</a>
+              {% endif %}
+				</div>
+			</div>
+			<div class="col-md-6 image-container">
+				{% if module.box_image.src %}
+          <img class="lazy" data-src="{{ module.box_image.src }}" src="{{ module.box_image.src }}" alt="{{ module.box_image.alt }}">
+        {% endif %}
+        {% if module.cta_image_video.enable_image_player == "on" %}
+				  <a href="#ilscModal" data-toggle="modal" class="icon-play video-btn" src="{{ module.cta_image_video.video_link_url.href }}" tabindex="0"><i class="far fa-play-circle on-image"></i></a>
+			  {% endif %}
+      </div>
+		</div>
+	</div>
+</section>

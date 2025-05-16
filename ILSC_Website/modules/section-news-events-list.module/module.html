@@ -1,0 +1,32 @@
+
+<section class="section section-news">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 center title-container">
+				{% inline_rich_text field="title" value="{{ module.title }}" %}
+      </div>
+			
+		</div>
+    {% for item in module.news_items %}
+      <div class="row">
+        <div class="col-md-3">
+            <img src="{{ item.news_image.src }}" alt="{{ item.news_image.alt }}">
+        </div>
+          <div class="col-md-9">
+              <div class="news-container">
+                <h5>
+                  {{ item.news_title_text }}
+                </h5>
+                <div>
+                    {% inline_rich_text field="news_description_text" value="{{ item.news_description_text }}" %}
+                </div>
+              </div>
+              <div class="a-link-container">
+                <a href="{{ item.link_url.href }}">{{ module.learn_more_text }}</a>  
+              </div>
+          </div>
+        </div>
+    {% endfor %}
+     
+		</div>
+</section>

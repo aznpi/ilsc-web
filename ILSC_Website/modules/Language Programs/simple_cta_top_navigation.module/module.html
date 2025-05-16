@@ -1,0 +1,34 @@
+<header class="simple-cta-header top-nav fixed-top">
+  <nav id="landing-nav-bar" class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+
+      <a class="navbar-brand" href="{{ module.home_link.url.href }}"><img src="{{ module.logo_svg_file }}" alt="{{ module.logo_alt }}" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="nav-bar-items collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto menu-hide">
+          {% if module.cta_1 %}
+            <li class="nav-item">
+              {% cta guid="{{ module.cta_1 }}" %}
+            </li>
+          {% endif %}
+          {% if module.cta_2 %}
+            <li class="nav-item">
+              {% cta guid="{{ module.cta_2 }}" %}
+            </li>
+          {% else %}
+            {% if module.button_rich_text %}
+            <li class="nav-item">
+              {% inline_rich_text field="button_rich_text" value="{{ module.button_rich_text }}" %}
+            </li>
+            {% endif %}
+          {% endif %}
+        </ul>
+      </div>
+
+      
+    </div>
+  </nav>
+</header>
+

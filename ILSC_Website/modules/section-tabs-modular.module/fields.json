@@ -1,0 +1,75 @@
+[ {
+  "id" : "04878ce2-e4c2-ac94-9e90-1be3946a157a",
+  "name" : "tabs",
+  "label" : "Tabs",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "f86f0737-de58-9089-68f1-e334cfa8ca1d",
+    "name" : "tab",
+    "label" : "Tab",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 10,
+      "sorting_label_field" : "c589762c-7e48-a26a-e8d3-eb7c9f3f1dbd",
+      "default" : 1
+    },
+    "children" : [ {
+      "id" : "c589762c-7e48-a26a-e8d3-eb7c9f3f1dbd",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "What to Expect"
+    }, {
+      "id" : "0154250b-05f3-7a3d-6786-be887aab7696",
+      "name" : "text_content",
+      "label" : "Text Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<h5>WHAT TO EXPECT</h5>\n<ul class=\"arrows\">\n<li>Homestay families from diverse backgrounds</li>\n<li>3 meals a day, 7 days a week</li>\n<li>Self served breakfast and lunch</li>\n<li>Dinner served hot by host family</li>\n<li>Two or more students may live in the same homestay</li>\n<li>A comfortable private room (or shared twin) with shared bathroom</li>\n</ul>"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ {
+      "title" : "What to Expect",
+      "text_content" : "<h5>WHAT TO EXPECT</h5>\n<ul class=\"arrows\">\n<li>Homestay families from diverse backgrounds</li>\n<li>3 meals a day, 7 days a week</li>\n<li>Self served breakfast and lunch</li>\n<li>Dinner served hot by host family</li>\n<li>Two or more students may live in the same homestay</li>\n<li>A comfortable private room (or shared twin) with shared bathroom</li>\n</ul>"
+    } ]
+  }, {
+    "id" : "e633b9d1-e1cb-e693-6dae-2f539cfd2501",
+    "name" : "mobile_tab_text",
+    "label" : "Mobile Tab Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Features:"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "tab" : [ {
+      "title" : "What to Expect",
+      "text_content" : "<h5>WHAT TO EXPECT</h5>\n<ul class=\"arrows\">\n<li>Homestay families from diverse backgrounds</li>\n<li>3 meals a day, 7 days a week</li>\n<li>Self served breakfast and lunch</li>\n<li>Dinner served hot by host family</li>\n<li>Two or more students may live in the same homestay</li>\n<li>A comfortable private room (or shared twin) with shared bathroom</li>\n</ul>"
+    } ],
+    "mobile_tab_text" : "Features:"
+  }
+} ]

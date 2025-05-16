@@ -1,0 +1,7 @@
+{% set tagName = request.query %}
+
+{% if tagName is string_containing "tag" %}
+  <h3>
+     {% if tagName is not containing "hsLang" %}{{ tagName | upper }}{% endif %} {{ module.subtitle_category_text }}
+  </h3>
+{% endif %}           

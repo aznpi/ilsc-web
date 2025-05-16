@@ -1,0 +1,80 @@
+[ {
+  "id" : "4e1e190b-e343-2268-71c0-e39623fa797f",
+  "name" : "bg_image_1_field",
+  "label" : "BG Image 1",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "src" : "https://www.ilsc.com/hubfs/bg_coop.jpg",
+    "alt" : "bg_coop",
+    "width" : 1440,
+    "height" : 580,
+    "max_width" : 1440,
+    "max_height" : 580
+  }
+}, {
+  "id" : "0eba4c0c-87cd-c598-5f3f-b3b18aafa02d",
+  "name" : "bg_overlay_color",
+  "label" : "BG Overlay Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#003346",
+    "opacity" : 71
+  }
+}, {
+  "id" : "69035d86-5996-b76c-6bde-766196898e73",
+  "name" : "left_column_field_group",
+  "label" : "Left Column Field group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "1ae7cb82-f676-c7f8-f705-face88003cd7",
+    "name" : "main_rich_text_left",
+    "label" : "Main Rich text Left",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h2><span style=\"color: #81b1cc;\">Why Choose Co-op?</span></h2>\n<p><span style=\"color: #ffffff;\">Co-op or “Co-operative Education” combines academic study with a work placement related to your study area. This popular Canadian learning approach provides students with hands-on experience in their study field, quality references, and networks that will give them a competitive edge for finding future work and growing their career. </span></p>\n<a style=\"margin-top: 30px;\" class=\"btn btn-primary btn-blue\">LEARN MORE ABOUT CO-OP</a>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "main_rich_text_left" : "<h2><span style=\"color: #81b1cc;\">Why Choose Co-op?</span></h2>\n<p><span style=\"color: #ffffff;\">Co-op or “Co-operative Education” combines academic study with a work placement related to your study area. This popular Canadian learning approach provides students with hands-on experience in their study field, quality references, and networks that will give them a competitive edge for finding future work and growing their career. </span></p>\n<a style=\"margin-top: 30px;\" class=\"btn btn-primary btn-blue\">LEARN MORE ABOUT CO-OP</a>"
+  }
+}, {
+  "id" : "d4754b3a-47bc-16ad-f8ce-615dd9eb47f5",
+  "name" : "right_column_field_group",
+  "label" : "Right Column Field group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "efebdbe2-b2a7-3eac-a410-68f79b8bea73",
+    "name" : "main_rich_text_right",
+    "label" : "Main Rich text Right",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<p><span style=\"color: #ffffff;\">Take the Diploma in Digital Marketing: Social Media Professional Co-op and build work experience in entry-level positions in areas like: </span></p>\n<div class=\"school-details\">\n<ul class=\"blue checkmark\">\n<li><span style=\"color: #ffffff;\">Advertising</span></li>\n<li><span style=\"color: #ffffff;\">Media</span></li>\n<li><span style=\"color: #ffffff;\">Marketing</span></li>\n<li><span style=\"color: #ffffff;\">Communications</span></li>\n<li><span style=\"color: #ffffff;\">Sales</span></li>\n</ul>\n</div>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "main_rich_text_right" : "<p><span style=\"color: #ffffff;\">Take the Diploma in Digital Marketing: Social Media Professional Co-op and build work experience in entry-level positions in areas like: </span></p>\n<div class=\"school-details\">\n<ul class=\"blue checkmark\">\n<li><span style=\"color: #ffffff;\">Advertising</span></li>\n<li><span style=\"color: #ffffff;\">Media</span></li>\n<li><span style=\"color: #ffffff;\">Marketing</span></li>\n<li><span style=\"color: #ffffff;\">Communications</span></li>\n<li><span style=\"color: #ffffff;\">Sales</span></li>\n</ul>\n</div>"
+  }
+} ]

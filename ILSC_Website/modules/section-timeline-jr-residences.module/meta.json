@@ -1,0 +1,12 @@
+{
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE" ],
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 32228862240,
+  "css_assets" : [ {
+    "autoload" : true,
+    "path" : "../../template-resources/stylesheets/internal/production/timeline.css",
+    "name" : "timeline.css"
+  } ],
+  "is_available_for_new_content" : true
+}

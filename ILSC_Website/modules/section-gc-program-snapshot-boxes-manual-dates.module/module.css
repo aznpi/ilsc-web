@@ -1,0 +1,32 @@
+.section-snapshot .box-container{
+  margin-bottom:30px;
+}
+.section-snapshot .box-container .btn-video-container i{
+  position:relative;
+  right:0;
+  bottom:0;
+  top:5px;
+  display:inline-block;
+}
+.section-snapshot .box-container .btn-video-container div:last-child{
+  padding-left:0;
+}
+.section-snapshot .box-container .description .italic{
+  font-style:italic;
+}
+.section-snapshot .box-container .icon-container img{
+  display:flex;
+  margin:0 auto;
+  width:75px;
+}
+.section-snapshot .box-container .title-container h4{
+  text-align:center;
+}
+.section-snapshot .box-container .description{
+  font-size:1.125rem;
+  font-weight:400;
+  padding:10px 55px;
+}
+.section-snapshot .box-container .description p{
+  margin-top:0;
+}

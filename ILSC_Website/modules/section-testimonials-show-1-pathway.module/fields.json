@@ -1,0 +1,23 @@
+[ {
+  "id" : "d6faf8fc-05f1-8119-2897-c113a1191d07",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h4>PATHWAY PARTNER TESTIMONIAL</h4>"
+}, {
+  "id" : "02142619-1321-10d3-915d-10f705ae1015",
+  "name" : "location",
+  "label" : "Location",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "Canada", "Canada" ], [ "Australia", "Australia" ], [ "India", "India" ], [ "All Countries", "All Countries" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+} ]

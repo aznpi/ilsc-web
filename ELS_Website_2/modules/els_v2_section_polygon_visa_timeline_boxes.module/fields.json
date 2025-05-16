@@ -1,0 +1,207 @@
+[ {
+  "id" : "e17b73fa-e373-4cd4-f9c9-41aa4ae9ced9",
+  "name" : "padding_choice",
+  "label" : "Padding Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "padding-none", "No Padding" ], [ "padding-top", "Padding Top" ], [ "padding-bottom", "Padding Bottom" ], [ "padding-top-none", "No Padding Top " ], [ "padding-bottom-none", "No Padding Bottom" ], [ "padding-extra", "Padding Extra" ], [ "padding-top-extra", "Extra Top Padding" ], [ "padding-bottom-extra", "Extra Bottom Padding" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "504057e4-6a3b-e55c-5b48-008b39135f68",
+  "name" : "margin_choice",
+  "label" : "Margin Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "", "None" ], [ "margin-top-extra", "Extra Top Margin" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "eb92e16b-4a59-f31d-fc4d-1c3e1b7b445e",
+  "name" : "bg_color_choice",
+  "label" : "BG Color Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "grey-linear-box", "Grey Linear" ], [ "blue-linear-box", "Blue Linear" ], [ "orange-radial-box", "Orange Radial" ], [ "orange-linear-box", "Orange Linear" ], [ "light-grey-linear", "Ligh Grey Linear" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "grey-linear-box"
+}, {
+  "id" : "f021f62e-8d8e-b1de-6092-4cf182549ecc",
+  "name" : "bg_angle_choice",
+  "label" : "BG Angle Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "section-polygon", "Polygon" ], [ "section-diagonal", "Diagonal" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "section-diagonal"
+}, {
+  "id" : "c410124f-5dd6-446c-8821-7ac1df92f954",
+  "name" : "timeline_image",
+  "label" : "Timeline Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.ilsc.com/hubfs/ELS/Website%20v2/template-resources/images/background/bg_orange-timeline.png",
+    "alt" : "bg_orange-timeline",
+    "loading" : "lazy",
+    "width" : 1440,
+    "height" : 98,
+    "max_width" : 1440,
+    "max_height" : 98
+  }
+}, {
+  "id" : "bcb80179-76b2-937d-5361-061519dab722",
+  "name" : "title_rich_text",
+  "label" : "Title Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2><span class=\"bold\" style=\"font-size: 100px;\">6</span> Reasons to <span class=\"bold\">Learn English in the USA</span></h2>"
+}, {
+  "id" : "71d8975a-e92c-f25f-6ac9-01322d323081",
+  "name" : "row_1_box_field_group",
+  "label" : "Row 1 Box Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 20,
+    "sorting_label_field" : "1681c620-c139-7f25-0976-51b589e6783e",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "1681c620-c139-7f25-0976-51b589e6783e",
+    "name" : "icon_image",
+    "label" : "Icon Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "3bdfb7ba-b955-ab6b-41d4-1e659985947c",
+    "name" : "step_text",
+    "label" : "Step Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null
+  }, {
+    "id" : "087b01ab-95b0-20b1-051b-4afdd3dc45f9",
+    "name" : "description_rich_text",
+    "label" : "Description Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ ]
+}, {
+  "id" : "b09853a3-d447-bd8b-f98f-60be4891ec2c",
+  "name" : "row_2_box_field_group",
+  "label" : "Row 2 Box Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 20,
+    "sorting_label_field" : "1681c620-c139-7f25-0976-51b589e6783e",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "fbce2400-d994-02e3-ef1f-5e3fb46360cd",
+    "name" : "icon_image",
+    "label" : "Icon Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "6882cb6e-0835-d36a-6248-3b59c1f36257",
+    "name" : "step_text",
+    "label" : "Step Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null
+  }, {
+    "id" : "31d28c18-30f7-535f-16ae-c50ac6350bf7",
+    "name" : "description_rich_text",
+    "label" : "Description Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ ]
+}, {
+  "id" : "5216afa2-a89d-f671-a592-e195d03df032",
+  "name" : "timeline_position",
+  "label" : "Timeline Position",
+  "required" : false,
+  "locked" : false,
+  "display" : "slider",
+  "step" : 1,
+  "suffix" : "%",
+  "type" : "number",
+  "display_width" : null,
+  "default" : 27
+} ]

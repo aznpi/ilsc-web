@@ -1,0 +1,86 @@
+{% set className = module.unique_id ? '.'+module.unique_id : '' %}
+{% set classElement = module.unique_id ? module.unique_id : '' %}
+
+<section class="section-logo-slider section-normal {{ module.padding_choice }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="{{classElement}} logo-slider">
+          {% for item in module.image_field %}
+            {% if item.src %}
+              {% set sizeAttrs = 'width="{{ item.width }}" height="{{ item.height }}"' %}
+              {% if item.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ item.width }}" height="{{ item.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif item.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ item.max_width }}" height="{{ item.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+		          {% set loadingAttr = item.loading != 'disabled' ? 'loading="{{ item.loading }}"' : '' %}
+              <div><img src="{{ item.src }}" alt="{{ item.alt }}"  class="img-fluid" loading="lazy"></div>
+            {% endif %}
+          {% endfor %}
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% if module.cta_enable %}
+  <section class="section-cta section-normal">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="btn-container center">
+            {% set href = module.cta_field_group.link_field.url.href %}
+            {% if module.cta_field_group.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+            {% endif %}
+            <a href="{{ href }}" class="btn btn-orange"
+              {% if module.cta_field_group.link_field.open_in_new_tab %}target="_blank"{% endif %}
+              {% if module.cta_field_group.link_field.rel %}rel="{{ module.cta_field_group.link_field.rel }}"{% endif %}
+              >
+              {{ module.cta_field_group.text_field }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif %}
+
+{% require_js %}
+  <script>
+    $('{{className}}.logo-slider').slick({
+      autoplay: true,
+      autoplaySpeed: 1000,
+      infinite: true,
+      arrows: false,
+      slidesToShow: {{ module.number_of_logos_to_show }},
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  </script>
+{% end_require_js%}

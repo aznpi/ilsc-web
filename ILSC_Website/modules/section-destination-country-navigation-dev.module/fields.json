@@ -1,0 +1,520 @@
+[ {
+  "id" : "fbac01e0-921d-1e1b-6405-66437f200efb",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2><span>Choose Schools in Amazing Destinations</span></h2>\n<div>\n<div>\n<h5>LEARN ENGLISH, FRENCH, OR HINDI IN AUSTRALIA, CANADA, INDIA OR USA</h5>\n</div>\n</div>\n<div>\n<div onclick=\"location.href='https://www.ilsc.com/language-schools/destinations/country/canada';\">&nbsp;</div>\n</div>"
+}, {
+  "id" : "64d33e71-2530-0aaf-30a2-d10c81ad3259",
+  "name" : "canada",
+  "label" : "Canada",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "94648444-65ca-45db-50c5-ac64883c3968",
+    "name" : "bg_image",
+    "label" : "BG Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_box_canada.jpg",
+      "alt" : "img_box_canada",
+      "width" : 350,
+      "height" : 403,
+      "max_width" : 350,
+      "max_height" : 403
+    }
+  }, {
+    "id" : "55c3c1d1-374b-4e55-3fe3-cccec386f3a0",
+    "name" : "icon",
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "94648444-65ca-45db-50c5-ac64883c3968",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : "NOT_EMPTY",
+      "access" : null
+    },
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_canada_leaf.png",
+      "alt" : "icon_canada_leaf",
+      "width" : 130,
+      "height" : 130,
+      "max_width" : 130,
+      "max_height" : 130
+    }
+  }, {
+    "id" : "a7c3702e-63c6-ac34-7f12-27c63dba038e",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "94648444-65ca-45db-50c5-ac64883c3968",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : "NOT_EMPTY",
+      "access" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "CANADA"
+  }, {
+    "id" : "f411573b-0b54-aeea-a6e3-7bf74695e4a1",
+    "name" : "url_field",
+    "label" : "URL",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "94648444-65ca-45db-50c5-ac64883c3968",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : null,
+      "access" : null
+    },
+    "supported_types" : [ "CONTENT", "EXTERNAL" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 31715488593
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "bg_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_box_canada.jpg",
+      "alt" : "img_box_canada",
+      "width" : 350,
+      "height" : 403,
+      "max_width" : 350,
+      "max_height" : 403
+    },
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_canada_leaf.png",
+      "alt" : "icon_canada_leaf",
+      "width" : 130,
+      "height" : 130,
+      "max_width" : 130,
+      "max_height" : 130
+    },
+    "title" : "CANADA",
+    "url_field" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 31715488593
+    }
+  }
+}, {
+  "id" : "d3fcfba7-f21d-e3b0-3505-d3b63b25ccda",
+  "name" : "australia",
+  "label" : "Australia",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "708acc8f-03ba-f4fd-f5f8-78ff86ac5302",
+    "name" : "bg_image",
+    "label" : "BG Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_box_aus.jpg",
+      "alt" : "img_box_aus",
+      "width" : 350,
+      "height" : 403,
+      "max_width" : 350,
+      "max_height" : 403
+    }
+  }, {
+    "id" : "48c71ae5-5f8c-677c-bca0-abef10cd874a",
+    "name" : "url_field",
+    "label" : "URL",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "708acc8f-03ba-f4fd-f5f8-78ff86ac5302",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : null,
+      "access" : null
+    },
+    "supported_types" : [ "CONTENT", "EXTERNAL" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 31667128414
+    }
+  }, {
+    "id" : "4b5cf2e7-4733-c676-afa9-8c7866f13f5c",
+    "name" : "icon",
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "708acc8f-03ba-f4fd-f5f8-78ff86ac5302",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : null,
+      "access" : null
+    },
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_australia_kangaroo.png",
+      "alt" : "icon_australia_kangaroo",
+      "width" : 138,
+      "height" : 130,
+      "max_width" : 138,
+      "max_height" : 130
+    }
+  }, {
+    "id" : "9637f21b-f453-c179-4045-797e272035ca",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "708acc8f-03ba-f4fd-f5f8-78ff86ac5302",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : null,
+      "access" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "AUSTRALIA"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "bg_image" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_box_aus.jpg",
+      "alt" : "img_box_aus",
+      "width" : 350,
+      "height" : 403,
+      "max_width" : 350,
+      "max_height" : 403
+    },
+    "url_field" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 31667128414
+    },
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_australia_kangaroo.png",
+      "alt" : "icon_australia_kangaroo",
+      "width" : 138,
+      "height" : 130,
+      "max_width" : 138,
+      "max_height" : 130
+    },
+    "title" : "AUSTRALIA"
+  }
+}, {
+  "id" : "a2d1b19c-e610-8047-2170-16cda6a9e28c",
+  "name" : "india",
+  "label" : "India",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "a908d42a-3ae7-ba04-611e-082b75f7f2a7",
+    "name" : "bg_image",
+    "label" : "BG Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_box_india.jpg",
+      "alt" : "img_box_india",
+      "width" : 350,
+      "height" : 403,
+      "max_width" : 350,
+      "max_height" : 403
+    }
+  }, {
+    "id" : "448c38f2-2317-1ef0-a3f2-566974b29b2a",
+    "name" : "url_field",
+    "label" : "URL",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "a908d42a-3ae7-ba04-611e-082b75f7f2a7",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : null,
+      "access" : null
+    },
+    "supported_types" : [ "CONTENT", "EXTERNAL" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 31714524656
+    }
+  }, {
+    "id" : "b265f86f-c0b6-f4e1-1b2e-acf811721ff5",
+    "name" : "icon",
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "a908d42a-3ae7-ba04-611e-082b75f7f2a7",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : "NOT_EMPTY",
+      "access" : null
+    },
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_india_taj.png",
+      "alt" : "icon_india_taj",
+      "width" : 130,
+      "height" : 130,
+      "max_width" : 130,
+      "max_height" : 130
+    }
+  }, {
+    "id" : "44c6e183-d11d-e744-8943-91824bfbd1c0",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "a908d42a-3ae7-ba04-611e-082b75f7f2a7",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : null,
+      "access" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "INDIA"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "bg_image" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_box_india.jpg",
+      "alt" : "img_box_india",
+      "width" : 350,
+      "height" : 403,
+      "max_width" : 350,
+      "max_height" : 403
+    },
+    "url_field" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 31714524656
+    },
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_india_taj.png",
+      "alt" : "icon_india_taj",
+      "width" : 130,
+      "height" : 130,
+      "max_width" : 130,
+      "max_height" : 130
+    },
+    "title" : "INDIA"
+  }
+}, {
+  "id" : "b1de5dc3-38a2-8ecb-3709-eb399d256118",
+  "name" : "usa",
+  "label" : "USA",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "cada5442-2fa6-4e8b-cadf-b8045e18306f",
+    "name" : "bg_image",
+    "label" : "BG Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://www.ilsc.com/hubfs/usa-new-york.png",
+      "alt" : "usa-new-york",
+      "width" : 350,
+      "height" : 467,
+      "size_type" : "auto_custom_max",
+      "loading" : "lazy",
+      "max_width" : 350,
+      "max_height" : 467
+    }
+  }, {
+    "id" : "5bfd1f36-92f5-ea37-8717-46d911c08a1f",
+    "name" : "url_field",
+    "label" : "URL",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "cada5442-2fa6-4e8b-cadf-b8045e18306f",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : "NOT_EMPTY",
+      "access" : null
+    },
+    "supported_types" : [ "CONTENT", "EXTERNAL" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "type" : "EXTERNAL",
+      "href" : "https://www.els.edu/destinations",
+      "content_id" : null
+    }
+  }, {
+    "id" : "fd5287ee-594a-357c-6371-65d8f29c7e79",
+    "name" : "icon",
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "cada5442-2fa6-4e8b-cadf-b8045e18306f",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : "NOT_EMPTY",
+      "access" : null
+    },
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.ilsc.com/hubfs/icon_usa_lg.png",
+      "alt" : "icon_usa_lg",
+      "width" : 128,
+      "height" : 128,
+      "max_width" : 128,
+      "max_height" : 128
+    }
+  }, {
+    "id" : "7d6e8df7-eb29-7840-003d-5677a7bd757d",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "cada5442-2fa6-4e8b-cadf-b8045e18306f",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : "NOT_EMPTY",
+      "access" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Study in USA"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "bg_image" : {
+      "src" : "https://www.ilsc.com/hubfs/usa-new-york.png",
+      "alt" : "usa-new-york",
+      "width" : 350,
+      "height" : 467,
+      "size_type" : "auto_custom_max",
+      "loading" : "lazy",
+      "max_width" : 350,
+      "max_height" : 467
+    },
+    "url_field" : {
+      "type" : "EXTERNAL",
+      "href" : "https://www.els.edu/destinations",
+      "content_id" : null
+    },
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.ilsc.com/hubfs/icon_usa_lg.png",
+      "alt" : "icon_usa_lg",
+      "width" : 128,
+      "height" : 128,
+      "max_width" : 128,
+      "max_height" : 128
+    },
+    "title" : "Study in USA"
+  }
+} ]

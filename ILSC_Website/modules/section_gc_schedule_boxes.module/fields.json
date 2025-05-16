@@ -1,0 +1,87 @@
+[ {
+  "id" : "7a013cea-e6af-0ce7-312e-639360c92b7f",
+  "name" : "title_rich_text",
+  "label" : "Title Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Study Schedules</h2>\n<p>Choose the study schedule that fits your English learning needs and goals. The more lessons you take each week, the faster your English skills will progress.</p>\n<p><span class=\"bold\" style=\"color: #ff8b35;\">CORE CLASSES:</span> Core classes provide a strong, comprehensive foundation in the subject area.</p>\n<p><span class=\"bold\" style=\"color: #199dc3;\">SKILLS CLASSES:</span> Skills classes build on your core learning and enhance linguistic skills through content focused on your particular interests, weak areas, or to help you achieve specific learning goals.</p>\n<p><span class=\"bold\">PROGRAM:</span> A program at ILSC is the study package you build that meets your interests and helps you achieve your goals. A program can also be a pre-packaged selection of classes created by ILSC.</p>\n<p>1 lesson = 50 minutes.</p>"
+}, {
+  "id" : "913f2748-b32a-a21c-5059-5ecdb9e3bb47",
+  "name" : "background_color",
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#F6F6F6",
+    "opacity" : 100
+  }
+}, {
+  "id" : "240136ac-419f-2f9b-e259-0c2375449d44",
+  "name" : "schedule_field_group",
+  "label" : "Schedule Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 99,
+    "sorting_label_field" : "40fbaf9f-1f5e-5792-f5a3-3f5b989d1c24",
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "81d92160-f69a-213b-49d7-b1f6a7f4eb1b",
+    "name" : "category_choice",
+    "label" : "Category Choice",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "DAYTIME SCHEDULE", "DAYTIME SCHEDULE" ], [ "AFTERNOON SCHEDULE", "AFTERNOON SCHEDULE" ], [ "EVENING SCHEDULE", "EVENING SCHEDULE" ], [ "HYBRID MORNING SCHEDULE", "HYBRID MORNING SCHEDULE" ], [ "HYBRID EVENING SCHEDULE", "HYBRID EVENING SCHEDULE" ], [ "WEEKDAY SCHEDULE", "WEEKDAY SCHEDULE" ], [ "WEEKEND SCHEDULE", "WEEKEND SCHEDULE" ], [ "WEEKDAY MON & TUE", "WEEKDAY MON & TUE" ], [ "WEEKDAY WED & THU", "WEEKDAY WED & THU" ], [ "DAYTIME SCHEDULE 1", "DAYTIME SCHEDULE 1" ], [ "DAYTIME SCHEDULE 2", "DAYTIME SCHEDULE 2" ], [ "MORNING SCHEDULE 1", "MORNING SCHEDULE 1" ], [ "MORNING SCHEDULE 2", "MORNING SCHEDULE 2" ], [ "MORNING SCHEDULE 3", "MORNING SCHEDULE 3" ], [ "EVENING SCHEDULE 1", "EVENING SCHEDULE 1" ], [ "EVENING SCHEDULE 2", "EVENING SCHEDULE 2" ], [ "EVENING SCHEDULE 3", "EVENING SCHEDULE 3" ], [ "MORNING SCHEDULE 4", "MORNING SCHEDULE 4" ], [ "FRIDAY", "FRIDAY" ], [ "SATURDAY", "SATURDAY" ], [ "MON & TUE", "MON & TUE" ], [ "WED & THU", "WED & THU" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null
+  }, {
+    "id" : "b739cbb9-816f-6b6e-4fd7-1b5f3c575eb9",
+    "name" : "schedule_description_rich_text",
+    "label" : "Schedule Description Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null
+  }, {
+    "id" : "5dba1148-650a-21bf-ebc9-51a71ab02ba8",
+    "name" : "sub_description_text",
+    "label" : "Sub Description Text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null
+  }, {
+    "id" : "39fdd32d-ba48-f09e-f47f-a0d9b8136d19",
+    "name" : "schedule_description_bottom_rich_text",
+    "label" : "Schedule Description Bottom Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ { } ]
+}, {
+  "id" : "57007e39-1502-e4d0-de75-363875aa8496",
+  "name" : "footnote_rich_text",
+  "label" : "Footnote Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : ""
+} ]

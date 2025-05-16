@@ -1,0 +1,83 @@
+[ {
+  "id" : "35a86be1-00cc-4252-4ca9-f8aa502e97ef",
+  "name" : "program_code",
+  "label" : "Program Code",
+  "inline_help_text" : "Enter Program Code that is the Parent in the HUBdb. if applicable.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null
+}, {
+  "id" : "74569777-9f7f-d902-017c-49e61ac13d31",
+  "name" : "program_area_choice",
+  "label" : "Program Area Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "Business", "Business" ], [ "Digital Marketing", "Digital Marketing" ], [ "Hospitality", "Hospitality" ], [ "Interpreting & Translation", "Interpreting & Translation" ], [ "Teacher Training", "Teacher Training" ], [ "Short Programs", "Short Programs" ], [ "TESOL", "TESOL" ], [ "Marketing", "Marketing" ], [ "Leadership and Innovation", "Leadership and Innovation" ], [ "Project Management", "Project Management" ], [ "Entrepreneurship", "Entrepreneurship" ], [ "Information Technology", "Information Technology" ], [ "Tech", "Tech" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "fc816bfc-37a5-ab84-290d-601b52a52806",
+  "name" : "country_program_choice",
+  "label" : "Country Program Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "Canada", "Canada" ], [ "Australia", "Australia" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "Canada"
+}, {
+  "id" : "a3c43b30-67f6-ebd3-f2bc-0d583bb6cad2",
+  "name" : "qualification_type",
+  "label" : "Qualification Type",
+  "inline_help_text" : "Choose Qualification Type if applicable.",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "fc816bfc-37a5-ab84-290d-601b52a52806",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "Australia",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "display" : "select",
+  "choices" : [ [ "Attestation of College Studies", "Attestation of College Studies" ], [ "Advanced Diploma", "Advanced Diploma" ], [ "Diploma", "Diploma" ], [ "Double Diploma", "Double Diploma" ], [ "Certificate", "Certificate" ], [ "Certificate II", "Certificate II" ], [ "Certificate III", "Certificate III" ], [ "Certificate IV", "Certificate IV" ], [ "Short-Term Specialization", "Short-Term Specialization" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "0271cc21-d261-968a-1dfa-6b7bd6f4537d",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2><span>The perfect course for you</span></h2>\n<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p>"
+}, {
+  "id" : "7cafc62b-012f-2243-2f83-30694f591beb",
+  "name" : "link_text",
+  "label" : "Link Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Read More"
+} ]

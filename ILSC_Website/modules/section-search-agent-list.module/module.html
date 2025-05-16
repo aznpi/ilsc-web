@@ -1,0 +1,50 @@
+{% set queryparam = "&enable__eq=true" %}
+{% set agents = hubdb_table_rows(111364642, queryparam) %}
+{% set agentListArray = [] %}
+
+{% for agent in agents %}
+{% do agentListArray.append({
+    item: agent.name,
+    state_city: agent.state_city,
+    tel: agent.tel,
+    email: agent.email,
+    country: agent.country.label
+}) %}
+{% endfor %}
+
+{% set uniqueCountries = [] %}
+{% for agent in agentListArray %}
+  {% if agent.country not in uniqueCountries %}
+    {% do uniqueCountries.append(agent.country) %}
+  {% endif %}
+{% endfor %}
+
+<section class="agent-directory">
+  <div class="container">
+    <div class="center agent-section-title">
+      {{ module.title }}
+    </div>
+    <div class="center agent-sub-title">{{ module.sub_title }}</div>
+
+    <div class="dropdown-container center">
+      <select id="countryDropdown" class="dropdown">
+        <option value="">Select a Country</option>
+        {% for country in uniqueCountries %}
+          <option value="{{ country }}">{{ country }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div id="agentList" class="agent-list-container">
+      {% for agent in agentListArray %}
+      <div class="agent-card" data-country="{{ agent.country }}" style="display: none;">
+        <p class="agent-card-title">{{ agent.item|default("N/A") }}</p>
+        <p>{{ agent.tel|default("N/A") }}</p>
+        <p>{{ agent.email|default("N/A") }}</p>
+        <p>{{ agent.state_city|default("N/A") }}</p>
+        <p>{{ agent.country }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

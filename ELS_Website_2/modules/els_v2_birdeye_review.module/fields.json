@@ -1,0 +1,45 @@
+[ {
+  "id" : "5ec6f880-6a60-a223-7388-4b170b488e5d",
+  "name" : "padding_choice",
+  "label" : "Padding Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "padding-top-extra", "Extra Padding Top" ], [ "padding-bottom-extra", "Extra Padding Bottom" ], [ "padding-extra", "Extra Padding" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "6b896cb1-de76-e7aa-d859-bfc9a38996f1",
+  "name" : "embed_field",
+  "label" : "Embed",
+  "required" : false,
+  "locked" : false,
+  "supported_source_types" : [ "oembed", "html" ],
+  "supported_oembed_types" : [ "photo", "video", "link", "rich" ],
+  "resizable" : true,
+  "show_preview" : true,
+  "supported_media_bridge_providers" : [ ],
+  "type" : "embed",
+  "display_width" : null,
+  "default" : {
+    "source_type" : "html",
+    "embed_html" : "<script type=\"text/javascript\" src=\"https://birdeye.com/embed/v7/170500736094024/10/987654321301015183\" async></script><div id=\"bf-revz-widget-987654321301015183\" ></div>"
+  }
+}, {
+  "id" : "e03cb7c4-e842-f6bf-fd36-187c3f17727e",
+  "name" : "padding_bottom_number",
+  "label" : "Padding Bottom Number",
+  "required" : false,
+  "locked" : false,
+  "display" : "slider",
+  "min" : 0,
+  "max" : 100,
+  "step" : 1,
+  "suffix" : "%",
+  "type" : "number",
+  "display_width" : null,
+  "default" : 35
+} ]

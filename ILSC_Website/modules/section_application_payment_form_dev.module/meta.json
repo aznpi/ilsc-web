@@ -1,0 +1,37 @@
+{
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE" ],
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 186930600044,
+  "css_assets" : [ {
+    "autoload" : true,
+    "path" : "../../template-resources/stylesheets/internal/production/application-form/applicant-form.css",
+    "name" : "applicant-form.css"
+  } ],
+  "js_assets" : [ {
+    "autoload" : true,
+    "path" : "../../template-resources/javascript/internal/application-form/applicant-form-localstorage.js",
+    "name" : "applicant-form-localstorage.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../template-resources/javascript/internal/application-form-dev/applicant-form-helper-dev.js",
+    "name" : "applicant-form-helper-dev.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../template-resources/javascript/internal/application-form-dev/applicant-form-payment-dev.js",
+    "name" : "applicant-form-payment-dev.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../template-resources/javascript/internal/application-form-dev/accommodation-form-dev.js",
+    "name" : "accommodation-form-dev.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../template-resources/javascript/internal/application-form-dev/additional-form-dev.js",
+    "name" : "additional-form-dev.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../template-resources/javascript/internal/cookie-set.js",
+    "name" : "cookie-set.js"
+  } ],
+  "is_available_for_new_content" : true
+}

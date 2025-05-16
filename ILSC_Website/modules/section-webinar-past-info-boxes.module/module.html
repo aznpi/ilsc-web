@@ -1,0 +1,111 @@
+{% set webinarStatus = "Watch Now" %}
+{% set queryparamPast = "&feature_enabled__eq=Disabled&video_type__in=Webinar&register_or_watch_now__eq=" + webinarStatus|urlencode %}
+{% set queryparamPast = queryparamPast ~ "&enable_disable__eq=Enabled&limit=5&orderBy=-dated_created" %}
+
+{% set webinarPast = hubdb_table_rows(4824754,queryparamPast) %}
+
+<section class="section webinar-info webinar-past {% if module.bg_color.color == '#FFFFFF' %} bg-white-canvas {% endif %}" id="content" style="background-color:rgba({{ module.bg_color.color|convert_rgb }}, {{ module.bg_color.opacity/100 }});" id="content">
+	<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+      </div>
+    </div>
+    {% for row in webinarPast %}
+      {% set webinarLink = row.page_url %}
+      
+      {% if row.register_or_watch_now.name == 'Register Now' %}
+      {% set btnClass = "btn-orange" %}
+      {% elif row.register_or_watch_now.name == 'Watch Now'%}
+      {% set btnClass = "btn-black" %}
+      {% else %}
+      {% set btnClass = "btn-orange" %}
+      {% endif %}
+  
+      <div class="row past-container">
+        <div class="col-md-12">
+          <div class="info-container">
+            <div class="webinar-header {% for item in row.category_code %}webinar-{{ item.color_code.name|lower|replace(' ','-') }}{% endfor %}">
+              <h5>
+                {{ row.sub_title|upper }}
+              </h5>
+            </div>
+            <div class="content-container">
+              <div class="row">
+                  <div class="col-md-8 description-container">
+                    <h4 class="title">
+                      {{ row.title }}
+                    </h4>
+                    <h6>
+                       <i class="far fa-clock"></i>&nbsp;&nbsp;{{ row.time_durations_in_hours }}
+                    </h6>
+                  </div>
+                  {% if row.register_or_watch_now.name != 'No Button' %}
+                      <div class="col-md-4 btn-container">
+                          <div>
+                            <a href="{{ webinarLink }}" target="_blank" class="btn {{ btnClass }} bold">{{ row.register_or_watch_now.name }}</a>
+                          </div>
+                         
+                      </div>
+                  {% endif %}
+                </div>
+            </div>
+          </div>
+            
+        </div>
+         
+      </div>
+    {% endfor %}
+    <div class="row">
+      <div class="col-md-12 center btn-container">
+        {% set href = module.see_all_link.url.href %}
+        {% if module.see_all_link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+        {% endif %}
+        {% set rel = [] %}
+        {% if module.see_all_link.no_follow %}
+          {% do rel.append("nofollow") %}
+        {% endif %}
+        {% if module.see_all_link.open_in_new_tab %}
+          {% do rel.append("noopener") %}
+        {% endif %}
+        <a href="{{ href }}"
+          {% if module.see_all_link.open_in_new_tab %}target="_blank"{% endif %}
+          {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+          class="btn btn-black-outline bold">
+         {% inline_text field="see_all_text" value="{{ module.see_all_text }}" %}
+        </a>
+      </div>
+    </div>
+		<div class="row training-container">
+    <div class="col-md-6 content-container">
+      <div class="description-container">
+        {% inline_rich_text field="training_rich_text" value="{{ module.training_rich_text }}" %}
+      </div>
+      <div class="btn-container">
+        {% set href = module.see_all_training_link.url.href %}
+        {% if module.see_all_training_link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+        {% endif %}
+        {% set rel = [] %}
+        {% if module.see_all_training_link.no_follow %}
+          {% do rel.append("nofollow") %}
+        {% endif %}
+        {% if module.see_all_training_link.open_in_new_tab %}
+          {% do rel.append("noopener") %}
+        {% endif %}
+        <a href="{{ href }}"
+          {% if module.see_all_training_link.open_in_new_tab %}target="_blank"{% endif %}
+          {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+          class="btn btn-orange bold">
+          {% inline_text field="see_all_training_text" value="{{ module.see_all_training_text }}" %}
+        </a>
+      </div>
+    </div>
+     <div class="col-md-6" style="background:url({{ module.training_image.src }}) no-repeat;background-size:cover;">
+      
+    </div>
+  </div>
+	</div>
+  
+</section>

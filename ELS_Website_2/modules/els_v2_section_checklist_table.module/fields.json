@@ -1,0 +1,237 @@
+[ {
+  "id" : "e17b73fa-e373-4cd4-f9c9-41aa4ae9ced9",
+  "name" : "padding_choice",
+  "label" : "Padding Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "padding-none", "No Padding" ], [ "padding-top", "Padding Top" ], [ "padding-bottom", "Padding Bottom" ], [ "padding-top-none", "No Padding Top " ], [ "padding-bottom-none", "No Padding Bottom" ], [ "padding-top-extra", "Extra Top Padding" ], [ "padding-bottom-extra", "Extra Bottom Padding" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "504057e4-6a3b-e55c-5b48-008b39135f68",
+  "name" : "margin_choice",
+  "label" : "Margin Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "", "None" ], [ "margin-top-extra", "Extra Top Margin" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "71d8975a-e92c-f25f-6ac9-01322d323081",
+  "name" : "box_field_group",
+  "label" : "Box Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 20,
+    "sorting_label_field" : "3bdfb7ba-b955-ab6b-41d4-1e659985947c",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "1681c620-c139-7f25-0976-51b589e6783e",
+    "name" : "icon_image",
+    "label" : "Icon Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "bdb8b637-f23c-cc6f-5d5d-d30e337eb75c",
+    "name" : "title_rich_text",
+    "label" : "Title Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null
+  }, {
+    "id" : "087b01ab-95b0-20b1-051b-4afdd3dc45f9",
+    "name" : "description_rich_text",
+    "label" : "Description Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ ]
+}, {
+  "id" : "e0a3b81b-6352-876e-3a89-2c8bdf9de719",
+  "name" : "enable_dropdown_boolean",
+  "label" : "Enable Dropdown Boolean",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "display_width" : null,
+  "default" : false
+}, {
+  "id" : "3a5ea0e8-f898-42aa-7aad-09be0e5de77d",
+  "name" : "dropdown_field_group",
+  "label" : "Dropdown Field group",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "enable_dropdown_boolean",
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "children" : [ {
+    "id" : "2b0b3d50-7b60-0edc-cec1-2e7b0b1337d7",
+    "name" : "bg_color",
+    "label" : "BG Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "display_width" : null,
+    "default" : {
+      "color" : "#009fdf",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "3f9eba96-f496-a62a-d085-5c0bb0730ef1",
+    "name" : "title_richtext_field",
+    "label" : "Title Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null
+  }, {
+    "id" : "42dcee15-fcaf-2509-170b-f8d5771d86c4",
+    "name" : "button_text",
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "LOCATION"
+  }, {
+    "id" : "ba8eab49-9998-7bb8-ece6-09451215d7df",
+    "name" : "link",
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 0,
+      "max" : 99,
+      "sorting_label_field" : "d55b815e-b688-4a30-a38f-04cd9e4f9472",
+      "default" : null
+    },
+    "children" : [ {
+      "id" : "3d2d14ee-183e-6e7b-198f-f1497967083f",
+      "name" : "link_field",
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "d55b815e-b688-4a30-a38f-04cd9e4f9472",
+      "name" : "link_text",
+      "label" : "Link Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "bg_color" : {
+      "color" : "#009fdf",
+      "opacity" : 100
+    },
+    "button_text" : "LOCATION",
+    "link" : [ ]
+  }
+}, {
+  "id" : "db972aff-bd7e-0c7e-1dcc-53ccf8641b1b",
+  "name" : "enable_plane_bg_boolean",
+  "label" : "Enable Plane BG Boolean",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "display_width" : null,
+  "default" : false
+}, {
+  "id" : "88179afc-c681-dbd7-4a19-eb22e2953c97",
+  "name" : "bg_plane_image",
+  "label" : "BG Plane Image",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "enable_plane_bg_boolean",
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.ilsc.com/hubfs/ELS/Website%20v2/template-resources/images/background/bg_plane_path.png",
+    "alt" : "bg_plane_path",
+    "loading" : "lazy",
+    "width" : 1307,
+    "height" : 1012,
+    "max_width" : 1307,
+    "max_height" : 1012
+  }
+} ]

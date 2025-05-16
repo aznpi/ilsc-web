@@ -1,0 +1,173 @@
+{% set queryparam = "" %}
+{% set queryparam = queryparam ~ "&campus__in=" +module.city_choice|urlencode %}
+{#{% set queryparam = queryparam ~ "&is_parent_program__eq=true"  %}#}
+{% set programs = hubdb_table_rows(4690691,queryparam) %}
+{% set programBusiness = hubdb_table_rows(4690691,queryparam ~ "&is_parent_program__eq=1&program_areas__in=Business&enable_disable__eq=1") %}
+{% set programDigitalMarketing = hubdb_table_rows(4690691,queryparam ~ "&is_parent_program__eq=1&program_areas__in=Digital%20Marketing&enable_disable__eq=Enable") %}
+{% set programHosptality = hubdb_table_rows(4690691,queryparam ~ "&is_parent_program__eq=1&program_areas__in=Hospitality&enable_disable__eq=Enable") %}
+{% set programInterpreting = hubdb_table_rows(4690691,queryparam ~ "&is_parent_program__eq=1&program_areas__in=Interpreting%20and%20Translation&enable_disable__eq=Enable") %}
+{% set programTeacher = hubdb_table_rows(4690691,queryparam ~ "&is_parent_program__eq=1&program_areas__in=Teacher%20Training&enable_disable__eq=Enable") %}
+
+<section class="section-1-columns-6-6 section bg-white-canvas">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			{% inline_rich_text field="title" value="{{ module.title }}" %}
+      </div>
+		</div>
+		<div class="row">
+      <div class="col-md-12">
+        <div class="slider-wrapper">
+          <div class="program-slide">
+           
+            {% if programBusiness|length > 0 %}
+              <div> 
+                  <div class="box-container">
+                    {% if module.business_box.image_field.src %}
+                    <img class="lazy" data-src="{{ module.business_box.image_field.src }}" alt="{{ module.business_box.image_field.alt }}">
+                    {% endif %}
+                    <div class="box-content">
+                      {% inline_rich_text field="text_content" value="{{ module.business_box.text_content }}" %}
+                      <div class="btn-group dropup">
+                        <button class="btn btn-gray-outline dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {% inline_text field="dropdown_default_text" value="{{ module.business_box.dropdown_default_text }}" %}
+                        </button>
+                        {% if programBusiness|length > 5 %}
+                          {% set menuClass = "tallMenu" %}
+                        {% else %}
+                          {% set menuClass = "shortMenu" %}
+                        {% endif %}
+                        <div class="dropdown-menu {{menuClass}}" aria-labelledby="dropdownMenuButton">
+                            {% for item2 in programBusiness|unique('program_name') %}
+                              {% set href = item2.page_link %}
+                              <a class="dropdown-item" href="{% if content.language.languageTag && content.language.languageTag !='en' %}/{{ content.language.languageTag }}{% endif %}{{href}}">{{ item2.program_name }}</a>
+                            {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+            {% endif %}
+            {% if programDigitalMarketing|length > 0 %}
+              <div> 
+                  <div class="box-container">
+                    {% if module.digital_marketing_box.image_field.src %}
+                    <img class="lazy" data-src="{{ module.digital_marketing_box.image_field.src }}" alt="{{ module.digital_marketing_box.image_field.alt }}">
+                    {% endif %}
+                    <div class="box-content">
+                      {% inline_rich_text field="text_content" value="{{ module.digital_marketing_box.text_content }}" %}
+                      <div class="dropdown btn-group dropup">
+                        <button class="btn btn-gray-outline dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {% inline_text field="dropdown_default_text" value="{{ module.business_box.dropdown_default_text }}" %}
+                        </button>
+                        {% if programDigitalMarketing|length > 5 %}
+                          {% set menuClass = "tallMenu" %}
+                        {% else %}
+                          {% set menuClass = "shortMenu" %}
+                        {% endif %}
+                        <div class="dropdown-menu {{menuClass}}" aria-labelledby="dropdownMenuButton">
+                            {% for item2 in programDigitalMarketing|unique('program_name') %}
+                              {% set href = item2.page_link %}
+                              <a class="dropdown-item" href="{% if content.language.languageTag && content.language.languageTag !='en' %}/{{ content.language.languageTag }}{% endif %}{{href}}">{{ item2.program_name }}</a>
+                            {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+            {% endif %}
+            {% if programHosptality|length > 0 %}
+              <div> 
+                  <div class="box-container">
+                    {% if module.hospitality_box.image_field.src %}
+                    <img class="lazy" data-src="{{ module.hospitality_box.image_field.src }}" alt="{{ module.hospitality_box.image_field.alt }}">
+                    {% endif %}
+                    <div class="box-content">
+                      {% inline_rich_text field="text_content" value="{{ module.hospitality_box.text_content }}" %}
+                      <div class="dropdown btn-group dropup">
+                        <button class="btn btn-gray-outline dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {% inline_text field="dropdown_default_text" value="{{ module.hospitality_box.dropdown_default_text }}" %}
+                        </button>
+                         {% if programHosptality|length > 5 %}
+                          {% set menuClass = "tallMenu" %}
+                        {% else %}
+                          {% set menuClass = "shortMenu" %}
+                        {% endif %}
+                        <div class="dropdown-menu {{menuClass}}" aria-labelledby="dropdownMenuButton">
+                            {% for item2 in programHosptality|unique('program_name') %}
+                              {% set href = item2.page_link %}
+                              <a class="dropdown-item" href="{% if content.language.languageTag && content.language.languageTag !='en' %}/{{ content.language.languageTag }}{% endif %}{{href}}">{{ item2.program_name }}</a>
+                            {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+            {% endif %}
+            {% if programInterpreting|length > 0 %}
+              <div> 
+                  <div class="box-container">
+                    {% if module.interpreting_translation_box.image_field.src %}
+                    <img class="lazy" data-src="{{ module.interpreting_translation_box.image_field.src }}" alt="{{ module.interpreting_translation_box.image_field.alt }}">
+                    {% endif %}
+                    <div class="box-content">
+                      {% inline_rich_text field="text_content" value="{{ module.interpreting_translation_box.text_content }}" %}
+                      <div class="dropdown btn-group dropup">
+                        <button class="btn btn-gray-outline dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {% inline_text field="dropdown_default_text" value="{{ module.interpreting_translation_box.dropdown_default_text }}" %}
+                        </button>
+                        {% if programInterpreting|length > 5 %}
+                          {% set menuClass = "tallMenu" %}
+                        {% else %}
+                          {% set menuClass = "shortMenu" %}
+                        {% endif %}
+                        <div class="dropdown-menu {{menuClass}}" aria-labelledby="dropdownMenuButton">
+                            {% for item2 in programInterpreting|unique('program_name') %}
+                              {% set href = item2.page_link %}
+                              <a class="dropdown-item" href="{% if content.language.languageTag && content.language.languageTag !='en' %}/{{ content.language.languageTag }}{% endif %}{{href}}">{{ item2.program_name }}</a>
+                            {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+            {% endif %}
+            {% if programTeacher|length > 0 %}
+              <div> 
+                  <div class="box-container">
+                    {% if module.teacher_training_box.image_field.src %}
+                    <img class="lazy" data-src="{{ module.teacher_training_box.image_field.src }}" alt="{{ module.teacher_training_box.image_field.alt }}">
+                    {% endif %}
+                    <div class="box-content">
+                      {% inline_rich_text field="text_content" value="{{ module.teacher_training_box.text_content }}" %}
+                      <div class="dropdown btn-group dropup">
+                        <button class="btn btn-gray-outline dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {% inline_text field="dropdown_default_text" value="{{ module.teacher_training_box.dropdown_default_text }}" %}
+                        </button>
+                         {% if programTeacher|length > 5 %}
+                          {% set menuClass = "tallMenu" %}
+                        {% else %}
+                          {% set menuClass = "shortMenu" %}
+                        {% endif %}
+                        <div class="dropdown-menu {{menuClass}}" aria-labelledby="dropdownMenuButton">
+                            {% for item2 in programTeacher %}
+                              {% set href = item2.page_link|unique('program_name') %}
+                              <a class="dropdown-item" href="{% if content.language.languageTag && content.language.languageTag !='en' %}/{{ content.language.languageTag }}{% endif %}{{href}}">{{ item2.program_name }}</a>
+                            {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+		</div>
+	</div>
+</section>

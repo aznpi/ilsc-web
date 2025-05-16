@@ -1,0 +1,654 @@
+[ {
+  "id" : "04878ce2-e4c2-ac94-9e90-1be3946a157a",
+  "name" : "tabs",
+  "label" : "Tabs",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "a3abb5ab-efaa-3803-a373-8089c8920b26",
+    "name" : "tab_1",
+    "label" : "Tab 1",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "2d04de45-f279-53cd-553b-f9677e468918",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Homestay Canada"
+    }, {
+      "id" : "f26fe2ac-836b-9938-9db9-443c692a03dc",
+      "name" : "text_content",
+      "label" : "Text Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<h2>Live with a family</h2>\n<p>Are you looking for a home away from home? Be welcomed into one of ILSC’s Homestay families, and experience a supportive living environment. It’s an excellent opportunity to practice your English conversation skills and experience Canadian culture and family life.</p>"
+    }, {
+      "id" : "4b013ca0-3086-427e-e8a0-1b51e5265f6f",
+      "name" : "image_video_choice",
+      "label" : "Image/Video Right Column Choice",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "image", "Image" ], [ "video", "Video" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "image"
+    }, {
+      "id" : "ec066927-fad2-4211-dcf8-58a1653fcca2",
+      "name" : "video_youtube_link",
+      "label" : "Video Youtube Link",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "tabs.tab_1.image_video_choice",
+        "controlling_value_regex" : "video",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      }
+    }, {
+      "id" : "963e80f4-5ce8-9904-03fd-25614a3b434f",
+      "name" : "image_field",
+      "label" : "Image Right Column",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_homestay_welcome.jpg",
+        "alt" : "img_homestay_welcome",
+        "width" : 1080,
+        "height" : 720,
+        "max_width" : 1080,
+        "max_height" : 720
+      }
+    }, {
+      "id" : "c2716914-7abf-1b95-f021-a36e950182e5",
+      "name" : "hide_show_cta",
+      "label" : "Hide/Show CTA",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "show"
+    }, {
+      "id" : "b9569c62-4002-a1fb-134a-221de8db7c8a",
+      "name" : "cta_url_text",
+      "label" : "CTA URL Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "c2716914-7abf-1b95-f021-a36e950182e5",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "show",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "WATCH OUR VIDEO"
+    }, {
+      "id" : "46b267b8-29de-0226-bea8-d4381d1575c7",
+      "name" : "cta_url",
+      "label" : "CTA Url",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "c2716914-7abf-1b95-f021-a36e950182e5",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "show",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.youtube.com/embed/0ci-uzkLIwM",
+        "content_id" : null
+      }
+    }, {
+      "id" : "e0b0b560-b394-f703-904b-65dafd717ad4",
+      "name" : "cta_font_awesome_icon",
+      "label" : "CTA Font Awesome Icon",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "c2716914-7abf-1b95-f021-a36e950182e5",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "show",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "display" : "select",
+      "choices" : [ [ "far fa-play-circle", "Play Video Icon" ], [ "far fa-file-pdf", "PDF Icon" ], [ "far fa-arrow-right", "Page Icon" ], [ "fas fa-blog", "Blog Icon" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "far fa-play-circle"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "title" : "Homestay Canada",
+      "text_content" : "<h2>Live with a family</h2>\n<p>Are you looking for a home away from home? Be welcomed into one of ILSC’s Homestay families, and experience a supportive living environment. It’s an excellent opportunity to practice your English conversation skills and experience Canadian culture and family life.</p>",
+      "image_video_choice" : "image",
+      "video_youtube_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "image_field" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_homestay_welcome.jpg",
+        "alt" : "img_homestay_welcome",
+        "width" : 1080,
+        "height" : 720,
+        "max_width" : 1080,
+        "max_height" : 720
+      },
+      "hide_show_cta" : "show",
+      "cta_url_text" : "WATCH OUR VIDEO",
+      "cta_url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.youtube.com/embed/0ci-uzkLIwM",
+        "content_id" : null
+      },
+      "cta_font_awesome_icon" : "far fa-play-circle"
+    }
+  }, {
+    "id" : "f86f0737-de58-9089-68f1-e334cfa8ca1d",
+    "name" : "tab_2",
+    "label" : "Tab 2",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "c589762c-7e48-a26a-e8d3-eb7c9f3f1dbd",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "What to Expect"
+    }, {
+      "id" : "0154250b-05f3-7a3d-6786-be887aab7696",
+      "name" : "text_content",
+      "label" : "Text Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<h5>WHAT TO EXPECT</h5>\n<ul class=\"arrows\">\n<li>Homestay families from diverse backgrounds</li>\n<li>3 meals a day, 7 days a week</li>\n<li>Self served breakfast and lunch</li>\n<li>Dinner served hot by host family</li>\n<li>Two or more students may live in the same homestay</li>\n<li>A comfortable private room (or shared twin) with shared bathroom</li>\n</ul>"
+    }, {
+      "id" : "1e66267a-765a-1744-e9a1-a63392d86b4f",
+      "name" : "image_field",
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_homestay_home.jpg",
+        "alt" : "img_homestay_home",
+        "width" : 1080,
+        "height" : 720,
+        "max_width" : 1080,
+        "max_height" : 720
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "title" : "What to Expect",
+      "text_content" : "<h5>WHAT TO EXPECT</h5>\n<ul class=\"arrows\">\n<li>Homestay families from diverse backgrounds</li>\n<li>3 meals a day, 7 days a week</li>\n<li>Self served breakfast and lunch</li>\n<li>Dinner served hot by host family</li>\n<li>Two or more students may live in the same homestay</li>\n<li>A comfortable private room (or shared twin) with shared bathroom</li>\n</ul>",
+      "image_field" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_homestay_home.jpg",
+        "alt" : "img_homestay_home",
+        "width" : 1080,
+        "height" : 720,
+        "max_width" : 1080,
+        "max_height" : 720
+      }
+    }
+  }, {
+    "id" : "894edd25-be0a-60c0-d666-66e6033797af",
+    "name" : "tab_3",
+    "label" : "Tab 3",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "1c654d3f-a2c2-ffe0-993b-4929c099bc8e",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Homestay Policies"
+    }, {
+      "id" : "ffddd9f7-d2a5-3892-48f2-b048c1031542",
+      "name" : "text_content",
+      "label" : "Text Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<div>\n<h5>EMBRACE DIVERSITY</h5>\n<p>Canada is a multicultural country. Because of this, your homestay family might have a foreign background. Please be open to embrace different cultures.</p>\n</div>\n<div>\n<h5>ENGLISH WILL BRING YOU TOGETHER</h5>\n<p>Your homestay family might have more international students, but no one will speak the same language as you.</p>\n</div>\n<div>\n<h5>PET-FRIENDLY ENVIRONMENT</h5>\n<p>Canadian families are very pet friendly. Your homestay family might have pets. Please note if you requested to stay in a house with no pets, we will do our best to accommodate your request.</p>\n</div>\n<div>\n<h5>BEDROOM TYPES</h5>\n<p>Please note that it is quite common in Canada to have a bedroom in the basement. Your bedroom will be located either in the basement or above ground (main floor or second floor).</p>\n</div>"
+    }, {
+      "id" : "2653538a-3b46-a438-37eb-45380d8d4d39",
+      "name" : "text_content_2",
+      "label" : "Text Content 2",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<div>\n<h5>SMOKE FREE SPACES</h5>\n<p>All our homestay families do not allow anyone smoke inside their houses. If you are a smoker, please let us know before your arrival.</p>\n</div>\n<div>\n<h5>HOUSE RULES</h5>\n<p>All homestay families have house rules. Please talk to your homestay family about their house rules on your first day and do your best to follow them.</p>\n</div>\n<div>\n<h5>GUESTS</h5>\n<p>Guests and overnight guests are not allowed in your homestay unless your homestay parents give you permission.</p>\n</div>\n<div>\n<h5>PENALTIES</h5>\n<p>You will be responsible to pay for any damage you have caused during your stay.</p>\n</div>"
+    }, {
+      "id" : "c7ffdf8b-f18f-b0b1-84c0-394ad47d2f88",
+      "name" : "hide_show_cta_copy",
+      "label" : "Hide/Show CTA copy",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "show"
+    }, {
+      "id" : "240968af-3056-a972-da6a-687d3deb5977",
+      "name" : "cta_link_url",
+      "label" : "CTA Link Url",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "c7ffdf8b-f18f-b0b1-84c0-394ad47d2f88",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "show",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "supported_types" : [ "FILE", "EXTERNAL", "CONTENT", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "FILE"
+      }
+    }, {
+      "id" : "1fd2c92a-d47a-ecb9-dfcc-6c1475967b9c",
+      "name" : "cta_link_text",
+      "label" : "CTA Link Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "c7ffdf8b-f18f-b0b1-84c0-394ad47d2f88",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "show",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "VIEW OUR HOMESTAY GUIDELINE"
+    }, {
+      "id" : "4bac25f4-764a-657a-29d4-f6507a73e0b2",
+      "name" : "cta_font_awesome_icon_copy",
+      "label" : "CTA Font Awesome Icon copy",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "c7ffdf8b-f18f-b0b1-84c0-394ad47d2f88",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "show",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "display" : "select",
+      "choices" : [ [ "far fa-play-circle", "Play Video Icon" ], [ "far fa-file-pdf", "PDF Icon" ], [ "far fa-arrow-right", "Page Icon" ], [ "fas fa-blog", "Blog Icon" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "far fa-file-pdf"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "title" : "Homestay Policies",
+      "text_content" : "<div>\n<h5>EMBRACE DIVERSITY</h5>\n<p>Canada is a multicultural country. Because of this, your homestay family might have a foreign background. Please be open to embrace different cultures.</p>\n</div>\n<div>\n<h5>ENGLISH WILL BRING YOU TOGETHER</h5>\n<p>Your homestay family might have more international students, but no one will speak the same language as you.</p>\n</div>\n<div>\n<h5>PET-FRIENDLY ENVIRONMENT</h5>\n<p>Canadian families are very pet friendly. Your homestay family might have pets. Please note if you requested to stay in a house with no pets, we will do our best to accommodate your request.</p>\n</div>\n<div>\n<h5>BEDROOM TYPES</h5>\n<p>Please note that it is quite common in Canada to have a bedroom in the basement. Your bedroom will be located either in the basement or above ground (main floor or second floor).</p>\n</div>",
+      "text_content_2" : "<div>\n<h5>SMOKE FREE SPACES</h5>\n<p>All our homestay families do not allow anyone smoke inside their houses. If you are a smoker, please let us know before your arrival.</p>\n</div>\n<div>\n<h5>HOUSE RULES</h5>\n<p>All homestay families have house rules. Please talk to your homestay family about their house rules on your first day and do your best to follow them.</p>\n</div>\n<div>\n<h5>GUESTS</h5>\n<p>Guests and overnight guests are not allowed in your homestay unless your homestay parents give you permission.</p>\n</div>\n<div>\n<h5>PENALTIES</h5>\n<p>You will be responsible to pay for any damage you have caused during your stay.</p>\n</div>",
+      "hide_show_cta_copy" : "show",
+      "cta_link_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "FILE"
+      },
+      "cta_link_text" : "VIEW OUR HOMESTAY GUIDELINE",
+      "cta_font_awesome_icon_copy" : "far fa-file-pdf"
+    }
+  }, {
+    "id" : "9854a8fb-13aa-0977-27f4-8d32522da9ec",
+    "name" : "tab_4",
+    "label" : "Tab 4",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "0ed04621-2d89-f8ec-3cc6-14726f7b7d8c",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Meal Plans"
+    }, {
+      "id" : "e906218b-079d-4167-336a-ee50b5d4e565",
+      "name" : "text_content",
+      "label" : "Text Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<div>\n<h5 class=\"highlight\">MEAL PLAN OPTIONS</h5>\n<ul class=\"home-list\">\n<li><img src=\"https://f.hubspotusercontent10.net/hubfs/5020112/icon_coffee.png\" alt=\"icon_coffee\" width=\"40\" style=\"width: 40px;\"><span><span class=\"bold\">FULL-BOARD</span> (Breakfast + Lunch + Dinner)</span></li>\n<li><img src=\"https://f.hubspotusercontent10.net/hubfs/5020112/icon_burger.png\" alt=\"icon_burger\" width=\"40\" style=\"width: 40px;\"><span><span class=\"bold\">HALF-BOARD</span> (Breakfast + Dinner)</span></li>\n<li><img src=\"https://f.hubspotusercontent10.net/hubfs/5020112/icon_plate.png\" alt=\"icon_plate\" width=\"40\" style=\"width: 40px;\"><span><span class=\"bold\">ROOMSTAY</span> (No Meals)</span></li>\n</ul>\n</div>\n<div>\n<h5>BREAKFAST</h5>\n<p>It is usually prepared by the students and may consist of a piece of toast with coffee and/or a bowl of cereal with milk.</p>\n</div>\n<div>\n<h5>LUNCH</h5>\n<p>It is usually a packed lunch and may consist of a sandwich, drink, and fruit. Ask your family whether or not you are responsible to pack your own lunch.</p>\n</div>\n<div>\n<h5>DINNER</h5>\n<p>It is prepared by the family and they set dinner time although it tends to be between 6−7:30 p.m. It is usually a well-balanced and full meal.</p>\n</div>"
+    }, {
+      "id" : "e0f86e06-8467-09fc-ccb9-cd65a26b73ca",
+      "name" : "text_content_2",
+      "label" : "Text Content 2",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<div>\n<h5 class=\"highlight\">USE OF THE KITCHEN</h5>\n</div>\n<div>\n<h5>FULL-BOARD OR HALF-BOARD</h5>\n<p>You are not allowed to use the kitchen. If you still want to use it, please ask your homestay family before using it. Please note, it is not their obligation to allow you to use the kitchen.</p>\n</div>\n<div>\n<h5>ROOMSTAY</h5>\n<p>You are allowed to use the kitchen and store your food and prepare meals. It is your responsibility to clean after using the kitchen without any exception.</p>\n</div>"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "title" : "Meal Plans",
+      "text_content" : "<div>\n<h5 class=\"highlight\">MEAL PLAN OPTIONS</h5>\n<ul class=\"home-list\">\n<li><img src=\"https://f.hubspotusercontent10.net/hubfs/5020112/icon_coffee.png\" alt=\"icon_coffee\" width=\"40\" style=\"width: 40px;\"><span><span class=\"bold\">FULL-BOARD</span> (Breakfast + Lunch + Dinner)</span></li>\n<li><img src=\"https://f.hubspotusercontent10.net/hubfs/5020112/icon_burger.png\" alt=\"icon_burger\" width=\"40\" style=\"width: 40px;\"><span><span class=\"bold\">HALF-BOARD</span> (Breakfast + Dinner)</span></li>\n<li><img src=\"https://f.hubspotusercontent10.net/hubfs/5020112/icon_plate.png\" alt=\"icon_plate\" width=\"40\" style=\"width: 40px;\"><span><span class=\"bold\">ROOMSTAY</span> (No Meals)</span></li>\n</ul>\n</div>\n<div>\n<h5>BREAKFAST</h5>\n<p>It is usually prepared by the students and may consist of a piece of toast with coffee and/or a bowl of cereal with milk.</p>\n</div>\n<div>\n<h5>LUNCH</h5>\n<p>It is usually a packed lunch and may consist of a sandwich, drink, and fruit. Ask your family whether or not you are responsible to pack your own lunch.</p>\n</div>\n<div>\n<h5>DINNER</h5>\n<p>It is prepared by the family and they set dinner time although it tends to be between 6−7:30 p.m. It is usually a well-balanced and full meal.</p>\n</div>",
+      "text_content_2" : "<div>\n<h5 class=\"highlight\">USE OF THE KITCHEN</h5>\n</div>\n<div>\n<h5>FULL-BOARD OR HALF-BOARD</h5>\n<p>You are not allowed to use the kitchen. If you still want to use it, please ask your homestay family before using it. Please note, it is not their obligation to allow you to use the kitchen.</p>\n</div>\n<div>\n<h5>ROOMSTAY</h5>\n<p>You are allowed to use the kitchen and store your food and prepare meals. It is your responsibility to clean after using the kitchen without any exception.</p>\n</div>"
+    }
+  }, {
+    "id" : "cc0ee82a-b819-ad73-cafe-229af075da52",
+    "name" : "tab_5",
+    "label" : "Tab 5",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "02e6c2b6-66af-b4dd-1b5b-566ea3d00823",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Photo Gallery"
+    }, {
+      "id" : "dc6dda06-411d-b401-6e98-6f7a0b2dfb5e",
+      "name" : "image_field",
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "max" : 15,
+        "sorting_label_field" : null,
+        "default" : 4
+      },
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : [ {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_bedroom_photo.jpg",
+        "alt" : "Bedroom",
+        "width" : 1070,
+        "height" : 806,
+        "max_width" : 1070,
+        "max_height" : 806
+      }, {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_bedroom_photo.jpg",
+        "alt" : "Bedroom",
+        "width" : 1070,
+        "height" : 806,
+        "max_width" : 1070,
+        "max_height" : 806
+      }, {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_bedroom_photo.jpg",
+        "alt" : "Bedroom",
+        "width" : 1070,
+        "height" : 806,
+        "max_width" : 1070,
+        "max_height" : 806
+      }, {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_bedroom_photo.jpg",
+        "alt" : "Bedroom",
+        "width" : 1070,
+        "height" : 806,
+        "max_width" : 1070,
+        "max_height" : 806
+      } ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "title" : "Photo Gallery",
+      "image_field" : [ {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_bedroom_photo.jpg",
+        "alt" : "Bedroom",
+        "width" : 1070,
+        "height" : 806,
+        "max_width" : 1070,
+        "max_height" : 806
+      }, {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_bedroom_photo.jpg",
+        "alt" : "Bedroom",
+        "width" : 1070,
+        "height" : 806,
+        "max_width" : 1070,
+        "max_height" : 806
+      }, {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_bedroom_photo.jpg",
+        "alt" : "Bedroom",
+        "width" : 1070,
+        "height" : 806,
+        "max_width" : 1070,
+        "max_height" : 806
+      }, {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_bedroom_photo.jpg",
+        "alt" : "Bedroom",
+        "width" : 1070,
+        "height" : 806,
+        "max_width" : 1070,
+        "max_height" : 806
+      } ]
+    }
+  }, {
+    "id" : "e633b9d1-e1cb-e693-6dae-2f539cfd2501",
+    "name" : "mobile_tab_text",
+    "label" : "Mobile Tab Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Features:"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "tab_1" : {
+      "title" : "Homestay Canada",
+      "text_content" : "<h2>Live with a family</h2>\n<p>Are you looking for a home away from home? Be welcomed into one of ILSC’s Homestay families, and experience a supportive living environment. It’s an excellent opportunity to practice your English conversation skills and experience Canadian culture and family life.</p>",
+      "image_video_choice" : "image",
+      "video_youtube_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "image_field" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_homestay_welcome.jpg",
+        "alt" : "img_homestay_welcome",
+        "width" : 1080,
+        "height" : 720,
+        "max_width" : 1080,
+        "max_height" : 720
+      },
+      "hide_show_cta" : "show",
+      "cta_url_text" : "WATCH OUR VIDEO",
+      "cta_url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.youtube.com/embed/0ci-uzkLIwM",
+        "content_id" : null
+      },
+      "cta_font_awesome_icon" : "far fa-play-circle"
+    },
+    "tab_2" : {
+      "title" : "What to Expect",
+      "text_content" : "<h5>WHAT TO EXPECT</h5>\n<ul class=\"arrows\">\n<li>Homestay families from diverse backgrounds</li>\n<li>3 meals a day, 7 days a week</li>\n<li>Self served breakfast and lunch</li>\n<li>Dinner served hot by host family</li>\n<li>Two or more students may live in the same homestay</li>\n<li>A comfortable private room (or shared twin) with shared bathroom</li>\n</ul>",
+      "image_field" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_homestay_home.jpg",
+        "alt" : "img_homestay_home",
+        "width" : 1080,
+        "height" : 720,
+        "max_width" : 1080,
+        "max_height" : 720
+      }
+    },
+    "tab_3" : {
+      "title" : "Homestay Policies",
+      "text_content" : "<div>\n<h5>EMBRACE DIVERSITY</h5>\n<p>Canada is a multicultural country. Because of this, your homestay family might have a foreign background. Please be open to embrace different cultures.</p>\n</div>\n<div>\n<h5>ENGLISH WILL BRING YOU TOGETHER</h5>\n<p>Your homestay family might have more international students, but no one will speak the same language as you.</p>\n</div>\n<div>\n<h5>PET-FRIENDLY ENVIRONMENT</h5>\n<p>Canadian families are very pet friendly. Your homestay family might have pets. Please note if you requested to stay in a house with no pets, we will do our best to accommodate your request.</p>\n</div>\n<div>\n<h5>BEDROOM TYPES</h5>\n<p>Please note that it is quite common in Canada to have a bedroom in the basement. Your bedroom will be located either in the basement or above ground (main floor or second floor).</p>\n</div>",
+      "text_content_2" : "<div>\n<h5>SMOKE FREE SPACES</h5>\n<p>All our homestay families do not allow anyone smoke inside their houses. If you are a smoker, please let us know before your arrival.</p>\n</div>\n<div>\n<h5>HOUSE RULES</h5>\n<p>All homestay families have house rules. Please talk to your homestay family about their house rules on your first day and do your best to follow them.</p>\n</div>\n<div>\n<h5>GUESTS</h5>\n<p>Guests and overnight guests are not allowed in your homestay unless your homestay parents give you permission.</p>\n</div>\n<div>\n<h5>PENALTIES</h5>\n<p>You will be responsible to pay for any damage you have caused during your stay.</p>\n</div>",
+      "hide_show_cta_copy" : "show",
+      "cta_link_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "FILE"
+      },
+      "cta_link_text" : "VIEW OUR HOMESTAY GUIDELINE",
+      "cta_font_awesome_icon_copy" : "far fa-file-pdf"
+    },
+    "tab_4" : {
+      "title" : "Meal Plans",
+      "text_content" : "<div>\n<h5 class=\"highlight\">MEAL PLAN OPTIONS</h5>\n<ul class=\"home-list\">\n<li><img src=\"https://f.hubspotusercontent10.net/hubfs/5020112/icon_coffee.png\" alt=\"icon_coffee\" width=\"40\" style=\"width: 40px;\"><span><span class=\"bold\">FULL-BOARD</span> (Breakfast + Lunch + Dinner)</span></li>\n<li><img src=\"https://f.hubspotusercontent10.net/hubfs/5020112/icon_burger.png\" alt=\"icon_burger\" width=\"40\" style=\"width: 40px;\"><span><span class=\"bold\">HALF-BOARD</span> (Breakfast + Dinner)</span></li>\n<li><img src=\"https://f.hubspotusercontent10.net/hubfs/5020112/icon_plate.png\" alt=\"icon_plate\" width=\"40\" style=\"width: 40px;\"><span><span class=\"bold\">ROOMSTAY</span> (No Meals)</span></li>\n</ul>\n</div>\n<div>\n<h5>BREAKFAST</h5>\n<p>It is usually prepared by the students and may consist of a piece of toast with coffee and/or a bowl of cereal with milk.</p>\n</div>\n<div>\n<h5>LUNCH</h5>\n<p>It is usually a packed lunch and may consist of a sandwich, drink, and fruit. Ask your family whether or not you are responsible to pack your own lunch.</p>\n</div>\n<div>\n<h5>DINNER</h5>\n<p>It is prepared by the family and they set dinner time although it tends to be between 6−7:30 p.m. It is usually a well-balanced and full meal.</p>\n</div>",
+      "text_content_2" : "<div>\n<h5 class=\"highlight\">USE OF THE KITCHEN</h5>\n</div>\n<div>\n<h5>FULL-BOARD OR HALF-BOARD</h5>\n<p>You are not allowed to use the kitchen. If you still want to use it, please ask your homestay family before using it. Please note, it is not their obligation to allow you to use the kitchen.</p>\n</div>\n<div>\n<h5>ROOMSTAY</h5>\n<p>You are allowed to use the kitchen and store your food and prepare meals. It is your responsibility to clean after using the kitchen without any exception.</p>\n</div>"
+    },
+    "tab_5" : {
+      "title" : "Photo Gallery",
+      "image_field" : [ {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_bedroom_photo.jpg",
+        "alt" : "Bedroom",
+        "width" : 1070,
+        "height" : 806,
+        "max_width" : 1070,
+        "max_height" : 806
+      }, {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_bedroom_photo.jpg",
+        "alt" : "Bedroom",
+        "width" : 1070,
+        "height" : 806,
+        "max_width" : 1070,
+        "max_height" : 806
+      }, {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_bedroom_photo.jpg",
+        "alt" : "Bedroom",
+        "width" : 1070,
+        "height" : 806,
+        "max_width" : 1070,
+        "max_height" : 806
+      }, {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_bedroom_photo.jpg",
+        "alt" : "Bedroom",
+        "width" : 1070,
+        "height" : 806,
+        "max_width" : 1070,
+        "max_height" : 806
+      } ]
+    },
+    "mobile_tab_text" : "Features:"
+  }
+} ]

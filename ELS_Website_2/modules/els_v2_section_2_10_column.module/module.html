@@ -1,0 +1,36 @@
+{% if module.anchor_id %}
+  <a class="anchor-link" name="{{ module.anchor_id|replace(' ','-')|replace("'","-")|replace(',','-')}}"></a>
+{% endif %}
+<section class="section-normal {{ module.padding_choice }} {{ module.margin_choice }}">
+  <div class="container">
+    {% if module.column_field_group.title_rich_text %}
+      <div class="row">
+        <div class="col-md-12">
+          {% inline_rich_text field="column_field_group.title_rich_text" value="{{ module.column_field_group.title_rich_text }}" %}
+        </div>
+      </div>
+    {% endif %}
+    <div class="row">
+      <div class="col-md-2">
+        <div class="image-container">
+          {% if module.left_column_image.src %}
+            {% set sizeAttrs = 'width="{{ module.left_column_image.width }}" height="{{ module.left_column_image.height }}"' %}
+            {% if module.left_column_image.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ module.left_column_image.width }}" height="{{ module.left_column_image.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif module.left_column_image.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ module.left_column_image.max_width }}" height="{{ module.left_column_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+             {% set loadingAttr = module.left_column_image.loading != 'disabled' ? 'loading="{{ module.left_column_image.loading }}"' : '' %}
+            <img src="{{ module.left_column_image.src }}" alt="{{ module.left_column_image.alt }}" {{ loadingAttr }} class="img-fluid">
+          {% endif %}
+          </div>
+        </div>
+      <div class="col-md-10">
+        <div class="description-container">
+         {% inline_rich_text field="column_field_group.description_rich_text" value="{{ module.column_field_group.description_rich_text }}" %}
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

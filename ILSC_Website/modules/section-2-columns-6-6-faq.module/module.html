@@ -1,0 +1,39 @@
+{% set num =  1 %}
+<section class="section section-faq bg-white-canvas section-fap-padding" id="content" style="background-color:rgba({{module.module_bg_color.color|convert_rgb }}, {{module.module_bg_color.opacity/100 }})">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				{% inline_rich_text field="main_text" value="{{ module.main_text }}" %}
+        {% if module.cta_group.hide_show_cta == "show"%}
+          <div class="btn-video-container">
+            <div><i class="far fa-play-circle"></i></div><div><a href="#ilscModal" data-toggle="modal" class="video-btn" src="{{ module.cta_group.link_url.url.href }}">{{ module.cta_group.link_url_text }}</a></div>
+          </div>
+        {% endif %}
+			</div>
+			<div class="col-md-6 accordion-container">
+				<div class="accordion left" id="accordionFaq-{{ module.accordion_id }}" style="background-color:rgba({{module.bg_color.color|convert_rgb }}, {{module.bg_color.opacity/100 }})">
+          {% for item in module.faq_items%}
+           
+            <div class="card" style="background-color:rgba({{ module.bg_color.color|convert_rgb }}, {{ module.bg_color.opacity/100 }})">
+              <div class="card-header" id="heading-{{num}}-{{ module.accordion_id }}" style="background-color:rgba({{ module.bg_color.color|convert_rgb }}, {{ module.bg_color.opacity/100 }})">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-{{num}}-{{ module.accordion_id }}" {% if num == 1 %} aria-expanded="true" {% else %} aria-expanded="false" {% endif %} aria-controls="collapse-{{num}}-{{ module.accordion_id }}">
+                    {{ item.question_text }}
+                  </button>
+                </h2>
+              </div>
+
+              <div id="collapse-{{num}}-{{ module.accordion_id }}" {% if num == 1 %} class="collapse show" {% else %} class="collapse" {% endif %} aria-labelledby="heading-{{num}}-{{ module.accordion_id }}" data-parent="#accordionFaq-{{ module.accordion_id }}">
+                <div class="card-body">
+                  {{ item.answer_text }}
+                </div>
+              </div>
+            </div>
+            
+            {% set num = num + 1%}
+          {% endfor %}
+        </div>
+			</div>
+		</div>
+	</div>
+</section>

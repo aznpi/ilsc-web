@@ -1,0 +1,76 @@
+<section class="section timeline-container bg-white-canvas">
+
+	
+	<div class="container container-fluid">
+	    
+	    <div class="row timeline-centered">
+	        <div class="col-md-12 timeline-title center">
+	            {% inline_rich_text field="title" value="{{ module.title }}" %}
+          </div>
+	        <div class="col-xs-12 col-xs-offset-1 col-sm-12 col-sm-offset-2">
+	        	<div class="stem-wrapper">
+						<div class="stem"></div>
+						<div class="stem-background"></div>
+					</div>
+				<div class="post-wrapper">	
+		            <ul class="timeline timeline-centered">
+		                <li class="timeline-item post hidden-tl" data-stem-color="blue">
+		                    <div class="timeline-info">
+		                        {% if module.time_tile_1.image_field.src %}
+                              <img src="{{ module.time_tile_1.image_field.src }}" alt="{{ module.time_tile_1.image_field.alt }}" loading="lazy">
+                            {% endif %}
+		                    </div>
+		                    <div class="timeline-marker">
+		                    	<img src="{{ module.icon_book }}" alt="Icon" />
+		                    </div>
+		                    <div class="timeline-content">
+		                      {% inline_rich_text field="time_tile_1.content" value="{{ module.time_tile_1.content }}" %}
+                        </div>
+		                </li>
+		                <li class="timeline-item post hidden-tl" data-stem-color="blue">
+		                    <div class="timeline-content">
+		                        {% inline_rich_text field="time_tile_2.content" value="{{ module.time_tile_2.content }}" %}
+                        </div>
+		                    <div class="timeline-marker">
+		                    	<img src="{{ module.icon_book }}" alt="Icon" />
+		                    </div>
+		                    <div class="timeline-info">
+		                       {% if module.time_tile_2.image_field.src %}
+                              <img src="{{ module.time_tile_2.image_field.src }}" alt="{{ module.time_tile_2.image_field.alt }}" loading="lazy">
+                            {% endif %}
+		                    </div>
+		                </li>
+		               
+		                <li class="timeline-item post hidden-tl" data-stem-color="blue">
+		                    <div class="timeline-info">
+		                        {% if module.time_tile_3.image_field.src %}
+                              <img src="{{ module.time_tile_3.image_field.src }}" alt="{{ module.time_tile_3.image_field.alt }}" loading="lazy">
+                            {% endif %}
+		                    </div>
+		                    <div class="timeline-marker">
+		                    	<img src="{{ module.icon_case }}" alt="Icon" />
+		                    </div>
+		                    <div class="timeline-content">
+		                        {% inline_rich_text field="time_tile_3.content" value="{{ module.time_tile_3.content }}" %}
+                        </div>
+		                </li>
+		                <li class="timeline-item post hidden-tl" data-stem-color="blue">
+		                    <div class="timeline-content">
+		                        {% inline_rich_text field="time_tile_4.content" value="{{ module.time_tile_4.content }}" %}
+                        </div>
+		                    <div class="timeline-marker">
+		                    	<img src="{{ module.icon_country }}" alt="Icon" />
+		                    </div>
+		                    <div class="timeline-info">
+		                        {% if module.time_tile_4.image_field.src %}
+                              <img src="{{ module.time_tile_4.image_field.src }}" alt="{{ module.time_tile_4.image_field.alt }}" loading="lazy">
+                            {% endif %}
+		                    </div>
+		                </li>
+		                
+		            </ul>
+	           </div>
+	        </div>
+	    </div>
+	</div>
+</section>

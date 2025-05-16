@@ -1,0 +1,96 @@
+<section id="content" class="tab-navigation-landing section bg-white-canvas">
+	<div class="divider"></div>
+	<div class="container">
+		<nav id="carousel-nav-container" class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand" href="#">{{ module.mobile_tab_text }}</a>
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav-Menu" aria-controls="navbarNav-Menu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+				<div class="navbar-collapse collapse" id="navbarNav-Menu" style="">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-1-tab" data-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-1" aria-selected="true">{{ module.tabs.tab_1.title }}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-2-tab" data-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-2" aria-selected="false">{{ module.tabs.tab_2.title }}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-3-tab" data-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-3" aria-selected="false">{{ module.tabs.tab_3.title }}</a>
+            </li>
+
+
+          </ul>
+      </div>
+    </nav>
+		<div class="tab-content" id="pills-tabContent">
+		  <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
+		  	<div class="content-container">
+				
+					<div class="row">
+						<div class="col-md-6">
+							{% inline_rich_text field="tabs.tab_1.text_content" value="{{ module.tabs.tab_1.text_content }}" %}
+              
+              {% if module.tabs.tab_1.hide_show_cta == "show"%}
+                <div class="a-link-container">
+                    <div><i class="{{ module.tabs.tab_1.cta_font_awesome_icon }}"></i></div><div><a href="#ilscModal" data-toggle="modal" class="video-btn" src="{{ module.tabs.tab_1.cta_url.href }}">{{ module.tabs.tab_1.cta_url_text }}</a></div>
+                </div>
+              {% endif %}
+              
+						</div>
+						<div class="col-md-6 image-container">
+							{% if module.tabs.tab_1.image_field.src %}
+                <img src="{{ module.tabs.tab_1.image_field.src }}" alt="{{ module.tabs.tab_1.image_field.alt }}" loading="lazy">
+              {% endif %}
+              {% if module.tabs.tab_1.hide_show_cta == "show" %}
+                {% if module.tabs.tab_1.cta_font_awesome_icon == "far fa-play-circle" %}
+                  <a href="#ilscModal" data-toggle="modal" class="icon-play" src="{{ module.tabs.tab_1.video_url.href }}" tabindex="0"><i class="far fa-play-circle on-image"></i></a>
+						    {% endif %}
+              {% endif %}
+            </div>
+					
+					</div>
+			</div>
+		  </div>
+		  <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
+			<div class="content-container">
+				
+					<div class="row">
+						<div class="col-md-6 school-details">
+							{% inline_rich_text field="tabs.tab_2.text_content" value="{{ module.tabs.tab_2.text_content }}" %}
+						</div>
+						<div class="col-md-6 image-container">
+							{% if module.tabs.tab_2.image_field.src %}
+                <img src="{{ module.tabs.tab_2.image_field.src }}" alt="{{ module.tabs.tab_2.image_field.alt }}" loading="lazy">
+              {% endif %}
+						</div>
+					
+					</div>
+			</div>
+		</div>
+		  <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab">
+				<div class="content-container">
+				
+					<div class="row">	
+						<div class="col-md-4 school-details">
+							<div class="desc-container">
+								{% inline_rich_text field="tabs.tab_3.text_content" value="{{ module.tabs.tab_3.text_content }}" %}
+							</div>
+							
+						</div>
+						<div class="col-md-8 image-container">
+							<div id="iframe-schedule-Sheet" class="iframe-border center-block-horiz">
+								 <div class="responsive-wrapper responsive-wrapper-wxh-550x2000">
+								   <iframe src="{{ module.tabs.tab_3.schedule_1_url.href }}" width="1000" height="600">
+								     {% inline_rich_text field="tabs.tab_3.iframe_error_text" value="{{ module.tabs.tab_3.iframe_error_text }}" %}
+								   </iframe>
+								 </div>
+							</div>
+							
+						</div>
+					</div>
+			</div>
+		</div>
+		
+		
+		</div>
+	</div>
+</section>
+

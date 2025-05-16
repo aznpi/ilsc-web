@@ -1,0 +1,535 @@
+/* line 1, ../sass/variables/variables.scss */
+:root {
+  --els-orange: #f58220;
+  --els-blue: #00aeef;
+  --els-yellow: #ffc72a;
+  --els-green: #4aad4d;
+  --els-red: #ed1944;
+  --els-purple: #865e9c;
+  --els-black: rgba(109, 110, 113, 0.7);
+  --els-black-2: rgba(230, 231, 232, 0.1);
+  --els-dark-grey: #353538;
+  --els-grey: #E6E7E8;
+  --width: 10vw;
+  --full-width: 10vw;
+  --angle: -4.3deg;
+  --magic-number: 0.1;
+  --skew-padding: calc(var(--width) * var(--magic-number));
+  --clip-padding: calc(var(--full-width) * var(--magic-number));
+}
+
+@media only screen and (max-width: 600px) {
+  /* line 8, ../sass/els_blog.scss */
+  .els-blog .els-blog-post .tag-container {
+    top: unset;
+  }
+  /* line 10, ../sass/els_blog.scss */
+  .els-blog .els-blog-post .tag-container:before {
+    right: 53%;
+  }
+  /* line 13, ../sass/els_blog.scss */
+  .els-blog .els-blog-post .tag-container .tag {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 19, ../sass/els_blog.scss */
+  .els-blog .els-blog-post .section-blog-body .share-container {
+    justify-content: space-evenly;
+    margin-top: 30px;
+  }
+}
+/* line 29, ../sass/els_blog.scss */
+.els-blog .time:before {
+  content: '\f017';
+  font-size: 18px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 500;
+  color: #CFD0D1;
+  margin-right: 10px;
+}
+/* line 38, ../sass/els_blog.scss */
+.els-blog .hs-search-field--open .hs-search-field__suggestions {
+  background: #FFF;
+  margin-top: 8px;
+  padding: 15px;
+  width: 80%;
+  margin: 0 auto;
+}
+/* line 47, ../sass/els_blog.scss */
+.els-blog .time-container ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+/* line 53, ../sass/els_blog.scss */
+.els-blog .time-container ul li.date {
+  font-family: Barlow;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  text-align: justified;
+  color: #353538;
+}
+/* line 62, ../sass/els_blog.scss */
+.els-blog .time-container ul li.time {
+  font-family: Barlow;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  text-align: justified;
+  color: #CFD0D1;
+}
+/* line 76, ../sass/els_blog.scss */
+.els-blog.els-blog-list #section-top-navigation, .els-blog.els-blog-post #section-top-navigation {
+  background-color: var(--els-orange);
+}
+/* line 79, ../sass/els_blog.scss */
+.els-blog.els-blog-list #section-top-navigation.fixed-top, .els-blog.els-blog-post #section-top-navigation.fixed-top {
+  position: relative;
+}
+/* line 82, ../sass/els_blog.scss */
+.els-blog.els-blog-list #section-top-navigation.fixed-top.sticky, .els-blog.els-blog-post #section-top-navigation.fixed-top.sticky {
+  background-color: #FFF;
+  position: fixed;
+}
+/* line 92, ../sass/els_blog.scss */
+.els-blog .section-hero .video-hero .video-btn {
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: 0;
+}
+/* line 104, ../sass/els_blog.scss */
+.els-blog .section-hero .video-hero .video-btn .play-icon {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+/* line 110, ../sass/els_blog.scss */
+.els-blog .section-hero .video-hero .video-btn .play-icon:before {
+  content: '\f144';
+  font-family: 'Font Awesome 5 Free';
+  font-size: 100px;
+  display: block;
+  font-weight: 500;
+  transition: .5s;
+}
+/* line 120, ../sass/els_blog.scss */
+.els-blog .section-hero .video-hero .video-btn .play-icon:hover:before {
+  opacity: .8;
+}
+/* line 129, ../sass/els_blog.scss */
+.els-blog .blog-pagination, .els-blog .blogPagination {
+  text-align: center;
+}
+/* line 132, ../sass/els_blog.scss */
+.els-blog .blogPagination {
+  margin-top: 30px;
+}
+/* line 135, ../sass/els_blog.scss */
+.els-blog .blog-pagination {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+/* line 144, ../sass/els_blog.scss */
+.els-blog .blog-pagination .blog-pagination-center {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+/* line 152, ../sass/els_blog.scss */
+.els-blog .blog-pagination a.active {
+  color: var(--els-orange);
+}
+/* line 157, ../sass/els_blog.scss */
+.els-blog .tag-container {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+}
+@media only screen and (max-width: 600px) {
+  /* line 157, ../sass/els_blog.scss */
+  .els-blog .tag-container {
+    top: 30px;
+  }
+}
+/* line 166, ../sass/els_blog.scss */
+.els-blog .tag-container:before {
+  content: '';
+  background-image: url(https://www.els.edu/hubfs/ELS/Website%20v2/template-resources/images/icon/icon_global_graduate.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+}
+/* line 179, ../sass/els_blog.scss */
+.els-blog .tag-container .tag {
+  padding: 15px 15px 15px 0;
+  width: 80%;
+  background-color: var(--els-orange);
+  clip-path: polygon(14% 0%, 100% 0, 100% 100%, 0 100%);
+  border-radius: 5px;
+  font-family: Barlow;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  text-align: right;
+  color: #FFF;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 600px) {
+  /* line 179, ../sass/els_blog.scss */
+  .els-blog .tag-container .tag {
+    font-size: 18px;
+  }
+}
+/* line 204, ../sass/els_blog.scss */
+.els-blog .section-blog-boxes.section-4-column .box-container > div {
+  margin-bottom: 30px;
+}
+/* line 207, ../sass/els_blog.scss */
+.els-blog .section-blog-boxes.section-4-column .box-container h3 {
+  font-family: Barlow;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-transform: uppercase;
+}
+/* line 218, ../sass/els_blog.scss */
+.els-blog .section-blog-boxes.section-4-column .box-container .description-container {
+  padding: 30px;
+}
+/* line 221, ../sass/els_blog.scss */
+.els-blog .section-blog-boxes.section-4-column .box-container .description-content {
+  font-family: Barlow;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+/* line 231, ../sass/els_blog.scss */
+.els-blog .section-blog-boxes.section-4-column .box-container .btn-container {
+  text-align: center;
+  margin-top: 50px;
+}
+/* line 235, ../sass/els_blog.scss */
+.els-blog .section-blog-boxes.section-4-column .box-container .btn-container .btn {
+  font-family: Barlow;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0.2em;
+  color: #FFF;
+}
+/* line 242, ../sass/els_blog.scss */
+.els-blog .section-blog-boxes.section-4-column .box-container .btn-container .btn:hover {
+  color: var(--els-dark-grey);
+}
+/* line 247, ../sass/els_blog.scss */
+.els-blog .section-blog-boxes.section-4-column .box-container .image-container {
+  height: 315px;
+  position: relative;
+}
+/* line 250, ../sass/els_blog.scss */
+.els-blog .section-blog-boxes.section-4-column .box-container .image-container .tag-container {
+  position: absolute;
+  bottom: 0;
+}
+@media only screen and (max-width: 600px) {
+  /* line 250, ../sass/els_blog.scss */
+  .els-blog .section-blog-boxes.section-4-column .box-container .image-container .tag-container {
+    top: unset;
+  }
+}
+/* line 256, ../sass/els_blog.scss */
+.els-blog .section-blog-boxes.section-4-column .box-container .image-container .tag-container:before {
+  width: 50px;
+  height: 50px;
+  left: 20px;
+  z-index: 2;
+  background-size: contain;
+}
+/* line 263, ../sass/els_blog.scss */
+.els-blog .section-blog-boxes.section-4-column .box-container .image-container .tag-container .tag {
+  padding: 15px 20px 15px 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.03em;
+  width: 100%;
+}
+/* line 277, ../sass/els_blog.scss */
+.els-blog .section-featured-blog {
+  margin-bottom: 100px;
+  padding-top: 0;
+}
+/* line 281, ../sass/els_blog.scss */
+.els-blog .section-featured-blog .row-title h2 {
+  font-family: Barlow;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-transform: capitalize;
+}
+/* line 292, ../sass/els_blog.scss */
+.els-blog .section-featured-blog .tag-container {
+  margin-bottom: 75px;
+}
+/* line 295, ../sass/els_blog.scss */
+.els-blog .section-featured-blog .tag-container:before {
+  content: '';
+  width: 80px;
+  height: 80px;
+  right: 60%;
+}
+/* line 302, ../sass/els_blog.scss */
+.els-blog .section-featured-blog .image-container {
+  object-fit: cover;
+  height: 100%;
+}
+/* line 306, ../sass/els_blog.scss */
+.els-blog .section-featured-blog .image-container:before {
+  content: '';
+  background-color: var(--els-yellow);
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+  width: 100%;
+  height: 110%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+/* line 318, ../sass/els_blog.scss */
+.els-blog .section-featured-blog .image-container img {
+  clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 85%);
+  border-radius: 0;
+  z-index: 2;
+  position: relative;
+  top: 25px;
+  width: 95%;
+  object-fit: cover;
+  height: 100%;
+}
+/* line 330, ../sass/els_blog.scss */
+.els-blog .section-featured-blog .blog-container.box-container {
+  padding: 0 25px;
+}
+/* line 332, ../sass/els_blog.scss */
+.els-blog .section-featured-blog .blog-container.box-container .title {
+  margin: 20px 0 50px;
+}
+/* line 335, ../sass/els_blog.scss */
+.els-blog .section-featured-blog .blog-container.box-container .title h2, .els-blog .section-featured-blog .blog-container.box-container .title h3 {
+  font-family: Barlow;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+/* line 347, ../sass/els_blog.scss */
+.els-blog .section-featured-blog .blog-container.box-container .description p {
+  font-family: Barlow;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  text-align: justified;
+}
+/* line 357, ../sass/els_blog.scss */
+.els-blog .section-featured-blog .blog-container.box-container .description a.more-link {
+  margin-top: 30px;
+  font-family: Barlow;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  float: right;
+  color: #353538;
+}
+/* line 376, ../sass/els_blog.scss */
+.els-blog .section-blog-navigation .dropdown {
+  margin: 0 auto 30px;
+  text-align: center;
+  width: fit-content;
+}
+/* line 381, ../sass/els_blog.scss */
+.els-blog .section-blog-navigation .dropdown:before {
+  content: '';
+  display: inline-block;
+  clip-path: polygon(0 0, 98% 1%, 100% 100%, 2% 100%);
+  z-index: -1;
+  width: 110%;
+  position: absolute;
+  left: -12px;
+  height: 50px;
+  background-color: #D9D9D9;
+  top: 5px;
+}
+/* line 394, ../sass/els_blog.scss */
+.els-blog .section-blog-navigation .dropdown button {
+  text-align: left;
+  padding: 10px 50px 10px 20px;
+}
+/* line 398, ../sass/els_blog.scss */
+.els-blog .section-blog-navigation .dropdown button:after {
+  top: 12px;
+  right: 10px;
+}
+/* line 404, ../sass/els_blog.scss */
+.els-blog .section-blog-navigation .dropdown button, .els-blog .section-blog-navigation .dropdown .dropdown-menu {
+  background-color: var(--els-orange);
+  color: #FFF;
+  font-family: Barlow;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  z-index: 3;
+}
+/* line 415, ../sass/els_blog.scss */
+.els-blog .section-blog-navigation .dropdown button li a, .els-blog .section-blog-navigation .dropdown .dropdown-menu li a {
+  color: #FFF;
+}
+/* line 417, ../sass/els_blog.scss */
+.els-blog .section-blog-navigation .dropdown button li a:hover, .els-blog .section-blog-navigation .dropdown .dropdown-menu li a:hover {
+  color: var(--els-dark-grey);
+}
+/* line 425, ../sass/els_blog.scss */
+.els-blog .section-blog-navigation .blog-nav-container {
+  margin-top: 50px;
+}
+@media only screen and (max-width: 600px) {
+  /* line 425, ../sass/els_blog.scss */
+  .els-blog .section-blog-navigation .blog-nav-container {
+    display: none;
+  }
+}
+/* line 432, ../sass/els_blog.scss */
+.els-blog .section-blog-navigation .blog-nav-container ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+/* line 440, ../sass/els_blog.scss */
+.els-blog .section-blog-navigation .blog-nav-container ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* line 445, ../sass/els_blog.scss */
+.els-blog .section-blog-navigation .blog-nav-container ul li a label {
+  margin-top: 20px;
+  text-align: center;
+  color: var(--els-orange);
+  font-family: Barlow;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+/* line 462, ../sass/els_blog.scss */
+.els-blog .section-search h1 {
+  color: #FFF;
+  text-align: center;
+}
+/* line 466, ../sass/els_blog.scss */
+.els-blog .section-search .hs-search-field {
+  width: 100%;
+  padding: 30px 0;
+  overflow: visible;
+}
+/* line 471, ../sass/els_blog.scss */
+.els-blog .section-search .hs-search-field .hs-search-field__bar {
+  width: 100%;
+  position: relative;
+}
+/* line 475, ../sass/els_blog.scss */
+.els-blog .section-search .hs-search-field .hs-search-field__bar:before {
+  content: '';
+  background-color: #FFF;
+  margin: 0 auto;
+  display: flex;
+  height: 90px;
+  width: 85%;
+  clip-path: polygon(0 0, 98% 1%, 100% 100%, 2% 100%);
+  z-index: -1;
+  top: 30px;
+  position: absolute;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 60%;
+}
+/* line 493, ../sass/els_blog.scss */
+.els-blog .section-search .hs-search-field .hs-search-field__bar form .input-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+/* line 499, ../sass/els_blog.scss */
+.els-blog .section-search .hs-search-field .hs-search-field__bar form .input-wrapper:before {
+  content: '\f002';
+  font-family: "Font Awesome 5 Free";
+  display: inline;
+  font-size: 50px;
+  color: #FFF;
+  position: absolute;
+  left: 30px;
+  top: 28px;
+  font-weight: 900;
+  z-index: 3;
+}
+/* line 512, ../sass/els_blog.scss */
+.els-blog .section-search .hs-search-field .hs-search-field__bar form .hs-search-field__input {
+  width: 100%;
+  background: #D9D9D9;
+  height: 90px;
+  border-radius: 5px;
+  border-color: transparent;
+  border: 0;
+  position: relative;
+  z-index: 2;
+  font-size: 30px;
+  padding-left: 100px;
+}
+/* line 524, ../sass/els_blog.scss */
+.els-blog .section-search .hs-search-field .hs-search-field__bar form .hs-search-field__input:focus {
+  outline: none;
+}

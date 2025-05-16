@@ -1,0 +1,89 @@
+<section class="section section-schedule price-list-nav {% if module.background_color.color == '#FFFFFF' %}bg-white-canvas{% endif %} price-list-grid" id="content" style="background-color:rgba({{module.background_color.color|convert_rgb }}, {{module.background_color.opacity/100 }})">
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}      
+      </div> 
+    </div>
+    <div class="row">
+      <div class="col-md-12 center">
+        <div class="price-list-drop">
+          <select onChange="goToSlide(this.value);">
+            <option>Choose Your Study Location</option>
+            {% for item in module.campus_group %}
+              <option value="{{loop.index0}}">{{item.campus_location}}</option>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="row slick-row-campus">
+      <div class="col-md-12 slider-wrapper">
+        <div class="box-slide">
+          
+          {% for item in module.campus_group %}
+           <div id="{{item.campus_location|replace(' ','')|upper}}">
+             <div class="row">
+                <div class="col-md-12 title center">
+                  <h2>
+                    {{item.campus_location}}
+                  </h2>
+                </div>
+              </div>
+             
+              <div class="row schedule-box">             
+                {% for item2 in item.schedule_field_group %}
+                <div>
+                 
+                    <div class="program-box-container">
+                      
+                      <div class="title center">
+                        <h3>
+                          {{item2.category_choice}} {{item2.item_choice}}
+                        </h3>
+                      </div>
+                      <div class="content-container">
+                        <div class="image-container" style="background-image:url({{ item2.image_field.src }});background-size:cover;background-repeat:no-repeat;width:100%;height:150px;"></div>  
+                        <div class="description-container">
+                          <div class="sub-description center">
+                              <span class="bold">{{item2.sub_description_text}}</span>
+                          </div>
+                          <div class="description">
+                            {% inline_rich_text field="schedule_description_rich_text" value="{{ item2.schedule_description_rich_text }}" %}
+                          </div>
+    
+                        </div>
+           
+                          <div class="price-table">
+                           
+                            {% for item3 in item2.time_block_field_group %}
+                            
+                              <div class="time-block {{ item3.time_block_choice }}" style="background-color:rgba({{item3.bg_color.color|convert_rgb }}, {{item3.bg_color.opacity/100 }})">
+                                {% inline_rich_text field="time_block_rich_text" value="{{ item3.time_block_rich_text }}" %}
+                               </div>
+                            {% endfor %}           
+                          </div>  
+                    </div>
+                    
+                  </div>
+                  <div class="footnote">
+                      {% inline_rich_text field="footnoe_rich_text" value="{{ item2.footnoe_rich_text }}" %}
+                    </div>
+                </div>
+       
+                {% endfor %}
+              </div>
+          
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>    
+  </div>
+</section>
+<script>
+  function goToSlide(slide){
+    $('.slick-row-campus .box-slide').slick('slickGoTo',slide,false);
+  }
+</script>

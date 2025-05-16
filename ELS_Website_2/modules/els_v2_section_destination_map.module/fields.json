@@ -1,0 +1,44 @@
+[ {
+  "id" : "b15e3f50-7d59-0521-2e03-34e1d6596c88",
+  "name" : "anchor_id",
+  "label" : "Anchor ID",
+  "inline_help_text" : "Enter anchor ID when using anchor nav. Do not use special characters or spaces.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Location"
+}, {
+  "id" : "5b86de63-b2f2-8783-e07e-7b01b81ac546",
+  "name" : "title_rich_text",
+  "label" : "Title Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Where to Find <span class=\"bold\">ELS Chicago</span></h2>"
+}, {
+  "id" : "26b4c9dd-25c4-1026-7b05-686d1b9cea19",
+  "name" : "description_rich_text",
+  "label" : "Description Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<p>ELS Chicago is located on the Campus of Dominican University:</p>\n<ul class=\"icon-list block-list\">\n<li class=\"address\">7900 West Division St,<br>Lewis HallRiver Forest,<br>Illinois, United States<br>60305</li>\n<li class=\"phone\">(773) 277-3799</li>\n<li class=\"email\">chi@ELS.edu</li>\n</ul>"
+}, {
+  "id" : "594e236a-57ed-b953-0b30-94b211a11e36",
+  "name" : "map_search_campus_name",
+  "label" : "Map Search Campus Name",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Chicago"
+} ]

@@ -1,0 +1,207 @@
+{
+  "company_menu.name" : {
+    "message" : "footer",
+    "description" : null,
+    "placeholders" : null
+  },
+  "copyright.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "copyright.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "copyright.label" : {
+    "message" : "Rich text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_group.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_group.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_group.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_group.link_text.default" : {
+    "message" : "About ILSC",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_group.link_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_group.link_text.label" : {
+    "message" : "Link Text 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_group.link_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_group.link_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_group.link_url.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_group.link_url.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "link_group.link_url.label" : {
+    "message" : "Link URL 1 ",
+    "description" : null,
+    "placeholders" : null
+  },
+  "logo.default.alt" : {
+    "message" : "logo_ilsc_vertical",
+    "description" : null,
+    "placeholders" : null
+  },
+  "logo.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "logo.label" : {
+    "message" : "logo",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "footer",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.name" : {
+    "message" : "footer",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_1.name" : {
+    "message" : "footer",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.name" : {
+    "message" : "footer",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.fb_link.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.fb_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.fb_link.label" : {
+    "message" : "fb_Link",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.follow_us_text.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.follow_us_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.follow_us_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.follow_us_text.label" : {
+    "message" : "Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.follow_us_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.follow_us_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.instagram_link.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.instagram_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.instagram_link.label" : {
+    "message" : "fb_Link copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.linkedin_link.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.linkedin_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.linkedin_link.label" : {
+    "message" : "youtube_Link copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.name" : {
+    "message" : "greystone_footer",
+    "description" : null,
+    "placeholders" : null
+  }
+}

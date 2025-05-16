@@ -1,0 +1,72 @@
+<section class="section-destination-nav section bg-white-canvas">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				{% inline_rich_text field="title" value="{{ module.title }}" %}
+			</div>
+		</div>
+		<div class="row row-1 div-target">
+		{% if module.canada.bg_image.src %}
+        <div class="col-md-4" onclick="location.href='{{ module.canada.url_field.href }}';">
+          <div class="pic">
+            <img class="lazy" data-src="{{ module.canada.bg_image.src }}" alt="{{ module.canada.bg_image.alt }}">
+            
+          </div>
+          <div class="link-container">
+            <div><img class="lazy" data-src="{{ module.canada.icon.src }}" alt="{{ module.canada.icon.alt }}" loading="lazy"><span>{{ module.canada.title }}</span></div>
+          </div>
+        </div>
+      {% endif %}
+      {% if module.australia.bg_image.src %}
+        <div class="col-md-4" onclick="location.href='{{ module.australia.url_field.href }}';">
+          <div class="pic">
+            <img class="lazy" data-src="{{ module.australia.bg_image.src }}" alt="{{ module.australia.bg_image.alt }}" loading="lazy">
+            
+          </div>
+            <div class="link-container">
+            <div><img class="lazy" data-src="{{ module.australia.icon.src }}" alt="{{ module.australia.icon.alt }}" loading="lazy"><span>{{ module.australia.title }}</span></div>
+          </div>
+        </div>
+      {% endif %}
+      {% if module.india.bg_image.src %}
+        <div class="col-md-4" onclick="location.href='{{ module.india.url_field.href }}';">
+           <div class="pic">
+            <img class="lazy" data-src="{{ module.india.bg_image.src }}" alt="{{ module.india.bg_image.alt }}" loading="lazy">
+             
+          </div>
+          <div class="link-container">
+            <div><img class="lazy" data-src="{{ module.india.icon.src }}" alt="{{ module.india.icon.alt }}" loading="lazy"><span>{{ module.india.title }}</span></div>
+          </div>
+        </div>
+      {% endif %}
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+			{% inline_rich_text field="title_city" value="{{ module.title_city }}" %}
+			</div>
+		</div>
+		<div class="row row-2 div-target">
+	
+				
+			    
+          {% for item in module.city_copy %}
+            <div class="col-md-3" onclick="location.href='{{ item.link_City.url.href }}';">
+              <div class="pic">
+
+                  <img class="lazy" data-src="{{ item.bg_city.src }}" alt="{{ item.bg_city.alt }}" loading="lazy">
+
+                
+              </div>
+              <div class="link-container">
+                <div>
+                  <span>{{ item.title_city }}</span><img class="icon-flag lazy" data-src="{{ item.icon.src }}" alt="{{ item.icon.alt }}" loading="lazy">
+                </div>
+              </div>
+            </div>
+          {% endfor %}  
+		
+		
+		</div>
+		
+	</div>
+</section>

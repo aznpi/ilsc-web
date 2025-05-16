@@ -1,0 +1,283 @@
+[ {
+  "id" : "3afaf60e-b51a-47f7-8962-da73f075fc3e",
+  "name" : "bg_color",
+  "label" : "BG Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#F5F8FA",
+    "opacity" : 100
+  }
+}, {
+  "id" : "45c27bd1-a522-caf8-0114-1e82be125a7d",
+  "name" : "title_accordion_rich_text",
+  "label" : "Title Accordion Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Program Courses</h2>"
+}, {
+  "id" : "88f7db91-ad05-6809-7cd3-2a10bd949a80",
+  "name" : "enable_bg_choice",
+  "label" : "Enable BG Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "enable", "Enable" ], [ "disable", "Disable" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "enable"
+}, {
+  "id" : "4e1e190b-e343-2268-71c0-e39623fa797f",
+  "name" : "bg_image_field",
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "88f7db91-ad05-6809-7cd3-2a10bd949a80",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "enable",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "src" : "https://www.ilsc.com/hubfs/bg_black_white_laptop.jpg",
+    "alt" : "bg_black_white_laptop",
+    "width" : 449,
+    "height" : 750,
+    "max_width" : 449,
+    "max_height" : 750
+  }
+}, {
+  "id" : "db76d888-272c-9d00-fb5e-929f424b912b",
+  "name" : "enable_description_text_choice",
+  "label" : "Enable Description Text Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "enable", "Enable" ], [ "disable", "Disable" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "disable"
+}, {
+  "id" : "93357eab-3787-e3c8-2f5b-09ced218aa4c",
+  "name" : "description_rich_text",
+  "label" : "Description Rich text",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "db76d888-272c-9d00-fb5e-929f424b912b",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "enable",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2><span>Types of Roles Our Students Are Looking For</span><span></span></h2>\n<p><span>At Greystone College, co-op and practicum positions are part of students’ overall study program. They are required for successful graduation, and must be related to the program of study. We offer co-op programs in the fields of Business, Hospitality and Digital Marketing, and our students are equipped with current skills and knowledge to support your business. <br><br>Many of our students are also looking for off-campus work during their studies. If you’re role isn’t a fit with our listed positions it still might be suitable for casual work. Feel free to send us your posting. </span></p>"
+}, {
+  "id" : "58952519-4bf3-d47f-6613-4d49e36acc60",
+  "name" : "accordion_id",
+  "label" : "Accordion ID",
+  "inline_help_text" : "If you have multiple accordions on the same page, please choose a unique letter to distinguish each accordions.",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "a", "A" ], [ "b", "B" ], [ "c", "C" ], [ "d", "D" ], [ "e", "E" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "a"
+}, {
+  "id" : "2fc85945-bcce-86ea-00a0-03fdbaac7f0f",
+  "name" : "show_only_5",
+  "label" : "Show Only 5",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "enable", "Show" ], [ "disable", "Hide" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "7a38f179-a74e-c631-2481-27d3c370c6e8",
+  "name" : "faq_items",
+  "label" : "FAQ items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 99,
+    "sorting_label_field" : "9f524bf6-3990-bde8-2572-f4c9aba5210d",
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "9f524bf6-3990-bde8-2572-f4c9aba5210d",
+    "name" : "question_text",
+    "label" : "Question Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Customer Relationship Management"
+  }, {
+    "id" : "4519b574-5c77-7c61-bc25-89b656bd8d37",
+    "name" : "answer_text",
+    "label" : "Answer Text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<p><span>This course deals with the importance of customer expectations and how CRM influences customer experiences. It identifies how customers’ experience and perception of an organization can be beneficial or detrimental to its success. In this course of study students will gain objective knowledge about what positively and negatively affects customers’ experience. </span></p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "question_text" : "Customer Relationship Management",
+    "answer_text" : "<p><span>This course deals with the importance of customer expectations and how CRM influences customer experiences. It identifies how customers’ experience and perception of an organization can be beneficial or detrimental to its success. In this course of study students will gain objective knowledge about what positively and negatively affects customers’ experience. </span></p>"
+  }, {
+    "question_text" : "Customer Relationship Management",
+    "answer_text" : "<p><span>This course deals with the importance of customer expectations and how CRM influences customer experiences. It identifies how customers’ experience and perception of an organization can be beneficial or detrimental to its success. In this course of study students will gain objective knowledge about what positively and negatively affects customers’ experience. </span></p>"
+  }, {
+    "question_text" : "Customer Relationship Management",
+    "answer_text" : "<p><span>This course deals with the importance of customer expectations and how CRM influences customer experiences. It identifies how customers’ experience and perception of an organization can be beneficial or detrimental to its success. In this course of study students will gain objective knowledge about what positively and negatively affects customers’ experience. </span></p>"
+  }, {
+    "question_text" : "Customer Relationship Management",
+    "answer_text" : "<p><span>This course deals with the importance of customer expectations and how CRM influences customer experiences. It identifies how customers’ experience and perception of an organization can be beneficial or detrimental to its success. In this course of study students will gain objective knowledge about what positively and negatively affects customers’ experience. </span></p>"
+  }, {
+    "question_text" : "Customer Relationship Management",
+    "answer_text" : "<p><span>This course deals with the importance of customer expectations and how CRM influences customer experiences. It identifies how customers’ experience and perception of an organization can be beneficial or detrimental to its success. In this course of study students will gain objective knowledge about what positively and negatively affects customers’ experience. </span></p>"
+  } ]
+}, {
+  "id" : "4b3b05bf-f115-86f7-82c5-ac28f3c63e85",
+  "name" : "button_show_more_text",
+  "label" : "Button Show More text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Show More"
+}, {
+  "id" : "1165ff32-5579-993b-2d25-db411e78ddf5",
+  "name" : "accordion_footnote_rich_text",
+  "label" : "Accordion FootNote Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null
+}, {
+  "id" : "05e4ca3c-19bc-e052-5b4e-0efe1d830831",
+  "name" : "cta_field_group",
+  "label" : "CTA Field group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "77247443-ee2f-c3ff-9d53-4fc0d179a4d7",
+    "name" : "hide_show_cta",
+    "label" : "Hide/Show CTA",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "show"
+  }, {
+    "id" : "05eebf6a-8c25-f37f-ff79-df4f4f8689a5",
+    "name" : "link_field",
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "77247443-ee2f-c3ff-9d53-4fc0d179a4d7",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "show",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "d7dbb1f6-8801-06f8-745b-671d15e66e86",
+    "name" : "text_field",
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "77247443-ee2f-c3ff-9d53-4fc0d179a4d7",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "show",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "LEARN MORE ABOUT WORK AND STUDY"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "hide_show_cta" : "show",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "text_field" : "LEARN MORE ABOUT WORK AND STUDY"
+  }
+} ]

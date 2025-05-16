@@ -1,0 +1,660 @@
+[ {
+  "id" : "50fa8c6c-0d6c-c331-ede6-8c32bd75a55d",
+  "name" : "team_group",
+  "label" : "Team group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 25,
+    "sorting_label_field" : "40ca191b-69bc-7a7e-fc5b-0dc3252be9c3",
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "40ca191b-69bc-7a7e-fc5b-0dc3252be9c3",
+    "name" : "team_name",
+    "label" : "Team Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "EXECUTIVE TEAM"
+  }, {
+    "id" : "3e1c7651-3fc7-72be-fe35-39ab2e47074f",
+    "name" : "team_member",
+    "label" : "Team Member",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 99,
+      "sorting_label_field" : "3162c44d-a072-f6ba-3b78-b430b78d8b91",
+      "default" : 5
+    },
+    "children" : [ {
+      "id" : "ac2714a4-4779-5a32-ac15-5e167f7fc365",
+      "name" : "headshot_image",
+      "label" : "Headshot Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+        "alt" : "img_paul_schroeder",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      }
+    }, {
+      "id" : "07ae8750-a521-2993-8c70-420587d7184b",
+      "name" : "popup_image",
+      "label" : "PopUp Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/photo_jason_2.jpg",
+        "alt" : "photo_jason_2",
+        "width" : 540,
+        "height" : 188,
+        "max_width" : 540,
+        "max_height" : 188
+      }
+    }, {
+      "id" : "3162c44d-a072-f6ba-3b78-b430b78d8b91",
+      "name" : "member_full_name",
+      "label" : "Member Full Name",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Paul Schroeder"
+    }, {
+      "id" : "203fea9f-c7b9-1af7-df5f-c4455ca34abc",
+      "name" : "member_position",
+      "label" : "Team Member Position",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Chief Executive Officer"
+    }, {
+      "id" : "f97b4051-4250-0db5-452d-c81a7f56324c",
+      "name" : "team_member_description",
+      "label" : "Team Member Description",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<p><span>“I’ve had many transformative experiences in my life, but one that stands out is getting involved in the annual Indo-Canadian hockey tournament in the town of Leh, Ladakh, India while I was School Director in New Delhi. Thinking back to my own youth, growing up with this traditional Canadian sport, it was amazing to see the familiar joy it brought to local kids in Ladakh, to be part of creating this cultural bridge and inspiring ILSC schools to participate in donating hockey equipment to this amazing project.”</span></p>"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ {
+      "headshot_image" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+        "alt" : "img_paul_schroeder",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "popup_image" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/photo_jason_2.jpg",
+        "alt" : "photo_jason_2",
+        "width" : 540,
+        "height" : 188,
+        "max_width" : 540,
+        "max_height" : 188
+      },
+      "member_full_name" : "Paul Schroeder",
+      "member_position" : "Chief Executive Officer",
+      "team_member_description" : "<p><span>“I’ve had many transformative experiences in my life, but one that stands out is getting involved in the annual Indo-Canadian hockey tournament in the town of Leh, Ladakh, India while I was School Director in New Delhi. Thinking back to my own youth, growing up with this traditional Canadian sport, it was amazing to see the familiar joy it brought to local kids in Ladakh, to be part of creating this cultural bridge and inspiring ILSC schools to participate in donating hockey equipment to this amazing project.”</span></p>"
+    }, {
+      "headshot_image" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+        "alt" : "img_paul_schroeder",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "popup_image" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/photo_jason_2.jpg",
+        "alt" : "photo_jason_2",
+        "width" : 540,
+        "height" : 188,
+        "max_width" : 540,
+        "max_height" : 188
+      },
+      "member_full_name" : "Paul Schroeder",
+      "member_position" : "Chief Executive Officer",
+      "team_member_description" : "<p><span>“I’ve had many transformative experiences in my life, but one that stands out is getting involved in the annual Indo-Canadian hockey tournament in the town of Leh, Ladakh, India while I was School Director in New Delhi. Thinking back to my own youth, growing up with this traditional Canadian sport, it was amazing to see the familiar joy it brought to local kids in Ladakh, to be part of creating this cultural bridge and inspiring ILSC schools to participate in donating hockey equipment to this amazing project.”</span></p>"
+    }, {
+      "headshot_image" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+        "alt" : "img_paul_schroeder",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "popup_image" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/photo_jason_2.jpg",
+        "alt" : "photo_jason_2",
+        "width" : 540,
+        "height" : 188,
+        "max_width" : 540,
+        "max_height" : 188
+      },
+      "member_full_name" : "Paul Schroeder",
+      "member_position" : "Chief Executive Officer",
+      "team_member_description" : "<p><span>“I’ve had many transformative experiences in my life, but one that stands out is getting involved in the annual Indo-Canadian hockey tournament in the town of Leh, Ladakh, India while I was School Director in New Delhi. Thinking back to my own youth, growing up with this traditional Canadian sport, it was amazing to see the familiar joy it brought to local kids in Ladakh, to be part of creating this cultural bridge and inspiring ILSC schools to participate in donating hockey equipment to this amazing project.”</span></p>"
+    }, {
+      "headshot_image" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+        "alt" : "img_paul_schroeder",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "popup_image" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/photo_jason_2.jpg",
+        "alt" : "photo_jason_2",
+        "width" : 540,
+        "height" : 188,
+        "max_width" : 540,
+        "max_height" : 188
+      },
+      "member_full_name" : "Paul Schroeder",
+      "member_position" : "Chief Executive Officer",
+      "team_member_description" : "<p><span>“I’ve had many transformative experiences in my life, but one that stands out is getting involved in the annual Indo-Canadian hockey tournament in the town of Leh, Ladakh, India while I was School Director in New Delhi. Thinking back to my own youth, growing up with this traditional Canadian sport, it was amazing to see the familiar joy it brought to local kids in Ladakh, to be part of creating this cultural bridge and inspiring ILSC schools to participate in donating hockey equipment to this amazing project.”</span></p>"
+    }, {
+      "headshot_image" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+        "alt" : "img_paul_schroeder",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "popup_image" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/photo_jason_2.jpg",
+        "alt" : "photo_jason_2",
+        "width" : 540,
+        "height" : 188,
+        "max_width" : 540,
+        "max_height" : 188
+      },
+      "member_full_name" : "Paul Schroeder",
+      "member_position" : "Chief Executive Officer",
+      "team_member_description" : "<p><span>“I’ve had many transformative experiences in my life, but one that stands out is getting involved in the annual Indo-Canadian hockey tournament in the town of Leh, Ladakh, India while I was School Director in New Delhi. Thinking back to my own youth, growing up with this traditional Canadian sport, it was amazing to see the familiar joy it brought to local kids in Ladakh, to be part of creating this cultural bridge and inspiring ILSC schools to participate in donating hockey equipment to this amazing project.”</span></p>"
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "team_name" : "EXECUTIVE TEAM",
+    "team_member" : [ {
+      "headshot_image" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+        "alt" : "img_paul_schroeder",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "popup_image" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/photo_jason_2.jpg",
+        "alt" : "photo_jason_2",
+        "width" : 540,
+        "height" : 188,
+        "max_width" : 540,
+        "max_height" : 188
+      },
+      "member_full_name" : "Paul Schroeder",
+      "member_position" : "Chief Executive Officer",
+      "team_member_description" : "<p><span>“I’ve had many transformative experiences in my life, but one that stands out is getting involved in the annual Indo-Canadian hockey tournament in the town of Leh, Ladakh, India while I was School Director in New Delhi. Thinking back to my own youth, growing up with this traditional Canadian sport, it was amazing to see the familiar joy it brought to local kids in Ladakh, to be part of creating this cultural bridge and inspiring ILSC schools to participate in donating hockey equipment to this amazing project.”</span></p>"
+    }, {
+      "headshot_image" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+        "alt" : "img_paul_schroeder",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "popup_image" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/photo_jason_2.jpg",
+        "alt" : "photo_jason_2",
+        "width" : 540,
+        "height" : 188,
+        "max_width" : 540,
+        "max_height" : 188
+      },
+      "member_full_name" : "Paul Schroeder",
+      "member_position" : "Chief Executive Officer",
+      "team_member_description" : "<p><span>“I’ve had many transformative experiences in my life, but one that stands out is getting involved in the annual Indo-Canadian hockey tournament in the town of Leh, Ladakh, India while I was School Director in New Delhi. Thinking back to my own youth, growing up with this traditional Canadian sport, it was amazing to see the familiar joy it brought to local kids in Ladakh, to be part of creating this cultural bridge and inspiring ILSC schools to participate in donating hockey equipment to this amazing project.”</span></p>"
+    }, {
+      "headshot_image" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+        "alt" : "img_paul_schroeder",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "popup_image" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/photo_jason_2.jpg",
+        "alt" : "photo_jason_2",
+        "width" : 540,
+        "height" : 188,
+        "max_width" : 540,
+        "max_height" : 188
+      },
+      "member_full_name" : "Paul Schroeder",
+      "member_position" : "Chief Executive Officer",
+      "team_member_description" : "<p><span>“I’ve had many transformative experiences in my life, but one that stands out is getting involved in the annual Indo-Canadian hockey tournament in the town of Leh, Ladakh, India while I was School Director in New Delhi. Thinking back to my own youth, growing up with this traditional Canadian sport, it was amazing to see the familiar joy it brought to local kids in Ladakh, to be part of creating this cultural bridge and inspiring ILSC schools to participate in donating hockey equipment to this amazing project.”</span></p>"
+    }, {
+      "headshot_image" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+        "alt" : "img_paul_schroeder",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "popup_image" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/photo_jason_2.jpg",
+        "alt" : "photo_jason_2",
+        "width" : 540,
+        "height" : 188,
+        "max_width" : 540,
+        "max_height" : 188
+      },
+      "member_full_name" : "Paul Schroeder",
+      "member_position" : "Chief Executive Officer",
+      "team_member_description" : "<p><span>“I’ve had many transformative experiences in my life, but one that stands out is getting involved in the annual Indo-Canadian hockey tournament in the town of Leh, Ladakh, India while I was School Director in New Delhi. Thinking back to my own youth, growing up with this traditional Canadian sport, it was amazing to see the familiar joy it brought to local kids in Ladakh, to be part of creating this cultural bridge and inspiring ILSC schools to participate in donating hockey equipment to this amazing project.”</span></p>"
+    }, {
+      "headshot_image" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+        "alt" : "img_paul_schroeder",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "popup_image" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/photo_jason_2.jpg",
+        "alt" : "photo_jason_2",
+        "width" : 540,
+        "height" : 188,
+        "max_width" : 540,
+        "max_height" : 188
+      },
+      "member_full_name" : "Paul Schroeder",
+      "member_position" : "Chief Executive Officer",
+      "team_member_description" : "<p><span>“I’ve had many transformative experiences in my life, but one that stands out is getting involved in the annual Indo-Canadian hockey tournament in the town of Leh, Ladakh, India while I was School Director in New Delhi. Thinking back to my own youth, growing up with this traditional Canadian sport, it was amazing to see the familiar joy it brought to local kids in Ladakh, to be part of creating this cultural bridge and inspiring ILSC schools to participate in donating hockey equipment to this amazing project.”</span></p>"
+    } ]
+  }, {
+    "team_name" : "EXECUTIVE TEAM",
+    "team_member" : [ {
+      "headshot_image" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+        "alt" : "img_paul_schroeder",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "popup_image" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/photo_jason_2.jpg",
+        "alt" : "photo_jason_2",
+        "width" : 540,
+        "height" : 188,
+        "max_width" : 540,
+        "max_height" : 188
+      },
+      "member_full_name" : "Paul Schroeder",
+      "member_position" : "Chief Executive Officer",
+      "team_member_description" : "<p><span>“I’ve had many transformative experiences in my life, but one that stands out is getting involved in the annual Indo-Canadian hockey tournament in the town of Leh, Ladakh, India while I was School Director in New Delhi. Thinking back to my own youth, growing up with this traditional Canadian sport, it was amazing to see the familiar joy it brought to local kids in Ladakh, to be part of creating this cultural bridge and inspiring ILSC schools to participate in donating hockey equipment to this amazing project.”</span></p>"
+    }, {
+      "headshot_image" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+        "alt" : "img_paul_schroeder",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "popup_image" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/photo_jason_2.jpg",
+        "alt" : "photo_jason_2",
+        "width" : 540,
+        "height" : 188,
+        "max_width" : 540,
+        "max_height" : 188
+      },
+      "member_full_name" : "Paul Schroeder",
+      "member_position" : "Chief Executive Officer",
+      "team_member_description" : "<p><span>“I’ve had many transformative experiences in my life, but one that stands out is getting involved in the annual Indo-Canadian hockey tournament in the town of Leh, Ladakh, India while I was School Director in New Delhi. Thinking back to my own youth, growing up with this traditional Canadian sport, it was amazing to see the familiar joy it brought to local kids in Ladakh, to be part of creating this cultural bridge and inspiring ILSC schools to participate in donating hockey equipment to this amazing project.”</span></p>"
+    }, {
+      "headshot_image" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+        "alt" : "img_paul_schroeder",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "popup_image" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/photo_jason_2.jpg",
+        "alt" : "photo_jason_2",
+        "width" : 540,
+        "height" : 188,
+        "max_width" : 540,
+        "max_height" : 188
+      },
+      "member_full_name" : "Paul Schroeder",
+      "member_position" : "Chief Executive Officer",
+      "team_member_description" : "<p><span>“I’ve had many transformative experiences in my life, but one that stands out is getting involved in the annual Indo-Canadian hockey tournament in the town of Leh, Ladakh, India while I was School Director in New Delhi. Thinking back to my own youth, growing up with this traditional Canadian sport, it was amazing to see the familiar joy it brought to local kids in Ladakh, to be part of creating this cultural bridge and inspiring ILSC schools to participate in donating hockey equipment to this amazing project.”</span></p>"
+    }, {
+      "headshot_image" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+        "alt" : "img_paul_schroeder",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "popup_image" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/photo_jason_2.jpg",
+        "alt" : "photo_jason_2",
+        "width" : 540,
+        "height" : 188,
+        "max_width" : 540,
+        "max_height" : 188
+      },
+      "member_full_name" : "Paul Schroeder",
+      "member_position" : "Chief Executive Officer",
+      "team_member_description" : "<p><span>“I’ve had many transformative experiences in my life, but one that stands out is getting involved in the annual Indo-Canadian hockey tournament in the town of Leh, Ladakh, India while I was School Director in New Delhi. Thinking back to my own youth, growing up with this traditional Canadian sport, it was amazing to see the familiar joy it brought to local kids in Ladakh, to be part of creating this cultural bridge and inspiring ILSC schools to participate in donating hockey equipment to this amazing project.”</span></p>"
+    }, {
+      "headshot_image" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+        "alt" : "img_paul_schroeder",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "popup_image" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/photo_jason_2.jpg",
+        "alt" : "photo_jason_2",
+        "width" : 540,
+        "height" : 188,
+        "max_width" : 540,
+        "max_height" : 188
+      },
+      "member_full_name" : "Paul Schroeder",
+      "member_position" : "Chief Executive Officer",
+      "team_member_description" : "<p><span>“I’ve had many transformative experiences in my life, but one that stands out is getting involved in the annual Indo-Canadian hockey tournament in the town of Leh, Ladakh, India while I was School Director in New Delhi. Thinking back to my own youth, growing up with this traditional Canadian sport, it was amazing to see the familiar joy it brought to local kids in Ladakh, to be part of creating this cultural bridge and inspiring ILSC schools to participate in donating hockey equipment to this amazing project.”</span></p>"
+    } ]
+  }, {
+    "team_name" : "EXECUTIVE TEAM",
+    "team_member" : [ {
+      "headshot_image" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+        "alt" : "img_paul_schroeder",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "popup_image" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/photo_jason_2.jpg",
+        "alt" : "photo_jason_2",
+        "width" : 540,
+        "height" : 188,
+        "max_width" : 540,
+        "max_height" : 188
+      },
+      "member_full_name" : "Paul Schroeder",
+      "member_position" : "Chief Executive Officer",
+      "team_member_description" : "<p><span>“I’ve had many transformative experiences in my life, but one that stands out is getting involved in the annual Indo-Canadian hockey tournament in the town of Leh, Ladakh, India while I was School Director in New Delhi. Thinking back to my own youth, growing up with this traditional Canadian sport, it was amazing to see the familiar joy it brought to local kids in Ladakh, to be part of creating this cultural bridge and inspiring ILSC schools to participate in donating hockey equipment to this amazing project.”</span></p>"
+    }, {
+      "headshot_image" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+        "alt" : "img_paul_schroeder",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "popup_image" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/photo_jason_2.jpg",
+        "alt" : "photo_jason_2",
+        "width" : 540,
+        "height" : 188,
+        "max_width" : 540,
+        "max_height" : 188
+      },
+      "member_full_name" : "Paul Schroeder",
+      "member_position" : "Chief Executive Officer",
+      "team_member_description" : "<p><span>“I’ve had many transformative experiences in my life, but one that stands out is getting involved in the annual Indo-Canadian hockey tournament in the town of Leh, Ladakh, India while I was School Director in New Delhi. Thinking back to my own youth, growing up with this traditional Canadian sport, it was amazing to see the familiar joy it brought to local kids in Ladakh, to be part of creating this cultural bridge and inspiring ILSC schools to participate in donating hockey equipment to this amazing project.”</span></p>"
+    }, {
+      "headshot_image" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+        "alt" : "img_paul_schroeder",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "popup_image" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/photo_jason_2.jpg",
+        "alt" : "photo_jason_2",
+        "width" : 540,
+        "height" : 188,
+        "max_width" : 540,
+        "max_height" : 188
+      },
+      "member_full_name" : "Paul Schroeder",
+      "member_position" : "Chief Executive Officer",
+      "team_member_description" : "<p><span>“I’ve had many transformative experiences in my life, but one that stands out is getting involved in the annual Indo-Canadian hockey tournament in the town of Leh, Ladakh, India while I was School Director in New Delhi. Thinking back to my own youth, growing up with this traditional Canadian sport, it was amazing to see the familiar joy it brought to local kids in Ladakh, to be part of creating this cultural bridge and inspiring ILSC schools to participate in donating hockey equipment to this amazing project.”</span></p>"
+    }, {
+      "headshot_image" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+        "alt" : "img_paul_schroeder",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "popup_image" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/photo_jason_2.jpg",
+        "alt" : "photo_jason_2",
+        "width" : 540,
+        "height" : 188,
+        "max_width" : 540,
+        "max_height" : 188
+      },
+      "member_full_name" : "Paul Schroeder",
+      "member_position" : "Chief Executive Officer",
+      "team_member_description" : "<p><span>“I’ve had many transformative experiences in my life, but one that stands out is getting involved in the annual Indo-Canadian hockey tournament in the town of Leh, Ladakh, India while I was School Director in New Delhi. Thinking back to my own youth, growing up with this traditional Canadian sport, it was amazing to see the familiar joy it brought to local kids in Ladakh, to be part of creating this cultural bridge and inspiring ILSC schools to participate in donating hockey equipment to this amazing project.”</span></p>"
+    }, {
+      "headshot_image" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+        "alt" : "img_paul_schroeder",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "popup_image" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/photo_jason_2.jpg",
+        "alt" : "photo_jason_2",
+        "width" : 540,
+        "height" : 188,
+        "max_width" : 540,
+        "max_height" : 188
+      },
+      "member_full_name" : "Paul Schroeder",
+      "member_position" : "Chief Executive Officer",
+      "team_member_description" : "<p><span>“I’ve had many transformative experiences in my life, but one that stands out is getting involved in the annual Indo-Canadian hockey tournament in the town of Leh, Ladakh, India while I was School Director in New Delhi. Thinking back to my own youth, growing up with this traditional Canadian sport, it was amazing to see the familiar joy it brought to local kids in Ladakh, to be part of creating this cultural bridge and inspiring ILSC schools to participate in donating hockey equipment to this amazing project.”</span></p>"
+    } ]
+  }, {
+    "team_name" : "EXECUTIVE TEAM",
+    "team_member" : [ {
+      "headshot_image" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+        "alt" : "img_paul_schroeder",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "popup_image" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/photo_jason_2.jpg",
+        "alt" : "photo_jason_2",
+        "width" : 540,
+        "height" : 188,
+        "max_width" : 540,
+        "max_height" : 188
+      },
+      "member_full_name" : "Paul Schroeder",
+      "member_position" : "Chief Executive Officer",
+      "team_member_description" : "<p><span>“I’ve had many transformative experiences in my life, but one that stands out is getting involved in the annual Indo-Canadian hockey tournament in the town of Leh, Ladakh, India while I was School Director in New Delhi. Thinking back to my own youth, growing up with this traditional Canadian sport, it was amazing to see the familiar joy it brought to local kids in Ladakh, to be part of creating this cultural bridge and inspiring ILSC schools to participate in donating hockey equipment to this amazing project.”</span></p>"
+    }, {
+      "headshot_image" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+        "alt" : "img_paul_schroeder",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "popup_image" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/photo_jason_2.jpg",
+        "alt" : "photo_jason_2",
+        "width" : 540,
+        "height" : 188,
+        "max_width" : 540,
+        "max_height" : 188
+      },
+      "member_full_name" : "Paul Schroeder",
+      "member_position" : "Chief Executive Officer",
+      "team_member_description" : "<p><span>“I’ve had many transformative experiences in my life, but one that stands out is getting involved in the annual Indo-Canadian hockey tournament in the town of Leh, Ladakh, India while I was School Director in New Delhi. Thinking back to my own youth, growing up with this traditional Canadian sport, it was amazing to see the familiar joy it brought to local kids in Ladakh, to be part of creating this cultural bridge and inspiring ILSC schools to participate in donating hockey equipment to this amazing project.”</span></p>"
+    }, {
+      "headshot_image" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+        "alt" : "img_paul_schroeder",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "popup_image" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/photo_jason_2.jpg",
+        "alt" : "photo_jason_2",
+        "width" : 540,
+        "height" : 188,
+        "max_width" : 540,
+        "max_height" : 188
+      },
+      "member_full_name" : "Paul Schroeder",
+      "member_position" : "Chief Executive Officer",
+      "team_member_description" : "<p><span>“I’ve had many transformative experiences in my life, but one that stands out is getting involved in the annual Indo-Canadian hockey tournament in the town of Leh, Ladakh, India while I was School Director in New Delhi. Thinking back to my own youth, growing up with this traditional Canadian sport, it was amazing to see the familiar joy it brought to local kids in Ladakh, to be part of creating this cultural bridge and inspiring ILSC schools to participate in donating hockey equipment to this amazing project.”</span></p>"
+    }, {
+      "headshot_image" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+        "alt" : "img_paul_schroeder",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "popup_image" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/photo_jason_2.jpg",
+        "alt" : "photo_jason_2",
+        "width" : 540,
+        "height" : 188,
+        "max_width" : 540,
+        "max_height" : 188
+      },
+      "member_full_name" : "Paul Schroeder",
+      "member_position" : "Chief Executive Officer",
+      "team_member_description" : "<p><span>“I’ve had many transformative experiences in my life, but one that stands out is getting involved in the annual Indo-Canadian hockey tournament in the town of Leh, Ladakh, India while I was School Director in New Delhi. Thinking back to my own youth, growing up with this traditional Canadian sport, it was amazing to see the familiar joy it brought to local kids in Ladakh, to be part of creating this cultural bridge and inspiring ILSC schools to participate in donating hockey equipment to this amazing project.”</span></p>"
+    }, {
+      "headshot_image" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_paul_schroeder.png",
+        "alt" : "img_paul_schroeder",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "popup_image" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/photo_jason_2.jpg",
+        "alt" : "photo_jason_2",
+        "width" : 540,
+        "height" : 188,
+        "max_width" : 540,
+        "max_height" : 188
+      },
+      "member_full_name" : "Paul Schroeder",
+      "member_position" : "Chief Executive Officer",
+      "team_member_description" : "<p><span>“I’ve had many transformative experiences in my life, but one that stands out is getting involved in the annual Indo-Canadian hockey tournament in the town of Leh, Ladakh, India while I was School Director in New Delhi. Thinking back to my own youth, growing up with this traditional Canadian sport, it was amazing to see the familiar joy it brought to local kids in Ladakh, to be part of creating this cultural bridge and inspiring ILSC schools to participate in donating hockey equipment to this amazing project.”</span></p>"
+    } ]
+  } ]
+} ]

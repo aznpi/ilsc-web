@@ -1,0 +1,58 @@
+{% set queryparam = "" %}
+{% set queryparam = queryparam ~ "&campus__in=" +module.city_choice|urlencode %}
+
+
+<section class="section-1-columns-6-6 section bg-white-canvas">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			{% inline_rich_text field="title" value="{{ module.title }}" %}
+      </div>
+		</div>
+		<div class="row">
+      <div class="col-md-12">
+        <div class="slider-wrapper">
+          <div class="program-slide">
+            {% for item in module.program_area_box %}
+              {% set program = hubdb_table_rows(4690691,queryparam ~ "&program_areas__in="+item.program_area_choice|urlencode+"&enable_disable__eq=1&orderBy=program_name") %}
+              {% if program|length > 0 %}
+                <div> 
+                    <div class="box-container">
+                      {% if item.image_field.src %}
+                        {% if item.image_field.size_type == 'auto' %}
+                          {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+                        {% elif item.image_field.size_type == 'auto_custom_max' %}
+                          {% set sizeAttrs = 'width="{{ item.image_field.max_width }}" height="{{ item.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+                        {% endif %}
+                         {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' : '' %}
+                        <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                      {% endif %}
+                      <div class="box-content">
+                        {% inline_rich_text field="text_content" value="{{ item.text_content }}" %}
+                        <div class="btn-group dropup">
+                          <button class="btn btn-gray-outline dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          {% inline_text field="dropdown_default_text" value="{{ item.dropdown_default_text }}" %}
+                          </button>
+                          {% if program|length > 5 %}
+                            {% set menuClass = "tallMenu" %}
+                          {% else %}
+                            {% set menuClass = "shortMenu" %}
+                          {% endif %}
+                          <div class="dropdown-menu {{menuClass}}" aria-labelledby="dropdownMenuButton">
+                              {% for item2 in program|unique('program_name') %}
+                                {% set href = item2.page_link %}
+                                <a class="dropdown-item" href="{% if content.language.languageTag && content.language.languageTag !='en' %}/{{ content.language.languageTag }}{% endif %}{{href}}">{{ item2.program_name }}</a>
+                              {% endfor %}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+		</div>
+	</div>
+</section>

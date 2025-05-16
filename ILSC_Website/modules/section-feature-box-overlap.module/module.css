@@ -1,0 +1,54 @@
+.section.section-box-overlap{
+  padding-bottom:50px !important;
+}
+.section.section-box-overlap .category-container{
+  margin-bottom:30px;
+}
+.section.section-box-overlap .fa-square{
+  font-size:20px;
+  display:inline-block;
+}
+.section.section-box-overlap .foot-note{
+  font-size:.875rem;
+  margin-left:15px;
+  display:inline-block;
+  clear: both;
+  overflow: hidden;
+  vertical-align:top;
+}
+.section.section-box-overlap.section-hero{
+ max-height: none;
+}
+.section.section-box-overlap .container{
+    background: #F9F9F9;
+    margin-top: -80px;
+    border-radius: 5px;
+    padding:30px 70px;
+}
+.section.section-box-overlap .container >.row{
+  margin-bottom:50px;
+}
+.section.section-box-overlap .container .photo-container{
+  margin-bottom:10px;
+}
+.section.section-box-overlap .col-md-6, .section.section-box-overlap .col-md-4{
+  padding-left:5px;
+  padding-right:5px;
+}
+.section-box-overlap .box-images{
+  position:relative;
+}
+.section-box-overlap .box-images .box-decoration{
+  position:absolute;
+  height:100px;
+  width:75px;
+}
+
+.section-box-overlap .box-images #box-1.box-decoration{
+  top:-10px;
+  left:-10px;
+}
+.section-box-overlap .box-images #box-2.box-decoration{
+  bottom: 1px;
+  right: -5px;
+}

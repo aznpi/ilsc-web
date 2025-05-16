@@ -1,0 +1,69 @@
+<section class="section section-team bg-white-canvas">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 center section-form">
+        <div class="dropdown">
+						  <button class="btn btn-gray-outline dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    {{ module.team_name_group.exec_team_name }}
+						  </button>
+						 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">  
+                  <a class="dropdown-item" href="#exec">{{ module.team_name_group.exec_team_name }}</a>
+                  <a class="dropdown-item" href="#academic">{{ module.team_name_group.academic_team_name }}</a>
+                  <a class="dropdown-item" href="#sales">{{ module.team_name_group.sales_and_marketing_team_name }}</a>    
+						  </div>
+					</div>
+      </div>
+    </div>
+    <div id="exec" class="row team-tab fade active show">
+       {% for item in module.team_member %}
+          <div class="col-md-3 center">
+            <div class="image-container">
+              <img src="{{ item.headshot_image.src }}" alt="{{ item.headshot_image.alt }}" />
+            </div>
+            <div class="description-container">
+              <h5>
+                {{ item.full_name }}
+              </h5>
+              <p>
+                {{ item.employee_position }}
+              </p>
+            </div>
+          </div>
+      {% endfor %}
+    </div>
+    <div id="academic" class="row team-tab fade">
+       {% for item in module.academic_team_member %}
+          <div class="col-md-3 center">
+            <div class="image-container">
+              <img src="{{ item.headshot_image.src }}" alt="{{ item.headshot_image.alt }}" />
+            </div>
+            <div class="description-container">
+              <h5>
+                {{ item.full_name }}
+              </h5>
+              <p>
+                {{ item.employee_position }}
+              </p>
+            </div>
+          </div>
+      {% endfor %}
+    </div>
+    <div id="sales" class="row team-tab fade">
+       {% for item in module.sales_and_marketing_team_member %}
+          <div class="col-md-3 center">
+            <div class="image-container">
+              <img src="{{ item.headshot_image.src }}" alt="{{ item.headshot_image.alt }}" />
+            </div>
+            <div class="description-container">
+              <h5>
+                {{ item.full_name }}
+              </h5>
+              <p>
+                {{ item.employee_position }}
+              </p>
+            </div>
+          </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

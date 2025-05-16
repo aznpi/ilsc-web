@@ -1,0 +1,25 @@
+.language-selector a.language-link{
+  text-transform:uppercase;
+}
+header.top-nav .navbar a.navbar-brand img.main-logo{
+  margin-right:150px;
+  width:170px;
+}
+header.top-nav .navbar .dropdown.language-selector .dropdown-menu ul li a{
+  padding-left: 1.5rem;
+}
+header.top-nav .navbar.main-greystone .dropdown .dropdown-menu{
+  width: 125px;
+  -webkit-transform: translate(-40%,0);
+  -o-transform: translate(-15%,0);
+  transform: translate(-15%,0);
+  right: auto;
+  left: auto;
+  min-height:auto;
+}
+header.top-nav .navbar.main-greystone .dropdown .dropdown-menu .dropdown-item{
+  padding:.25rem 0;
+}
+header.top-nav .navbar.main-greystone .dropdown .dropdown-menu{
+  box-shadow:none;
+}

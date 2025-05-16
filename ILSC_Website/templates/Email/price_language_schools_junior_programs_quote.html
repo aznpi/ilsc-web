@@ -1,0 +1,172 @@
+<!--
+    templateType: email
+    isAvailableForNewContent: true
+-->
+<!doctype html>
+<html>
+  <head>
+    <title>{% if content.html_title and content.html_title != '' %}{{ content.html_title }}{% else %}{{ content.body.subject }}{% endif %}</title>
+    {% if content.meta_description %}<meta name="description" content="{{ content.meta_description }}"/>{% endif %}
+    <style type="text/css" id="hs-inline-css">
+      /*<![CDATA[*/
+      /* everything in this style tag will be inlined onto matching elements */
+      .sample-rule {
+      }
+      /*]]>*/
+     
+      .bold{
+        font-weight:700;
+      }
+      .text-left{
+        text-align:left;
+      }
+      .text-right{
+        text-align:right;
+      }
+      .text-center,.text-center p{
+        text-align:center;
+      }
+      .table-none{
+        display:none;
+      }
+      table.main-table{
+        width:600px;
+        border: 0;
+        margin:0 auto;
+        border-radius: 5px;
+        overflow: hidden;
+        border-spacing: 0;
+        font-size: 18px;
+        background: #FFFF;
+        padding:0 !important;
+      }
+      .quote-table table{
+        display: block;
+        border: 1px solid #CCC;
+        margin-bottom:20px;
+        border-radius: 5px;
+        overflow: hidden;
+        border-spacing: 0;
+        font-size: 18px;
+        background: rgba(243, 243, 243, 0.9);
+        padding:0 !important;
+      }
+      .quote-table table.no-bg{
+        border: 0;
+        background: #FFFFFF;
+      }
+      .quote-table table.no-bg tbody{
+        border: 0;
+        background: #FFFFFF;
+      }
+      .quote-table th{
+        color: #111;
+        padding:10px 15px;
+      }
+      .quote-table tr{
+        color: #111;
+      }
+      .quote-table td{
+        padding: 10px 15px 5px;
+      }
+      .quote-table tbody{
+        background: rgba(243, 243, 243, 0.9);
+        display:inline-table;
+        width:100%;
+      }
+      .quote-table th.title{
+        text-align: center;
+        background: #f58426;
+        color: #FFF;
+        overflow: hidden;
+        padding: 10px 20px;
+        font-weight: 600;   
+        padding:5px 10px;
+      }
+      .quote-table th.title-name{
+        font-weight: 700;
+        text-align:left;
+      }
+      .discount-txt{
+        font-size: 15px;
+        color:#FF0000;
+      }
+      .discount-txt.strike{
+          padding: 0 5px;
+          text-decoration: line-through;
+      }
+      span.item-note,.item-note p{
+        font-weight:300;
+        font-size:14px;
+      }
+     #footer .footer-content{
+        background-color: #003346;
+        color: #fff;
+        padding: 15px;
+        margin-top: -10px;
+      }
+      #footer .footer-content a{
+        color:#ff8b35;
+      }
+    </style>
+  </head>
+  <table class="main-table" width="600px">
+    <tr>
+      <td>
+        <div id="preview_text" style="display:none!important">
+            {% text "preview_text" label="Preview Text <span class=help-text>This will be used as the preview text that displays in some email clients</span>", value="", no_wrapper=True %}
+          </div>
+      </td>
+    </tr>
+     {% if content.create_page %}
+      <tr>
+        <td>
+
+            <div>
+              Not rendering correctly? View this email as a web page <a class="hubspot-mergetag" data-viewaswebpage="true" href="{{ view_as_page_url }}">here</a>.
+            </div>
+        </td>
+      </tr>
+    {% endif %}
+    <tr>
+      <td>
+        {% module "module_16457460809274" path="@hubspot/email_linked_image", label="Header Image" %}
+      </td>
+    </tr>
+    <tr>
+      <td>
+         {% module "email_template_main_email_body" path="@hubspot/email_body" label="Main Email Body" %}
+      </td>
+    </tr>
+    <tr>
+      <td class="quote-table">
+        {% module "email_template_table_price_quote" path="/ILSC_Website/modules/Email/quote_table.module" label="Price Quote Table" %}
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+          <div id="footer">
+            <div style="background-color:#00334C;margin-bottom: -10px;">
+              {% module "module_16457465366667" path="@hubspot/email_linked_image", label="Footer Image" %}
+            </div>
+            <div class="footer-content "style="background-color:#00334C;color:#FFFFFF; margin-top: -10px;">
+               {{ site_settings.company_name }}&nbsp;
+              {{ site_settings.company_street_address_1 }}&nbsp;
+              {{ site_settings.company_street_address_2 }}&nbsp;
+              {{ site_settings.company_city }}&nbsp;
+              {{ site_settings.company_state }}&nbsp;
+              {{ site_settings.company_zip }}&nbsp;
+              {{ site_settings.company_country }}&nbsp;
+
+              <div style="margin:15px 0;">
+                <span><a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link_all }}">Unsubscribe</a></span>&nbsp;|&nbsp;<span><a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link }}">Manage preferences</a></span>
+              </div>
+
+            </div>
+
+          </div>
+      </td>
+    </tr>
+  </table>
+</html>

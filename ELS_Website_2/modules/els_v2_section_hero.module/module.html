@@ -1,0 +1,82 @@
+<section class="section-hero {% if module.bg_image.src %}bg-hero-image{% endif %} {% if module.enable_polygon_bg %}section-polygon{% endif %}" style="{% if module.bg_image.src %}background-image:url({{ module.bg_image.src }});{% endif %}">
+  <div class="container">
+    <div class="row">
+      <div class="{% if module.right_column_hero_image.src %}col-md-5 {% else %}col-md-7{% endif%}">
+        <div class="description">
+          {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+        </div>
+        {% if module.cta_choice %}
+          <div class="tool-box center">
+            {% if module.cta_choice == 'video' %}
+              <button class="video-play video-btn" type="button" data-bs-toggle="modal" data-bs-target="#ilscModal" src="{{ module.video_url }}">
+                <div class="play-icon"></div>
+                <span>{{ module.video_button_text }}</span>
+              </button>
+              {% elif module.cta_choice == 'button' %}
+                {% set href = module.button_link.url.href %}
+                {% if module.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+                  {% set href = "mailto:" + href %}
+                {% endif %}
+                  <div class="btn-container">
+                    <a href="" class="btn btn-orange"href="{{ href }}"
+                  {% if module.button_link.open_in_new_tab %}target="_blank"{% endif %}
+                  {% if module.button_link.rel %}rel="{{ module.button_link.rel }}"{% endif %}
+                  >{{ module.button_text }}</a>
+                  </div>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+      <div class="{% if module.right_column_hero_image.src %}col-md-7{% else %}col-md-5{% endif%} hero-image-container">
+        {% if module.right_column_hero_image.src %}
+          <div class="hero-image">
+            <img src="{{ module.right_column_hero_image.src }}" alt="{{ module.right_column_hero_image.alt }}" class="img-fluid" />
+          </div>
+          {% endif %}
+      </div>
+    </div>
+    {% if module.add_sub_row %}
+      <div class="row hero-sub">
+        <div class="col-md-7 full-width-row">
+          <div class="container-left-bg" style="background:linear-gradient(90deg, rgba({{module.left_angle_color.color|convert_rgb }},1) 0%, rgba({{module.left_angle_color.color|convert_rgb }},.99) 98.1%, rgba({{module.left_angle_color.color|convert_rgb }},.1) 100% );"></div>
+          <div class="hero-sub-angle angle-left" style="background-color:rgba({{module.left_angle_color.color|convert_rgb }}, {{ module.left_angle_color.opacity/100 }});">
+            <h4>{{ module.left_angle_text }}</h4>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="hero-sub-angle angle-right" style="background-color: rgba({{module.right_angle_color.color|convert_rgb }}, {{ module.right_angle_color.opacity/100 }});">
+            {% if module.right_angle_image.src %}
+              {% set sizeAttrs = 'width="{{ module.right_angle_image.width }}" height="{{ module.right_angle_image.height }}"' %}
+              {% if module.right_angle_image.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.right_angle_image.width }}" height="{{ module.right_angle_image.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif module.right_angle_image.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.right_angle_image.max_width }}" height="{{ module.right_angle_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+               {% set loadingAttr = module.right_angle_image.loading != 'disabled' ? 'loading="{{ module.right_angle_image.loading }}"' : '' %}
+              <img src="{{ module.right_angle_image.src }}" alt="{{ module.right_angle_image.alt }}" class="img-fluid">
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+    {% if module.enable_scroll_link %}
+      <div class="down-move">
+        <div class="txt"><span>EXPLORE</span></div>
+        <div class="arrow-down"></div>
+      </div>
+    {% endif %}
+  </div>
+</section>
+{% require_css %}
+<style>
+  .section-hero:before{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color:rgba({{module.bg_color.color|convert_rgb }}, {{ module.bg_color.opacity/100 }});
+    top:0;
+    z-index:1;
+  }
+</style>
+{% end_require_css %}

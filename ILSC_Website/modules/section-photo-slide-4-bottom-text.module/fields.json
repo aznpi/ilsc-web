@@ -1,0 +1,70 @@
+[ {
+  "id" : "b9150d94-9fe1-e924-f70c-21d6791a13cd",
+  "name" : "image",
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 15,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : [ {
+    "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_supportive_staff.jpg",
+    "alt" : "Supportive<br/> Staff",
+    "width" : 500,
+    "height" : 500,
+    "max_width" : 500,
+    "max_height" : 500
+  }, {
+    "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_supportive_staff.jpg",
+    "alt" : "Supportive<br/> Staff",
+    "width" : 500,
+    "height" : 500,
+    "max_width" : 500,
+    "max_height" : 500
+  }, {
+    "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_supportive_staff.jpg",
+    "alt" : "Supportive<br/> Staff",
+    "width" : 500,
+    "height" : 500,
+    "max_width" : 500,
+    "max_height" : 500
+  }, {
+    "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_supportive_staff.jpg",
+    "alt" : "Supportive<br/> Staff",
+    "width" : 500,
+    "height" : 500,
+    "max_width" : 500,
+    "max_height" : 500
+  } ]
+}, {
+  "id" : "2453c549-46a2-2d36-e712-0e4e91ac720b",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Why choose ILSC Junior Programs</h2>\n<p>Our young students will live the experience of a lifetime and return home with lasting memories and improved language skills. Exciting excursions and fun extracurricular activities an integral part of the language learning process.</p>"
+}, {
+  "id" : "7d5f92c3-d010-f178-1bb6-f056050275fb",
+  "name" : "choice_field",
+  "label" : "Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "center", "Center Text" ], [ "left", "Left Text" ], [ "right", "Right Text" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "center"
+} ]

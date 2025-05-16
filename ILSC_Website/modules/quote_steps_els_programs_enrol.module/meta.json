@@ -1,0 +1,57 @@
+{
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE" ],
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 168897784576,
+  "css_assets" : [ {
+    "autoload" : true,
+    "path" : "../../template-resources/stylesheets/internal/production/quote_tool_promo.css",
+    "name" : "quote_tool_promo.css"
+  }, {
+    "autoload" : true,
+    "path" : "../../../ELS_Website/template-resources/stylesheets/quote_tool_els.css",
+    "name" : "quote_tool_els.css"
+  } ],
+  "js_assets" : [ {
+    "autoload" : true,
+    "path" : "../../template-resources/javascript/external/printThis/printThis.js",
+    "name" : "printThis.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../template-resources/javascript/internal/cookie-set.js",
+    "name" : "cookie-set.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../template-resources/javascript/internal/quote-tool/quote_helper_promo.js",
+    "name" : "quote_helper_promo.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../template-resources/javascript/internal/quote-tool/quote_set_localstorage_promo.js",
+    "name" : "quote_set_localstorage_promo.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../../ELS_Website/template-resources/javascript/quote-tool/quote_tool_els_variables_promo.js",
+    "name" : "quote_tool_els_variables_promo.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../../ELS_Website/template-resources/javascript/quote-tool/quote_els_accommodation_promo.js",
+    "name" : "quote_els_accommodation_promo.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../../ELS_Website/template-resources/javascript/quote-tool/quote_els_tool_enrol.js",
+    "name" : "quote_els_tool_enrol.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../template-resources/javascript/internal/quote-tool/promo_quote_engine.js",
+    "name" : "promo_quote_engine.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../template-resources/javascript/internal/quote-tool/quote-form-helper.js",
+    "name" : "quote-form-helper.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../template-resources/javascript/internal/quote-tool/quote-form.js",
+    "name" : "quote-form.js"
+  } ],
+  "is_available_for_new_content" : true
+}

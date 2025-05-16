@@ -1,0 +1,16 @@
+<section class="section section-7-5" id="content" style="background-image:url({{ module.bg_image_1_field.src }});">
+  <div class="overlay" style="background-color: rgba({{ module.bg_overlay_color.color|convert_rgb }}, {{ module.bg_overlay_color.opacity/100 }});">
+  </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+          {% inline_rich_text field="left_column_field_group.main_rich_text_left" value="{{ module.left_column_field_group.main_rich_text_left }}" %}
+      </div>
+			<div class="col-md-5">
+				  <div class="content-box-container" style="border: {{ module.right_column_field_group.border_size }}px solid {{ module.right_column_field_group.border_color.color }};">
+            {% inline_rich_text field="right_column_field_group.main_rich_text_right" value="{{ module.right_column_field_group.main_rich_text_right }}" %}
+          </div>
+			</div>
+		</div>
+	</div>
+</section>

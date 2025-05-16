@@ -1,0 +1,50 @@
+<section class="section-2-column section-normal {{ module.padding_choice }}">
+  <div class="container">
+    <div class="row">
+      <div class="{% if module.left_column_field_group.choice_field == 'text' %}col-md-5{% else %}col-md-7{% endif %}">
+        {% if module.left_column_field_group.choice_field == 'text' %}
+          {% inline_rich_text field="left_column_field_group.title_rich_text" value="{{ module.left_column_field_group.title_rich_text }}" %}
+          <div class="description">
+            {% inline_rich_text field="left_column_field_group.description_rich_text" value="{{ module.left_column_field_group.description_rich_text }}" %}
+          </div>
+        {% else %}
+          <div class="image-container bg-angle {{ module.left_column_field_group.bg_angle_choice }}" style="background-image: url('{{ module.left_column_field_group.bg_image.src }}');">
+              {% if module.left_column_field_group.image_field.src %}
+                {% set sizeAttrs = 'width="{{ module.left_column_field_group.image_field.width }}" height="{{ module.left_column_field_group.image_field.height }}"' %}
+                {% if module.left_column_field_group.image_field.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ module.left_column_field_group.image_field.width }}" height="{{ module.left_column_field_group.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif module.left_column_field_group.image_field.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ module.left_column_field_group.image_field.max_width }}" height="{{ module.left_column_field_group.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                 {% set loadingAttr = module.left_column_field_group.image_field.loading != 'disabled' ? 'loading="{{ module.left_column_field_group.image_field.loading }}"' : '' %}
+                <img src="{{ module.left_column_field_group.image_field.src }}" alt="{{ module.left_column_field_group.image_field.alt }}" width="570px" class="img-fluid">
+              {% endif %}
+            </div>
+        {% endif %}
+      </div>
+      
+      
+      <div class="{% if module.right_column_field_group.choice_field == 'text' %}col-md-5{% else %}col-md-7{% endif %}">
+        {% if module.right_column_field_group.choice_field == 'text' %}
+          {% inline_rich_text field="right_column_field_group.title_rich_text" value="{{ module.right_column_field_group.title_rich_text }}" %}
+          <div class="description">
+            {% inline_rich_text field="right_column_field_group.description_rich_text" value="{{ module.right_column_field_group.description_rich_text }}" %}
+          </div>
+        {% else %}
+          <div class="image-container bg-angle {{ module.right_column_field_group.bg_angle_choice }}" style="background-image: url('{{ module.right_column_field_group.bg_image.src }}');">
+            {% if module.right_column_field_group.image_field.src %}
+              {% set sizeAttrs = 'width="{{ module.right_column_field_group.image_field.width }}" height="{{ module.right_column_field_group.image_field.height }}"' %}
+              {% if module.right_column_field_group.image_field.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.right_column_field_group.image_field.width }}" height="{{ module.right_column_field_group.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif module.right_column_field_group.image_field.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.right_column_field_group.image_field.max_width }}" height="{{ module.right_column_field_group.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+               {% set loadingAttr = module.right_column_field_group.image_field.loading != 'disabled' ? 'loading="{{ module.right_column_field_group.image_field.loading }}"' : '' %}
+              <img src="{{ module.right_column_field_group.image_field.src }}" alt="{{ module.left_column_field_group.image_field.alt }}" width="570px" class="img-fluid">
+            {% endif %}
+            </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

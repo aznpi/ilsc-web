@@ -1,0 +1,109 @@
+<!--
+    templateType: email
+    isAvailableForNewContent: true
+    isEnabledForEmailV3Rendering: true
+-->
+<!doctype html>
+<html>
+  <head>
+    <title>{% if content.html_title and content.html_title != '' %}{{ content.html_title }}{% else %}{{ content.body.subject }}{% endif %}</title>
+    {% if content.meta_description %}<meta name="description" content="{{ content.meta_description }}"/>{% endif %}
+    <style type="text/css" id="hs-inline-css">
+      table{
+        display: block;
+        border: 1px solid #CCC;
+        margin-bottom:20px;
+        border-radius: 5px;
+        overflow: visible;
+        border-spacing: 0;
+        font-size: 18px;
+        background: rgba(243, 243, 243, 0.9);
+        padding:0 !important;
+        width:100%;
+      }
+      th{
+        color: #111;
+        padding:10px 15px;
+        text-align:left;
+      }
+       tr{
+        color: #111;
+      }
+       td{
+        padding: 10px 15px 5px;
+      }
+      td:first-child{
+        vertical-align:top;
+      }
+       tbody{
+        background: rgba(243, 243, 243, 0.9);
+        display:inline-table;
+        width:100%;
+      }
+    </style>
+  </head>
+  <table class="main-table" width="600px">
+    <tr>
+      <td>
+        <div id="preview_text" style="display:none!important">
+            {% text "preview_text" label="Preview Text <span class=help-text>This will be used as the preview text that displays in some email clients</span>", value="", no_wrapper=True %}
+          </div>
+      </td>
+    </tr>
+     {% if content.create_page %}
+      <tr>
+        <td>
+
+            <div>
+              Not rendering correctly? View this email as a web page <a class="hubspot-mergetag" data-viewaswebpage="true" href="{{ view_as_page_url }}">here</a>.
+            </div>
+        </td>
+      </tr>
+    {% endif %}
+    <tr>
+      <td style="background:rgba(243, 243, 243, 0.9);">
+        {% module "module_16457460809274" path="@hubspot/email_linked_image", label="Header Image" %}
+      </td>
+    </tr>
+    <tr>
+      <td>
+         {% module "email_template_main_email_body" path="@hubspot/email_body" label="Main Email Body" %}
+      </td>
+    </tr>
+    <tr>
+      <td>
+         {% module "email_template_main_text" path="@hubspot/email_body" label="Text" %}
+      </td>
+    </tr>
+    <tr>
+      <td>
+        {% module "module_170138823388717" path="/ILSC_Website/modules/Email/ilsc_application_table_non_french", label="ilsc_application_table_non_french" %}
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+          <div id="footer">
+            <div style="background-color:rgba(243, 243, 243, 0.9);margin-bottom: -10px;">
+              {% module "module_16457465366667" path="@hubspot/email_linked_image", label="Footer Image" %}
+            </div>
+            <div class="footer-content "style="background-color:rgba(243, 243, 243, 0.9);color:#000; margin-top: -10px;">
+               {{ site_settings.company_name }}&nbsp;
+              {{ site_settings.company_street_address_1 }}&nbsp;
+              {{ site_settings.company_street_address_2 }}&nbsp;
+              {{ site_settings.company_city }}&nbsp;
+              {{ site_settings.company_state }}&nbsp;
+              {{ site_settings.company_zip }}&nbsp;
+              {{ site_settings.company_country }}&nbsp;
+
+              <div style="margin:15px 0;">
+                <span><a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link_all }}">Unsubscribe</a></span>&nbsp;|&nbsp;<span><a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link }}">Manage preferences</a></span>
+              </div>
+
+            </div>
+
+          </div>
+      </td>
+    </tr>
+  </table>
+</html>

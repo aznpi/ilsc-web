@@ -1,0 +1,10 @@
+.section{
+  position:relative;
+  overflow:hidden;
+}
+.category-title-link{
+  margin-left:20px;
+}
+.category-link{
+  padding-left:40px;
+}

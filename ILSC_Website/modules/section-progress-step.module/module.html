@@ -1,0 +1,42 @@
+<section class="section bg-white-canvas section-progress">
+  <div class="container">
+    <nav>
+      <ol class="cd-breadcrumb triangle custom-icons">
+        {% for item in module.step_field_group %}
+        
+          {% if module.enable_link_back_choice == 'enable' %}
+            {% set href = item.page_link.url.href %}
+              {% else %}
+            {% set href = '#' %}
+           {% endif %}
+        
+            <li class="step-list step-{{item.step_number}} {% if module.page_step_number ==  item.step_number %} current {% endif %}">{% if module.page_step_number !=  item.step_number %}<a href="{{ href }}" {% if item.page_link.open_in_new_tab %}target="_blank"{% endif %}>{% else %}<em>{% endif %}Step {{ item.step_number }} &nbsp; <span class="step-text">{% inline_text field="step_text" value="{{ item.step_text }}" %}</span>{% if module.page_step_number !=  item.step_number %}</a> {% else %}</em>{% endif %}</li>
+         
+        {% endfor %}
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<style>
+  li.step-list.current:before{
+    color:#FFFFFF;
+  }
+  li.step-list:before{
+    position:absolute;
+    color: #111;
+    font-family: "Font Awesome 5 Free";
+    font-size: 18px;
+    font-weight: 600;
+    left: 50px;
+    z-index: 1;
+    font-size: 1.5em;
+    top: 10px;
+    display:none;
+  }
+  {% for item in module.step_field_group %}
+    li.step-list.step-{{item.step_number}}:before{
+      content:'\{{ item.icon_font_awesome_unicode }}';
+    }
+  {% endfor %}
+</style>

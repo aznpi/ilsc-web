@@ -1,0 +1,144 @@
+{% set num = 1%}
+
+<section class="tab-navigation-landing tab-study-schedule section bg-white-canvas" id="content">
+	<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {% inline_rich_text field="title_text" value="{{ module.title_text }}" %}
+      </div>
+    </div>
+    
+          {% if module.hide_show_tab_header_choice == "show" %}
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              {% if module.tabs.tab_1.hide_show == "show" %}
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-1-tab" data-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-1" aria-selected="true">{% inline_text field="tabs.tab_1.title" value="{{ module.tabs.tab_1.title }}" %}</a>
+                </li>
+              {% endif %}
+              {% if module.tabs.tab_2.hide_show == "show" %}
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-2-tab" data-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-2" aria-selected="false">{% inline_text field="tabs.tab_2.title" value="{{ module.tabs.tab_2.title }}" %}</a>
+                </li>
+              {% endif %}
+              {% if module.tabs.tab_3.hide_show == "show" %}
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-3-tab" data-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-3" aria-selected="false">{% inline_text field="tabs.tab_3.title" value="{{ module.tabs.tab_3.title }}" %}</a>
+                </li> 
+               {% endif %}
+            </ul>
+          {% endif %}
+      
+		<div class="tab-content section-faq" id="pills-tabContent">
+      
+		  {% if module.tabs.tab_1.hide_show == "show" %}
+        <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
+          <div class="container">
+            
+            <div class="row accordion-container">
+              <div class="accordion-option right">
+                <a href="javascript:void(0)" class="toggle-accordion" accordion-id="#accordionFaq-1"></a>
+              </div>
+              <div class="col-md-12">
+                <div class="accordion left" id="accordionFaq-1">
+
+                  {% for item in module.tabs.tab_1.schedule_items%}
+
+                      <div class="card">
+                        <div class="card-header" id="heading-1-{{num}}">
+                          <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-1-{{num}}" {% if num == 1 %} aria-expanded="true" {% else %} aria-expanded="false" {% endif %} aria-controls="collapse-1-{{num}}">
+                             {{ item.schedule_title }}
+                            </button>
+                          </h2>
+                        </div>
+
+                        <div id="collapse-1-{{num}}" {% if num == 1 %} class="collapse show" {% else %} class="collapse" {% endif %} aria-labelledby="heading-1-{{num}}" data-parent="#accordionFaq-1">
+                          <div class="card-body">
+                           {{ item.schedule_text }}
+                          </div>
+                        </div>
+                      </div>
+
+                     {% set num = num + 1%}
+                  {% endfor %}
+                </div>			
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+      {% if module.tabs.tab_2.hide_show == "show" %}
+        <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
+          <div class="container">
+            <div class="row accordion-container">
+              <div class="accordion-option right">
+                <a href="javascript:void(0)" class="toggle-accordion" accordion-id="#accordionFaq-2"></a>
+              </div>
+              <div class="col-md-12">
+                <div class="accordion left" id="accordionFaq-2">
+
+                  {% for item in module.tabs.tab_2.schedule_items%}
+
+                      <div class="card">
+                        <div class="card-header" id="heading-2-{{num}}">
+                          <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-2-{{num}}" {% if num == 1 %} aria-expanded="true" {% else %} aria-expanded="false" {% endif %} aria-controls="collapse-2-{{num}}">
+                             {{ item.schedule_title }}
+                            </button>
+                          </h2>
+                        </div>
+
+                        <div id="collapse-2-{{num}}" {% if num == 1 %} class="collapse show" {% else %} class="collapse" {% endif %} aria-labelledby="heading-2-{{num}}" data-parent="#accordionFaq-2">
+                          <div class="card-body">
+                           {{ item.schedule_text }}
+                          </div>
+                        </div>
+                      </div>
+
+                     {% set num = num + 1%}
+                  {% endfor %}
+                </div>			
+              </div>
+            </div>
+          </div>
+        </div>
+		  {% endif %}
+      {% if module.tabs.tab_3.hide_show == "show" %}
+        <div class="tab-pane fade section-faq" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab">
+          <div class="container">
+            <div class="row accordion-container">
+              <div class="accordion-option right">
+                <a href="javascript:void(0)" class="toggle-accordion" accordion-id="#accordionFaq-3"></a>
+              </div>
+              <div class="col-md-12">
+                <div class="accordion left" id="accordionFaq-3">
+
+                  {% for item in module.tabs.tab_3.schedule_items%}
+
+                      <div class="card">
+                        <div class="card-header" id="heading-3-{{num}}">
+                          <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-3-{{num}}" {% if num == 1 %} aria-expanded="true" {% else %} aria-expanded="false" {% endif %} aria-controls="collapse-3-{{num}}">
+                             {{ item.schedule_title }}
+                            </button>
+                          </h2>
+                        </div>
+
+                        <div id="collapse-3-{{num}}" {% if num == 1 %} class="collapse show" {% else %} class="collapse" {% endif %} aria-labelledby="heading-3-{{num}}" data-parent="#accordionFaq-3">
+                          <div class="card-body">
+                           {{ item.schedule_text }}
+                          </div>
+                        </div>
+                      </div>
+
+                     {% set num = num + 1%}
+                  {% endfor %}
+                </div>			
+              </div>
+            </div>
+          </div>
+        </div>
+		  {% endif %}
+		</div>
+	</div>
+</section>

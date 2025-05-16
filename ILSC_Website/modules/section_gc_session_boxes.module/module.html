@@ -1,0 +1,97 @@
+{% set anchorName = module.anchor_name|regex_replace('[/ /g]','')|lower  %}
+
+<section class="section section-{{anchorName}} section-session {% if module.background_color.color == '#FFFFFF' %}bg-white-canvas{% endif %} price-list-grid" id="content" style="background-color:rgba({{module.background_color.color|convert_rgb }}, {{module.background_color.opacity/100 }})">
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}      
+      </div> 
+    </div>
+    
+    <div class="row">
+      <div class="col-md-12 session-box-container">
+        {% inline_rich_text field="session_boxes_field_group.title_rich_text" value="{{ module.session_boxes_field_group.title_rich_text }}" %}
+        <div class="row box-table">
+          <div class="col-md-1 line-box-container line-box-title">
+            <h5>{{ module.session_boxes_field_group.side_title_text }}</h5>
+          </div>
+          <div class="col-md-11">
+              <div class="row academic-box-container box-row">
+                <div class="col-md-1 line-box-container">
+                  <span>{{ module.session_boxes_field_group.academic_field_group.title_text }}</span>
+                </div>
+                <div class="col-md-11 box-container">
+                    <div class="row">
+                      {% for item in module.session_boxes_field_group.academic_field_group.box_field_group %}
+                      <div class="col-md-{{ module.session_boxes_field_group.academic_field_group.number_of_boxes_in_a_row_choice }}  boxes">
+                        
+                          <div class="top-box-container box top-box">
+                            {% inline_rich_text field="top_box_text" value="{{ item.top_box_text }}" %}
+                          </div>
+                          {% if item.middle_box_text %}
+                            <div class="middle-box-container box middle-box">
+                              {% inline_rich_text field="middle_box_text" value="{{ item.middle_box_text }}" %}
+                            </div>
+                          {% endif %}
+                          {% if item.bottom_box_text %}
+                            <div class="bottom-box-container box bottom-box">
+                              {% inline_rich_text field="bottom_box_text" value="{{ item.bottom_box_text }}" %}
+                            </div>
+                          {% endif %}
+                        
+                      </div>
+                      {% endfor %}
+                    </div>
+                </div>
+              </div>
+              <div class="row coop-box-container box-row" {% if module.session_boxes_field_group.co_op_field_group.hide_box %}style="display:none;"{% endif %}>
+                <div class="col-md-1 line-box-container">
+                  <span>{{ module.session_boxes_field_group.co_op_field_group.title_text }}</span>
+                </div>
+                <div class="col-md-11 coop-box">
+                    <div class="box-container">
+                      {% inline_rich_text field="session_boxes_field_group.co_op_field_group.title_rich_text" value="{{ module.session_boxes_field_group.co_op_field_group.title_rich_text }}" %}
+                    </div>
+                </div>
+              </div>
+              
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-10 foot-note">
+            {% inline_rich_text field="session_boxes_field_group.footnote_rich_text" value="{{ module.session_boxes_field_group.footnote_rich_text }}" %}
+          </div>
+      </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</section>
+
+<script>
+  $(document).ready(function(){
+  
+  function resizeSessionTable{{anchorName}}(){
+    
+    var resizeArray = ['.boxes']
+    var arrayLength = resizeArray.length;
+    var maxHeight = [];
+    
+    for (var i = 0; i < arrayLength; i++) {
+      maxHeight[i] = 0;
+      $(".section-session.section-{{anchorName}} .box-container "+ resizeArray[i]).each(function () {
+         if ($(this).height() > maxHeight[i]) { maxHeight[i] = $(this).height(); }
+      });
+      $(".section-session.section-{{anchorName}} .box-container "+ resizeArray[i]).height(maxHeight[i]);
+    }
+  
+  }
+      
+  resizeSessionTable{{anchorName}}();
+  window.addEventListener("resize", resizeSessionTable{{anchorName}});
+  
+})
+</script>

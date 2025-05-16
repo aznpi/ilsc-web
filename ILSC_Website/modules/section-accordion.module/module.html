@@ -1,0 +1,180 @@
+{% set queryparam = "" %}
+{% set pageLang = content.language.languageTag %}
+
+{% set string_to_compare = content.name %}
+
+{% if string_to_compare is string_containing "Homestay" %}
+  {% set queryVar = 'Homestay' %}
+{% elif string_to_compare is string_containing "Student One" %}
+  {% set queryVar = 'Student One' %}
+{% elif string_to_compare is string_containing "Pathway" %}
+  {% set queryVar = 'Pathway' %}
+{% else %}
+   {% set queryVar = 'General' %}
+{% endif %}
+
+
+{% set num = 1 %}
+{% set queryparam = queryparam ~ "&faq_category__in=" + queryVar %}
+
+
+{% set queryparamPrimary = queryparam ~ "&limit=5" %}
+{% set queryparamSecondary = queryparam ~ "&offset=5" %}
+
+{% set table = hubdb_table_rows(2651465,queryparam) %}
+
+{% set tablePrimary = hubdb_table_rows(2651465, queryparamPrimary) %}
+{% set tableSecondary = hubdb_table_rows(2651465, queryparamSecondary) %}
+
+<section class="section bg-grey-3 section-faq">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				{% inline_rich_text field="title" value="{{ module.title }}" %}
+      </div>
+			
+		</div>
+		<div class="row accordion-container">
+			<div class="col-md-12">
+						<div class="accordion left" id="accordionFaq">
+              {% for row in tablePrimary %}
+              
+                <div class="card">
+                  <div class="card-header" id="heading-{{num}}">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-{{num}}" {% if num == 1 %} aria-expanded="true" {% else %} aria-expanded="false" {% endif %} aria-controls="collapse-{{num}}">
+                        {% if pageLang == "en" %}
+                          {{row.question_en}}
+                          {% elif pageLang == "es" %}
+                           {{row.question_es}}
+                          {% elif pageLang == "pt" %}
+                             {{row.question_pt}}
+                          {% elif pageLang == "ru" %}
+                             {{row.question_ru}}
+                          {% elif pageLang == "zh" %}
+                             {{row.question_zh}}
+                          {% elif pageLang == "ko" %}
+                             {{row.question_ko}}
+                          {% elif pageLang == "ja" %}
+                             {{row.question_ja}}
+                          {% else %}
+                             {{row.question_en}}
+                        {% endif %}
+                      </button>
+                    </h2>
+                  </div>
+
+                  <div id="collapse-{{num}}" {% if num == 1 %} class="collapse show" {% else %} class="collapse" {% endif %} aria-labelledby="heading-{{num}}" data-parent="#accordionFaq">
+                    <div class="card-body">
+                      {% if pageLang == "en" %}
+                          {{row.answer_en}}
+                          {% elif pageLang == "es" %}
+                           {{row.answer_es}}
+                          {% elif pageLang == "pt" %}
+                             {{row.answer_pt}}
+                          {% elif pageLang == "ru" %}
+                             {{row.answer_ru}}
+                          {% elif pageLang == "zh" %}
+                             {{row.answer_zh}}
+                          {% elif pageLang == "ko" %}
+                             {{row.answer_ko}}
+                          {% elif pageLang == "ja" %}
+                             {{row.answer_ja}}
+                          {% else %}
+                             {{row.answer_en}}
+                        {% endif %}
+                    </div>
+                  </div>
+                </div>
+                {% set num = num + 1%}
+						  {% endfor %}
+						   
+              {% if table.total > 5 %}
+              {% set num = 6 %}
+                <div class="show-more-faq-container">
+                  {% for row in tableSecondary %}
+                    <div class="card">
+                      <div class="card-header" id="heading-{{num}}">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-{{num}}" aria-expanded="false" aria-controls="collapse-{{num}}">
+                            {% if pageLang == "en" %}
+                              {{row.question_en}}
+                              {% elif pageLang == "es" %}
+                               {{row.question_es}}
+                              {% elif pageLang == "pt" %}
+                                 {{row.question_pt}}
+                              {% elif pageLang == "ru" %}
+                                 {{row.question_ru}}
+                              {% elif pageLang == "zh" %}
+                                 {{row.question_zh}}
+                              {% elif pageLang == "ko" %}
+                                 {{row.question_ko}}
+                              {% elif pageLang == "ja" %}
+                                 {{row.question_ja}}
+                              {% else %}
+                                 {{row.question_en}}
+                            {% endif %}
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapse-{{num}}" class="collapse" aria-labelledby="heading-{{num}}" data-parent="#accordionFaq">
+                        <div class="card-body">
+                          {% if pageLang == "en" %}
+                            {{row.answer_en}}
+                            {% elif pageLang == "es" %}
+                             {{row.answer_es}}
+                            {% elif pageLang == "pt" %}
+                               {{row.answer_pt}}
+                            {% elif pageLang == "ru" %}
+                               {{row.answer_ru}}
+                            {% elif pageLang == "zh" %}
+                               {{row.answer_zh}}
+                            {% elif pageLang == "ko" %}
+                               {{row.answer_ko}}
+                            {% elif pageLang == "ja" %}
+                               {{row.answer_ja}}
+                            {% else %}
+                               {{row.answer_en}}
+                          {% endif %}
+                        </div>
+                      </div>
+                    </div>
+                    {% set num = num + 1 %}
+                  {% endfor %}
+
+                </div>
+              {% endif %}
+              
+						</div>
+				
+				</div>
+			</div>
+      {% if table.total > 5 %}
+        <div class="row">
+          <div class="col-md-12 center">
+            <button class="btn btn-black-outline show-more-faq">{{ module.button_show_more_text }}</button>
+          </div>
+        </div>
+      {% endif %}
+		</div>
+</section>
+
+<script>
+$(document).ready(function(){
+		
+		$('.btn.show-more-faq').click(function(){
+			
+			if($(this).hasClass('show-more')){
+				$(this).removeClass('show-more');
+				$(this).html('{{ module.button_show_more_text }}');
+			}else{
+				$(this).addClass('show-more');
+				$(this).html('{{ module.button_show_less_text }}');
+			}
+			
+			$('.show-more-faq-container').slideToggle( "slow", function() {
+			  
+			 });
+		})
+	});
+</script>

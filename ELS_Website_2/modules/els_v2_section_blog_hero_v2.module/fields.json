@@ -1,0 +1,43 @@
+[ {
+  "id" : "eb61b597-b47f-49c7-e71b-5b64ce9b4d5a",
+  "name" : "bg_color",
+  "label" : "BG Overlay Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 0
+  }
+}, {
+  "id" : "89546686-1919-1695-66b9-1bbb7e22ebbe",
+  "name" : "enable_video_boolean",
+  "label" : "Enable Video Boolean",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "display_width" : null,
+  "default" : false
+}, {
+  "id" : "d93560c3-695f-b227-6423-66f3b30d81ac",
+  "name" : "embed_video_url",
+  "label" : "Embed Video Url",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "enable_video_boolean",
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "https://www.youtube.com/embed/E8A2HxKktag?si=OEhmWmgY9LSAC7so"
+} ]

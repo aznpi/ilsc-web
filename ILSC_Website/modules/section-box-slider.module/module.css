@@ -1,0 +1,15 @@
+.box-slide .box-container img{
+  height:220px;
+  object-fit:cover;
+}
+.box-slide .box-container .a-link-container{
+  margin-top:0;
+}
+.box-content.a-link-container{
+  min-height:300px;
+}
+.box-content.a-link-container a.a-link{
+  position:absolute;
+  bottom:40px;
+  left:40px;
+}

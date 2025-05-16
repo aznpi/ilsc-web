@@ -1,0 +1,174 @@
+[ {
+  "id" : "5a3af11b-185e-d652-3ab3-bb3a04d0dd53",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Live with a Homestay Family</h2>\n<p>Are you looking for a home away from home? Be welcomed into one of ILSC’s Homestay families, and experience a supportive living environment.</p>"
+}, {
+  "id" : "5efdaa86-cf69-1c53-1507-a5525571b7e1",
+  "name" : "box_1",
+  "label" : "Box 1",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "8822fba5-5cf9-4764-8771-da853b3fc814",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_homestay_banner.jpg",
+      "alt" : "img_homestay_banner",
+      "width" : 1086,
+      "height" : 462,
+      "max_width" : 1086,
+      "max_height" : 462
+    }
+  }, {
+    "id" : "908d08de-e1b0-ce84-941a-c06cbd3064ef",
+    "name" : "text_content",
+    "label" : "Text Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>Live with a Homestay Family</h4>\n<p>Are you looking for a home away from home? Be welcomed into one of ILSC’s Homestay families, and experience a supportive living environment.</p>"
+  }, {
+    "id" : "da569295-125d-6ecf-9d43-7ed29425d473",
+    "name" : "link_text",
+    "label" : "Link Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "LEARN MORE"
+  }, {
+    "id" : "4ec32b52-d8b9-2c67-326a-323682ccd229",
+    "name" : "link_url",
+    "label" : "Link URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_homestay_banner.jpg",
+      "alt" : "img_homestay_banner",
+      "width" : 1086,
+      "height" : 462,
+      "max_width" : 1086,
+      "max_height" : 462
+    },
+    "text_content" : "<h4>Live with a Homestay Family</h4>\n<p>Are you looking for a home away from home? Be welcomed into one of ILSC’s Homestay families, and experience a supportive living environment.</p>",
+    "link_text" : "LEARN MORE",
+    "link_url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    }
+  }
+}, {
+  "id" : "484148e7-d667-d001-008e-f7772cab3022",
+  "name" : "box_2",
+  "label" : "Box 2",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "da4cb6f7-1cd9-8ea5-85ff-fcf461519e4e",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_banner.jpg",
+      "alt" : "img_residence_banner",
+      "width" : 1086,
+      "height" : 462,
+      "max_width" : 1086,
+      "max_height" : 462
+    }
+  }, {
+    "id" : "92a6dd99-a120-7106-f805-0a7033573af0",
+    "name" : "text_content",
+    "label" : "Text Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>Live Independently</h4>\n<p>ILSC can connect you with a selection of economical shared accommodation options.<br><br>Choose our accommodations partner in Sydney:</p>"
+  }, {
+    "id" : "1bbea743-e046-7b46-fc7d-f384dab28f88",
+    "name" : "dropdown_text",
+    "label" : "Dropdown Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "LEARN MORE"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_banner.jpg",
+      "alt" : "img_residence_banner",
+      "width" : 1086,
+      "height" : 462,
+      "max_width" : 1086,
+      "max_height" : 462
+    },
+    "text_content" : "<h4>Live Independently</h4>\n<p>ILSC can connect you with a selection of economical shared accommodation options.<br><br>Choose our accommodations partner in Sydney:</p>",
+    "dropdown_text" : "LEARN MORE"
+  }
+}, {
+  "id" : "7fd541af-0db3-05e5-3327-694a64f41968",
+  "name" : "location_choice",
+  "label" : "Location Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "placeholder" : "",
+  "choices" : [ [ "Vancouver", "Vancouver" ], [ "Toronto", "Toronto" ], [ "Montreal", "Montréal" ], [ "Sydney", "Sydney" ], [ "Melbourne", "Melbourne" ], [ "Adelaide", "Adelaide" ], [ "Brisbane", "Brisbane" ], [ "Perth", "Perth" ], [ "New Delhi", "New Delhi" ], [ "Canada", "Canada" ], [ "Australia", "Australia" ], [ "India", "India" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "Vancouver"
+} ]

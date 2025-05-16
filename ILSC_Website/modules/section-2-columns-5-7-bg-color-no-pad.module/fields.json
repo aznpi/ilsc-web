@@ -1,0 +1,213 @@
+[ {
+  "id" : "4e1e190b-e343-2268-71c0-e39623fa797f",
+  "name" : "image_field",
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_welcome_sydney.jpg",
+    "alt" : "img_welcome_sydney",
+    "width" : 1110,
+    "height" : 740,
+    "max_width" : 1110,
+    "max_height" : 740
+  }
+}, {
+  "id" : "bf432a28-8977-bacf-44b4-c278b7f0a47e",
+  "name" : "disable_enable_bg_color_choice",
+  "label" : "Disable/Enable BG Color Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "enable", "Enable" ], [ "disable", "Disable" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "disable"
+}, {
+  "id" : "f0130415-8094-5c56-4bda-febc251f5831",
+  "name" : "bg_color",
+  "label" : "BG Color",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "bf432a28-8977-bacf-44b4-c278b7f0a47e",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "enable",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#81B1CC",
+    "opacity" : 100
+  }
+}, {
+  "id" : "b752680b-9aa6-1e6b-f627-6d37644d802e",
+  "name" : "main_text",
+  "label" : "Main Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h3>CAMPUS AVAILABLE</h3>\n<p>Vancouver, Toronto</p>\n<h3>PROGRAM LENGTH</h3>\n<p><span class=\"bold\">ACADEMIC</span> Evening 48 weeks</p>\n<p><span class=\"bold\">COOP</span> Evening 88 weeks</p>\n<p><em>*Schedules will be adjusted in December to accommodate public holidays. Contact us for more information.</em></p>\n<h3>LANGUAGE LEVEL REQUIREMENT</h3>\n<p>Intermediate 3</p>\n<h3>START DATES</h3>\n<p>2021 - EVENING PROGRAM: Feb 15, Apr 12, Jun 7, Aug 2, Sep 27, Nov 22</p>\n<h3>CREDIT TRANSFER ELEGIBILITY</h3>\n<p>This program offers credit transfer into some of our partner schools. Learn More</p>"
+}, {
+  "id" : "eda2e35d-c5b0-643b-ffc0-374bb573c6ba",
+  "name" : "cta_group",
+  "label" : "CTA group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "926d06cd-8520-a0f9-3ef6-66ff5fcc06e6",
+    "name" : "hide_show_cta",
+    "label" : "Hide/Show CTA",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "show"
+  }, {
+    "id" : "f8ef15e2-1cca-06e5-0e3d-34750b7d8223",
+    "name" : "link_field_group",
+    "label" : "Link Field group",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 2,
+      "sorting_label_field" : "939bd810-abe2-1aca-43e4-a424fac65c40",
+      "default" : 1
+    },
+    "visibility" : {
+      "controlling_field" : "926d06cd-8520-a0f9-3ef6-66ff5fcc06e6",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "show",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "children" : [ {
+      "id" : "3a97a8bd-80d1-0987-a531-00e31f18707a",
+      "name" : "link_url",
+      "label" : "Link Url",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "926d06cd-8520-a0f9-3ef6-66ff5fcc06e6",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "show",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "supported_types" : [ "EXTERNAL" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.youtube.com/embed/CMHRYfA1gLM",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "939bd810-abe2-1aca-43e4-a424fac65c40",
+      "name" : "link_url_text",
+      "label" : "Link Url Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "926d06cd-8520-a0f9-3ef6-66ff5fcc06e6",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "show",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "WATCH OUR VIDEO"
+    }, {
+      "id" : "b0c17bad-d52b-6884-04a7-d27a7d8e1c94",
+      "name" : "cta_font_awesome_icon",
+      "label" : "CTA Font Awesome Icon",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "926d06cd-8520-a0f9-3ef6-66ff5fcc06e6",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "show",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "display" : "select",
+      "choices" : [ [ "far fa-play-circle", "Play Video Icon" ], [ "far fa-file-pdf", "PDF Icon" ], [ "far fa-arrow-right", "Page Icon" ], [ "blog_icon", "Blog Icon" ], [ "", "None" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "far fa-play-circle"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ {
+      "link_url" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.youtube.com/embed/CMHRYfA1gLM",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_url_text" : "WATCH OUR VIDEO",
+      "cta_font_awesome_icon" : "far fa-play-circle"
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "hide_show_cta" : "show",
+    "link_field_group" : [ {
+      "link_url" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.youtube.com/embed/CMHRYfA1gLM",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_url_text" : "WATCH OUR VIDEO",
+      "cta_font_awesome_icon" : "far fa-play-circle"
+    } ]
+  }
+} ]

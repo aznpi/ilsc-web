@@ -1,0 +1,61 @@
+<section class="section bg-white-canvas bg-blob-image">
+	<div class="container">
+    {% if module.bg_image_1.src %}
+      {% set sizeAttrs = 'width="{{ module.bg_image_1.width }}" height="{{ module.bg_image_1.height }}"' %}
+      {% if module.bg_image_1.size_type == 'auto' %}
+        {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+      {% elif module.bg_image_1.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.bg_image_1.max_width }}" height="{{ module.bg_image_1.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+       {% set loadingAttr = module.bg_image_1.loading != 'disabled' ? 'loading="{{ module.bg_image_1.loading }}"' : '' %}
+      <img src="{{ module.bg_image_1.src }}" class="blob blob-1" alt="{{ module.bg_image_1.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    {% endif %}
+    {% if module.bg_image_2.src %}
+      {% set sizeAttrs = 'width="{{ module.bg_image_2.width }}" height="{{ module.bg_image_2.height }}"' %}
+      {% if module.bg_image_2.size_type == 'auto' %}
+        {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+      {% elif module.bg_image_2.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.bg_image_2.max_width }}" height="{{ module.bg_image_2.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+       {% set loadingAttr = module.bg_image_2.loading != 'disabled' ? 'loading="{{ module.bg_image_2.loading }}"' : '' %}
+      <img src="{{ module.bg_image_2.src }}" class="blob blob-2" alt="{{ module.bg_image_2.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    {% endif %}
+		<div class="row">
+			<div class="col-md-12">
+				{% inline_rich_text field="title" value="{{ module.title }}" %}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="slider-wrapper">
+					<div class="box-slide-4 box-shadow mix">
+					{% for item in module.box_slide %}
+						 <div>
+						 	<div class="box-container school-details drop-shadow {{ module.hover_bg_color }}">
+						 		
+						 		<div class="a-link-small">
+						 			{% inline_rich_text field="box_title" value="{{ item.box_title }}" %}
+						 		</div>
+                <div class="short-description-container">    
+                 <div class="short-description">    
+                   
+	                  {{ item.short_description }}
+
+                 </div>
+               </div>
+						 	</div>
+               
+						 </div>
+        {% endfor %}   	 
+					</div>
+				</div>
+			</div>
+		</div>
+    <div class="row">
+      <div class="col-md-12 center">
+        {% set href = module.cta_field_group.link_field.url.href %}
+        <a href="{{ href }}" {% if module.cta_field_group.link_field.open_in_new_tab %}target="_blank"{% endif %}	{% if rel %}rel="{{ rel|join(" ") }}"{% endif %} class="btn btn-outline-primary btn-black-outline">{{ module.cta_field_group.text_field }}</a>
+      </div>
+    </div>
+	</div>
+</section>

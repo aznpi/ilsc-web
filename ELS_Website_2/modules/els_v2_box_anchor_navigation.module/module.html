@@ -1,0 +1,13 @@
+<section class="section-normal section-box-nav">
+    <div class="container">
+      <div class="row">
+        {% for item in module.box_field_group %}
+          <div class="col-md-3">
+            <div class="box-container" style="background: linear-gradient(169deg,rgba(245,130,32,1), rgba(245,130,32,1) 74%,rgba({{item.bg_color.color|convert_rgb}},{{ item.bg_color.opacity }}) 74.3%, rgba({{item.bg_color.color|convert_rgb}},{{ item.bg_color.opacity }}) 100%);" data-target="{{ item.target_text|lower|replace(' ','-')|replace("'","-") }}">
+              <h5>{{ item.target_text }}</h5>
+            </div>
+          </div>
+        {% endfor %}   
+      </div>
+    </div>
+  </section>

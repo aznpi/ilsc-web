@@ -1,0 +1,241 @@
+[ {
+  "id" : "e28d6961-75d3-5304-3dca-92c7a786dc7a",
+  "name" : "logo",
+  "label" : "logo",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/logo_ilsc_vertical.png",
+    "alt" : "logo_ilsc_vertical",
+    "width" : 528,
+    "height" : 217,
+    "max_width" : 528,
+    "max_height" : 217
+  }
+}, {
+  "id" : "cf1c4dbe-4d29-9bc3-2c34-f5948ff3a9d3",
+  "name" : "link_group",
+  "label" : "Link Group",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 10,
+    "sorting_label_field" : "f2902845-0432-4661-6ccd-5c9f20d9a2cd",
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "c87602c1-a274-51ec-c89d-757c94070b39",
+    "name" : "link_url",
+    "label" : "Link URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "CONTENT", "EXTERNAL" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    }
+  }, {
+    "id" : "f2902845-0432-4661-6ccd-5c9f20d9a2cd",
+    "name" : "link_text",
+    "label" : "Link Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "WORK WITH US"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "link_url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    },
+    "link_text" : "WORK WITH US"
+  }, {
+    "link_url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    },
+    "link_text" : "WORK WITH US"
+  }, {
+    "link_url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    },
+    "link_text" : "WORK WITH US"
+  }, {
+    "link_url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    },
+    "link_text" : "WORK WITH US"
+  } ]
+}, {
+  "id" : "a6af7596-fe75-0fa8-7047-240d76e73f4b",
+  "name" : "copyright",
+  "label" : "Copyright",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<p>© 2020 ILSC Education Group. All Rights Reserved.</p>\n<p>All programs are part of the English Language Programs for International Students CRICOS Code: 060152J. ILSC (Brisbane) PTY LTD is trading as ILSC-Brisbane, ILSC-Sydney, ILSC-Melbourne, ILSC-Adelaide, ILSC Australia RTO Number 31564, CRICOS Code: 02137M.</p>"
+}, {
+  "id" : "5f04a0e6-ddeb-3007-168d-51c64bd302d2",
+  "name" : "social_media",
+  "label" : "Social Media",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "85da3d74-7aa0-cbd8-e2f0-589b3f53e3a4",
+    "name" : "fb_link",
+    "label" : "fb_Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.facebook.com/ilscfb",
+        "content_id" : null
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "8d9753ca-3a12-43cf-723d-8a7680b2763a",
+    "name" : "instagram_link",
+    "label" : "instagram_Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.instagram.com/ilsc/",
+        "content_id" : null
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "4a3e9e33-d5b6-e825-fc64-5a40b8df11a3",
+    "name" : "youtube_link",
+    "label" : "youtube_Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.youtube.com/user/ilscTV",
+        "content_id" : null
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "c633b4b2-66d3-bb2f-1ba6-882c4d5441dc",
+    "name" : "linkedin_link",
+    "label" : "linkedin_Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://ca.linkedin.com/school/ilsc-education-group/",
+        "content_id" : null
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "5e67e4a6-9576-9e68-ec7e-44b8897d20cc",
+    "name" : "follow_us_text",
+    "label" : "Follow us Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Follow us on"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "fb_link" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.facebook.com/ilscfb",
+        "content_id" : null
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    },
+    "instagram_link" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.instagram.com/ilsc/",
+        "content_id" : null
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    },
+    "youtube_link" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.youtube.com/user/ilscTV",
+        "content_id" : null
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    },
+    "linkedin_link" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://ca.linkedin.com/school/ilsc-education-group/",
+        "content_id" : null
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    },
+    "follow_us_text" : "Follow us on"
+  }
+} ]

@@ -1,0 +1,285 @@
+[ {
+  "id" : "c95beb0a-8e40-205b-9e27-ef2597091ad7",
+  "name" : "cta_flyout",
+  "label" : "CTA Flyout",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "9973a8b6-c420-d245-9847-74cb5e786b8d",
+    "name" : "box_1",
+    "label" : "Box 1",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "d0909bb6-75c9-6d08-04e6-7978d6b44b50",
+      "name" : "box_link_text",
+      "label" : "Box Link Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "CONTACT US"
+    }, {
+      "id" : "2c38fa8a-0211-ffa5-2993-c5d309ffd82a",
+      "name" : "box_link_url",
+      "label" : "Box Link Url",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "box_link_text" : "CONTACT US",
+      "box_link_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    }
+  }, {
+    "id" : "a24f6495-bd87-9ed3-48d7-44f0a765526b",
+    "name" : "box_2",
+    "label" : "Box 2",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "c7a6f578-e1cd-53e0-30e2-88ba2fe90f97",
+      "name" : "box_link_text",
+      "label" : "Box Link Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "LANGUAGE LEVEL TEST"
+    }, {
+      "id" : "0a597465-58af-7da9-e8b1-602bf384f52b",
+      "name" : "box_link_url",
+      "label" : "Box Link Url",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "box_link_text" : "LANGUAGE LEVEL TEST",
+      "box_link_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    }
+  }, {
+    "id" : "53774efb-057c-968d-bd3d-b5219e3c65df",
+    "name" : "quote_box",
+    "label" : "Quote Box",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "44045451-c097-07fc-98ca-ec97436a8a56",
+      "name" : "show_link",
+      "label" : "Show Link",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "display_width" : null,
+      "default" : false
+    }, {
+      "id" : "114f81e1-8a9e-d43b-7ae5-331dcf132e4b",
+      "name" : "box_link_text",
+      "label" : "Box Link Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "GET A QUOTE"
+    }, {
+      "id" : "91915189-11dc-614a-143c-f151cae69691",
+      "name" : "box_link_url",
+      "label" : "Box Link Url",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "type" : "EXTERNAL",
+        "href" : "#quote-modal",
+        "content_id" : null
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "show_link" : false,
+      "box_link_text" : "GET A QUOTE",
+      "box_link_url" : {
+        "type" : "EXTERNAL",
+        "href" : "#quote-modal",
+        "content_id" : null
+      }
+    }
+  }, {
+    "id" : "6e7d5c02-f2d8-073a-d096-6ba192d0227f",
+    "name" : "box_3",
+    "label" : "Box 3",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "d28a9f6d-482d-8c73-c55a-88bc6ff2cd61",
+      "name" : "box_link_text",
+      "label" : "Box Link Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "APPLY NOW"
+    }, {
+      "id" : "5d2a62eb-e48c-c36a-3fed-6d51b6d951b3",
+      "name" : "box_link_url",
+      "label" : "Box Link Url",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 35601038414
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "box_link_text" : "APPLY NOW",
+      "box_link_url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 35601038414
+      }
+    }
+  }, {
+    "id" : "172d0c63-be53-9a16-2a7a-87827bf45f3c",
+    "name" : "phone_box",
+    "label" : "Phone Box",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "22961baa-551e-e552-38a9-4681697c8baa",
+      "name" : "show_link",
+      "label" : "Show Link",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "display_width" : null,
+      "default" : true
+    }, {
+      "id" : "e68808db-2700-01da-8789-60b0daf443bb",
+      "name" : "box_link_text",
+      "label" : "Box Link Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Call us: 1-855-560-0700"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "show_link" : true,
+      "box_link_text" : "Call us: 1-855-560-0700"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "box_1" : {
+      "box_link_text" : "CONTACT US",
+      "box_link_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    },
+    "box_2" : {
+      "box_link_text" : "LANGUAGE LEVEL TEST",
+      "box_link_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    },
+    "quote_box" : {
+      "show_link" : false,
+      "box_link_text" : "GET A QUOTE",
+      "box_link_url" : {
+        "type" : "EXTERNAL",
+        "href" : "#quote-modal",
+        "content_id" : null
+      }
+    },
+    "box_3" : {
+      "box_link_text" : "APPLY NOW",
+      "box_link_url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 35601038414
+      }
+    },
+    "phone_box" : {
+      "show_link" : true,
+      "box_link_text" : "Call us: 1-855-560-0700"
+    }
+  }
+} ]

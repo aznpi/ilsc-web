@@ -1,0 +1,74 @@
+<section id="language-school-section" class="section-hero section-hero-search site-search-page" style="background-color:{{ module.bg_color.color }}">
+	<div class="hero-image">
+		{% if module.hero_image.hero_image.src %}
+      {% set sizeAttrs = 'width="{{ module.hero_image.hero_image.width }}" height="{{ module.hero_image.hero_image.height }}"' %}
+      {% if module.hero_image.hero_image.size_type == 'auto' %}
+        {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+      {% elif module.hero_image.hero_image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.hero_image.hero_image.max_width }}px; max-height: {{ module.hero_image.hero_image.max_height }}px"' %}
+      {% endif %}
+      <img src="{{ module.hero_image.hero_image.src }}" alt="{{ module.hero_image.hero_image.alt }}" class="hero-image">
+    {% endif %}
+	</div>
+	<div class="content-container center">
+		<div class="container">
+        <div class="row">
+          <div class="col-md-12 hs-search-keyword">
+            {% inline_rich_text field="content_container" value="{{ module.content_container }}" %}
+            
+            <div class="section-form search-form">
+              <form action="/{{ site_settings.content_search_results_page_path }}">
+                <input type="hidden" name="type" value="SITE_PAGE">
+                <input type="hidden" name="type" value="BLOG_POST">
+                <input type="hidden" name="type" value="LISTING_PAGE">
+                {% if content.language.languageTag != "en" %}
+                  <input type="hidden" name="language" value="{{content.language.languageTag}}">
+                    {% else %}
+                  <input type="hidden" name="language" value="en">
+                {% endif %}
+                <input type="text" class="hs-search-field__input" name="term" autocomplete="off" placeholder="{{ module.search_placeholder_text }}">
+                 <button aria-label="Search"><span id="hs_cos_wrapper_module_1520280528083302_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_icon" style="" data-hs-cos-general-type="widget" data-hs-cos-type="icon"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true"><g id="layer1"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></g></svg></span></button>
+              </form>
+            </div>
+            
+            {% inline_rich_text field="content_container_2" value="{{ module.content_container_2 }}" %}
+            {% if module.hero_image.hide_show_hero_photo_description == "show" %}
+              <div class="photo-description">
+                <h6>{{ module.hero_image.hero_image.alt }}</h6>
+              </div>
+            {% endif %}
+            
+          </div>
+        </div>
+		</div>
+	</div>
+
+</section>
+<!-- Modal -->
+<div class="hero-video modal fade" id="heroModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+      <div class="modal-body">
+      	<div class="embed-responsive embed-responsive-16by9">
+		  <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+		</div> 
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<style>
+  @media (max-width: 600px) {
+    .section-hero .hero-image{
+      background:url({{ module.hero_image.mobile_hero_image.src }}) no-repeat;
+      background-size:cover;
+      min-height: 600px;
+    }
+  }
+</style>

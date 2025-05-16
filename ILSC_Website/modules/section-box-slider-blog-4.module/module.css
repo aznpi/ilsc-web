@@ -1,0 +1,24 @@
+.box-slide-blog .box-container .a-link-container{
+  margin-top:0;
+  min-height:255px;
+  position:relative;
+}
+.section-blog-list .a-link-container .fa-long-arrow-alt-right{
+  font-size:1.5rem;
+}
+
+.box-slide-blog .box-container .box-content a{
+  position: absolute;
+  bottom: 30px;
+}
+.box-slide-blog .box-container .box-content h5{
+  margin-top:10px;
+}
+.box-slide-blog .box-container .box-content .related-blog-date{
+  color:#828282;
+  font-size:14px;
+  font-weight:300;
+  margin-top:20px;
+  display:block;
+  text-transform:uppercase;
+}

@@ -1,0 +1,49 @@
+[ {
+  "id" : "8159c270-1d06-3e8f-a402-fea988c53834",
+  "name" : "anchor_id",
+  "label" : "Anchor ID",
+  "inline_help_text" : "Enter anchor ID when using anchor nav. Do not use special characters and spaces.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null
+}, {
+  "id" : "ec8ade86-57e7-dd52-7d8e-77519ab46f43",
+  "name" : "padding_choice",
+  "label" : "Padding Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "padding-none", "None" ], [ "padding-bottom-none", "No Bottom Padding" ], [ "padding-top-none", "No Top Padding" ], [ "padding-top", "Top Padding" ], [ "padding-bottom", "Bottom Padding" ], [ "padding-top-extra", "Top Padding Extra" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "560821b0-d0f3-b896-28f3-82add76791a5",
+  "name" : "title_rich_text",
+  "label" : "Title Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Learn English <span class=\"bold\">in Chicago at</span> <img src=\"https://www.ilsc.com/hubfs/ELS/Website%20v2/template-resources/images/logos/dominican-university-of-california-logo%201-min.png\" alt=\"dominican-university-of-california-logo 1-min\" class=\"img-fluid\"></h2>"
+}, {
+  "id" : "2454e36c-b2fa-09d8-b0af-0863453c10e8",
+  "name" : "campus_choice",
+  "label" : "Campus Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "Chicago", "Chicago" ], [ "81761745714", "Melbourne" ], [ "New York", "New York" ], [ "Cleveland", "Cleveland" ], [ "Houston", "Houston" ], [ "Nashville", "Nashville" ], [ "Philadelphia", "Philadelphia" ], [ "St. Petersburg", "St. Petersburg" ], [ "Los Angeles County", "Los Angeles County" ], [ "San Francisco North Bay", "San Francisco North Bay" ], [ "St. Paul", "St. Paul" ], [ "Tampa", "Tampa" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "Chicago"
+} ]

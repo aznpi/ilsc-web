@@ -1,0 +1,84 @@
+[ {
+  "id" : "9611313e-426e-d6cc-c05c-cc78f86b541b",
+  "name" : "bg_color",
+  "label" : "BG Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#ed1944",
+    "opacity" : 100
+  }
+}, {
+  "id" : "552e2f4f-a788-0603-5d66-29025b6fce66",
+  "name" : "font_color_choice",
+  "label" : "Font Color Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "text-dark", "Dark" ], [ "text-white", "White" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "text-white"
+}, {
+  "id" : "f9b52e76-99ec-2cd5-ac3c-8e6eabfbdd5b",
+  "name" : "title_text",
+  "label" : "Title Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "READY TO APPLY"
+}, {
+  "id" : "87c26d21-21cf-86a0-f300-3bd68b1e6874",
+  "name" : "link_field",
+  "label" : "Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "6022d954-da85-bdb4-66d8-d80235329a2c",
+  "name" : "button_text",
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "LEARN MORE"
+}, {
+  "id" : "847fd4ab-8484-06e9-ad4e-513151463c5f",
+  "name" : "button_color_choice",
+  "label" : "Button Color Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "btn-orange", "Orange" ], [ "btn-white", "White" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "btn-white"
+} ]

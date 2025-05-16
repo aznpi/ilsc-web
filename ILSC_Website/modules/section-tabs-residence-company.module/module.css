@@ -1,0 +1,5 @@
+.tab-navigation-landing ul.nav-pills li a.tab-button{
+  position:relative;
+  top:-10px;
+  font-weight:700;
+}

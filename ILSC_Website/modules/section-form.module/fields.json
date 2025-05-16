@@ -1,0 +1,32 @@
+[ {
+  "id" : "56af8779-33db-fac2-fee0-20df961bec8c",
+  "name" : "enforce_full_width_choice",
+  "label" : "Enforce Full Width Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "enable", "Enable" ], [ "disable", "Disable" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "disable"
+}, {
+  "id" : "ab618e90-518e-959d-780d-2e7a5a14c1d1",
+  "name" : "form_field",
+  "label" : "Form",
+  "required" : false,
+  "locked" : false,
+  "type" : "form",
+  "display_width" : null,
+  "default" : {
+    "form_id" : "06347a6a-d5a1-4726-9aff-8020ff621a9f",
+    "response_type" : "redirect",
+    "message" : "Thanks for submitting the form.",
+    "redirect_id" : 36120789873,
+    "redirect_url" : null,
+    "gotowebinar_webinar_key" : null,
+    "form_type" : "HUBSPOT"
+  }
+} ]

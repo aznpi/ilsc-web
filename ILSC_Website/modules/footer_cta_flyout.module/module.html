@@ -1,0 +1,30 @@
+{% set pathQ = request.path %}
+
+<div class="cta-flyout">
+	<div class="container">
+		<div class="row flyout-row-center">
+			<div>
+				<ul class="cta-button">
+					<li><a href="{{ module.cta_flyout.box_2.box_link_url.href }}" class="btn btn-outline-primary btn-black-outline">{{ module.cta_flyout.box_2.box_link_text }}</a></li>
+					{% if  module.cta_flyout.quote_box.show_link %}
+            <li><a href="#" data-toggle="modal" data-target="{{ module.cta_flyout.quote_box.box_link_url.href }}" class="btn btn-outline-primary btn-pathway-blue-outline">{{ module.cta_flyout.quote_box.box_link_text }}</a></li>				
+          {% endif %}
+          <li><a href="{{ module.cta_flyout.box_3.box_link_url.href }}" class="btn btn-primary btn-orange bold">{{ module.cta_flyout.box_3.box_link_text }}</a></li>
+				</ul>
+			</div>
+      <div>
+        <ul class="cta-button">
+					<li><a href="{{ module.cta_flyout.box_1.box_link_url.href }}" class="btn btn-outline-primary btn-black-outline">{{ module.cta_flyout.box_1.box_link_text }}</a></li>
+          {% if pathQ is not string_containing 'australia' %}
+            {% if  module.cta_flyout.phone_box.show_link %}
+              <li class="phone-text">
+                <i class="fas fa-phone"></i>&nbsp;&nbsp;<span class="bold">{{ module.cta_flyout.phone_box.box_link_text }}</span>
+              </li>
+            {% endif %}
+          {% endif %}
+        </ul>
+      </div>
+		</div>
+	</div>
+</div>
+

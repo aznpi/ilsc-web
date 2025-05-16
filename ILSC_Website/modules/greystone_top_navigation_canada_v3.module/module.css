@@ -1,0 +1,7 @@
+.language-selector a.language-link{
+  text-transform:uppercase;
+}
+header.top-nav .navbar .dropdown.language-selector .dropdown-menu ul li a{
+  padding-left: 1.5rem;
+  white-space:normal;
+}

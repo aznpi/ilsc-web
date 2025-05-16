@@ -1,0 +1,241 @@
+[ {
+  "id" : "830dbedf-39a3-3ee2-55aa-1f7843d465e1",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Campus Residence Sample Schedule</h2>\n<p>Each day is packed with a variety of fun activities and opportunities for practicing and improving language skills</p>"
+}, {
+  "id" : "a1a33ea1-0007-577d-9696-483c86465e35",
+  "name" : "time_tile",
+  "label" : "Time Tile",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 99,
+    "sorting_label_field" : "73f00c85-18b2-5cf0-dcc8-8f7ef26ae674",
+    "default" : 16
+  },
+  "children" : [ {
+    "id" : "c87b45ff-c161-3511-a942-f759687a9d11",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_orange_ellipse.png",
+      "alt" : "img_orange_ellipse",
+      "width" : 250,
+      "height" : 250,
+      "max_width" : 250,
+      "max_height" : 250
+    }
+  }, {
+    "id" : "73f00c85-18b2-5cf0-dcc8-8f7ef26ae674",
+    "name" : "content",
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h3 class=\"timeline-title\">1991</h3>\n<p style=\"font-size: 20px;\">ILSC Language Schools opens its first school in Vancouver</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_orange_ellipse.png",
+      "alt" : "img_orange_ellipse",
+      "width" : 250,
+      "height" : 250,
+      "max_width" : 250,
+      "max_height" : 250
+    },
+    "content" : "<h3 class=\"timeline-title\">1991</h3>\n<p style=\"font-size: 20px;\">ILSC Language Schools opens its first school in Vancouver</p>"
+  }, {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_orange_ellipse.png",
+      "alt" : "img_orange_ellipse",
+      "width" : 250,
+      "height" : 250,
+      "max_width" : 250,
+      "max_height" : 250
+    },
+    "content" : "<h3 class=\"timeline-title\">1991</h3>\n<p style=\"font-size: 20px;\">ILSC Language Schools opens its first school in Vancouver</p>"
+  }, {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_orange_ellipse.png",
+      "alt" : "img_orange_ellipse",
+      "width" : 250,
+      "height" : 250,
+      "max_width" : 250,
+      "max_height" : 250
+    },
+    "content" : "<h3 class=\"timeline-title\">1991</h3>\n<p style=\"font-size: 20px;\">ILSC Language Schools opens its first school in Vancouver</p>"
+  }, {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_orange_ellipse.png",
+      "alt" : "img_orange_ellipse",
+      "width" : 250,
+      "height" : 250,
+      "max_width" : 250,
+      "max_height" : 250
+    },
+    "content" : "<h3 class=\"timeline-title\">1991</h3>\n<p style=\"font-size: 20px;\">ILSC Language Schools opens its first school in Vancouver</p>"
+  }, {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_orange_ellipse.png",
+      "alt" : "img_orange_ellipse",
+      "width" : 250,
+      "height" : 250,
+      "max_width" : 250,
+      "max_height" : 250
+    },
+    "content" : "<h3 class=\"timeline-title\">1991</h3>\n<p style=\"font-size: 20px;\">ILSC Language Schools opens its first school in Vancouver</p>"
+  }, {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_orange_ellipse.png",
+      "alt" : "img_orange_ellipse",
+      "width" : 250,
+      "height" : 250,
+      "max_width" : 250,
+      "max_height" : 250
+    },
+    "content" : "<h3 class=\"timeline-title\">1991</h3>\n<p style=\"font-size: 20px;\">ILSC Language Schools opens its first school in Vancouver</p>"
+  }, {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_orange_ellipse.png",
+      "alt" : "img_orange_ellipse",
+      "width" : 250,
+      "height" : 250,
+      "max_width" : 250,
+      "max_height" : 250
+    },
+    "content" : "<h3 class=\"timeline-title\">1991</h3>\n<p style=\"font-size: 20px;\">ILSC Language Schools opens its first school in Vancouver</p>"
+  }, {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_orange_ellipse.png",
+      "alt" : "img_orange_ellipse",
+      "width" : 250,
+      "height" : 250,
+      "max_width" : 250,
+      "max_height" : 250
+    },
+    "content" : "<h3 class=\"timeline-title\">1991</h3>\n<p style=\"font-size: 20px;\">ILSC Language Schools opens its first school in Vancouver</p>"
+  }, {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_orange_ellipse.png",
+      "alt" : "img_orange_ellipse",
+      "width" : 250,
+      "height" : 250,
+      "max_width" : 250,
+      "max_height" : 250
+    },
+    "content" : "<h3 class=\"timeline-title\">1991</h3>\n<p style=\"font-size: 20px;\">ILSC Language Schools opens its first school in Vancouver</p>"
+  }, {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_orange_ellipse.png",
+      "alt" : "img_orange_ellipse",
+      "width" : 250,
+      "height" : 250,
+      "max_width" : 250,
+      "max_height" : 250
+    },
+    "content" : "<h3 class=\"timeline-title\">1991</h3>\n<p style=\"font-size: 20px;\">ILSC Language Schools opens its first school in Vancouver</p>"
+  }, {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_orange_ellipse.png",
+      "alt" : "img_orange_ellipse",
+      "width" : 250,
+      "height" : 250,
+      "max_width" : 250,
+      "max_height" : 250
+    },
+    "content" : "<h3 class=\"timeline-title\">1991</h3>\n<p style=\"font-size: 20px;\">ILSC Language Schools opens its first school in Vancouver</p>"
+  }, {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_orange_ellipse.png",
+      "alt" : "img_orange_ellipse",
+      "width" : 250,
+      "height" : 250,
+      "max_width" : 250,
+      "max_height" : 250
+    },
+    "content" : "<h3 class=\"timeline-title\">1991</h3>\n<p style=\"font-size: 20px;\">ILSC Language Schools opens its first school in Vancouver</p>"
+  }, {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_orange_ellipse.png",
+      "alt" : "img_orange_ellipse",
+      "width" : 250,
+      "height" : 250,
+      "max_width" : 250,
+      "max_height" : 250
+    },
+    "content" : "<h3 class=\"timeline-title\">1991</h3>\n<p style=\"font-size: 20px;\">ILSC Language Schools opens its first school in Vancouver</p>"
+  }, {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_orange_ellipse.png",
+      "alt" : "img_orange_ellipse",
+      "width" : 250,
+      "height" : 250,
+      "max_width" : 250,
+      "max_height" : 250
+    },
+    "content" : "<h3 class=\"timeline-title\">1991</h3>\n<p style=\"font-size: 20px;\">ILSC Language Schools opens its first school in Vancouver</p>"
+  }, {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_orange_ellipse.png",
+      "alt" : "img_orange_ellipse",
+      "width" : 250,
+      "height" : 250,
+      "max_width" : 250,
+      "max_height" : 250
+    },
+    "content" : "<h3 class=\"timeline-title\">1991</h3>\n<p style=\"font-size: 20px;\">ILSC Language Schools opens its first school in Vancouver</p>"
+  }, {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_orange_ellipse.png",
+      "alt" : "img_orange_ellipse",
+      "width" : 250,
+      "height" : 250,
+      "max_width" : 250,
+      "max_height" : 250
+    },
+    "content" : "<h3 class=\"timeline-title\">1991</h3>\n<p style=\"font-size: 20px;\">ILSC Language Schools opens its first school in Vancouver</p>"
+  } ]
+}, {
+  "picker" : "file",
+  "id" : "09d4caa4-3ea3-3cb0-e723-dc23c05cc887",
+  "name" : "icon_arrow",
+  "label" : "Icon Arrow",
+  "required" : false,
+  "locked" : false,
+  "type" : "file",
+  "display_width" : null,
+  "default" : "https://f.hubspotusercontent10.net/hubfs/5020112/icon_arrow.svg"
+}, {
+  "id" : "938b5819-8842-4dcc-93c0-9b14e8680772",
+  "name" : "color_theme",
+  "label" : "Color Theme",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "teal", "Teal" ], [ "orange", "Orange" ], [ "yellow", "Yellow" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "orange"
+} ]

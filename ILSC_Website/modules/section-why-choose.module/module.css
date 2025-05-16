@@ -1,0 +1,44 @@
+.section.section-choose .box-image {
+  position:relative;
+  z-index:1;
+}
+.section.section-choose .box-image .bg-circle{
+  z-index:-1;
+}
+.section.section-choose .bg-circle{
+  position:absolute;
+}
+.section.section-choose .row-box{
+  margin-top:20%;
+}
+.section.section-choose .bg-circle{
+   z-index: auto;
+}
+.section.section-choose .bg-circle.top-left{
+  left: -100px;
+  top: -120px;
+}
+.section.section-choose .bg-circle.bottom-right{
+  right: -400px;
+  bottom: -450px;
+}
+.section.section-choose .box-image .bg-circle.bottom-left{
+  bottom: -30px;
+  left: -10px;
+}
+
+.section.section-choose .box-image .bg-circle.top-right{
+  top: -30px;
+  right: -10px;
+}
+.section.section-choose .box-image .bg-circle.bottom-right{
+  bottom: -30px;
+  right: -10px;
+}
+.section.section-choose .box-image .bg-circle.top-left{
+  top: -30px;
+  left: -10px;
+}
+.section.section-choose h5{
+  font-weight:400;
+}

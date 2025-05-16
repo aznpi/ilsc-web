@@ -1,0 +1,44 @@
+[ {
+  "id" : "f597a659-fd1e-b130-82f7-ec8fe0d2611b",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2><span>PRICING</span></h2>\n<p><span>*All prices are in Australian dollars and include GST. </span></p>"
+}, {
+  "id" : "70eb43e5-e9b5-ed01-fee9-d9e3cead0667",
+  "name" : "price_box",
+  "label" : "Price Box",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 10,
+    "sorting_label_field" : "604f5d13-f99a-7fdd-217d-15c8edd7d035",
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "604f5d13-f99a-7fdd-217d-15c8edd7d035",
+    "name" : "text_box",
+    "label" : "Text Box",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h5>PRICING</h5>\n<h6>ROOM TYPE</h6>\n<h3>Studio Apartment Private bathroom</h3>\n<div class=\"pricing\">\n<ul class=\"price-list\">\n<ul>\n<li class=\"term\">WEEKLY RATE</li>\n<li class=\"price\">$360</li>\n</ul>\n</ul>\n<ul class=\"price-list\">\n<li class=\"term\">WEEKLY RATE 25 WEEKS+</li>\n<li class=\"price\">$340</li>\n</ul>\n</div>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "text_box" : "<h5>PRICING</h5>\n<h6>ROOM TYPE</h6>\n<h3>Studio Apartment Private bathroom</h3>\n<div class=\"pricing\">\n<ul class=\"price-list\">\n<ul>\n<li class=\"term\">WEEKLY RATE</li>\n<li class=\"price\">$360</li>\n</ul>\n</ul>\n<ul class=\"price-list\">\n<li class=\"term\">WEEKLY RATE 25 WEEKS+</li>\n<li class=\"price\">$340</li>\n</ul>\n</div>"
+  }, {
+    "text_box" : "<h5>PRICING</h5>\n<h6>ROOM TYPE</h6>\n<h3>Studio Apartment Private bathroom</h3>\n<div class=\"pricing\">\n<ul class=\"price-list\">\n<ul>\n<li class=\"term\">WEEKLY RATE</li>\n<li class=\"price\">$360</li>\n</ul>\n</ul>\n<ul class=\"price-list\">\n<li class=\"term\">WEEKLY RATE 25 WEEKS+</li>\n<li class=\"price\">$340</li>\n</ul>\n</div>"
+  }, {
+    "text_box" : "<h5>PRICING</h5>\n<h6>ROOM TYPE</h6>\n<h3>Studio Apartment Private bathroom</h3>\n<div class=\"pricing\">\n<ul class=\"price-list\">\n<ul>\n<li class=\"term\">WEEKLY RATE</li>\n<li class=\"price\">$360</li>\n</ul>\n</ul>\n<ul class=\"price-list\">\n<li class=\"term\">WEEKLY RATE 25 WEEKS+</li>\n<li class=\"price\">$340</li>\n</ul>\n</div>"
+  } ]
+} ]

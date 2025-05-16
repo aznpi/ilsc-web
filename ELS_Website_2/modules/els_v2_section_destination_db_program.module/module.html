@@ -1,0 +1,48 @@
+{% set queryparam = '' %}
+{% set queryparam = queryparam ~ "&campus__in="+module.campus_choice|urlencode  %}
+{% set queryparam = queryparam ~ "&enable__eq=true"  %}
+
+{% set programs = hubdb_table_rows(5475402,queryparam) %}
+{% set langCode = content.language == 'en' ? '' : '/'+content.language %}
+{% if module.anchor_id %}
+  <a class="anchor-link" name="{{ module.anchor_id|replace(' ','-')|replace("'","-")|replace(',','-') }}"></a>
+{% endif %}
+<section class="section-normal {{ module.padding_choice }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+      </div>
+    </div>  
+  </div>
+</section>
+
+<section class="section-normal section-diagonal section-3-box-program-slider">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="program-box-slider">
+          {% for program in programs %}
+            <div>
+              <div class="box-container">
+                <div class="image-container">
+                  <img src="{{program.image_thumbnail.url}}" class="img-fluid" loading="lazy">
+                </div>
+                <div class="text-container">
+                  <h4>{{program.program_name}}</h4>
+                  <div class="description-container">
+                  {{program.short_description}}
+                  </div>
+                  <div class="btn-container">
+                    <a href="{{langCode}}{{program.page_link}}" class="btn btn-orange">Discover our {{program.program_name}} program</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="diagonal-box grey-linear-box underlap-overlay"></div>
+</section>

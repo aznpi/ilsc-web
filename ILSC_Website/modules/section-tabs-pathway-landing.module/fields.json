@@ -1,0 +1,349 @@
+[ {
+  "id" : "04878ce2-e4c2-ac94-9e90-1be3946a157a",
+  "name" : "tabs",
+  "label" : "Tabs",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "a3abb5ab-efaa-3803-a373-8089c8920b26",
+    "name" : "tab_1",
+    "label" : "Tab 1",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "2d04de45-f279-53cd-553b-f9677e468918",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Overview"
+    }, {
+      "id" : "f26fe2ac-836b-9938-9db9-443c692a03dc",
+      "name" : "text_content",
+      "label" : "Text Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<h2>Achieve your dreams of earning a qualification from a college or university in Canada.</h2>\n<p>We can help you find the right college or university program to meet your goals, and help you apply. Once you arrive at ILSC, you’ll receive a university pathway orientation and our academic advisors can help you choose the right courses to support your learning. Complete a minimum of two levels of required* University Pathway courses and you’ll be ready for success.</p>"
+    }, {
+      "id" : "963e80f4-5ce8-9904-03fd-25614a3b434f",
+      "name" : "image_field",
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_pathway_tab_1.jpg",
+        "alt" : "img_pathway_tab_1",
+        "width" : 531,
+        "height" : 396,
+        "max_width" : 531,
+        "max_height" : 396
+      }
+    }, {
+      "id" : "c2716914-7abf-1b95-f021-a36e950182e5",
+      "name" : "hide_show_cta",
+      "label" : "Hide/Show CTA",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "show"
+    }, {
+      "id" : "b9569c62-4002-a1fb-134a-221de8db7c8a",
+      "name" : "cta_url_text",
+      "label" : "CTA URL Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "c2716914-7abf-1b95-f021-a36e950182e5",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "show",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "WATCH OUR VIDEO"
+    }, {
+      "id" : "46b267b8-29de-0226-bea8-d4381d1575c7",
+      "name" : "cta_url",
+      "label" : "CTA Url",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "c2716914-7abf-1b95-f021-a36e950182e5",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "show",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "BLOG" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.youtube.com/embed/0ci-uzkLIwM",
+        "content_id" : null
+      }
+    }, {
+      "id" : "e0b0b560-b394-f703-904b-65dafd717ad4",
+      "name" : "cta_font_awesome_icon",
+      "label" : "CTA Font Awesome Icon",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "c2716914-7abf-1b95-f021-a36e950182e5",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "show",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "display" : "select",
+      "choices" : [ [ "far fa-play-circle", "Play Video Icon" ], [ "far fa-file-pdf", "PDF Icon" ], [ "far fa-arrow-right", "Page Icon" ], [ "fas fa-blog", "Blog Icon" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "far fa-play-circle"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "title" : "Overview",
+      "text_content" : "<h2>Achieve your dreams of earning a qualification from a college or university in Canada.</h2>\n<p>We can help you find the right college or university program to meet your goals, and help you apply. Once you arrive at ILSC, you’ll receive a university pathway orientation and our academic advisors can help you choose the right courses to support your learning. Complete a minimum of two levels of required* University Pathway courses and you’ll be ready for success.</p>",
+      "image_field" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_pathway_tab_1.jpg",
+        "alt" : "img_pathway_tab_1",
+        "width" : 531,
+        "height" : 396,
+        "max_width" : 531,
+        "max_height" : 396
+      },
+      "hide_show_cta" : "show",
+      "cta_url_text" : "WATCH OUR VIDEO",
+      "cta_url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.youtube.com/embed/0ci-uzkLIwM",
+        "content_id" : null
+      },
+      "cta_font_awesome_icon" : "far fa-play-circle"
+    }
+  }, {
+    "id" : "f86f0737-de58-9089-68f1-e334cfa8ca1d",
+    "name" : "tab_2",
+    "label" : "Tab 2",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "c589762c-7e48-a26a-e8d3-eb7c9f3f1dbd",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Program Snapshot"
+    }, {
+      "id" : "0154250b-05f3-7a3d-6786-be887aab7696",
+      "name" : "text_content",
+      "label" : "Text Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<div>\n<h5>LOCATION AVAILABLE</h5>\n<p>Vancouver, Toronto, Montreal</p>\n</div>\n<div>\n<h5>PROGRAM LENGTH</h5>\n<p>8 weeks minimum</p>\n</div>\n<div>\n<h5>SCHEDULE</h5>\n<p>Full-Time Intensive</p>\n</div>\n<div>\n<h5>START DATES</h5>\n<p>Every Monday except the last week of a session</p>\n</div>\n<div>\n<h5>ENGLISH LEVEL</h5>\n<p>Any level</p>\n</div>"
+    }, {
+      "id" : "1e66267a-765a-1744-e9a1-a63392d86b4f",
+      "name" : "image_field",
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_pathway_tab_2.jpg",
+        "alt" : "img_pathway_tab_2",
+        "width" : 544,
+        "height" : 362,
+        "max_width" : 544,
+        "max_height" : 362
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "title" : "Program Snapshot",
+      "text_content" : "<div>\n<h5>LOCATION AVAILABLE</h5>\n<p>Vancouver, Toronto, Montreal</p>\n</div>\n<div>\n<h5>PROGRAM LENGTH</h5>\n<p>8 weeks minimum</p>\n</div>\n<div>\n<h5>SCHEDULE</h5>\n<p>Full-Time Intensive</p>\n</div>\n<div>\n<h5>START DATES</h5>\n<p>Every Monday except the last week of a session</p>\n</div>\n<div>\n<h5>ENGLISH LEVEL</h5>\n<p>Any level</p>\n</div>",
+      "image_field" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_pathway_tab_2.jpg",
+        "alt" : "img_pathway_tab_2",
+        "width" : 544,
+        "height" : 362,
+        "max_width" : 544,
+        "max_height" : 362
+      }
+    }
+  }, {
+    "id" : "894edd25-be0a-60c0-d666-66e6033797af",
+    "name" : "tab_3",
+    "label" : "Tab 3",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "1c654d3f-a2c2-ffe0-993b-4929c099bc8e",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Sample Schedule"
+    }, {
+      "id" : "ffddd9f7-d2a5-3892-48f2-b048c1031542",
+      "name" : "text_content",
+      "label" : "Text Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<div>\n<h5>STUDY SCHEDULES</h5>\n<p>University Pathway students must complete 2 ILSC levels of required courses. Your schedule and required courses will depend on the ILSC Language Entry Level required for your chosen program at your partner school.</p>\n</div>"
+    }, {
+      "id" : "c476b4c8-c926-7d5f-e837-ed94f75fd51b",
+      "name" : "iframe_error_text",
+      "label" : "Iframe error text",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<p style=\"font-size: 110%;\"><em><strong>ERROR: </strong>An iframe should be displayed here but your browser version does not support iframes.</em> Please update your browser to its most recent version and try again.</p>"
+    }, {
+      "id" : "750e223b-31af-b831-5681-2fceacbb773d",
+      "name" : "schedule_1_url",
+      "label" : "Schedule 1 URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL" ],
+      "type" : "url",
+      "display_width" : null,
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "title" : "Sample Schedule",
+      "text_content" : "<div>\n<h5>STUDY SCHEDULES</h5>\n<p>University Pathway students must complete 2 ILSC levels of required courses. Your schedule and required courses will depend on the ILSC Language Entry Level required for your chosen program at your partner school.</p>\n</div>",
+      "iframe_error_text" : "<p style=\"font-size: 110%;\"><em><strong>ERROR: </strong>An iframe should be displayed here but your browser version does not support iframes.</em> Please update your browser to its most recent version and try again.</p>",
+      "schedule_1_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "tab_1" : {
+      "title" : "Overview",
+      "text_content" : "<h2>Achieve your dreams of earning a qualification from a college or university in Canada.</h2>\n<p>We can help you find the right college or university program to meet your goals, and help you apply. Once you arrive at ILSC, you’ll receive a university pathway orientation and our academic advisors can help you choose the right courses to support your learning. Complete a minimum of two levels of required* University Pathway courses and you’ll be ready for success.</p>",
+      "image_field" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_pathway_tab_1.jpg",
+        "alt" : "img_pathway_tab_1",
+        "width" : 531,
+        "height" : 396,
+        "max_width" : 531,
+        "max_height" : 396
+      },
+      "hide_show_cta" : "show",
+      "cta_url_text" : "WATCH OUR VIDEO",
+      "cta_url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.youtube.com/embed/0ci-uzkLIwM",
+        "content_id" : null
+      },
+      "cta_font_awesome_icon" : "far fa-play-circle"
+    },
+    "tab_2" : {
+      "title" : "Program Snapshot",
+      "text_content" : "<div>\n<h5>LOCATION AVAILABLE</h5>\n<p>Vancouver, Toronto, Montreal</p>\n</div>\n<div>\n<h5>PROGRAM LENGTH</h5>\n<p>8 weeks minimum</p>\n</div>\n<div>\n<h5>SCHEDULE</h5>\n<p>Full-Time Intensive</p>\n</div>\n<div>\n<h5>START DATES</h5>\n<p>Every Monday except the last week of a session</p>\n</div>\n<div>\n<h5>ENGLISH LEVEL</h5>\n<p>Any level</p>\n</div>",
+      "image_field" : {
+        "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_pathway_tab_2.jpg",
+        "alt" : "img_pathway_tab_2",
+        "width" : 544,
+        "height" : 362,
+        "max_width" : 544,
+        "max_height" : 362
+      }
+    },
+    "tab_3" : {
+      "title" : "Sample Schedule",
+      "text_content" : "<div>\n<h5>STUDY SCHEDULES</h5>\n<p>University Pathway students must complete 2 ILSC levels of required courses. Your schedule and required courses will depend on the ILSC Language Entry Level required for your chosen program at your partner school.</p>\n</div>",
+      "iframe_error_text" : "<p style=\"font-size: 110%;\"><em><strong>ERROR: </strong>An iframe should be displayed here but your browser version does not support iframes.</em> Please update your browser to its most recent version and try again.</p>",
+      "schedule_1_url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      }
+    }
+  }
+}, {
+  "id" : "feafff2a-0fbf-27d8-c4c9-c978f6903b29",
+  "name" : "mobile_tab_text",
+  "label" : "Mobile Tab Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Features:"
+} ]

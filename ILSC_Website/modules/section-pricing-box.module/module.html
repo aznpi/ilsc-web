@@ -1,0 +1,21 @@
+<section class="section bg-white-canvas">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				{% inline_rich_text field="title" value="{{ module.title }}" %}
+			</div>
+		</div>
+		<div class="row">
+      {% for item in module.price_box %}
+        <div class="col-md-4 price-box" >
+          <div class="content-container">
+            <div class="description">
+              {% inline_rich_text field="text_box" value="{{ item.text_box }}" %}
+            </div>
+          </div>
+        </div>
+			{% endfor %}
+			
+		</div>
+	</div>
+</section>

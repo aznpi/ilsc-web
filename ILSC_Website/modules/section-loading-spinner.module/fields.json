@@ -1,0 +1,13 @@
+[ {
+  "id" : "fe573738-8f79-5e38-7b6c-6a313dd91247",
+  "name" : "icon_color",
+  "label" : "Icon Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#ff8b35",
+    "opacity" : 100
+  }
+} ]

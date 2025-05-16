@@ -1,0 +1,104 @@
+[ {
+  "id" : "2b986072-3233-8ed8-cf27-e621308d831f",
+  "name" : "title_address",
+  "label" : "Title Address",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Where to find us</h2>"
+}, {
+  "id" : "9d563175-02e9-7954-846a-e29e2edc86bd",
+  "name" : "location_group",
+  "label" : "Location group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 20,
+    "sorting_label_field" : "c5ee29b7-8e58-862b-af1f-87b62972c3e7",
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "c5ee29b7-8e58-862b-af1f-87b62972c3e7",
+    "name" : "location_address",
+    "label" : "Location Address",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h5>555 Richards Street, Vancouver, B.C. Canada, V6B 2Z5</h5>"
+  }, {
+    "id" : "f7c5f994-42cc-07e8-5847-f1e208c110a3",
+    "name" : "map_coordinates",
+    "label" : "Map Coordinates",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "-33.873176, 151.207401"
+  }, {
+    "id" : "374811a1-9171-615f-8259-2f7a44f2cffc",
+    "name" : "center_position",
+    "label" : "Center Position",
+    "help_text" : "Select 1 location as the center of the map",
+    "required" : true,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : false
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "location_address" : "<h5>555 Richards Street, Vancouver, B.C. Canada, V6B 2Z5</h5>",
+    "map_coordinates" : "-33.873176, 151.207401",
+    "center_position" : false
+  } ]
+}, {
+  "id" : "b9b3ff3c-dee7-c55b-cf58-ee49681c1aad",
+  "name" : "map_zoom",
+  "label" : "Map Zoom",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "type" : "number",
+  "display_width" : null,
+  "default" : 14
+}, {
+  "id" : "3e77b54d-6205-00c0-7638-648dbc4c84d7",
+  "name" : "add_top_bottom_pad",
+  "label" : "Add TOP/BOTTOM PAD",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "top-pad", "ADD Top Pad" ], [ "btm-pad", "ADD Bottom Pad" ], [ "both-pad", "Add Top + Bottom Pad" ], [ "no-pad", "No Pad" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "btm-pad"
+}, {
+  "id" : "aaf6084a-dc7b-7b09-8cb1-7de1ed797435",
+  "name" : "main_image",
+  "label" : "Main Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "src" : ""
+  }
+} ]

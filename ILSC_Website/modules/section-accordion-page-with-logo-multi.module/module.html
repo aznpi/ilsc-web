@@ -1,0 +1,126 @@
+{% set num = 1 %}
+<section class="section section-faq section-faq-full section-accordion-logo bg-white-canvas">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				{% inline_rich_text field="title" value="{{ module.title }}" %}
+      </div>
+			
+		</div>
+		<div class="row accordion-container">
+			<div class="col-md-12">
+						<div class="accordion left" id="accordionFaq">
+
+              {% for item in module.faq_items%}
+                        
+                  <div class="card">
+                    <div class="card-header" id="heading-{{num}}">
+                      <div class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-{{num}}" {% if num == 1 %} aria-expanded="true" {% else %} aria-expanded="false" {% endif %} aria-controls="collapse-{{num}}">
+                          <div class="row">
+                            
+                          
+                          <div class="col-md-4">
+                            {% if item.logo_image.src %}
+                              {% set sizeAttrs = 'width="{{ item.logo_image.width }}" height="{{ item.logo_image.height }}"' %}
+                              {% if item.logo_image.size_type == 'auto' %}
+                                {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                              {% elif item.logo_image.size_type == 'auto_custom_max' %}
+                                {% set sizeAttrs = 'width="{{ item.logo_image.max_width }}" height="{{ item.logo_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                              {% endif %}
+                               {% set loadingAttr = item.logo_image.loading != 'disabled' ? 'loading="{{ item.logo_image.loading }}"' : '' %}
+                              <img src="{{ item.logo_image.src }}" alt="{{ item.logo_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                            {% endif %}
+                          </div>
+                          <div class="col-md-8">
+                            <h4>
+                              {{ item.question_text }}
+                            </h4>
+                          </div>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div id="collapse-{{num}}" {% if num == 1 %} class="collapse show" {% else %} class="collapse" {% endif %} aria-labelledby="heading-{{num}}" data-parent="#accordionFaq">
+                      <div class="card-body">
+                       <div>
+                         {{ item.answer_text }}
+                       </div>
+                        
+                        <div class="row accordion-container">
+                          <div class="col-md-12">
+                                <div class="accordion accordion-child left" id="accordionFaq-child-{{num}}">
+
+                                  {% for item2 in item.faq_child_items %}
+
+                                      <div class="card">
+                                        <div class="card-header" id="heading-{{num}}-{{loop.index}}">
+                                          <div class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-{{num}}-{{loop.index}}" {% if loop.index == 1 %} aria-expanded="true" {% else %} aria-expanded="false" {% endif %} aria-controls="collapse-{{num}}-{{loop.index}}">
+                                              <div class="row">
+                                              <div class="col-md-12">
+                                                <h5>
+                                                  {{ item2.question_text }}
+                                                </h5>
+                                              </div>
+                                              </div>
+                                            </button>
+                                          </div>
+                                        </div>
+
+                                        <div id="collapse-{{num}}-{{loop.index}}" {% if loop.index == 1 %} class="collapse show" {% else %} class="collapse" {% endif %} aria-labelledby="heading-{{num}}-{{loop.index}}" data-parent="#accordionFaq-child-{{num}}">
+                                          <div class="card-body">
+                                           {{ item2.answer_text }}
+                                          </div>
+                                        </div>
+                                      </div>
+                                  {% endfor %}
+
+
+                                </div>
+
+                            </div>
+                          </div>
+                        {% if item.hide_show_cta_choice == 'show' %}
+                         
+                              <div class="a-link-container">
+                                <div><i class="far fa-file-pdf">&nbsp;</i></div>
+                                <div>
+                                  {% set href = item.document_cta_group.document_link.url.href %}
+                                  {% if item.document_cta_group.document_link.url.type is equalto "EMAIL_ADDRESS" %}
+                                  {% set href = "mailto:" + href %}
+                                  {% endif %}
+                                  {% set rel = [] %}
+                                  {% if item.document_cta_group.document_link.no_follow %}
+                                  {% do rel.append("nofollow") %}
+                                  {% endif %}
+                                  {% if item.document_cta_group.document_link.open_in_new_tab %}
+                                  {% do rel.append("noopener") %}
+                                  {% endif %}
+                                  <a href="{{ href }}"
+                                     {% if item.document_cta_group.document_link.open_in_new_tab %}target="_blank"{% endif %}
+                                     {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                                     >
+                                    {{ item.document_cta_group.cta_text }}
+                                  </a>
+                                </div>
+                              </div>
+                         
+                        {% endif %}  
+                        
+                      </div>
+                    </div>
+                  </div>
+         
+                {% set num = num + 1%}
+						  {% endfor %}
+             
+              
+						</div>
+				
+				</div>
+			</div>
+      
+		</div>
+</section>

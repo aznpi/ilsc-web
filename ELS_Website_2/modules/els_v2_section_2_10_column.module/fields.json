@@ -1,0 +1,90 @@
+[ {
+  "id" : "e17b73fa-e373-4cd4-f9c9-41aa4ae9ced9",
+  "name" : "padding_choice",
+  "label" : "Padding Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "padding-none", "No Padding" ], [ "padding-top", "Padding Top" ], [ "padding-bottom", "Padding Bottom" ], [ "padding-top-none", "No Padding Top " ], [ "padding-bottom-none", "No Padding Bottom" ], [ "padding-top-extra", "Extra Top Padding" ], [ "padding-bottom-extra", "Extra Bottom Padding" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "e57e1c10-304f-9db0-a153-9a42ba05fcc5",
+  "name" : "margin_choice",
+  "label" : "Margin Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "margin-top-extra", "Extra Top Margin" ], [ "", "None" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "2c813299-8e1b-8f94-718c-78c42558eb05",
+  "name" : "left_column_image",
+  "label" : "Left Column Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "b29acaa6-de9b-4d72-e7a3-550f464a5ed8",
+  "name" : "column_field_group",
+  "label" : "Right Column Field group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "39df5279-7006-4bf3-9899-4289765e0de9",
+    "name" : "title_rich_text",
+    "label" : "Title Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h2>Learn English on a<br><span class=\"bold\">University Campus</span></h2>"
+  }, {
+    "id" : "ca714739-3fda-ea0f-4d0e-5cf273a436e3",
+    "name" : "description_rich_text",
+    "label" : "Description Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<p>ELS has Language Centers located on the campuses of Colleges and Universities across the United States. Study English with ELS and you'll enjoy a unique American student experience with the opportunity to meet and connect with local college and university students while you take advantage of shared campus facilities, like student lounges, cafeterias, computer labs, and more!</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "title_rich_text" : "<h2>Learn English on a<br><span class=\"bold\">University Campus</span></h2>",
+    "description_rich_text" : "<p>ELS has Language Centers located on the campuses of Colleges and Universities across the United States. Study English with ELS and you'll enjoy a unique American student experience with the opportunity to meet and connect with local college and university students while you take advantage of shared campus facilities, like student lounges, cafeterias, computer labs, and more!</p>"
+  }
+}, {
+  "id" : "91761b7d-41c3-3c07-3294-0d1b485aba2f",
+  "name" : "anchor_id",
+  "label" : "Anchor ID",
+  "inline_help_text" : "Enter anchor ID when using anchor nav. Do not use special characters and spaces.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null
+} ]

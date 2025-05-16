@@ -1,0 +1,161 @@
+[ {
+  "id" : "dbb1a6b0-b9f3-3b38-ec63-86adbd230e37",
+  "name" : "content_container",
+  "label" : "Content Container",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h1>Connect with the world</h1>\n<h2>Your journey to learning english starts here</h2>"
+}, {
+  "id" : "d7dd255a-f2f1-d9fa-e07e-7c1de80db843",
+  "name" : "content_container_2",
+  "label" : "Content Container 2",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h1>Connect with the world</h1>\n<h2>Your journey to learning english starts here</h2>"
+}, {
+  "id" : "6bbaec87-b19d-84cd-1c08-24f1d9bd345f",
+  "name" : "hero_image",
+  "label" : "Hero Image",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "78ee3f0a-890f-c973-fb93-9df9143938a1",
+    "name" : "hide_show_bg_video",
+    "label" : "Hide/Show BG Video",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "hide"
+  }, {
+    "id" : "0ec0bf14-13f2-cfef-7932-c72cadacd44b",
+    "name" : "bg_video_url",
+    "label" : "BG Video URL",
+    "inline_help_text" : "If left blank, the hero will be the image.",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "78ee3f0a-890f-c973-fb93-9df9143938a1",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "show",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "type" : "EXTERNAL",
+      "href" : "https://tinyurl.com/y5x5jmnf",
+      "content_id" : null
+    }
+  }, {
+    "id" : "e57f5bac-b9b3-2d85-5137-81e593c57a26",
+    "name" : "hero_image",
+    "label" : "Hero Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/hero_language_school_landing.jpg",
+      "alt" : "Hero Language School",
+      "width" : 2880,
+      "height" : 1440,
+      "max_width" : 2880,
+      "max_height" : 1440
+    }
+  }, {
+    "id" : "de517dc4-b6fb-5075-3be8-0eaae064ffad",
+    "name" : "hide_show_hero_photo_description",
+    "label" : "Hide/Show Hero Photo Description",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "hide"
+  }, {
+    "id" : "d07cf408-124c-3de1-ddf0-058c5841d217",
+    "name" : "mobile_hero_image",
+    "label" : "Mobile Hero Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/hero_home_mobile.jpg",
+      "alt" : "hero_home_mobile",
+      "width" : 600,
+      "height" : 800,
+      "max_width" : 600,
+      "max_height" : 800
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "hide_show_bg_video" : "hide",
+    "bg_video_url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://tinyurl.com/y5x5jmnf",
+      "content_id" : null
+    },
+    "hero_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/hero_language_school_landing.jpg",
+      "alt" : "Hero Language School",
+      "width" : 2880,
+      "height" : 1440,
+      "max_width" : 2880,
+      "max_height" : 1440
+    },
+    "hide_show_hero_photo_description" : "hide",
+    "mobile_hero_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/hero_home_mobile.jpg",
+      "alt" : "hero_home_mobile",
+      "width" : 600,
+      "height" : 800,
+      "max_width" : 600,
+      "max_height" : 800
+    }
+  }
+}, {
+  "id" : "4a77d8af-64bd-d2db-f4b6-cc1bb775c041",
+  "name" : "bg_color",
+  "label" : "BG Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#073763",
+    "opacity" : 100
+  }
+} ]

@@ -1,0 +1,44 @@
+.section.section-box-overlap{
+  padding-bottom:50px !important;
+}
+.section-box-overlap  div[data-hs-cos-field='title'] h5{
+  letter-spacing:0 !important;
+  font-weight:500 !important;
+}
+.section-box-overlap .short-description-container .short-description h5{
+    margin-top:0;
+  }
+.section-box-overlap .short-description-container .short-description p{
+  margin-top:0;
+}
+@media (max-width: 600px) {
+  .section-box-overlap .cta-row{
+    flex-direction:column-reverse !important;
+  }
+  .section-box-overlap .cta-row h2{
+    font-size:2.125rem !important;
+    color:
+  }
+  .section-box-overlap .container .btn-video-container{
+    float:left !important;
+  }
+  .section-hero.section-box-overlap .container{
+    margin-top:0 !important;
+  }
+  .section-hero.section-box-overlap .container h2{
+    color:#111111 !important;
+  }
+  .section-hero.section-box-overlap .hero-video-container.btn-video-container{
+    position: absolute;
+    top: -300px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section-box-overlap .container{
+    margin-top:0 !important;
+  }
+  .section-box-overlap .container h2,.hero-video-container.btn-video-container i,.hero-video-container.btn-video-container a{
+    color:#111 !important;
+  }
+}

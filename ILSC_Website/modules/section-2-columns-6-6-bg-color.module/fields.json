@@ -1,0 +1,124 @@
+[ {
+  "id" : "06b5670e-8c4d-840d-6983-2c37248e16aa",
+  "name" : "bg_color",
+  "label" : "BG Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#003346",
+    "opacity" : 100
+  }
+}, {
+  "id" : "7f3d2ba4-2686-aacf-0704-b46fd21e7c5a",
+  "name" : "font_color",
+  "label" : "Font Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#FFF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "b752680b-9aa6-1e6b-f627-6d37644d802e",
+  "name" : "main_text",
+  "label" : "Main Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2><span style=\"color: #ff8b35;\">Learn English Online</span></h2>\n<p>Progress and fluency comes through constant exposure to the language. Through using your new knowledge - all day, every day. In class, with your friends, out in the city. It will be an amazing adventure.</p>"
+}, {
+  "id" : "4e1e190b-e343-2268-71c0-e39623fa797f",
+  "name" : "image_field",
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_laptop_4.png",
+    "alt" : "img_laptop_4",
+    "width" : 483,
+    "height" : 344,
+    "max_width" : 483,
+    "max_height" : 344
+  }
+}, {
+  "id" : "4dc4b761-90e9-545c-84d8-1a35b0171301",
+  "name" : "cta_group",
+  "label" : "CTA group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "25bd772b-f27e-2ebf-441b-695fd89198b0",
+    "name" : "hide_show_cta",
+    "label" : "Hide/Show CTA",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "hide"
+  }, {
+    "id" : "3a97a8bd-80d1-0987-a531-00e31f18707a",
+    "name" : "link_url",
+    "label" : "Link Url",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "939bd810-abe2-1aca-43e4-a424fac65c40",
+    "name" : "link_url_text",
+    "label" : "Link Url Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "LEARN MORE"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "hide_show_cta" : "hide",
+    "link_url" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "link_url_text" : "LEARN MORE"
+  }
+} ]

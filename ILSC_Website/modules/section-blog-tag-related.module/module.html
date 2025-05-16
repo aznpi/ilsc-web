@@ -1,0 +1,4 @@
+{% set tag_posts = blog_recent_tag_posts(module.blog_field, module.tag_field, 3) %}
+{% for tag_post in tag_posts %}
+    <div class="post-title">{{ tag_post.name }}</div>
+{% endfor %}

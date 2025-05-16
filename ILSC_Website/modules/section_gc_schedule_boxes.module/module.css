@@ -1,0 +1,61 @@
+
+
+.section-schedule.price-list-grid .program-box-container .title h3{
+  font-size:27px;
+}
+.section-schedule.price-list-grid .program-box-container{
+  margin-bottom:50px;
+  box-shadow: 0px 5px 4px -2px #626262;
+}
+.section-schedule.price-list-grid .price-list-drop{
+  margin-top:50px;
+  margin-bottom:50px;
+}
+.section-schedule.price-list-grid .program-box-container .description-container .sub-description{
+  background-color:#F4F4F4;
+  font-size:initial;
+  padding:10px;
+}
+.section-schedule.price-list-grid .program-box-container .content-container >div{
+  
+}
+
+.section-schedule.price-list-grid .program-box-container .description-container .description{
+  background-color:#F9F9F9;
+  padding:50px 20px; 
+  font-size:1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.section-schedule.price-list-grid .program-box-container .description-container .description.time-block{
+  padding:30px 0;
+}
+.section-schedule.price-list-grid .program-box-container .description-container .description p{
+  margin: 0;
+}
+.section-schedule.price-list-grid .program-box-container .description-container .description .item-block p{
+  padding:10px 0;
+}
+
+.section-schedule.price-list-grid .program-box-container .multi-block{
+  text-align:center;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+.section-schedule.price-list-grid .program-box-container .multi-block .item-block{
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-schedule.price-list-grid .program-box-container .multi-block .item-block.border-right{
+  border-right: 1px solid #CCC;
+}
+.section-schedule.price-list-grid .program-box-container .multi-block  .divider {
+  width: 1px;
+  margin: 6px 0;
+  background: #CCC;
+  height: 68px;
+}

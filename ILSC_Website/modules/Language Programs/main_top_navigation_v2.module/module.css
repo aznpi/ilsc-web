@@ -1,0 +1,26 @@
+.language-selector a.language-link{
+  text-transform:uppercase;
+}
+header.top-nav .navbar .dropdown.language-selector .dropdown-menu ul li a{
+  padding-left: 1.5rem;
+  white-space:normal;
+}
+
+#apply-menu-drop .col-md-6{
+  padding:0;
+}
+#apply-menu-drop .col-md-6 .link-image{
+  width:100%;
+  height:200px;
+  overflow:hidden;
+}
+#apply-menu-drop .col-md-6 .link-image img{
+  object-fit:cover;
+}
+#apply-menu-drop .btn{
+  width:100%;
+  margin-top:15px;
+  text-align:center;
+  padding-left:15px;
+  padding-right:15px;
+}

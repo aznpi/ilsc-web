@@ -1,0 +1,51 @@
+<footer class="footer-container">
+	<div class="container">
+		<div class="row">
+
+        <div class="col-md-12">   
+          <ul class="main-title">
+            {% for item in module.link_group %}
+              <li><a href="{{ item.link_url.href }}"><h5>{{ item.link_text }}</h5></a></li>
+            {% endfor %}
+          </ul>
+        </div>
+		
+      
+			<div class="divider"></div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-9 footnote">
+				{% inline_rich_text field="copyright" value="{{ module.copyright }}" %}
+      </div>
+			<div class="col-md-3 social-media-container">
+        <h5>
+          {{ module.social_media.follow_us_text }}
+        </h5>
+        <ul>
+					<li><a href="{{ module.social_media.fb_link.url.href }}" {% if module.social_media.fb_link.open_in_new_tab %}target="_blank"{% endif %}><i class="fab fa-facebook-square"></i></a></li>
+					<li><a href="{{ module.social_media.instagram_link.url.href }}" {% if module.social_media.instagram_link.open_in_new_tab %}target="_blank"{% endif %}><i class="fab fa-instagram"></i></a></li>
+					<li><a href="{{ module.social_media.youtube_link.url.href }}" {% if module.social_media.youtube_link.open_in_new_tab %}target="_blank"{% endif %}><i class="fab fa-youtube"></i></a></li>
+					<li><a href="{{ module.social_media.linkedin_link.url.href }}" {% if module.social_media.linkedin_link.open_in_new_tab %}target="_blank"{% endif %}><i class="fab fa-linkedin-in"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="ilscModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+      <div class="modal-body">
+      	
+      </div>
+      
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+{% set queryparam = '' %}
+{% set queryparam = queryparam ~ "&country__in=USA"  %}
+{% set queryparam = queryparam ~ "&enable__eq=true"  %}
+
+{% set programs = hubdb_table_rows(5475402,queryparam) %}
+{% set langCode = content.language == 'en' ? '' : '/'+content.language %}
+
+<section class="section-3-box-slider section-normal {{ module.bg_angle_choice }} {{ module.margin_choice }}{{ module.padding_choice }}">
+  <div class="{% if module.bg_angle_choice == 'section-diagonal' %}diagonal-box{% elif module.bg_angle_choice == 'section-polygon' %}polygon-box{% endif %} {{ module.bg_angle_color_choice }} {{ module.bg_underlap_choice }}"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="box-3-slider">
+          {% for program in programs %}
+            <div>
+              <div class="box-container">
+                <div class="image-container">
+                  <img src="{{program.image_thumbnail.url}}" class="img-fluid" loading="lazy">
+                </div>
+                <div class="text-container">
+                  <div class="title-container">
+                    <h4>{{program.program_name}}</h4>
+                  </div>
+                  <div class="description-container">
+                    {{program.short_description}}
+                  </div>
+                  <div class="btn-container center">
+                    <a href="{{langCode}}{{program.page_link}}" class="btn btn-orange">FIND OUT MORE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}     
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,10 @@
+.logo-slider{
+  padding:0 50px;
+}
+.logo-slider .slick-track{
+  display:flex;
+  align-items: center;
+}
+.logo-slider .slick-slide{
+  padding:0 30px;
+}

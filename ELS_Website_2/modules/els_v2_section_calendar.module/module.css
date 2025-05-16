@@ -1,0 +1,73 @@
+.section-year .row-box{
+  justify-content:center;
+}
+.section-year .price-year{
+  margin-top:50px;
+}
+.section-year .price-year ul{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.section-year .price-year ul li{
+  padding:0px 10px;
+}
+.section-year .price-year ul li a{
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  font-family: Barlow;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+}
+.section-year .price-year ul li a.active{
+  color:#F58220;
+}
+.section-year .price-year ul li.year-border{
+  border-right: 3px solid #F58220;
+}
+.section-year .row-slider{
+  margin-top:50px;
+}
+.section-year .month-box-container {
+  padding: 0 5px;
+}
+.section-year .month-box-container>div {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 4px 4px 6px 0px #0000001A;
+  margin-bottom: 50px;
+  overflow: hidden;
+  padding: 0;
+}
+.section-year .month-box-container .month-title {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-size: 30px;
+  font-weight: 500;
+  justify-content: center;
+  line-height: 45px;
+  padding: 10px 0;
+  text-align: center;
+}
+.section-year .month-box-container .date-title {
+  align-items: center;
+  display: flex;
+  font-size: 28px;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: -.015em;
+  line-height: 35px;
+  padding: 35px 0;
+  text-align: center;
+}
+.section-year .box-slide .slick-slide{
+  margin:0 10px;
+}

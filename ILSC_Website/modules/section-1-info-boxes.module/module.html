@@ -1,0 +1,50 @@
+<section class="section box-2-info {% if module.bg_color.color == '#FFFFFF' %} bg-white-canvas {% endif %}" id="content" style="background-color:rgba({{ module.bg_color.color|convert_rgb }}, {{ module.bg_color.opacity/100 }});" id="content">
+	<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+      </div>
+    </div>
+		<div class="row">
+      {% for item in module.info_box_field_group %}
+        
+          <div class="col-md-6 {% if loop.index > 2 %} hide-box {% endif %}">
+            <div class="info-container">
+              <h5 style="color:{{ item.category_title_font_color_choice }};">
+                {{ item.catetgory_text }}
+              </h5>
+              <h3>
+                {{ item.title_text }}
+              </h3>
+              {% inline_rich_text field="description_rich_text" value="{{ item.description_rich_text }}" %}
+              {% if item.enable_disable_cta_choice == "enable" %}
+                <div class="btn-container">
+                  {% set href = item.button_link.url.href %}
+                  {% if item.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+                    {% set href = "mailto:" + href %}
+                  {% endif %}
+                  {% set rel = [] %}
+                  {% if item.button_link.no_follow %}
+                    {% do rel.append("nofollow") %}
+                  {% endif %}
+                  {% if item.button_link.open_in_new_tab %}
+                    {% do rel.append("noopener") %}
+                  {% endif %}
+                  <a href="{{ href }}"
+                    {% if item.button_link.open_in_new_tab %}target="_blank"{% endif %}
+                    {% if rel %}rel="{{ rel|join(" ") }}"{% endif %} class="btn {{ item.button_color }} bold">{{ item.button_text }}</a>
+                </div>
+              {% endif %}
+            </div>
+        </div>
+			{% endfor %}
+		</div>
+    {% if module.info_box_field_group|length > 2 %}
+      <div class="row">
+        <div class="cold-md-12 center">
+          <a href="#" class="btn btn-black-outline bold btn-see-all">{{ module.see_all_text }}</a>
+        </div>
+      </div>
+    {% endif %}
+	</div>
+</section>

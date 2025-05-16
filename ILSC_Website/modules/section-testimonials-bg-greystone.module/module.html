@@ -1,0 +1,41 @@
+<section class="section-testimonials section" style="background-image:url('{{ module.bg_image.src }}');">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="testimonials-slide">
+
+            {% for item in module.testimonials_field_group %}
+             <div>
+              <div class="row slide-content">
+              
+                  <div class="col-md-6">
+                    <h2>{% inline_rich_text field="title_rich_text" value="{{ item.title_rich_text }}" %}</h2>
+                    <div class="quote-container">
+                      <h3>
+                        {% inline_rich_text field="testimonial_rich_text" value="{{ item.testimonial_rich_text }}" %}
+                      </h3>
+                      {% if item.cta_group.hide_show_cta == "show" %}            
+                          <div class="btn-container">
+                            <a href="#ilscModal" data-toggle="modal" class="btn btn-blue" src="{{ item.cta_group.video_url }}">{{item.cta_group.cta_text }}</a>
+                          </div>
+                       
+                      {% endif %}
+                    </div>
+
+                  </div>
+                  <div class="col-md-6">
+                    <div class="box-orange"></div>
+                    <div class="image-container">
+                      <img src="{{ item.image_field.src }}" loading="lazy" alt="{{ item.image_field.alt }}">
+                      
+                    </div>
+                  </div>
+                </div>
+             </div> 
+            {% endfor %}
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

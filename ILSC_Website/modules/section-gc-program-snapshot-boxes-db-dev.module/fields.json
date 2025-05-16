@@ -1,0 +1,841 @@
+[ {
+  "id" : "52f8b652-a2d1-1392-502a-3069322bcc75",
+  "name" : "program_area_code",
+  "label" : "Program Area Code",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null
+}, {
+  "id" : "e5690cff-42ee-bee8-ee76-2f8770bb5949",
+  "name" : "country_program_choice",
+  "label" : "Country Program Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "Australia", "Australia" ], [ "Canada", "Canada" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "Canada"
+}, {
+  "id" : "212e20be-7161-067d-0c25-076a2b651ff1",
+  "name" : "bc_color",
+  "label" : "BG Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "124fd53b-3435-e9ba-6821-f14a4277805d",
+  "name" : "box_field_group",
+  "label" : "Box Field group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "759f7836-1c93-92bc-6b89-0c693600be8a",
+    "name" : "campus_field_group",
+    "label" : "Campus Field group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "f827aca6-b37d-7b86-18e8-47f1a1949e36",
+      "name" : "enable",
+      "label" : "Enable",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "display_width" : null,
+      "default" : true
+    }, {
+      "id" : "8650d221-cd9d-a57c-c549-974a1ef81763",
+      "name" : "title_text",
+      "label" : "Title Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "CAMPUS AVAILABLE"
+    }, {
+      "id" : "c916741c-5a08-6cf3-b20a-75b32ad55a34",
+      "name" : "icon_image",
+      "label" : "Icon Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/template-resources/images/internal/icons/location-svgrepo-com.svg",
+        "alt" : "location-svgrepo-com",
+        "loading" : "lazy",
+        "width" : 800,
+        "height" : 800,
+        "max_width" : 800,
+        "max_height" : 800
+      }
+    }, {
+      "id" : "e0fb1783-3e33-f126-e6b2-7de398bc1c25",
+      "name" : "additional_rich_text",
+      "label" : "Additional Rich text",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "enable" : true,
+      "title_text" : "CAMPUS AVAILABLE",
+      "icon_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/template-resources/images/internal/icons/location-svgrepo-com.svg",
+        "alt" : "location-svgrepo-com",
+        "loading" : "lazy",
+        "width" : 800,
+        "height" : 800,
+        "max_width" : 800,
+        "max_height" : 800
+      }
+    }
+  }, {
+    "id" : "18444919-181c-b310-dbaa-20e4400e4385",
+    "name" : "start_date_field_group",
+    "label" : "Start Date Field group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "3b5dc3d5-866d-e478-f302-5cf3718de6a2",
+      "name" : "enable",
+      "label" : "Enable",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "display_width" : null,
+      "default" : true
+    }, {
+      "id" : "8f8e4ae2-e7ae-77d5-d3ff-e641e01d1644",
+      "name" : "title_text",
+      "label" : "Title Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "START DATES"
+    }, {
+      "id" : "e308160d-1093-9da9-567d-69f7e6a24c98",
+      "name" : "icon_image",
+      "label" : "Icon Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/template-resources/images/internal/icons/calendar-days-svgrepo-com.svg",
+        "alt" : "calendar-days-svgrepo-com",
+        "loading" : "lazy",
+        "width" : 800,
+        "height" : 800,
+        "max_width" : 800,
+        "max_height" : 800
+      }
+    }, {
+      "id" : "4446e5b8-98d0-9afb-b928-bb11092f6e41",
+      "name" : "additional_rich_text",
+      "label" : "Additional Rich text",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "enable" : true,
+      "title_text" : "START DATES",
+      "icon_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/template-resources/images/internal/icons/calendar-days-svgrepo-com.svg",
+        "alt" : "calendar-days-svgrepo-com",
+        "loading" : "lazy",
+        "width" : 800,
+        "height" : 800,
+        "max_width" : 800,
+        "max_height" : 800
+      }
+    }
+  }, {
+    "id" : "c1a413d9-c0b1-384c-f3c9-db0b88065a36",
+    "name" : "program_length_field_group",
+    "label" : "Program Length Field group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "6ec6c428-07e2-5e2e-f4c2-3331e83ccf05",
+      "name" : "enable",
+      "label" : "Enable",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "display_width" : null,
+      "default" : true
+    }, {
+      "id" : "ad9bc40f-37df-b4ad-6a42-37f56005f857",
+      "name" : "co_op_practicum_title_text",
+      "label" : "Co-op/Practicum Title Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "CO-OP"
+    }, {
+      "id" : "694bb5dc-b093-668a-9c3c-f60ef395a8ac",
+      "name" : "title_text",
+      "label" : "Title Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "PROGRAM LENGTH"
+    }, {
+      "id" : "d670cec8-3677-e86a-2da1-3568571b4a31",
+      "name" : "icon_image",
+      "label" : "Icon Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/template-resources/images/internal/icons/calendar-time-svgrepo-com.svg",
+        "alt" : "calendar-time-svgrepo-com",
+        "loading" : "lazy",
+        "width" : 800,
+        "height" : 800,
+        "max_width" : 800,
+        "max_height" : 800
+      }
+    }, {
+      "id" : "dfe95132-395e-e512-87c1-e148bb80065e",
+      "name" : "additional_rich_text",
+      "label" : "Additional Rich text",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "enable" : true,
+      "co_op_practicum_title_text" : "CO-OP",
+      "title_text" : "PROGRAM LENGTH",
+      "icon_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/template-resources/images/internal/icons/calendar-time-svgrepo-com.svg",
+        "alt" : "calendar-time-svgrepo-com",
+        "loading" : "lazy",
+        "width" : 800,
+        "height" : 800,
+        "max_width" : 800,
+        "max_height" : 800
+      }
+    }
+  }, {
+    "id" : "87a098c9-e333-2ffd-5e48-17c6315d80d7",
+    "name" : "scheduled_breaks_field_group",
+    "label" : "Scheduled Breaks Field group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "979af543-4063-02c8-2a6f-38931d27849a",
+      "name" : "enable",
+      "label" : "Enable",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "display_width" : null,
+      "default" : true
+    }, {
+      "id" : "0c8e43c0-dd1e-326d-0b20-12de5c5bb489",
+      "name" : "day_time_field_group",
+      "label" : "Day Time Field group",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "country_program_choice",
+        "controlling_value_regex" : "Canada",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "children" : [ {
+        "id" : "72bb5a58-275d-7932-e435-970a634d16ce",
+        "name" : "morning_enable_boolean",
+        "label" : "Morning Enable Boolean",
+        "required" : false,
+        "locked" : false,
+        "display" : "checkbox",
+        "type" : "boolean",
+        "display_width" : null,
+        "default" : true
+      }, {
+        "id" : "34550767-abc0-6648-37cf-d3ff9bcec505",
+        "name" : "evening_boolean",
+        "label" : "Evening Enable Boolean",
+        "required" : false,
+        "locked" : false,
+        "display" : "checkbox",
+        "type" : "boolean",
+        "display_width" : null,
+        "default" : true
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : {
+        "morning_enable_boolean" : true,
+        "evening_boolean" : true
+      }
+    }, {
+      "id" : "3e849e4c-2150-5993-88ae-23ea6dec5ea6",
+      "name" : "title_text",
+      "label" : "Title Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "SCHEDULED BREAKS"
+    }, {
+      "id" : "5a3b669b-ed85-708a-5af5-1a9389d6ad9d",
+      "name" : "icon_image",
+      "label" : "Icon Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/template-resources/images/internal/icons/luggage-svgrepo-com.svg",
+        "alt" : "luggage-svgrepo-com",
+        "loading" : "lazy",
+        "width" : 150,
+        "height" : 150,
+        "max_width" : 150,
+        "max_height" : 150
+      }
+    }, {
+      "id" : "d811954d-98dc-27a0-2232-3148955abd6f",
+      "name" : "additional_rich_text",
+      "label" : "Additional Rich text",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "enable" : true,
+      "day_time_field_group" : {
+        "morning_enable_boolean" : true,
+        "evening_boolean" : true
+      },
+      "title_text" : "SCHEDULED BREAKS",
+      "icon_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/template-resources/images/internal/icons/luggage-svgrepo-com.svg",
+        "alt" : "luggage-svgrepo-com",
+        "loading" : "lazy",
+        "width" : 150,
+        "height" : 150,
+        "max_width" : 150,
+        "max_height" : 150
+      }
+    }
+  }, {
+    "id" : "38f7c499-d23a-8f3b-411f-8aecd6f78551",
+    "name" : "language_level_field_group",
+    "label" : "Language Level Field group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "5e04a50d-1bed-ba01-2300-9e66edd34a91",
+      "name" : "enable",
+      "label" : "Enable",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "display_width" : null,
+      "default" : true
+    }, {
+      "id" : "8cd30590-378d-db4c-ae40-5af18a0749d5",
+      "name" : "show_levels",
+      "label" : "Show Levels",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "display_width" : null,
+      "default" : true
+    }, {
+      "id" : "77de220c-7d50-f95d-f9dd-d6f168992165",
+      "name" : "title_text",
+      "label" : "Title Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "LANGUAGE LEVEL REQUIREMENT"
+    }, {
+      "id" : "96e81ab6-27b4-9cfa-ac4f-4eb89a590b63",
+      "name" : "icon_image",
+      "label" : "Icon Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/template-resources/images/internal/icons/signal-svgrepo-com.svg",
+        "alt" : "signal-svgrepo-com",
+        "loading" : "lazy",
+        "width" : 800,
+        "height" : 800,
+        "max_width" : 800,
+        "max_height" : 800
+      }
+    }, {
+      "id" : "4abac635-896c-81dd-53bb-75484475218e",
+      "name" : "transfer_canada_rich_text",
+      "label" : "Requirement Canada Rich text",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<p><strong>OR</strong><span>&nbsp;</span>Completion of a minimum of<span>&nbsp;</span><strong>three full years</strong><span>&nbsp;</span>of study in a secondary or post-secondary institution where the sole language of instruction is English.</p>\n<h5>OTHER PROGRAM ADMISSION REQUIREMENTS</h5>\n<p>View<span>&nbsp;</span><strong><a href=\"https://www.ilsc.com/greystone-college/canada/admissions\">general Greystone College Admission Requirements</a></strong><span>&nbsp;</span>for your chosen campus.</p>"
+    }, {
+      "id" : "c4001e3d-99be-db73-5556-79d54d0ce34b",
+      "name" : "additional_rich_text",
+      "label" : "Additional Rich text",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "enable" : true,
+      "show_levels" : true,
+      "title_text" : "LANGUAGE LEVEL REQUIREMENT",
+      "icon_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/template-resources/images/internal/icons/signal-svgrepo-com.svg",
+        "alt" : "signal-svgrepo-com",
+        "loading" : "lazy",
+        "width" : 800,
+        "height" : 800,
+        "max_width" : 800,
+        "max_height" : 800
+      },
+      "transfer_canada_rich_text" : "<p><strong>OR</strong><span>&nbsp;</span>Completion of a minimum of<span>&nbsp;</span><strong>three full years</strong><span>&nbsp;</span>of study in a secondary or post-secondary institution where the sole language of instruction is English.</p>\n<h5>OTHER PROGRAM ADMISSION REQUIREMENTS</h5>\n<p>View<span>&nbsp;</span><strong><a href=\"https://www.ilsc.com/greystone-college/canada/admissions\">general Greystone College Admission Requirements</a></strong><span>&nbsp;</span>for your chosen campus.</p>"
+    }
+  }, {
+    "id" : "94024ea6-83e0-d608-b077-f6dde1ae43b5",
+    "name" : "credit_transfer_field_group",
+    "label" : "Credit Transfer Field group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "b2962714-0d1c-229b-7d1a-06f84910f33b",
+      "name" : "enable",
+      "label" : "Enable",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "display_width" : null,
+      "default" : true
+    }, {
+      "id" : "a1a69b8f-2b16-db57-dd6a-baa352850892",
+      "name" : "show_content",
+      "label" : "Show Content",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "display_width" : null,
+      "default" : true
+    }, {
+      "id" : "0b94af93-ec0d-f644-3a44-8600e83e928f",
+      "name" : "title_text",
+      "label" : "Title Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "CREDIT TRANSFER ELIGIBILITY"
+    }, {
+      "id" : "6f373338-1f20-8ddb-38d4-a3337081e99c",
+      "name" : "icon_image",
+      "label" : "Icon Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/template-resources/images/internal/icons/certificate-contract-svgrepo-com.svg",
+        "alt" : "certificate-contract-svgrepo-com",
+        "loading" : "lazy",
+        "width" : 800,
+        "height" : 800,
+        "max_width" : 800,
+        "max_height" : 800
+      }
+    }, {
+      "id" : "0016c888-733a-52b1-eb2e-1636def47fc3",
+      "name" : "additional_rich_text",
+      "label" : "Additional Rich text",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "enable" : true,
+      "show_content" : true,
+      "title_text" : "CREDIT TRANSFER ELIGIBILITY",
+      "icon_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/template-resources/images/internal/icons/certificate-contract-svgrepo-com.svg",
+        "alt" : "certificate-contract-svgrepo-com",
+        "loading" : "lazy",
+        "width" : 800,
+        "height" : 800,
+        "max_width" : 800,
+        "max_height" : 800
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "campus_field_group" : {
+      "enable" : true,
+      "title_text" : "CAMPUS AVAILABLE",
+      "icon_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/template-resources/images/internal/icons/location-svgrepo-com.svg",
+        "alt" : "location-svgrepo-com",
+        "loading" : "lazy",
+        "width" : 800,
+        "height" : 800,
+        "max_width" : 800,
+        "max_height" : 800
+      }
+    },
+    "start_date_field_group" : {
+      "enable" : true,
+      "title_text" : "START DATES",
+      "icon_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/template-resources/images/internal/icons/calendar-days-svgrepo-com.svg",
+        "alt" : "calendar-days-svgrepo-com",
+        "loading" : "lazy",
+        "width" : 800,
+        "height" : 800,
+        "max_width" : 800,
+        "max_height" : 800
+      }
+    },
+    "program_length_field_group" : {
+      "enable" : true,
+      "co_op_practicum_title_text" : "CO-OP",
+      "title_text" : "PROGRAM LENGTH",
+      "icon_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/template-resources/images/internal/icons/calendar-time-svgrepo-com.svg",
+        "alt" : "calendar-time-svgrepo-com",
+        "loading" : "lazy",
+        "width" : 800,
+        "height" : 800,
+        "max_width" : 800,
+        "max_height" : 800
+      }
+    },
+    "scheduled_breaks_field_group" : {
+      "enable" : true,
+      "day_time_field_group" : {
+        "morning_enable_boolean" : true,
+        "evening_boolean" : true
+      },
+      "title_text" : "SCHEDULED BREAKS",
+      "icon_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/template-resources/images/internal/icons/luggage-svgrepo-com.svg",
+        "alt" : "luggage-svgrepo-com",
+        "loading" : "lazy",
+        "width" : 150,
+        "height" : 150,
+        "max_width" : 150,
+        "max_height" : 150
+      }
+    },
+    "language_level_field_group" : {
+      "enable" : true,
+      "show_levels" : true,
+      "title_text" : "LANGUAGE LEVEL REQUIREMENT",
+      "icon_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/template-resources/images/internal/icons/signal-svgrepo-com.svg",
+        "alt" : "signal-svgrepo-com",
+        "loading" : "lazy",
+        "width" : 800,
+        "height" : 800,
+        "max_width" : 800,
+        "max_height" : 800
+      },
+      "transfer_canada_rich_text" : "<p><strong>OR</strong><span>&nbsp;</span>Completion of a minimum of<span>&nbsp;</span><strong>three full years</strong><span>&nbsp;</span>of study in a secondary or post-secondary institution where the sole language of instruction is English.</p>\n<h5>OTHER PROGRAM ADMISSION REQUIREMENTS</h5>\n<p>View<span>&nbsp;</span><strong><a href=\"https://www.ilsc.com/greystone-college/canada/admissions\">general Greystone College Admission Requirements</a></strong><span>&nbsp;</span>for your chosen campus.</p>"
+    },
+    "credit_transfer_field_group" : {
+      "enable" : true,
+      "show_content" : true,
+      "title_text" : "CREDIT TRANSFER ELIGIBILITY",
+      "icon_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.ilsc.com/hubfs/template-resources/images/internal/icons/certificate-contract-svgrepo-com.svg",
+        "alt" : "certificate-contract-svgrepo-com",
+        "loading" : "lazy",
+        "width" : 800,
+        "height" : 800,
+        "max_width" : 800,
+        "max_height" : 800
+      }
+    }
+  }
+}, {
+  "id" : "eda2e35d-c5b0-643b-ffc0-374bb573c6ba",
+  "name" : "cta_group",
+  "label" : "CTA group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "926d06cd-8520-a0f9-3ef6-66ff5fcc06e6",
+    "name" : "hide_show_cta",
+    "label" : "Hide/Show CTA",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "hide", "Hide" ], [ "show", "Show" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "show"
+  }, {
+    "id" : "9d3d9280-d582-a7eb-45ee-e346d5c0bd35",
+    "name" : "cta_link_field_group",
+    "label" : "CTA Link Field group",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 3,
+      "sorting_label_field" : "939bd810-abe2-1aca-43e4-a424fac65c40",
+      "default" : 1
+    },
+    "visibility" : {
+      "controlling_field" : "926d06cd-8520-a0f9-3ef6-66ff5fcc06e6",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "show",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "children" : [ {
+      "id" : "3a97a8bd-80d1-0987-a531-00e31f18707a",
+      "name" : "link_url",
+      "label" : "Link Url",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "926d06cd-8520-a0f9-3ef6-66ff5fcc06e6",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "show",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "supported_types" : [ "EXTERNAL" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.youtube.com/embed/CMHRYfA1gLM",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "939bd810-abe2-1aca-43e4-a424fac65c40",
+      "name" : "link_url_text",
+      "label" : "Link Url Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "926d06cd-8520-a0f9-3ef6-66ff5fcc06e6",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "show",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "WATCH OUR VIDEO"
+    }, {
+      "id" : "3e002362-968d-0847-e60e-fc59992c103d",
+      "name" : "icon_choice",
+      "label" : "Icon Choice",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "none", "None" ], [ "far fa-play-circle", "Video" ], [ "far fa-file-pdf", "PDF" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "none"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ {
+      "link_url" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.youtube.com/embed/CMHRYfA1gLM",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_url_text" : "WATCH OUR VIDEO",
+      "icon_choice" : "none"
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "hide_show_cta" : "show",
+    "cta_link_field_group" : [ {
+      "link_url" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.youtube.com/embed/CMHRYfA1gLM",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "link_url_text" : "WATCH OUR VIDEO",
+      "icon_choice" : "none"
+    } ]
+  }
+} ]

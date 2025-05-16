@@ -1,0 +1,87 @@
+[ {
+  "id" : "abfaa6a2-1bc4-1121-b9a3-10dc16fddae1",
+  "name" : "style",
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : { }
+}, {
+  "id" : "c48996b7-161b-9627-fabb-9977f5b0bb01",
+  "name" : "cta_field_group",
+  "label" : "CTA Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 5,
+    "sorting_label_field" : "febad558-cceb-c771-3648-2b18b47e3dd1",
+    "default" : 0
+  },
+  "children" : [ {
+    "id" : "febad558-cceb-c771-3648-2b18b47e3dd1",
+    "name" : "btn_text",
+    "label" : "BTN Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null
+  }, {
+    "id" : "0798900f-30dd-7af8-7699-8f004deb8ff4",
+    "name" : "btn_color",
+    "label" : "BTN Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "display_width" : null,
+    "default" : {
+      "color" : "#f58426",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "ca6e9919-1b6a-631f-72a8-089fe9b0882a",
+    "name" : "btn_font_color",
+    "label" : "BTN Font Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "display_width" : null,
+    "default" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "ce1312af-3a99-f5ab-310b-b697ae827cc7",
+    "name" : "btn_link",
+    "label" : "BTN Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ ]
+} ]

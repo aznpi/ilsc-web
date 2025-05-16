@@ -1,0 +1,82 @@
+[ {
+  "id" : "a6af7596-fe75-0fa8-7047-240d76e73f4b",
+  "name" : "copyright",
+  "label" : "Copyright",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<p>© 2020 ILSC Education Group. All Rights Reserved.</p>\n<p>All programs are part of the English Language Programs for International Students CRICOS Code: 060152J. ILSC (Brisbane) PTY LTD is trading as ILSC-Brisbane, ILSC-Sydney, ILSC-Melbourne, ILSC-Adelaide, ILSC Australia RTO Number 31564, CRICOS Code: 02137M.</p>"
+}, {
+  "id" : "294dd369-e1af-d3bc-8da9-622024ed2e6f",
+  "name" : "footnote_link_group",
+  "label" : "FootNote Link group",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 2,
+    "sorting_label_field" : "c45a0e70-d8e0-9ec5-38aa-0687f65c7137",
+    "default" : 2
+  },
+  "children" : [ {
+    "id" : "60f7c7b4-15ee-6d33-3138-655bdf71ce8a",
+    "name" : "link",
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 35378788169
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "c45a0e70-d8e0-9ec5-38aa-0687f65c7137",
+    "name" : "text_field",
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Privacy Policy"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "link" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 35378788169
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "text_field" : "Privacy Policy"
+  }, {
+    "link" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 35378788169
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "text_field" : "Privacy Policy"
+  } ]
+} ]

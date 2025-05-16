@@ -1,0 +1,217 @@
+{% set anchorName = module.anchor_name_text|replace(' ','-')|upper%}
+{% if module.campus_location %}
+  {% set campus_location = module.campus_location %}
+{% endif %}
+{% if module.category_choice %}
+  {% set category = module.category_choice %}
+{% endif %}
+{% set queryparam = "" %}
+{% if campus_location %}
+{% set queryparam = queryparam ~ "&campus_location__in="+campus_location|urlencode  %}
+{% endif %}
+{% if category %}
+{% set queryparam = queryparam ~ "&category__eq="+category|urlencode  %}
+{% endif %}
+{% set queryparam = queryparam ~ "&enable__eq=1"  %}
+{% set program = hubdb_table_rows(5285248,queryparam ~ "&orderBy=price_description") %}
+
+{% set otherFeeList = ['Additional Fees','Material Fees','Individual Credits','Registration Fees'] %}
+
+ <a name="{{anchorName}}"></a>
+<section class="section section-year section-other-price-container section-{{anchorName}} {% if module.background_color.color == '#FFFFFF' %}bg-white-canvas{% endif %} price-list-grid" id="content" style="background-color:rgba({{module.background_color.color|convert_rgb }}, {{module.background_color.opacity/100 }});{% if module.remove_top_padding_choice == 'enable' %}margin-top:-150px;{% endif %}">
+ 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 center">
+        <h1 class="program-title">
+          {% if module.enable_online_langguage_assesment_on_program_choice == 'enable' %}
+          {% if module.online_language_assessment_image.src %}
+              {% set sizeAttrs = 'width="{{ module.online_language_assessment_image.width }}" height="{{ module.online_language_assessment_image.height }}"' %}
+              {% if module.online_language_assessment_image.size_type == 'auto' %}
+                {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+              {% elif module.online_language_assessment_image.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.online_language_assessment_image.max_width }}" height="{{ module.online_language_assessment_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+               {% set loadingAttr = module.online_language_assessment_image.loading != 'disabled' ? 'loading="{{ module.online_language_assessment_image.loading }}"' : '' %}
+              <img src="{{ module.online_language_assessment_image.src }}" alt="{{ module.online_language_assessment_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          {% endif %}
+          {{ module.title_text|upper }}
+        </h1>
+      </div>
+    </div>
+     {% if module.show_year_choice == 'enable' %}
+        <div class="row price-year">
+          <div class="col-md-12 center">
+            <ul>
+              {% for item in module.price_year_field_group %}
+                <li {% if !loop.last %}class="year-border"{% endif %}><a href="#" data-slide="{{loop.index}}" {% if loop.index == 1 %}class="active"{% endif %}>{{ item.price_year_text }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+    {% endif %}
+    <div class="row">
+      <div class="col-md-12 center">
+        <h3>
+          {{ module.pricing_description }}
+        </h3>
+      </div>
+    </div>
+    {% if module.enable_header_bar_choice == 'enable' %}
+      <div class="row" style="padding: 0 10px;">
+        <div class="col-md-12 center header-bar" style="background-color:rgba({{module.header_bar_color.color|convert_rgb }}, {{module.header_bar_color.opacity/100 }});{% if module.header_bar_color.color != '#FFFFFF'%}color:#FFFFFF;{% endif %}%}">
+          <h1>
+            {{ module.header_bar_text }}
+          </h1>
+        </div>
+      </div>
+    {% endif %}
+    <div class="row slick-row-{{anchorName}}">
+      <div class="col-md-12">
+        <div class="box-slide other-price-container">         
+          {% for item in module.price_year_field_group %}
+           <div>
+              <div class="row">
+                
+                {% for item2 in item.price_box_field_group %}
+                  <div class="col">
+                    <div class="program-box-container">
+                      <div class="title center">
+                        <h3>
+                          {{item2.item_choice}}
+                        </h3>
+                      </div>
+                      <div class="content-container">
+                         
+                            <div class="price-table">
+                              {% if item2.enable_fee_titles_choice == 'enable' %}
+                              <div class="price-row price-title-header">
+                                <div class="price-title">
+                                  <h4>
+                                    Description
+                                  </h4>
+                                </div>
+                                <div class="price-title">
+                                  <h4>
+                                    Fees
+                                  </h4>
+                                </div>
+                              </div>
+                            {% endif %}
+                             {% if item2.sort_price_row_choice == 'none' %}
+                              {% set sortVar = program %}
+                            {% else %}
+                              {% set sortVar = program|sort(item2.sort_price_row_choice,False,'price_current') %}
+                            {% endif %} 
+                            {% for priceItem in sortVar %}
+                              {% if priceItem.item_name == item2.item_choice %}
+                                
+                                  <div class="price-row">
+                                    <div class="item-name">
+                                       {% if otherFeeList is not containing priceItem.item_name%}
+                                          {{priceItem.weeks.name}}
+                                        {% else %}
+                                         {{priceItem.price_description}}
+                                      {% endif %}
+                                    </div>
+
+                                    <div class="price-amount">             
+                                      {% if item.price_target_choice == 'price_current' %}                        
+                                        {{priceItem.price_current|format_currency("en-US") }}
+                                      {% endif %}
+                                      {% if item.price_target_choice == 'price_year_2' %}                               
+                                        {{priceItem.price_year_2|format_currency("en-US") }}
+                                      {% endif %}
+                                      {% if item.price_target_choice == 'price_year_3' %}                                 
+                                        {{priceItem.price_year_3|format_currency("en-US") }}                             
+                                      {% endif %}
+                                    </div>
+                                  </div>
+                                  
+                              {% endif %}
+                            {% endfor %}
+                              
+                          </div>                   
+                          
+                      </div>
+                      
+                    </div>
+                    <div class="cta-container center">
+                        <div class="disclaimer">
+                          {% inline_rich_text field="disclaimer_rich_text" value="{{ item2.disclaimer_rich_text }}" %}
+                        </div>
+
+                      </div>
+                  </div>
+                {% endfor %}
+                
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 footnote">
+        {% inline_rich_text field="footnoe_rich_text" value="{{ module.footnoe_rich_text }}" %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+
+$(document).ready(function(){
+  $('.slick-row-{{ anchorName }} .box-slide').slick({
+      dots: false,
+      slidesToScroll: 1,
+      slidesToShow: 1,
+      lazyLoad: 'ondemand',
+      speed : 600,
+      ease : 'Pow4.easeIn',
+      arrows : false,
+      fade: true,
+      draggable: false,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+
+  });
+  
+  $('.section-{{anchorName}} .price-year ul li a[data-slide]').click(function(e) {
+     e.preventDefault();
+     var slideno = $(this).data('slide');
+     $('.section-{{anchorName}} .price-year ul li a[data-slide]').removeClass('active');
+     $(this).addClass('active');
+     $('.slick-row-{{ anchorName }} .box-slide').slick('slickGoTo', slideno - 1);
+  }); 
+    
+  function resizePriceTable{{anchorName|replace('-','')}}(){
+    
+    var resizeArray = ['.description-container','.title','.cta-container .disclaimer','.price-table']
+    var arrayLength = resizeArray.length;
+    var maxHeight = [];
+    
+    for (var i = 0; i < arrayLength; i++) {
+      maxHeight[i] = 0;
+      $(".section-{{anchorName}}.price-list-grid .program-box-container "+ resizeArray[i]).each(function () {
+         if ($(this).height() > maxHeight[i]) { maxHeight[i] = $(this).height(); }
+      });
+      $(".section-{{anchorName}}.price-list-grid .program-box-container "+ resizeArray[i]).height(maxHeight[i]);
+    }
+  
+  }
+      
+  resizePriceTable{{anchorName|replace('-','')}}();
+  window.addEventListener("resize", resizePriceTable{{anchorName|replace('-','')}});
+  
+})
+
+</script>

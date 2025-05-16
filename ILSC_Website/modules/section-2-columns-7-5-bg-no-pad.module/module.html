@@ -1,0 +1,24 @@
+<section class="section section-7-5 no-pad" id="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7 bg-image-container" style="background-image:url({{ module.bg_image_1_field.src }});">
+        <div class="row">
+          <div class="col-md-12">
+            {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7" style="padding-right: 50px;">
+            {% inline_rich_text field="main_rich_text_left" value="{{ module.main_rich_text_left }}" %}
+          </div>
+          <div class="col-md-5">
+            {% inline_rich_text field="main_rich_text_right" value="{{ module.main_rich_text_right }}" %}
+          </div>
+        </div>
+			</div>
+			<div class="col-md-5 bg-image-container" style="background-image:url({{ module.bg_image_2.src }});">
+				
+			</div>
+		</div>
+	</div>
+</section>

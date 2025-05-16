@@ -1,0 +1,35 @@
+<section class="section" style="background-color: {{ module.bg_color.color }};">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 center">
+				{% inline_rich_text field="title" value="{{ module.title }}" %}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="slider-wrapper">
+					<div class="box-slide-4 homestay-slide box-shadow mix">
+					{% for item in module.box_slide %}
+						 <div>
+						 	<div class="box-container school-details drop-shadow {{ module.hover_bg_color }}">
+						 		
+						 		<div class="a-link-small">
+						 			{% inline_rich_text field="box_title" value="{{ item.box_title }}" %}
+						 		</div>
+                <div class="short-description-container">    
+                 <div class="short-description">    
+                   
+	                  {{ item.short_description }}
+
+                 </div>
+               </div>
+						 	</div>
+               
+						 </div>
+        {% endfor %}   	 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

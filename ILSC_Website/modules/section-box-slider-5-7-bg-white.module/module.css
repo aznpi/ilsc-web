@@ -1,0 +1,40 @@
+.a-link-container a{
+  color:#FFF;
+}
+.banner .white-box-slide{
+  margin-top:50px;
+}
+.banner .white-box-slide .col-md-5{
+  padding: 5% 20px 20px 7%;
+}
+.banner .white-box-slide .col-md-7{
+  padding: 5% 7%;
+}
+.banner .white-box-slide .slick-prev,.banner .white-box-slide .slick-next{
+  background-color: #FFF;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  z-index: 1;
+  box-shadow: 0 0 0 3px #f7f7f7;
+}
+.banner .white-box-slide .slick-prev{
+  left:-10px;
+}
+.banner .white-box-slide .slick-next{
+  right:-10px;
+}
+.banner .white-box-slide{
+  position:relative;
+}
+.banner .white-box-slide .slick-list{
+    border: 1px solid #f7f7f7;
+    box-shadow: 0 0 0 3px #f7f7f7;
+}
+
+@media only screen and (max-device-width: 480px){
+  .banner .white-box-slide .slick-next,.banner .white-box-slide .slick-prev{
+    top:0;
+  }
+  
+}

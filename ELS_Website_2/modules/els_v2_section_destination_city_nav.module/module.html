@@ -1,0 +1,18 @@
+<section class="tab-navigation-landing section-menu-nav section-normal {{ module.padding_choice }}">
+  <div class="divider"></div>
+  <div class="container">
+    <nav class="navbar">
+      <div class="navbar-anchor" id="navbarNav-Menu" style="">
+        <ul class="nav">
+          {% for item in module.tabs_field_group %}
+            <li class="nav-item">
+              <a class="nav-link {% if loop.first %}active{% endif %}" id="pills-{{loop.index}}-tab" href="#{{item.tab_title_text|replace(' ','-')|replace("'","-")|replace(',','-')}}" >{{ item.tab_title_text }}</a>
+            </li>
+{% endfor %}
+          
+        </ul>
+      </div>
+    </nav>
+    
+  </div>
+</section>

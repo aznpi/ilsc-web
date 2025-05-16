@@ -1,0 +1,412 @@
+[ {
+  "id" : "5943aeca-45eb-af0e-eb8e-e4056c632f9e",
+  "name" : "logo_link",
+  "label" : "Logo Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 42547182674
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "afecaef6-a32d-aa93-505f-c54f6288a0ae",
+  "name" : "logo_image",
+  "label" : "Logo Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.ilsc.com/hubfs/Language%20School-Color-Logo-Horizontal.svg",
+    "alt" : "Language School-Color-Logo-Horizontal",
+    "loading" : "lazy",
+    "width" : 400,
+    "height" : 400,
+    "max_width" : 400,
+    "max_height" : 400
+  }
+}, {
+  "id" : "35bda6de-a801-3c36-8af3-c99e7626f42d",
+  "name" : "bg_image",
+  "label" : "BG Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.ilsc.com/hubfs/ELS/Website/template-resources/images/background/bg_els_quote_girl.png",
+    "alt" : "bg_els_quote_girl",
+    "loading" : "lazy",
+    "width" : 709,
+    "height" : 670,
+    "max_width" : 709,
+    "max_height" : 670
+  }
+}, {
+  "id" : "2945cfed-0ff8-a8bc-c097-10fe67623fd8",
+  "name" : "country_field_group",
+  "label" : "Country Selection",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "902fa467-db7d-06c9-e367-5df1848b3eaf",
+    "name" : "link_field_group",
+    "label" : "Link Field group",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 10,
+      "sorting_label_field" : "733e0981-df97-e407-9b73-94189c30d67a",
+      "default" : 1
+    },
+    "children" : [ {
+      "id" : "733e0981-df97-e407-9b73-94189c30d67a",
+      "name" : "country_choice",
+      "label" : "Country Choice",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "Australia", "Australia" ], [ "Canada", "Canada" ], [ "India", "India" ], [ "Online", "Online" ], [ "USA", "USA" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "Australia"
+    }, {
+      "id" : "40ce471f-54b5-1142-6f13-27bf2cf401d0",
+      "name" : "direct_link_choice",
+      "label" : "Direct Link Choice",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "False", "False" ], [ "True", "True" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "False"
+    }, {
+      "id" : "b32e9895-fd44-f998-d06d-47afe10ddf38",
+      "name" : "campus_id",
+      "label" : "Campus Id",
+      "inline_help_text" : "Enter the campus Id from the campus table in the HubDb",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "country_field_group.link_field_group.direct_link_choice",
+        "controlling_value_regex" : "True",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ {
+      "country_choice" : "Australia",
+      "direct_link_choice" : "False"
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "link_field_group" : [ {
+      "country_choice" : "Australia",
+      "direct_link_choice" : "False"
+    } ]
+  }
+}, {
+  "id" : "c68315c5-9e0d-d7aa-b133-d3a61e8dc5d3",
+  "name" : "high_season_settings_current_year",
+  "label" : "High Season Settings Current Year",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "2bc61160-8ee7-a51c-7a32-cfaa6c7222c0",
+    "name" : "min_date",
+    "label" : "Min Date",
+    "required" : true,
+    "locked" : false,
+    "type" : "date",
+    "display_width" : null,
+    "default" : 1655794800000
+  }, {
+    "id" : "ace4dbdb-3221-b22e-5720-4b6d43a9ac9e",
+    "name" : "max_date",
+    "label" : "Max_Date",
+    "required" : true,
+    "locked" : false,
+    "type" : "date",
+    "display_width" : null,
+    "default" : 1660374000000
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "min_date" : 1655794800000,
+    "max_date" : 1660374000000
+  }
+}, {
+  "id" : "e47c731f-edd5-116c-4c56-cc8b1a891b32",
+  "name" : "high_season_settings_year_2",
+  "label" : "High Season Settings Year 2",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "25d04c49-6174-b50c-8675-5312db29caf4",
+    "name" : "min_date",
+    "label" : "Min Date",
+    "required" : true,
+    "locked" : false,
+    "type" : "date",
+    "display_width" : null,
+    "default" : 1655794800000
+  }, {
+    "id" : "4d782b66-4101-3901-6816-3fa492a1d914",
+    "name" : "max_date",
+    "label" : "Max_Date",
+    "required" : true,
+    "locked" : false,
+    "type" : "date",
+    "display_width" : null,
+    "default" : 1660374000000
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "min_date" : 1655794800000,
+    "max_date" : 1660374000000
+  }
+}, {
+  "id" : "93ef386b-043b-d6b7-6d54-4a3e042b20d6",
+  "name" : "accommodation_season_dates",
+  "label" : "Accommodation Season Dates",
+  "inline_help_text" : "Set dates before today's date to disable the High Season Price feature.",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "eb684e3d-12fc-fde2-7862-83f15bd8bd54",
+    "name" : "high_season_settings_year",
+    "label" : "High Season Settings Current Year",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "da8aba1f-76b5-2d9c-0de4-945afe47f9f2",
+      "name" : "min_date",
+      "label" : "Min Date",
+      "required" : true,
+      "locked" : false,
+      "type" : "date",
+      "display_width" : null,
+      "default" : 1648796400000
+    }, {
+      "id" : "4b371148-cbc2-5eb7-4daf-7043d82962a1",
+      "name" : "max_date",
+      "label" : "Max_Date",
+      "required" : true,
+      "locked" : false,
+      "type" : "date",
+      "display_width" : null,
+      "default" : 1667199600000
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "min_date" : 1648796400000,
+      "max_date" : 1667199600000
+    }
+  }, {
+    "id" : "f2589c36-58a8-76e2-e180-bc77d21b6697",
+    "name" : "high_season_settings_year_2",
+    "label" : "High Season Settings Year 2",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "ed96f9dc-a7dc-1025-8f2a-a207e83ea567",
+      "name" : "min_date",
+      "label" : "Min Date",
+      "required" : true,
+      "locked" : false,
+      "type" : "date",
+      "display_width" : null,
+      "default" : 1648796400000
+    }, {
+      "id" : "09826cc6-266a-7bcb-bb25-cf652536080c",
+      "name" : "max_date",
+      "label" : "Max_Date",
+      "required" : true,
+      "locked" : false,
+      "type" : "date",
+      "display_width" : null,
+      "default" : 1667199600000
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "min_date" : 1648796400000,
+      "max_date" : 1667199600000
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "high_season_settings_year" : {
+      "min_date" : 1648796400000,
+      "max_date" : 1667199600000
+    },
+    "high_season_settings_year_2" : {
+      "min_date" : 1648796400000,
+      "max_date" : 1667199600000
+    }
+  }
+}, {
+  "id" : "8f8d1eb1-160f-ed02-4ed5-a60b436575c4",
+  "name" : "dot_image",
+  "label" : "Dot Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.ilsc.com/hubfs/template-resources/images/internal/background/bg_orange_dots.png",
+    "alt" : "bg_orange_dots",
+    "loading" : "lazy",
+    "width" : 50,
+    "height" : 104,
+    "max_width" : 50,
+    "max_height" : 104
+  }
+}, {
+  "id" : "4a0ff38c-d5fa-0747-3937-8c4a896f8b6a",
+  "name" : "payment_field_group",
+  "label" : "Payment Field group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "dc0f674f-fa9a-55a8-fdd6-98867d51812b",
+    "name" : "cc_processor_logo_image",
+    "label" : "CC Processor Logo Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "exact",
+      "src" : "https://www.ilsc.com/hubfs/template-resources/images/internal/logos/Powered%20by%20Stripe%20-%20black-300x68-b3bf095.png",
+      "alt" : "Powered by Stripe - black-300x68-b3bf095",
+      "loading" : "lazy",
+      "width" : 150,
+      "height" : 34,
+      "max_width" : 300,
+      "max_height" : 68
+    }
+  }, {
+    "id" : "99555943-9a72-ba52-266e-f5ae00cf4eb8",
+    "name" : "credit_card_logo_image",
+    "label" : "Credit Card Logo Image",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 0,
+      "max" : 5,
+      "sorting_label_field" : null,
+      "default" : null
+    },
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "exact",
+      "src" : "https://www.ilsc.com/hubfs/template-resources/images/internal/logos/Visa_Brandmark_Blue_RGB_2021.png",
+      "alt" : "Visa_Brandmark_Blue_RGB_2021",
+      "loading" : "lazy",
+      "width" : 75,
+      "height" : 24,
+      "max_width" : 1000,
+      "max_height" : 324
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "cc_processor_logo_image" : {
+      "size_type" : "exact",
+      "src" : "https://www.ilsc.com/hubfs/template-resources/images/internal/logos/Powered%20by%20Stripe%20-%20black-300x68-b3bf095.png",
+      "alt" : "Powered by Stripe - black-300x68-b3bf095",
+      "loading" : "lazy",
+      "width" : 150,
+      "height" : 34,
+      "max_width" : 300,
+      "max_height" : 68
+    },
+    "credit_card_logo_image" : {
+      "size_type" : "exact",
+      "src" : "https://www.ilsc.com/hubfs/template-resources/images/internal/logos/Visa_Brandmark_Blue_RGB_2021.png",
+      "alt" : "Visa_Brandmark_Blue_RGB_2021",
+      "loading" : "lazy",
+      "width" : 75,
+      "height" : 24,
+      "max_width" : 1000,
+      "max_height" : 324
+    }
+  }
+} ]

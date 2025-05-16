@@ -1,0 +1,59 @@
+<section id="language-school-section" class="section-hero section-hero-search site-search-page" style="background-color:{{ module.bg_color.color }}">
+	<div class="hero-image">
+		{% if module.hero_image.hero_image.src %}
+      {% set sizeAttrs = 'width="{{ module.hero_image.hero_image.width }}" height="{{ module.hero_image.hero_image.height }}"' %}
+      {% if module.hero_image.hero_image.size_type == 'auto' %}
+        {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+      {% elif module.hero_image.hero_image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.hero_image.hero_image.max_width }}px; max-height: {{ module.hero_image.hero_image.max_height }}px"' %}
+      {% endif %}
+      <img src="{{ module.hero_image.hero_image.src }}" alt="{{ module.hero_image.hero_image.alt }}" class="hero-image">
+    {% endif %}
+	</div>
+	<div class="content-container center">
+		<div class="container">
+        <div class="row">
+          <div class="col-md-12 hs-search-keyword">
+            {% inline_rich_text field="content_container" value="{{ module.content_container }}" %}
+            
+            {% inline_rich_text field="content_container_2" value="{{ module.content_container_2 }}" %}
+            {% if module.hero_image.hide_show_hero_photo_description == "show" %}
+              <div class="photo-description">
+                <h6>{{ module.hero_image.hero_image.alt }}</h6>
+              </div>
+            {% endif %}
+            
+          </div>
+        </div>
+		</div>
+	</div>
+
+</section>
+<!-- Modal -->
+<div class="hero-video modal fade" id="heroModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+      <div class="modal-body">
+      	<div class="embed-responsive embed-responsive-16by9">
+		  <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+		</div> 
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<style>
+  @media (max-width: 600px) {
+    .section-hero .hero-image{
+      background:url({{ module.hero_image.mobile_hero_image.src }}) no-repeat;
+      background-size:cover;
+      min-height: 600px;
+    }
+  }
+</style>

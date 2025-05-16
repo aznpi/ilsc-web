@@ -1,0 +1,390 @@
+[ {
+  "id" : "0271cc21-d261-968a-1dfa-6b7bd6f4537d",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2><span>The perfect course for you</span></h2>\n<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p>"
+}, {
+  "id" : "80db30f7-c5f2-c42f-e7ac-a4696a7cfc0e",
+  "name" : "sub_title",
+  "label" : "Sub Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<div>\n<div>\n<h5>Explore our programs by location, program type and more</h5>\n</div>\n</div>"
+}, {
+  "id" : "7cafc62b-012f-2243-2f83-30694f591beb",
+  "name" : "link_text",
+  "label" : "Link Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Read More"
+}, {
+  "id" : "40caca7a-49f5-baf2-891c-cf73324301cb",
+  "name" : "enable_program_filter",
+  "label" : "Enable Program Filter",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "display_width" : null,
+  "default" : true
+}, {
+  "id" : "855daa9c-2b2f-9853-61a6-a7aa2bd36a9f",
+  "name" : "program_multi_choice_field_group",
+  "label" : "Program Multi Choice Field group",
+  "inline_help_text" : "Select program categories to use in the filter.",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "enable_program_filter",
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "children" : [ {
+    "id" : "1404495e-7c87-b251-dd86-430503840180",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<div>\n<h6>Program Type</h6>\n</div>"
+  }, {
+    "id" : "3474ef20-b174-c321-44e5-a9368fa5bc21",
+    "name" : "junior_camps_boolean",
+    "label" : "Junior Camps",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : true
+  }, {
+    "id" : "7200e981-760c-f027-81c5-18c48cf3ccfc",
+    "name" : "family_camps_boolean",
+    "label" : "Family Camps",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : true
+  }, {
+    "id" : "3a171f84-cdd2-5ecb-d37c-bc49f382fd7a",
+    "name" : "high_school_boolean",
+    "label" : "High School",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : true
+  }, {
+    "id" : "534a48b5-b63b-8afb-7715-89bbb3ad2468",
+    "name" : "programs_boolean",
+    "label" : "Programs",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : false
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "title" : "<div>\n<h6>Program Type</h6>\n</div>",
+    "junior_camps_boolean" : true,
+    "family_camps_boolean" : true,
+    "high_school_boolean" : true,
+    "programs_boolean" : false
+  }
+}, {
+  "id" : "921cacbf-64a4-755e-2a6e-c3e2b969e8b1",
+  "name" : "enable_campus_filter",
+  "label" : "Enable Campus Filter",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "display_width" : null,
+  "default" : true
+}, {
+  "id" : "406438c0-d0ab-51e0-2709-8e6e6f28b9dc",
+  "name" : "campus_multi_choice_field_group",
+  "label" : "Campus Multi Choice Field group",
+  "inline_help_text" : "Select campuses to use in the filter.",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "enable_campus_filter",
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "children" : [ {
+    "id" : "15775873-2f73-1f9a-8260-54c0473800ed",
+    "name" : "title_rich_text",
+    "label" : "Title Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<div>\n<h6>Campus</h6>\n</div>"
+  }, {
+    "id" : "17870a2e-9247-044a-ebc1-1f4af4807106",
+    "name" : "vancouver_boolean",
+    "label" : "Vancouver",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : true
+  }, {
+    "id" : "fedf0c89-1891-9d9e-5c25-4402fd734985",
+    "name" : "montreal_boolean",
+    "label" : "Montreal",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : true
+  }, {
+    "id" : "2ec37a3b-6e96-130d-a3ab-40f21a1030a9",
+    "name" : "toronto_boolean",
+    "label" : "Toronto",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : true
+  }, {
+    "id" : "476a23ae-75a5-b9c9-834d-0df3ba0e4055",
+    "name" : "adelaide_boolean",
+    "label" : "Adelaide",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : false
+  }, {
+    "id" : "97b5e1c6-a831-6531-a8f5-7f0d7e5abf42",
+    "name" : "brisbane_boolean",
+    "label" : "Brisbane",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : false
+  }, {
+    "id" : "97cb2fef-ed9c-f32c-58e8-5e615527cf2b",
+    "name" : "melbourne_boolean",
+    "label" : "Melbourne",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : false
+  }, {
+    "id" : "bb3a5e04-5833-0d2d-9944-93c7dfba078d",
+    "name" : "Perth_boolean",
+    "label" : "Perth",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : false
+  }, {
+    "id" : "acbe089e-5aec-2ade-dba4-52ae657eca69",
+    "name" : "sydney_boolean",
+    "label" : "Sydney",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : false
+  }, {
+    "id" : "2d0f3134-a425-5f2c-a811-36e3a53aeffe",
+    "name" : "online_boolean",
+    "label" : "Online",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : false
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "title_rich_text" : "<div>\n<h6>Campus</h6>\n</div>",
+    "vancouver_boolean" : true,
+    "montreal_boolean" : true,
+    "toronto_boolean" : true,
+    "adelaide_boolean" : false,
+    "brisbane_boolean" : false,
+    "melbourne_boolean" : false,
+    "Perth_boolean" : false,
+    "sydney_boolean" : false,
+    "online_boolean" : false
+  }
+}, {
+  "id" : "e19a187c-852b-03c0-4bb3-ed399d59090c",
+  "name" : "enable_study_campus_type_filter",
+  "label" : "Enable Study Campus Type Filter",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "display_width" : null,
+  "default" : true
+}, {
+  "id" : "258a168a-4ca0-9a3a-95d8-d281faf2189f",
+  "name" : "study_campus_multi_choice_field_group",
+  "label" : "Study Campus Multi Choice Field group",
+  "inline_help_text" : "Select campuses to use in the filter.",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "enable_study_campus_type_filter",
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "children" : [ {
+    "id" : "26708b7e-965a-b831-9c5d-059dbd060979",
+    "name" : "title_rich_text",
+    "label" : "Title Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<div>\n<h6>Study Campus</h6>\n</div>"
+  }, {
+    "id" : "c760b412-c73a-7634-37c1-c059c3f59bfe",
+    "name" : "ilsc_campus_boolean",
+    "label" : "ILSC Campuses",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : true
+  }, {
+    "id" : "004fc227-f378-8f00-a426-bea51ebe2cf5",
+    "name" : "university_residences_boolean",
+    "label" : "University Residences",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : true
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "title_rich_text" : "<div>\n<h6>Study Campus</h6>\n</div>",
+    "ilsc_campus_boolean" : true,
+    "university_residences_boolean" : true
+  }
+}, {
+  "id" : "2ab66aee-0693-225c-4ad2-39b492833f68",
+  "name" : "enable_other_options_filter",
+  "label" : "Enable Other Programs",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "display_width" : null,
+  "default" : false
+}, {
+  "id" : "d504f870-4fce-f812-bb7c-175d036ea683",
+  "name" : "other_options_multi_choice_field_group",
+  "label" : "Other Options Multi Choice Field group",
+  "inline_help_text" : "Select campuses to use in the filter.",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "enable_other_options_filter",
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "children" : [ {
+    "id" : "7ebbe4bf-3c7e-6708-432e-510933d4c9cb",
+    "name" : "title_rich_text",
+    "label" : "Title Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<div>\n<h6>Program Option</h6>\n</div>"
+  }, {
+    "id" : "8ac5dedf-8013-91c4-d1db-4fdb11811b35",
+    "name" : "family_plus_boolean",
+    "label" : "Family Plus",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : true
+  }, {
+    "id" : "aa27b7f6-072c-3fca-da47-2ad1339a7418",
+    "name" : "skills_plus_boolean",
+    "label" : "Skills Plus",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : true
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "title_rich_text" : "<div>\n<h6>Program Option</h6>\n</div>",
+    "family_plus_boolean" : true,
+    "skills_plus_boolean" : true
+  }
+} ]

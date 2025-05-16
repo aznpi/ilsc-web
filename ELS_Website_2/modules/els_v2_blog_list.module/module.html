@@ -1,0 +1,241 @@
+{% set tag_list = blog_tags(module.blog_field,20) %}
+{% set rec_post = blog_recent_tag_posts(module.blog_field, 'featured', 1) %}
+{% macro render_read_time(body) %}
+  {% set str = body|lower %}
+  {% set img_count = str|split('<img')|length %}
+  {% set img_minutes = ((img_count * 12) / 60)|round(0, 'ceil') %}
+  {% set read_time = (str|striptags|wordcount / 275)|round(0, 'ceil') + img_minutes %}
+  {{ read_time }}
+{% endmacro %}
+
+{% set pageTitle = 'All Stories' %}
+{% if request.path is string_containing '/tag/' %}
+  {% set pathList = request.path|split('/')%}
+  {% set tagName = pathList|last %}
+  {% set tagStr = tagName == 'all' ? tagName + ' Stories' : tagName %}
+  {% set pageTitle = tagStr|replace('-',' ')|capitalize %}
+  {% set rec_post = blog_recent_tag_posts(module.blog_field, tagName, 1) %}
+{% endif %}
+
+<section class="section-blog-navigation">
+  <div class="container">
+    <div class="row row-title">
+      <div class="col-md-12">
+        {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+           SELECT CATEGORY
+          </button>
+          <ul class="dropdown-menu">
+            {% for item in tag_list %}
+              {% if item.slug != 'featured'%}
+                <li><a class="dropdown-item" href="{{ blog_tag_url(group.id, item.slug) }}">{{ item }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-12">
+        <div class="blog-nav-container">
+          <ul>
+            {% for item in module.category_field_group %}
+              {% if item.tag_field != 'featured' %}
+                <li>
+                  <a href="/blog/tag/{{ item.tag_field }}">
+                    {% if item.image_field.src %}
+                      {% set sizeAttrs = 'width="{{ item.image_field.width|escape_attr }}" height="{{ item.image_field.height|escape_attr }}"' %}
+                      {% if item.image_field.size_type == 'auto' %}
+                        {% set sizeAttrs = 'width="{{ item.image_field.width|escape_attr }}" height="{{ item.image_field.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+                      {% elif item.image_field.size_type == 'auto_custom_max' %}
+                        {% set sizeAttrs = 'width="{{ item.image_field.max_width|escape_attr }}" height="{{ item.image_field.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+                      {% endif %}
+                       {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading|escape_attr }}"' : '' %}
+                      <img src="{{ item.image_field.src|escape_url }}" alt="{{ item.image_field.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }} class="img-fluid">
+                    {% endif %}
+                    <label>{{ item.title_text }}</label>
+                  </a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section-featured-blog">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row-title">
+          <h2 class="tag-title">{{pageTitle}}</h2>
+        </div>
+      </div>
+    </div>
+    {% if rec_post|length > 0 %}
+      {% for item in rec_post %}
+        <div class="row">
+          <div class="col-md-6">
+            <div class="image-container">
+              <img src="{{item.post_list_summary_featured_image}}" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="blog-container box-container">
+              {% for tag in item.tag_list %} 
+                {% if loop.first %}
+                  <div class="tag-container icon-{{tag.slug}}">
+                    <div class="tag">{{tag.name}}</div>
+                  </div>
+                {% endif %}
+              {% endfor %}
+              <div class="time-container">
+                <ul>
+                  <li class="date">{{ item.publish_date|datetimeformat('%b %e, %Y') }}</li>
+                  <li class="time">{{render_read_time(item.post_body)}} MIN READ</li>
+                </ul>
+              </div>
+              <div class="title">
+                <h3>{{ item.name }}</h3>
+              </div>
+              <div class="description">
+                <p>{{ item.meta_description|truncatehtml(350, '...' , false) }}</p>
+                <a href="{{item.absolute_url}}" class="more-link">READ MORE ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    {% else %}
+      <div class="row">
+        <div class="col-md-12">
+          <h3>
+            No Articles found
+          </h3>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+<section class="section-container section-blog-boxes section-4-column">
+  <div class="container">
+    <div class="row">
+      
+        {% for rec_post in contents %}
+           {% set tagArray  = [] %}
+            {% for tag in rec_post.tag_list %} 
+              {% do tagArray.append(tag.slug) %}
+            {% endfor %}
+            {% if tagArray is not containing 'featured' %}
+              <div class="col-md-4 col-boxes" style="margin-bottom:20px;" onClick="javscript:location.href='{{rec_post.absolute_url}}';">
+                <div class="box-container">
+
+                    <div class="image-container">
+
+                      <img src="{{rec_post.post_list_summary_featured_image}}" class="img-fluid">
+                      {% for tag in rec_post.tag_list %} 
+                        {% if loop.first %}
+                          <div class="tag-container icon-{{tag.slug}}">
+                            <div class="tag">{{tag.name}}</div>
+                          </div>
+                        {% endif %}
+                      {% endfor %}
+                    </div>  
+
+                  <div class="description-container">
+                    <h3>
+                     {{ rec_post.name }}
+                    </h3>
+                    <div class="description-content">
+                     {{ rec_post.meta_description|truncatehtml(120, '...' , false) }}
+                    </div>
+
+                    <div class="btn-container">
+                      <a class="btn btn-orange" href="{{rec_post.absolute_url}}">
+                        Find out more
+                      </a>
+                    </div>
+                    
+                  </div>
+                </div>
+             </div>
+          {% endif %}
+        {% endfor %}
+        
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="blog-pagination">
+          {% set page_list = [-3,-2, -1, 0, 1, 2, 3] %}
+          {% if contents.total_page_count - current_page_num == 1 %}{% set offset = -1 %}
+          {% elif contents.total_page_count - current_page_num == 0 %}{% set offset = -2 %}
+          {% elif current_page_num == 2 %}{% set offset = 1 %}
+          {% elif current_page_num == 1 %}{% set offset = 2 %}
+          {% else %}{% set offset = 0 %}{% endif %}
+
+          <div class="blog-pagination-left">
+              {% if last_page_num %}<a class="prev-link" href="{{ blog_page_link(last_page_num) }}">❮ Previous</a>{% endif %}
+              {% if contents.total_page_count > 5 %}
+                  {% if current_page_num >= 4 %}
+                      <a href="{{ blog_page_link(1) }}">1</a>
+                      <a class="elipses" href="{% if current_page_num <= 5 %}{{ blog_page_link(1) }}{% else %}{{ blog_page_link(current_page_num - 5) }}{% endif %}">...</a>
+                  {% endif %}
+              {% endif %}
+          </div>
+          <div class="blog-pagination-center">
+              {% for page in page_list %}
+                  {% set this_page = current_page_num + page + offset %}
+                  {% if this_page > 0 and this_page <= contents.total_page_count %}
+                      <a {% if this_page == current_page_num %}class="active"{% endif %} href="{{ blog_page_link(this_page) }}">{{ this_page }}</a>
+                  {% endif %}
+              {% endfor %}
+          </div>
+          <div class="blog-pagination-right">
+              {% if contents.total_page_count > 5 %}
+                  {% if contents.total_page_count - current_page_num > 2 %}
+                      <a class="elipses" href="{% if contents.total_page_count - current_page_num <= 5 %}{{ contents.total_page_count }}{% else %}{{ blog_page_link(current_page_num + 5) }}{% endif %}">...</a>
+                      <a href="{{ blog_page_link(contents.total_page_count) }}">{{ contents.total_page_count }}</a>
+                  {% endif %}
+              {% endif %}
+              {% if next_page_num %}<a class="next-link" href="{{ blog_page_link(current_page_num + 1) }}">Next ❯</a>{% endif %}
+          </div>
+      </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        {% if not simple_list_page %}
+                  
+          <div class="blogPagination">
+           
+            <a class="all-posts-link" href="{{ group.absolute_url }}/all">All posts</a>
+            
+          </div>
+
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+{% require_css position='header' %}
+  <style>
+    {% for item in module.category_field_group %}
+    .els-blog .tag-container.icon-{{item.tag_field}} .tag{
+      background-color: {{item.bg_color.color}} !important;
+    }
+    .els-blog .tag-container.icon-{{item.tag_field}}:before{
+      background-image:url({{ item.image_field.src|escape_url }}) !important;
+    }
+    {% endfor%}
+  </style>
+{% end_require_css %}

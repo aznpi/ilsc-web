@@ -1,0 +1,41 @@
+{
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE" ],
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 93394442603,
+  "css_assets" : [ {
+    "autoload" : true,
+    "path" : "../../template-resources/stylesheets/internal/production/quote_tool_promo.css",
+    "name" : "quote_tool_promo.css"
+  } ],
+  "js_assets" : [ {
+    "autoload" : true,
+    "path" : "../../template-resources/javascript/internal/cookie-set.js",
+    "name" : "cookie-set.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../template-resources/javascript/internal/quote-tool/quote_helper_promo.js",
+    "name" : "quote_helper_promo.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../template-resources/javascript/internal/quote-tool/quote_set_localstorage_promo.js",
+    "name" : "quote_set_localstorage_promo.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../template-resources/javascript/internal/quote-tool/quote_tool_jr_variables_promo.js",
+    "name" : "quote_tool_jr_variables_promo.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../template-resources/javascript/internal/quote-tool/quote_accommodation_promo.js",
+    "name" : "quote_accommodation_promo.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../template-resources/javascript/internal/quote-tool/quote_jr_tool_promo.js",
+    "name" : "quote_jr_tool_promo.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../template-resources/javascript/internal/quote-tool/promo_quote_engine.js",
+    "name" : "promo_quote_engine.js"
+  } ],
+  "is_available_for_new_content" : true
+}

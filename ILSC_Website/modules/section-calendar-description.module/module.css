@@ -1,0 +1,50 @@
+.section.section-calendar img{
+  width:auto;
+}
+.section-year .month-box-container{
+  padding:0 5px;
+}
+.section-year .month-box-container >div{
+  background:#FFFFFF;
+  border-radius:20px;
+  overflow:hidden;
+  -webkit-box-shadow: 0px 5px 4px -2px #C4C4C4; 
+  box-shadow: 0px 5px 4px -2px #C4C4C4;
+  margin-bottom:15px;
+  padding:0;
+}
+.section-year .month-box-container .month-title{
+  color:#FFF;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: #F58426;
+  padding:10px 0;
+  justify-content: center;
+}
+.section-year .month-box-container .date-title.week-text{
+  font-size: 28px;
+}
+.section-year .month-box-container .date-title{
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.015em;
+  padding:20px 0;
+  justify-content: center;
+}
+.section-year .box-slide .row-cols-6{
+  justify-content:center;
+}
+@media only screen and (max-width: 991.97px){
+.section-year .box-slide .row-cols-6 .col{
+   flex:auto;
+   max-width: 33.33%;
+  }
+}

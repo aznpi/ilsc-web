@@ -1,0 +1,41 @@
+{% if module.anchor_id %}
+  <a class="anchor-link" name="{{ module.anchor_id|replace(' ','-')|replace("'","-")|replace(',','-') }}"></a>
+{% endif %}
+<section class="section-normal section-diagonal section-photo-slider {{ module.padding_choice }} {{ module.margin_choice }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+        <div class="description">
+          {% inline_rich_text field="description_rich_text" value="{{ module.description_rich_text }}" %}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="photo-slider">
+          {% for item in module.photo_slide_field_group %}
+            <div>
+              {% if item.image_field.src %}
+                {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+                {% if item.image_field.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif item.image_field.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ item.image_field.max_width }}" height="{{ item.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                 {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' : '' %}
+                <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" class="img-fluid" loading="lazy">
+              {% endif %}
+              <div class="sub-title"></div>
+              {% if item.description_rich_text %}
+                <div class="description-overlay">
+                  {% inline_rich_text field="description_rich_text" value="{{ item.description_rich_text }}" %}
+                </div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

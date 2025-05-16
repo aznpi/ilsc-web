@@ -1,0 +1,82 @@
+<section class="section section-hero section-box-overlap bg-white-canvas" id="content">
+	<div class="container">
+    <div class="row">  
+      <div class="col-md-12">
+        {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+      </div>
+    </div>
+    
+		<div class="row">  
+      <div class="col-md-7 description">
+        <div class="category-container">
+          <i class="fas fa-square" style="color:{{ module.category_field_group.color_field.color }};"></i><span class="foot-note">{{ module.category_field_group.text_field }}</span>
+        </div>
+        {% inline_rich_text field="description_rich_text" value="{{ module.description_rich_text }}" %}
+      </div>
+      <div class="col-md-5 box-images">
+        <div class="box-decoration" id="box-1" style="background-color:{{ module.box_color.color }};">
+          
+        </div>
+        <div class="box-decoration" id="box-2" style="background-color:{{ module.box_color.color }};">
+          
+        </div>
+        <div class="image-container">
+          <div class="row">
+            <div class="col-md-6 photo-container">
+              {% if module.photo_image_1.src %}
+                {% set sizeAttrs = 'width="{{ module.photo_image_1.width }}" height="{{ module.photo_image_1.height }}"' %}
+                {% if module.photo_image_1.size_type == 'auto' %}
+                  {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                {% elif module.photo_image_1.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ module.photo_image_1.max_width }}" height="{{ module.photo_image_1.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                 {% set loadingAttr = module.photo_image_1.loading != 'disabled' ? 'loading="{{ module.photo_image_1.loading }}"' : '' %}
+                <img src="{{ module.photo_image_1.src }}" alt="{{ module.photo_image_1.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+            </div>
+            <div class="col-md-6 photo-container">
+              {% if module.photo_image_2.src %}
+                {% set sizeAttrs = 'width="{{ module.photo_image_2.width }}" height="{{ module.photo_image_2.height }}"' %}
+                {% if module.photo_image_2.size_type == 'auto' %}
+                  {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                {% elif module.photo_image_2.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ module.photo_image_2.max_width }}" height="{{ module.photo_image_2.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                 {% set loadingAttr = module.photo_image_2.loading != 'disabled' ? 'loading="{{ module.photo_image_2.loading }}"' : '' %}
+                <img src="{{ module.photo_image_2.src }}" alt="{{ module.photo_image_2.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 photo-container">
+              {% if module.photo_image_3.src %}
+                {% set sizeAttrs = 'width="{{ module.photo_image_3.width }}" height="{{ module.photo_image_3.height }}"' %}
+                {% if module.photo_image_3.size_type == 'auto' %}
+                  {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                {% elif module.photo_image_3.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ module.photo_image_3.max_width }}" height="{{ module.photo_image_3.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                 {% set loadingAttr = module.photo_image_3.loading != 'disabled' ? 'loading="{{ module.photo_image_3.loading }}"' : '' %}
+                <img src="{{ module.photo_image_3.src }}" alt="{{ module.photo_image_3.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+            </div>
+            <div class="col-md-6 photo-container">
+              {% if module.photo_image_4.src %}
+                {% set sizeAttrs = 'width="{{ module.photo_image_4.width }}" height="{{ module.photo_image_4.height }}"' %}
+                {% if module.photo_image_4.size_type == 'auto' %}
+                  {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                {% elif module.photo_image_4.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ module.photo_image_4.max_width }}" height="{{ module.photo_image_4.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                 {% set loadingAttr = module.photo_image_4.loading != 'disabled' ? 'loading="{{ module.photo_image_4.loading }}"' : '' %}
+                <img src="{{ module.photo_image_4.src }}" alt="{{ module.photo_image_4.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+		</div>
+    
+	</div>
+</section>
+

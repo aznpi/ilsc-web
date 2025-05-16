@@ -1,0 +1,193 @@
+[ {
+  "id" : "e17b73fa-e373-4cd4-f9c9-41aa4ae9ced9",
+  "name" : "padding_choice",
+  "label" : "Padding Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "padding-none", "No Padding" ], [ "padding-top", "Padding Top" ], [ "padding-bottom", "Padding Bottom" ], [ "padding-top-none", "No Padding Top " ], [ "padding-bottom-none", "No Padding Bottom" ], [ "padding-top-extra", "Extra Top Padding" ], [ "padding-bottom-extra", "Extra Bottom Padding" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "283dfae6-4684-ab8a-602c-ee9208a3aceb",
+  "name" : "unique_id",
+  "label" : "Unique ID",
+  "inline_help_text" : "Choose unique id if using multiple modules on same page.",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "A", "A" ], [ "B", "B" ], [ "C", "C" ], [ "D", "D" ], [ "E", "E" ], [ "F", "F" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "A"
+}, {
+  "id" : "86241785-0177-ea7f-b00b-da7f18faef24",
+  "name" : "margin_choice",
+  "label" : "Margin Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "margin-top-extra", "Extra Top Margin" ], [ "margin-bottom-extra", "Extra Bottom Margin" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "8a0d51fa-027a-ddf0-8d59-fd7519cc1b13",
+  "name" : "bg_angle_choice",
+  "label" : "BG Angle Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "section-diagonal", "Diagonal" ], [ "section-polygon", "Polygon" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "3331ee96-f101-edfc-96d7-44c8eecfea77",
+  "name" : "bg_angle_color_choice",
+  "label" : "BG Angle Color Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "grey-linear-box", "Grey Linear" ], [ "light-grey-linear-box", "Light Grey Linear" ], [ "orange-linear-box", "Orange Linear" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "e3c337f8-f0a7-a299-be81-64668aecc03a",
+  "name" : "bg_underlap_choice",
+  "label" : "BG Underlap Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "underlap-overlay", "Full" ], [ "underlap-partial-overlay", "Partial" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "46f602d1-2dc1-0a94-8894-33f15f703f59",
+  "name" : "title_rich_text",
+  "label" : "Title Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Find the right <span class=\"bold\">English Program!</span></h2>"
+}, {
+  "id" : "986ea832-4700-ed37-2d1c-cb7e263b6702",
+  "name" : "boxes_field_group",
+  "label" : "Boxes Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 20,
+    "sorting_label_field" : "df0512fd-7dc7-df05-f69e-1ba314ec35b4",
+    "default" : 0
+  },
+  "children" : [ {
+    "id" : "792ded75-82c9-b17e-1f62-07fc1aee599f",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "df0512fd-7dc7-df05-f69e-1ba314ec35b4",
+    "name" : "title_rich_text",
+    "label" : "Title Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h3>INTENSIVE<br>English program</h3>"
+  }, {
+    "id" : "43b7e3c4-2b41-1722-1d9a-84a8901029f8",
+    "name" : "schedule_description_rich_text",
+    "label" : "Schedule Description Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "Lessons per week<br>30 Lessons<br>(24 hours)"
+  }, {
+    "id" : "cfad6f75-ae9b-1ee5-86ca-adc7c9fabcfa",
+    "name" : "sub_description_rich_text",
+    "label" : "Sub Description Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<p class=\"bold\">English Learning Focus</p>\n<p>All language skills including listening, speaking, reading, writing, vocabulary, and pronunciation.</p>"
+  }, {
+    "id" : "e1a15b45-932a-9bfe-77ba-be6c2feddcbb",
+    "name" : "program_description_rich_text",
+    "label" : "Program Description Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<p class=\"bold\">Why Choose This Program?</p>\n<p>Enjoy the most complete English learning experience designed to develop your language proficiency to support success in English-speaking higher education, business, or social settings.</p>"
+  }, {
+    "id" : "2ab2e654-c3b4-8e6a-1427-cf42e73a2c62",
+    "name" : "btn_link",
+    "label" : "Btn Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "79cea9ac-a425-8dd0-8e49-e45e828a87e2",
+    "name" : "btn_text",
+    "label" : "BTN Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Learn More"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ ]
+} ]

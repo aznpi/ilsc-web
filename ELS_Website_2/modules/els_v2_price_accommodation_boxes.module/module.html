@@ -1,0 +1,213 @@
+{% set queryparam = '' %}
+{% set queryparam = queryparam ~ "&parent_category__eq=Accommodation"%}
+{% set queryparam = queryparam ~ "&category__in=Homestay,Residence"%}
+{% set queryparam = queryparam ~ "&enable__eq=true"  %}
+
+{% set fees = hubdb_table_rows(6973607,queryparam) %}
+{% set priceListArray = [] %}
+
+{% for fee in fees %}
+{% do priceListArray.append({
+      item:fee.item_name.name,
+      description:fee.price_description,
+      priceCurrent: fee.price_current,
+      priceNext: fee.price_year_2,
+      campus: fee.campus_location
+   }) %}
+{% endfor %}
+
+
+{% set campuses = hubdb_table_rows(5266068,'&country__eq=USA&orderBy=name') %}
+
+{% set anchorId = module.anchor_id|lower|replace(' ','-')|replace("'","-")|replace(',','-') %}
+
+<section id="{{anchorId}}" class="section-normal section-pricing-boxes section-accommodation-pricing">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="description center">
+          <h2 class="bold">{{module.anchor_id}}</h2>
+          <h2 class="bold">
+            <span><a data-slide-to="0" class="year-target current-year active"></a> {% if module.enable_next_year_price_boolean %}| <a class="year-target" data-slide-to="1" class="year-target next-year"></a>{% endif %}</span>
+          </h2>
+          <h4>
+            {{ module.title_description }}
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="margin-bottom: 50px;background: linear-gradient(90deg, #D9D9D9 0%, #F5F0F0 97.56%);padding:50px 0;">
+    <div class="col-md-12">
+      <div class="container">
+        <div class="housing-dropdown-container center">
+
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Choose your location to see housing prices
+            </button>
+            <ul class="dropdown-menu campus-drop--USA" data-popper-placement="bottom-start">
+              <li class="disabled bold">Choose your Campus</li>
+              {% for campus in campuses %}
+              <li class="campus-name bold" data-campus="{{campus.name}}"><a data-slide-to="{{loop.index0}}">{{campus.name}}, {{campus.state_province}}</a></li>
+              {% endfor %}   
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="container">
+    <div id="{{anchorId}}-price">
+      <div class="price-slider">        
+        <div>
+          
+          <div class="campus-slider-1">  
+            {% for campus in campuses %}
+            <div>
+              <div class="row">
+                <div class="col-md-12">
+                  <h5>
+                    Location: {{campus.name}}
+                  </h5>
+                  
+                </div>
+              </div>
+              <div class="row boxes-container">
+
+                {% for priceItem in priceListArray|groupby('item') %}
+                <div class="col-md-4">
+                  <div class="price-box-container">
+                    <div class="box-container" style="background: linear-gradient(169deg,rgba(245,130,32,1), rgba(245,130,32,1) 74%,rgba({{ module.bg_color.color|convert_rgb }},{{ module.bg_color.opacity }}) 74.3%, rgba({{ module.bg_color.color|convert_rgb }},{{ module.bg_color.opacity }}) 100%);">
+                      <h5>{{priceItem.grouper}}</h5>
+                    </div>
+                    <div class="price-table">
+                      <table>
+                        {% for listItem in priceItem.list|groupby('description') %}
+                        {% for price in listItem.list|unique %}
+                        {% for location in price.campus %}
+                        {% if location.name == campus.name %}
+                        {% if price.priceCurrent %}
+                        <tr>
+                          <td class="item">{{listItem.grouper}}</td>
+                          <td class="price-item">{{price.priceCurrent|format_currency("en-US")}}</td>
+                        </tr>
+                        {% else %}
+                        <tr>
+                          <td colspan="2">Not Avaialable</td>
+                        </tr>
+                        {% endif %}  
+                        {% endif %}
+                        {% endfor %}
+                        {% endfor %}
+                        {% endfor %}
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+            {% endfor %}
+
+          </div>
+        </div>
+
+        {% if module.enable_next_year_price_boolean %}
+          <div>
+
+            <div class="campus-slider-2">
+              {% for campus in campuses %}
+              <div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <h5>
+                      Location: {{campus.name}}
+                    </h5>
+                   
+                  </div>
+                </div>
+                <div class="row boxes-container">
+                  {% for priceItem in priceListArray|groupby('item') %}
+                  <div class="col-md-4">
+                    <div class="price-box-container">
+                      <div class="box-container" style="background: linear-gradient(169deg,rgba(245,130,32,1), rgba(245,130,32,1) 74%,rgba({{ module.bg_color.color|convert_rgb }},{{ module.bg_color.opacity }}) 74.3%, rgba({{ module.bg_color.color|convert_rgb }},{{ module.bg_color.opacity }}) 100%);">
+                        <h5>{{priceItem.grouper}}</h5>
+                      </div>
+                      <div class="price-table">
+                        <table>
+                          {% for listItem in priceItem.list|groupby('description') %}
+                          {% for price in listItem.list|unique %}
+                          {% for location in price.campus %}
+                          {% if location.name == campus.name %}
+                          <tr>
+                            <td class="item">{{listItem.grouper}}</td>
+                            <td class="price-item">{{price.priceNext|format_currency("en-US")}}</td>
+                          </tr>
+                          {% endif %}
+                          {% endfor %}
+                          {% endfor %}
+                          {% endfor %}
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+
+
+
+      </div>
+    </div>
+    {% if module.bottom_rich_text %}
+    <div class="row">
+      <div class="col-md-12">
+        <div class="description">
+          {% inline_rich_text field="bottom_rich_text" value="{{ module.bottom_rich_text }}" %}
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+{% require_js position='footer'%}
+<script>
+  $(document).ready(function(){
+    $('#{{anchorId}} a.year-target').click(function(){
+      $('#{{anchorId}} a.year-target').removeClass('active');
+      $(this).addClass('active');
+  });
+
+  function resizeProgramBoxes{{anchorId|replace('-','')}}(){
+
+    var resizeArray = ['.price-table table']
+    var arrayLength = resizeArray.length;
+    var maxHeight = [];
+
+    for (var i = 0; i < arrayLength; i++) {
+      maxHeight[i] = 0;
+      $("#{{anchorId}} .price-box-container "+ resizeArray[i]).each(function () {
+        if ($(this).height() > maxHeight[i]) { maxHeight[i] = $(this).height(); }
+    });
+    $("#{{anchorId}} .price-box-container "+ resizeArray[i]).height(maxHeight[i]);
+      }
+
+  }
+
+  resizeProgramBoxes{{anchorId|replace('-','')}}();
+  window.addEventListener("resize", resizeProgramBoxes{{anchorId|replace('-','')}});
+  });
+
+</script>
+{% end_require_js %}

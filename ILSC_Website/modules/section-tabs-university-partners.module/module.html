@@ -1,0 +1,329 @@
+{% set schoolAssociation = "Language School" %}
+{% set queryparam = "&school_association__contains=" + schoolAssociation|urlencode %}
+{% set queryparamCa = queryparam ~ "&partner_country__contains=Canada&orderBy=partner_name"  %}
+{% set queryparamAu = queryparam ~ "&partner_country__contains=Australia&orderBy=partner_name"  %}
+{% set queryparamUS = queryparam ~ "&partner_country__contains=United States&orderBy=partner_name"  %}
+
+
+{% set partnersCA = hubdb_table_rows(2663251,queryparamCa) %}
+{% set partnersAU = hubdb_table_rows(2663251,queryparamAu) %}
+{% set partnersUS = hubdb_table_rows(2663251,queryparamUS) %}
+
+<section id="content" class="tab-navigation-landing section bg-white-canvas">
+	<div class="divider"></div>
+	<div class="container">
+    <nav id="carousel-nav-container" class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand" href="#">{{ module.tabs.mobile_tab_text }}</a>
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav-Menu" aria-controls="navbarNav-Menu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+				<div class="navbar-collapse collapse" id="navbarNav-Menu" style="">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="australia-tab" data-toggle="pill" href="#australia" role="tab" aria-controls="australia" aria-selected="false">{{ module.tabs.tab_2.title }}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="canada-tab" data-toggle="pill" href="#canada" role="tab" aria-controls="canada" aria-selected="true">{{ module.tabs.tab_1.title }}</a>
+            </li> 
+            {#
+            <li class="nav-item">
+              <a class="nav-link" id="usa-tab" data-toggle="pill" href="#usa" role="tab" aria-controls="usa" aria-selected="false">{{ module.tabs.tab_3.title }}</a>
+            </li>
+            #}
+          </ul>
+      </div>
+    </nav>
+		<div class="tab-content" id="pills-tabContent">
+		  <div class="tab-pane fade" id="canada" role="tabpanel" aria-labelledby="canada-tab">
+          <div class="content-container mix-boxes">
+				
+					<div class="row input-drop">
+						<div class="col-md-12 input">
+              <div class="center">
+                {% inline_rich_text field="tabs.tab_1.title_description" value="{{ module.tabs.tab_1.title_description }}" %}
+              </div>
+							<div class="dropdown">
+							  <button class="btn btn-black-outline dropdown-toggle select-filter" textValue="{{ module.all_provinces_text }}" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    {{ module.search_provinces }}
+							  </button>
+							  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							  	<a class="dropdown-item" href="#" value="all">{{ module.all_provinces_text }}</a>
+                  
+                  {% set province_list_ca = [] %}
+                  
+                  {% for row in partnersCA %}
+                    {% for item in row.partner_state %}
+                     {% do province_list_ca.append(item.state_province|trim) %}
+                    {% endfor %}
+                  {% endfor %}
+                  
+                  {% for item in province_list_ca|unique|sort(False,False) %}           
+                      <a class="dropdown-item" href="#" value="province-{{ item }}">{{ item }}</a>         
+                  {% endfor %}
+                  
+                  
+							  </div>
+							</div>
+							
+						</div>	
+					</div>
+            
+            
+					<div class="row container-canada">
+            {% set uniqueNameVar = "" %}
+            {% set uniqueProvVar = "" %}
+            {% set duplicateVar = 0 %}
+            {% set multipleBool = 0 %}
+            
+            {% for row in partnersCA %}
+                
+                
+                {% if uniqueNameVar != row.partner_name|trim %}
+
+                  {% set uniqueNameVar = row.partner_name|trim %}
+
+                  {% set visible = 'block' %}
+                  {% set duplicateVar = 1 %}
+                  {% set multipleBool = 0 %}
+            
+                {% else %}
+
+                  {% set visible = 'none' %} 
+                  {% set duplicateVar =  duplicateVar + 1 %}
+                  {% set multipleBool = 1 %}    
+            
+                {% endif %}
+             
+                {% set provinceArray = [] %}
+                {% for item in row.partner_state %}
+                    {% do provinceArray.append(item.state_province|trim) %}
+                {% endfor %}
+                
+                {% if uniqueProvVar != provinceArray[0] %}
+                  {% set uniqueProvVar = provinceArray[0] %}
+                  {% set duplicateVar = 1 %}
+                {% endif %}
+            
+            
+                <div class="mix col-md-3" data-type="province-{{provinceArray[0]}}" style="display:{{visible}}" duplicate="{{duplicateVar}}" original="{{multipleBool}}">
+                  <div class="box-container" onclick="window.open('{{row.partner_link}}','');">
+                    <div class="image-container">
+                      {% if row.partner_logo.url%}
+                        <img src="{{row.partner_logo.url}}" alt="{{row.partner_name}}" />
+                        {% else %}
+                        <h6>{{row.partner_name}}</h6>
+                      {% endif %}
+                    </div>
+                    <div class="short-description-container">    
+                      <div class="short-description">    
+                    
+                          {{ row.partner_short_description }}
+                         
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+          {% endfor %}
+					</div>
+
+			</div>
+		  </div>
+		  <div class="tab-pane fade show active" id="australia" role="tabpanel" aria-labelledby="australia-tab">
+          <div class="content-container mix-boxes">
+				
+					<div class="row input-drop">
+						<div class="col-md-12 input">
+              <div class="center">
+                {% inline_rich_text field="tabs.tab_2.title_description" value="{{ module.tabs.tab_2.title_description }}" %}
+              </div>
+							<div class="dropdown">
+							  <button class="btn btn-black-outline dropdown-toggle select-filter" textValue="{{ module.all_cities_text }}" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    {{ module.search_cities_text }}
+							  </button>
+							  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							  	<a class="dropdown-item" href="#" value="all">{{ module.all_cities_text }}</a>
+                  
+                  
+                  {% set province_list_au = [] %}
+                  
+                  {% for row in partnersAU %}
+                    {% for item in row.partner_state %}
+                     {% do province_list_au.append(item.state_province|trim) %}
+                    {% endfor %}
+                  {% endfor %}
+                  
+                  {% for item in province_list_au|unique|sort(False, False) %}           
+                      <a class="dropdown-item" href="#" value="province-{{ item }}">{{ item }}</a>         
+                  {% endfor %}
+                  
+                  
+							  </div>
+							</div>
+							
+						</div>	
+					</div>
+            
+            
+					<div class="row container-canada">
+						 {% set uniqueNameVar = "" %}
+            {% set uniqueProvVar = "" %}
+            {% set duplicateVar = 0 %}
+            {% set multipleBool = 0 %}
+
+            {% for row in partnersAU %}
+                
+                
+                {% if uniqueNameVar != row.partner_name|trim %}
+
+                  {% set uniqueNameVar = row.partner_name|trim %}
+
+                  {% set visible = 'block' %}
+                  {% set duplicateVar = 1 %}
+                  {% set multipleBool = 0 %}
+            
+                {% else %}
+
+                  {% set visible = 'none' %} 
+                  {% set duplicateVar =  duplicateVar + 1 %}
+                  {% set multipleBool = 1 %}    
+            
+                {% endif %}
+             
+                {% set provinceArray = [] %}
+                {% for item in row.partner_state %}
+                    {% do provinceArray.append(item.state_province|trim) %}
+                {% endfor %}
+                
+                {% if uniqueProvVar != provinceArray[0] %}
+                  {% set uniqueProvVar = provinceArray[0] %}
+                  {% set duplicateVar = 1 %}
+                {% endif %}
+            
+               
+            
+            
+            
+                <div class="mix col-md-3" data-type="province-{{provinceArray[0]}}" style="display:{{visible}}" duplicate="{{duplicateVar}}" original="{{multipleBool}}">
+                  <div class="box-container" onclick="window.open('{{row.partner_link}}','');">
+                    <div class="image-container">
+                      {% if row.partner_logo.url%}
+                        <img src="{{row.partner_logo.url}}" alt="{{row.partner_name}}" />
+                        {% else %}
+                        <h6>{{row.partner_name}}</h6>
+                      {% endif %}
+                    </div>
+                    <div class="short-description-container">    
+                      <div class="short-description">    
+                    
+                          {{ row.partner_short_description }}
+                         
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+          {% endfor %}
+					</div>
+
+			</div>
+		  </div>
+      {#
+		  <div class="tab-pane fade" id="usa" role="tabpanel" aria-labelledby="usa-tab">
+          <div class="content-container mix-boxes">
+				
+					<div class="row input-drop">
+						<div class="col-md-12 input">
+               <div class="center">
+                {% inline_rich_text field="tabs.tab_3.title_description" value="{{ module.tabs.tab_3.title_description }}" %}
+              </div>
+							<div class="dropdown">
+							  <button class="btn btn-black-outline dropdown-toggle select-filter" textValue="{{ module.all_states_text }}" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    {{ module.search_states_text }}
+							  </button>
+							  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							  	<a class="dropdown-item" href="#" value="all">{{ module.all_states_text }}</a>
+                  
+                  {% set province_list_us = [] %}
+                  
+                  {% for row in partnersUS %}
+                    {% for item in row.partner_state %}
+                     {% do province_list_us.append(item.state_province|trim) %}
+                    {% endfor %}
+                  {% endfor %}
+                  
+                  {% for item in province_list_us|unique|sort(False,False) %}           
+                      <a class="dropdown-item" href="#" value="province-{{ item }}">{{ item }}</a>         
+                  {% endfor %}
+                  
+                  
+							  </div>
+							</div>
+							
+						</div>	
+					</div>
+            
+            
+					<div class="row container-canada">
+            {% set uniqueNameVar = "" %}
+            {% set uniqueProvVar = "" %}
+            {% set duplicateVar = 0 %}
+            {% set multipleBool = 0 %}
+            
+            {% for row in partnersUS %}
+                
+                
+                {% if uniqueNameVar != row.partner_name|trim %}
+
+                  {% set uniqueNameVar = row.partner_name|trim %}
+
+                  {% set visible = 'block' %}
+                  {% set duplicateVar = 1 %}
+                  {% set multipleBool = 0 %}
+            
+                {% else %}
+
+                  {% set visible = 'none' %} 
+                  {% set duplicateVar =  duplicateVar + 1 %}
+                  {% set multipleBool = 1 %}    
+            
+                {% endif %}
+             
+                {% set provinceArray = [] %}
+                {% for item in row.partner_state %}
+                    {% do provinceArray.append(item.state_province|trim) %}
+                {% endfor %}
+                
+                {% if uniqueProvVar != provinceArray[0] %}
+                  {% set uniqueProvVar = provinceArray[0] %}
+                  {% set duplicateVar = 1 %}
+                {% endif %}
+            
+            
+                <div class="mix col-md-3" data-type="province-{{provinceArray[0]}}" style="display:{{visible}}" duplicate="{{duplicateVar}}" original="{{multipleBool}}">
+                  <div class="box-container" onclick="window.open('{{row.partner_link}}','');">
+                    {% if row.partner_logo.url%}
+                      <div class="image-container">
+                        <img src="{{row.partner_logo.url}}" alt="{{row.partner_name}}" />
+                      </div>
+                        {% else %}
+                        <h6>{{row.partner_name}}</h6>
+                      {% endif %}
+                    <div class="short-description-container">    
+                      <div class="short-description">    
+                    
+                          {{ row.partner_short_description }}
+                         
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+          {% endfor %}
+					</div>
+
+			</div>
+		  </div>
+		#}
+		
+		</div>
+	</div>
+</section>

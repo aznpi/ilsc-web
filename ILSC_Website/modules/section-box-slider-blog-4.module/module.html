@@ -1,0 +1,61 @@
+<section class="section section-blog-list bg-white-canvas">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9">
+				{% inline_rich_text field="title" value="{{ module.title }}" %}
+			</div>
+      <div class="col-md-3">
+				<div class="a-link-container right">
+            <a href="{{ module.cta_field_group.link_field.url.href }}">{{ module.cta_field_group.text_field }} <i class="fas fa-long-arrow-alt-right"></i></a>
+          </div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+        <div class="slider-wrapper">
+          <div class="box-slide-blog box-shadow">
+               {% set blog_posts = blog_recent_posts(module.blog_field, 20) %}
+            
+              {% for blog_post in blog_posts|sort(false, false, 'publish_date')|reverse %}
+                   <div>
+                      <div class="box-container drop-shadow">
+                         <div class="image-container" style="background-image:url({{ blog_post.featured_image }});background-size:cover;background-repeat: no-repeat;height:200px;width:100%;" ></div>
+                        <div class="box-content a-link-container a-link-small">
+                            <span class="related-blog-date">POSTED: {{blog_post.publishDate|datetimeformat('%B %e, %Y') }} </span>
+                            <h5>{{ blog_post.name }}</h5>
+                          <a href="{{ blog_post.url }}">{{ module.link_text }}</a>
+                        </div>
+                      </div>
+                  </div>
+              {% endfor %}     
+          </div>
+        </div>
+			</div>
+		</div>
+	</div>
+</section>
+<script>
+
+  $(document).ready(function(){
+    $('.box-slide-blog').slick({
+        dots: false,
+        slidesToScroll: 1,
+        slidesToShow: {{ module.number_of_slides_to_show }},
+        lazyLoad: 'ondemand',
+        speed : 600,
+        ease : 'Pow4.easeIn',
+        infinite:false,
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+
+    });
+  })
+
+</script>

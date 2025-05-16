@@ -1,0 +1,116 @@
+[ {
+  "id" : "9f20668c-4c4d-5f61-f370-463fac173a6b",
+  "name" : "accordion_assignment_choice",
+  "label" : "Accordion Assignment Choice",
+  "inline_help_text" : "If you have multiple accordions, assign unique letters to each module.",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "A", "A" ], [ "B", "B" ], [ "C", "C" ], [ "D", "D" ], [ "E", "E" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "A"
+}, {
+  "id" : "70a25498-cdca-ca44-25ea-030dab64d845",
+  "name" : "program_code",
+  "label" : "Parent Program Code",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null
+}, {
+  "id" : "3afaf60e-b51a-47f7-8962-da73f075fc3e",
+  "name" : "bg_color",
+  "label" : "BG Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#F5F8FA",
+    "opacity" : 100
+  }
+}, {
+  "id" : "45c27bd1-a522-caf8-0114-1e82be125a7d",
+  "name" : "title_accordion_rich_text",
+  "label" : "Title Accordion Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Program Courses</h2>"
+}, {
+  "id" : "0500ff35-7a7d-baf7-f338-12f6eb1c0af6",
+  "name" : "image_width_choice",
+  "label" : "Image width Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "small", "Small" ], [ "medium", "Medium" ], [ "large", "Large" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "small"
+}, {
+  "id" : "4e1e190b-e343-2268-71c0-e39623fa797f",
+  "name" : "bg_image_field",
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "src" : "https://www.ilsc.com/hubfs/bg_black_white_laptop.jpg",
+    "alt" : "bg_black_white_laptop",
+    "width" : 449,
+    "height" : 750,
+    "max_width" : 449,
+    "max_height" : 750
+  }
+}, {
+  "id" : "a7e25b21-d3be-5e23-7b3b-da0f280ee0fa",
+  "name" : "accordion_field_group",
+  "label" : "Accordion Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 99,
+    "sorting_label_field" : "e0eb69ed-4f52-91e7-5eaf-57617285b28d",
+    "default" : 0
+  },
+  "children" : [ {
+    "id" : "e0eb69ed-4f52-91e7-5eaf-57617285b28d",
+    "name" : "title_rich_text",
+    "label" : "Title Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null
+  }, {
+    "id" : "3500830f-4831-6c54-9c76-c99f4c8bbfa5",
+    "name" : "body_rich_text",
+    "label" : "Body Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ ]
+} ]

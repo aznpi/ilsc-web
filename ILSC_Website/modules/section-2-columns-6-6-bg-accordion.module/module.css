@@ -1,0 +1,45 @@
+.section{
+  position:relative;
+  overflow:hidden;
+}
+.section-faq .bg-image-container{
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+.section-faq .column-accordion{
+  padding:0 50px;
+}
+.section-faq .column-accordion .accordion{
+  box-shadow:none;
+  margin-top:0px;
+}
+.section-faq .column-accordion .accordion .card{
+  padding:5px 0;;
+  border:0;
+  border-bottom: 1px solid rgba(0,0,0,.125) !important;
+}
+.section-faq .column-accordion .accordion .card h2{
+  line-height:0;
+}
+.section-faq .column-accordion .accordion .card .card-header{
+  padding:0;
+}
+.section-faq .column-accordion .accordion,.section-faq .column-accordion .accordion .card,.section-faq .column-accordion .accordion .card .card-header{
+  background-color:transparent;
+}
+.section-faq .accordion-container{
+  margin-top:-100px;
+}
+
+.section-faq .btn-container{
+  margin:0 auto;
+  padding:50px 30px;
+}
+.section-faq .btn-container a{
+  width:100%;
+}
+@media (max-width: 480px){
+  .section-6-6.section-faq .bg-image-container{
+    display:none;
+  }
+}

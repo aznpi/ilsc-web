@@ -1,0 +1,357 @@
+{% set num = 1%}
+{% set queryparam = '' %}
+{% set coreTerm = 'Core Course' %}
+{% set skillTerm = 'Skill Elective' %}
+
+{% set programTerm = module.program_name|urlencode %}
+
+{% set queryparam = queryparam ~ "&program__contains=" + programTerm  %}
+{% set queryparamCourse = queryparam ~ "&course_type__eq=" + coreTerm + "&orderBy=course_name"  %}
+{% set queryparamSkill = queryparam ~ "&course_type__eq=" + skillTerm + "&orderBy=course_name" %}
+
+{% set tableCourse = hubdb_table_rows(2665087,queryparamCourse) %}
+{% set tableSkill = hubdb_table_rows(2665087,queryparamSkill) %}
+
+<section class="tab-navigation-landing section bg-white-canvas" id="content">
+	<div class="divider"></div>
+	<div class="container">
+    <nav id="carousel-nav-container" class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand" href="#">{{ module.mobile_tab_text }}</a>
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav-Menu" aria-controls="navbarNav-Menu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+				<div class="navbar-collapse collapse" id="navbarNav-Menu" style="">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-1-tab" data-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-1" aria-selected="true">{% inline_text field="tabs.tab_1.title" value="{{ module.tabs.tab_1.title }}" %}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-2-tab" data-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-2" aria-selected="false">{% inline_text field="tabs.tab_2.title" value="{{ module.tabs.tab_2.title }}" %}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-3-tab" data-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-3" aria-selected="false">{% inline_text field="tabs.tab_3.title" value="{{ module.tabs.tab_3.title }}" %}</a>
+            </li> 
+          </ul>
+      </div>
+    </nav>
+		<div class="tab-content" id="pills-tabContent">
+		  <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
+		  	<div class="content-container">
+				
+					<div class="row">
+						<div class="col-md-6">
+							{% inline_rich_text field="tabs.tab_1.text_content" value="{{ module.tabs.tab_1.text_content }}" %}
+              
+              {% if module.tabs.tab_1.cta_1.hide_show_cta == "show" %}
+                <div class="btn-video-container">
+                  <div><i class="{{ module.tabs.tab_1.cta_1.cta_font_awesome_icon }}"></i></div>
+                  <div>
+                    {% if module.tabs.tab_1.cta_1.cta_font_awesome_icon == "far fa-play-circle" %}
+                          <a href="#ilscModal" data-toggle="modal" class="video-btn" src="{{ module.tabs.tab_1.cta_1.cta_url.href }}">
+                            {% else %}
+                              <a href="{{ module.tabs.tab_1.cta_1.cta_url.href }}"  {% if module.tabs.tab_1.cta_1.cta_url.type == "EXTERNAL" %} target="_blank" {% endif %}>
+                         {% endif %}
+                                {{ module.tabs.tab_1.cta_1.cta_text }}
+                            </a>
+                    </div>
+                </div>
+              {% endif %}
+              {% if module.tabs.tab_1.cta_2.hide_show_cta == "show" %}
+                <div class="btn-video-container">
+                  <div><i class="{{ module.tabs.tab_1.cta_2.cta_font_awesome_icon }}"></i></div>
+                  <div>
+                    {% if module.tabs.tab_1.cta_1.cta_font_awesome_icon == "far fa-play-circle" %}
+                      <a href="#ilscModal" data-toggle="modal" class="video-btn" src="{{ module.tabs.tab_1.cta_2.cta_url.href }}">
+                        {% else %}
+                        <a href="{{ module.tabs.tab_1.cta_2.cta_url.href }}" {% if module.tabs.tab_1.cta_2.cta_url.type == "EXTERNAL" %} target="_blank" {% endif %}>
+                    {% endif %}
+                          {{ module.tabs.tab_1.cta_2.cta_text }}
+                        </a>
+                   </div>
+                </div>
+              {% endif %}
+						</div>
+						<div class="col-md-6">
+							{% if module.tabs.tab_1.image_field.src %}
+                <img src="{{ module.tabs.tab_1.image_field.src }}" alt="{{ module.tabs.tab_1.image_field.alt }}" loading="lazy">
+              {% endif %}
+						</div>
+					
+					</div>
+			</div>
+		  </div>
+		  <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
+			  <div class="content-container">
+				
+					<div class="row">
+						<div class="col-md-5 school-details">
+							{% inline_rich_text field="tabs.tab_2.text_content" value="{{ module.tabs.tab_2.text_content }}" %}
+						</div>
+						<div class="col-md-7 image-container">
+							{% if module.tabs.tab_2.image_field.src %}
+                <img src="{{ module.tabs.tab_2.image_field.src }}" alt="{{ module.tabs.tab_2.image_field.alt }}" loading="lazy">
+              {% endif %}				
+						</div>
+					
+					</div>
+			</div>
+		</div>
+		  
+		<div class="tab-pane fade section-faq" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab">
+				<div class="content-container">
+          {% if module.tabs.tab_3.view_option == "course" %}
+            <div class="row">
+              <div class="col-md-12 center">
+                {% inline_rich_text field="tabs.tab_3.text_content" value="{{ module.tabs.tab_3.text_content }}" %}
+              </div>
+            </div>
+            <ul class="nav nav-pills mb-3 accordion-container" id="pills-course-tab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="pills-course-1-tab" data-toggle="pill" href="#pills-course-1" role="tab" aria-controls="pills-course-1" aria-selected="true">{{ module.tabs.tab_3.core_courses_text }}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-course-2-tab" data-toggle="pill" href="#pills-course-2" role="tab" aria-controls="pills-course-2" aria-selected="false">{{ module.tabs.tab_3.skills_electives_text }}</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-course-tabContent">
+              <div class="tab-pane fade show active" id="pills-course-1" role="tabpanel" aria-labelledby="pills-course-1-tab">
+                <div class="content-container">
+                  <div class="row">	
+                    <div class="col-md-12 tab-courses accordion-container">
+
+                      <div class="accordion left" id="accordionFaq-1">
+
+                        {% for row in tableCourse %}
+                          {% set levelArray = [] %}
+                          {% set locationArray = [] %}
+                          {% set loopCount = 1 %}
+                          {% for item in row.course_level %}
+                            {% do levelArray.append(item.level_code) %}
+                          {% endfor %}
+                          {% for item in row.course_locations %}
+                            {% do locationArray.append(item.name) %}
+                          {% endfor %}
+                          <div class="card">
+                            <div class="card-header" id="heading-1-{{num}}">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-1-{{num}}" {% if num == 1 %} aria-expanded="true" {% else %} aria-expanded="false" {% endif %} aria-controls="collapse-1-{{num}}">
+                                  {{ row.course_name }}
+                                </button>
+                              </h2>
+                            </div>
+
+                            <div id="collapse-1-{{num}}" {% if num == 1 %} class="collapse show" {% else %} class="collapse" {% endif %} aria-labelledby="heading-1-{{num}}" data-parent="#accordionFaq-1">
+                              <div class="card-body">
+                                 {{ row.course_description }}
+                                <ul>
+                                  <li>
+                                    <span class="bold">{{ module.tabs.tab_3.language_level_text }}:&nbsp;</span>
+
+
+                                    {% for item in levelArray %}
+
+                                      {% set item = item|trim|string %}
+
+                                      {% if item == "B1" %}
+                                        {% set tooltip = module.tabs.tab_3.language_levels.b1_text %}
+                                        {% elif item == "B2" %}
+                                          {% set tooltip = module.tabs.tab_3.language_levels.b2_text %}
+                                        {% elif item == "B3" %}
+                                          {% set tooltip = module.tabs.tab_3.language_levels.b3_text %}
+                                        {% elif item == "B4" %}
+                                          {% set tooltip = module.tabs.tab_3.language_levels.b4_text %}
+                                        {% elif item == "I1" %}
+                                          {% set tooltip = module.tabs.tab_3.language_levels.i1_text %}
+                                        {% elif item == "I2" %}
+                                          {% set tooltip = module.tabs.tab_3.language_levels.i2_text %}
+                                        {% elif item == "I3" %}
+                                          {% set tooltip = module.tabs.tab_3.language_levels.i3_text %}
+                                        {% elif item == "I4" %}
+                                          {% set tooltip = module.tabs.tab_3.language_levels.i4_text %}
+                                        {% elif item == "A1" %}
+                                          {% set tooltip = module.tabs.tab_3.language_levels.a1_text %}
+                                        {% elif item == "A2" %}
+                                          {% set tooltip = module.tabs.tab_3.language_levels.a2_text %}
+                                        {% elif item == "M1" %}
+                                          {% set tooltip = module.tabs.tab_3.language_levels.m1_text %}
+                                        {% elif item == "M2" %}
+                                          {% set tooltip = module.tabs.tab_3.language_levels.m2_text %}
+                                        {% else %}
+                                          {% set tooltip = "" %}
+                                      {% endif %}
+
+                                    <span><a href="#" data-toggle="tooltip" data-placement="top" title="{{tooltip}}" class="tip-text">{{item}}</a>{% if loopCount < levelArray|length %},&nbsp;{% endif %}</span>
+
+                                    {% set loopCount = loopCount + 1 %}
+
+                                    {% endfor %}
+
+                                  </li>
+                                  <li>
+                                    <span class="bold">{{ module.tabs.tab_3.locations_text }}:&nbsp;</span>
+                                     {% for item in locationArray %}
+                                      <span>{{item}}{% if loopCount < locationArray|length %},&nbsp;{% endif %}</span>
+
+                                      {% set loopCount = loopCount + 1 %}
+                                    {% endfor %}
+                                  </li>
+
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          {% set num = num + 1%}
+                          {% endfor %}
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-course-2" role="tabpanel" aria-labelledby="pills-course-2-tab">
+                <div class="content-container">
+                  <div class="row">	
+                    <div class="col-md-12 tab-courses accordion-container">
+
+                      <div class="accordion left" id="accordionFaq-2">
+
+                        {% for row in tableSkill %}
+                          {% set levelArray = [] %}
+                          {% set locationArray = [] %}
+                          {% set loopCount = 1 %}
+                          {% for item in row.course_level %}
+                            {% do levelArray.append(item.level_code) %}
+                          {% endfor %}
+                          {% for item in row.course_locations %}
+                            {% do locationArray.append(item.name) %}
+                          {% endfor %}
+                          <div class="card">
+                            <div class="card-header" id="heading-2-{{num}}">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-2-{{num}}" {% if num == 1 %} aria-expanded="true" {% else %} aria-expanded="false" {% endif %} aria-controls="collapse-2-{{num}}">
+                                  {{ row.course_name }}
+                                </button>
+                              </h2>
+                            </div>
+
+                            <div id="collapse-2-{{num}}" {% if num == 1 %} class="collapse show" {% else %} class="collapse" {% endif %} aria-labelledby="heading-2-{{num}}" data-parent="#accordionFaq-2">
+                              <div class="card-body">
+                                 {{ row.course_description }}
+                                <ul>
+                                  {% if levelArray|length != 0 %}
+                                    <li>
+                                      <span class="bold">{{ module.tabs.tab_3.language_level_text }}:&nbsp;</span>
+
+
+                                      {% for item in levelArray %}
+
+                                        {% set item = item|trim|string %}
+
+                                        {% if item == "B1" %}
+                                          {% set tooltip = module.tabs.tab_3.language_levels.b1_text %}
+                                          {% elif item == "B2" %}
+                                            {% set tooltip = module.tabs.tab_3.language_levels.b2_text %}
+                                          {% elif item == "B3" %}
+                                            {% set tooltip = module.tabs.tab_3.language_levels.b3_text %}
+                                          {% elif item == "B4" %}
+                                            {% set tooltip = module.tabs.tab_3.language_levels.b4_text %}
+                                          {% elif item == "I1" %}
+                                            {% set tooltip = module.tabs.tab_3.language_levels.i1_text %}
+                                          {% elif item == "I2" %}
+                                            {% set tooltip = module.tabs.tab_3.language_levels.i2_text %}
+                                          {% elif item == "I3" %}
+                                            {% set tooltip = module.tabs.tab_3.language_levels.i3_text %}
+                                          {% elif item == "I4" %}
+                                            {% set tooltip = module.tabs.tab_3.language_levels.i4_text %}
+                                          {% elif item == "A1" %}
+                                            {% set tooltip = module.tabs.tab_3.language_levels.a1_text %}
+                                          {% elif item == "A2" %}
+                                            {% set tooltip = module.tabs.tab_3.language_levels.a2_text %}
+                                          {% else %}
+                                            {% set tooltip = "" %}
+                                        {% endif %}
+
+                                      <span><a href="#" data-toggle="tooltip" data-placement="top" title="{{tooltip}}" class="tip-text">{{item}}</a>{% if loopCount < levelArray|length %},&nbsp;{% endif %}</span>
+
+                                      {% set loopCount = loopCount + 1 %}
+
+                                      {% endfor %}
+
+                                    </li>
+                                  {% endif %}
+                                  {% if locationArray|length != 0 %}
+                                    <li>
+                                      <span class="bold">{{ module.tabs.tab_3.locations_text }}:&nbsp;</span>
+                                       {% for item in locationArray %}
+                                        <span>{{item}}{% if loopCount < locationArray|length %},&nbsp;{% endif %}</span>
+
+                                        {% set loopCount = loopCount + 1 %}
+                                      {% endfor %}
+                                    </li>
+                                  {% endif %}
+
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          {% set num = num + 1%}
+                          {% endfor %}
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+
+            </div>
+          {% elif module.tabs.tab_3.view_option == "columns-2" %}
+             <div class="row">
+               <div class="col-md-6">
+                {% inline_rich_text field="tabs.tab_3.column_1_description" value="{{ module.tabs.tab_3.column_1_description }}" %}
+               </div>
+               <div class="col-md-6">
+                {% inline_rich_text field="tabs.tab_3.column_2_description" value="{{ module.tabs.tab_3.column_2_description }}" %}
+               </div>
+              </div>
+          {% elif module.tabs.tab_3.view_option == "column-accordion" %}
+              <div class="row">
+               <div class="col-md-6">
+                {% inline_rich_text field="tabs.tab_3.column_1_description" value="{{ module.tabs.tab_3.column_1_description }}" %}
+               </div>
+               <div class="col-md-6 section-faq">
+                  <div class="accordion-container">
+                    <div class="accordion left" id="accordionFaq-4">
+                      
+                      {% for item in module.tabs.tab_3.course_description_items %}
+
+                        <div class="card">
+                          <div class="card-header" id="heading-4-{{num}}">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-4-{{num}}" {% if num == 1 %} aria-expanded="true" {% else %} aria-expanded="false" {% endif %} aria-controls="collapse-4-{{num}}">
+                                {{ item.courses_description_title }}
+                              </button>
+                            </h2>
+                          </div>
+
+                          <div id="collapse-4-{{num}}" {% if num == 1 %} class="collapse show" {% else %} class="collapse" {% endif %} aria-labelledby="heading-4-{{num}}" data-parent="#accordionFaq-4">
+                            <div class="card-body">
+                              {{ item.course_description_text }}
+                            </div>
+                          </div>
+                        </div>
+
+                        {% set num = num + 1%}
+                      {% endfor %}
+                    </div>
+                  </div>
+               </div>
+              </div>
+        {% endif %}
+			</div>
+		</div>
+		
+		</div>
+	</div>
+</section>

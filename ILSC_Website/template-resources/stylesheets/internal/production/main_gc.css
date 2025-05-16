@@ -1,0 +1,125 @@
+/*
+
+MAIN Greystone College CSS Stylesheet
+Author: Tat Chow
+Date: Mar 16, 2021
+
+*/
+/*
+    Table of Contents
+
+    1.0 - Common Selectors
+   	2.0 - Buttons
+   	3.0 - Footer
+    4.0 - Top Nav
+    5.0 - Misc
+*/
+
+/*    1.0 - Common Selectors  */
+
+/*   	2.0 - Buttons   */
+a{
+  color:#81B1CC;
+}
+a:hover{
+  color:#000000;
+}
+
+.btn-blue {
+  color: #FFF !important;
+  background-color: #81B1CC;
+  border-color: #81B1CC;
+}
+/* line 573, ../../../sass/internal/main.scss */
+.btn-blue:hover {
+  background-color: #003346;
+  border-color: #003346;
+  color:#FFFFFF;
+}
+
+.school-details ul.blue li{
+  padding-left:1.3em;
+}
+
+.btn-video-container a:before, .a-link-container a:before{
+  border-color: #81B1CC;
+}
+
+.btn-video-container.white a:before, .a-link-container.white a:before{
+  border-color: #FFFFFF;
+}
+
+/*   	4.0 - Top-Nav  */
+header.top-nav .navbar #magic-line{
+  background-color: #81b1cc;
+}
+
+header.top-nav.gc-nav .navbar a.navbar-brand{
+  width:20%;
+}
+header.top-nav .navbar .nav-bar-items{
+  width:80%;
+}
+header.top-nav.gc-nav .target-container{
+  cursor:pointer;
+}
+header.top-nav.gc-nav .navbar .dropdown .dropdown-menu ul li{
+  margin-bottom:8px;
+}
+header.top-nav.gc-nav .navbar .dropdown .dropdown-menu ul li a{
+  color:#191919;
+  text-decoration:none;
+}
+header.top-nav.gc-nav .navbar .dropdown .dropdown-menu ul li a:hover {
+    color: #81B1CC;
+}
+header.top-nav.gc-nav .apply-container{
+  padding-left:100px;
+  padding-top:30px;
+}
+header.top-nav.gc-nav .apply-container .btn-apply{
+  width:200px;
+  margin-top:30px;
+}
+header.top-nav.gc-nav .apply-container ul{
+  display:flex;
+  justify-content: space-between;
+}
+@media (max-width: 600px){
+  header.top-nav.gc-nav .apply-container ul{
+    display:block;
+  }
+  
+  header.top-nav .navbar .dropdown .dropdown-menu.show .navbar-menu-content .row{
+    margin-left:0;
+  }
+}
+header.top-nav.gc-nav .navbar .dropdown .dropdown-menu .apply-container ul li a{
+  padding:5px;
+}
+
+ header.top-nav.gc-nav .target-container:hover .center{
+    color:#81b1cc;
+  }
+
+/* 5.0 Misc */
+.price-list-grid .program-box-container .title{
+    color: #111;
+    background: #83B3CB;
+}
+@media (max-width: 480px){
+  header.top-nav.gc-nav .center{
+    text-align:left;
+  }
+  header.top-nav.gc-nav .image-container{
+    display:none;
+  }
+  header.top-nav.gc-nav .target-container{
+    padding-top:0;
+    padding-bottom:0
+  }
+  header.top-nav.gc-nav .target-container p{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

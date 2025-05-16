@@ -1,0 +1,521 @@
+[ {
+  "id" : "c5d592b6-2f8d-a2e3-df92-21d0331e6744",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Choose your program"
+}, {
+  "id" : "46c3f3e4-ecc7-ffc0-60ee-29b2a09b6ab8",
+  "name" : "video_link_url",
+  "label" : "Video Link URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "display_width" : null,
+  "default" : {
+    "type" : "EXTERNAL",
+    "href" : "https://www.youtube.com/embed/PEFdzUTmG10",
+    "content_id" : null
+  }
+}, {
+  "id" : "9b3f1cf8-dcb8-f3c1-4033-baba21ee2045",
+  "name" : "video_text",
+  "label" : "Video Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "WATCH OUR VIDEO"
+}, {
+  "id" : "ee174c98-cdcf-ae1c-3006-e8571e45d387",
+  "name" : "box_1",
+  "label" : "Box 1",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "592c45e4-bf07-c54d-3f51-f6f4e6efa3b6",
+    "name" : "box_title",
+    "label" : "Box Title",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h5>Improve your language skills</h5>\n<h3>Learn English<br>or French</h3>"
+  }, {
+    "id" : "288ad685-b06f-92a8-421b-e77118e973a4",
+    "name" : "page_link_url",
+    "label" : "Page Link URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "CONTENT" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 30874926814
+    }
+  }, {
+    "id" : "0eed4f9e-6b08-b6aa-3e39-e477b60801fe",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_slider_english.jpg",
+      "alt" : "img_slider_english",
+      "width" : 700,
+      "height" : 806,
+      "max_width" : 700,
+      "max_height" : 806
+    }
+  }, {
+    "id" : "3cc057de-a558-1aa1-6e60-177562d183d4",
+    "name" : "short_description",
+    "label" : "Short Description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h5>Something about something</h5>\n<h3>More about something</h3>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "box_title" : "<h5>Improve your language skills</h5>\n<h3>Learn English<br>or French</h3>",
+    "page_link_url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 30874926814
+    },
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_slider_english.jpg",
+      "alt" : "img_slider_english",
+      "width" : 700,
+      "height" : 806,
+      "max_width" : 700,
+      "max_height" : 806
+    },
+    "short_description" : "<h5>Something about something</h5>\n<h3>More about something</h3>"
+  }
+}, {
+  "id" : "7daeceab-6d83-aceb-a76f-ba159905519d",
+  "name" : "box_2",
+  "label" : "Box 2",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "88c522cc-aea5-b0e6-21d4-f053321d40d1",
+    "name" : "box_title",
+    "label" : "Box Title",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h5>Greystone College</h5>\n<h3>Vocational<br>Training</h3>"
+  }, {
+    "id" : "8e9b863a-c793-f13c-6fea-67ff96eb8bcc",
+    "name" : "page_link_url",
+    "label" : "Page Link URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "CONTENT" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    }
+  }, {
+    "id" : "effd5677-96ad-44d4-1474-cf55542b6eb1",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_slider_vocational.jpg",
+      "alt" : "img_slider_vocational",
+      "width" : 700,
+      "height" : 806,
+      "max_width" : 700,
+      "max_height" : 806
+    }
+  }, {
+    "id" : "24eed6f4-959d-544f-3500-365b3aff7304",
+    "name" : "short_description",
+    "label" : "Short Description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h5>Something about something</h5>\n<h3>More about something</h3>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "box_title" : "<h5>Greystone College</h5>\n<h3>Vocational<br>Training</h3>",
+    "page_link_url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    },
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_slider_vocational.jpg",
+      "alt" : "img_slider_vocational",
+      "width" : 700,
+      "height" : 806,
+      "max_width" : 700,
+      "max_height" : 806
+    },
+    "short_description" : "<h5>Something about something</h5>\n<h3>More about something</h3>"
+  }
+}, {
+  "id" : "509b979a-23f6-a1f7-23c2-6d3f1ba6c334",
+  "name" : "box_3",
+  "label" : "Box 3",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "b8cec7c0-9160-1145-dafb-2bd8ee374398",
+    "name" : "box_title",
+    "label" : "Box Title",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h5>Adult students</h5>\n<h3>30 and Beyond</h3>"
+  }, {
+    "id" : "1c2409b1-c36b-59a3-39d1-266f5da34442",
+    "name" : "page_link_url",
+    "label" : "Page Link URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "CONTENT" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    }
+  }, {
+    "id" : "0a6d25c9-3e9f-8c13-e0dd-372d4c7771ea",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_slider_30.jpg",
+      "alt" : "img_slider_30",
+      "width" : 704,
+      "height" : 806,
+      "max_width" : 704,
+      "max_height" : 806
+    }
+  }, {
+    "id" : "c5864586-ad9e-5f37-846a-d0fdbb789a30",
+    "name" : "short_description",
+    "label" : "Short Description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h5>Something about something</h5>\n<h3>More about something</h3>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "box_title" : "<h5>Adult students</h5>\n<h3>30 and Beyond</h3>",
+    "page_link_url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    },
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_slider_30.jpg",
+      "alt" : "img_slider_30",
+      "width" : 704,
+      "height" : 806,
+      "max_width" : 704,
+      "max_height" : 806
+    },
+    "short_description" : "<h5>Something about something</h5>\n<h3>More about something</h3>"
+  }
+}, {
+  "id" : "0860b888-6fb1-db45-0a6b-80e3a968c4be",
+  "name" : "box_4",
+  "label" : "Box 4",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "da07a9a5-2dca-8f5d-2c6f-377f7ec12671",
+    "name" : "box_title",
+    "label" : "Box Title",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h5>Young Learners</h5>\n<h3>Junior Programs</h3>"
+  }, {
+    "id" : "2344ede8-b33b-13d6-ca73-79218da796d6",
+    "name" : "page_link_url",
+    "label" : "Page Link URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "CONTENT" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    }
+  }, {
+    "id" : "8cc2afaf-66af-2de5-7105-42fc49c8f85b",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_slider_junior.jpg",
+      "alt" : "img_slider_junior",
+      "width" : 698,
+      "height" : 806,
+      "max_width" : 698,
+      "max_height" : 806
+    }
+  }, {
+    "id" : "a61e96c1-3097-7218-952e-f3cb37f1b5d1",
+    "name" : "short_description",
+    "label" : "Short Description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h5>Something about something</h5>\n<h3>More about something</h3>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "box_title" : "<h5>Young Learners</h5>\n<h3>Junior Programs</h3>",
+    "page_link_url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    },
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_slider_junior.jpg",
+      "alt" : "img_slider_junior",
+      "width" : 698,
+      "height" : 806,
+      "max_width" : 698,
+      "max_height" : 806
+    },
+    "short_description" : "<h5>Something about something</h5>\n<h3>More about something</h3>"
+  }
+}, {
+  "id" : "1a6202f4-36ec-db4b-28f9-218a74ed9a50",
+  "name" : "box_5",
+  "label" : "Box 5",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "9260042b-84fd-e765-ff63-2eef6d7d9962",
+    "name" : "box_title",
+    "label" : "Box Title",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h5>Path to higher education</h5>\n<h3>University and <br>College Pathway</h3>"
+  }, {
+    "id" : "0e08e7ec-0e7c-74d2-22f1-cf97ee551940",
+    "name" : "page_link_url",
+    "label" : "Page Link URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "CONTENT" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    }
+  }, {
+    "id" : "e177cc63-4a0b-356e-9beb-0f85c90c6afd",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_slider_university.jpg",
+      "alt" : "img_slider_university",
+      "width" : 702,
+      "height" : 806,
+      "max_width" : 702,
+      "max_height" : 806
+    }
+  }, {
+    "id" : "37e4d86e-a4a9-039a-f458-e848cc12c3e1",
+    "name" : "short_description",
+    "label" : "Short Description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h5>Something about something</h5>\n<h3>More about something</h3>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "box_title" : "<h5>Path to higher education</h5>\n<h3>University and <br>College Pathway</h3>",
+    "page_link_url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    },
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_slider_university.jpg",
+      "alt" : "img_slider_university",
+      "width" : 702,
+      "height" : 806,
+      "max_width" : 702,
+      "max_height" : 806
+    },
+    "short_description" : "<h5>Something about something</h5>\n<h3>More about something</h3>"
+  }
+}, {
+  "id" : "9c6b74b2-effd-df17-67e1-b8cada7cb029",
+  "name" : "box_6",
+  "label" : "Box 6",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "cb07b4ec-e1f4-47ea-a152-9cf1529f9822",
+    "name" : "box_title",
+    "label" : "Box Title",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h5>Language Tests</h5>\n<h3>IELTS<br>Test Centre</h3>"
+  }, {
+    "id" : "42455c5f-bafc-4c2a-497f-ffdd02752c0d",
+    "name" : "page_link_url",
+    "label" : "Page Link URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "CONTENT" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    }
+  }, {
+    "id" : "5934e2fa-3e52-1131-418a-69a398ef8b31",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_slider_ielts.jpg",
+      "alt" : "img_slider_ielts",
+      "width" : 704,
+      "height" : 806,
+      "max_width" : 704,
+      "max_height" : 806
+    }
+  }, {
+    "id" : "f0ffde92-3b86-cc20-278c-3a7f18a3b368",
+    "name" : "short_description",
+    "label" : "Short Description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h5>Something about something</h5>\n<h3>More about something</h3>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "box_title" : "<h5>Language Tests</h5>\n<h3>IELTS<br>Test Centre</h3>",
+    "page_link_url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    },
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_slider_ielts.jpg",
+      "alt" : "img_slider_ielts",
+      "width" : 704,
+      "height" : 806,
+      "max_width" : 704,
+      "max_height" : 806
+    },
+    "short_description" : "<h5>Something about something</h5>\n<h3>More about something</h3>"
+  }
+} ]

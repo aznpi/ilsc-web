@@ -1,0 +1,343 @@
+[ {
+  "id" : "46ce05ad-d67d-178e-d58f-798abc730852",
+  "name" : "city_choice",
+  "label" : "City Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "Montreal", "Montreal" ], [ "Toronto", "Toronto" ], [ "Vancouver", "Vancouver" ], [ "Adelaide", "Adelaide" ], [ "Brisbane", "Brisbane" ], [ "Melbourne", "Melbourne" ], [ "Sydney", "Sydney" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "5a3af11b-185e-d652-3ab3-bb3a04d0dd53",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Live with a Homestay Family</h2>\n<p>Are you looking for a home away from home? Be welcomed into one of ILSC’s Homestay families, and experience a supportive living environment.</p>"
+}, {
+  "id" : "484148e7-d667-d001-008e-f7772cab3022",
+  "name" : "business_box",
+  "label" : "Business Box",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "da4cb6f7-1cd9-8ea5-85ff-fcf461519e4e",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_banner.jpg",
+      "alt" : "img_residence_banner",
+      "width" : 1086,
+      "height" : 462,
+      "max_width" : 1086,
+      "max_height" : 462
+    }
+  }, {
+    "id" : "92a6dd99-a120-7106-f805-0a7033573af0",
+    "name" : "text_content",
+    "label" : "Text Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>Business Programs</h4>\n<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam nec, euismod feugiat id nascetur nisl.</span><br><br><span>Choose one of our Business Programs to learn more:</span></p>"
+  }, {
+    "id" : "cfdb15c9-f504-e5e4-84b5-91d6b9b61793",
+    "name" : "dropdown_default_text",
+    "label" : "Dropdown Default Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Choose Program"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_banner.jpg",
+      "alt" : "img_residence_banner",
+      "width" : 1086,
+      "height" : 462,
+      "max_width" : 1086,
+      "max_height" : 462
+    },
+    "text_content" : "<h4>Business Programs</h4>\n<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam nec, euismod feugiat id nascetur nisl.</span><br><br><span>Choose one of our Business Programs to learn more:</span></p>",
+    "dropdown_default_text" : "Choose Program"
+  }
+}, {
+  "id" : "94db1a66-92e6-f69b-e5ea-1fbc7fe51d5b",
+  "name" : "digital_marketing_box",
+  "label" : "Digital Marketing Box",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "420066ae-7a36-2236-9ad5-b19ff03cc1e8",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_banner.jpg",
+      "alt" : "img_residence_banner",
+      "width" : 1086,
+      "height" : 462,
+      "max_width" : 1086,
+      "max_height" : 462
+    }
+  }, {
+    "id" : "6cb71017-765e-dc35-c3ce-77f9b9737bab",
+    "name" : "text_content",
+    "label" : "Text Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>Digital Marketing Programs</h4>\n<p>Lorem Ipsum.Lorem Ipsum.Lorem IpsumLorem IpsumLorem Ipsum.Lorem Ipsum.<br><br><span>Choose one of our Digital Marketing Programs to learn more:</span></p>"
+  }, {
+    "id" : "bf3cf557-4625-e993-b264-952bed6fc94b",
+    "name" : "dropdown_default_text",
+    "label" : "Dropdown Default Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Choose Program"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_banner.jpg",
+      "alt" : "img_residence_banner",
+      "width" : 1086,
+      "height" : 462,
+      "max_width" : 1086,
+      "max_height" : 462
+    },
+    "text_content" : "<h4>Digital Marketing Programs</h4>\n<p>Lorem Ipsum.Lorem Ipsum.Lorem IpsumLorem IpsumLorem Ipsum.Lorem Ipsum.<br><br><span>Choose one of our Digital Marketing Programs to learn more:</span></p>",
+    "dropdown_default_text" : "Choose Program"
+  }
+}, {
+  "id" : "71b9d51f-9ccb-32fd-81ff-6e918d3adea7",
+  "name" : "hospitality_box",
+  "label" : "Hospitality Box",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "eb624241-5a40-529e-5b40-618cfa44299f",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_banner.jpg",
+      "alt" : "img_residence_banner",
+      "width" : 1086,
+      "height" : 462,
+      "max_width" : 1086,
+      "max_height" : 462
+    }
+  }, {
+    "id" : "5d9de626-384a-5344-1b6f-9aa98ef15b67",
+    "name" : "text_content",
+    "label" : "Text Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>Hospitality Programs</h4>\n<p>Lorem Ipsum.Lorem Ipsum.Lorem IpsumLorem IpsumLorem Ipsum.Lorem Ipsum.</p>\n<p><span>Choose one of our Digital Marketing Programs to learn more:</span></p>"
+  }, {
+    "id" : "71c0a4d7-68d9-a7b0-fe8d-bcf490f001d0",
+    "name" : "dropdown_default_text",
+    "label" : "Dropdown Default Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Choose Program"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_banner.jpg",
+      "alt" : "img_residence_banner",
+      "width" : 1086,
+      "height" : 462,
+      "max_width" : 1086,
+      "max_height" : 462
+    },
+    "text_content" : "<h4>Hospitality Programs</h4>\n<p>Lorem Ipsum.Lorem Ipsum.Lorem IpsumLorem IpsumLorem Ipsum.Lorem Ipsum.</p>\n<p><span>Choose one of our Digital Marketing Programs to learn more:</span></p>",
+    "dropdown_default_text" : "Choose Program"
+  }
+}, {
+  "id" : "c5efd638-f4b9-654b-95b8-f5700f46850f",
+  "name" : "interpreting_translation_box",
+  "label" : "Interpreting Translation Box",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "589724b8-9d10-d7ec-ec53-f8a22cbf85fa",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_banner.jpg",
+      "alt" : "img_residence_banner",
+      "width" : 1086,
+      "height" : 462,
+      "max_width" : 1086,
+      "max_height" : 462
+    }
+  }, {
+    "id" : "e9c5abc5-81ea-c957-37c5-eb05d8cf49c7",
+    "name" : "text_content",
+    "label" : "Text Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>Interpreting &amp; Translation</h4>\n<p>Lorem Ipsum.Lorem Ipsum.Lorem IpsumLorem IpsumLorem Ipsum.Lorem Ipsum.</p>\n<p><br><span>Choose one of our Interpreting &amp; Translation Programs to learn more:</span></p>"
+  }, {
+    "id" : "253213e8-bf61-2219-f0ee-76fd4bee569d",
+    "name" : "dropdown_default_text",
+    "label" : "Dropdown Default Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Choose Program"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_banner.jpg",
+      "alt" : "img_residence_banner",
+      "width" : 1086,
+      "height" : 462,
+      "max_width" : 1086,
+      "max_height" : 462
+    },
+    "text_content" : "<h4>Interpreting &amp; Translation</h4>\n<p>Lorem Ipsum.Lorem Ipsum.Lorem IpsumLorem IpsumLorem Ipsum.Lorem Ipsum.</p>\n<p><br><span>Choose one of our Interpreting &amp; Translation Programs to learn more:</span></p>",
+    "dropdown_default_text" : "Choose Program"
+  }
+}, {
+  "id" : "ffd2892f-87d9-683e-1742-442a17d6fa2b",
+  "name" : "teacher_training_box",
+  "label" : "Teacher Training Box",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "f1f22483-ddaf-9cac-c73b-1b5bcabaf8e2",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_banner.jpg",
+      "alt" : "img_residence_banner",
+      "width" : 1086,
+      "height" : 462,
+      "max_width" : 1086,
+      "max_height" : 462
+    }
+  }, {
+    "id" : "05998aea-ecf9-88b7-5aa5-9c79f734a538",
+    "name" : "text_content",
+    "label" : "Text Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h4>Teacher Training</h4>\n<p>Lorem Ipsum.Lorem Ipsum.Lorem IpsumLorem IpsumLorem Ipsum.Lorem Ipsum.</p>\n<p><br><span>Choose one of our Interpreting &amp; Translation Programs to learn more:</span></p>"
+  }, {
+    "id" : "32cbd3ed-6037-5779-8c20-892f40ff3b2b",
+    "name" : "dropdown_default_text",
+    "label" : "Dropdown Default Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Choose Program"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "image_field" : {
+      "src" : "https://f.hubspotusercontent10.net/hubfs/5020112/img_residence_banner.jpg",
+      "alt" : "img_residence_banner",
+      "width" : 1086,
+      "height" : 462,
+      "max_width" : 1086,
+      "max_height" : 462
+    },
+    "text_content" : "<h4>Teacher Training</h4>\n<p>Lorem Ipsum.Lorem Ipsum.Lorem IpsumLorem IpsumLorem Ipsum.Lorem Ipsum.</p>\n<p><br><span>Choose one of our Interpreting &amp; Translation Programs to learn more:</span></p>",
+    "dropdown_default_text" : "Choose Program"
+  }
+} ]

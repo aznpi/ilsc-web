@@ -1,0 +1,7 @@
+.gallery-slide{
+  margin-top:30px;
+}
+
+.gallery-slide .slick-prev, .gallery-slide .slick-next{
+  top:40%;
+}

@@ -1,0 +1,74 @@
+{% set queryparam = "" %}
+{% set queryparam = queryparam ~ "&program_areas__in=" +module.program_area_choice|urlencode %}
+{% set queryparam = queryparam ~ "&country__in=" +module.country_program_choice|urlencode  %}
+{% set queryparam = queryparam ~ "&is_parent_program__eq=true"  %}
+{% set queryparam = queryparam ~ "&enable_disable__eq=Enable"  %}
+{% if module.qualification_type %}
+  {% set queryparam = queryparam ~ "&qualification_type__neq="+module.qualification_type|urlencode  %}
+{% endif %}
+{% if module.program_code %}
+  {% set queryparam = queryparam ~ "&program_code__neq="+module.program_code|urlencode  %}
+{% endif %}
+{% set programArea = hubdb_table_rows(4690691,queryparam) %}
+
+<section class="section section-hubdb bg-white-canvas">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				{% inline_rich_text field="title" value="{{ module.title }}" %}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+        <div class="slider-wrapper">
+          <div class="box-slide box-shadow">
+            
+               {% for item in programArea|sort(false,false,'program_name') %}
+                  {% set campusArr = [] %}
+                  {% for campus in item.campus %}
+                    {% do campusArr.append(campus.name) %}
+                  {% endfor %}
+                  
+                  {% if item.is_co_op == 1  %}
+                    {% if campusArr is containing 'Montreal' %}
+                         {% set categoryText = "PRACTICUM" %}
+                      {% else %}           
+                        {% set categoryText = "CO-OP" %}         
+                    {% endif %}
+                  {% else %}
+                    {% set categoryText = "ACADEMIC" %}
+                  {% endif %}
+            
+                  {% if item.has_co_op == 1  %}
+                    {% if campusArr is containing 'Montreal' %}
+                        {% set categoryText = "ACADEMIC & PRACTICUM" %}
+                      {% else %}     
+                        {% set categoryText = "ACADEMIC & CO-OP" %}
+                    {% endif %}
+                  {% endif %}
+            
+                  {% if item.image %}
+                     <div>
+                      <div class="box-container drop-shadow">
+                        <div class="image-container" style="background-image:url({{ item.image.url }});background-repeat:no-repeat;background-size:cover;"></div>
+                        <div class="box-content a-link-container a-link-small">
+                        <h4>{{item.program_name}}</h4>
+                        {% if module.country_program_choice != "Australia"%}
+                          <h5 style="color:#81b1cc;">{{categoryText}}</h5>
+                        {% endif %}
+                        {{ item.short_description }}
+                        {% if item.page_link %}
+                          <a href="{% if content.language.languageTag && content.language.languageTag !='en' %}/{{ content.language.languageTag }}{% endif %}{{ item.page_link }}">{{ module.link_text }}</a>
+                        {% endif %}
+                        </div>
+                      </div>
+                     </div>
+                  {% endif %}
+              {% endfor %}    
+            
+          </div>
+        </div>
+			</div>
+		</div>
+	</div>
+</section>

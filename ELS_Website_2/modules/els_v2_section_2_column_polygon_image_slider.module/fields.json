@@ -1,0 +1,115 @@
+[ {
+  "id" : "49f86b0d-7522-8e5a-6e44-054bff602fa9",
+  "name" : "title_rich_text",
+  "label" : "Title Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Study in <span class=\"bold\" style=\"color: #ff8b35;\">Canada or Australia</span></h2>"
+}, {
+  "id" : "9e180509-c8f3-0cc3-9201-5b7a4e1d7c2c",
+  "name" : "right_column_rich_text",
+  "label" : "Right Column Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<img src=\"https://www.ilsc.com/hubfs/ELS/Website%20v2/template-resources/images/logos/logo-language-gs.png\" loading=\"lazy\" alt=\"logo-language-gs\" class=\"img-fluid\">\n<p>Want to go beyond the US? You can now learn English in Canada and Australia with our partner school, ILSC. Whether you're dreaming of studying and working by the beach, or looking for high energy adventures in stunning Canadian landscapes - we have a study abroad option to take you further.</p>"
+}, {
+  "id" : "d0ce1627-491b-16f6-6a9a-3db08a10206b",
+  "name" : "image_slides",
+  "label" : "Image Slides",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 20,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "44ad8d3e-09a4-53c9-e09f-de6bb2410d9a",
+  "name" : "enable_cta",
+  "label" : "Enable CTA",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "display_width" : null,
+  "default" : true
+}, {
+  "id" : "0ee7efb3-9c20-3886-222c-d1f392d284db",
+  "name" : "cta_field_group",
+  "label" : "CTA Field group",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "enable_cta",
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "children" : [ {
+    "id" : "3a7f7e76-9e5d-f0db-5b27-bae7da5a2dcc",
+    "name" : "link_field",
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "84135346-a769-b186-fb00-d5bcbe577275",
+    "name" : "btn_text",
+    "label" : "BTN Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "LEARN MORE"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "btn_text" : "LEARN MORE"
+  }
+} ]

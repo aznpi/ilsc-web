@@ -1,0 +1,21 @@
+<section class="section-footer-cta-form section-polygon section-form">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 center">
+        {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+      </div>
+    </div>
+    <div class="row form-container">
+      <div class="col-md-12">
+        {% form
+          form_to_use="{{ module.form_field.form_id }}"
+          response_response_type="{{ module.form_field.response_type }}"
+          response_message="{{ module.form_field.message }}"
+          response_redirect_id="{{ module.form_field.redirect_id }}"
+          response_redirect_url="{{module.form_field.redirect_url}}"
+          gotowebinar_webinar_key="{{ module.form_field.gotowebinar_webinar_key }}"
+        %}
+      </div>
+    </div>
+  </div> 
+</section>

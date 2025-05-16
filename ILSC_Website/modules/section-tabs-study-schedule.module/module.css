@@ -1,0 +1,41 @@
+.tab-study-schedule ul.nav-pills{
+  margin-top:30px;
+}
+.tab-study-schedule ul.nav-pills li.nav-item{
+  text-align:center;
+
+}
+.tab-study-schedule ul.nav-pills li.nav-item:first-child:nth-last-child(1),
+.tab-study-schedule ul.nav-pills li.nav-item:first-child:nth-last-child(1) ~ li {
+    width: 100%;
+}
+
+.tab-study-schedule ul.nav-pills li.nav-item:first-child:nth-last-child(3),
+.tab-study-schedule ul.nav-pills li.nav-item:first-child:nth-last-child(3) ~ li {
+    width: 33.3333%;
+}
+
+.tab-study-schedule ul.nav-pills li.nav-item:first-child:nth-last-child(2),
+.tab-study-schedule ul.nav-pills li.nav-item:first-child:nth-last-child(2) ~ li {
+    width: 50%;
+}
+
+
+.tab-study-schedule ul.nav-pills .nav-link.active{
+  background:#FFF !important;
+  border-bottom:0 !important;
+  border-top: 1px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-color: #BDBDBD;
+  color:#FF8B35 !important;
+}
+
+.tab-study-schedule ul.nav-pills .nav-link{
+  background:#F2F2F2 !important;
+  border-bottom:1px solid #BDBDBD !important;
+  padding-top:20px;
+}
+.tab-study-schedule .nav-pills .nav-link{
+  border-radius:0;
+}

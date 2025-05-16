@@ -1,0 +1,23 @@
+<section class="section bg-grey">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				{% inline_rich_text field="title_text" value="{{ module.title_text }}" %}    
+			</div>
+		</div>
+    <div class="row">
+			<div class="col-md-12">
+				<div class="image-container">
+          {% if module.image_field.src %}
+            <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}">
+          {% endif %}
+        </div>
+			</div>
+		</div>
+    <div class="row">
+			<div class="col-md-12 center">
+				{% inline_rich_text field="footnote_text" value="{{ module.footnote_text }}" %}
+			</div>
+		</div>
+	</div>
+</section>

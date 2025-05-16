@@ -1,0 +1,15 @@
+[ {
+  "id" : "0bc5fb7a-bd87-d1aa-fec2-d5887d6ae924",
+  "name" : "iframe_url",
+  "label" : "Iframe URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "display_width" : null,
+  "default" : {
+    "type" : "EXTERNAL",
+    "href" : "https://globalfoundations.com/fees2",
+    "content_id" : null
+  }
+} ]

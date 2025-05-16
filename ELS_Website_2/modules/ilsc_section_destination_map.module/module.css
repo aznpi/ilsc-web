@@ -1,0 +1,84 @@
+.section-destination-map{
+  padding:50px 0;
+}
+.section-destination-map .container{
+  position:relative;
+}
+.section-destination-map .container .row{
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+}
+.section-destination-map .container .row >*{
+  padding:0;
+}
+.section-destination-map .container-left-bg{
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.section-destination-map .container .row div:first-child:not(.container-right-bg){
+  position:relative;
+}
+.section-destination-map .container .description-container{
+  border-radius: 5px;
+  padding: 50px 30px;
+  height:100%;
+}
+.section-destination-map .container .description-container h2{
+  font-size:42px;
+}
+.section-destination-map .container .description-container .description{
+  padding:50px 0 0;
+}
+.section-destination-map .container .description-container .description{
+  font-size:18px;
+  padding:0 0 30px;
+}
+.section-destination-map .container .description-container .description ul.block-list.icon-list{
+  position:relative;
+  display:block;
+  margin-top:50px;
+}
+.section-destination-map .container .description-container .description ul.block-list.icon-list li{
+  margin-bottom:50px;
+  padding-left:55px;
+}
+.section-destination-map .container .description-container .description ul.block-list.icon-list li:before {
+    left: -55px;
+}
+.section-destination-map .container .description-container .description ul.block-list.icon-list li:before{
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    height: 40px;
+    left: 5px;
+    position: absolute;
+    width: 40px;
+}
+.section-destination-map .container .description-container .description ul.block-list.icon-list li.address:before{
+  background-image: url(https://www.els.edu/hubfs/ELS/Website%20v2/template-resources/images/icon/icon_marker-min.png);
+}
+.section-destination-map .container .description-container .description ul.block-list.icon-list li.phone:before {
+    background-image: url(https://www.els.edu/hubfs/ELS/Website%20v2/template-resources/images/icon/icon_phone-min.png);
+}
+.section-destination-map .container .description-container .description ul.block-list.icon-list li.email:before {
+    background-image: url(https://www.els.edu/hubfs/ELS/Website%20v2/template-resources/images/icon/icon_email-min.png);
+}
+
+.section-destination-map .container .map-container {
+    height: 100%;
+    width: 140%;
+}
+@media only screen and (max-width: 600px) {
+  .section-destination-map .container .map-container {
+    width: 100%;
+  }
+}
+.section-destination-map .container .map-container iframe {
+    height: 100%;
+    width: 100%;
+}

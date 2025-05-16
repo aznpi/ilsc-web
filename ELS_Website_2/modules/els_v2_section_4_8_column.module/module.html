@@ -1,0 +1,40 @@
+{% if module.anchor_id %}
+  <a name="#{{ module.anchor_id|regex_replace("/[^A-Z0-9]/ig","-") }}"></a>
+{% endif %}
+<section class="section-4-8-column section-normal {{ module.padding_choice }} section-bg-container" style="margin-top:0;">
+  <div class="container" style="background-color: rgba({{module.bg_color.color|convert_rgb }}, {{ module.bg_color.opacity/100 }});">
+    <div class="container-left-bg" style="background-color: rgba({{module.bg_color.color|convert_rgb }}, {{ module.bg_color.opacity/100 }});"></div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="description-container">
+          {% inline_rich_text field="title_rich_text" value="{{ module.title_rich_text }}" %}
+        </div>
+        <div class="divider-vertical"></div>
+      </div>
+      <div class="col-md-8">
+        <div class="description-container">
+          <div class="description">
+            {% inline_rich_text field="description_rich_text" value="{{ module.description_rich_text }}" %}
+          </div>
+          <div class="btn-container center">
+            {% set href = module.cta_link.url.href %}
+            {% if module.cta_link.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+            {% endif %}
+            <a href="{{ href }}" class="btn btn-orange"
+               {% if module.cta_link.open_in_new_tab %}target="_blank"{% endif %}
+               {% if module.cta_link.rel %}rel="{{ module.cta_link.rel }}"{% endif %}
+               >
+              {{ module.cta_button_text }}
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+

@@ -1,0 +1,273 @@
+[ {
+  "id" : "5ecd598a-1dfc-fa45-ee67-28c245b8c6fd",
+  "name" : "enable_polygon_bg",
+  "label" : "Enable Polygon BG",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "display_width" : null,
+  "default" : true
+}, {
+  "id" : "c07075be-640e-12c5-395f-949649e8cdfd",
+  "name" : "enable_scroll_link",
+  "label" : "Enable Scroll Link",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "display_width" : null,
+  "default" : true
+}, {
+  "id" : "eb61b597-b47f-49c7-e71b-5b64ce9b4d5a",
+  "name" : "bg_color",
+  "label" : "BG Overlay Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 0
+  }
+}, {
+  "id" : "5a17aa47-c4d6-3646-37f0-8c6c0bf8eb31",
+  "name" : "bg_image",
+  "label" : "BG Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "54c86a15-0657-39ea-5375-657ad4835fcc",
+  "name" : "title_rich_text",
+  "label" : "Title Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null
+}, {
+  "id" : "4e7ce440-ce9f-d135-bb0e-05e2d9e6ed9c",
+  "name" : "cta_choice",
+  "label" : "CTA Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "button", "Button" ], [ "video", "Video" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null
+}, {
+  "id" : "2eef9184-52a1-a8d2-cda9-7129e1cc787b",
+  "name" : "video_url",
+  "label" : "Video url",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "cta_choice",
+    "controlling_value_regex" : "video",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null
+}, {
+  "id" : "5d6702ca-466d-ccc4-732b-d7fa6f01f9a7",
+  "name" : "video_button_text",
+  "label" : "Video Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "cta_choice",
+    "controlling_value_regex" : "video",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "WATCH OUR VIDEO"
+}, {
+  "id" : "14c6c19e-5799-2434-bd3a-c1718c2adf95",
+  "name" : "button_link",
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "cta_choice",
+    "controlling_value_regex" : "button",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "a1dae90e-d5f5-3f8a-6474-6034d71c3180",
+  "name" : "button_text",
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "cta_choice",
+    "controlling_value_regex" : "button",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : ""
+}, {
+  "id" : "df3c3c51-6457-3287-cfb9-794f2159fde1",
+  "name" : "right_column_hero_image",
+  "label" : "Right Column Hero Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "411133bd-3a4c-1666-e9d7-e6d9d97b1821",
+  "name" : "add_sub_row",
+  "label" : "Add Sub Row",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "display_width" : null,
+  "default" : false
+}, {
+  "id" : "13611c60-dbfe-3619-ae66-fa4eb16d877b",
+  "name" : "left_angle_color",
+  "label" : "Left Angle Color",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "add_sub_row",
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#FF8B35",
+    "opacity" : 90
+  }
+}, {
+  "id" : "c5d26969-18cf-4c2f-e21d-a664204be2e2",
+  "name" : "left_angle_text",
+  "label" : "Left Angle Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "add_sub_row",
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Learn English in Chicago on a university campus with ELS Language Centers."
+}, {
+  "id" : "8dee667a-b725-cdd1-0539-b15d1446f756",
+  "name" : "right_angle_color",
+  "label" : "Right Angle Color",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "add_sub_row",
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 90
+  }
+}, {
+  "id" : "f70df062-4a9b-7cb3-2faf-57e9d4118714",
+  "name" : "right_angle_image",
+  "label" : "Right Angle Image",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "add_sub_row",
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.ilsc.com/hubfs/ELS/Website%20v2/template-resources/images/logos/dominican-university-of-california-logo%201-min.png",
+    "alt" : "dominican-university-of-california-logo 1-min",
+    "loading" : "lazy",
+    "width" : 222,
+    "height" : 73,
+    "max_width" : 222,
+    "max_height" : 73
+  }
+} ]

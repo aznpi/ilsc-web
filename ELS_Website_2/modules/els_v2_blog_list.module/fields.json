@@ -1,0 +1,88 @@
+[ {
+  "id" : "aad545fd-b205-a0e8-1e0d-cf96ac3fb6c3",
+  "name" : "title_rich_text",
+  "label" : "Title Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2 style=\"text-align: center;\" data-key=\"cards__heading\">ELS Press: News &amp; Updates</h2>"
+}, {
+  "id" : "05569509-7218-669e-fdf3-6570cee5537c",
+  "name" : "blog_field",
+  "label" : "Blog",
+  "required" : false,
+  "locked" : false,
+  "type" : "blog",
+  "display_width" : null,
+  "default" : 108939559201
+}, {
+  "id" : "116c742e-80e6-1bf7-af45-3961ecc91dc2",
+  "name" : "category_field_group",
+  "label" : "Category Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 20,
+    "sorting_label_field" : "e15963c2-9d06-1e66-96ae-a14dec20d530",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "e15963c2-9d06-1e66-96ae-a14dec20d530",
+    "name" : "title_text",
+    "label" : "Title Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null
+  }, {
+    "id" : "2312d40a-282d-342a-f5ed-b9abd9fe28b2",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "892d3391-22ab-b65d-09ed-a31266f4278c",
+    "name" : "bg_color",
+    "label" : "BG Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "display_width" : null,
+    "default" : {
+      "color" : null,
+      "opacity" : null
+    }
+  }, {
+    "id" : "3e4a80ae-19c2-f591-583c-02503098f526",
+    "name" : "tag_field",
+    "label" : "Tag",
+    "required" : false,
+    "locked" : false,
+    "tag_value" : "SLUG",
+    "type" : "tag",
+    "display_width" : null,
+    "default" : "travel-and-study"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ ]
+} ]

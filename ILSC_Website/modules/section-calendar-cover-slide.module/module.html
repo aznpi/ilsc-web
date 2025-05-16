@@ -1,0 +1,120 @@
+{% set anchorName = module.anchor_name_text|replace(' ','')|replace('&','')|replace(',','')|upper%}
+ <a name="{{anchorName}}"></a>
+<section class="section section-year section-calendar section-{{anchorName}} {% if module.background_color.color == '#FFFFFF' %}bg-white-canvas{% endif %}" id="content" style="background-color:rgba({{module.background_color.color|convert_rgb }}, {{module.background_color.opacity/100 }});">
+ 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 center">
+        <h1 class="program-title">
+          {{ module.title_text|upper }}
+        </h1>
+      </div>
+    </div>
+    
+     {% if module.show_year_choice == 'enable' %}
+        <div class="row price-year">
+          <div class="col-md-12 center">
+            <ul>
+              {% for item in module.year_field_group %}
+                <li {% if !loop.last %}class="year-border"{% endif %}><a href="#" data-slide="{{loop.index}}" {% if loop.index == 1 %}class="active"{% endif %}>{{ item.year_text }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+    {% endif %}
+    <div class="row slick-row-{{anchorName}}">
+      <div class="col-md-12">
+        <div class="box-slide other-price-container">
+          <div>
+              <div class="row">
+                <div class="col-md-12 cover-slide-content">
+                    
+                  {% inline_rich_text field="slide_cover_field_group.description_rich_text" value="{{ module.slide_cover_field_group.description_rich_text }}" %}                 
+                
+                  {% if module.slide_cover_field_group.image_field.src %}
+                    {% set sizeAttrs = 'width="{{ module.slide_cover_field_group.image_field.width }}" height="{{ module.slide_cover_field_group.image_field.height }}"' %}
+                    {% if module.slide_cover_field_group.image_field.size_type == 'auto' %}
+                      {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                    {% elif module.slide_cover_field_group.image_field.size_type == 'auto_custom_max' %}
+                      {% set sizeAttrs = 'width="{{ module.slide_cover_field_group.image_field.max_width }}" height="{{ module.slide_cover_field_group.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                     {% set loadingAttr = module.slide_cover_field_group.image_field.loading != 'disabled' ? 'loading="{{ module.slide_cover_field_group.image_field.loading }}"' : '' %}
+                    <img src="{{ module.slide_cover_field_group.image_field.src }}" alt="{{ module.slide_cover_field_group.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+
+                </div>
+              </div>
+            </div>
+          {% for item in module.year_field_group %}
+           <div>
+              <div class="row row-cols-6">
+                
+                {% for item2 in item.month_box_field_group %}
+                  <div class="col month-box-container">
+                    <div>
+                      <div class="month-title">
+                        {% if item2.enable_month_choice == 'enable' %}
+                          {{item2.month_choice}}
+                          {% else %}
+                          {{item2.week_text}}
+                        {% endif %}
+                      </div> 
+                      <div class="date-title {% if item2.enable_month_choice == 'disable' %}week-text{% endif %}" {% if item2.enable_padding_choice == 'disable' %}style="padding:4px"{% endif %}>
+                        {{item2.date_text}}
+                      </div>
+                    </div>
+                  </div>
+                {% endfor %}
+                
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% if module.footer_rich_text %}
+      <div class="row">
+        <div class="col-md-12">
+          {% inline_rich_text field="footer_rich_text" value="{{ module.footer_rich_text }}" %}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+<script>
+
+$(document).ready(function(){
+  $('.slick-row-{{ anchorName }} .box-slide').slick({
+      dots: false,
+      slidesToScroll: 1,
+      slidesToShow: 1,
+      lazyLoad: 'ondemand',
+      speed : 600,
+      ease : 'Pow4.easeIn',
+      arrows : false,
+      fade: true,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+
+  });
+  
+  $('.section-{{anchorName}} .price-year ul li a[data-slide]').click(function(e) {
+     e.preventDefault();
+     var slideno = $(this).data('slide');
+     $(this).removeClass('active');
+     $(this).addClass('active');
+     $('.slick-row-{{ anchorName }} .box-slide').slick('slickGoTo', slideno );
+  }); 
+    
+  
+})
+
+</script>

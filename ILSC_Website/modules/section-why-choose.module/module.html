@@ -1,0 +1,52 @@
+<section class="section title-section section-choose center section {% if module.background_color.color == '#FFFFFF' %}bg-white-canvas{% endif %}" id="content" style="background-color:rgba({{module.bg_color.color|convert_rgb }}, {{module.bg_color.opacity/100 }})">
+  <div class="container" style="position:relative;">
+    <div class="bg-circle top-left">
+      <img src="https://www.ilsc.com/hubfs/Ellipse%2023Images_pricing%20page.png" alt="Image Circle" class="img-responsive">
+    </div>
+    <div class="bg-circle bottom-right">
+      <img src="https://www.ilsc.com/hubfs/Ellipse%2024Images_pricing%20page.png" alt="Image Circle" class="img-responsive">
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+       {% inline_rich_text field="title_text" value="{{ module.title_text }}" %}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        {% inline_rich_text field="subtitle_text" value="{{ module.subtitle_text }}" %}
+      </div>
+    </div>
+		<div class="row row-box">
+      {% for item in module.image_box_group %}
+          <div class="col-md-3 center">
+            {% if item.image_field.src %}
+              <div class="box-image">
+                {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+                {% if item.image_field.size_type == 'auto' %}
+                  {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                {% elif item.image_field.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ item.image_field.max_width }}" height="{{ item.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                 {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' : '' %}
+                <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                <div class="bg-circle {{ item.bg_position_choice }}">
+                  {% if item.bg_image.src %}
+                  {% set sizeAttrs = 'width="{{ item.bg_image.width }}" height="{{ item.bg_image.height }}"' %}
+                  {% if item.bg_image.size_type == 'auto' %}
+                    {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                  {% elif item.bg_image.size_type == 'auto_custom_max' %}
+                    {% set sizeAttrs = 'width="{{ item.bg_image.max_width }}" height="{{ item.bg_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                   {% set loadingAttr = item.bg_image.loading != 'disabled' ? 'loading="{{ item.bg_image.loading }}"' : '' %}
+                  <img src="{{ item.bg_image.src }}" alt="{{ item.bg_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+                </div>
+              </div>
+            {% endif %}
+            <h5>{% inline_text field="title_text" value="{{ item.title_text }}" %}</h5>
+            
+        </div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

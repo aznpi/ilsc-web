@@ -1,0 +1,1907 @@
+{
+  "company_menu.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_1.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_1.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_1.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_1.link_text_1.default" : {
+    "message" : "About ILSC",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_1.link_text_1.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_1.link_text_1.label" : {
+    "message" : "Link Text 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_1.link_text_1.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_1.link_text_1.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_1.link_url_1.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_1.link_url_1.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_1.link_url_1.label" : {
+    "message" : "Link URL 1 ",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_2.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_2.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_2.label" : {
+    "message" : "Link 1 copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_2.link_text_2.default" : {
+    "message" : "Why Choose ILSC",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_2.link_text_2.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_2.link_text_2.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_2.link_text_2.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_2.link_text_2.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_2.link_url_2.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_2.link_url_2.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_2.link_url_2.label" : {
+    "message" : "Link URL 2 ",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_3.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_3.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_3.label" : {
+    "message" : "Link 2 copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_3.link_text_3.default" : {
+    "message" : "Our Commitment",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_3.link_text_3.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_3.link_text_3.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_3.link_text_3.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_3.link_text_3.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_3.link_url_3.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_3.link_url_3.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_3.link_url_3.label" : {
+    "message" : "Link URL 3 ",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_4.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_4.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_4.label" : {
+    "message" : "Link 3 copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_4.link_text_4.default" : {
+    "message" : "Careers",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_4.link_text_4.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_4.link_text_4.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_4.link_text_4.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_4.link_text_4.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_4.link_url_4.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_4.link_url_4.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_4.link_url_4.label" : {
+    "message" : "Link URL 4 ",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_5.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_5.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_5.label" : {
+    "message" : "Link 4 copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_5.link_text_5.default" : {
+    "message" : "Awards",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_5.link_text_5.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_5.link_text_5.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_5.link_text_5.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_5.link_text_5.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_5.link_url_5.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_5.link_url_5.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_5.link_url_5.label" : {
+    "message" : "Link URL 5",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_6.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_6.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_6.label" : {
+    "message" : "Link 5 copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_6.link_text_6.default" : {
+    "message" : "Blog",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_6.link_text_6.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_6.link_text_6.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_6.link_text_6.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_6.link_text_6.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_6.link_url_6.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_6.link_url_6.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_6.link_url_6.label" : {
+    "message" : "Link URL 6",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_url_1_.default.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_url_1_.default.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.link_url_1_.default.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.name" : {
+    "message" : "footer",
+    "description" : "",
+    "placeholders" : null
+  },
+  "company_menu.title_company.default" : {
+    "message" : "<h5>COMPANY</h5>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.title_company.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "company_menu.title_company.label" : {
+    "message" : "Title Company",
+    "description" : null,
+    "placeholders" : null
+  },
+  "copyright.default" : {
+    "message" : "<p>© 2020 ILSC Education Group. All Rights Reserved.</p>\n<p>All programs are part of the English Language Programs for International Students CRICOS Code: 060152J. ILSC (Brisbane) PTY LTD is trading as ILSC-Brisbane, ILSC-Sydney, ILSC-Melbourne, ILSC-Adelaide, ILSC Australia RTO Number 31564, CRICOS Code: 02137M.</p>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "copyright.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "copyright.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "fb_link.default.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "fb_link.default.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "fb_link.default.url.href" : {
+    "message" : "https://www.facebook.com/ilscfb",
+    "description" : null,
+    "placeholders" : null
+  },
+  "fb_link.default.url.type" : {
+    "message" : "EXTERNAL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.label" : {
+    "message" : "Company Menu copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_1.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_1.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_1.label" : {
+    "message" : "Link 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_1.link_text_1.default" : {
+    "message" : "Contact Us",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_1.link_text_1.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_1.link_text_1.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_1.link_text_1.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_1.link_text_1.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_1.link_url_1.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_1.link_url_1.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_1.link_url_1.label" : {
+    "message" : "Link URL 1 ",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_2.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_2.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_2.label" : {
+    "message" : "Link 2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_2.link_text_2.default" : {
+    "message" : "Apply Now",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_2.link_text_2.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_2.link_text_2.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_2.link_text_2.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_2.link_text_2.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_2.link_url_2.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_2.link_url_2.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_2.link_url_2.label" : {
+    "message" : "Link URL 2 ",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_3.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_3.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_3.label" : {
+    "message" : "Link 3",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_3.link_text_3.default" : {
+    "message" : "Fee Calculator",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_3.link_text_3.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_3.link_text_3.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_3.link_text_3.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_3.link_text_3.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_3.link_url_3.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_3.link_url_3.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_3.link_url_3.label" : {
+    "message" : "Link URL 3 ",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_4.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_4.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_4.label" : {
+    "message" : "Link 4",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_4.link_text_4.default" : {
+    "message" : "IELTS Test Centre",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_4.link_text_4.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_4.link_text_4.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_4.link_text_4.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_4.link_text_4.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_4.link_url_4.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_4.link_url_4.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_4.link_url_4.label" : {
+    "message" : "Link URL 4 ",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_5.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_5.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_5.label" : {
+    "message" : "Link 5",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_5.link_text_5.default" : {
+    "message" : "Alumni",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_5.link_text_5.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_5.link_text_5.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_5.link_text_5.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_5.link_text_5.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_5.link_url_5.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_5.link_url_5.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_5.link_url_5.label" : {
+    "message" : "Link URL 5",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_6.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_6.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_6.label" : {
+    "message" : "Link 6",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_6.link_text_6.default" : {
+    "message" : "Partners",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_6.link_text_6.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_6.link_text_6.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_6.link_text_6.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_6.link_text_6.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_6.link_url_6.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_6.link_url_6.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.link_6.link_url_6.label" : {
+    "message" : "Link URL 6",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.title_helpful_links.default" : {
+    "message" : "<h5>Helpful Links</h5>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.title_helpful_links.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "helpful_links_menu.title_helpful_links.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "logo.default.alt" : {
+    "message" : "logo_ilsc_vertical",
+    "description" : "",
+    "placeholders" : null
+  },
+  "logo.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "logo.label" : {
+    "message" : "logo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "footer",
+    "description" : "",
+    "placeholders" : null
+  },
+  "our_programs_menu.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.label" : {
+    "message" : "Company Menu copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_1.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_1.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_1.label" : {
+    "message" : "Link 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_1.link_text_1.default" : {
+    "message" : "Language Programs",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_1.link_text_1.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_1.link_text_1.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_1.link_text_1.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_1.link_text_1.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_1.link_url_1.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_1.link_url_1.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_1.link_url_1.label" : {
+    "message" : "Link URL 1 ",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_2.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_2.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_2.label" : {
+    "message" : "Link 2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_2.link_text_2.default" : {
+    "message" : "Online English Courses",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_2.link_text_2.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_2.link_text_2.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_2.link_text_2.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_2.link_text_2.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_2.link_url_2.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_2.link_url_2.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_2.link_url_2.label" : {
+    "message" : "Link URL 2 ",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_3.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_3.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_3.label" : {
+    "message" : "Link 3",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_3.link_text_3.default" : {
+    "message" : "University Pathway",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_3.link_text_3.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_3.link_text_3.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_3.link_text_3.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_3.link_text_3.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_3.link_url_3.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_3.link_url_3.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_3.link_url_3.label" : {
+    "message" : "Link URL 3 ",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_4.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_4.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_4.label" : {
+    "message" : "Link 4",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_4.link_text_4.default" : {
+    "message" : "Junior Programs",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_4.link_text_4.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_4.link_text_4.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_4.link_text_4.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_4.link_text_4.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_4.link_url_4.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_4.link_url_4.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_4.link_url_4.label" : {
+    "message" : "Link URL 4 ",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_5.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_5.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_5.label" : {
+    "message" : "Link 5",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_5.link_text_5.default" : {
+    "message" : "30 and Beyond",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_5.link_text_5.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_5.link_text_5.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_5.link_text_5.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_5.link_text_5.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_5.link_url_5.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_5.link_url_5.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_5.link_url_5.label" : {
+    "message" : "Link URL 5",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_6.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_6.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_6.label" : {
+    "message" : "Link 6",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_6.link_text_6.default" : {
+    "message" : "Vocational Training",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_6.link_text_6.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_6.link_text_6.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_6.link_text_6.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_6.link_text_6.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_6.link_url_6.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_6.link_url_6.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_6.link_url_6.label" : {
+    "message" : "Link URL 6",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_7.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_7.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_7.label" : {
+    "message" : "Link 6 copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_7.link_text_7.default" : {
+    "message" : "Continuing Education",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_7.link_text_7.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_7.link_text_7.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_7.link_text_7.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_7.link_text_7.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_7.link_url_7.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_7.link_url_7.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_7.link_url_7.label" : {
+    "message" : "Link URL 7",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_8.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_8.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_8.label" : {
+    "message" : "Link 7 copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_8.link_text_8.default" : {
+    "message" : "Corporate Training",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_8.link_text_8.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_8.link_text_8.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_8.link_text_8.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_8.link_text_8.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_8.link_url_8.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_8.link_url_8.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_8.link_url_8.label" : {
+    "message" : "Link URL 8",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_9.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_9.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_9.label" : {
+    "message" : "Link 8 copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_9.link_text_9.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_9.link_text_9.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_9.link_text_9.label" : {
+    "message" : "Link Text 9",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_9.link_text_9.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_9.link_text_9.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_9.link_url_9.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_9.link_url_9.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.link_9.link_url_9.label" : {
+    "message" : "Link URL 9",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.name" : {
+    "message" : "footer",
+    "description" : "",
+    "placeholders" : null
+  },
+  "our_programs_menu.title_programs.default" : {
+    "message" : "<h5>Our Programs</h5>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.title_programs.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "our_programs_menu.title_programs.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.label" : {
+    "message" : "Helpful Links Menu copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_1.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_1.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_1.label" : {
+    "message" : "Link 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_1.link_text_1.default" : {
+    "message" : "Terms &amp; Conditions",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_1.link_text_1.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_1.link_text_1.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_1.link_text_1.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_1.link_text_1.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_1.link_url_1.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_1.link_url_1.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_1.link_url_1.label" : {
+    "message" : "Link URL 1 ",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_2.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_2.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_2.label" : {
+    "message" : "Link 2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_2.link_text_2.default" : {
+    "message" : "Privacy Policy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_2.link_text_2.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_2.link_text_2.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_2.link_text_2.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_2.link_text_2.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_2.link_url_2.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_2.link_url_2.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_2.link_url_2.label" : {
+    "message" : "Link URL 2 ",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_3.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_3.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_3.label" : {
+    "message" : "Link 3",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_3.link_text_3.default" : {
+    "message" : "Sitemap",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_3.link_text_3.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_3.link_text_3.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_3.link_text_3.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_3.link_text_3.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_3.link_url_3.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_3.link_url_3.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.link_3.link_url_3.label" : {
+    "message" : "Link URL 3 ",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.title_policies.default" : {
+    "message" : "<h5>Policies</h5>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.title_policies.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "policies_menu.title_policies.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_1.box_link_text.default" : {
+    "message" : "APPLY NOW",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_1.box_link_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_1.box_link_text.label" : {
+    "message" : "Box Link Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_1.box_link_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_1.box_link_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_1.box_link_url.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_1.box_link_url.default.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_1.box_link_url.default.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_1.box_link_url.default.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_1.box_link_url.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_1.box_link_url.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_1.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_1.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_1.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_1.name" : {
+    "message" : "footer",
+    "description" : "",
+    "placeholders" : null
+  },
+  "side_flyout.box_2.box_link_text.default" : {
+    "message" : "LANGUAGE LEVEL TEST",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_2.box_link_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_2.box_link_text.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_2.box_link_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_2.box_link_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_2.box_link_url.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_2.box_link_url.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_2.box_link_url.label" : {
+    "message" : "Box Link Url",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_2.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_2.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_2.label" : {
+    "message" : "Box 1 copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_3.box_link_text.default" : {
+    "message" : "REQUEST PRICING",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_3.box_link_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_3.box_link_text.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_3.box_link_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_3.box_link_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_3.box_link_url.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_3.box_link_url.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_3.box_link_url.label" : {
+    "message" : "Box Link Url",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_3.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_3.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_3.label" : {
+    "message" : "Box 2 copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_4.box_link_text.default" : {
+    "message" : "CONTACT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_4.box_link_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_4.box_link_text.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_4.box_link_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_4.box_link_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_4.box_link_url.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_4.box_link_url.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_4.box_link_url.label" : {
+    "message" : "Box Link Url",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_4.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_4.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.box_4.label" : {
+    "message" : "Box 3 copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "side_flyout.name" : {
+    "message" : "footer",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_media.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.fb_link.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.fb_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.fb_link.label" : {
+    "message" : "fb_Link",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.instagram_link.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.instagram_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.instagram_link.label" : {
+    "message" : "instagram_Link",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.instagram_link_copy.default.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.instagram_link_copy.default.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.instagram_link_copy.default.url.href" : {
+    "message" : "https://www.instagram.com/ilsc/",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.instagram_link_copy.default.url.type" : {
+    "message" : "EXTERNAL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.linkedin_link.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.linkedin_link.default.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.linkedin_link.default.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.linkedin_link.default.url.href" : {
+    "message" : "https://ca.linkedin.com/school/ilsc-education-group/",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.linkedin_link.default.url.type" : {
+    "message" : "EXTERNAL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.linkedin_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.linkedin_link.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.name" : {
+    "message" : "footer",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_media.youtube_link.default.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.youtube_link.default.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.youtube_link.default.url.href" : {
+    "message" : "https://www.youtube.com/user/ilscTV",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_media.youtube_link.default.url.type" : {
+    "message" : "EXTERNAL",
+    "description" : null,
+    "placeholders" : null
+  }
+}

@@ -1,0 +1,25 @@
+.section-accommodation-description .icon-plus.icon-container{
+  cursor:pointer;
+  transition: filter .2s;
+}
+.section-accommodation-description .icon-plus.icon-container:hover{
+  filter: brightness(0) saturate(100%) invert(61%) sepia(87%) saturate(2482%) hue-rotate(347deg) brightness(99%) contrast(94%);
+}
+.accommodation-modal .page-indicator{
+    width: fit-content;
+    bottom: 0;
+    color: #f58220;
+    font-size: 20px;
+    font-weight: 700;
+    left: 30px;
+    position: absolute;
+    height: fit-content;
+    top: unset;
+}
+.accommodation-modal .slick-slider{
+  border-radius:5px;
+  overflow:hidden;
+}
+.accommodation-modal .slick-slider .slick-next,.accommodation-modal .slick-slider .slick-prev{
+  color:#FFF;
+}

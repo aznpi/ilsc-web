@@ -1,0 +1,72 @@
+[ {
+  "id" : "1eb4f614-dd05-0969-7bd4-28a95e67576d",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Programs and Courses at ILSC Australia</h2>\n<p>By choosing to study in Australia, you’ll join over 600,000 students from all over the world each year – as they seek to discover new friends and opportunities in this beautiful country.</p>"
+}, {
+  "id" : "1961ade5-5c29-4fe1-4b09-bcd4b4ad72d9",
+  "name" : "choose_city_text",
+  "label" : "Choose City Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "CHOOSE YOUR CITY"
+}, {
+  "id" : "3a743e57-140f-6678-1388-f94ebbf23491",
+  "name" : "choose_area_study_text",
+  "label" : "Choose Area Study Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "CHOOSE YOUR AREA OF STUDY"
+}, {
+  "id" : "e0f63e65-58f4-c76f-045b-e58aee058742",
+  "name" : "choose_level_text",
+  "label" : "Choose Level Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "CHOOSE YOUR LEVEL"
+}, {
+  "id" : "dd0c6671-cc9a-1c6b-6867-3424c920e767",
+  "name" : "search_programs_courses_text",
+  "label" : "Search Programs Courses Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "SEARCH ALL PROGRAMS AND COURSES"
+}, {
+  "id" : "f5da5999-b7c1-c2e1-966f-05ae34e6e494",
+  "name" : "country_choice",
+  "label" : "Country Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "Canada", "Canada" ], [ "Australia", "Australia" ], [ "India", "India" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "Canada"
+} ]

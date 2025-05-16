@@ -1,0 +1,51 @@
+{% set queryparam = "" %}
+
+
+{% set queryparam = queryparam ~ "&testimonial_category_title__in=Residences" %}
+
+{% if module.residence_name != "All Residences" && module.residence_name != "" %}
+  {% set queryparam = queryparam ~ "&quote_category__in=" + module.residence_name|urlencode %}
+{% endif %}
+
+{% set table = hubdb_table_rows(2639334,queryparam) %}
+
+{% if  table.total > 0 %}
+  <section class="section-testimonials section bg-blue">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            {% inline_rich_text field="title" value="{{ module.title }}" %}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="testimonial-slide-1">
+
+              {% for row in table %}
+                 <div>
+                    <div class="row slide-content">
+
+                        <div class="col-md-12">
+
+                          <div class="quote-container">
+                            <h2>
+                              {{row.quote}} 
+                            </h2>
+                            <div class="quote-author">
+                              <div class="author-img"><img src="{{row.image.url}}" alt="{{row.first_name}} {{row.last_name}}"></div><h5>{{row.first_name}}, {{row.city}}</h5>
+                            </div>
+
+                          </div>
+                          </div>
+
+                      </div>
+                  </div>
+                  {% endfor %}
+
+             </div> 
+
+          </div>
+        </div>
+      </div>
+  </section>
+{% endif %}
